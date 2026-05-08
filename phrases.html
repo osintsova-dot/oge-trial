@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OGE Phrases Trainer</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --black: #0a0a0a; --white: #fff;
+  --g1: #f4f4f4; --g2: #e8e8e8; --g3: #c0c0c0; --g4: #888; --g5: #444;
+  --green: #1a7a4a; --green-bg: #e8f5ee;
+  --red: #c0392b; --red-bg: #fdf0ee;
+  --orange: #d4600a;
+  --blue: #1a4a8a; --blue-bg: #e8eef8;
+}
+body { font-family: 'IBM Plex Sans', sans-serif; background: #fff; color: var(--black); font-size: 14px; min-height: 100vh; }
+nav { border-bottom: 2px solid var(--black); display: flex; align-items: center; padding: 0 16px; height: 52px; position: sticky; top: 0; background: #fff; z-index: 100; }
+.nav-logo { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 13px; margin-right: 20px; }
+.nav-logo span { color: #c0c0c0; }
+.nav-tab { height: 52px; padding: 0 16px; border: none; background: none; font-family: 'IBM Plex Sans', sans-serif; font-size: 13px; font-weight: 600; color: #888; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -2px; transition: all .15s; text-transform: uppercase; }
+.nav-tab:hover { color: var(--black); }
+.nav-tab.active { color: var(--black); border-bottom-color: var(--black); }
+.mode-bar { display: flex; gap: 8px; padding: 14px 16px 0; overflow-x: auto; }
+.mode-btn { padding: 8px 18px; border: 1.5px solid var(--g2); border-radius: 20px; background: #fff; font-family: 'IBM Plex Sans', sans-serif; font-size: 13px; font-weight: 700; color: var(--g4); cursor: pointer; transition: all .15s; white-space: nowrap; flex-shrink: 0; }
+.mode-btn:hover { border-color: var(--black); color: var(--black); }
+.mode-btn.active { background: var(--black); color: #fff; border-color: var(--black); }
+.filter-bar { display: flex; gap: 6px; padding: 10px 16px 0; overflow-x: auto; }
+.filter-btn { padding: 5px 13px; border: 1.5px solid var(--g2); border-radius: 20px; background: #fff; font-family: 'IBM Plex Sans', sans-serif; font-size: 12px; font-weight: 600; color: var(--g4); cursor: pointer; transition: all .15s; white-space: nowrap; flex-shrink: 0; }
+.filter-btn:hover { border-color: var(--black); color: var(--black); }
+.filter-btn.active { background: var(--black); color: #fff; border-color: var(--black); }
+.stats-bar { display: flex; gap: 16px; padding: 8px 16px 0; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--g4); }
+.stats-bar span { color: var(--black); font-weight: 600; }
+.page { display: none; padding: 14px 16px 80px; max-width: 600px; margin: 0 auto; }
+.page.active { display: block; }
+
+/* FLASHCARD */
+.flashcard-wrap { perspective: 1000px; margin-bottom: 14px; }
+.flashcard { width: 100%; min-height: 200px; position: relative; transform-style: preserve-3d; transition: transform 0.5s; cursor: pointer; }
+.flashcard.flipped { transform: rotateY(180deg); }
+.card-face { position: absolute; inset: 0; backface-visibility: hidden; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 28px 24px; text-align: center; min-height: 200px; }
+.card-front { background: var(--black); color: #fff; border: 2px solid var(--black); }
+.card-back { background: #fff; border: 2px solid var(--black); transform: rotateY(180deg); }
+.card-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; opacity: .5; margin-bottom: 12px; }
+.card-ru { font-size: 18px; font-weight: 700; line-height: 1.4; }
+.card-en { font-size: 17px; font-weight: 700; line-height: 1.4; color: var(--black); margin-bottom: 10px; }
+.card-example { font-size: 13px; color: var(--g5); font-style: italic; line-height: 1.5; }
+.card-cat { font-size: 10px; font-family: 'IBM Plex Mono', monospace; color: rgba(255,255,255,.4); margin-top: 10px; text-transform: uppercase; }
+.card-cat-back { font-size: 10px; font-family: 'IBM Plex Mono', monospace; color: var(--g3); margin-top: 10px; text-transform: uppercase; }
+.card-hint { font-size: 11px; color: rgba(255,255,255,.3); margin-top: 12px; }
+.card-nav { display: flex; gap: 10px; margin-bottom: 14px; }
+.card-nav-btn { flex: 1; padding: 12px; border: 1.5px solid var(--g2); border-radius: 8px; background: #fff; font-family: 'IBM Plex Sans', sans-serif; font-size: 13px; font-weight: 700; color: var(--g5); cursor: pointer; transition: all .15s; }
+.card-nav-btn.good { border-color: var(--green); color: var(--green); }
+.card-nav-btn.good:hover { background: var(--green-bg); }
+.card-nav-btn.bad { border-color: var(--red); color: var(--red); }
+.card-nav-btn.bad:hover { background: var(--red-bg); }
+.progress-bar { height: 3px; background: var(--g2); border-radius: 2px; margin-bottom: 14px; }
+.progress-fill { height: 100%; background: var(--black); border-radius: 2px; transition: width .3s; }
+.card-counter { text-align: center; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--g4); margin-bottom: 14px; }
+
+/* MATCHING */
+.match-score { text-align: center; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: var(--g4); margin-bottom: 12px; }
+.match-score span { color: var(--black); font-weight: 600; }
+.match-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 16px; }
+.match-col { display: flex; flex-direction: column; gap: 8px; }
+.match-item { padding: 12px 10px; border: 1.5px solid var(--g2); border-radius: 8px; font-size: 13px; line-height: 1.4; cursor: pointer; transition: all .15s; background: #fff; text-align: center; font-weight: 600; }
+.match-item:hover { border-color: var(--black); }
+.match-item.selected { border-color: var(--black); background: var(--black); color: #fff; }
+.match-item.correct { border-color: var(--green); background: var(--green-bg); color: var(--green); cursor: default; }
+.match-item.wrong { border-color: var(--red); background: var(--red-bg); color: var(--red); animation: shake .3s; }
+@keyframes shake { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-4px)} 75%{transform:translateX(4px)} }
+
+/* WRITING MODE */
+.write-card { border: 1.5px solid var(--g2); border-radius: 10px; overflow: hidden; margin-bottom: 14px; }
+.write-prompt { background: var(--black); color: #fff; padding: 16px 18px; font-size: 16px; font-weight: 700; line-height: 1.4; }
+.write-input-wrap { padding: 14px; }
+.write-input { width: 100%; min-height: 60px; border: 1.5px solid var(--g2); border-radius: 6px; padding: 12px 14px; font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; line-height: 1.5; resize: none; color: var(--black); transition: border-color .15s; }
+.write-input:focus { outline: none; border-color: var(--black); }
+.write-check-btn { width: 100%; padding: 11px; background: var(--black); color: #fff; border: none; border-radius: 6px; font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; font-weight: 700; cursor: pointer; margin-top: 8px; transition: all .15s; }
+.write-check-btn:hover { background: var(--g5); }
+.write-check-btn:disabled { background: var(--g2); color: var(--g3); cursor: not-allowed; }
+.write-result { padding: 12px 14px; border-top: 1px solid var(--g2); display: none; }
+.write-result.on { display: block; }
+.write-result-verdict { display: flex; gap: 8px; align-items: flex-start; padding: 10px 12px; border-radius: 6px; font-size: 13px; margin-bottom: 8px; line-height: 1.5; }
+.write-result-verdict.perfect { background: var(--green-bg); color: var(--green); }
+.write-result-verdict.good { background: var(--blue-bg); color: var(--blue); }
+.write-result-verdict.retry { background: var(--red-bg); color: var(--red); }
+.write-result-answer { font-size: 14px; font-weight: 700; color: var(--black); margin-bottom: 6px; }
+.write-result-example { font-size: 12px; color: var(--g4); font-style: italic; }
+.write-counter { text-align: center; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--g4); margin-bottom: 10px; }
+.write-next-btn { width: 100%; padding: 10px; border: 1.5px solid var(--g2); border-radius: 6px; background: #fff; font-family: 'IBM Plex Sans', sans-serif; font-size: 13px; font-weight: 700; cursor: pointer; color: var(--g5); transition: all .15s; margin-top: 8px; }
+.write-next-btn:hover { border-color: var(--black); color: var(--black); }
+
+/* RESULT */
+.result-screen { text-align: center; padding: 40px 20px; display: none; }
+.result-screen.on { display: block; }
+.result-score { font-family: 'IBM Plex Mono', monospace; font-size: 48px; font-weight: 600; margin-bottom: 8px; }
+.result-score.perfect { color: var(--green); } .result-score.good { color: var(--orange); } .result-score.bad { color: var(--red); }
+.result-text { font-size: 15px; color: var(--g5); margin-bottom: 24px; line-height: 1.5; }
+.restart-btn { padding: 13px 32px; background: var(--black); color: #fff; border: none; border-radius: 6px; font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; font-weight: 700; cursor: pointer; }
+.mini-loader { display: none; align-items: center; gap: 8px; font-size: 12px; color: var(--g4); padding: 6px 0; }
+.mini-loader.on { display: flex; }
+.mini-spin { width: 14px; height: 14px; border: 2px solid var(--g2); border-top-color: var(--black); border-radius: 50%; animation: spin .6s linear infinite; flex-shrink: 0; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.api-note { background: #fffbe6; border: 1.5px solid #f0d060; border-radius: 8px; padding: 10px 14px; margin: 10px 16px 0; font-size: 12px; color: #6b4f00; display: none; }
+.api-note.on { display: block; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-logo">OGE<span>/</span>EN</div>
+  <button class="nav-tab" onclick="location.href='index.html'">Writing</button>
+  <button class="nav-tab active">Phrases</button>
+</nav>
+
+<div class="api-note" id="api-note">Для режима "Написать" с AI-проверкой введи API-ключ в разделе Writing.</div>
+
+<div class="mode-bar">
+  <button class="mode-btn active" onclick="setMode('flash',this)">Флэшкарты</button>
+  <button class="mode-btn" onclick="setMode('match',this)">Matching</button>
+  <button class="mode-btn" onclick="setMode('write',this)">Написать</button>
+</div>
+<div class="filter-bar" id="filter-bar"></div>
+<div class="stats-bar" id="stats-bar"></div>
+
+<!-- FLASH -->
+<div class="page active" id="page-flash">
+  <div class="progress-bar"><div class="progress-fill" id="flash-progress"></div></div>
+  <div class="card-counter" id="flash-counter"></div>
+  <div class="flashcard-wrap">
+    <div class="flashcard" id="flashcard" onclick="flipCard()">
+      <div class="card-face card-front">
+        <div class="card-label">Нажми чтобы перевернуть</div>
+        <div class="card-ru" id="card-ru"></div>
+        <div class="card-cat" id="card-cat-f"></div>
+        <div class="card-hint">tap to flip</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-label">English</div>
+        <div class="card-en" id="card-en"></div>
+        <div class="card-example" id="card-example"></div>
+        <div class="card-cat-back" id="card-cat-b"></div>
+      </div>
+    </div>
+  </div>
+  <div class="card-nav" id="card-nav" style="display:none">
+    <button class="card-nav-btn bad" onclick="cardAnswer(false)">x Не знал</button>
+    <button class="card-nav-btn good" onclick="cardAnswer(true)">ok Знал</button>
+  </div>
+  <div class="result-screen" id="flash-result">
+    <div class="result-score" id="flash-score"></div>
+    <div class="result-text" id="flash-text"></div>
+    <button class="restart-btn" onclick="startFlash()">Заново</button>
+  </div>
+</div>
+
+<!-- MATCH -->
+<div class="page" id="page-match">
+  <div class="match-score">Правильных: <span id="match-score">0</span> / <span id="match-total">0</span></div>
+  <div id="match-area"></div>
+  <div class="result-screen" id="match-result">
+    <div class="result-score" id="match-result-score"></div>
+    <div class="result-text" id="match-result-text"></div>
+    <button class="restart-btn" onclick="startMatch()">Ещё раз</button>
+  </div>
+</div>
+
+<!-- WRITE -->
+<div class="page" id="page-write">
+  <div class="write-counter" id="write-counter"></div>
+  <div class="progress-bar"><div class="progress-fill" id="write-progress"></div></div>
+  <div id="write-card-wrap"></div>
+  <div class="result-screen" id="write-result">
+    <div class="result-score" id="write-result-score"></div>
+    <div class="result-text" id="write-result-text"></div>
+    <button class="restart-btn" onclick="startWrite()">Ещё раз</button>
+  </div>
+</div>
+
+<script>
+const PHRASES = [
+  {cat:"Структура",ru:"Спасибо за твоё письмо",en:"Thank you for your letter",ex:"Thank you for your letter - it was great to hear from you!"},
+  {cat:"Структура",ru:"Было приятно получить от тебя весточку",en:"It was great to hear from you",ex:"It was great to hear from you after such a long time."},
+  {cat:"Структура",ru:"Рада была получить твоё письмо",en:"I was glad to receive your letter",ex:"I was glad to receive your letter last week."},
+  {cat:"Структура",ru:"Извини, что так долго не писал(а)",en:"Sorry for not writing for so long",ex:"Sorry for not writing for so long - I have been really busy."},
+  {cat:"Структура",ru:"В своём письме ты спрашивал(а) о...",en:"In your letter you asked about...",ex:"In your letter you asked about my school life."},
+  {cat:"Структура",ru:"Что касается... / Говоря о...",en:"As for... / Speaking of...",ex:"As for your question about sport, I really enjoy swimming."},
+  {cat:"Структура",ru:"По поводу твоего вопроса...",en:"Regarding your question...",ex:"Regarding your question about music, I prefer pop."},
+  {cat:"Структура",ru:"Надеюсь скоро получить ответ от тебя",en:"I hope to hear from you soon",ex:"I hope to hear from you soon. Take care!"},
+  {cat:"Структура",ru:"Напиши мне поскорее",en:"Write back soon",ex:"Write back soon and tell me all about your holiday!"},
+  {cat:"Структура",ru:"С нетерпением жду твоего ответа",en:"I am looking forward to your reply",ex:"I am looking forward to your reply."},
+  {cat:"Структура",ru:"Желаю всего наилучшего",en:"Best wishes",ex:"Best wishes, Anna."},
+  {cat:"Структура",ru:"Кстати / Между прочим",en:"By the way",ex:"By the way, have you ever been to Russia?"},
+  {cat:"Структура",ru:"Мне интересно узнать...",en:"I was wondering...",ex:"I was wondering if you have any pets at home?"},
+  {cat:"Структура",ru:"Не мог(ла) бы ты рассказать мне о...",en:"Could you tell me about...",ex:"Could you tell me about your school?"},
+  {cat:"Структура",ru:"Буду рад(а) ответить на твои вопросы",en:"I will be happy to answer your questions",ex:"I will be happy to answer your questions about my hobbies."},
+  {cat:"Мнение",ru:"Я думаю / считаю, что...",en:"I think / I believe that...",ex:"I think that sport is very important for health."},
+  {cat:"Мнение",ru:"По моему мнению...",en:"In my opinion...",ex:"In my opinion, reading books is better than watching TV."},
+  {cat:"Мнение",ru:"На мой взгляд...",en:"From my point of view...",ex:"From my point of view, learning English is very useful."},
+  {cat:"Мнение",ru:"Лично я...",en:"Personally, I...",ex:"Personally, I prefer spending time outdoors."},
+  {cat:"Мнение",ru:"Я уверен(а), что...",en:"I am sure that...",ex:"I am sure that you will enjoy visiting Russia."},
+  {cat:"Мнение",ru:"Честно говоря...",en:"To be honest... / Frankly speaking...",ex:"To be honest, I find Maths the most difficult subject."},
+  {cat:"Мнение",ru:"Что касается меня, я предпочитаю...",en:"As for me, I prefer...",ex:"As for me, I prefer reading paper books."},
+  {cat:"Мнение",ru:"Мне кажется, что...",en:"It seems to me that...",ex:"It seems to me that music lessons are really beneficial."},
+  {cat:"Причина",ru:"Потому что / так как",en:"because / as / since",ex:"I like travelling because I enjoy meeting new people."},
+  {cat:"Причина",ru:"Главная причина - это...",en:"The main reason is...",ex:"The main reason is that sport keeps you fit and healthy."},
+  {cat:"Причина",ru:"Во-первых... Во-вторых...",en:"First of all... Secondly...",ex:"First of all, it is interesting. Secondly, it is useful."},
+  {cat:"Причина",ru:"Кроме того / помимо этого",en:"Besides / Moreover / What is more",ex:"Besides, learning English helps me in my future career."},
+  {cat:"Причина",ru:"Например...",en:"For example... / For instance...",ex:"For example, I enjoy swimming and playing tennis."},
+  {cat:"Причина",ru:"Вот почему...",en:"That is why...",ex:"That is why I think ecology is a very important topic."},
+  {cat:"Сравнение",ru:"С одной стороны... с другой стороны...",en:"On one hand... on the other hand...",ex:"On one hand, cities have more opportunities. On the other hand, the countryside is cleaner."},
+  {cat:"Сравнение",ru:"В отличие от...",en:"Unlike...",ex:"Unlike my friend, I prefer team sports."},
+  {cat:"Сравнение",ru:"По сравнению с...",en:"Compared to...",ex:"Compared to last year, I read much more."},
+  {cat:"Сравнение",ru:"Оба варианта имеют свои плюсы и минусы",en:"Both options have their pros and cons",ex:"Both options have their pros and cons, but I prefer..."},
+  {cat:"Школа",ru:"Мой любимый предмет - это...",en:"My favourite subject is...",ex:"My favourite subject is English because it is useful."},
+  {cat:"Школа",ru:"Я трачу примерно ... часов на домашнюю работу",en:"I spend about ... hours doing homework",ex:"I spend about 2 hours doing homework every day."},
+  {cat:"Школа",ru:"В нашей школе есть много кружков",en:"Our school has lots of clubs and activities",ex:"Our school has lots of clubs and activities after lessons."},
+  {cat:"Школа",ru:"Мне нравится в школе то, что...",en:"What I like most about school is...",ex:"What I like most about school is communicating with friends."},
+  {cat:"Школа",ru:"Самый трудный для меня предмет - это...",en:"The most difficult subject for me is...",ex:"The most difficult subject for me is Physics."},
+  {cat:"Школа",ru:"Я посещаю занятия по ...",en:"I attend ... classes / I go to ... club",ex:"I attend drama club after school on Thursdays."},
+  {cat:"Спорт",ru:"Чтобы оставаться в форме, я...",en:"To keep fit, I...",ex:"To keep fit, I go swimming three times a week."},
+  {cat:"Спорт",ru:"Я регулярно занимаюсь спортом",en:"I do sport regularly",ex:"I do sport regularly - it helps me to feel energetic."},
+  {cat:"Спорт",ru:"Спорт помогает мне оставаться здоровым(ой)",en:"Sport helps me to stay healthy",ex:"Sport helps me to stay healthy and feel good."},
+  {cat:"Спорт",ru:"Я был(а) бы рад(а) заняться...",en:"I would like to take up...",ex:"I would like to take up yoga in my free time."},
+  {cat:"Спорт",ru:"Стараться избегать вредной еды",en:"to try to avoid junk food",ex:"I try to avoid junk food and eat more fruit and vegetables."},
+  {cat:"Спорт",ru:"Вести здоровый образ жизни",en:"to lead a healthy lifestyle",ex:"It is important to lead a healthy lifestyle from an early age."},
+  {cat:"Хобби",ru:"В свободное время я люблю...",en:"In my free time I enjoy...",ex:"In my free time I enjoy reading books and playing chess."},
+  {cat:"Хобби",ru:"Моё хобби - это...",en:"My hobby is...",ex:"My hobby is collecting stamps from different countries."},
+  {cat:"Хобби",ru:"Мои друзья разделяют мои интересы",en:"My friends share my interests",ex:"My friends share my interests in music and gaming."},
+  {cat:"Хобби",ru:"Хобби помогает мне расслабиться",en:"My hobby helps me to relax",ex:"My hobby helps me to relax after a busy school day."},
+  {cat:"Хобби",ru:"Популярное хобби среди подростков",en:"a hobby popular with teenagers",ex:"Gaming is a hobby popular with teenagers in Russia."},
+  {cat:"Технологии",ru:"Я использую телефон для того, чтобы...",en:"I use my phone to...",ex:"I use my phone to listen to music and chat with friends."},
+  {cat:"Технологии",ru:"Я провожу около ... часов в интернете",en:"I spend about ... hours online",ex:"I spend about 3 hours online every day."},
+  {cat:"Технологии",ru:"Я не могу представить жизнь без...",en:"I cannot imagine life without...",ex:"I cannot imagine life without my smartphone."},
+  {cat:"Технологии",ru:"Технологии делают нашу жизнь легче",en:"Technology makes our life easier",ex:"Technology makes our life easier in many ways."},
+  {cat:"Технологии",ru:"Самый важный гаджет для меня - это...",en:"The most important gadget for me is...",ex:"The most important gadget for me is my laptop."},
+  {cat:"Экология",ru:"Самая серьёзная экологическая проблема - это...",en:"The most serious ecological problem is...",ex:"The most serious ecological problem is air pollution."},
+  {cat:"Экология",ru:"Молодые люди могут помочь природе, если...",en:"Young people can protect the environment by...",ex:"Young people can protect the environment by recycling."},
+  {cat:"Экология",ru:"Экономить электроэнергию",en:"to save energy",ex:"We can save energy by turning off lights when we leave a room."},
+  {cat:"Экология",ru:"Загрязнение окружающей среды",en:"environmental pollution",ex:"Environmental pollution is a major problem in big cities."},
+  {cat:"Экология",ru:"Делать что-то полезное для окружающей среды",en:"to do something useful for the environment",ex:"We should do something useful for the environment every day."},
+  {cat:"Путешествия",ru:"Путешествия популярны, потому что...",en:"Travelling is popular because...",ex:"Travelling is popular because it broadens your horizons."},
+  {cat:"Путешествия",ru:"Я предпочитаю путешествовать на...",en:"I prefer to travel by...",ex:"I prefer to travel by plane because it is fast."},
+  {cat:"Путешествия",ru:"Расширять кругозор",en:"to broaden your horizons",ex:"Travelling helps to broaden your horizons and learn about other cultures."},
+  {cat:"Путешествия",ru:"Лучший сувенир - это...",en:"The best souvenir to bring back is...",ex:"The best souvenir to bring back is something handmade."},
+  {cat:"Путешествия",ru:"Я бы хотел(а) посетить ... потому что...",en:"I would love to visit ... because...",ex:"I would love to visit Japan because I am fascinated by its culture."},
+  {cat:"Путешествия",ru:"Стоит посетить / посмотреть...",en:"It is worth visiting / seeing...",ex:"It is worth visiting the Kremlin when you come to Moscow."},
+  {cat:"Путешествия",ru:"Незабываемый опыт",en:"an unforgettable experience",ex:"Visiting the Baikal Lake was an unforgettable experience."},
+  {cat:"Книги/Кино",ru:"Мне нравится читать книги о...",en:"I enjoy reading books about...",ex:"I enjoy reading books about adventures and travel."},
+  {cat:"Книги/Кино",ru:"Я предпочитаю электронные/бумажные книги, потому что...",en:"I prefer e-books / paper books because...",ex:"I prefer paper books because I like the feeling of turning pages."},
+  {cat:"Книги/Кино",ru:"Главное преимущество электронной книги - это...",en:"The main advantage of an e-book is...",ex:"The main advantage of an e-book is that you can store many books in one device."},
+  {cat:"Книги/Кино",ru:"Читать книгу лучше, чем смотреть экранизацию",en:"Reading a book is better than watching its film adaptation",ex:"I think reading a book is better than watching its film adaptation."},
+  {cat:"Праздники",ru:"Мой любимый праздник - это... потому что...",en:"My favourite holiday is... because...",ex:"My favourite holiday is New Year because the whole family gets together."},
+  {cat:"Праздники",ru:"Мы отмечаем этот праздник...",en:"We celebrate this holiday by...",ex:"We celebrate this holiday by decorating the house and exchanging gifts."},
+  {cat:"Праздники",ru:"Обменивать подарки",en:"to exchange presents / gifts",ex:"On New Year we exchange presents and have a big family dinner."},
+  {cat:"Праздники",ru:"Самый лучший подарок, который я получал(а)...",en:"The best present I have ever received...",ex:"The best present I have ever received was a bicycle."},
+  {cat:"Семья",ru:"В нашей семье есть традиция...",en:"In our family we have a tradition of...",ex:"In our family we have a tradition of having Sunday dinner together."},
+  {cat:"Семья",ru:"Я помогаю родителям по дому...",en:"I help my parents around the house by...",ex:"I help my parents around the house by washing the dishes."},
+  {cat:"Семья",ru:"Дети должны помогать родителям, потому что...",en:"Children should help their parents because...",ex:"Children should help their parents because it teaches responsibility."},
+  {cat:"Семья",ru:"Проводить время вместе",en:"to spend time together",ex:"I enjoy spending time together with my family at weekends."},
+  {cat:"Профессия",ru:"В будущем я хочу стать...",en:"In the future I would like to become...",ex:"In the future I would like to become an engineer."},
+  {cat:"Профессия",ru:"Английский язык будет полезен в моей карьере, потому что...",en:"English will be useful for my career because...",ex:"English will be useful for my career because most companies work internationally."},
+  {cat:"Профессия",ru:"Мои родители советуют мне стать...",en:"My parents advise me to become...",ex:"My parents advise me to become a doctor."},
+  {cat:"Профессия",ru:"Хорошие способности к...",en:"to be good at...",ex:"I am good at Mathematics and Science."},
+  {cat:"Животные",ru:"Домашние животные популярны в России",en:"Pets are popular in Russia",ex:"Pets are popular in Russia - many families have cats or dogs."},
+  {cat:"Животные",ru:"Я одобряю / не одобряю содержание экзотических животных",en:"I approve / disapprove of keeping exotic pets",ex:"I disapprove of keeping exotic pets because it is cruel."},
+  {cat:"Животные",ru:"Дикие животные должны жить на свободе",en:"Wild animals should live in the wild",ex:"I think wild animals should live in the wild, not in zoos."},
+  {cat:"Языки",ru:"Мне труднее всего дается... в английском",en:"I find ... most difficult in English",ex:"I find grammar most difficult in English."},
+  {cat:"Языки",ru:"Чтобы улучшить свой английский, я...",en:"To improve my English, I...",ex:"To improve my English, I watch films in English and read books."},
+  {cat:"Языки",ru:"Лучший способ учить иностранный язык - это...",en:"The best way to learn a foreign language is...",ex:"The best way to learn a foreign language is to speak with native speakers."},
+  {cat:"Языки",ru:"Помимо английского, я бы хотел(а) выучить...",en:"Apart from English, I would like to learn...",ex:"Apart from English, I would like to learn Spanish."},
+  {cat:"Экзамены",ru:"Готовиться к экзамену...",en:"to prepare for an exam / to revise for an exam",ex:"I revise for my English exam by doing practice tests."},
+  {cat:"Экзамены",ru:"Я планирую сдавать следующие экзамены...",en:"I am going to take the following exams...",ex:"I am going to take exams in English, Maths and Russian."},
+  {cat:"Экзамены",ru:"Чтобы не нервничать перед экзаменом, я...",en:"To stay calm before exams, I...",ex:"To stay calm before exams, I take deep breaths and think positively."},
+  {cat:"Музыка",ru:"Мне нравится слушать музыку, потому что...",en:"I enjoy listening to music because...",ex:"I enjoy listening to music because it helps me relax."},
+  {cat:"Музыка",ru:"Я бы хотел(а) научиться играть на...",en:"I would like to learn to play...",ex:"I would like to learn to play the guitar."},
+  {cat:"Музыка",ru:"Уроки музыки необходимы в школе, потому что...",en:"Music lessons are necessary at school because...",ex:"Music lessons are necessary at school because they develop creativity."}
+];
+
+let currentMode='flash', currentCat='Все', filtered=[], flashIdx=0, flashCorrect=0, flashFlipped=false;
+let matchSelected=null, matchScore=0, matchRound=0;
+let writeIdx=0, writeCorrect=0;
+let apiKey=localStorage.getItem('oge_api_key')||'';
+
+(function init(){
+  if(!apiKey) document.getElementById('api-note').classList.add('on');
+  const cats=['Все',...new Set(PHRASES.map(p=>p.cat))];
+  const bar=document.getElementById('filter-bar');
+  cats.forEach(c=>{
+    const b=document.createElement('button');
+    b.className='filter-btn'+(c==='Все'?' active':'');
+    b.textContent=c;
+    b.onclick=()=>{currentCat=c;document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active'));b.classList.add('active');applyFilter();};
+    bar.appendChild(b);
+  });
+  applyFilter();
+})();
+
+function shuffle(arr){for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]];}return arr;}
+
+function applyFilter(){
+  filtered=currentCat==='Все'?[...PHRASES]:PHRASES.filter(p=>p.cat===currentCat);
+  shuffle(filtered);
+  document.getElementById('stats-bar').innerHTML='Фраз: <span>'+filtered.length+'</span>';
+  if(currentMode==='flash')startFlash();
+  else if(currentMode==='match')startMatch();
+  else startWrite();
+}
+
+function setMode(mode,btn){
+  currentMode=mode;
+  document.querySelectorAll('.mode-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+mode).classList.add('active');
+  if(mode==='flash')startFlash();else if(mode==='match')startMatch();else startWrite();
+}
+
+// FLASH
+function startFlash(){flashIdx=0;flashCorrect=0;flashFlipped=false;document.getElementById('flash-result').classList.remove('on');document.getElementById('card-nav').style.display='none';showFlashCard();}
+function showFlashCard(){
+  if(flashIdx>=filtered.length){endFlash();return;}
+  const p=filtered[flashIdx];
+  document.getElementById('card-ru').textContent=p.ru;
+  document.getElementById('card-en').textContent=p.en;
+  document.getElementById('card-example').textContent=p.ex;
+  document.getElementById('card-cat-f').textContent=p.cat;
+  document.getElementById('card-cat-b').textContent=p.cat;
+  document.getElementById('flashcard').classList.remove('flipped');
+  document.getElementById('card-nav').style.display='none';
+  flashFlipped=false;
+  document.getElementById('flash-progress').style.width=(flashIdx/filtered.length*100)+'%';
+  document.getElementById('flash-counter').textContent=(flashIdx+1)+' / '+filtered.length;
+}
+function flipCard(){if(!flashFlipped){document.getElementById('flashcard').classList.add('flipped');document.getElementById('card-nav').style.display='flex';flashFlipped=true;}}
+function cardAnswer(knew){if(knew)flashCorrect++;flashIdx++;showFlashCard();}
+function endFlash(){
+  const pct=Math.round(flashCorrect/filtered.length*100);
+  const el=document.getElementById('flash-result');
+  document.getElementById('flash-score').textContent=flashCorrect+'/'+filtered.length;
+  document.getElementById('flash-score').className='result-score'+(pct>=80?' perfect':pct>=50?' good':' bad');
+  document.getElementById('flash-text').textContent=pct>=80?'Отлично! Фразы хорошо усвоены.':pct>=50?'Неплохо, но есть над чем поработать.':'Нужно ещё потренироваться!';
+  el.classList.add('on');
+  document.getElementById('flash-progress').style.width='100%';
+}
+
+// MATCH
+function startMatch(){matchScore=0;matchRound=0;matchSelected=null;document.getElementById('match-result').classList.remove('on');document.getElementById('match-score').textContent='0';nextMatchRound();}
+function nextMatchRound(){
+  const area=document.getElementById('match-area');
+  const pool=filtered.slice(matchRound*5,matchRound*5+5);
+  if(pool.length<2){endMatch();return;}
+  document.getElementById('match-total').textContent=Math.min(filtered.length,(matchRound+1)*5);
+  const rus=shuffle([...pool]);const eng=shuffle([...pool]);
+  area.innerHTML='';
+  const cols=document.createElement('div');cols.className='match-cols';
+  const colL=document.createElement('div');colL.className='match-col';
+  const colR=document.createElement('div');colR.className='match-col';
+  rus.forEach(p=>{const el=document.createElement('div');el.className='match-item';el.textContent=p.ru;el.dataset.id=p.ru;el.dataset.type='ru';el.onclick=()=>matchClick(el);colL.appendChild(el);});
+  eng.forEach(p=>{const el=document.createElement('div');el.className='match-item';el.textContent=p.en;el.dataset.id=p.ru;el.dataset.type='en';el.onclick=()=>matchClick(el);colR.appendChild(el);});
+  cols.appendChild(colL);cols.appendChild(colR);area.appendChild(cols);
+}
+function matchClick(el){
+  if(el.classList.contains('correct'))return;
+  if(!matchSelected){el.classList.add('selected');matchSelected=el;return;}
+  if(matchSelected===el){el.classList.remove('selected');matchSelected=null;return;}
+  if(matchSelected.dataset.type===el.dataset.type){matchSelected.classList.remove('selected');document.querySelectorAll('.match-item.selected').forEach(x=>{if(x!==el)x.classList.remove('selected');});matchSelected=el;el.classList.add('selected');return;}
+  if(matchSelected.dataset.id===el.dataset.id){
+    matchSelected.classList.remove('selected');matchSelected.classList.add('correct');el.classList.add('correct');matchScore++;document.getElementById('match-score').textContent=matchScore;matchSelected=null;
+    const items=document.querySelectorAll('.match-item');
+    if(Array.from(items).every(x=>x.classList.contains('correct'))){matchRound++;setTimeout(nextMatchRound,600);}
+  } else {
+    el.classList.add('wrong');matchSelected.classList.add('wrong');matchSelected.classList.remove('selected');
+    const prev=matchSelected;setTimeout(()=>{el.classList.remove('wrong');prev.classList.remove('wrong');matchSelected=null;},600);
+  }
+}
+function endMatch(){
+  const pct=Math.round(matchScore/filtered.length*100);
+  document.getElementById('match-result-score').textContent=matchScore+'/'+filtered.length;
+  document.getElementById('match-result-score').className='result-score'+(pct>=80?' perfect':pct>=50?' good':' bad');
+  document.getElementById('match-result-text').textContent=pct>=80?'Отлично! Все пары найдены.':pct>=50?'Хороший результат!':'Попробуй ещё раз!';
+  document.getElementById('match-result').classList.add('on');
+}
+
+// WRITE
+function startWrite(){writeIdx=0;writeCorrect=0;document.getElementById('write-result').classList.remove('on');showWriteCard();}
+function showWriteCard(){
+  if(writeIdx>=filtered.length){endWrite();return;}
+  const p=filtered[writeIdx];
+  const pct=writeIdx/filtered.length*100;
+  document.getElementById('write-progress').style.width=pct+'%';
+  document.getElementById('write-counter').textContent=(writeIdx+1)+' / '+filtered.length+' - '+p.cat;
+  const wrap=document.getElementById('write-card-wrap');
+  wrap.innerHTML='<div class="write-card"><div class="write-prompt">'+p.ru+'</div><div class="write-input-wrap"><textarea class="write-input" id="w-inp" placeholder="Write in English..." rows="2"></textarea><div class="mini-loader" id="w-load"><div class="mini-spin"></div>Checking...</div><button class="write-check-btn" id="w-btn" onclick="checkWrite()">Check</button><div class="write-result" id="w-res"><div class="write-result-verdict" id="w-verdict"></div><div class="write-result-answer" id="w-answer"></div><div class="write-result-example" id="w-ex"></div><button class="write-next-btn" onclick="nextWrite()">Next phrase -></button></div></div></div>';
+  document.getElementById('w-inp').addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();checkWrite();}});
+}
+async function checkWrite(){
+  const inp=document.getElementById('w-inp').value.trim();if(!inp)return;
+  const p=filtered[writeIdx];
+  document.getElementById('w-btn').disabled=true;
+  document.getElementById('w-load').classList.add('on');
+  let verdict,cls,isCorrect=false;
+  if(apiKey){
+    try{
+      const r=await fetch('https://purple-cake-2966.o-sintsova.workers.dev',{method:'POST',headers:{'Content-Type':'application/json','anthropic-version':'2023-06-01','x-api-key':apiKey},body:JSON.stringify({model:'claude-haiku-4-5-20251001',max_tokens:200,system:'You evaluate English phrase translations. Return ONLY valid JSON, no markdown.',messages:[{role:'user',content:'Russian: "'+p.ru+'"\nCorrect English: "'+p.en+'"\nStudent wrote: "'+inp+'"\n\nReturn JSON: {"correct":true/false,"perfect":true/false,"feedback":"<1 sentence in Russian>"}\ncorrect=true if meaning is right even with minor differences.'}]})});
+      if(!r.ok)throw new Error('HTTP '+r.status);
+      const d=await r.json();
+      if(d.error)throw new Error(d.error.message);
+      const res=JSON.parse(d.content[0].text.replace(/```json|```/g,'').trim());
+      isCorrect=res.correct;verdict=res.feedback;cls=res.correct?(res.perfect?'perfect':'good'):'retry';
+    }catch(e){isCorrect=simpleCheck(inp,p.en);verdict=isCorrect?'Правильно!':'Не совсем верно.';cls=isCorrect?'perfect':'retry';}
+  } else {
+    isCorrect=simpleCheck(inp,p.en);verdict=isCorrect?'Правильно! (без AI-проверки)':'Не точно. Посмотри правильный ответ.';cls=isCorrect?'perfect':'retry';
+  }
+  if(isCorrect)writeCorrect++;
+  document.getElementById('w-load').classList.remove('on');
+  document.getElementById('w-btn').style.display='none';
+  document.getElementById('w-verdict').className='write-result-verdict '+cls;
+  document.getElementById('w-verdict').textContent=verdict;
+  document.getElementById('w-answer').textContent='Правильно: '+p.en;
+  document.getElementById('w-ex').textContent=p.ex;
+  document.getElementById('w-res').classList.add('on');
+}
+function simpleCheck(a,b){
+  const x=a.toLowerCase().replace(/[.,!?]/g,'').trim();
+  const y=b.toLowerCase().replace(/[.,!?]/g,'').trim();
+  if(x===y)return true;
+  const bw=y.split(' ');const aw=x.split(' ');
+  return bw.filter(w=>aw.includes(w)).length/bw.length>=0.7;
+}
+function nextWrite(){writeIdx++;showWriteCard();}
+function endWrite(){
+  const pct=Math.round(writeCorrect/filtered.length*100);
+  document.getElementById('write-result-score').textContent=writeCorrect+'/'+filtered.length;
+  document.getElementById('write-result-score').className='result-score'+(pct>=80?' perfect':pct>=50?' good':' bad');
+  document.getElementById('write-result-text').textContent=pct>=80?'Отлично! Фразы хорошо запомнились.':pct>=50?'Хороший прогресс!':'Нужно больше практики.';
+  document.getElementById('write-result').classList.add('on');
+  document.getElementById('write-card-wrap').innerHTML='';
+}
+</script>
+</body>
+</html>
