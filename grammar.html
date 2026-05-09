@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ОГЭ Grammar & Lexis</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --black: #0a0a0a; --white: #fff;
+  --g1: #f4f4f4; --g2: #e8e8e8; --g3: #c0c0c0; --g4: #888; --g5: #444;
+  --green: #1a7a4a; --green-bg: #e8f5ee;
+  --red: #c0392b; --red-bg: #fdf0ee;
+  --orange: #d4600a; --orange-bg: #fef3e8;
+}
+body { font-family: 'IBM Plex Sans', sans-serif; background: #fff; color: var(--black); font-size: 14px; min-height: 100vh; }
+nav { border-bottom: 2px solid var(--black); display: flex; align-items: center; padding: 0 16px; height: 52px; position: sticky; top: 0; background: #fff; z-index: 100; }
+.nav-logo { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 13px; margin-right: 16px; }
+.nav-logo span { color: var(--g3); }
+.nav-tab { height: 52px; padding: 0 14px; border: none; background: none; font-family: 'IBM Plex Sans', sans-serif; font-size: 12px; font-weight: 600; color: var(--g4); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -2px; transition: all .15s; text-transform: uppercase; }
+.nav-tab:hover { color: var(--black); }
+.nav-tab.active { color: var(--black); border-bottom-color: var(--black); }
+.page { display: none; padding: 16px 16px 80px; max-width: 680px; margin: 0 auto; }
+.page.active { display: block; }
+.tracker-header { margin-bottom: 16px; }
+.tracker-title { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+.tracker-sub { font-size: 13px; color: var(--g4); }
+.tracker-progress { background: var(--g2); border-radius: 4px; height: 6px; margin: 12px 0 4px; }
+.tracker-progress-fill { height: 100%; background: var(--black); border-radius: 4px; transition: width .5s; }
+.tracker-pct { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--g4); text-align: right; }
+.tracker-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; margin-bottom: 20px; }
+.tracker-day { aspect-ratio: 1; border: 1.5px solid var(--g2); border-radius: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; transition: all .15s; font-size: 11px; font-family: 'IBM Plex Mono', monospace; }
+.tracker-day:hover { border-color: var(--black); }
+.tracker-day.today { border-color: var(--black); border-width: 2px; font-weight: 700; }
+.tracker-day.done { background: var(--green); border-color: var(--green); color: #fff; }
+.tracker-day.partial { background: var(--orange-bg); border-color: var(--orange); color: var(--orange); }
+.tracker-day.future { opacity: .4; cursor: default; }
+.tracker-day-num { font-size: 13px; font-weight: 700; }
+.tracker-day-score { font-size: 9px; margin-top: 1px; }
+.stats-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 20px; }
+.stat-box { border: 1.5px solid var(--g2); border-radius: 8px; padding: 12px; text-align: center; }
+.stat-num { font-family: 'IBM Plex Mono', monospace; font-size: 28px; font-weight: 600; }
+.stat-label { font-size: 11px; color: var(--g4); margin-top: 3px; }
+.day-card { border: 2px solid var(--black); border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+.day-card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+.day-card-title { font-size: 16px; font-weight: 700; }
+.day-card-sub { font-size: 12px; color: var(--g4); margin-top: 3px; }
+.day-card-badge { font-family: 'IBM Plex Mono', monospace; font-size: 11px; padding: 4px 10px; border-radius: 20px; background: var(--g1); color: var(--g5); }
+.day-card-badge.done { background: var(--green-bg); color: var(--green); }
+.variant-btns { display: flex; gap: 8px; }
+.variant-btn { flex: 1; padding: 10px; border: 1.5px solid var(--g2); border-radius: 6px; background: #fff; font-family: 'IBM Plex Sans', sans-serif; font-size: 13px; font-weight: 700; cursor: pointer; color: var(--g5); transition: all .15s; text-align: center; }
+.variant-btn:hover { border-color: var(--black); color: var(--black); }
+.variant-btn.done { border-color: var(--green); color: var(--green); background: var(--green-bg); }
+.task-type-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--g4); margin-bottom: 8px; }
+.task-text-block { background: var(--g1); border-radius: 8px; padding: 14px 16px; margin-bottom: 14px; }
+.task-sentence { display: flex; gap: 10px; align-items: baseline; margin-bottom: 12px; }
+.task-num { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--g4); width: 24px; flex-shrink: 0; margin-top: 2px; }
+.task-body { flex: 1; font-size: 14px; line-height: 1.6; }
+.task-base { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--black); background: var(--g2); padding: 2px 6px; border-radius: 3px; margin-left: 6px; white-space: nowrap; }
+.task-input { border: 1.5px solid var(--g2); border-radius: 5px; padding: 7px 10px; font-family: 'IBM Plex Sans', sans-serif; font-size: 13px; color: var(--black); width: 100%; margin-top: 6px; transition: border-color .15s; }
+.task-input:focus { outline: none; border-color: var(--black); }
+.task-input.correct { border-color: var(--green); background: var(--green-bg); color: var(--green); font-weight: 600; }
+.task-input.wrong { border-color: var(--red); background: var(--red-bg); color: var(--red); }
+.task-feedback { font-size: 12px; margin-top: 5px; display: none; padding: 6px 10px; border-radius: 5px; }
+.task-feedback.on { display: block; }
+.task-feedback.correct { background: var(--green-bg); color: var(--green); }
+.task-feedback.wrong { background: var(--red-bg); color: var(--red); }
+.task-answer { font-weight: 700; }
+.task-explain { margin-top: 2px; opacity: .8; }
+.btn-main { width: 100%; padding: 13px; background: var(--black); color: #fff; border: none; border-radius: 6px; font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; font-weight: 700; cursor: pointer; transition: all .15s; margin-top: 12px; }
+.btn-main:hover { background: var(--g5); }
+.btn-main:disabled { background: var(--g2); color: var(--g3); cursor: not-allowed; }
+.btn-secondary { width: 100%; padding: 11px; background: #fff; color: var(--black); border: 1.5px solid var(--black); border-radius: 6px; font-family: 'IBM Plex Sans', sans-serif; font-size: 13px; font-weight: 700; cursor: pointer; transition: all .15s; margin-top: 8px; }
+.btn-secondary:hover { background: var(--g1); }
+.result-banner { border-radius: 8px; padding: 16px; margin-top: 14px; display: none; }
+.result-banner.on { display: block; }
+.result-banner.perfect { background: var(--green-bg); border: 1.5px solid var(--green); }
+.result-banner.good { background: var(--orange-bg); border: 1.5px solid var(--orange); }
+.result-banner.bad { background: var(--red-bg); border: 1.5px solid var(--red); }
+.result-score-big { font-family: 'IBM Plex Mono', monospace; font-size: 40px; font-weight: 600; }
+.result-score-big.g { color: var(--green); } .result-score-big.m { color: var(--orange); } .result-score-big.b { color: var(--red); }
+.result-msg { font-size: 15px; font-weight: 600; margin-top: 4px; }
+.result-msg.g { color: var(--green); } .result-msg.m { color: var(--orange); } .result-msg.b { color: var(--red); }
+.loader { display: none; align-items: center; gap: 8px; font-size: 12px; color: var(--g4); padding: 8px 0; }
+.loader.on { display: flex; }
+.spin { width: 14px; height: 14px; border: 2px solid var(--g2); border-top-color: var(--black); border-radius: 50%; animation: spin .6s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-logo">OGE<span>/</span>EN</div>
+  <button class="nav-tab active" onclick="gotoPage('tracker',this)">Трекер</button>
+  <button class="nav-tab" onclick="gotoPage('practice',this)">Практика</button>
+  <button class="nav-tab" onclick="location.href='index.html'">Writing</button>
+  <button class="nav-tab" onclick="location.href='phrases.html'">Phrases</button>
+</nav>
+
+<div class="page active" id="page-tracker">
+  <div class="tracker-header">
+    <div class="tracker-title">30-дневный план подготовки</div>
+    <div class="tracker-sub">Грамматика и лексика ОГЭ · 2 варианта в день</div>
+    <div class="tracker-progress"><div class="tracker-progress-fill" id="tracker-fill"></div></div>
+    <div class="tracker-pct" id="tracker-pct"></div>
+  </div>
+  <div class="stats-grid">
+    <div class="stat-box"><div class="stat-num" id="stat-done">0</div><div class="stat-label">Дней пройдено</div></div>
+    <div class="stat-box"><div class="stat-num" id="stat-avg">-</div><div class="stat-label">Средний балл</div></div>
+    <div class="stat-box"><div class="stat-num" id="stat-streak">0</div><div class="stat-label">Дней подряд</div></div>
+  </div>
+  <div class="tracker-grid" id="tracker-grid"></div>
+  <div class="day-card" id="today-card">
+    <div class="day-card-header">
+      <div>
+        <div class="day-card-title" id="today-title">День 1</div>
+        <div class="day-card-sub" id="today-sub">Варианты 1-2</div>
+      </div>
+      <div class="day-card-badge" id="today-badge">Сегодня</div>
+    </div>
+    <div class="variant-btns">
+      <div class="variant-btn" id="v-btn-1">Вариант 1</div>
+      <div class="variant-btn" id="v-btn-2">Вариант 2</div>
+    </div>
+  </div>
+</div>
+
+<div class="page" id="page-practice">
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+    <button onclick="gotoPage('tracker',document.querySelector('.nav-tab'))" style="border:none;background:none;font-size:22px;cursor:pointer;padding:0;line-height:1">back</button>
+    <div>
+      <div style="font-size:16px;font-weight:700" id="practice-title">Вариант 1</div>
+      <div style="font-size:12px;color:var(--g4)" id="practice-sub">Задания 20-34</div>
+    </div>
+  </div>
+  <div class="task-type-label">Задания 20-28 - Грамматика</div>
+  <div class="task-text-block" id="grammar-text"></div>
+  <div class="task-type-label" style="margin-top:4px">Задания 29-34 - Лексика (словообразование)</div>
+  <div class="task-text-block" id="lexis-text"></div>
+  <div class="loader" id="check-loader"><div class="spin"></div>Проверяю...</div>
+  <button class="btn-main" id="check-btn" onclick="checkAnswers()">Проверить все ответы</button>
+  <div class="result-banner" id="result-banner">
+    <div style="display:flex;align-items:center;gap:16px">
+      <div class="result-score-big" id="res-score"></div>
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--g4)">/15 заданий</div>
+        <div class="result-msg" id="res-msg"></div>
+      </div>
+    </div>
+  </div>
+  <button class="btn-secondary" id="done-btn" style="display:none" onclick="gotoPage('tracker',document.querySelector('.nav-tab'))">Завершить вариант - вернуться к трекеру</button>
+</div>
+
+<script>
+const VARIANTS=[{id:1,topic:"Нью-Йорк / Честер",grammar:{text:"Driving to the airport in early morning, Nick and Ron were excited. As it was their [20] journey abroad without parents they felt excited and a bit nervous.\n\nThey [21] in New York at about 10 p.m., and decided to go ahead and get some sight-seeing out of the way.\n\nWhen they settled on the Empire State Building, the 86th floor was [22] than they had expected.\n\nNevertheless, they got the [23] view of the city.\n\nThe rain [24] when they woke up the next morning.\n\nThe boys enjoyed [25] all the people and the street performers.\n\nThat's why it [26] the city that never sleeps.\n\nNick said: New York is the best place I [27].\n\nNick thought: I wish we [28] more time in that amazing city!",tasks:[{num:20,base:"ONE",answer:"first",explain:"ONE -> first (порядковое числительное)"},{num:21,base:"ARRIVE",answer:"arrived",explain:"Past Simple: arrived (приехали)"},{num:22,base:"WINDY",answer:"windier",explain:"Сравнительная степень: windier than"},{num:23,base:"GREAT",answer:"greatest",explain:"Превосходная степень: the greatest"},{num:24,base:"POUR",answer:"was pouring",explain:"Past Continuous: was pouring (шел дождь)"},{num:25,base:"WATCH",answer:"watching",explain:"enjoyed + gerund: watching"},{num:26,base:"CALL",answer:["is called","was called","'s called"],explain:"Пассивный залог: is called / was called"},{num:27,base:"SEE",answer:["have seen","'ve seen"],explain:"Present Perfect опыт: have seen"},{num:28,base:"SPEND",answer:["spent","would spend","'d spend"],explain:"I wish + Past Simple: spent"}]},lexis:{text:"Last weekend we enjoyed a city break in Chester, the [29] ancient medieval town.\n\nThe heart of town is the [30] of Victorian, Tudor and Gothic times.\n\nThe Cheshire cat who [31] disappears in Lewis Carol's books about Alice.\n\nIt is a small [32] town ideal for walking.\n\nThis part of the town dates back to its [33] as a fortress.\n\nOur [34] city holiday was relaxing and fun.",tasks:[{num:29,base:"HISTORY",answer:"historic",explain:"HISTORY -> historic (исторический)"},{num:30,base:"ARCHITECT",answer:"architecture",explain:"ARCHITECT -> architecture (архитектура)"},{num:31,base:"SLOW",answer:"slowly",explain:"SLOW -> slowly (медленно, наречие)"},{num:32,base:"CONVENIENCE",answer:"convenient",explain:"CONVENIENCE -> convenient (удобный)"},{num:33,base:"FOUND",answer:"foundation",explain:"FOUND -> foundation (основание)"},{num:34,base:"ENJOY",answer:"enjoyable",explain:"ENJOY -> enjoyable (приятный)"}]}},{id:2,topic:"Смитсоновский музей / Вашингтон",grammar:{text:"The National Museum of Natural History is the [20] museum and research complex in the world.\n\nThe Museum [21] to inspiring curiosity and learning about the natural world.\n\nOpened in 1910, the museum on the National Mall was the [22] Smithsonian building.\n\nThere [23] different exhibitions that educate and entertain millions of visitors each year.\n\nMany exhibits [24] during scientific expeditions.\n\nSince 1910 the National Museum of Natural History [25] out research all over the world.\n\nAs people say soon it [26] even bigger.\n\nDuring World War I, American Special Forces [27] the building from 1917 to 1919.\n\nThe museum [28] a source of pride for all Americans.",tasks:[{num:20,base:"OUTSTANDING",answer:"most outstanding",explain:"Превосходная степень: the most outstanding"},{num:21,base:"DEDICATE",answer:"is dedicated",explain:"Пассивный залог Present Simple: is dedicated"},{num:22,base:"ONE",answer:"first",explain:"ONE -> first (порядковое числительное)"},{num:23,base:"BE",answer:"are",explain:"Present Simple, множ.ч.: there are"},{num:24,base:"GATHER",answer:"were gathered",explain:"Пассивный залог Past Simple: were gathered"},{num:25,base:"CARRY",answer:["has carried","'s carried"],explain:"Present Perfect (since 1910): has carried out"},{num:26,base:"BECOME",answer:["will become","'ll become","is going to become"],explain:"Future Simple: will become"},{num:27,base:"OCCUPY",answer:"occupied",explain:"Past Simple Active: occupied (заняли)"},{num:28,base:"SERVE",answer:"serves",explain:"Present Simple 3 л.: serves (служит)"}]},lexis:{text:"Washington DC is [29] for its National Mall.\n\nWhen Hungerford died [30] in 1835 he left everything to the United States of America.\n\nFive other Smithsonian museums and the [31] Zoo are also located in Washington.\n\nThe National Air and Space Museum holds the largest [32] of historic aircraft and spacecraft in the world.\n\nIt opened its main [33] in 1976.\n\nThe museum is [34] famous among American children.",tasks:[{num:29,base:"FAME",answer:"famous",explain:"FAME -> famous (знаменитый)"},{num:30,base:"CHILD",answer:"childless",explain:"CHILD -> childless (бездетный, суффикс -less)"},{num:31,base:"NATION",answer:"national",explain:"NATION -> national (национальный)"},{num:32,base:"COLLECT",answer:"collection",explain:"COLLECT -> collection (коллекция)"},{num:33,base:"BUILD",answer:"building",explain:"BUILD -> building (здание)"},{num:34,base:"WIDE",answer:"widely",explain:"WIDE -> widely (широко, наречие)"}]}},{id:3,topic:"Британская и американская литература",grammar:{text:"The easiest way to understand the nation is to read the books of [20] authors.\n\nHow can we imagine British [21] without that special humor of British writers!\n\nThis humor [22] you laugh, but smile!\n\nOf course, the most well-known playwright [23] William Shakespeare.\n\nOscar Wilde successfully [24] the traditions of British drama.\n\nAs for American literature, it is [25] than British.\n\nBenjamin Franklin is considered by Americans as [26] founding father.\n\nErnest Hemingway is one of the most famous writers of the [27] century.\n\nTo win, a man has to learn to win [28] first.",tasks:[{num:20,base:"IT",answer:"its",explain:"Притяжательное местоимение: its (его, страны)"},{num:21,base:"PERSON",answer:"people",explain:"person -> people (нерегулярное множественное)"},{num:22,base:"NOT/MAKE",answer:["does not make","doesn't make","will not make","won't make"],explain:"Отрицание Present Simple: does not make"},{num:23,base:"BE",answer:"is",explain:"Present Simple: the playwright is Shakespeare"},{num:24,base:"CONTINUE",answer:"continued",explain:"Past Simple: continued (продолжил)"},{num:25,base:"YOUNG",answer:"younger",explain:"Сравнительная степень: younger than"},{num:26,base:"THEY",answer:"their",explain:"Притяжательное местоимение: their founding father"},{num:27,base:"TWENTY",answer:"twentieth",explain:"Порядковое: the twentieth century"},{num:28,base:"HE",answer:"himself",explain:"Возвратное местоимение: win himself"}]},lexis:{text:"If we want to find out the most prominent [29] character features, we have to speak to the people.\n\nBritish people are known to be [30] but in a special way.\n\nUnlike British authors, a typical American [31] is often more straight and serious.\n\nThe most popular topic is the [32] of a man to survive in difficult situations.\n\nIn many books we read that to be a [33], a man must believe in it.\n\nAn effort of one man can make the lives of many other people [34].",tasks:[{num:29,base:"NATION",answer:"national",explain:"NATION -> national (национальный)"},{num:30,base:"HUMOUR",answer:"humorous",explain:"HUMOUR -> humorous (с чувством юмора)"},{num:31,base:"WRITE",answer:"writer",explain:"WRITE -> writer (писатель, суффикс -er)"},{num:32,base:"ABLE",answer:"ability",explain:"ABLE -> ability (способность)"},{num:33,base:"WIN",answer:"winner",explain:"WIN -> winner (победитель, суффикс -er)"},{num:34,base:"DIFFER",answer:"different",explain:"DIFFER -> different (другим, прилагательное)"}]}},{id:4,topic:"Дед Мороз / Золотое кольцо",grammar:{text:"Grandfather Frost brings gifts to [20] on New Year's Eve.\n\nCountry people did not know what he liked [21], but they knew his strong personality well.\n\nSo people [22] gifts of food for the Frost.\n\nOne of [23] runs that once there was a woman who had both a daughter and a step-daughter.\n\nThe woman hoped the girl [24].\n\nThe Frost gave the girl diamonds. After a while, the stepmother sent the [25] father to bring back her body, but the girl came back happy.\n\nWhen the stepmother saw what she [26] she had an idea.\n\nShe said: If you take my daughter out she [27] even more diamonds.\n\nBut the girl was rude to the Frost and [28] to death.",tasks:[{num:20,base:"CHILD",answer:"children",explain:"Нерегулярное множественное: child -> children"},{num:21,base:"EAT",answer:["eating","to eat"],explain:"after liked: gerund или infinitive (eating / to eat)"},{num:22,base:"LEAVE",answer:"left",explain:"Past Simple: left (оставили)"},{num:23,base:"THEY",answer:"them",explain:"one of them (объектный падеж)"},{num:24,base:"DIE",answer:["would die","'d die"],explain:"Косвенная речь: hoped that the girl would die"},{num:25,base:"GIRL",answer:"girl's",explain:"Притяжательный падеж: the girl's father"},{num:26,base:"BRING",answer:["had brought","'d brought"],explain:"Past Perfect: had brought (до момента в прошлом)"},{num:27,base:"GET",answer:["will get","'ll get"],explain:"Future Simple в условном: she will get"},{num:28,base:"FREEZE",answer:["was frozen","froze"],explain:"Пассивный залог или Past Simple: was frozen / froze"}]},lexis:{text:"Russian culture has a rich history and strong traditions, [29] when it comes to literature and music.\n\nIt is [30] to understand Russian culture without visiting small Russian towns.\n\nIf you travel along the Golden Ring you should see Alexandrov, a [31] town with ancient history.\n\nThousands of tourists come to see its Kremlin which was built by [32] craftsmen.\n\nIt was second only to the Kremlin in Moscow in size, beauty and [33].\n\nThe Trinity Cathedral was the most magnificent [34] of the Kremlin.",tasks:[{num:29,base:"PARTICULAR",answer:"particularly",explain:"PARTICULAR -> particularly (особенно, наречие)"},{num:30,base:"POSSIBLE",answer:"impossible",explain:"POSSIBLE -> impossible (невозможно, префикс im-)"},{num:31,base:"CHARM",answer:"charming",explain:"CHARM -> charming (очаровательный)"},{num:32,base:"ITALY",answer:"Italian",explain:"ITALY -> Italian (итальянский)"},{num:33,base:"RICH",answer:"richness",explain:"RICH -> richness (богатство, суффикс -ness)"},{num:34,base:"BUILD",answer:"building",explain:"BUILD -> building (здание)"}]}},{id:5,topic:"Изучение английского языка",grammar:{text:"I love [20] English, so I use any opportunity to do it.\n\nActually, I [21] English since my primary school.\n\nBut I [22] my eleven-year English learning is very effective.\n\nWhen I [23] primary school, all I had learnt was very limited vocabulary.\n\nIn high school, [24] English classes consisted of very easy listening practice.\n\nThings that I [25] in Singapore were totally different.\n\nI was suddenly exposed to [26] English than I had studied before.\n\nOur tutors explained to us how to write academic [27] on our own.\n\nThat was the [28] time I had to think in English.",tasks:[{num:20,base:"SPEAK",answer:["speaking","to speak"],explain:"after love: gerund или infinitive"},{num:21,base:"STUDY",answer:["have studied","have been studying","'ve studied","'ve been studying"],explain:"Present Perfect (since): have studied / have been studying"},{num:22,base:"NOT/THINK",answer:["do not think","don't think"],explain:"Present Simple отрицание: don't think"},{num:23,base:"LEAVE",answer:"left",explain:"Past Simple: when I left primary school"},{num:24,base:"WE",answer:"our",explain:"Притяжательное местоимение: our English classes"},{num:25,base:"TEACH",answer:"was taught",explain:"Пассивный залог Past Simple: was taught"},{num:26,base:"ADVANCED",answer:"more advanced",explain:"Сравнительная степень: more advanced than"},{num:27,base:"ESSAY",answer:"essays",explain:"Множественное число: essays"},{num:28,base:"ONE",answer:"first",explain:"Порядковое числительное: the first time"}]},lexis:{text:"The [29] of English in children's life cannot be denied.\n\nFor young children it is [30] so.\n\nLearning English will help them with reading, [31] math and communication skills.\n\nEnglish is vital in the world of [32].\n\nIf you cannot speak it or write it, you risk appearing ignorant and [33].\n\nLearning English helps children to [34] their true potential.",tasks:[{num:29,base:"IMPORTANT",answer:"importance",explain:"IMPORTANT -> importance (важность)"},{num:30,base:"ESPECIAL",answer:"especially",explain:"ESPECIAL -> especially (особенно, наречие)"},{num:31,base:"BASE",answer:"basic",explain:"BASE -> basic (основной)"},{num:32,base:"BUSY",answer:"business",explain:"BUSY -> business (бизнес)"},{num:33,base:"INTELLIGENT",answer:"unintelligent",explain:"INTELLIGENT -> unintelligent (префикс un-)"},{num:34,base:"REAL",answer:"realise",explain:"REAL -> realise (осознать, реализовать)"}]}},{id:6,topic:"Выбор карьеры / Зоолог",grammar:{text:"Young individuals constantly ask [20]: What should I do in life?\n\nAnd very often they [21] to consider a career in medicine, law or teaching.\n\nMost of the time, such advice [22] from the parents.\n\nMany parents believe that their child [23] financially successful.\n\nThe majority of school leavers wish they [24] become doctors, lawyers and teachers.\n\nIt is hard to find [25] who wish to be painters or charity workers.\n\nCareer choices today [26] wider.\n\nEarlier, school leavers [27] the lack of choices.\n\nBut today they have [28] choices.",tasks:[{num:20,base:"THEY",answer:"themselves",explain:"Возвратное местоимение: ask themselves"},{num:21,base:"ADVISE",answer:["are advised","'re advised"],explain:"Пассивный залог: are advised (им советуют)"},{num:22,base:"COME",answer:"comes",explain:"Present Simple 3 л. ед.ч.: advice comes"},{num:23,base:"BE",answer:["will be","'ll be"],explain:"Future Simple: that their child will be"},{num:24,base:"CAN",answer:"could",explain:"I wish + could (сослагательное наклонение)"},{num:25,base:"THAT",answer:"those",explain:"those who (те, кто)"},{num:26,base:"GET",answer:["are getting","'re getting"],explain:"Present Continuous: are getting wider"},{num:27,base:"FACE",answer:"faced",explain:"Past Simple: Earlier, leavers faced"},{num:28,base:"MANY",answer:"more",explain:"Сравнительная степень: more choices"}]},lexis:{text:"My biology teacher Mr. Kumar had a very interesting [29], which I still remember.\n\nMr. Kumar was a regular [30] to my father's zoo.\n\nThe first time I saw him he looked really [31].\n\nThe two Indian rhinos were a great [32] at the zoo.\n\nMr. Kumar told me facts that I had not known before. [33], my father did not know them either.\n\nThat day I decided to become a [34].",tasks:[{num:29,base:"APPEAR",answer:"appearance",explain:"APPEAR -> appearance (внешность)"},{num:30,base:"VISIT",answer:"visitor",explain:"VISIT -> visitor (посетитель, суффикс -or)"},{num:31,base:"AMAZE",answer:"amazed",explain:"AMAZE -> amazed (поражённый)"},{num:32,base:"ATTRACT",answer:"attraction",explain:"ATTRACT -> attraction (достопримечательность)"},{num:33,base:"SURE",answer:"surely",explain:"SURE -> surely (конечно, наречие)"},{num:34,base:"ZOOLOGY",answer:"zoologist",explain:"ZOOLOGY -> zoologist (зоолог, суффикс -ist)"}]}},{id:7,topic:"Первый день в школе / Новая школа",grammar:{text:"Tom was a little boy, and it was his [20] day at school.\n\nTom [21] to school by Lucy, their housekeeper.\n\nThe boy did not like [22] for taking him to school.\n\nShe wished he [23] to go to school.\n\nSchool [24] strange and frightening like everything new.\n\nMiss Winney, their teacher, suddenly asked Betty Mayers what she [25].\n\nThe next morning Tom [26] a package of Spearmint.\n\nThe boy repeated the word to [27] all day even when he came back home.\n\nTom's father asked: Tell me [28] about your classmates.",tasks:[{num:20,base:"ONE",answer:"first",explain:"Порядковое числительное: the first day"},{num:21,base:"TAKE",answer:"was taken",explain:"Пассивный залог Past Simple: was taken"},{num:22,base:"SHE",answer:"her",explain:"Объектный падеж: did not like her"},{num:23,base:"NOT/HAVE",answer:["did not have","didn't have"],explain:"I wish + Past Simple: wished he didn't have to go"},{num:24,base:"SMELL",answer:["smelt","smelled"],explain:"Past Simple: school smelt / smelled"},{num:25,base:"CHEW",answer:"was chewing",explain:"Past Continuous: what she was chewing"},{num:26,base:"BUY",answer:"bought",explain:"Past Simple: Tom bought"},{num:27,base:"HE",answer:"himself",explain:"Возвратное местоимение: repeated to himself"},{num:28,base:"MUCH",answer:"more",explain:"Сравнительная степень: tell me more"}]},lexis:{text:"Starting with a new school can be a [29]. Everything is so strange.\n\nHere are some [30] tips that can make it easier.\n\nBe yourself. [31] means you never have to change who you are.\n\nJoin after school activities you like, go to an English club [32].\n\nLook for other people who are new to the school. You are both in an [33] environment.\n\nTry to speak [34] to everyone you meet at the new school.",tasks:[{num:29,base:"DIFFICULT",answer:"difficulty",explain:"DIFFICULT -> difficulty (трудность)"},{num:30,base:"USE",answer:"useful",explain:"USE -> useful (полезный, суффикс -ful)"},{num:31,base:"FRIEND",answer:"friendship",explain:"FRIEND -> friendship (дружба, суффикс -ship)"},{num:32,base:"MEET",answer:"meeting",explain:"MEET -> meeting (встреча, собрание)"},{num:33,base:"FAMILIAR",answer:"unfamiliar",explain:"FAMILIAR -> unfamiliar (незнакомый, префикс un-)"},{num:34,base:"KIND",answer:"kindly",explain:"KIND -> kindly (доброжелательно, наречие)"}]}},{id:8,topic:"Школьные годы / Шотландская школьница",grammar:{text:"School days [20] joyful and fun-filled.\n\nIn my school days I had two [21] friends. Every teacher liked us.\n\nSince my childhood, I [22] to anyone for anything.\n\nThe [23] part used to be the exchange of lunch boxes.\n\nSoon we [24] a habit of exchanging lunches.\n\nWe used to play [25] own created games and draw for fun.\n\nWe [26] fun in simple but beautiful things.\n\nThese are sweet [27] of my school and childhood.\n\nI wish God [28] everyone's childhood days as carefree as mine.",tasks:[{num:20,base:"BE",answer:"are",explain:"Present Simple: school days are joyful"},{num:21,base:"GOOD",answer:"best",explain:"Превосходная степень: the best friends"},{num:22,base:"NOT/COMPLAIN",answer:["have not complained","'ve not complained"],explain:"Present Perfect (since childhood): have not complained"},{num:23,base:"EXCITING",answer:"most exciting",explain:"Превосходная степень: the most exciting"},{num:24,base:"DEVELOP",answer:"developed",explain:"Past Simple: we developed a habit"},{num:25,base:"WE",answer:"our",explain:"Притяжательное местоимение: our own games"},{num:26,base:"FIND",answer:"found",explain:"Past Simple: we found fun"},{num:27,base:"MEMORY",answer:"memories",explain:"Множественное число: memories"},{num:28,base:"MAKE",answer:["made","would make","'d make"],explain:"I wish + Past Simple: God made / would make"}]},lexis:{text:"Freya MacDonald, a pupil from Scotland, made the news when she refused to accept her school's [29].\n\nFreya was given detentions for such things as [30] fizzy drinks.\n\nShe said that it is illegal to keep a pupil in the school [31] if the student does not want to be there.\n\nAccording to [32] law every child has the right to an education.\n\n[33], the headmaster and her teachers promised to respect her civil rights.\n\nHundreds of schools were told not to use detention because of Freya's legal [34].",tasks:[{num:29,base:"PUNISH",answer:"punishment",explain:"PUNISH -> punishment (наказание, суффикс -ment)"},{num:30,base:"DRINK",answer:"drinking",explain:"DRINK -> drinking (питьё, герундий)"},{num:31,base:"BUILD",answer:"building",explain:"BUILD -> building (здание)"},{num:32,base:"SCOT",answer:"Scottish",explain:"SCOT -> Scottish (шотландский)"},{num:33,base:"FORTUNATE",answer:"fortunately",explain:"FORTUNATE -> fortunately (к счастью, наречие)"},{num:34,base:"ACT",answer:"action",explain:"ACT -> action (действие, иск)"}]}},{id:9,topic:"Angry Birds / Fly London",grammar:{text:"This game is hard to stop [20]!\n\nThree days later all my classmates [21] it on their phones and computers.\n\nMum said she [22] it senseless.\n\nBetween the break bells and in the classroom, we [23] poor birds at bad pigs.\n\nAt home I [24] start my homework. The game took all my free time.\n\nChildren like games where something can [25], our school psychologist explained.\n\nWe knew there [26] an Angry Birds wallpaper on her computer!\n\nSince that time, I [27] other games that I enjoy more.\n\nBut I often find [28] coming back to Angry Birds.",tasks:[{num:20,base:"PLAY",answer:"playing",explain:"after stop -> gerund: stop playing"},{num:21,base:"INSTALL",answer:"installed",explain:"Past Simple: classmates installed it"},{num:22,base:"CONSIDER",answer:"considered",explain:"Past Simple: Mum considered it senseless"},{num:23,base:"THROW",answer:["were throwing","would throw","'d throw"],explain:"Past Continuous или would: were throwing"},{num:24,base:"NOT/CAN",answer:["couldn't","could not"],explain:"Past Simple модальный: couldn't start"},{num:25,base:"RUIN",answer:"be ruined",explain:"Инфинитив пассивный: can be ruined"},{num:26,base:"BE",answer:"was",explain:"Past Simple: knew there was a wallpaper"},{num:27,base:"DOWNLOAD",answer:["have downloaded","'ve downloaded"],explain:"Present Perfect (since that time)"},{num:28,base:"I",answer:"myself",explain:"Возвратное местоимение: find myself"}]},lexis:{text:"Fly London has its flagship stores in [29] major cities.\n\nFounded in 1994, Fly's design philosophy has been to create [30] shoes.\n\nFly has been using traditional construction techniques in an [31] way.\n\nThey have [32] launched their clothing and cosmetics collections.\n\nIn every collection, the brand offers a great [33] of styles, colours and materials.\n\nAlways [34], never conventional! is the motto that guides Fly London.",tasks:[{num:29,base:"EUROPE",answer:"European",explain:"EUROPE -> European (европейский)"},{num:30,base:"ORIGIN",answer:"original",explain:"ORIGIN -> original (оригинальный)"},{num:31,base:"EXPECTED",answer:"unexpected",explain:"EXPECTED -> unexpected (неожиданный, префикс un-)"},{num:32,base:"RECENT",answer:"recently",explain:"RECENT -> recently (недавно, наречие)"},{num:33,base:"VARY",answer:"variety",explain:"VARY -> variety (разнообразие)"},{num:34,base:"PROGRESS",answer:"progressive",explain:"PROGRESS -> progressive (прогрессивный)"}]}},{id:10,topic:"Французский фильм / Безопасность Wi-Fi",grammar:{text:"Last week I [20] to watch a film in French!\n\nI [21] in France for five months now.\n\nSo we prepared [22] for two hours of nonsense.\n\nWe chose to watch a modern-day remake of Disney's well [23] Beauty and the Beast.\n\nWe hoped that it would make the film a bit [24] to watch.\n\nIt was the [25] time I had understood so much from a French film at the cinema.\n\nThe film probably [26] the most difficult one, but it was still a relief to understand nearly everything!\n\nI [27] a trip to the cinema!\n\nYou [28] a film in the language you're learning, haven't you?",tasks:[{num:20,base:"DECIDE",answer:"decided",explain:"Past Simple: Last week I decided"},{num:21,base:"LIVE",answer:["have been living","have lived","'ve been living","'ve lived"],explain:"Present Perfect (for five months now)"},{num:22,base:"WE",answer:"ourselves",explain:"Возвратное местоимение: prepared ourselves"},{num:23,base:"KNOW",answer:"known",explain:"Причастие II: well known (хорошо известный)"},{num:24,base:"EASY",answer:"easier",explain:"Сравнительная степень: easier to watch"},{num:25,base:"ONE",answer:"first",explain:"Порядковое: the first time"},{num:26,base:"BE NOT",answer:["was not","wasn't"],explain:"Past Simple отрицание: was not the most difficult"},{num:27,base:"RECOMMEND",answer:["would recommend","'d recommend"],explain:"I would recommend (рекомендую)"},{num:28,base:"SEE",answer:["have seen","'ve seen"],explain:"Present Perfect: You have seen (haven't you?)"}]},lexis:{text:"Mobile data traffic grew by 81 per cent, making it [29] 18 times the size of the entire internet in 2000.\n\nSadly, nowadays public wi-fi hotspots are quite [30].\n\nMore criminals aim at your [31] on open networks.\n\nUsers should be warned when they use an open [32] wi-fi internet.\n\nThey should do this from home where they [33] know the wi-fi and its security.\n\nRemember that it may be risky to send your [34] data through the wi-fi.",tasks:[{num:29,base:"NEAR",answer:"nearly",explain:"NEAR -> nearly (почти, наречие)"},{num:30,base:"SAFE",answer:"unsafe",explain:"SAFE -> unsafe (небезопасный, префикс un-)"},{num:31,base:"INFORM",answer:"information",explain:"INFORM -> information (информация)"},{num:32,base:"SECURE",answer:"insecure",explain:"SECURE -> insecure (незащищённый, префикс in-)"},{num:33,base:"ACTUAL",answer:"actually",explain:"ACTUAL -> actually (на самом деле, наречие)"},{num:34,base:"PERSON",answer:"personal",explain:"PERSON -> personal (личный)"}]}}];
+
+const STORAGE_KEY='oge_grammar_tracker';
+let state=loadState();
+let currentVariant=null,currentDay=null,checked=false;
+
+function loadState(){try{const s=localStorage.getItem(STORAGE_KEY);return s?JSON.parse(s):{days:{},startDate:new Date().toISOString().split('T')[0]};}catch(e){return{days:{},startDate:new Date().toISOString().split('T')[0]};}}
+function saveState(){localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}
+
+(function init(){renderTracker();updateTodayCard();})();
+
+function gotoPage(id,btn){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(b=>b.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  if(btn)btn.classList.add('active');
+  if(id==='tracker'){renderTracker();updateTodayCard();}
+}
+
+function renderTracker(){
+  const grid=document.getElementById('tracker-grid');grid.innerHTML='';
+  const today=new Date();const start=new Date(state.startDate);
+  let doneDays=0,totalScore=0,scoreCount=0,streak=0,streakActive=true;
+  for(let i=0;i<30;i++){
+    const d=new Date(start);d.setDate(start.getDate()+i);
+    const key=d.toISOString().split('T')[0];
+    const dd=state.days[key]||{};
+    const isToday=key===today.toISOString().split('T')[0];
+    const isFuture=d>today;
+    const v1done=dd.v1!==undefined,v2done=dd.v2!==undefined,bothDone=v1done&&v2done;
+    if(bothDone){doneDays++;if(streakActive)streak++;}else if(!isToday&&!isFuture)streakActive=false;
+    if(v1done){totalScore+=dd.v1;scoreCount++;}if(v2done){totalScore+=dd.v2;scoreCount++;}
+    const div=document.createElement('div');
+    div.className='tracker-day'+(isToday?' today':'')+(bothDone?' done':(v1done||v2done)?' partial':isFuture?' future':'');
+    const score=bothDone?Math.round((dd.v1+dd.v2)/2):'';
+    div.innerHTML='<div class="tracker-day-num">'+(i+1)+'</div><div class="tracker-day-score">'+(bothDone?score+'/15':v1done||v2done?'...':'')+'</div>';
+    if(!isFuture)div.onclick=()=>selectDay(key,i+1);
+    grid.appendChild(div);
+  }
+  const pct=Math.round(doneDays/30*100);
+  document.getElementById('tracker-fill').style.width=pct+'%';
+  document.getElementById('tracker-pct').textContent=pct+'% выполнено';
+  document.getElementById('stat-done').textContent=doneDays;
+  document.getElementById('stat-avg').textContent=scoreCount?Math.round(totalScore/scoreCount):'-';
+  document.getElementById('stat-streak').textContent=streak;
+}
+
+function updateTodayCard(){
+  const today=new Date().toISOString().split('T')[0];
+  const start=new Date(state.startDate);
+  const diff=Math.floor((new Date(today)-start)/(1000*60*60*24));
+  const dayNum=diff+1;if(dayNum<1||dayNum>30)return;
+  const v1idx=((dayNum-1)*2)%10+1;const v2idx=((dayNum-1)*2+1)%10+1;
+  document.getElementById('today-title').textContent='День '+dayNum;
+  document.getElementById('today-sub').textContent='Варианты '+v1idx+' и '+v2idx;
+  const dd=state.days[today]||{};
+  const b1=document.getElementById('v-btn-1'),b2=document.getElementById('v-btn-2');
+  b1.textContent='Вариант '+v1idx+(dd.v1!==undefined?' ok '+dd.v1+'/15':'');
+  b2.textContent='Вариант '+v2idx+(dd.v2!==undefined?' ok '+dd.v2+'/15':'');
+  b1.className='variant-btn'+(dd.v1!==undefined?' done':'');
+  b2.className='variant-btn'+(dd.v2!==undefined?' done':'');
+  b1.onclick=()=>startVariantForDay(v1idx,today,'v1');
+  b2.onclick=()=>startVariantForDay(v2idx,today,'v2');
+  if(dd.v1!==undefined&&dd.v2!==undefined){document.getElementById('today-badge').textContent='Выполнено ok';document.getElementById('today-badge').className='day-card-badge done';}
+}
+
+function selectDay(key,dayNum){
+  const v1idx=((dayNum-1)*2)%10+1;const v2idx=((dayNum-1)*2+1)%10+1;
+  document.getElementById('today-title').textContent='День '+dayNum;
+  document.getElementById('today-sub').textContent='Варианты '+v1idx+' и '+v2idx;
+  const dd=state.days[key]||{};
+  const b1=document.getElementById('v-btn-1'),b2=document.getElementById('v-btn-2');
+  b1.textContent='Вариант '+v1idx+(dd.v1!==undefined?' ok '+dd.v1+'/15':'');
+  b2.textContent='Вариант '+v2idx+(dd.v2!==undefined?' ok '+dd.v2+'/15':'');
+  b1.className='variant-btn'+(dd.v1!==undefined?' done':'');
+  b2.className='variant-btn'+(dd.v2!==undefined?' done':'');
+  b1.onclick=()=>startVariantForDay(v1idx,key,'v1');
+  b2.onclick=()=>startVariantForDay(v2idx,key,'v2');
+  document.getElementById('today-card').scrollIntoView({behavior:'smooth'});
+}
+
+function startVariantForDay(variantId,dateKey,vkey){
+  currentVariant=VARIANTS.find(v=>v.id===variantId);
+  currentDay={dateKey,vkey};checked=false;
+  document.getElementById('practice-title').textContent='Вариант '+variantId+' - '+currentVariant.topic;
+  renderTasks();
+  document.getElementById('result-banner').classList.remove('on');
+  document.getElementById('done-btn').style.display='none';
+  document.getElementById('check-btn').style.display='block';
+  document.getElementById('check-btn').disabled=false;
+  gotoPage('practice',document.querySelectorAll('.nav-tab')[1]);
+  window.scrollTo(0,0);
+}
+
+function renderTasks(){
+  renderSection('grammar-text',currentVariant.grammar);
+  renderSection('lexis-text',currentVariant.lexis);
+}
+
+function renderSection(elId,section){
+  const el=document.getElementById(elId);
+  const sentences=section.text.split('\n\n');
+  let html='';
+  section.tasks.forEach((task,i)=>{
+    const s=sentences[i]||'';
+    const sentHtml=s.replace('['+task.num+']','<span style="color:var(--g3)">['+task.num+']</span>');
+    html+='<div class="task-sentence"><div class="task-num">'+task.num+'</div><div class="task-body"><div>'+sentHtml+' <span class="task-base">'+task.base+'</span></div><input class="task-input" id="inp-'+task.num+'" type="text" placeholder="ваш ответ..." autocorrect="off" autocapitalize="none" spellcheck="false"><div class="task-feedback" id="fb-'+task.num+'"><div class="task-answer" id="ans-'+task.num+'"></div><div class="task-explain" id="exp-'+task.num+'"></div></div></div></div>';
+  });
+  el.innerHTML=html;
+}
+
+function checkAnswers(){
+  if(checked)return;checked=true;
+  document.getElementById('check-btn').disabled=true;
+  const allTasks=[...currentVariant.grammar.tasks,...currentVariant.lexis.tasks];
+  let correct=0;
+  allTasks.forEach(task=>{
+    const input=document.getElementById('inp-'+task.num);
+    const fbEl=document.getElementById('fb-'+task.num);
+    const ansEl=document.getElementById('ans-'+task.num);
+    const expEl=document.getElementById('exp-'+task.num);
+    if(!input)return;
+    const userAns=input.value.trim().toLowerCase().replace(/'/g,"'");
+    const correctAnswers=Array.isArray(task.answer)?task.answer.map(a=>a.toLowerCase().replace(/'/g,"'")):  [task.answer.toLowerCase().replace(/'/g,"'")];
+    const isCorrect=correctAnswers.some(a=>userAns===a);
+    input.className='task-input '+(isCorrect?'correct':'wrong');
+    input.disabled=true;
+    fbEl.className='task-feedback on '+(isCorrect?'correct':'wrong');
+    ansEl.textContent=isCorrect?'Верно!':'Ответ: '+(Array.isArray(task.answer)?task.answer[0]:task.answer);
+    expEl.textContent=task.explain;
+    if(isCorrect)correct++;
+  });
+  const pct=correct/15;
+  const cls=pct>=0.8?'g':pct>=0.5?'m':'b';
+  const banner=document.getElementById('result-banner');
+  banner.className='result-banner on '+(pct>=0.8?'perfect':pct>=0.5?'good':'bad');
+  document.getElementById('res-score').textContent=correct;
+  document.getElementById('res-score').className='result-score-big '+cls;
+  const msgs={g:'Отлично! Отличный результат.',m:'Неплохо, есть над чем поработать.',b:'Нужно повторить материал.'};
+  document.getElementById('res-msg').textContent=msgs[cls];
+  document.getElementById('res-msg').className='result-msg '+cls;
+  document.getElementById('done-btn').style.display='block';
+  document.getElementById('check-btn').style.display='none';
+  if(currentDay){
+    if(!state.days[currentDay.dateKey])state.days[currentDay.dateKey]={};
+    state.days[currentDay.dateKey][currentDay.vkey]=correct;
+    saveState();
+  }
+  banner.scrollIntoView({behavior:'smooth'});
+}
+</script>
+</body>
+</html>
