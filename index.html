@@ -137,17 +137,6 @@ textarea:focus { outline: none; border-color: var(--black); }
 
 <div class="page active" id="page-writing">
   <div class="tag">Task 35 - 79 FIPI tasks</div>
-  <div class="api-bar" id="api-bar">
-    <div class="api-bar-icon">key</div>
-    <div class="api-bar-text">
-      <b>Need API key to work without Claude.ai</b><br>
-      Get it at <a href="https://console.anthropic.com" target="_blank">console.anthropic.com</a> - API Keys
-      <div class="api-key-row">
-        <input class="api-key-input" id="api-key-input" type="password" placeholder="sk-ant-...">
-        <button class="api-key-btn" onclick="saveApiKey()">Save</button>
-      </div>
-    </div>
-  </div>
   <div class="topic-row" id="topic-row"></div>
   <div class="task-selector-wrap">
     <div class="task-select-label">Task</div>
@@ -301,8 +290,6 @@ const TASKS = [
 let wrTaskIdx=0, inputMode='photo', photoB64=null, filteredTasks=[...TASKS], currentTopic='All', apiKey='', claudeKey='';
 
 (function init(){
-  const saved=localStorage.getItem('oge_api_key');
-  if(saved){apiKey=saved;showApiKeyOk();}
   const topics=['All',...new Set(TASKS.map(t=>t.topic))];
   const row=document.getElementById('topic-row');
   topics.forEach(t=>{
