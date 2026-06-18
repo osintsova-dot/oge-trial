@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="unsafe-url">
 <title>OGE English — Writing</title>
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -390,6 +391,7 @@ async function checkWriting(){
 async function ocrPhoto(b64){
   const r=await fetch('https://ogr-ocr.o-sintsova.workers.dev',{
     method:'POST',
+    referrerPolicy:'unsafe-url',
     headers:{'Content-Type':'application/json'},
     body:JSON.stringify({model:'claude-haiku-4-5-20251001',max_tokens:2000,messages:[{role:'user',content:[{type:'image',source:{type:'base64',media_type:'image/jpeg',data:b64}},{type:'text',text:'Transcribe the handwritten English text exactly as written. Output ONLY the transcribed text, nothing else.'}]}]})
   });
