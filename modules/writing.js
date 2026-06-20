@@ -122,16 +122,14 @@ export async function renderWriting(container, cfg) {
     });
 
     const body = [];
-    if (works.length) {
-      body.push(el('button', { class: 'all-topics writing', onclick: worksScreen }, [
-        el('div', { class: 'at-ic' }, [iconImg('ic-writing', '✍️', 'at-img')]),
-        el('div', { style: { flex: '1' } }, [
-          el('div', { class: 'at-t', text: t.wMyWorks }),
-          el('div', { class: 'at-s', text: t.wWorksSub(works.length) }),
-        ]),
-        el('div', { class: 'at-arrow', text: '→' }),
-      ]));
-    }
+    body.push(el('button', { class: 'all-topics writing', onclick: worksScreen }, [
+      el('div', { class: 'at-ic' }, [iconImg('ic-writing', '✍️', 'at-img')]),
+      el('div', { style: { flex: '1' } }, [
+        el('div', { class: 'at-t', text: t.wMyWorks }),
+        el('div', { class: 'at-s', text: t.wWorksSub(works.length) }),
+      ]),
+      el('div', { class: 'at-arrow', text: '→' }),
+    ]));
     body.push(list);
 
     mount(container, el('div', { class: 'view' }, [
