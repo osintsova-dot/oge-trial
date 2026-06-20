@@ -198,7 +198,8 @@ async function renderProgress() {
     ]),
     el('div', { class: 'vp-bar' }, [el('i', { style: { width: vPct + '%' } })]),
   ]) : null;
-  const avg = w.count ? (w.items.reduce((s, x) => s + (x.score || 0), 0) / w.count).toFixed(1) : null;
+  // Средний балл письма — в процентах (email и essay имеют разные максимумы; legacy без max → запасной 10)
+  const avg = w.count ? Math.round(w.items.reduce((s, x) => s + Math.min(1, (x.score || 0) / (x.max || 10)), 0) / w.count * 100) : null;
 
   const miniStat = (num, lbl, color, icon) => el('div', { class: 'mini-stat' }, [
     el('div', { class: 'ms-v', style: { color } }, icon ? [num + ' ', icon] : [num]),
@@ -236,7 +237,7 @@ async function renderProgress() {
         el('div', { class: 'a-t', text: t.avgTitle }),
         el('div', { class: 'a-s', text: w.count ? t.avgSub(w.count) : t.avgCrit }),
       ]),
-      el('div', { class: 'a-v' }, avg ? [avg, el('span', { text: '/10' })] : [el('span', { text: '—' })]),
+      el('div', { class: 'a-v' }, avg !== null ? [String(avg), el('span', { text: '%' })] : [el('span', { text: '—' })]),
     ]),
     el('div', { class: 'prog-section-title', text: t.achTitle }),
     el('div', { class: 'ach-grid' }, achievementsStatus().map((a) =>

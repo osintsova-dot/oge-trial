@@ -134,7 +134,7 @@ export async function renderWriting(container, cfg) {
       btn.disabled = true; loader.style.display = 'block';
       try {
         const res = await evalWriting(text, it);
-        recordWriting(it.zid, res.totalScore);
+        recordWriting(it.zid, res.totalScore, task.max);
         renderResult(resultBox, res);
         const g = recordRound(cfg.sectionId, res.totalScore || 0, task.max);
         const name = getName();

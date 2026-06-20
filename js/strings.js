@@ -117,7 +117,7 @@ export const STRINGS = {
     celNext: 'Дальше →', celClaim: 'Забрать!',
     friend: 'друг',
     // названия и подписи разделов (по id)
-    sections: { vocab: 'Лексика', grammar: 'Грамматика', wordform: 'Словообразование', reading: 'Чтение', writing: 'Письмо', speaking: 'Говорение', lexis: 'Лексика', email: 'Письмо (e-mail)', essay: 'Эссе' },
+    sections: { vocab: 'Тематический словарь', grammar: 'Грамматика', wordform: 'Словообразование', reading: 'Чтение', writing: 'Письмо', speaking: 'Говорение', lexis: 'Лексика', email: 'Письмо (e-mail)', essay: 'Эссе' },
     sectionMeta: { vocab: 'тема недели · 15 слов в день', grammar: '661 задание · 15 тем', wordform: '437 заданий · 7 тем', reading: '28 текстов + 38 заданий', writing: 'задание 35 · К1–К4', speaking: 'скоро', lexis: '728 заданий', email: 'задание 37 · К1–К3', essay: 'задание 38 · К1–К5' },
     // звания / скины / ачивки / привилегии
     ranks: ['Новичок', 'Ученик', 'Грамотей', 'Знаток', 'Мастер ОГЭ', 'Гуру'],
@@ -270,7 +270,7 @@ export const STRINGS = {
     celAchText: (desc, phrase) => 'Achievement: ' + desc + '. ' + phrase,
     celNext: 'Next →', celClaim: 'Claim!',
     friend: 'friend',
-    sections: { vocab: 'Vocabulary', grammar: 'Grammar', wordform: 'Word formation', reading: 'Reading', writing: 'Writing', speaking: 'Speaking', lexis: 'Vocabulary', email: 'Email', essay: 'Essay' },
+    sections: { vocab: 'Topic Vocabulary', grammar: 'Grammar', wordform: 'Word formation', reading: 'Reading', writing: 'Writing', speaking: 'Speaking', lexis: 'Vocabulary', email: 'Email', essay: 'Essay' },
     sectionMeta: { vocab: 'theme of the week · 15 words a day', grammar: '389 tasks · grammar', wordform: '728 tasks · word forms', reading: '469 tasks · 3 formats', writing: 'writing', speaking: 'soon', lexis: '728 tasks · vocabulary', email: 'task 37 · K1–K3', essay: 'task 38 · K1–K5' },
     ranks: ['Rookie', 'Learner', 'Skilled', 'Expert', 'Master', 'Guru'],
     skins: {
