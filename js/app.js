@@ -231,7 +231,7 @@ async function renderProgress() {
     vocabCard,
     el('div', { class: 'prog-section-title', text: t.bySection }),
     el('div', { class: 'prog-rows' }, drillSecs.map(progRow)),
-    el('button', { class: 'avg-card', onclick: () => { location.hash = '#/writing'; } }, [
+    el('button', { class: 'avg-card', onclick: () => { const ws = EXAM.sections.find((s) => s.type === 'writing'); location.hash = '#/' + (ws ? ws.id : 'writing'); } }, [
       el('div', { class: 'a-ic' }, [iconImg('ic-writing', '✉️', 'a-img')]),
       el('div', { style: { flex: '1' } }, [
         el('div', { class: 'a-t', text: t.avgTitle }),

@@ -31,10 +31,11 @@ export function recordDrill(section, zid, correct, kes) {
 }
 
 // Сохранить результат письма
-export function recordWriting(zid, score, max) {
+// rec: {zid, section, title, prompt, text, score, max, result}
+export function recordWriting(rec) {
   const state = read();
   if (!state.writing) state.writing = [];
-  state.writing.push({ zid, score, max, ts: Date.now() });
+  state.writing.push({ ...rec, ts: Date.now() });
   write(state);
 }
 

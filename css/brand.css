@@ -284,6 +284,8 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
   border-radius:14px;padding:13px 15px;cursor:pointer;box-shadow:0 2px 10px var(--shadow);width:100%}
 .topic-item .ti-name{font-size:14.5px;font-weight:700;color:var(--ink)}
 .topic-item .ti-count{font-size:12px;color:var(--muted);margin-top:2px}
+.topic-item.w-done{border-left:4px solid var(--line)}
+.w-badge{font-size:14px;font-weight:800;flex-shrink:0;white-space:nowrap}
 .topic-item .ti-right{text-align:right;flex:none;margin-left:auto}
 .topic-item .ti-acc{font-size:14px;font-weight:800}
 .topic-item .ti-bar{width:52px;height:5px;border-radius:4px;background:var(--track);overflow:hidden;margin-top:4px}

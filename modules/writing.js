@@ -4,7 +4,7 @@
 
 import { el, mount, celebrate, iconImg } from '../js/ui.js';
 import { loadJSON } from '../js/data.js';
-import { recordWriting } from '../js/progress.js';
+import { recordWriting, writingStats } from '../js/progress.js';
 import { recordRound, getName, checkNewAchievements } from '../js/gamify.js';
 import { roundMessage, celeb } from '../js/voice.js';
 import { EXAM, t, plural } from '../js/exam.js';
@@ -52,6 +52,10 @@ function critColor(score, max) {
   const r = max ? score / max : 0;
   return r >= 0.8 ? 'var(--ok)' : r >= 0.5 ? 'var(--warn)' : 'var(--bad)';
 }
+function fmtDate(ts) {
+  try { return new Date(ts).toLocaleDateString(undefined, { day: 'numeric', month: 'short' }); }
+  catch (e) { return ''; }
+}
 function buildMoments(g, name) {
   const m = [];
   if (g.heroAwarded) m.push({ icon: '🦸', img: './assets/spiky-hero.png', title: t.celHeroT, text: celeb('hero', name), confetti: true });
@@ -95,20 +99,81 @@ export async function renderWriting(container, cfg) {
   }
 
   function pickScreen() {
+    const works = writingStats().items;
+    const byZid = {};
+    for (const w of works) (byZid[w.zid] = byZid[w.zid] || []).push(w);
+
     const list = el('div', { class: 'topic-list' });
     items.forEach((it, i) => {
-      list.appendChild(el('button', { class: 'topic-item', onclick: () => taskScreen(i) }, [
+      const recs = byZid[it.zid];
+      const best = recs ? Math.max(...recs.map((r) => (r.max ? (r.score || 0) / r.max : 0))) : null;
+      const col = best != null ? critColor(best, 1) : null;
+      const right = best != null
+        ? el('div', { class: 'w-badge', style: { color: col }, text: '✓' + (recs.length > 1 ? ' ×' + recs.length : '') })
+        : el('div', { class: 'at-arrow', text: '→' });
+      list.appendChild(el('button', { class: 'topic-item' + (best != null ? ' w-done' : ''),
+        style: best != null ? { borderLeftColor: col } : {}, onclick: () => taskScreen(i) }, [
         el('div', { style: { flex: '1', minWidth: '0' } }, [
           el('div', { class: 'ti-name', text: itemTitle(it, i) }),
           el('div', { class: 'ti-count', text: snippet(it) }),
         ]),
+        right,
+      ]));
+    });
+
+    const body = [];
+    if (works.length) {
+      body.push(el('button', { class: 'all-topics writing', onclick: worksScreen }, [
+        el('div', { class: 'at-ic' }, [iconImg('ic-writing', '✍️', 'at-img')]),
+        el('div', { style: { flex: '1' } }, [
+          el('div', { class: 'at-t', text: t.wMyWorks }),
+          el('div', { class: 'at-s', text: t.wWorksSub(works.length) }),
+        ]),
         el('div', { class: 'at-arrow', text: '→' }),
+      ]));
+    }
+    body.push(list);
+
+    mount(container, el('div', { class: 'view' }, [
+      secBar(cfg.goHome, t.wPickSub),
+      el('div', { class: 'topics-body' }, body),
+    ]));
+  }
+
+  // Архив проверенных работ (все разделы письма), новые сверху, цвет по баллу.
+  function worksScreen() {
+    const works = writingStats().items.slice().sort((a, b) => (b.ts || 0) - (a.ts || 0));
+    const list = el('div', { class: 'topic-list' });
+    if (!works.length) list.appendChild(el('div', { class: 'vc-note', text: t.wWorksEmpty }));
+    works.forEach((w) => {
+      const col = critColor(w.score || 0, w.max || 1);
+      list.appendChild(el('button', { class: 'topic-item w-done', style: { borderLeftColor: col }, onclick: () => workScreen(w) }, [
+        el('div', { style: { flex: '1', minWidth: '0' } }, [
+          el('div', { class: 'ti-name', text: w.title || headTitle }),
+          el('div', { class: 'ti-count', text: (t.sections[w.section] || '') + ' · ' + fmtDate(w.ts) }),
+        ]),
+        el('div', { class: 'w-badge', style: { color: col }, text: (w.score ?? '–') + '/' + (w.max || '?') }),
       ]));
     });
     mount(container, el('div', { class: 'view' }, [
-      secBar(cfg.goHome, t.wPickSub),
-      el('div', { class: 'topics-body' }, [list]),
+      secBar(pickScreen, t.wWorksSub(works.length)),
+      el('div', { class: 'topics-body' }, [el('div', { class: 'topics-label', text: t.wMyWorks }), list]),
     ]));
+  }
+
+  // Чтение одной сохранённой работы: задание + текст ученика + разбор.
+  function workScreen(rec) {
+    const box = el('div', {});
+    mount(container, el('div', { class: 'w-screen view' }, [
+      secBar(worksScreen, (t.sections[rec.section] || headTitle) + ' · ' + fmtDate(rec.ts)),
+      el('div', { class: 'writing-body' }, [
+        rec.prompt ? el('div', { class: 'letter-card' }, [el('div', { class: 'body' }, [el('b', { text: t.wTaskPrompt + ': ' }), rec.prompt])]) : null,
+        el('div', { class: 'fixes-card' }, [el('h3', { text: t.wYourText }), el('div', { class: 'corrected', text: rec.text || '' })]),
+        box,
+      ].filter(Boolean)),
+    ]));
+    if (rec.result) renderResult(box, rec.result, rec.max);
+    const sc = container.querySelector('.w-screen'); if (sc) sc.scrollTop = 0;
   }
 
   function taskScreen(i) {
@@ -134,7 +199,8 @@ export async function renderWriting(container, cfg) {
       btn.disabled = true; loader.style.display = 'block';
       try {
         const res = await evalWriting(text, it);
-        recordWriting(it.zid, res.totalScore, task.max);
+        recordWriting({ zid: it.zid, section: cfg.sectionId, title: itemTitle(it, i),
+          prompt: snippet(it), text, score: res.totalScore, max: task.max, result: res });
         renderResult(resultBox, res);
         const g = recordRound(cfg.sectionId, res.totalScore || 0, task.max);
         const name = getName();
@@ -233,7 +299,7 @@ Score every criterion within its max. totalScore = sum of criteria scores. Give 
     return JSON.parse(d.choices[0].message.content.replace(/```json|```/g, '').trim());
   }
 
-  function renderResult(box, r) {
+  function renderResult(box, r, mx = task.max) {
     const crit = (r.criteria && r.criteria.length) ? r.criteria : task.criteria.map((c) => ({ ...c, score: 0, comment: '' }));
     const critCards = crit.map((c) => el('div', { class: 'crit' }, [
       el('div', { class: 'c-top' }, [
@@ -245,7 +311,7 @@ Score every criterion within its max. totalScore = sum of criteria scores. Give 
     const nodes = [
       el('div', { class: 'letter-result' }, [
         el('div', { class: 'lr-head' }, [
-          el('div', { class: 'lr-score' }, [String(r.totalScore ?? '–'), el('span', { text: '/' + task.max })]),
+          el('div', { class: 'lr-score' }, [String(r.totalScore ?? '–'), el('span', { text: '/' + mx })]),
           el('div', { class: 'lr-verdict', text: r.verdict || t.wVerdictDefault }),
         ]),
         el('div', { class: 'crit-list' }, critCards),
