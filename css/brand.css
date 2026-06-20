@@ -69,6 +69,15 @@
 @keyframes ssShine{0%{background-position:-180% 0}100%{background-position:180% 0}}
 @keyframes ssFall{0%{transform:translateY(-30px) rotate(0);opacity:1}100%{transform:translateY(680px) rotate(720deg);opacity:.9}}
 @keyframes ssRing{0%{transform:scale(.6);opacity:.7}100%{transform:scale(1.8);opacity:0}}
+/* Спики влетает снизу крупно (как сова Duolingo) и с отскоком встаёт на место */
+@keyframes ssFlyIn{
+  0%{transform:translateY(75vh) scale(2.4) rotate(-7deg);opacity:0}
+  18%{opacity:1}
+  48%{transform:translateY(-2vh) scale(2.0) rotate(3deg);opacity:1}
+  70%{transform:translateY(0) scale(.86) rotate(0)}
+  84%{transform:scale(1.08)}
+  100%{transform:translateY(0) scale(1)}
+}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
   .confetti{display:none!important}
@@ -527,14 +536,23 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .celebrate{position:fixed;inset:0;z-index:60;display:flex;align-items:center;justify-content:center;
   padding:28px;background:var(--grad-splash);animation:ssUp .3s ease}
 .cel-card{max-width:360px;width:100%;text-align:center;color:#fff}
-.cel-icon{font-size:92px;line-height:1;animation:ssPop .5s ease both,ssFloat 2.6s ease-in-out .5s infinite}
+.cel-icon{font-size:92px;line-height:1;transform-origin:center bottom;
+  animation:ssFlyIn .95s cubic-bezier(.2,.7,.2,1) both,ssFloat 2.6s ease-in-out .95s infinite}
 .cel-img{width:160px;height:auto;display:block;margin:0 auto;filter:drop-shadow(0 12px 26px rgba(0,0,0,.3));
-  animation:ssPop .5s ease both,ssFloat 2.6s ease-in-out .5s infinite}
-.cel-title{font-size:26px;font-weight:800;margin-top:16px;letter-spacing:-.3px}
-.cel-text{font-size:16px;color:rgba(255,255,255,.92);margin-top:10px;line-height:1.5;font-weight:600}
+  transform-origin:center bottom;
+  animation:ssFlyIn .95s cubic-bezier(.2,.7,.2,1) both,ssFloat 2.6s ease-in-out .95s infinite}
+.cel-title{font-size:26px;font-weight:800;margin-top:16px;letter-spacing:-.3px;
+  animation:ssUp .4s ease .75s both}
+.cel-text{font-size:16px;color:rgba(255,255,255,.92);margin-top:10px;line-height:1.5;font-weight:600;
+  animation:ssUp .4s ease .9s both}
 .cel-dots{display:flex;gap:6px;justify-content:center;margin:22px 0}
 .cel-dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.4)}
 .cel-dots i.on{background:#fff}
+/* если в системе включено «уменьшить движение» — без резкого влёта */
+@media (prefers-reduced-motion:reduce){
+  .cel-icon,.cel-img{animation:ssPop .4s ease both}
+  .cel-title,.cel-text{animation:ssUp .3s ease both}
+}
 
 /* ===== Прочее ===== */
 .loader{color:var(--muted);font-size:14px;padding:16px}
