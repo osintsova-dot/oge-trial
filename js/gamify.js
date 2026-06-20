@@ -10,6 +10,7 @@ const KEY = EXAM.store + '_game_v1';
 export const PACK_SECTIONS = [
   { key: 'grammar',  label: 'Грамматика',       icon: '📝', hash: 'grammar'  },
   { key: 'wordform', label: 'Словообразование', icon: '🔤', hash: 'wordform' },
+  { key: 'reading',  label: 'Чтение',           icon: '📖', hash: 'reading'  },
   { key: 'writing',  label: 'Письмо',           icon: '✉️', hash: 'writing'  },
 ];
 
@@ -115,26 +116,9 @@ export function recordRound(section, correct, total) {
   const s = read();
   const today = todayStr();
 
-  // Серия: первый активный раунд за день. Заморозки прикрывают пропущенные дни.
-  let streakUp = false, freezeUsed = 0;
-  if (s.streak.lastDay !== today) {
-    if (!s.streak.lastDay) {
-      s.streak.count = 1;
-    } else {
-      const missed = daysBetween(s.streak.lastDay, today) - 1; // дней пропуска между активностями
-      if (missed <= 0) {
-        s.streak.count += 1;                       // занимался(ась) вчера — серия растёт
-      } else if ((s.freezes || 0) >= missed) {
-        s.freezes -= missed; freezeUsed = missed;  // заморозки прикрыли пропуски — серия жива
-        s.streak.count += 1;
-      } else {
-        s.streak.count = 1;                        // заморозок не хватило — серия сброшена
-      }
-    }
-    s.streak.lastDay = today;
-    streakUp = true;
-    if (s.streak.count > (s.maxStreak || 0)) s.maxStreak = s.streak.count;
-  }
+  // Серия больше НЕ растёт от закрытых разделов — день закрывает ТОЛЬКО дневная норма
+  // лексики (см. recordVocabReview / advanceStreak). Здесь — только XP, пак, история.
+  const streakUp = false, freezeUsed = 0;
 
   // XP: 10 за верный ответ + 30 за идеальный раунд
   const xpGained = (correct * 10) + (total > 0 && correct === total ? 30 : 0);
@@ -186,6 +170,59 @@ export function recordRound(section, correct, total) {
     freezes: s.freezes, freezeUsed, freezeEarned,
     tokens: s.tokens, tokensEarned,
     pack: packStatus(),
+  };
+}
+
+// Продвинуть серию на сегодня (заморозки прикрывают пропуски). Вызывается, когда
+// закрыта дневная норма лексики. Возвращает {streakUp, freezeUsed, tokensEarned}.
+function advanceStreak(s) {
+  const today = todayStr();
+  let streakUp = false, freezeUsed = 0, tokensEarned = 0;
+  if (s.streak.lastDay !== today) {
+    if (!s.streak.lastDay) {
+      s.streak.count = 1;
+    } else {
+      const missed = daysBetween(s.streak.lastDay, today) - 1;
+      if (missed <= 0) s.streak.count += 1;
+      else if ((s.freezes || 0) >= missed) { s.freezes -= missed; freezeUsed = missed; s.streak.count += 1; }
+      else s.streak.count = 1;
+    }
+    s.streak.lastDay = today;
+    streakUp = true;
+    if (s.streak.count > (s.maxStreak || 0)) s.maxStreak = s.streak.count;
+    if ([7, 14, 30, 50, 100].includes(s.streak.count)) { s.tokens = (s.tokens || 0) + 2; tokensEarned += 2; }
+  }
+  return { streakUp, freezeUsed, tokensEarned };
+}
+
+// Засчитать карточку лексики. remembered — «помню». dayJustClosed — норма 15 закрыта именно сейчас.
+// XP за карточку (+бонус за закрытие дня), и тогда же продвигается серия (день «закрыт»).
+export function recordVocabReview(remembered, dayJustClosed) {
+  const s = read();
+  const today = todayStr();
+  const xpBefore = s.xp;
+  let xpGained = remembered ? 5 : 2;
+  let streakUp = false, freezeUsed = 0, tokensEarned = 0;
+  if (dayJustClosed) {
+    const a = advanceStreak(s);
+    streakUp = a.streakUp; freezeUsed = a.freezeUsed; tokensEarned = a.tokensEarned;
+    xpGained += 20; // бонус за закрытие дневной нормы лексики
+    // заморозка за закрытый день (до потолка)
+    if ((s.freezes || 0) < FREEZE_CAP) { s.freezes = (s.freezes || 0) + 1; }
+  }
+  s.xp += xpGained;
+  s.history = s.history || {};
+  const d = s.history[today] || { rounds: 0, correct: 0, total: 0, xp: 0 };
+  d.xp += xpGained;
+  s.history[today] = d;
+  const days = Object.keys(s.history).sort();
+  while (days.length > HISTORY_KEEP) delete s.history[days.shift()];
+  write(s);
+  const lvl = levelInfo(s.xp), lvlBefore = levelInfo(xpBefore).level;
+  return {
+    xpGained, streak: s.streak.count, streakUp, freezeUsed, tokensEarned,
+    dayClosed: !!dayJustClosed, levelUp: lvl.level > lvlBefore, level: lvl.level, title: lvl.title,
+    tokens: s.tokens, freezes: s.freezes,
   };
 }
 

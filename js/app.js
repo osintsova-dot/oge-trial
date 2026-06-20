@@ -9,8 +9,11 @@ import { getState, levelInfo, packStatus, streakActiveToday,
   dailyDigest, skinsStatus, setSkin, applySkin, achievementsStatus,
   getTokens, perksStatus, redeemPerk, recentRedeemed } from './gamify.js';
 import { EXAM, t, sectionById, plural } from './exam.js';
+import { dailyProgress, themeStats } from './vocab_srs.js';
 import { renderDrill } from '../modules/drill.js';
 import { renderWriting } from '../modules/writing.js';
+import { renderReading } from '../modules/reading.js';
+import { renderVocab } from '../modules/vocab.js';
 
 const view = document.getElementById('view');
 const goHome = () => { location.hash = '#/'; };
@@ -38,11 +41,14 @@ function route() {
   setActiveTab(hash);
   const sec = sectionById(hash);
   // В режиме решения (дрилл/письмо) нижнее меню прячем, чтобы не перекрывало кнопки
-  document.body.classList.toggle('in-flow', !!(sec && (sec.type === 'drill' || sec.type === 'writing')));
+  document.body.classList.toggle('in-flow', !!(sec && ['drill', 'writing', 'reading', 'vocab', 'soon'].includes(sec.type)));
   if (hash === 'progress') return renderProgress();
   if (hash === 'rewards')  return renderRewards();
   if (sec && sec.type === 'drill')   return renderDrill(view, { ...DRILL[sec.id], goHome });
   if (sec && sec.type === 'writing') return renderWriting(view, { goHome, sectionId: sec.id });
+  if (sec && sec.type === 'reading') return renderReading(view, { goHome, dataFile: sec.dataFile });
+  if (sec && sec.type === 'vocab')   return renderVocab(view, { goHome, dataFile: sec.dataFile });
+  if (sec && sec.type === 'soon')    return renderSoon(sec);
   return renderHome();
 }
 function setActiveTab(hash) {
@@ -100,15 +106,17 @@ function renderHome() {
     ]),
   ]);
 
-  const goalDone = streakActiveToday();
-  const ringPct = goalDone ? 100 : 0;
-  const goal = el('div', { class: 'goal' }, [
+  // Цель дня = дневная норма лексики (день закрывается ею). Клик → раздел «Лексика».
+  const vp = dailyProgress();
+  const ringPct = pct(vp.count, vp.goal);
+  const goal = el('button', { class: 'goal goal-btn', onclick: () => { location.hash = '#/vocab'; } }, [
     el('div', { class: 'ring', style: { background: `conic-gradient(var(--honey) 0% ${ringPct}%, var(--track) ${ringPct}% 100%)` } },
-      [el('i', {}, [goalDone ? '✓' : iconImg('ic-goal', '🎯', 'goal-img')])]),
+      [el('i', {}, [vp.done ? '✓' : iconImg('ic-vocab', '🗂', 'goal-img')])]),
     el('div', { style: { flex: '1' } }, [
-      el('div', { class: 'g-title', text: t.goalTitle }),
-      el('div', { class: 'g-text', text: goalDone ? t.goalDone(rw(dg.today.rounds)) : t.goalIdle }),
+      el('div', { class: 'g-title', text: t.vocab.dailyTitle }),
+      el('div', { class: 'g-text', text: vp.done ? t.vocab.dailyDone(vp.goal) : t.vocab.dailyLeft(vp.count, vp.goal) }),
     ]),
+    el('div', { class: 'at-arrow', text: '→' }),
   ]);
 
   const packItems = pk.ids.map((id) => {
@@ -168,10 +176,26 @@ function renderHome() {
 }
 
 // --- Прогресс ---
-function renderProgress() {
+async function renderProgress() {
   document.body.classList.remove('welcome-mode');
   const st = getState();
   const w = writingStats();
+  // Лексика: освоено/всего/в работе (из SRS-прогресса)
+  const vdata = await loadJSON('vocab').catch(() => null);
+  let vLearned = 0, vTotal = 0, vStarted = 0;
+  if (vdata) { const vs = themeStats(vdata); for (const k in vs) { vLearned += vs[k].learned; vTotal += vs[k].total; vStarted += vs[k].started; } }
+  const vPct = pct(vLearned, vTotal);
+  const vocabCard = vdata ? el('button', { class: 'vocab-prog-card', onclick: () => { location.hash = '#/vocab'; } }, [
+    el('div', { class: 'vp-top' }, [
+      el('div', { class: 'vp-ic' }, [iconImg('ic-vocab', '🗂', 'vp-img')]),
+      el('div', { style: { flex: '1' } }, [
+        el('div', { class: 'vp-t', text: t.sections.vocab }),
+        el('div', { class: 'vp-s', text: t.vocab.learnedOf(vLearned, vTotal) + ' · ' + t.vocab.inProgress(vStarted) }),
+      ]),
+      el('div', { class: 'vp-v', text: vPct + '%' }),
+    ]),
+    el('div', { class: 'vp-bar' }, [el('i', { style: { width: vPct + '%' } })]),
+  ]) : null;
   const avg = w.count ? (w.items.reduce((s, x) => s + (x.score || 0), 0) / w.count).toFixed(1) : null;
 
   const miniStat = (num, lbl, color, icon) => el('div', { class: 'mini-stat' }, [
@@ -182,8 +206,9 @@ function renderProgress() {
     const s = sectionStats(sec.id);
     const p = s.attempted ? pct(s.correct, s.attempted) : 0;
     const c = accColor(p);
-    return el('div', { class: 'prog-row' }, [
+    return el('button', { class: 'prog-row', onclick: () => { location.hash = '#/' + sec.id; } }, [
       el('div', { class: 'pr-top' }, [
+        el('div', { class: 'pr-ic' }, [iconImg('ic-' + (sec.iconKey || sec.tile), sec.icon, 'pr-img')]),
         el('div', { class: 'pr-name', text: t.sections[sec.id] }),
         el('div', { class: 'pr-pct', style: { color: c }, text: p + '%' }),
       ]),
@@ -191,7 +216,7 @@ function renderProgress() {
       el('div', { class: 'pr-meta', text: s.attempted ? t.solved(s.attempted, s.correct) : t.noSolved }),
     ]);
   };
-  const drillSecs = EXAM.sections.filter((s) => s.type === 'drill');
+  const drillSecs = EXAM.sections.filter((s) => s.type === 'drill' || s.type === 'reading');
 
   mount(view, el('div', { class: 'wrap view' }, [
     el('div', { class: 'prog-head' }, [el('div', { class: 'ph-title', text: t.progTitle }), themeBtn()]),
@@ -200,10 +225,11 @@ function renderProgress() {
       miniStat(String(st.xp), 'XP', 'var(--p-text)'),
       miniStat(String(st.heroes), plural(st.heroes, t.heroWord), 'var(--magenta)', iconImg('ic-hero', '🦸')),
     ]),
+    vocabCard,
     el('div', { class: 'prog-section-title', text: t.bySection }),
     el('div', { class: 'prog-rows' }, drillSecs.map(progRow)),
-    el('div', { class: 'avg-card' }, [
-      el('div', { class: 'a-ic', text: '✉️' }),
+    el('button', { class: 'avg-card', onclick: () => { location.hash = '#/writing'; } }, [
+      el('div', { class: 'a-ic' }, [iconImg('ic-writing', '✉️', 'a-img')]),
       el('div', { style: { flex: '1' } }, [
         el('div', { class: 'a-t', text: t.avgTitle }),
         el('div', { class: 'a-s', text: w.count ? t.avgSub(w.count) : t.avgCrit }),
@@ -297,6 +323,23 @@ function showBadge(r) {
     el('button', { class: 'btn btn-honey btn-block', text: t.badgeDone, onclick: () => overlay.remove() }),
   ]));
   document.body.appendChild(overlay);
+}
+
+// --- Заглушка раздела «в разработке» (говорение; позже аудирование) ---
+function renderSoon(sec) {
+  document.body.classList.remove('welcome-mode');
+  mount(view, el('div', { class: 'view' }, [
+    el('div', { class: 'sec-bar ' + sec.tile }, [
+      el('button', { class: 'back', text: '←', onclick: goHome }),
+      el('div', { style: { flex: '1' } }, [el('div', { class: 'sb-title', text: t.sections[sec.id] || '' })]),
+    ]),
+    el('div', { class: 'soon-screen' }, [
+      el('div', { class: 'soon-ic' }, [iconImg('ic-' + (sec.iconKey || sec.tile), sec.icon, 'soon-img')]),
+      el('div', { class: 'soon-h', text: t.soonScreenTitle }),
+      el('div', { class: 'soon-t', text: t.soonScreenText }),
+      el('button', { class: 'btn btn-ghost', text: t.toHome, onclick: goHome }),
+    ]),
+  ]));
 }
 
 // --- Splash / знакомство ---

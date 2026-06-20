@@ -10,11 +10,14 @@ const CONFIGS = {
     keysFile: 'keys', topicsFile: 'topics', explainFile: 'explanations',
     // type: 'drill' — закрытые задания по ключу; 'writing' — письмо с AI-проверкой
     sections: [
+      { id: 'vocab',    type: 'vocab',   dataFile: 'vocab', tile: 'vocab', iconKey: 'vocab', icon: '🗂' },
       { id: 'grammar',  type: 'drill',   dataFile: 'grammar',  topicKey: 'Грамматика',       tile: 'grammar',  icon: '📝' },
       { id: 'wordform', type: 'drill',   dataFile: 'wordform', topicKey: 'Словообразование', tile: 'wordform', icon: '🔤' },
+      { id: 'reading',  type: 'reading', dataFile: 'reading',  tile: 'reading', iconKey: 'reading', icon: '📖' },
       { id: 'writing',  type: 'writing', tile: 'writing', icon: '✉️' },
+      { id: 'speaking', type: 'soon',    tile: 'speaking', iconKey: 'speaking', icon: '🎤' },
     ],
-    pack: ['grammar', 'wordform', 'writing'],
+    pack: ['grammar', 'wordform', 'reading', 'writing'],
     soonTile: true,
     // Письмо ОГЭ — одно задание (личное письмо, задание 35, К1–К4, макс 10)
     writing: {

@@ -73,7 +73,7 @@ export function mistakeZids(section) {
 export function totalDrill() {
   const s = read();
   let attempted = 0, correct = 0;
-  for (const section of ['grammar', 'wordform']) {
+  for (const section of ['grammar', 'wordform', 'reading']) {
     for (const r of Object.values(s[section] || {})) { attempted++; if (r.ok) correct++; }
   }
   return { attempted, correct };
