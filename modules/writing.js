@@ -89,6 +89,7 @@ export async function renderWriting(container, cfg) {
         el('div', { class: 'sb-title', text: headTitle }),
         el('div', { class: 'sb-sub', text: sub }),
       ]),
+      el('button', { class: 'sb-action', text: '🔎', title: t.vocab.searchTitle, onclick: openWordSearch }),
     ]);
   }
 
@@ -130,10 +131,6 @@ export async function renderWriting(container, cfg) {
         el('div', { class: 'at-s', text: t.wWorksSub(works.length) }),
       ]),
       el('div', { class: 'at-arrow', text: '→' }),
-    ]));
-    body.push(el('button', { class: 'ws-trigger-bar', onclick: openWordSearch }, [
-      el('span', { class: 'ws-mag', text: '🔎' }),
-      el('span', { text: t.vocab.searchPlaceholder }),
     ]));
     body.push(list);
 
@@ -242,10 +239,7 @@ export async function renderWriting(container, cfg) {
         stimulus,
         resultBox,
         el('div', { style: { position: 'relative' } }, [area, wc]),
-        el('div', { class: 'w-tools' }, [
-          el('button', { class: 'btn btn-ghost ws-trigger', onclick: openWordSearch, text: '📖 ' + t.vocab.searchBtn }),
-        ]),
-        el('div', { style: { marginTop: '10px' } }, [btn]),
+        el('div', { style: { marginTop: '14px' } }, [btn]),
         loader, errBox,
       ]),
     ]));
