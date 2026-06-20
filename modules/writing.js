@@ -1,0 +1,272 @@
+// writing.js — раздел «Письмо» (общий для ОГЭ и ЕГЭ).
+// ОГЭ: одно письмо (зад.35, К1–К4). ЕГЭ: email (зад.37, К1–К3) и эссе (зад.38, К1–К5).
+// Конфиг задания — из EXAM.writing.tasks; тексты — из t; AI-проверка по языку экзамена.
+
+import { el, mount, celebrate, iconImg } from '../js/ui.js';
+import { loadJSON } from '../js/data.js';
+import { recordWriting } from '../js/progress.js';
+import { recordRound, getName, checkNewAchievements } from '../js/gamify.js';
+import { roundMessage, celeb } from '../js/voice.js';
+import { EXAM, t, plural } from '../js/exam.js';
+
+const WORKER = 'https://purple-cake-2966.o-sintsova.workers.dev'; // прокси DeepSeek
+
+// Тематическая картинка для карточки-стимула. ОГЭ — по subject; ЕГЭ — по ключевым словам промпта.
+const SUBJECT_THEME = {
+  'School': 'school', 'School clubs': 'school', 'School subjects': 'school', 'School exams': 'school',
+  'Exam preparation': 'school', 'Coming late': 'school', 'Learning foreign languages': 'school',
+  'School friends': 'family', 'My best friend': 'family', 'Family gatherings': 'family',
+  'Mother’s Day': 'family', 'Christmas time': 'family', 'New Year resolutions': 'family', 'Presents': 'family',
+  'Sports': 'sport', 'Diet': 'health',
+  'Holidays': 'travel', 'Travelling': 'travel', 'Summer': 'travel', 'Souvenirs': 'travel', 'Russian towns': 'travel',
+  'Museum': 'culture', 'Theatre': 'culture', 'Books': 'culture', 'Music': 'culture',
+  'Watching films': 'culture', 'Watching TV': 'culture', 'Hobby': 'culture',
+  'Career plans': 'career', 'Future profession': 'career',
+  'Missing my computer': 'tech', 'Life without gadgets': 'tech', 'News': 'tech',
+  'Ecological problems': 'nature', 'Weather': 'nature',
+  'Pets': 'pets', 'Pocket money': 'money', 'Clothes': 'money',
+};
+const KW_THEME = [
+  [/school|teacher|lesson|exam|classmate|homework|study/, 'school'],
+  [/sport|football|basketball|tennis|swim|gym|athlet|team/, 'sport'],
+  [/diet|healthy food|eating|fruit|vegetable|fitness/, 'health'],
+  [/travel|holiday|trip|tourist|abroad|excursion|bicycle|bike/, 'travel'],
+  [/music|book|film|movie|cinema|theatre|art|museum|reading|hobby/, 'culture'],
+  [/career|profession|job|future work|university/, 'career'],
+  [/family|friend|parent|picnic|birthday|present|christmas/, 'family'],
+  [/computer|gadget|phone|internet|online|technolog|video game/, 'tech'],
+  [/environment|ecolog|nature|weather|climate|pollut|animal/, 'nature'],
+  [/\bpet\b|\bpets\b|\bdog\b|\bcat\b|puppy/, 'pets'],
+  [/money|shopping|clothes|pocket money|spend/, 'money'],
+];
+function themeFor(it) {
+  let key = it.subject && SUBJECT_THEME[it.subject];
+  if (!key) {
+    const s = (it.prompt || it.subject || it.context || '').toLowerCase();
+    for (const [re, k] of KW_THEME) { if (re.test(s)) { key = k; break; } }
+  }
+  return './assets/theme-' + (key || 'default') + '.png';
+}
+
+function critColor(score, max) {
+  const r = max ? score / max : 0;
+  return r >= 0.8 ? 'var(--ok)' : r >= 0.5 ? 'var(--warn)' : 'var(--bad)';
+}
+function buildMoments(g, name) {
+  const m = [];
+  if (g.heroAwarded) m.push({ icon: '🦸', img: './assets/spiky-hero.png', title: t.celHeroT, text: celeb('hero', name), confetti: true });
+  if (g.levelUp) m.push({ icon: '⭐', img: './assets/spiky-cheer.png', title: t.celLevelT(g.level, g.title), text: celeb('level', name), confetti: true });
+  if (g.streakUp && [3, 7, 14, 30, 50, 100].includes(g.streak)) m.push({ icon: '🔥', img: './assets/spiky-fire.png', title: t.celStreakT(g.streak), text: celeb('streak', name) });
+  if (g.freezeEarned) m.push({ icon: '🧊', title: t.celFreezeT, text: celeb('freeze', name) });
+  if (g.tokensEarned) m.push({ icon: '🎟', img: './assets/spiky-gift.png', title: t.celTokenT(g.tokensEarned, plural(g.tokensEarned, t.tokenWord)), text: t.celTokenText(name || t.friend) });
+  for (const a of checkNewAchievements()) m.push({ icon: a.icon, img: './assets/spiky-medal.png', title: a.title, text: t.celAchText(a.desc, celeb('ach', name)), confetti: true });
+  return m;
+}
+
+// cfg: {goHome, sectionId}
+export async function renderWriting(container, cfg) {
+  const task = (EXAM.writing.tasks.find((x) => x.sectionId === cfg.sectionId)) || EXAM.writing.tasks[0];
+  mount(container, el('div', { class: 'loader', text: t.wLoading }));
+  let items;
+  try { items = await loadJSON(task.dataFile); }
+  catch (e) { mount(container, el('div', { class: 'err-msg', text: e.message })); return; }
+
+  const headTitle = t.sections[cfg.sectionId];
+  const headSub = t.sectionMeta[cfg.sectionId] || '';
+  const [wMin, wMax] = task.words;
+
+  pickScreen();
+
+  function secBar(onBack, sub) {
+    return el('div', { class: 'sec-bar writing' }, [
+      el('button', { class: 'back', text: '←', onclick: onBack }),
+      el('div', { style: { flex: '1' } }, [
+        el('div', { class: 'sb-title', text: headTitle }),
+        el('div', { class: 'sb-sub', text: sub }),
+      ]),
+    ]);
+  }
+
+  // короткий заголовок задания для списка
+  function itemTitle(it, i) { return it.name ? t.wFrom(it.name) : headTitle + ' ' + (i + 1); }
+  function snippet(it) {
+    const s = it.subject || it.prompt || it.context || '';
+    return s.length > 64 ? s.slice(0, 64) + '…' : s;
+  }
+
+  function pickScreen() {
+    const list = el('div', { class: 'topic-list' });
+    items.forEach((it, i) => {
+      list.appendChild(el('button', { class: 'topic-item', onclick: () => taskScreen(i) }, [
+        el('div', { style: { flex: '1', minWidth: '0' } }, [
+          el('div', { class: 'ti-name', text: itemTitle(it, i) }),
+          el('div', { class: 'ti-count', text: snippet(it) }),
+        ]),
+        el('div', { class: 'at-arrow', text: '→' }),
+      ]));
+    });
+    mount(container, el('div', { class: 'view' }, [
+      secBar(cfg.goHome, t.wPickSub),
+      el('div', { class: 'topics-body' }, [list]),
+    ]));
+  }
+
+  function taskScreen(i) {
+    const it = items[i];
+    const area = el('textarea', { class: 'letter-area', placeholder: it.name ? 'Dear ' + it.name + ',\n…' : '' });
+    const wc = el('div', { class: 'wc', text: '0 ' + plural(0, t.wordsWord) + ' · ' + wMin + '–' + wMax });
+    const btn = el('button', { class: 'btn btn-honey btn-block', text: t.wCheck });
+    const loader = el('div', { class: 'loader', style: { display: 'none' }, text: t.wLoading });
+    const errBox = el('div', { class: 'err-msg', style: { display: 'none' } });
+    const resultBox = el('div', {});
+
+    const countWords = () => area.value.trim().split(/\s+/).filter(Boolean).length;
+    area.addEventListener('input', () => {
+      const w = countWords();
+      wc.textContent = w + ' ' + plural(w, t.wordsWord) + ' · ' + wMin + '–' + wMax;
+      wc.className = 'wc ' + (w >= wMin && w <= wMax ? 'ok' : (w > wMax ? 'bad' : (w >= Math.round(wMin * 0.6) ? 'warn' : '')));
+    });
+
+    btn.addEventListener('click', async () => {
+      const text = area.value.trim();
+      errBox.style.display = 'none'; resultBox.replaceChildren();
+      if (countWords() < 20) { errBox.textContent = t.wErrShort; errBox.style.display = 'block'; return; }
+      btn.disabled = true; loader.style.display = 'block';
+      try {
+        const res = await evalWriting(text, it);
+        recordWriting(it.zid, res.totalScore);
+        renderResult(resultBox, res);
+        const g = recordRound(cfg.sectionId, res.totalScore || 0, task.max);
+        const name = getName();
+        resultBox.insertBefore(el('p', { class: 'voice-msg', text: roundMessage(name, res.totalScore || 0, task.max, g.heroAwarded) }), resultBox.firstChild);
+        const rl = (iconName, emoji, label, vc, val) => el('div', { class: 'reward-line' },
+          [el('span', { class: 'rl-label' }, [iconImg(iconName, emoji), el('span', { text: ' ' + label })]), el('b', { class: vc, text: val })]);
+        resultBox.appendChild(el('div', { class: 'reward' }, [
+          rl('ic-streak', '🔥', t.rStreak, 'v-streak', String(g.streak)),
+          rl('ic-xp', '⭐', t.rXp, 'v-xp', '+' + g.xpGained + ' XP'),
+          rl('ic-hero', '🦸', t.rPack, 'v-pack', t.packOf(g.pack.done.length, g.pack.total)),
+        ]));
+        btn.textContent = t.wRecheck;
+        celebrate(buildMoments(g, name), () => resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' }));
+      } catch (e) {
+        errBox.textContent = t.wErrServer(e.message); errBox.style.display = 'block';
+      } finally {
+        btn.disabled = false; loader.style.display = 'none';
+      }
+    });
+
+    // карточка-стимул с тематической картинкой
+    const themeImg = el('img', { class: 'lc-theme', src: themeFor(it), alt: '' });
+    themeImg.addEventListener('error', () => themeImg.remove()); // нет файла → просто без картинки
+    const head = el('div', { class: 'lc-head' }, [
+      themeImg,
+      el('div', { class: 'from', text: it.name ? t.wLetterFrom(it.name) : headTitle }),
+    ]);
+    const body = (it.context || it.questions)
+      ? el('div', { class: 'body' }, [it.context || '', it.questions ? el('b', { text: ' ' + it.questions }) : null])
+      : el('div', { class: 'body', text: it.prompt || '' });
+    const stimulus = el('div', { class: 'letter-card' }, [head, body]);
+
+    mount(container, el('div', { class: 'w-screen view' }, [
+      secBar(pickScreen, headSub),
+      el('div', { class: 'writing-body' }, [
+        stimulus,
+        resultBox,
+        el('div', { style: { position: 'relative' } }, [area, wc]),
+        el('div', { style: { marginTop: '14px' } }, [btn]),
+        loader, errBox,
+      ]),
+    ]));
+    area.focus();
+  }
+
+  // --- AI-проверка (промпт по языку экзамена и типу задания) ---
+  async function evalWriting(text, it) {
+    const wcN = text.trim().split(/\s+/).filter(Boolean).length;
+    const critSpec = task.criteria.map((c) => `${c.code} (max ${c.max}): ${c.name}`).join('; ');
+    const critJson = task.criteria.map((c) => `{"code":"${c.code}","name":"${c.name}","score":<0-${c.max}>,"max":${c.max},"comment":"<...>"}`).join(',');
+    const stim = it.prompt || ((it.context || '') + ' ' + (it.questions || ''));
+
+    let sys, user;
+    if (EXAM.lang === 'en') {
+      const kind = cfg.sectionId === 'essay'
+        ? 'task 38, a data-based opinion essay (200-250 words). The student must follow the plan: opening statement, report 2-3 facts, 1-2 comparisons with comments, outline a problem and a solution, and a conclusion with their opinion.'
+        : 'task 37, a personal email (100-140 words). The student must answer the friend\'s questions AND ask 3 questions, with a correct opening, closing phrase and name.';
+      sys = 'You are a strict but kind English exam examiner. You assess a student\'s writing strictly by the official criteria and reply ONLY with valid JSON, no markdown. All comments must be IN ENGLISH at B1 level — short and clear.';
+      user =
+`Task: ${kind}
+Criteria: ${critSpec}
+Word limit: ${wMin}-${wMax} words.
+
+Prompt the student answered:
+"""${stim}"""
+
+Student's writing (${wcN} words):
+"""${text}"""
+
+Return JSON exactly like this:
+{"totalScore":<sum 0-${task.max}>,"criteria":[${critJson}],"verdict":"<1-2 sentences in English, encouraging>","errors":[{"quote":"<exact phrase from the text>","what":"<what is wrong, in English>","fix":"<correct version>"}],"corrected":"<the full corrected text>"}
+Score every criterion within its max. totalScore = sum of criteria scores. Give 2-5 concrete errors if there are any.`;
+    } else {
+      sys = 'Ты строгий экзаменатор ОГЭ по английскому. Оцениваешь личное письмо (задание 35) строго по официальным критериям ФИПИ. Возвращаешь ТОЛЬКО валидный JSON, без markdown. Комментарии — по-русски.';
+      user =
+`Критерии: ${critSpec}. Объём ${wMin}–${wMax} слов.
+Контекст письма друга: ${stim}
+
+Письмо ученика (${wcN} слов):
+"""${text}"""
+
+Верни JSON строго так:
+{"totalScore":<сумма 0-${task.max}>,"criteria":[${critJson}],"verdict":"<1-2 предложения по-русски>","errors":[{"quote":"<точная фраза>","what":"<что не так>","fix":"<как правильно>"}],"corrected":"<полный исправленный текст>"}
+К1 — решение задачи (полные ответы, объём, вежливость, стиль). К2 — организация, абзацы, связки, обращение/подпись. К3 — лексика+грамматика. К4 — орфография и пунктуация. В ОГЭ встречные вопросы НЕ требуются. totalScore = сумма по критериям.`;
+    }
+
+    const r = await fetch(WORKER, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ model: 'deepseek-chat', max_tokens: 2200,
+        messages: [{ role: 'system', content: sys }, { role: 'user', content: user }] }),
+    });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const d = await r.json();
+    if (d.error) throw new Error(d.error.message || JSON.stringify(d.error));
+    if (!d.choices || !d.choices[0]) throw new Error('empty response');
+    return JSON.parse(d.choices[0].message.content.replace(/```json|```/g, '').trim());
+  }
+
+  function renderResult(box, r) {
+    const crit = (r.criteria && r.criteria.length) ? r.criteria : task.criteria.map((c) => ({ ...c, score: 0, comment: '' }));
+    const critCards = crit.map((c) => el('div', { class: 'crit' }, [
+      el('div', { class: 'c-top' }, [
+        el('div', { class: 'c-name', text: c.code + ' · ' + c.name }),
+        el('div', { class: 'c-score', style: { color: critColor(c.score, c.max) }, text: `${c.score}/${c.max}` }),
+      ]),
+      c.comment ? el('div', { class: 'c-comment', text: c.comment }) : null,
+    ]));
+    const nodes = [
+      el('div', { class: 'letter-result' }, [
+        el('div', { class: 'lr-head' }, [
+          el('div', { class: 'lr-score' }, [String(r.totalScore ?? '–'), el('span', { text: '/' + task.max })]),
+          el('div', { class: 'lr-verdict', text: r.verdict || t.wVerdictDefault }),
+        ]),
+        el('div', { class: 'crit-list' }, critCards),
+      ]),
+    ];
+    if (r.errors && r.errors.length) {
+      nodes.push(el('div', { class: 'fixes-card' }, [
+        el('h3', { text: t.wErrorsTitle }),
+        ...r.errors.map((e) => el('div', { class: 'fix-row' }, [
+          el('span', { class: 'was', text: e.quote || '' }),
+          el('span', { class: 'arrow', text: '→' }),
+          el('span', { class: 'now', text: e.fix || '' }),
+        ])),
+      ]));
+    }
+    if (r.corrected) {
+      nodes.push(el('div', { class: 'fixes-card' }, [
+        el('h3', { text: t.wCorrectedTitle }),
+        el('div', { class: 'corrected', text: r.corrected }),
+      ]));
+    }
+    mount(box, el('div', {}, nodes));
+  }
+}

@@ -1,0 +1,6590 @@
+{
+ "61D885": {
+  "answer": "friendship",
+  "verdict": "3",
+  "guid": "FD875F3DAED086FC451E1620141C6B11",
+  "sec": "wordform"
+ },
+ "6460B7": {
+  "answer": "comfortable",
+  "verdict": "3",
+  "guid": "4D3D026A645383224AA6AFC394BBEFE1",
+  "sec": "wordform"
+ },
+ "650A23": {
+  "answer": "unforgettable",
+  "verdict": "3",
+  "guid": "6DE289B1E4C7A4CB4D02FF32D6A7528C",
+  "sec": "wordform"
+ },
+ "653FA6": {
+  "answer": "lucky",
+  "verdict": "3",
+  "guid": "9DDE814509F88E274C02E2874FDD7186",
+  "sec": "wordform"
+ },
+ "65D07E": {
+  "answer": "unfair",
+  "verdict": "3",
+  "guid": "3DC7823D098D9DBF4931019E279E3A1B",
+  "sec": "wordform"
+ },
+ "66CDD0": {
+  "answer": "effective",
+  "verdict": "3",
+  "guid": "7D2AD7A73970BEDA43FE747DC41517E6",
+  "sec": "wordform"
+ },
+ "675F64": {
+  "answer": "exciting",
+  "verdict": "3",
+  "guid": "DD0831C738E68B3141878B478828B5D6",
+  "sec": "wordform"
+ },
+ "68CF6A": {
+  "answer": "homeless",
+  "verdict": "3",
+  "guid": "DD9AF13D2C93BD3948ED4776F07233AC",
+  "sec": "wordform"
+ },
+ "69469B": {
+  "answer": "appearance",
+  "verdict": "3",
+  "guid": "BD40BDC42450842E49774533A3148E33",
+  "sec": "wordform"
+ },
+ "69FA9F": {
+  "answer": "unpleasant",
+  "verdict": "3",
+  "guid": "BD11B9DCFA7CB7854187E456BDAB3E35",
+  "sec": "wordform"
+ },
+ "6A1166": {
+  "answer": "information",
+  "verdict": "3",
+  "guid": "DDD5955A7B2589DD497D00FCCC7BC5F4",
+  "sec": "wordform"
+ },
+ "6A1C73": {
+  "answer": "comfortable",
+  "verdict": "3",
+  "guid": "3DE59A71725D824A4A1251414702A4A1",
+  "sec": "wordform"
+ },
+ "6A6DDF": {
+  "answer": "illness",
+  "verdict": "3",
+  "guid": "7D1D9778078288694F6B97916D0E3B2D",
+  "sec": "wordform"
+ },
+ "6A726B": {
+  "answer": "fashionable",
+  "verdict": "3",
+  "guid": "DD4396FE7F48B7CE480F9A81FD07E4E3",
+  "sec": "wordform"
+ },
+ "6A777E": {
+  "answer": "nervous",
+  "verdict": "3",
+  "guid": "3DC393262F258DFB4D50B409734F2042",
+  "sec": "wordform"
+ },
+ "6AB11D": {
+  "answer": "dangerous",
+  "verdict": "3",
+  "guid": "5D7495DDF69583D44A7CCEE6DD727407",
+  "sec": "wordform"
+ },
+ "6B34F8": {
+  "answer": "traditional",
+  "verdict": "3",
+  "guid": "1DFE40FDE12F9DA24A2E59B826C08609",
+  "sec": "wordform"
+ },
+ "6B4192": {
+  "answer": "national",
+  "verdict": "3",
+  "guid": "BD6045D6A355B6624BDB046BF742D435",
+  "sec": "wordform"
+ },
+ "6BABE0": {
+  "answer": "successful",
+  "verdict": "3",
+  "guid": "CD2944BF014B90354644AA7C4385FE93",
+  "sec": "wordform"
+ },
+ "6BBFE9": {
+  "answer": "funny",
+  "verdict": "3",
+  "guid": "CDB44176BFFDB03548FDFDA297D82D1F",
+  "sec": "wordform"
+ },
+ "6CE746": {
+  "answer": "dancer",
+  "verdict": "3",
+  "guid": "0DDCA35761F9A92D4B25E59C71456A68",
+  "sec": "wordform"
+ },
+ "6DB359": {
+  "answer": "practical",
+  "verdict": "3",
+  "guid": "8DB47E397AE5A35D433F088C4872B5FC",
+  "sec": "wordform"
+ },
+ "6E0053": {
+  "answer": "teacher",
+  "verdict": "3",
+  "guid": "8DE2C2D4A7CCBEC14987DDE11F88325C",
+  "sec": "wordform"
+ },
+ "6F732E": {
+  "answer": "personal",
+  "verdict": "3",
+  "guid": "6DC31ED7A61FBFDE425D0A20AB1E7AE8",
+  "sec": "wordform"
+ },
+ "6FD774": {
+  "answer": "championship",
+  "verdict": "3",
+  "guid": "3D0713838D8FB619469AD4DDC11F6D3C",
+  "sec": "wordform"
+ },
+ "7063E1": {
+  "answer": "famous",
+  "verdict": "3",
+  "guid": "C35D2E8FB5D0AF4B412C36ABA2AB90B6",
+  "sec": "wordform"
+ },
+ "70F94A": {
+  "answer": "exciting",
+  "verdict": "3",
+  "guid": "03912B3AB27C8021414A32530A05E007",
+  "sec": "wordform"
+ },
+ "712194": {
+  "answer": "scientist",
+  "verdict": "3",
+  "guid": "B3065592380B8D334A301E73044AFD45",
+  "sec": "wordform"
+ },
+ "71CCBC": {
+  "answer": "international",
+  "verdict": "3",
+  "guid": "43AA5A5251919A1A421C38F61B42157B",
+  "sec": "wordform"
+ },
+ "73E99C": {
+  "answer": "learner",
+  "verdict": "3",
+  "guid": "B3ACEB25101F8EC7436D96640D8BA0BC",
+  "sec": "wordform"
+ },
+ "73F49D": {
+  "answer": "comfortable",
+  "verdict": "3",
+  "guid": "B371E0430985AB98408BFD8EB99136FA",
+  "sec": "wordform"
+ },
+ "75177A": {
+  "answer": "colourful",
+  "verdict": "3",
+  "guid": "3395830CECA3ADF249C8DB100FA6ACBB",
+  "sec": "wordform"
+ },
+ "7591A3": {
+  "answer": "comfortable",
+  "verdict": "3",
+  "guid": "93EB853720459FF2422A317BFF44202D",
+  "sec": "wordform"
+ },
+ "75A91F": {
+  "answer": "Unfortunately",
+  "verdict": "3",
+  "guid": "53198B7791D4A4F94B112252E9E6279F",
+  "sec": "wordform"
+ },
+ "75C602": {
+  "answer": "driver",
+  "verdict": "3",
+  "guid": "236A8D76B429A38E4A144785BDAFA57E",
+  "sec": "wordform"
+ },
+ "75E3F5": {
+  "answer": "wonderful",
+  "verdict": "3",
+  "guid": "138C8EBCAEFBA0874D659A7E110D69B4",
+  "sec": "wordform"
+ },
+ "77BFDF": {
+  "answer": "impossible",
+  "verdict": "3",
+  "guid": "731431558CC6AF1547BB93BFC40F197A",
+  "sec": "wordform"
+ },
+ "785418": {
+  "answer": "famous",
+  "verdict": "3",
+  "guid": "53F8F0139BFF9272455FB3602883048E",
+  "sec": "wordform"
+ },
+ "791805": {
+  "answer": "communication",
+  "verdict": "3",
+  "guid": "2385BFE68F3CB0A6474E5052C0A18454",
+  "sec": "wordform"
+ },
+ "79AA76": {
+  "answer": "careless",
+  "verdict": "3",
+  "guid": "33D9B981A2E789BC4278562E4DCD2177",
+  "sec": "wordform"
+ },
+ "79F5B1": {
+  "answer": "competition",
+  "verdict": "3",
+  "guid": "4351B8B60E41A6EA44F939277661ACA6",
+  "sec": "wordform"
+ },
+ "7A270D": {
+  "answer": "meaning",
+  "verdict": "3",
+  "guid": "2376932520B28A8642FA19E06A6C8B62",
+  "sec": "wordform"
+ },
+ "7A6503": {
+  "answer": "sunny",
+  "verdict": "3",
+  "guid": "23ED98C68279A0224F56FD11535612F2",
+  "sec": "wordform"
+ },
+ "7AFE48": {
+  "answer": "rarely",
+  "verdict": "3",
+  "guid": "03F19CE93CD589BD4F4EECEFC7E9E82A",
+  "sec": "wordform"
+ },
+ "7B9087": {
+  "answer": "successful",
+  "verdict": "3",
+  "guid": "F33B42CE0045B60B48ED7E16F6DDF5C7",
+  "sec": "wordform"
+ },
+ "7CF8D2": {
+  "answer": "wealthy",
+  "verdict": "3",
+  "guid": "7361AF5F014B971C4755C7BC7ECE0E62",
+  "sec": "wordform"
+ },
+ "7D9147": {
+  "answer": "unforgettable",
+  "verdict": "3",
+  "guid": "033B753F6163BDE1472523C60FCA7CFF",
+  "sec": "wordform"
+ },
+ "7DDC0A": {
+  "answer": "beautiful",
+  "verdict": "3",
+  "guid": "23977A60FC9A8EC44F52D0C0DE6C6787",
+  "sec": "wordform"
+ },
+ "7E9527": {
+  "answer": "Unfortunately",
+  "verdict": "3",
+  "guid": "633BC8185FCFBEAC48A3BD5887307749",
+  "sec": "wordform"
+ },
+ "7F2EA6": {
+  "answer": "famous",
+  "verdict": "3",
+  "guid": "93D61C2878F9BD5B450DDAF78F57B56B",
+  "sec": "wordform"
+ },
+ "7FCBB5": {
+  "answer": "harmless",
+  "verdict": "3",
+  "guid": "438A1490D39589464B1E9091B6F3C929",
+  "sec": "wordform"
+ },
+ "801E67": {
+  "answer": "entertainment",
+  "verdict": "3",
+  "guid": "DF352CCE52A0887643DD5E25CC5B5042",
+  "sec": "wordform"
+ },
+ "8148D0": {
+  "answer": "personal",
+  "verdict": "3",
+  "guid": "7F205F0FA6A4B2BC4F9DDB56C21512A9",
+  "sec": "wordform"
+ },
+ "81EA70": {
+  "answer": "unusual",
+  "verdict": "3",
+  "guid": "3F2C592F11DA831446F10D5F7B09069D",
+  "sec": "wordform"
+ },
+ "820C41": {
+  "answer": "homeless",
+  "verdict": "3",
+  "guid": "0F526A26DCB1AF1B4E170750BEC60328",
+  "sec": "wordform"
+ },
+ "822F5E": {
+  "answer": "usually",
+  "verdict": "3",
+  "guid": "8FC661CD04A28C954A37B0C25FE4DF18",
+  "sec": "wordform"
+ },
+ "8238EC": {
+  "answer": "Actually",
+  "verdict": "3",
+  "guid": "CFAE6F3D32138E6F48FDCBCB64C3F64D",
+  "sec": "wordform"
+ },
+ "824CE9": {
+  "answer": "situation",
+  "verdict": "3",
+  "guid": "CFB06AF6EC7DA6FD4D80577D97C26992",
+  "sec": "wordform"
+ },
+ "8273C1": {
+  "answer": "writer",
+  "verdict": "3",
+  "guid": "AF536EBB801CA6614EDFE1FFA6EF9FF8",
+  "sec": "wordform"
+ },
+ "82AB6D": {
+  "answer": "population",
+  "verdict": "3",
+  "guid": "DF7964F57EE7AF95463B81BFF1F57020",
+  "sec": "wordform"
+ },
+ "830A42": {
+  "answer": "traveller",
+  "verdict": "3",
+  "guid": "0F62E9ABB80D97304A22162F2C2C9BCD",
+  "sec": "wordform"
+ },
+ "839366": {
+  "answer": "traditional",
+  "verdict": "3",
+  "guid": "DFDBEEBD495490CC41139F121B2E4C02",
+  "sec": "wordform"
+ },
+ "841EF9": {
+  "answer": "amazing",
+  "verdict": "3",
+  "guid": "1FB50C098D3C9B044F49619276E5255A",
+  "sec": "wordform"
+ },
+ "8424BC": {
+  "answer": "charming",
+  "verdict": "3",
+  "guid": "4FA60040032FBCA64D36B065224AD6C3",
+  "sec": "wordform"
+ },
+ "850FA3": {
+  "answer": "information",
+  "verdict": "3",
+  "guid": "9FE2812E3CD88FC54FA074F1CE7EE9AD",
+  "sec": "wordform"
+ },
+ "853120": {
+  "answer": "difference",
+  "verdict": "3",
+  "guid": "6F2E8561AB339346429706E4B8C22F57",
+  "sec": "wordform"
+ },
+ "860B5F": {
+  "answer": "painter",
+  "verdict": "3",
+  "guid": "8F12D47A7193ADA44811F82DC912B068",
+  "sec": "wordform"
+ },
+ "869A80": {
+  "answer": "famous",
+  "verdict": "3",
+  "guid": "FF2BD9FDB5A6AC394B9CA81D6F030F65",
+  "sec": "wordform"
+ },
+ "86A8EA": {
+  "answer": "scientist",
+  "verdict": "3",
+  "guid": "CF99DFD8311186124AB9F2E3C04E702F",
+  "sec": "wordform"
+ },
+ "86BEEC": {
+  "answer": "winner",
+  "verdict": "3",
+  "guid": "CFA4DC8E882F8B9046CA0156495324CB",
+  "sec": "wordform"
+ },
+ "878AB5": {
+  "answer": "advertisement",
+  "verdict": "3",
+  "guid": "4F8F39A405169F7C42BC5882FB3EF507",
+  "sec": "wordform"
+ },
+ "87F324": {
+  "answer": "lucky",
+  "verdict": "3",
+  "guid": "6F013E798331B94C4D64AB8C353165D3",
+  "sec": "wordform"
+ },
+ "8819AF": {
+  "answer": "expensive",
+  "verdict": "3",
+  "guid": "9F15FBF60994829944BB5C85D470AB28",
+  "sec": "wordform"
+ },
+ "88978F": {
+  "answer": "responsible",
+  "verdict": "3",
+  "guid": "FF1BF3D845D2BC604CFE1EBB3884097D",
+  "sec": "wordform"
+ },
+ "88BBE7": {
+  "answer": "happily",
+  "verdict": "3",
+  "guid": "CF34F44D273DA0BF4FA9D594CF7BBA4E",
+  "sec": "wordform"
+ },
+ "891BAA": {
+  "answer": "situation",
+  "verdict": "3",
+  "guid": "9F95B4D302438FFC4E9D2D72335FC8A8",
+  "sec": "wordform"
+ },
+ "8A7E83": {
+  "answer": "unusual",
+  "verdict": "3",
+  "guid": "FFE39C0EF575BBA54958EFCE5FDCF9E5",
+  "sec": "wordform"
+ },
+ "8D9142": {
+  "answer": "writer",
+  "verdict": "3",
+  "guid": "0F6B75FB42F69AE24BC0D608E12ABAA2",
+  "sec": "wordform"
+ },
+ "8F7E7B": {
+  "answer": "beautiful",
+  "verdict": "3",
+  "guid": "3F431C72BD5499F740841C3DF7CCF935",
+  "sec": "wordform"
+ },
+ "8F85D7": {
+  "answer": "definitely",
+  "verdict": "3",
+  "guid": "7F3F18009133BB63412ADC434E8CA295",
+  "sec": "wordform"
+ },
+ "8F8F35": {
+  "answer": "funny",
+  "verdict": "3",
+  "guid": "EF8F11604E04A22A43554B4EC4D5B1F7",
+  "sec": "wordform"
+ },
+ "901BEB": {
+  "answer": "designer",
+  "verdict": "3",
+  "guid": "CB45241340A29EFE4D73BCB386F4C68C",
+  "sec": "wordform"
+ },
+ "90301A": {
+  "answer": "friendship",
+  "verdict": "3",
+  "guid": "5B9E2249F45599314964E3052E81C949",
+  "sec": "wordform"
+ },
+ "90EAFD": {
+  "answer": "successful",
+  "verdict": "3",
+  "guid": "1B7C2943A4C59BB84A5E5BA0195DF788",
+  "sec": "wordform"
+ },
+ "90F618": {
+  "answer": "teacher",
+  "verdict": "3",
+  "guid": "5BF12DF9CFB7A7D547556ADAAB10ED87",
+  "sec": "wordform"
+ },
+ "929FFD": {
+  "answer": "competition",
+  "verdict": "3",
+  "guid": "1B7B617B0584B5CF4D6799D578B26052",
+  "sec": "wordform"
+ },
+ "92C29A": {
+  "answer": "exciting",
+  "verdict": "3",
+  "guid": "BB9A6639ABDDB71E4AADB2285B093E1F",
+  "sec": "wordform"
+ },
+ "92F3DB": {
+  "answer": "writer",
+  "verdict": "3",
+  "guid": "7B416E16CC4F8F2F46CE224B5282DF14",
+  "sec": "wordform"
+ },
+ "93197F": {
+  "answer": "impossible",
+  "verdict": "3",
+  "guid": "3B15EB301EEBB2DC44742195C8AF7484",
+  "sec": "wordform"
+ },
+ "933F1A": {
+  "answer": "impossible",
+  "verdict": "3",
+  "guid": "5B9EE1257E4E8F374F34307D68D9AF85",
+  "sec": "wordform"
+ },
+ "941CA9": {
+  "answer": "driver",
+  "verdict": "3",
+  "guid": "9BB50AEA38D78B1E444EEAAD290CB7C9",
+  "sec": "wordform"
+ },
+ "9424CE": {
+  "answer": "hunter",
+  "verdict": "3",
+  "guid": "ABC600D5D66684EB4CE56DB897D7F824",
+  "sec": "wordform"
+ },
+ "B64149": {
+  "answer": "saw",
+  "verdict": "3",
+  "guid": "04B0D5F32FC6B12D4F64A910E98911B1",
+  "sec": "grammar"
+ },
+ "B672D9": {
+  "answer": "their",
+  "verdict": "3",
+  "guid": "74B3D69080F4B1644875AE73EA47091A",
+  "sec": "grammar"
+ },
+ "B6D1E2": {
+  "answer": "second",
+  "verdict": "3",
+  "guid": "C467D57798CA8680459F293B829F3E01",
+  "sec": "grammar"
+ },
+ "B73449": {
+  "answer": "more expensive",
+  "verdict": "3",
+  "guid": "04BE309FC75F839C4CA883B9CA71DA24",
+  "sec": "grammar"
+ },
+ "B858A3": {
+  "answer": "did not differ",
+  "verdict": "3",
+  "guid": "94E8FF1893F195874833B3B6A362A427",
+  "sec": "grammar"
+ },
+ "B8F206": {
+  "answer": "told",
+  "verdict": "3",
+  "guid": "24D1F6D08A5ABE0F42E7BA57E301BFCD",
+  "sec": "grammar"
+ },
+ "BA6F7C": {
+  "answer": "was packed",
+  "verdict": "3",
+  "guid": "34AD916125679BDF4AEE8E6C77774555",
+  "sec": "grammar"
+ },
+ "BAE85B": {
+  "answer": "brought",
+  "verdict": "3",
+  "guid": "844C9FF4CBB7B52F497E2F25A9C6D3E9",
+  "sec": "grammar"
+ },
+ "BAF842": {
+  "answer": "was eating",
+  "verdict": "3",
+  "guid": "04619F3200C691A945D992FA82D774C4",
+  "sec": "grammar"
+ },
+ "BB1B8B": {
+  "answer": "children",
+  "verdict": "3",
+  "guid": "F44544DC53D1AACC4E50BFC19D75F701",
+  "sec": "grammar"
+ },
+ "BB793A": {
+  "answer": "could",
+  "verdict": "3",
+  "guid": "E4934B609E3C95A846CD5EDF7FED0327",
+  "sec": "grammar"
+ },
+ "BB797F": {
+  "answer": "could",
+  "verdict": "3",
+  "guid": "34134BD5DC64B16543D1411C1B779C65",
+  "sec": "grammar"
+ },
+ "BB8EAA": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "949F4C02550CB62A4BD8AF91EC7709AA",
+  "sec": "grammar"
+ },
+ "BBBA44": {
+  "answer": "my",
+  "verdict": "3",
+  "guid": "040449BB23A29A144283B96EC054AD06",
+  "sec": "grammar"
+ },
+ "BC9509": {
+  "answer": "will come",
+  "verdict": "3",
+  "guid": "24BBA811709B866D4ECAC510CAC9EF66",
+  "sec": "grammar"
+ },
+ "BD88DC": {
+  "answer": "would test",
+  "verdict": "3",
+  "guid": "74AF7F996DCBAD6F4EA1F75A1FB521FF",
+  "sec": "grammar"
+ },
+ "BE7250": {
+  "answer": "easier",
+  "verdict": "3",
+  "guid": "8423C63C8F2DA0A1485C7642827516A5",
+  "sec": "grammar"
+ },
+ "BF69EA": {
+  "answer": "worse",
+  "verdict": "3",
+  "guid": "C49D1BB5480F87FB45FB1C5D75B52135",
+  "sec": "grammar"
+ },
+ "BF8F80": {
+  "answer": "most wonderful",
+  "verdict": "3",
+  "guid": "F42F1190F154ACBF4659394558834C88",
+  "sec": "grammar"
+ },
+ "BFCD2C": {
+  "answer": "months",
+  "verdict": "3",
+  "guid": "64AA172710759E50435068C2659E10CA",
+  "sec": "grammar"
+ },
+ "C02ECE": {
+  "answer": "was preparing",
+  "verdict": "3",
+  "guid": "AAC62C97458A8AAD473D9FD1457DDC92",
+  "sec": "grammar"
+ },
+ "C058C2": {
+  "answer": "policemen",
+  "verdict": "3",
+  "guid": "AA682F399A5DBF604EA025EEBB0769C7",
+  "sec": "grammar"
+ },
+ "C05C8D": {
+  "answer": "more convenient",
+  "verdict": "3",
+  "guid": "FA782A06F08982FD4FD265F249E3ED0D",
+  "sec": "grammar"
+ },
+ "C08286": {
+  "answer": "boxes",
+  "verdict": "3",
+  "guid": "FADF2649FBFEA3484CAFD9CF9D4C5543",
+  "sec": "grammar"
+ },
+ "C09851": {
+  "answer": "felt",
+  "verdict": "3",
+  "guid": "8A5B2F67D67F904D4C6F6139F042802E",
+  "sec": "grammar"
+ },
+ "C09F73": {
+  "answer": "was written",
+  "verdict": "3",
+  "guid": "3AEB21827815A817475F32544C9C15A9",
+  "sec": "grammar"
+ },
+ "C0EFB1": {
+  "answer": "has made",
+  "verdict": "3",
+  "guid": "4A5C21570F3F92AB40E687C4E3405719",
+  "sec": "grammar"
+ },
+ "C100A5": {
+  "answer": "would take",
+  "verdict": "3",
+  "guid": "9A8252A61404805943C1355FC0D06ADB",
+  "sec": "grammar"
+ },
+ "C106BD": {
+  "answer": "our",
+  "verdict": "3",
+  "guid": "4A725D05DC3ABFBA459C9B56702DBE23",
+  "sec": "grammar"
+ },
+ "C10BEF": {
+  "answer": "gave",
+  "verdict": "3",
+  "guid": "CA1254A25F4199784D5F883977F42166",
+  "sec": "grammar"
+ },
+ "C15E2B": {
+  "answer": "could not",
+  "verdict": "3",
+  "guid": "6A485C6B9C1B8E874645E82D904B82F2",
+  "sec": "grammar"
+ },
+ "C1ECC0": {
+  "answer": "went",
+  "verdict": "3",
+  "guid": "AA2C5A79D822938F4BFC4FDD53221936",
+  "sec": "grammar"
+ },
+ "C298A9": {
+  "answer": "me",
+  "verdict": "3",
+  "guid": "9ABB6F98238C8BD74640CD743C932D76",
+  "sec": "grammar"
+ },
+ "C2BEF5": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "1A846C75FA12AB7C4E6D00E8A447D7AA",
+  "sec": "grammar"
+ },
+ "C341D9": {
+  "answer": "knew",
+  "verdict": "3",
+  "guid": "7AB0E5376D24B85B47B504A509917F88",
+  "sec": "grammar"
+ },
+ "C3A634": {
+  "answer": "took",
+  "verdict": "3",
+  "guid": "EA09EDEC4ED59D3B495C4D626C627ACD",
+  "sec": "grammar"
+ },
+ "C55529": {
+  "answer": "best",
+  "verdict": "3",
+  "guid": "6AB8886C65BCBF5D4E0966B258C1770C",
+  "sec": "grammar"
+ },
+ "C56D49": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "0ABD87277E45B0E3450777EFC54AD755",
+  "sec": "grammar"
+ },
+ "C5AD91": {
+  "answer": "stopped",
+  "verdict": "3",
+  "guid": "BA598704E2C68FFE42D9891BC1C1FB49",
+  "sec": "grammar"
+ },
+ "C5DE5D": {
+  "answer": "stories",
+  "verdict": "3",
+  "guid": "8A778C00B0C98D6A496894D20991EA38",
+  "sec": "grammar"
+ },
+ "C5FE2F": {
+  "answer": "felt",
+  "verdict": "3",
+  "guid": "6A118C7B8C5CB8F449E489F18943FC3C",
+  "sec": "grammar"
+ },
+ "C619DD": {
+  "answer": "lives",
+  "verdict": "3",
+  "guid": "7A75DB50A297B286473B13DB663EACBB",
+  "sec": "grammar"
+ },
+ "C681EB": {
+  "answer": "better",
+  "verdict": "3",
+  "guid": "CA4FD50A2E84941144B64AD8B2B72231",
+  "sec": "grammar"
+ },
+ "C6AB31": {
+  "answer": "was",
+  "verdict": "3",
+  "guid": "EA59D4308D9F832C47C0CF227E6EA3AB",
+  "sec": "grammar"
+ },
+ "C6CFEA": {
+  "answer": "makes",
+  "verdict": "3",
+  "guid": "CA9AD141225DA9754F6668742336FF83",
+  "sec": "grammar"
+ },
+ "C72214": {
+  "answer": "first",
+  "verdict": "3",
+  "guid": "5A0636901E4283CB455FB92E55C8B146",
+  "sec": "grammar"
+ },
+ "C79060": {
+  "answer": "felt",
+  "verdict": "3",
+  "guid": "DA2B32CD09CABA0F4272A39AF0FD642C",
+  "sec": "grammar"
+ },
+ "C80C7F": {
+  "answer": "leaves",
+  "verdict": "3",
+  "guid": "3A12FADB134AAD3E40BBF5680CEE8080",
+  "sec": "grammar"
+ },
+ "C887DB": {
+  "answer": "will survive",
+  "verdict": "3",
+  "guid": "7A4FF32E5EEF9FDF4ED5652E7898E462",
+  "sec": "grammar"
+ },
+ "C9648D": {
+  "answer": "would be",
+  "verdict": "3",
+  "guid": "FA7DB05CD2818AAC49E28E7BFC822702",
+  "sec": "grammar"
+ },
+ "C9ABC7": {
+  "answer": "fifth",
+  "verdict": "3",
+  "guid": "AA39B4163697867149212BDFB8423875",
+  "sec": "grammar"
+ },
+ "C9CBF7": {
+  "answer": "older",
+  "verdict": "3",
+  "guid": "1A3AB4A426348A4D4E58E01EDF64860E",
+  "sec": "grammar"
+ },
+ "CA5B2B": {
+  "answer": "most interesting",
+  "verdict": "3",
+  "guid": "6A489435DF9E964B4F432553A79B8A58",
+  "sec": "grammar"
+ },
+ "CAF14D": {
+  "answer": "their",
+  "verdict": "3",
+  "guid": "0A7195C4165096FC4313EACAA77138FD",
+  "sec": "grammar"
+ },
+ "CB00A6": {
+  "answer": "wanted",
+  "verdict": "3",
+  "guid": "9AD242732107975245B9DFF22BC15FFC",
+  "sec": "grammar"
+ },
+ "CB5123": {
+  "answer": "did",
+  "verdict": "3",
+  "guid": "6AE845103027B5F34786077375207F2B",
+  "sec": "grammar"
+ },
+ "CB9E1B": {
+  "answer": "was located",
+  "verdict": "3",
+  "guid": "5A4B4CF1959592384545EF9A4D88581C",
+  "sec": "grammar"
+ },
+ "CC6466": {
+  "answer": "did not like",
+  "verdict": "3",
+  "guid": "DADDA05D190EB4434FADF8DFA3280622",
+  "sec": "grammar"
+ },
+ "CC9675": {
+  "answer": "were offered",
+  "verdict": "3",
+  "guid": "3A8BAD70D7178A0641ECCEE989F0FF57",
+  "sec": "grammar"
+ },
+ "CCE7DF": {
+  "answer": "took",
+  "verdict": "3",
+  "guid": "7A1CA34933A881CF478B1A060C136A0A",
+  "sec": "grammar"
+ },
+ "CD2842": {
+  "answer": "him",
+  "verdict": "3",
+  "guid": "0A667F11B71886CF4EAE774379AF1140",
+  "sec": "grammar"
+ },
+ "CD5351": {
+  "answer": "woke",
+  "verdict": "3",
+  "guid": "8A587EA46697A13147CBADD396A18610",
+  "sec": "grammar"
+ },
+ "CEC08F": {
+  "answer": "were broken",
+  "verdict": "3",
+  "guid": "FA1AC28F55EC8E414362E2D31917A409",
+  "sec": "grammar"
+ },
+ "CF163A": {
+  "answer": "copies",
+  "verdict": "3",
+  "guid": "EA951D047982A40D4BF26336F23F5690",
+  "sec": "grammar"
+ },
+ "CF6EC0": {
+  "answer": "is",
+  "verdict": "3",
+  "guid": "AA2D1C679A18A99749D8E86AF505037D",
+  "sec": "grammar"
+ },
+ "CF8E41": {
+  "answer": "women",
+  "verdict": "3",
+  "guid": "0A5F1C0A521F8444474060B57961E9E3",
+  "sec": "grammar"
+ },
+ "CFE679": {
+  "answer": "have caught",
+  "verdict": "3",
+  "guid": "3ABC1D8B082F8ACB403B530DB9C17AB4",
+  "sec": "grammar"
+ },
+ "D100B8": {
+  "answer": "had",
+  "verdict": "3",
+  "guid": "47F25232B4D19C494177F0F785AA05F7",
+  "sec": "grammar"
+ },
+ "D11927": {
+  "answer": "tomatoes",
+  "verdict": "3",
+  "guid": "67355B07C2B794064FFBD78176F4D456",
+  "sec": "grammar"
+ },
+ "D1A24D": {
+  "answer": "their",
+  "verdict": "3",
+  "guid": "07795629A2CC8D184BF880250D54C719",
+  "sec": "grammar"
+ },
+ "D2060E": {
+  "answer": "wrote",
+  "verdict": "3",
+  "guid": "27C26D9012E5999042682819C5D6DD20",
+  "sec": "grammar"
+ },
+ "D212F0": {
+  "answer": "him",
+  "verdict": "3",
+  "guid": "172566C81634BD684D75B773D267130E",
+  "sec": "grammar"
+ },
+ "D3E0C6": {
+  "answer": "stopped",
+  "verdict": "3",
+  "guid": "A7DCE24470A8B3544DC036A54A5B2C48",
+  "sec": "grammar"
+ },
+ "D40B65": {
+  "answer": "was broken",
+  "verdict": "3",
+  "guid": "D78204018E7898604BC4BE05FE2F5F6C",
+  "sec": "grammar"
+ },
+ "D476B4": {
+  "answer": "will help",
+  "verdict": "3",
+  "guid": "47030DB49A1199C247A1CEC1E4D8AC68",
+  "sec": "grammar"
+ },
+ "D4B2EF": {
+  "answer": "children",
+  "verdict": "3",
+  "guid": "C71406572D6497E845BD11D95851FB7D",
+  "sec": "grammar"
+ },
+ "D51A4B": {
+  "answer": "more interesting",
+  "verdict": "3",
+  "guid": "074589D62D2DBC95431C77FECE49A150",
+  "sec": "grammar"
+ },
+ "D51F55": {
+  "answer": "them",
+  "verdict": "3",
+  "guid": "8785810B22FC9B374D35220E0321582A",
+  "sec": "grammar"
+ },
+ "D59F4D": {
+  "answer": "was made",
+  "verdict": "3",
+  "guid": "077B819BBE15A3394620C73412A2F9E7",
+  "sec": "grammar"
+ },
+ "D5C71C": {
+  "answer": "its",
+  "verdict": "3",
+  "guid": "57AA83464EBB88834D0CE69178CA0E3E",
+  "sec": "grammar"
+ },
+ "D5EAAD": {
+  "answer": "was",
+  "verdict": "3",
+  "guid": "977C89F5A8CA95644DDB2AE2689D5344",
+  "sec": "grammar"
+ },
+ "D6670A": {
+  "answer": "your",
+  "verdict": "3",
+  "guid": "279DD3B229B28CDF46ED727C71A2C41B",
+  "sec": "grammar"
+ },
+ "D6A23C": {
+  "answer": "had taken",
+  "verdict": "3",
+  "guid": "E7A9D627187380F349A543A0E6C54FA6",
+  "sec": "grammar"
+ },
+ "D6B41F": {
+  "answer": "have decided",
+  "verdict": "3",
+  "guid": "5714D0D50034BFD14B9D38BDA66CADBE",
+  "sec": "grammar"
+ },
+ "D758D0": {
+  "answer": "was",
+  "verdict": "3",
+  "guid": "77283FA43E5BAA62471E0E0050A50FF3",
+  "sec": "grammar"
+ },
+ "D80156": {
+  "answer": "first",
+  "verdict": "3",
+  "guid": "87D2F58F070CB0994CFC8CFF15EFED41",
+  "sec": "grammar"
+ },
+ "D84D86": {
+  "answer": "do not know",
+  "verdict": "3",
+  "guid": "F7D0F7F0FC67BC0E4D58A2D0D6E4A89E",
+  "sec": "grammar"
+ },
+ "D8753A": {
+  "answer": "will recover",
+  "verdict": "3",
+  "guid": "E793F8BE7964837D4F50B21ABF7549B1",
+  "sec": "grammar"
+ },
+ "D8E8AF": {
+  "answer": "had seen",
+  "verdict": "3",
+  "guid": "971CFFAF0167B2904787B629916C206A",
+  "sec": "grammar"
+ },
+ "D8FE18": {
+  "answer": "will help",
+  "verdict": "3",
+  "guid": "57F1FCAD47A0ACCE4DDD77B1AFC02B06",
+  "sec": "grammar"
+ },
+ "D90584": {
+  "answer": "became",
+  "verdict": "3",
+  "guid": "F702B8FBC4B8A3FD460B468F5BA154A2",
+  "sec": "grammar"
+ },
+ "DA4757": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "873093D5D4308FA643A034CA5B3B8672",
+  "sec": "grammar"
+ },
+ "C49656": {
+  "answer": "colourful",
+  "verdict": "3",
+  "guid": "8ADB0D0BE1AEA6F54A8FB039AD99E38B",
+  "sec": "wordform"
+ },
+ "C57473": {
+  "answer": "colourful",
+  "verdict": "3",
+  "guid": "3AE3801E58BAA1C54386F18D07B8EE5C",
+  "sec": "wordform"
+ },
+ "C69005": {
+  "answer": "impressive",
+  "verdict": "3",
+  "guid": "2A8BD2F30137B52C459659F7A91D743E",
+  "sec": "wordform"
+ },
+ "C77A5D": {
+  "answer": "interesting",
+  "verdict": "3",
+  "guid": "8A7339A2216BA79F4DBB00CBF876A513",
+  "sec": "wordform"
+ },
+ "C7AB26": {
+  "answer": "really",
+  "verdict": "3",
+  "guid": "6AD934EBE14698AA4D427AE6CB80A0A2",
+  "sec": "wordform"
+ },
+ "C7B08F": {
+  "answer": "popularity",
+  "verdict": "3",
+  "guid": "FA14324FE773B9684799C24EA9C30D9F",
+  "sec": "wordform"
+ },
+ "C91106": {
+  "answer": "successful",
+  "verdict": "3",
+  "guid": "2AD5B5F3397098724AF6F8C623D020F7",
+  "sec": "wordform"
+ },
+ "C93CDC": {
+  "answer": "communication",
+  "verdict": "3",
+  "guid": "7AAEBA916056983140681DF71F547B99",
+  "sec": "wordform"
+ },
+ "CA2053": {
+  "answer": "famous",
+  "verdict": "3",
+  "guid": "8AE6923E6FE6984D488B5C2956BE2A77",
+  "sec": "wordform"
+ },
+ "CA9504": {
+  "answer": "useful",
+  "verdict": "3",
+  "guid": "2A0B98693414811C4E6CA3F3C2561A57",
+  "sec": "wordform"
+ },
+ "CC1739": {
+  "answer": "careful",
+  "verdict": "3",
+  "guid": "EAB5A3C7420CBEF74E988B10DCDBAAE5",
+  "sec": "wordform"
+ },
+ "CC2362": {
+  "answer": "international",
+  "verdict": "3",
+  "guid": "DA66AE93B56D8B5E413CF267CFD28816",
+  "sec": "wordform"
+ },
+ "CC3199": {
+  "answer": "careless",
+  "verdict": "3",
+  "guid": "BABEA5E895D1B8E343CF1E712DB4D591",
+  "sec": "wordform"
+ },
+ "CC7EEA": {
+  "answer": "creative",
+  "verdict": "3",
+  "guid": "CA93ACA917A09A5045FDEC4EA627EC23",
+  "sec": "wordform"
+ },
+ "CCAAF3": {
+  "answer": "translation",
+  "verdict": "3",
+  "guid": "1AE9A97E85D3AD824ECFF6AD77FF78C3",
+  "sec": "wordform"
+ },
+ "CCB60D": {
+  "answer": "absolutely",
+  "verdict": "3",
+  "guid": "2A74AD3D23E691454974F6F9850257BA",
+  "sec": "wordform"
+ },
+ "CE100A": {
+  "answer": "creative",
+  "verdict": "3",
+  "guid": "2A95C2297B50B3C8475B62D409D98DA8",
+  "sec": "wordform"
+ },
+ "CE2FDE": {
+  "answer": "attraction",
+  "verdict": "3",
+  "guid": "7AC6C1660756A9B5487E3C36B4DDCC75",
+  "sec": "wordform"
+ },
+ "CE4184": {
+  "answer": "wonderful",
+  "verdict": "3",
+  "guid": "FA00C536357198544EB0A151FBADA698",
+  "sec": "wordform"
+ },
+ "CE7F86": {
+  "answer": "popularity",
+  "verdict": "3",
+  "guid": "FAD3C1DC6E4AAD994C443C7107EFC400",
+  "sec": "wordform"
+ },
+ "CEC479": {
+  "answer": "famous",
+  "verdict": "3",
+  "guid": "3ABAC00029089A434DD1B6A9B5286D13",
+  "sec": "wordform"
+ },
+ "CF0D56": {
+  "answer": "spicy",
+  "verdict": "3",
+  "guid": "8AD2176E9DD1A17D4BDBEA5573C9DCA7",
+  "sec": "wordform"
+ },
+ "CF19B2": {
+  "answer": "performance",
+  "verdict": "3",
+  "guid": "4A651B4C36C3A97A403581FC81A0CD1E",
+  "sec": "wordform"
+ },
+ "D1772B": {
+  "answer": "imagination",
+  "verdict": "3",
+  "guid": "674353A096BF8AC34766F4204CD5947C",
+  "sec": "wordform"
+ },
+ "D3CAE1": {
+  "answer": "dangerous",
+  "verdict": "3",
+  "guid": "C75AE97A5AF897874F71DA7D96CD3E47",
+  "sec": "wordform"
+ },
+ "D440AA": {
+  "answer": "impressive",
+  "verdict": "3",
+  "guid": "9790021CD79FB9DF454B2558AF894D8F",
+  "sec": "wordform"
+ },
+ "D47148": {
+  "answer": "disappear",
+  "verdict": "3",
+  "guid": "07F305211EEAA39140DB6D1E3E8872EA",
+  "sec": "wordform"
+ },
+ "D4CAA1": {
+  "answer": "healthy",
+  "verdict": "3",
+  "guid": "975A0956C74C96B5423FD03741F55BF4",
+  "sec": "wordform"
+ },
+ "D4DBD8": {
+  "answer": "successful",
+  "verdict": "3",
+  "guid": "77F704EF157E8BAD456B29249D438603",
+  "sec": "wordform"
+ },
+ "D5047D": {
+  "answer": "information",
+  "verdict": "3",
+  "guid": "377280E80F6E922F4A1D325FE3BC1604",
+  "sec": "wordform"
+ },
+ "D6326E": {
+  "answer": "famous",
+  "verdict": "3",
+  "guid": "D7CED6F2A81CBAA449575BDCD04A67B2",
+  "sec": "wordform"
+ },
+ "D6FB7E": {
+  "answer": "popularity",
+  "verdict": "3",
+  "guid": "37C1D4B2D382BC194AF2840B0B557563",
+  "sec": "wordform"
+ },
+ "D76E04": {
+  "answer": "easily",
+  "verdict": "3",
+  "guid": "270D3CDDB01A966F47BFE3ADAF7268D2",
+  "sec": "wordform"
+ },
+ "D9FC2E": {
+  "answer": "rarely",
+  "verdict": "3",
+  "guid": "67C1BA8FB79A9C944E3F5C30B4D63B73",
+  "sec": "wordform"
+ },
+ "DA4982": {
+  "answer": "celebration",
+  "verdict": "3",
+  "guid": "F7609B48DB70B4D941511A87F9772E6B",
+  "sec": "wordform"
+ },
+ "DA7EF8": {
+  "answer": "imagination",
+  "verdict": "3",
+  "guid": "17F39CA5A70FAD0D4D605D31AD3C8FE0",
+  "sec": "wordform"
+ },
+ "DC49D5": {
+  "answer": "homeless",
+  "verdict": "3",
+  "guid": "7780AB50EAC8BB4246279BB3C0BB76F5",
+  "sec": "wordform"
+ },
+ "DE9B04": {
+  "answer": "scientist",
+  "verdict": "3",
+  "guid": "270BC45DEB0FA851465F48033EC462B8",
+  "sec": "wordform"
+ },
+ "DE9EFC": {
+  "answer": "creative",
+  "verdict": "3",
+  "guid": "17ABCC09E6D2ADF4429FB3A2A0E1DD79",
+  "sec": "wordform"
+ },
+ "DED04D": {
+  "answer": "dangerous",
+  "verdict": "3",
+  "guid": "0777C2637E369E7A47ED1FB7C1D64AD4",
+  "sec": "wordform"
+ },
+ "DF0E3F": {
+  "answer": "amazing",
+  "verdict": "3",
+  "guid": "E7121CE20212ACA446FF5339048764E7",
+  "sec": "wordform"
+ },
+ "DF3790": {
+  "answer": "useful",
+  "verdict": "3",
+  "guid": "B72E13BA055ABA31404F2E1E58078148",
+  "sec": "wordform"
+ },
+ "E055A3": {
+  "answer": "disagree",
+  "verdict": "3",
+  "guid": "9CE8282021728CFA412D5ED379166D23",
+  "sec": "wordform"
+ },
+ "E085BF": {
+  "answer": "impressive",
+  "verdict": "3",
+  "guid": "4C1F28595D54901C4C4C2D7A61528078",
+  "sec": "wordform"
+ },
+ "E09DE9": {
+  "answer": "writing",
+  "verdict": "3",
+  "guid": "CCBB27BC91268E6442569D82D6BDEF96",
+  "sec": "wordform"
+ },
+ "E09E41": {
+  "answer": "really",
+  "verdict": "3",
+  "guid": "0C5B2C61BF72BBEB44076A9B03C01077",
+  "sec": "wordform"
+ },
+ "E13E41": {
+  "answer": "harmful",
+  "verdict": "3",
+  "guid": "0C5E5CF9A20087F649E5FC1877499820",
+  "sec": "wordform"
+ },
+ "E45262": {
+  "answer": "impossible",
+  "verdict": "3",
+  "guid": "DC6806FF78D0BCB443BC8B66DD7A1DAE",
+  "sec": "wordform"
+ },
+ "E5833F": {
+  "answer": "wonderful",
+  "verdict": "3",
+  "guid": "EC1F8EF71B7C801C407439FF1CB00056",
+  "sec": "wordform"
+ },
+ "E6E45D": {
+  "answer": "attractive",
+  "verdict": "3",
+  "guid": "8C7CD0CC68348F064A6BC6158330B4B6",
+  "sec": "wordform"
+ },
+ "E83D7B": {
+  "answer": "national",
+  "verdict": "3",
+  "guid": "3C4EF787A06AA81140D28799A9E09AA7",
+  "sec": "wordform"
+ },
+ "E86A0B": {
+  "answer": "various",
+  "verdict": "3",
+  "guid": "2C4DF9D9D39ABAB644CF65041AA5C3DB",
+  "sec": "wordform"
+ },
+ "E8831D": {
+  "answer": "lovely",
+  "verdict": "3",
+  "guid": "5C7FFE435BE6AC5849C72ED63309E3FF",
+  "sec": "wordform"
+ },
+ "EA19CE": {
+  "answer": "professional",
+  "verdict": "3",
+  "guid": "ACC59B6D5CE783894A43E64296FCB8D6",
+  "sec": "wordform"
+ },
+ "EA4C66": {
+  "answer": "careful",
+  "verdict": "3",
+  "guid": "DCD09AE24E448D414E432ABAB72F9CC3",
+  "sec": "wordform"
+ },
+ "EA82C3": {
+  "answer": "effective",
+  "verdict": "3",
+  "guid": "ACEF96220797929040EC6D8D822E051F",
+  "sec": "wordform"
+ },
+ "EA8417": {
+  "answer": "decision",
+  "verdict": "3",
+  "guid": "5C3F90C882A8902946674280A6980971",
+  "sec": "wordform"
+ },
+ "EBE19B": {
+  "answer": "education",
+  "verdict": "3",
+  "guid": "BC4C450D38DFB01140B5C62E1121EB93",
+  "sec": "wordform"
+ },
+ "EC91A7": {
+  "answer": "lucky",
+  "verdict": "3",
+  "guid": "9C3BA58D79408F784A81E2372E41E07E",
+  "sec": "wordform"
+ },
+ "ED51C8": {
+  "answer": "unhappy",
+  "verdict": "3",
+  "guid": "ACF875AB6D8387F14F2814780CF11380",
+  "sec": "wordform"
+ },
+ "ED5EF2": {
+  "answer": "impossible",
+  "verdict": "3",
+  "guid": "1C687C16D984B23F4E9093FFA817ED17",
+  "sec": "wordform"
+ },
+ "ED676D": {
+  "answer": "amazing",
+  "verdict": "3",
+  "guid": "DC7D732F76638BEC41733848495EB4B6",
+  "sec": "wordform"
+ },
+ "EDD323": {
+  "answer": "creative",
+  "verdict": "3",
+  "guid": "6CE77E1873A89B9A4B4ECE045444A688",
+  "sec": "wordform"
+ },
+ "EDF1F4": {
+  "answer": "information",
+  "verdict": "3",
+  "guid": "1C017510F8759E2E4580DC6FAE4FBD13",
+  "sec": "wordform"
+ },
+ "EDFEB9": {
+  "answer": "impossible",
+  "verdict": "3",
+  "guid": "4CB17CC288569EF94C7E65CE4226A2B5",
+  "sec": "wordform"
+ },
+ "F11F66": {
+  "answer": "usually",
+  "verdict": "3",
+  "guid": "D1D551C7AB3AB9F3407DA2D2FF40DDD5",
+  "sec": "wordform"
+ },
+ "F17577": {
+  "answer": "famous",
+  "verdict": "3",
+  "guid": "313358E100AC8AB3456BD13048ABD740",
+  "sec": "wordform"
+ },
+ "F31653": {
+  "answer": "wonderful",
+  "verdict": "3",
+  "guid": "81E5EDE9760AA8F34E0E989A679D1484",
+  "sec": "wordform"
+ },
+ "F35891": {
+  "answer": "really",
+  "verdict": "3",
+  "guid": "B158EF3CDF0085D641C49938CE90B0F1",
+  "sec": "wordform"
+ },
+ "F35D38": {
+  "answer": "equipment",
+  "verdict": "3",
+  "guid": "E1F8E7054A4EA7DE48D051319D93C14F",
+  "sec": "wordform"
+ },
+ "F3B0F1": {
+  "answer": "beautiful",
+  "verdict": "3",
+  "guid": "1154E2109083986246D99220EE44A7C0",
+  "sec": "wordform"
+ },
+ "F42850": {
+  "answer": "interesting",
+  "verdict": "3",
+  "guid": "81260FFC4C76AF9549A9E3C18965419A",
+  "sec": "wordform"
+ },
+ "F42C1D": {
+  "answer": "successful",
+  "verdict": "3",
+  "guid": "51760A425459A882493D3B7640CBF229",
+  "sec": "wordform"
+ },
+ "F4FC76": {
+  "answer": "performance",
+  "verdict": "3",
+  "guid": "31D10A11669F881F49D32F1884752C0D",
+  "sec": "wordform"
+ },
+ "F57A4B": {
+  "answer": "regularly",
+  "verdict": "3",
+  "guid": "014389FC1D6DB61A4B5E3F4EA105FAB9",
+  "sec": "wordform"
+ },
+ "F61CA0": {
+  "answer": "Usually",
+  "verdict": "3",
+  "guid": "9125DAA13F19999B4C093F85A2D234CA",
+  "sec": "wordform"
+ },
+ "F70ACE": {
+  "answer": "disagree",
+  "verdict": "3",
+  "guid": "A1C239547B519CB84D9BB09703318758",
+  "sec": "wordform"
+ },
+ "F74052": {
+  "answer": "attractive",
+  "verdict": "3",
+  "guid": "816032F8D06096924A1097B81420D089",
+  "sec": "wordform"
+ },
+ "F80C03": {
+  "answer": "amazing",
+  "verdict": "3",
+  "guid": "21E2FAE7A153864B4B653F57F81516AB",
+  "sec": "wordform"
+ },
+ "F92C1E": {
+  "answer": "rainy",
+  "verdict": "3",
+  "guid": "51C6BA9A1EDC95064A320A4B51FF3C3A",
+  "sec": "wordform"
+ },
+ "F92FCA": {
+  "answer": "especially",
+  "verdict": "3",
+  "guid": "A196B184D233B4CD4C5300F59F988D3B",
+  "sec": "wordform"
+ },
+ "FB1C63": {
+  "answer": "disagree",
+  "verdict": "3",
+  "guid": "D1E54A15EBBFA45D4DA8A3A7565B49DD",
+  "sec": "wordform"
+ },
+ "FB4342": {
+  "answer": "government",
+  "verdict": "3",
+  "guid": "01604EF17DE0B25C43A1A0479BFA506D",
+  "sec": "wordform"
+ },
+ "FB6760": {
+  "answer": "unusual",
+  "verdict": "3",
+  "guid": "D12D438EF5B28F404E2EA242D3B987A9",
+  "sec": "wordform"
+ },
+ "FBD352": {
+  "answer": "interesting",
+  "verdict": "3",
+  "guid": "81674E3CFB8184BA4AE4A6DCED4F1EB9",
+  "sec": "wordform"
+ },
+ "FD32EE": {
+  "answer": "communication",
+  "verdict": "3",
+  "guid": "C1CE761E228787644B81AC4BA5CFA1B7",
+  "sec": "wordform"
+ },
+ "FDA956": {
+  "answer": "drinking",
+  "verdict": "3",
+  "guid": "81D97B5FC38F98BE4162D2E47A0B2C9E",
+  "sec": "wordform"
+ },
+ "FDE5B1": {
+  "answer": "dangerous",
+  "verdict": "3",
+  "guid": "415C788468C8899E43D8F2AAD09FF78B",
+  "sec": "wordform"
+ },
+ "FEC8C9": {
+  "answer": "peaceful",
+  "verdict": "3",
+  "guid": "A1BACF13160FB65147D009B42D686A75",
+  "sec": "wordform"
+ },
+ "FF3D30": {
+  "answer": "quickly",
+  "verdict": "3",
+  "guid": "E12E17C55009AD2D429094CB6961AFB4",
+  "sec": "wordform"
+ },
+ "FF865A": {
+  "answer": "education",
+  "verdict": "3",
+  "guid": "819F1D3ED172AA6C403E35244F3A167C",
+  "sec": "wordform"
+ },
+ "FF9D09": {
+  "answer": "exciting",
+  "verdict": "3",
+  "guid": "21BB17501186BC334367FAD5E33941D6",
+  "sec": "wordform"
+ },
+ "94722D": {
+  "answer": "useful",
+  "verdict": "3",
+  "guid": "6B73064FC166A2154B986250BC6BBF2E",
+  "sec": "wordform"
+ },
+ "94A44D": {
+  "answer": "traditionally",
+  "verdict": "3",
+  "guid": "0B790072EF6F891440CC8CD1B4788DEC",
+  "sec": "wordform"
+ },
+ "95F8DA": {
+  "answer": "impressive",
+  "verdict": "3",
+  "guid": "7B918F6E466EAEF04194F681D5558326",
+  "sec": "wordform"
+ },
+ "96412E": {
+  "answer": "peaceful",
+  "verdict": "3",
+  "guid": "6BC0D5B48DE0900A47A9F676DF5B1D89",
+  "sec": "wordform"
+ },
+ "967318": {
+  "answer": "fashionable",
+  "verdict": "3",
+  "guid": "5BF3DE6E21ACA3F34D498F143D36E1A7",
+  "sec": "wordform"
+ },
+ "96F669": {
+  "answer": "changeable",
+  "verdict": "3",
+  "guid": "DBB1DD5FEE13BBCB4B8638FE80FB7C81",
+  "sec": "wordform"
+ },
+ "9701C3": {
+  "answer": "amazing",
+  "verdict": "3",
+  "guid": "ABE2354539EB958144CDBBDA45F1EDEF",
+  "sec": "wordform"
+ },
+ "974535": {
+  "answer": "useful",
+  "verdict": "3",
+  "guid": "EB8038DFD5FFBEC14C6DD499062459D3",
+  "sec": "wordform"
+ },
+ "9754C2": {
+  "answer": "singer",
+  "verdict": "3",
+  "guid": "AB683074288EAC514BE4EBBF73661B71",
+  "sec": "wordform"
+ },
+ "97945A": {
+  "answer": "completely",
+  "verdict": "3",
+  "guid": "8B9B3037BBABBD3B49FB180CAB4E326D",
+  "sec": "wordform"
+ },
+ "97ED4E": {
+  "answer": "friendly",
+  "verdict": "3",
+  "guid": "0BCC37F2B15A845F4FD96934F4EE608E",
+  "sec": "wordform"
+ },
+ "9974B3": {
+  "answer": "dangerous",
+  "verdict": "3",
+  "guid": "4BE3B06F51A6B3AD45645CB542895A12",
+  "sec": "wordform"
+ },
+ "9A5364": {
+  "answer": "amazing",
+  "verdict": "3",
+  "guid": "DB089E8487E98C8747BAC93C04C6B70D",
+  "sec": "wordform"
+ },
+ "9A5C28": {
+  "answer": "helpful",
+  "verdict": "3",
+  "guid": "6BF89AA13ACA980448B771B2B59E823B",
+  "sec": "wordform"
+ },
+ "9A9332": {
+  "answer": "exciting",
+  "verdict": "3",
+  "guid": "EB6B9E424CA6A93849FC3ACEFF123BA6",
+  "sec": "wordform"
+ },
+ "9BB434": {
+  "answer": "reporter",
+  "verdict": "3",
+  "guid": "EB044038C8749EEC446F3EB3A7CBD82D",
+  "sec": "wordform"
+ },
+ "9C3A25": {
+  "answer": "beautiful",
+  "verdict": "3",
+  "guid": "6B8EA952C9CB876E40BCEE9C53C82C7A",
+  "sec": "wordform"
+ },
+ "9C6FE3": {
+  "answer": "nervous",
+  "verdict": "3",
+  "guid": "CBEDA1D42302B0B64582FE172D762275",
+  "sec": "wordform"
+ },
+ "9CE02B": {
+  "answer": "beginning",
+  "verdict": "3",
+  "guid": "6B4CA2FE0AD58089455B0A8D40CE2125",
+  "sec": "wordform"
+ },
+ "9D9B6F": {
+  "answer": "peaceful",
+  "verdict": "3",
+  "guid": "DB1B7458112D9C194068A8D0D03F6D79",
+  "sec": "wordform"
+ },
+ "9E74B3": {
+  "answer": "wonderful",
+  "verdict": "3",
+  "guid": "4BE3C01EAC0286F048881665DF7C2EE0",
+  "sec": "wordform"
+ },
+ "9F4F18": {
+  "answer": "wonderful",
+  "verdict": "3",
+  "guid": "5BF011DF4B3F944F4045A9A22FEF231B",
+  "sec": "wordform"
+ },
+ "A124F1": {
+  "answer": "really",
+  "verdict": "3",
+  "guid": "19565011682683F64C5CB99702438639",
+  "sec": "wordform"
+ },
+ "A263D2": {
+  "answer": "European",
+  "verdict": "3",
+  "guid": "796D6EEC999F97504113EBABE5B09EE3",
+  "sec": "wordform"
+ },
+ "A32707": {
+  "answer": "interesting",
+  "verdict": "3",
+  "guid": "2936E310493ABCF3401E6EC8F5A1643D",
+  "sec": "wordform"
+ },
+ "A32B06": {
+  "answer": "artist",
+  "verdict": "3",
+  "guid": "29D6E4FC9C8BB823410EE9B49E873A4F",
+  "sec": "wordform"
+ },
+ "A41F2C": {
+  "answer": "impossible",
+  "verdict": "3",
+  "guid": "69A501DD09978EA84487C2B06D13F8F8",
+  "sec": "wordform"
+ },
+ "A497CB": {
+  "answer": "impossible",
+  "verdict": "3",
+  "guid": "A94B03D09C6EA250414ABABFEDEF0506",
+  "sec": "wordform"
+ },
+ "A4B1CF": {
+  "answer": "wonderful",
+  "verdict": "3",
+  "guid": "A9140502932A8BB14BF23134488B167F",
+  "sec": "wordform"
+ },
+ "A50C4F": {
+  "answer": "connection",
+  "verdict": "3",
+  "guid": "09128A8F4528977C4577CE28236111DF",
+  "sec": "wordform"
+ },
+ "A567F9": {
+  "answer": "dangerous",
+  "verdict": "3",
+  "guid": "19BD832E1D598DC743FD8D8F3ED1FAA4",
+  "sec": "wordform"
+ },
+ "A62025": {
+  "answer": "communication",
+  "verdict": "3",
+  "guid": "6986D2EA8BE08A524D0DF56FB836277F",
+  "sec": "wordform"
+ },
+ "A6617F": {
+  "answer": "connection",
+  "verdict": "3",
+  "guid": "391DD56D13A5AE354193EE9E7ED93281",
+  "sec": "wordform"
+ },
+ "A74F7B": {
+  "answer": "leader",
+  "verdict": "3",
+  "guid": "394031AB74A0B0194597CA1B9278652B",
+  "sec": "wordform"
+ },
+ "A85262": {
+  "answer": "useful",
+  "verdict": "3",
+  "guid": "D968F60D9BD5B9B049B90C0839C5747A",
+  "sec": "wordform"
+ },
+ "A95CCB": {
+  "answer": "trainer",
+  "verdict": "3",
+  "guid": "A948BA87BA0981AB42B86A2A50C44813",
+  "sec": "wordform"
+ },
+ "AA1980": {
+  "answer": "teacher",
+  "verdict": "3",
+  "guid": "F9259B63850598CC4B560743E48FCD3C",
+  "sec": "wordform"
+ },
+ "AA44B7": {
+  "answer": "singer",
+  "verdict": "3",
+  "guid": "4930909B39C5A74B4F85C46F6445B2FF",
+  "sec": "wordform"
+ },
+ "AAB90C": {
+  "answer": "situation",
+  "verdict": "3",
+  "guid": "29A49B7A31D29ED34EFFBB1E903FA759",
+  "sec": "wordform"
+ },
+ "AACB3B": {
+  "answer": "scientist",
+  "verdict": "3",
+  "guid": "E94A9409D4F3BADE4863354AA2E2542B",
+  "sec": "wordform"
+ },
+ "AAF2FA": {
+  "answer": "suggestion",
+  "verdict": "3",
+  "guid": "19919609E95FA11F49FEC01C0DD07977",
+  "sec": "wordform"
+ },
+ "ABE41A": {
+  "answer": "competition",
+  "verdict": "3",
+  "guid": "599C40213E2A82A94984B8BD7D6F9143",
+  "sec": "wordform"
+ },
+ "AC3189": {
+  "answer": "usually",
+  "verdict": "3",
+  "guid": "F9BEA5367BEBAADD47F9F49F4B4EB2F0",
+  "sec": "wordform"
+ },
+ "ACC177": {
+  "answer": "speaker",
+  "verdict": "3",
+  "guid": "393AA560AD53856240E3D53B3CC0BCFC",
+  "sec": "wordform"
+ },
+ "ACFE74": {
+  "answer": "Naturally",
+  "verdict": "3",
+  "guid": "3901AC6866EDB345459A9E573EAAD30C",
+  "sec": "wordform"
+ },
+ "AEE5F5": {
+  "answer": "careful",
+  "verdict": "3",
+  "guid": "198CC8F6CB09BEAC4EBBFFF9E3104CFC",
+  "sec": "wordform"
+ },
+ "AF70E8": {
+  "answer": "gardener",
+  "verdict": "3",
+  "guid": "C9F3123EEFB080AD4A6BECBA88C34DA6",
+  "sec": "wordform"
+ },
+ "AF8A24": {
+  "answer": "national",
+  "verdict": "3",
+  "guid": "690F190E8EFE90954B4235AA1F0F74ED",
+  "sec": "wordform"
+ },
+ "AFF650": {
+  "answer": "disagree",
+  "verdict": "3",
+  "guid": "89211D253DBE86884CD45F8E3EDA6315",
+  "sec": "wordform"
+ },
+ "B1C02F": {
+  "answer": "wonderful",
+  "verdict": "3",
+  "guid": "641A52ABE9F7A74C45399AC2E7D0330D",
+  "sec": "wordform"
+ },
+ "B1F34A": {
+  "answer": "surprising",
+  "verdict": "3",
+  "guid": "04915E85FABBAE9041D6615631E2A65C",
+  "sec": "wordform"
+ },
+ "B24F05": {
+  "answer": "scientist",
+  "verdict": "3",
+  "guid": "2480612D9847A7194C84BEB1D9C2FA16",
+  "sec": "wordform"
+ },
+ "B26006": {
+  "answer": "impressive",
+  "verdict": "3",
+  "guid": "24DD626FDCA98F33472140799F495341",
+  "sec": "wordform"
+ },
+ "B2D169": {
+  "answer": "rider",
+  "verdict": "3",
+  "guid": "D4B7652692309ED5411F70F39062298E",
+  "sec": "wordform"
+ },
+ "B2E0F1": {
+  "answer": "impressive",
+  "verdict": "3",
+  "guid": "145C62A3F433AB8D465413B185055113",
+  "sec": "wordform"
+ },
+ "B2FF8F": {
+  "answer": "famous",
+  "verdict": "3",
+  "guid": "F411614872F690F1460D282E928295B0",
+  "sec": "wordform"
+ },
+ "B3B2C2": {
+  "answer": "creative",
+  "verdict": "3",
+  "guid": "A464E6581EBAB6774843E548727DC83E",
+  "sec": "wordform"
+ },
+ "B426B1": {
+  "answer": "healthy",
+  "verdict": "3",
+  "guid": "44560D8E9DF790224C1F69C85BD8BC70",
+  "sec": "wordform"
+ },
+ "B4C9C0": {
+  "answer": "successful",
+  "verdict": "3",
+  "guid": "A42A0BAC18FD8EEB4AA96F0594333EEE",
+  "sec": "wordform"
+ },
+ "B541D6": {
+  "answer": "fitness",
+  "verdict": "3",
+  "guid": "74D085B9442B9C0B47D4410E0A287FA1",
+  "sec": "wordform"
+ },
+ "B56A3E": {
+  "answer": "effective",
+  "verdict": "3",
+  "guid": "E4CD89CAA3AFA7914B208B0B3DDC72F4",
+  "sec": "wordform"
+ },
+ "B56DE5": {
+  "answer": "driver",
+  "verdict": "3",
+  "guid": "C48D8754EC35A04840324653CCACAF86",
+  "sec": "wordform"
+ },
+ "B596C6": {
+  "answer": "unfair",
+  "verdict": "3",
+  "guid": "A4DB8D6CE5EB81C6447218126DC354A3",
+  "sec": "wordform"
+ },
+ "B5FF20": {
+  "answer": "impossible",
+  "verdict": "3",
+  "guid": "64218191F33CAFEF455A2316D49AB44A",
+  "sec": "wordform"
+ },
+ "B6F063": {
+  "answer": "communication",
+  "verdict": "3",
+  "guid": "D4E1D29A6953A0414F81389FF060328D",
+  "sec": "wordform"
+ },
+ "B7796F": {
+  "answer": "impressive",
+  "verdict": "3",
+  "guid": "D4133B3F740FA9724F0B4FC2AB422552",
+  "sec": "wordform"
+ },
+ "B83165": {
+  "answer": "dangerous",
+  "verdict": "3",
+  "guid": "D48EF5B3CFA098DB4E43C18D17953B84",
+  "sec": "wordform"
+ },
+ "B93FE3": {
+  "answer": "organization",
+  "verdict": "3",
+  "guid": "C4EEB1FB142E93E940EF87C6A78A33B7",
+  "sec": "wordform"
+ },
+ "BA067A": {
+  "answer": "attractive",
+  "verdict": "3",
+  "guid": "34929D37C784A5D64402462080525CCA",
+  "sec": "wordform"
+ },
+ "BA22D3": {
+  "answer": "successful",
+  "verdict": "3",
+  "guid": "74E696C33B14878D41BB296F5A735809",
+  "sec": "wordform"
+ },
+ "BAADB1": {
+  "answer": "fluently",
+  "verdict": "3",
+  "guid": "4459979F261983DF46ED7CB0B3C95894",
+  "sec": "wordform"
+ },
+ "BB09F2": {
+  "answer": "competition",
+  "verdict": "3",
+  "guid": "14624B4B2A84BAA648FDAE885E819AE7",
+  "sec": "wordform"
+ },
+ "BB913B": {
+  "answer": "beginning",
+  "verdict": "3",
+  "guid": "E44B456B7A41A3C4408B61FA9169F033",
+  "sec": "wordform"
+ },
+ "BBD758": {
+  "answer": "information",
+  "verdict": "3",
+  "guid": "84F74312464E83984682477EC505BA4A",
+  "sec": "wordform"
+ },
+ "BBF90A": {
+  "answer": "disagree",
+  "verdict": "3",
+  "guid": "24914B1C99AE88404036768D9AA4DF46",
+  "sec": "wordform"
+ },
+ "BC00F0": {
+  "answer": "famous",
+  "verdict": "3",
+  "guid": "1422A206BB0D9CCE4116E8940E8007E9",
+  "sec": "wordform"
+ },
+ "BCB112": {
+  "answer": "impossible",
+  "verdict": "3",
+  "guid": "5464A5DC7E4EAD204910E1480BC0744E",
+  "sec": "wordform"
+ },
+ "BCF91D": {
+  "answer": "interesting",
+  "verdict": "3",
+  "guid": "5471AB617CAC8B2F49C973C546124836",
+  "sec": "wordform"
+ },
+ "BD730E": {
+  "answer": "exciting",
+  "verdict": "3",
+  "guid": "24C37ED8EB23BA2E42C0DF0B888BA45E",
+  "sec": "wordform"
+ },
+ "BD80D7": {
+  "answer": "population",
+  "verdict": "3",
+  "guid": "743F7203A14FBC2D4C1D28894D3CB23B",
+  "sec": "wordform"
+ },
+ "BD91D1": {
+  "answer": "celebration",
+  "verdict": "3",
+  "guid": "745B75875A0CB19645632D2DF4C1E7CB",
+  "sec": "wordform"
+ },
+ "BDD043": {
+  "answer": "stressful",
+  "verdict": "3",
+  "guid": "04E7720EFF3991214CA8EEF0B8C0F2A5",
+  "sec": "wordform"
+ },
+ "BDEA39": {
+  "answer": "amazing",
+  "verdict": "3",
+  "guid": "E4BC79974CDDA81E4BB942780728B46F",
+  "sec": "wordform"
+ },
+ "C0AC51": {
+  "answer": "regularly",
+  "verdict": "3",
+  "guid": "8A592A01B839B2B04AA90D7180CAD4B4",
+  "sec": "wordform"
+ },
+ "C0D7C1": {
+  "answer": "creative",
+  "verdict": "3",
+  "guid": "AA5723BD69DAAA6B4CD1ABF000775E7C",
+  "sec": "wordform"
+ },
+ "C13D37": {
+  "answer": "really",
+  "verdict": "3",
+  "guid": "EA3E5755BC7D83F14BD3F846EC9F4AC4",
+  "sec": "wordform"
+ },
+ "C1E563": {
+  "answer": "fluently",
+  "verdict": "3",
+  "guid": "DAEC58B3E340B78B401D8F96B2A1B5D7",
+  "sec": "wordform"
+ },
+ "C24C13": {
+  "answer": "disagree",
+  "verdict": "3",
+  "guid": "5AE06A4F08D5A5D84CD53B229D4CFCCB",
+  "sec": "wordform"
+ },
+ "C3A48B": {
+  "answer": "situation",
+  "verdict": "3",
+  "guid": "FA49E0ECE55A805D44ACF666D3CC9605",
+  "sec": "wordform"
+ },
+ "C3F6B1": {
+  "answer": "visitor",
+  "verdict": "3",
+  "guid": "4A51EDE3B594B97C48FE779A48BC2071",
+  "sec": "wordform"
+ },
+ "C453C2": {
+  "answer": "imagination",
+  "verdict": "3",
+  "guid": "AA680EF3B9A897C747042441A462B81C",
+  "sec": "wordform"
+ },
+ "957529": {
+  "answer": "was",
+  "verdict": "3",
+  "guid": "6BB3889F0D82988C4343A321587335A0",
+  "sec": "grammar"
+ },
+ "95D8FF": {
+  "answer": "are used",
+  "verdict": "3",
+  "guid": "1B178F416A3F8F814EFE17C8022EFD34",
+  "sec": "grammar"
+ },
+ "964D30": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "EB20D7D0654E98C74CEAD7A00FF7A62A",
+  "sec": "grammar"
+ },
+ "970994": {
+  "answer": "him",
+  "verdict": "3",
+  "guid": "BB023BFA6455BDB2485D5A7B4BA17CE9",
+  "sec": "grammar"
+ },
+ "9737FE": {
+  "answer": "them",
+  "verdict": "3",
+  "guid": "1BCE337D997E8321444394FE685EF7E0",
+  "sec": "grammar"
+ },
+ "97502B": {
+  "answer": "chose",
+  "verdict": "3",
+  "guid": "6B4832005C47B7AE4EA7B2EE117CF7BB",
+  "sec": "grammar"
+ },
+ "97825F": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "8B1F3696E381822049E4DDE9559A4626",
+  "sec": "grammar"
+ },
+ "97BF06": {
+  "answer": "are",
+  "verdict": "3",
+  "guid": "2BD43183E46C82CA4795833193FE73B6",
+  "sec": "grammar"
+ },
+ "97DEBB": {
+  "answer": "fourth",
+  "verdict": "3",
+  "guid": "4B473C84FA29B17246387D0CCD83B7DD",
+  "sec": "grammar"
+ },
+ "9864E3": {
+  "answer": "don't drink",
+  "verdict": "3",
+  "guid": "CBEDF03E531E9EDD456BCED447F05DBD",
+  "sec": "grammar"
+ },
+ "997517": {
+  "answer": "your",
+  "verdict": "3",
+  "guid": "5B33B8435853B9BC49D4A226C4560FFE",
+  "sec": "grammar"
+ },
+ "99840A": {
+  "answer": "haven't eaten",
+  "verdict": "3",
+  "guid": "2B9FB0B33F37802F4DD02CF535126792",
+  "sec": "grammar"
+ },
+ "9A4759": {
+  "answer": "hotter",
+  "verdict": "3",
+  "guid": "8BB093B83801B71A47D6B290DA3899A4",
+  "sec": "grammar"
+ },
+ "9ABD1C": {
+  "answer": "second",
+  "verdict": "3",
+  "guid": "5BA497D4D8F885E747BA93A65E0FA53A",
+  "sec": "grammar"
+ },
+ "9B836F": {
+  "answer": "brightest",
+  "verdict": "3",
+  "guid": "DB1F4EDE46C3A30A45F56A6E46D27100",
+  "sec": "grammar"
+ },
+ "9B9BF2": {
+  "answer": "enjoyed",
+  "verdict": "3",
+  "guid": "1B6B44C3C34A851748D586F8C77E6053",
+  "sec": "grammar"
+ },
+ "9BA5BC": {
+  "answer": "was published",
+  "verdict": "3",
+  "guid": "4BA94891E480B06F46AA34864F782804",
+  "sec": "grammar"
+ },
+ "9C264A": {
+  "answer": "are",
+  "verdict": "3",
+  "guid": "0B96AD3C50359E724230B4E9B038FA65",
+  "sec": "grammar"
+ },
+ "9C7C7A": {
+  "answer": "will catch",
+  "verdict": "3",
+  "guid": "3B93AA0110A8BEE84AA7531190D0C5FD",
+  "sec": "grammar"
+ },
+ "9CA426": {
+  "answer": "have left",
+  "verdict": "3",
+  "guid": "6BD9A026360299194840DF373D0E2835",
+  "sec": "grammar"
+ },
+ "9CBE52": {
+  "answer": "were printed",
+  "verdict": "3",
+  "guid": "8B64ACB65EA3974E42FAA66C54D7B18D",
+  "sec": "grammar"
+ },
+ "9D3896": {
+  "answer": "woke",
+  "verdict": "3",
+  "guid": "BBDE7F036E67BB1B48D797D57AF94180",
+  "sec": "grammar"
+ },
+ "9D81C8": {
+  "answer": "will write",
+  "verdict": "3",
+  "guid": "ABFF7580EB629C4E41C0B6DCAB9BE589",
+  "sec": "grammar"
+ },
+ "9E33F9": {
+  "answer": "had",
+  "verdict": "3",
+  "guid": "1BBECEB556AB81344C2A5E0A0E908CE1",
+  "sec": "grammar"
+ },
+ "9E9F64": {
+  "answer": "knew",
+  "verdict": "3",
+  "guid": "DB0BC1EB2DEB92F34D5039040229AED9",
+  "sec": "grammar"
+ },
+ "9F0E2C": {
+  "answer": "didn't hear",
+  "verdict": "3",
+  "guid": "6BA21C972BBD84AB41A27E70E47E1584",
+  "sec": "grammar"
+ },
+ "9F7388": {
+  "answer": "was snowing",
+  "verdict": "3",
+  "guid": "FBF31EEEA2248EE74E91E4577C2788D3",
+  "sec": "grammar"
+ },
+ "9FAAB0": {
+  "answer": "fourth",
+  "verdict": "3",
+  "guid": "4B29190A2998A3CD4542E94A595C7E84",
+  "sec": "grammar"
+ },
+ "9FFD43": {
+  "answer": "best",
+  "verdict": "3",
+  "guid": "0BE117D71449B40C45547B266936DAFD",
+  "sec": "grammar"
+ },
+ "A0083E": {
+  "answer": "could",
+  "verdict": "3",
+  "guid": "E9C22FBD0B6986C84B8E4A1A99B22BC8",
+  "sec": "grammar"
+ },
+ "A034F2": {
+  "answer": "felt",
+  "verdict": "3",
+  "guid": "196E20B0355CAFE045FA381BBE7FB1D7",
+  "sec": "grammar"
+ },
+ "A06353": {
+  "answer": "their",
+  "verdict": "3",
+  "guid": "89ED2EC802E3A27C4E3E303773BD8A3F",
+  "sec": "grammar"
+ },
+ "A06EE3": {
+  "answer": "were built",
+  "verdict": "3",
+  "guid": "C9ED2CCD4A98978942A13087A0376814",
+  "sec": "grammar"
+ },
+ "A1140E": {
+  "answer": "is",
+  "verdict": "3",
+  "guid": "29C550DBF4D9AFE341E888D5F6E4D6F6",
+  "sec": "grammar"
+ },
+ "A17FBD": {
+  "answer": "takes",
+  "verdict": "3",
+  "guid": "4973516C137D979A4DE05D1CD31B4D8E",
+  "sec": "grammar"
+ },
+ "A181ED": {
+  "answer": "more original",
+  "verdict": "3",
+  "guid": "C97F5584ADD1B2FC4F94CD126B244771",
+  "sec": "grammar"
+ },
+ "A19FEC": {
+  "answer": "didn't know",
+  "verdict": "3",
+  "guid": "C9AB5186898BB076490C0DC53EC7BC6A",
+  "sec": "grammar"
+ },
+ "A1E187": {
+  "answer": "knew",
+  "verdict": "3",
+  "guid": "F93C558B76688103404D6B61E723D15B",
+  "sec": "grammar"
+ },
+ "A1F44C": {
+  "answer": "was broken",
+  "verdict": "3",
+  "guid": "09A1504566E29EEE4822063D08BD6FF1",
+  "sec": "grammar"
+ },
+ "A25151": {
+  "answer": "was made",
+  "verdict": "3",
+  "guid": "895865FEC4C18FBF457E4749481CB56F",
+  "sec": "grammar"
+ },
+ "A271E3": {
+  "answer": "their",
+  "verdict": "3",
+  "guid": "C9E36533924EA3604F078B011E7A5EF3",
+  "sec": "grammar"
+ },
+ "A280A6": {
+  "answer": "was",
+  "verdict": "3",
+  "guid": "99DF62983CAC9D834B33882545C13D9C",
+  "sec": "grammar"
+ },
+ "A2DBB3": {
+  "answer": "would come",
+  "verdict": "3",
+  "guid": "49E7648522C49EAA4E79991508FC2C77",
+  "sec": "grammar"
+ },
+ "A3079F": {
+  "answer": "didn't spend",
+  "verdict": "3",
+  "guid": "B912E306D522B1C44CD5837B0FC677E9",
+  "sec": "grammar"
+ },
+ "A46E21": {
+  "answer": "first",
+  "verdict": "3",
+  "guid": "695D0C9FC9B6B9024B90B1B4FB168B42",
+  "sec": "grammar"
+ },
+ "A4875C": {
+  "answer": "didn't mind",
+  "verdict": "3",
+  "guid": "89AF03728F65964E46FC5E9FAEA8C752",
+  "sec": "grammar"
+ },
+ "A489C1": {
+  "answer": "him",
+  "verdict": "3",
+  "guid": "A95F0B73EE9294F14E3BFEFA8110D1EF",
+  "sec": "grammar"
+ },
+ "A4B8A4": {
+  "answer": "them",
+  "verdict": "3",
+  "guid": "99040F87FF1596004D43EF49FDAA3C97",
+  "sec": "grammar"
+ },
+ "A4BE2F": {
+  "answer": "second",
+  "verdict": "3",
+  "guid": "69140CCEB324BF9E4F687323745BCAEE",
+  "sec": "grammar"
+ },
+ "A51B33": {
+  "answer": "most difficult",
+  "verdict": "3",
+  "guid": "E9E58423460887A44CA55C9563AA1EB3",
+  "sec": "grammar"
+ },
+ "A51D0E": {
+  "answer": "worst",
+  "verdict": "3",
+  "guid": "29C587C04F8CB772475926713273AB50",
+  "sec": "grammar"
+ },
+ "A7A440": {
+  "answer": "older",
+  "verdict": "3",
+  "guid": "09293099CE009A81415EF95D025C4D43",
+  "sec": "grammar"
+ },
+ "A7AD8F": {
+  "answer": "has left",
+  "verdict": "3",
+  "guid": "F919372671F4B5DD492E2EF34983B6F3",
+  "sec": "grammar"
+ },
+ "A7C5D0": {
+  "answer": "better",
+  "verdict": "3",
+  "guid": "792A383F617B87184CA10F9643E42580",
+  "sec": "grammar"
+ },
+ "A86ACC": {
+  "answer": "needed",
+  "verdict": "3",
+  "guid": "A9ADF9CE7143BDC04B17A83DFA2C8FF3",
+  "sec": "grammar"
+ },
+ "A974D4": {
+  "answer": "didn't tell",
+  "verdict": "3",
+  "guid": "7903B0AB34F99B584593AFB005FD6F1C",
+  "sec": "grammar"
+ },
+ "A9C20C": {
+  "answer": "knew",
+  "verdict": "3",
+  "guid": "29AAB65B6252BD1F42E7C295FBC5BC10",
+  "sec": "grammar"
+ },
+ "AA856E": {
+  "answer": "will see",
+  "verdict": "3",
+  "guid": "D9CF9839DB729DB4481EC61263B8B670",
+  "sec": "grammar"
+ },
+ "AA8F98": {
+  "answer": "will help",
+  "verdict": "3",
+  "guid": "B9FF9124C08096C54A2D4908E544DDE1",
+  "sec": "grammar"
+ },
+ "AB2FA8": {
+  "answer": "children",
+  "verdict": "3",
+  "guid": "99F641662BE2B73A4B656AAE609BCCFD",
+  "sec": "grammar"
+ },
+ "ABCA2D": {
+  "answer": "couldn't",
+  "verdict": "3",
+  "guid": "697A496727369A5C4E347F170202A36A",
+  "sec": "grammar"
+ },
+ "ABF5FD": {
+  "answer": "first",
+  "verdict": "3",
+  "guid": "197148522D7589DB48703B69D9BBE551",
+  "sec": "grammar"
+ },
+ "AC0BC9": {
+  "answer": "weren't",
+  "verdict": "3",
+  "guid": "A9B2A4F5D2DCA31A49DF321FA705EF7A",
+  "sec": "grammar"
+ },
+ "AC777B": {
+  "answer": "had",
+  "verdict": "3",
+  "guid": "3943A355D65A8A5540F90446378A8200",
+  "sec": "grammar"
+ },
+ "AC7FF3": {
+  "answer": "first",
+  "verdict": "3",
+  "guid": "19E3A1C918918E7B416D713A070A7951",
+  "sec": "grammar"
+ },
+ "ACC81F": {
+  "answer": "my",
+  "verdict": "3",
+  "guid": "591AAF36CE9F85F1448DD9D0E1101B35",
+  "sec": "grammar"
+ },
+ "ACCD39": {
+  "answer": "older",
+  "verdict": "3",
+  "guid": "E9BAA760EE1D9C754E0037CF839F1E0D",
+  "sec": "grammar"
+ },
+ "AD19B9": {
+  "answer": "didn't believe",
+  "verdict": "3",
+  "guid": "49B57B5D25C3B21A43456DD1D3503BC5",
+  "sec": "grammar"
+ },
+ "AE1593": {
+  "answer": "didn't understand",
+  "verdict": "3",
+  "guid": "B9E5C824BF39A08242125B0B71A740A3",
+  "sec": "grammar"
+ },
+ "AEA712": {
+  "answer": "couldn't",
+  "verdict": "3",
+  "guid": "5969C36B5F5D82D94DD8272951F6436B",
+  "sec": "grammar"
+ },
+ "AEFE73": {
+  "answer": "most interesting",
+  "verdict": "3",
+  "guid": "39E1CC9CE016A4134DD77043ECCEA1D1",
+  "sec": "grammar"
+ },
+ "AF23B7": {
+  "answer": "my",
+  "verdict": "3",
+  "guid": "49361EBD368AB75D41387E9A91251CE7",
+  "sec": "grammar"
+ },
+ "AFAEC7": {
+  "answer": "fifth",
+  "verdict": "3",
+  "guid": "A9391C9FC731BEF143DD17CB8B9C90C4",
+  "sec": "grammar"
+ },
+ "B010A5": {
+  "answer": "will call",
+  "verdict": "3",
+  "guid": "948522666B778CE941A3461511395867",
+  "sec": "grammar"
+ },
+ "B026BC": {
+  "answer": "took",
+  "verdict": "3",
+  "guid": "44A62D6CB7C9955940DCB0A276A32EB7",
+  "sec": "grammar"
+ },
+ "B0414B": {
+  "answer": "was making",
+  "verdict": "3",
+  "guid": "04402541073585054709E509A5375C67",
+  "sec": "grammar"
+ },
+ "B047AB": {
+  "answer": "didn't like",
+  "verdict": "3",
+  "guid": "9440232D50B1B8524E720CF4F390DE82",
+  "sec": "grammar"
+ },
+ "B1071B": {
+  "answer": "feet",
+  "verdict": "3",
+  "guid": "5442535B5A28821C48F279E864CCCD50",
+  "sec": "grammar"
+ },
+ "B19D9A": {
+  "answer": "luckiest",
+  "verdict": "3",
+  "guid": "B49B572BC9E0A321475DE61E23A0EF47",
+  "sec": "grammar"
+ },
+ "B1DB0C": {
+  "answer": "was surfing",
+  "verdict": "3",
+  "guid": "24A7547A1CCBA1D64987275BDAD06E8E",
+  "sec": "grammar"
+ },
+ "B248D3": {
+  "answer": "didn't paint",
+  "verdict": "3",
+  "guid": "74E06FA1278F813E4B619588ED9CFB87",
+  "sec": "grammar"
+ },
+ "B26B6E": {
+  "answer": "third",
+  "verdict": "3",
+  "guid": "D4CD6464F08F993845336AD8FDF4F071",
+  "sec": "grammar"
+ },
+ "B28954": {
+  "answer": "was organized",
+  "verdict": "3",
+  "guid": "840F6B6BC1F49A0B4E69C0A603EB11F0",
+  "sec": "grammar"
+ },
+ "B3853A": {
+  "answer": "liked",
+  "verdict": "3",
+  "guid": "E49FE814A5DC954540E0586D63EC91D7",
+  "sec": "grammar"
+ },
+ "B38AE0": {
+  "answer": "was spoken",
+  "verdict": "3",
+  "guid": "C42FE91C0366943D48686F71CBD6DF2F",
+  "sec": "grammar"
+ },
+ "B3E465": {
+  "answer": "behaved",
+  "verdict": "3",
+  "guid": "D48CE044718A90444DFD987835645B00",
+  "sec": "grammar"
+ },
+ "B44A6E": {
+  "answer": "didn't know",
+  "verdict": "3",
+  "guid": "D4C0099FD3698120429F6096C12BD8BD",
+  "sec": "grammar"
+ },
+ "B481D5": {
+  "answer": "had bought",
+  "verdict": "3",
+  "guid": "748F05F92A849E174554BAC25D0FE4E0",
+  "sec": "grammar"
+ },
+ "B60FC2": {
+  "answer": "was drawing",
+  "verdict": "3",
+  "guid": "A462D194A34F8820417589EAA5868ADE",
+  "sec": "grammar"
+ },
+ "2BD359": {
+  "answer": "Russian",
+  "verdict": "3",
+  "guid": "86B74E52F3D88416425800E1CBA34CE0",
+  "sec": "wordform"
+ },
+ "2C0B63": {
+  "answer": "reporter",
+  "verdict": "3",
+  "guid": "D6E2A4ABD2AE84E44D2C7BE75E040FA9",
+  "sec": "wordform"
+ },
+ "2C9294": {
+  "answer": "regularly",
+  "verdict": "3",
+  "guid": "B60BA66F7D05AD0343A96ADAD7565765",
+  "sec": "wordform"
+ },
+ "2D2A27": {
+  "answer": "professional",
+  "verdict": "3",
+  "guid": "663679A596839125483AF5EF88CC79F8",
+  "sec": "wordform"
+ },
+ "2DC237": {
+  "answer": "healthy",
+  "verdict": "3",
+  "guid": "E63A7640BD839D4B44CEF7471151B8AD",
+  "sec": "wordform"
+ },
+ "2EE27F": {
+  "answer": "loudly",
+  "verdict": "3",
+  "guid": "361CC6BB4E6388BA4EACCF84B653D6D1",
+  "sec": "wordform"
+ },
+ "2F11EE": {
+  "answer": "traditionally",
+  "verdict": "3",
+  "guid": "C6C515F57E59BEA8443D90322BD56578",
+  "sec": "wordform"
+ },
+ "30343C": {
+  "answer": "unusual",
+  "verdict": "3",
+  "guid": "EEAE20DE0B9E8F7F46DCA100355837A2",
+  "sec": "wordform"
+ },
+ "31A242": {
+  "answer": "disappear",
+  "verdict": "3",
+  "guid": "0E6956E4CA80A1534D77ECB5DBE6DD63",
+  "sec": "wordform"
+ },
+ "324F42": {
+  "answer": "building",
+  "verdict": "3",
+  "guid": "0E6061AE14A69F194F3E0FC3140D1A1F",
+  "sec": "wordform"
+ },
+ "3255FE": {
+  "answer": "unlucky",
+  "verdict": "3",
+  "guid": "1EC8685535D6B6A84ADDAE4C7BA203BA",
+  "sec": "wordform"
+ },
+ "3298DA": {
+  "answer": "unfriendly",
+  "verdict": "3",
+  "guid": "7E9B6F384D92B3E7449BA683740DCF1B",
+  "sec": "wordform"
+ },
+ "33CAF6": {
+  "answer": "noisy",
+  "verdict": "3",
+  "guid": "1EDAE9563DF79B1D4399BA4B237B4C9B",
+  "sec": "wordform"
+ },
+ "348B3F": {
+  "answer": "impossible",
+  "verdict": "3",
+  "guid": "EE1F042058FCAD8443676E6912C35A11",
+  "sec": "wordform"
+ },
+ "3510AB": {
+  "answer": "impressive",
+  "verdict": "3",
+  "guid": "9E45820DED59B80743AED56FFD8DAF04",
+  "sec": "wordform"
+ },
+ "35800D": {
+  "answer": "fashionable",
+  "verdict": "3",
+  "guid": "2E7F825171C587854C3BFAD8BF6A9820",
+  "sec": "wordform"
+ },
+ "35B91C": {
+  "answer": "impossible",
+  "verdict": "3",
+  "guid": "5EA48B42D5B88CF8497F6531461FA603",
+  "sec": "wordform"
+ },
+ "364FA1": {
+  "answer": "discussion",
+  "verdict": "3",
+  "guid": "9E50D1AF761993AF44CB7638EF2B403F",
+  "sec": "wordform"
+ },
+ "3696EB": {
+  "answer": "careful",
+  "verdict": "3",
+  "guid": "CE4BDD9D6AFDAD1347CE7A358C32329B",
+  "sec": "wordform"
+ },
+ "378881": {
+  "answer": "unexpected",
+  "verdict": "3",
+  "guid": "FE5F3F5ABF76A54C4D185B733C56B4BD",
+  "sec": "wordform"
+ },
+ "3950A3": {
+  "answer": "creative",
+  "verdict": "3",
+  "guid": "9EE8B29114E8A6984A64BA2F07EB9A47",
+  "sec": "wordform"
+ },
+ "3A0BC5": {
+  "answer": "explanation",
+  "verdict": "3",
+  "guid": "AE8294F45BA6AE6D4D0C52A742297EE3",
+  "sec": "wordform"
+ },
+ "3BCF54": {
+  "answer": "impossible",
+  "verdict": "3",
+  "guid": "8E0A41F1F75AB13644B3CA9AC8554B9E",
+  "sec": "wordform"
+ },
+ "3CACFD": {
+  "answer": "useful",
+  "verdict": "3",
+  "guid": "1E79AA7E5D8488DF429A1C8DFB83E80E",
+  "sec": "wordform"
+ },
+ "3CB204": {
+  "answer": "original",
+  "verdict": "3",
+  "guid": "2E04A6B2D2B3AEC640A57835BE83256A",
+  "sec": "wordform"
+ },
+ "3CF460": {
+  "answer": "effective",
+  "verdict": "3",
+  "guid": "DE21A03100EDA52C441B34F0C01CC087",
+  "sec": "wordform"
+ },
+ "3DB532": {
+  "answer": "expensive",
+  "verdict": "3",
+  "guid": "EE64789981D2B11044E0DA49FC03F9ED",
+  "sec": "wordform"
+ },
+ "3F902F": {
+  "answer": "learner",
+  "verdict": "3",
+  "guid": "6E1B12E379D5B4F3426EEB02B676C343",
+  "sec": "wordform"
+ },
+ "3FE67E": {
+  "answer": "finally",
+  "verdict": "3",
+  "guid": "3ECC1D40E4FFAEBA43AB55CF55690AB1",
+  "sec": "wordform"
+ },
+ "405E4C": {
+  "answer": "healthy",
+  "verdict": "3",
+  "guid": "00A82C04019CBE424409393E8A01DD9B",
+  "sec": "wordform"
+ },
+ "411829": {
+  "answer": "friendship",
+  "verdict": "3",
+  "guid": "60B55F4128848D164150E9D3D11C4E98",
+  "sec": "wordform"
+ },
+ "41C26C": {
+  "answer": "amazing",
+  "verdict": "3",
+  "guid": "D0AA56DFE8FEBCB54B07C91387AD951C",
+  "sec": "wordform"
+ },
+ "425D19": {
+  "answer": "harmful",
+  "verdict": "3",
+  "guid": "50B867344090A7B54B2D2B68A6D9839C",
+  "sec": "wordform"
+ },
+ "437538": {
+  "answer": "successful",
+  "verdict": "3",
+  "guid": "E0F3E870A750971348ABDBDD21083674",
+  "sec": "wordform"
+ },
+ "440AD7": {
+  "answer": "helpless",
+  "verdict": "3",
+  "guid": "7032093959A1842C4A12E9512B2ACE1C",
+  "sec": "wordform"
+ },
+ "44CBBB": {
+  "answer": "population",
+  "verdict": "3",
+  "guid": "404A04CD9B6C8C48426BA941D13A8C8C",
+  "sec": "wordform"
+ },
+ "44CDC9": {
+  "answer": "imagination",
+  "verdict": "3",
+  "guid": "A0BA070994A6AE61436A1D64EE7AB2CB",
+  "sec": "wordform"
+ },
+ "475DFC": {
+  "answer": "interesting",
+  "verdict": "3",
+  "guid": "10A83757705DAB0B48E5078822371DEE",
+  "sec": "wordform"
+ },
+ "477550": {
+  "answer": "international",
+  "verdict": "3",
+  "guid": "802338997A47B16D42AF94D573AAE2CB",
+  "sec": "wordform"
+ },
+ "478909": {
+  "answer": "interesting",
+  "verdict": "3",
+  "guid": "20BF3B75B664BD874BA76A4B7DF7B6AB",
+  "sec": "wordform"
+ },
+ "47D5CF": {
+  "answer": "wonderful",
+  "verdict": "3",
+  "guid": "A0173858D77F92EF447B6B95C08DC868",
+  "sec": "wordform"
+ },
+ "48A2B3": {
+  "answer": "celebration",
+  "verdict": "3",
+  "guid": "40E9F6B8913699BE453F5F87665BA38D",
+  "sec": "wordform"
+ },
+ "48E53B": {
+  "answer": "harmless",
+  "verdict": "3",
+  "guid": "E04CF8DBE49980DB4E879A0A1D258D32",
+  "sec": "wordform"
+ },
+ "49057A": {
+  "answer": "winner",
+  "verdict": "3",
+  "guid": "3092B86C64CC87734084BE0087153382",
+  "sec": "wordform"
+ },
+ "497A94": {
+  "answer": "geographical",
+  "verdict": "3",
+  "guid": "B003B91206EEB05443A7CE613CC5B049",
+  "sec": "wordform"
+ },
+ "499986": {
+  "answer": "interesting",
+  "verdict": "3",
+  "guid": "F0DBBB3EF20FB1A84144A851D3D5C319",
+  "sec": "wordform"
+ },
+ "4A1D26": {
+  "answer": "exciting",
+  "verdict": "3",
+  "guid": "60D5970DB53293124CFACB87294E13F3",
+  "sec": "wordform"
+ },
+ "4A80E5": {
+  "answer": "tasty",
+  "verdict": "3",
+  "guid": "C08F920AA0A09EBF46C0911D515492CF",
+  "sec": "wordform"
+ },
+ "4A9AB8": {
+  "answer": "traditional",
+  "verdict": "3",
+  "guid": "40FB996FD2D88A09461B11AAB8346A45",
+  "sec": "wordform"
+ },
+ "4C75B2": {
+  "answer": "unforgettable",
+  "verdict": "3",
+  "guid": "4063A82F1F7C81A1422B90EA5B340DC6",
+  "sec": "wordform"
+ },
+ "4CED27": {
+  "answer": "famous",
+  "verdict": "3",
+  "guid": "603CA708EDF5A44B4F859F07252F7A12",
+  "sec": "wordform"
+ },
+ "4DF9B3": {
+  "answer": "Recently",
+  "verdict": "3",
+  "guid": "40E17B4C021898D943CA2D4625472380",
+  "sec": "wordform"
+ },
+ "4E0BF2": {
+  "answer": "excitement",
+  "verdict": "3",
+  "guid": "1062C40E0409BBFC4E2644AC5FC39188",
+  "sec": "wordform"
+ },
+ "4EA27D": {
+  "answer": "education",
+  "verdict": "3",
+  "guid": "3079C64A7C3CB1454537AA41A7C3E1F5",
+  "sec": "wordform"
+ },
+ "4EA2C7": {
+  "answer": "Recently",
+  "verdict": "3",
+  "guid": "A039C69C8490A8574E3C5F18B389C326",
+  "sec": "wordform"
+ },
+ "4EC9A4": {
+  "answer": "education",
+  "verdict": "3",
+  "guid": "900ACBED130C99AA44E53BD40A2AB2F7",
+  "sec": "wordform"
+ },
+ "4F057B": {
+  "answer": "manager",
+  "verdict": "3",
+  "guid": "30421838B9ED89CE4717B3F895F1D716",
+  "sec": "wordform"
+ },
+ "4F304C": {
+  "answer": "endless",
+  "verdict": "3",
+  "guid": "00AE125E726FA8624EEE9B5071C47EE9",
+  "sec": "wordform"
+ },
+ "4F64F4": {
+  "answer": "funny",
+  "verdict": "3",
+  "guid": "100D1085FD64B02945560B13F07253C3",
+  "sec": "wordform"
+ },
+ "4F9F38": {
+  "answer": "exciting",
+  "verdict": "3",
+  "guid": "E0FB118BB575A0724B7C8D31B3245E3A",
+  "sec": "wordform"
+ },
+ "4FD2D9": {
+  "answer": "dislike",
+  "verdict": "3",
+  "guid": "70B7162A6B75B5EE43A9568646FF5964",
+  "sec": "wordform"
+ },
+ "50AEF2": {
+  "answer": "regularly",
+  "verdict": "3",
+  "guid": "18692C5FC8B4A98A49FC7E5814C43C5A",
+  "sec": "wordform"
+ },
+ "50D8CB": {
+  "answer": "unpleasant",
+  "verdict": "3",
+  "guid": "A8472F61085C9C88471B0B7543680FCD",
+  "sec": "wordform"
+ },
+ "51C0B6": {
+  "answer": "unpleasant",
+  "verdict": "3",
+  "guid": "48DA520A1C998A1646845787A3F40F2B",
+  "sec": "wordform"
+ },
+ "5247EB": {
+  "answer": "expensive",
+  "verdict": "3",
+  "guid": "C8406333C567A60F408AA45325C592F1",
+  "sec": "wordform"
+ },
+ "5381D5": {
+  "answer": "probably",
+  "verdict": "3",
+  "guid": "788FE518433C80A649097953CCDF71EE",
+  "sec": "wordform"
+ },
+ "53D142": {
+  "answer": "traditional",
+  "verdict": "3",
+  "guid": "0867E52F0A139E34465B7EA712567D82",
+  "sec": "wordform"
+ },
+ "550F00": {
+  "answer": "noisy",
+  "verdict": "3",
+  "guid": "28228106065EA8B046F6A987F4F83F36",
+  "sec": "wordform"
+ },
+ "565B23": {
+  "answer": "disapprove",
+  "verdict": "3",
+  "guid": "68E8D454BFFEB0E2466A9573648EEB2F",
+  "sec": "wordform"
+ },
+ "570631": {
+  "answer": "quickly",
+  "verdict": "3",
+  "guid": "E8523D9FA5FD8805415C95EB3748D08C",
+  "sec": "wordform"
+ },
+ "571A99": {
+  "answer": "quickly",
+  "verdict": "3",
+  "guid": "B8B539312111B4724B61A319FDF4A4B1",
+  "sec": "wordform"
+ },
+ "58B084": {
+  "answer": "probably",
+  "verdict": "3",
+  "guid": "F804F2E15B1AA2514188C0FB38118C5D",
+  "sec": "wordform"
+ },
+ "58C62D": {
+  "answer": "unfortunately",
+  "verdict": "3",
+  "guid": "687AFDF91AD094074CC4523889D22BB0",
+  "sec": "wordform"
+ },
+ "58D557": {
+  "answer": "beautiful",
+  "verdict": "3",
+  "guid": "8837F8581840B28646915654A0DCDB47",
+  "sec": "wordform"
+ },
+ "59EBE0": {
+  "answer": "famous",
+  "verdict": "3",
+  "guid": "C82CB48071ECA4D24001C97C7DF5352E",
+  "sec": "wordform"
+ },
+ "5B0385": {
+  "answer": "amazing",
+  "verdict": "3",
+  "guid": "F8824E58A583A13D48108C0DAB93BA19",
+  "sec": "wordform"
+ },
+ "5B1E26": {
+  "answer": "waiter",
+  "verdict": "3",
+  "guid": "68D54C30B48BBF17454DEAD6ECE8B500",
+  "sec": "wordform"
+ },
+ "5B5D85": {
+  "answer": "traditional",
+  "verdict": "3",
+  "guid": "F88847BADFAF8F0A4301712844DE49BB",
+  "sec": "wordform"
+ },
+ "5D7D7C": {
+  "answer": "traditional",
+  "verdict": "3",
+  "guid": "38A377BED6269BD94847DD4D85663DDB",
+  "sec": "wordform"
+ },
+ "5DDAA2": {
+  "answer": "tasty",
+  "verdict": "3",
+  "guid": "986779D430C8BC0A414C7F427F0EED5A",
+  "sec": "wordform"
+ },
+ "5DF23C": {
+  "answer": "unhappy",
+  "verdict": "3",
+  "guid": "E8A1766043B99D564EF0CB9CA2A3F748",
+  "sec": "wordform"
+ },
+ "5E1658": {
+  "answer": "useful",
+  "verdict": "3",
+  "guid": "88F5CDCF26609F4245AA409AE40D5D51",
+  "sec": "wordform"
+ },
+ "5E25A9": {
+  "answer": "sunny",
+  "verdict": "3",
+  "guid": "98B6C8093DCAB4FD47ECD922496441E8",
+  "sec": "wordform"
+ },
+ "5E3106": {
+  "answer": "mainly",
+  "verdict": "3",
+  "guid": "28DEC5B83DE3ABAA4AA951CFDD6B6E69",
+  "sec": "wordform"
+ },
+ "5E3F99": {
+  "answer": "wonderful",
+  "verdict": "3",
+  "guid": "B8BEC171B1109DA04786400B2C8F656F",
+  "sec": "wordform"
+ },
+ "5EA0FF": {
+  "answer": "unfair",
+  "verdict": "3",
+  "guid": "1819C25460F8BDF54091EAF6CE8028B1",
+  "sec": "wordform"
+ },
+ "5FF248": {
+  "answer": "education",
+  "verdict": "3",
+  "guid": "08F1168C934AAE9B496AC1710273C4D9",
+  "sec": "wordform"
+ },
+ "6147E6": {
+  "answer": "wonderful",
+  "verdict": "3",
+  "guid": "CDD0535850B499034A4C462234FEF678",
+  "sec": "wordform"
+ },
+ "614BFC": {
+  "answer": "careful",
+  "verdict": "3",
+  "guid": "1DA054C65EB29D6046E5D008B37AD13A",
+  "sec": "wordform"
+ },
+ "61AA03": {
+  "answer": "popularity",
+  "verdict": "3",
+  "guid": "2DE9598E737D9BFA439DE6E10E34903E",
+  "sec": "wordform"
+ },
+ "6C7B48": {
+  "answer": "said",
+  "verdict": "3",
+  "guid": "0DF3A40FA346AC244BCA558BE8B396EC",
+  "sec": "grammar"
+ },
+ "6D2BA6": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "9DD67486489E9F884F86511BD809D820",
+  "sec": "grammar"
+ },
+ "6E3A68": {
+  "answer": "didn't share",
+  "verdict": "3",
+  "guid": "DDFEC9731B4CA9EA48318AD2837738E0",
+  "sec": "grammar"
+ },
+ "6F002F": {
+  "answer": "me",
+  "verdict": "3",
+  "guid": "6D121281C730A1ED4FB30FCD62D67913",
+  "sec": "grammar"
+ },
+ "6F1607": {
+  "answer": "second",
+  "verdict": "3",
+  "guid": "2D351D585F85BEDF47DC95A369C65EF6",
+  "sec": "grammar"
+ },
+ "6F6BF6": {
+  "answer": "have won",
+  "verdict": "3",
+  "guid": "1DDD147CC5CD9814449BE1274A03E427",
+  "sec": "grammar"
+ },
+ "6F7928": {
+  "answer": "understood",
+  "verdict": "3",
+  "guid": "6DF31B427EF2A3EB4D4F39D7FCB7189E",
+  "sec": "grammar"
+ },
+ "6FFC48": {
+  "answer": "was arrested",
+  "verdict": "3",
+  "guid": "0DF11A3FC91787A543F975A9608B1742",
+  "sec": "grammar"
+ },
+ "7018F5": {
+  "answer": "him",
+  "verdict": "3",
+  "guid": "13852F249C819B3941537BC86F858715",
+  "sec": "grammar"
+ },
+ "709467": {
+  "answer": "third",
+  "verdict": "3",
+  "guid": "D33B20260408A245431F090FC93FD342",
+  "sec": "grammar"
+ },
+ "709A86": {
+  "answer": "her",
+  "verdict": "3",
+  "guid": "F3DB29333748BB874B911D2D13EE39A2",
+  "sec": "grammar"
+ },
+ "7148CA": {
+  "answer": "fell",
+  "verdict": "3",
+  "guid": "A3905FA81A4FA2D24B7D459349499EAC",
+  "sec": "grammar"
+ },
+ "72AFB1": {
+  "answer": "could",
+  "verdict": "3",
+  "guid": "435961BD625DA01F4C0148A0D32A5E74",
+  "sec": "grammar"
+ },
+ "731C4D": {
+  "answer": "children",
+  "verdict": "3",
+  "guid": "0375EA766F9F8015474E2174548B6CF2",
+  "sec": "grammar"
+ },
+ "73B4BC": {
+  "answer": "him",
+  "verdict": "3",
+  "guid": "43A4E0A5D8ECAEC14B7E9F7AE65590AB",
+  "sec": "grammar"
+ },
+ "73D8D9": {
+  "answer": "will solve",
+  "verdict": "3",
+  "guid": "73B7EF82A6648BD64F401F4375F657C6",
+  "sec": "grammar"
+ },
+ "74A37E": {
+  "answer": "was built",
+  "verdict": "3",
+  "guid": "33C90E7BF3ABB5EB4CDDB4D0EB2478C0",
+  "sec": "grammar"
+ },
+ "74A8AD": {
+  "answer": "comes",
+  "verdict": "3",
+  "guid": "93790FA67D4B9507410962D0CCC0A4ED",
+  "sec": "grammar"
+ },
+ "762D50": {
+  "answer": "understood",
+  "verdict": "3",
+  "guid": "8326D76F870E901D4D065B12D32F3343",
+  "sec": "grammar"
+ },
+ "76815E": {
+  "answer": "was bought",
+  "verdict": "3",
+  "guid": "83CFD5B540E787A041ECA00A8291FED4",
+  "sec": "grammar"
+ },
+ "76B319": {
+  "answer": "had",
+  "verdict": "3",
+  "guid": "53B4DED59FC39FC14D373AECC97F9218",
+  "sec": "grammar"
+ },
+ "76D824": {
+  "answer": "will agree",
+  "verdict": "3",
+  "guid": "6307DFE1B6C2917A4D87773100D994EE",
+  "sec": "grammar"
+ },
+ "76EFE5": {
+  "answer": "was approved",
+  "verdict": "3",
+  "guid": "C38CD1002B3FB145414736E54CC4C7D5",
+  "sec": "grammar"
+ },
+ "778FBB": {
+  "answer": "largest",
+  "verdict": "3",
+  "guid": "434F312AB046840842EDA267284E462E",
+  "sec": "grammar"
+ },
+ "77A295": {
+  "answer": "didn't say",
+  "verdict": "3",
+  "guid": "B389368A18C0B6964449D36C707D71C2",
+  "sec": "grammar"
+ },
+ "77B2A5": {
+  "answer": "made",
+  "verdict": "3",
+  "guid": "9384368F3A8590A343A6CCF51DFAFCB4",
+  "sec": "grammar"
+ },
+ "78324F": {
+  "answer": "thought",
+  "verdict": "3",
+  "guid": "031EF6CAD6D0948044F9F0CA6151ABBE",
+  "sec": "grammar"
+ },
+ "783C39": {
+  "answer": "understood",
+  "verdict": "3",
+  "guid": "E3BEFA30FCBF82514281A906765E3464",
+  "sec": "grammar"
+ },
+ "7857CF": {
+  "answer": "could",
+  "verdict": "3",
+  "guid": "A318F3F06466AEDE46EC1B049A63AE9B",
+  "sec": "grammar"
+ },
+ "78BA67": {
+  "answer": "were having",
+  "verdict": "3",
+  "guid": "D334F9FAD89E85B44F3E7D23F3CD6787",
+  "sec": "grammar"
+ },
+ "78E6BB": {
+  "answer": "him",
+  "verdict": "3",
+  "guid": "434CFD42144DBA0541CFC605F683E2C3",
+  "sec": "grammar"
+ },
+ "791FF2": {
+  "answer": "couldn't",
+  "verdict": "3",
+  "guid": "1365B193247BA486492B041B05AD7DA7",
+  "sec": "grammar"
+ },
+ "79F063": {
+  "answer": "kinder",
+  "verdict": "3",
+  "guid": "D3E1B25797379AB3496B289ECCC32013",
+  "sec": "grammar"
+ },
+ "7ABCBE": {
+  "answer": "would come",
+  "verdict": "3",
+  "guid": "43C49AAF28158C50478D3B41E777BBE8",
+  "sec": "grammar"
+ },
+ "7B04F3": {
+  "answer": "was published",
+  "verdict": "3",
+  "guid": "13E240591680B97A4145457D5C35E575",
+  "sec": "grammar"
+ },
+ "7C1288": {
+  "answer": "didn't have",
+  "verdict": "3",
+  "guid": "F3F5A6EAC9EFA18A43EE868FFCCF24C6",
+  "sec": "grammar"
+ },
+ "7C1E1D": {
+  "answer": "was",
+  "verdict": "3",
+  "guid": "5375AC2C67DFB819473C3E017CB2708D",
+  "sec": "grammar"
+ },
+ "7CCDD3": {
+  "answer": "first",
+  "verdict": "3",
+  "guid": "73EAA77F6092846940C802C669DA539A",
+  "sec": "grammar"
+ },
+ "7CFFF2": {
+  "answer": "was cutting",
+  "verdict": "3",
+  "guid": "1361A153F72E979541B5E78DB969EFBF",
+  "sec": "grammar"
+ },
+ "7D27E7": {
+  "answer": "was called",
+  "verdict": "3",
+  "guid": "C3367347273BB5F5486DFB8296699AD2",
+  "sec": "grammar"
+ },
+ "7D6783": {
+  "answer": "most popular",
+  "verdict": "3",
+  "guid": "F3ED7377CC0BB01347F0E9920C65724E",
+  "sec": "grammar"
+ },
+ "7DCC72": {
+  "answer": "leaves",
+  "verdict": "3",
+  "guid": "336A7AC921D1AD274AA92440D9439501",
+  "sec": "grammar"
+ },
+ "7DF2B2": {
+  "answer": "are",
+  "verdict": "3",
+  "guid": "436176DE9F359C4946D4C36A910E127F",
+  "sec": "grammar"
+ },
+ "7F6822": {
+  "answer": "didn't know",
+  "verdict": "3",
+  "guid": "636D1F88EC03BB8A490953EB08CAA491",
+  "sec": "grammar"
+ },
+ "7FE7F2": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "136C13711E69B3F941304E6A6EF5AD03",
+  "sec": "grammar"
+ },
+ "80B19B": {
+  "answer": "third",
+  "verdict": "3",
+  "guid": "BF44253D34849FCD43C643101A8E2408",
+  "sec": "grammar"
+ },
+ "80FDD3": {
+  "answer": "didn't get",
+  "verdict": "3",
+  "guid": "7FE127159E22A3114C034575464E329F",
+  "sec": "grammar"
+ },
+ "81D9A8": {
+  "answer": "would be",
+  "verdict": "3",
+  "guid": "9FF75BDD3342896546C5A362AC1F0418",
+  "sec": "grammar"
+ },
+ "82877B": {
+  "answer": "was",
+  "verdict": "3",
+  "guid": "3F4F63FE25E3B00A482DE44B26147FF5",
+  "sec": "grammar"
+ },
+ "829C70": {
+  "answer": "will get",
+  "verdict": "3",
+  "guid": "3F2B6ABE93F29CFA406C19C927011C20",
+  "sec": "grammar"
+ },
+ "82F194": {
+  "answer": "was closed",
+  "verdict": "3",
+  "guid": "BF0165E41AF4A5CC4FDD44D1041FC85B",
+  "sec": "grammar"
+ },
+ "830EBF": {
+  "answer": "children",
+  "verdict": "3",
+  "guid": "4F12EC01C3C9B05A42056562E0D4E5F7",
+  "sec": "grammar"
+ },
+ "8357E6": {
+  "answer": "was found",
+  "verdict": "3",
+  "guid": "CFD8E34E67CAA7D9479739259D64DEBF",
+  "sec": "grammar"
+ },
+ "835D69": {
+  "answer": "came",
+  "verdict": "3",
+  "guid": "DFB8E7CF670CA3424CB1D5D05E075D57",
+  "sec": "grammar"
+ },
+ "8400CE": {
+  "answer": "lost",
+  "verdict": "3",
+  "guid": "AFC202166DC3A1444501A40C9DE5799D",
+  "sec": "grammar"
+ },
+ "844785": {
+  "answer": "will make",
+  "verdict": "3",
+  "guid": "FF8003F28702A09744CC0FED9D1B78BF",
+  "sec": "grammar"
+ },
+ "84A71D": {
+  "answer": "mice",
+  "verdict": "3",
+  "guid": "5F79039675498A15485A993005EF82C0",
+  "sec": "grammar"
+ },
+ "862770": {
+  "answer": "twentieth",
+  "verdict": "3",
+  "guid": "3F26D3CCE108958744A71020293CC2C6",
+  "sec": "grammar"
+ },
+ "86E731": {
+  "answer": "couldn't",
+  "verdict": "3",
+  "guid": "EF5CD3632F01A06545996E1B8A99E63A",
+  "sec": "grammar"
+ },
+ "8715FA": {
+  "answer": "would explain",
+  "verdict": "3",
+  "guid": "1F95389047B4ABEB403684CC7024F508",
+  "sec": "grammar"
+ },
+ "873B81": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "FF5E348041BA8B4640EAD1FB72A62D7B",
+  "sec": "grammar"
+ },
+ "88288E": {
+  "answer": "her",
+  "verdict": "3",
+  "guid": "FFC6FFC4F371AFD546D5B2D28ED6886E",
+  "sec": "grammar"
+ },
+ "886150": {
+  "answer": "them",
+  "verdict": "3",
+  "guid": "8F2DF515A3E5AA424D8A1289BAD29C0C",
+  "sec": "grammar"
+ },
+ "88D624": {
+  "answer": "us",
+  "verdict": "3",
+  "guid": "6F07FD49CA88897847E5B3EA28046DC5",
+  "sec": "grammar"
+ },
+ "89055C": {
+  "answer": "was making",
+  "verdict": "3",
+  "guid": "8FA2B8EE2C7E96654CA36391476FD9F9",
+  "sec": "grammar"
+ },
+ "89B327": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "6F34BEFFBA01BED44FC00F82DF31FAB9",
+  "sec": "grammar"
+ },
+ "8A34A3": {
+  "answer": "could",
+  "verdict": "3",
+  "guid": "9FEE90574ECABD6F4B61D1AE3ECAC17F",
+  "sec": "grammar"
+ },
+ "8AC38C": {
+  "answer": "would go",
+  "verdict": "3",
+  "guid": "FFAA9E77F9FD99724C8019569D87017D",
+  "sec": "grammar"
+ },
+ "8AE884": {
+  "answer": "leaves",
+  "verdict": "3",
+  "guid": "FF0C9F35BA8B88DB418711307EA9372B",
+  "sec": "grammar"
+ },
+ "8BB650": {
+  "answer": "had",
+  "verdict": "3",
+  "guid": "8F244D81A052AF66452895EBA066A207",
+  "sec": "grammar"
+ },
+ "8BC938": {
+  "answer": "first",
+  "verdict": "3",
+  "guid": "EFFA4B5EC5A79D9B4EEB7BF22FFCF298",
+  "sec": "grammar"
+ },
+ "8BE733": {
+  "answer": "were kept",
+  "verdict": "3",
+  "guid": "EFEC4362996880A9475BC7B542A1D801",
+  "sec": "grammar"
+ },
+ "8CA768": {
+  "answer": "wanted",
+  "verdict": "3",
+  "guid": "DFF9A37505EB86824E8A974C05DD4CB0",
+  "sec": "grammar"
+ },
+ "8D5E3E": {
+  "answer": "babies",
+  "verdict": "3",
+  "guid": "EFC87C631340B37147AA7A8925062279",
+  "sec": "grammar"
+ },
+ "8FAA47": {
+  "answer": "didn't send",
+  "verdict": "3",
+  "guid": "0F3919114FFEBF994F62122BE541D5C1",
+  "sec": "grammar"
+ },
+ "8FFA6D": {
+  "answer": "was",
+  "verdict": "3",
+  "guid": "DF7119262411B35249BD3EE69CD3EA1D",
+  "sec": "grammar"
+ },
+ "901E1E": {
+  "answer": "them",
+  "verdict": "3",
+  "guid": "5BC52CE8CE289A5C49E38604201C2BCF",
+  "sec": "grammar"
+ },
+ "911B14": {
+  "answer": "fifteenth",
+  "verdict": "3",
+  "guid": "5B05547F93C68FDB489E583036C7298F",
+  "sec": "grammar"
+ },
+ "914DA1": {
+  "answer": "first",
+  "verdict": "3",
+  "guid": "9B5057A4FA6397DC4692DE99C2AD8D3F",
+  "sec": "grammar"
+ },
+ "92A534": {
+  "answer": "children",
+  "verdict": "3",
+  "guid": "EB0968CCA001BFF84D7E3B864B525249",
+  "sec": "grammar"
+ },
+ "92FAE4": {
+  "answer": "coldest",
+  "verdict": "3",
+  "guid": "CB0169904069B8C54EF991549A523F89",
+  "sec": "grammar"
+ },
+ "9357C2": {
+  "answer": "don't want",
+  "verdict": "3",
+  "guid": "AB68E3905D7B82B2467A1AEEA5141C1A",
+  "sec": "grammar"
+ },
+ "937DE9": {
+  "answer": "have called",
+  "verdict": "3",
+  "guid": "CBB3E74C601AA80E406A607FDC4C4EBD",
+  "sec": "grammar"
+ },
+ "9494A2": {
+  "answer": "has stolen",
+  "verdict": "3",
+  "guid": "9B6B002BF27FA35042260837087453CE",
+  "sec": "grammar"
+ },
+ "94B17F": {
+  "answer": "teeth",
+  "verdict": "3",
+  "guid": "3B1405873D7BAAA0431528230CE6EBF7",
+  "sec": "grammar"
+ },
+ "94BBB5": {
+  "answer": "thought",
+  "verdict": "3",
+  "guid": "4B8404C0598883A5407C95F19CB4E038",
+  "sec": "grammar"
+ },
+ "956742": {
+  "answer": "ran",
+  "verdict": "3",
+  "guid": "0B6D83231B2C8CAE4C28D6E4D0980D69",
+  "sec": "grammar"
+ },
+ "956F0C": {
+  "answer": "her",
+  "verdict": "3",
+  "guid": "2BAD814484E48B9D4EF56E55FE434CBA",
+  "sec": "grammar"
+ },
+ "45B684": {
+  "answer": "didn't know",
+  "verdict": "3",
+  "guid": "F0048DF4DAC696CE47D40EB22123F43E",
+  "sec": "grammar"
+ },
+ "45B6A2": {
+  "answer": "more expensive",
+  "verdict": "3",
+  "guid": "90648D8BB97B959E42E980A4E1AE4EE0",
+  "sec": "grammar"
+ },
+ "45BCAD": {
+  "answer": "will bring",
+  "verdict": "3",
+  "guid": "90748AF9C123B3864BB69B99BF8D79AC",
+  "sec": "grammar"
+ },
+ "461390": {
+  "answer": "was painted",
+  "verdict": "3",
+  "guid": "B025DEE2FE41BE664F26075666E4A0ED",
+  "sec": "grammar"
+ },
+ "46CB9D": {
+  "answer": "was reading",
+  "verdict": "3",
+  "guid": "B07AD465A59A96554B6633B1BAE0FB9F",
+  "sec": "grammar"
+ },
+ "46DEBD": {
+  "answer": "me",
+  "verdict": "3",
+  "guid": "4077DC66034EAF794B6D4B19B904E3F2",
+  "sec": "grammar"
+ },
+ "46FB15": {
+  "answer": "wanted",
+  "verdict": "3",
+  "guid": "5081D4B956EB936B4E6E777BA1E35CF0",
+  "sec": "grammar"
+ },
+ "4809F6": {
+  "answer": "was driving",
+  "verdict": "3",
+  "guid": "10D2FBD971D48B3E42240A4A14BB23CC",
+  "sec": "grammar"
+ },
+ "49DCBF": {
+  "answer": "didn't want",
+  "verdict": "3",
+  "guid": "4017BA0838F48D394CEC3DA15E8A3F7E",
+  "sec": "grammar"
+ },
+ "49F40B": {
+  "answer": "enjoyed",
+  "verdict": "3",
+  "guid": "2041B081300596EC487988F61265FA7D",
+  "sec": "grammar"
+ },
+ "4A1EC0": {
+  "answer": "feet",
+  "verdict": "3",
+  "guid": "A0259C9BE4C2AA344C833F5174712255",
+  "sec": "grammar"
+ },
+ "4B903C": {
+  "answer": "fourth",
+  "verdict": "3",
+  "guid": "E0AB42A0D041BBA64DF1E21AC90A9069",
+  "sec": "grammar"
+ },
+ "4BD2CC": {
+  "answer": "will call",
+  "verdict": "3",
+  "guid": "A0A746B915BEB87341E71E64F86C67F9",
+  "sec": "grammar"
+ },
+ "4C43C7": {
+  "answer": "us",
+  "verdict": "3",
+  "guid": "A030AE236D549D364281750FA1DB3C61",
+  "sec": "grammar"
+ },
+ "4C76B3": {
+  "answer": "mustn't",
+  "verdict": "3",
+  "guid": "40E3AD2069BDA54147042B28C479546C",
+  "sec": "grammar"
+ },
+ "4C9F05": {
+  "answer": "me",
+  "verdict": "3",
+  "guid": "208BA14EE4E3976B4B02041F77BDD587",
+  "sec": "grammar"
+ },
+ "4E4689": {
+  "answer": "had",
+  "verdict": "3",
+  "guid": "F0B0CD8C1DA181C6465203EC07935DC6",
+  "sec": "grammar"
+ },
+ "4E719E": {
+  "answer": "decided",
+  "verdict": "3",
+  "guid": "B0C3C57498A9BA684C90F4671BC281E8",
+  "sec": "grammar"
+ },
+ "4EF3E6": {
+  "answer": "happened",
+  "verdict": "3",
+  "guid": "C0D1CEE26FEC8935453669E38947CC0F",
+  "sec": "grammar"
+ },
+ "4FF9B6": {
+  "answer": "went",
+  "verdict": "3",
+  "guid": "40D11B1AEFDF9CEB433556A2912C1179",
+  "sec": "grammar"
+ },
+ "508D6D": {
+  "answer": "knew",
+  "verdict": "3",
+  "guid": "D87F274DF1F1AC3748EF5379EC8CAE84",
+  "sec": "grammar"
+ },
+ "517961": {
+  "answer": "fifth",
+  "verdict": "3",
+  "guid": "D8535B4CEC43BA444769885130470AFE",
+  "sec": "grammar"
+ },
+ "524250": {
+  "answer": "was wearing",
+  "verdict": "3",
+  "guid": "8820663C4B6082D94436980FBF4E4728",
+  "sec": "grammar"
+ },
+ "529466": {
+  "answer": "brought",
+  "verdict": "3",
+  "guid": "D8DB60C3D57F96664AD4A78C45E2835E",
+  "sec": "grammar"
+ },
+ "5398D1": {
+  "answer": "don't listen",
+  "verdict": "3",
+  "guid": "785BEF6660E2865E4279D787510E6FCC",
+  "sec": "grammar"
+ },
+ "53A17D": {
+  "answer": "was covered",
+  "verdict": "3",
+  "guid": "3879E5D804A4846343D85DCE0C615F8B",
+  "sec": "grammar"
+ },
+ "53F086": {
+  "answer": "him",
+  "verdict": "3",
+  "guid": "F8D1E288F17CAECC471611ACFDCF0FA3",
+  "sec": "grammar"
+ },
+ "5416B3": {
+  "answer": "went",
+  "verdict": "3",
+  "guid": "48E50D04B678A3F2495DCE1F20E86ED3",
+  "sec": "grammar"
+ },
+ "54540E": {
+  "answer": "will kill",
+  "verdict": "3",
+  "guid": "28C800CE2D8789AB4DA6606AFC7B1593",
+  "sec": "grammar"
+ },
+ "54556C": {
+  "answer": "has completed",
+  "verdict": "3",
+  "guid": "D8A8084F057E85C94D61DA6872706D0E",
+  "sec": "grammar"
+ },
+ "54C867": {
+  "answer": "thirtieth",
+  "verdict": "3",
+  "guid": "D83A0FF7A6848D5C48FD5F5EFA0E47A4",
+  "sec": "grammar"
+ },
+ "559405": {
+  "answer": "smaller",
+  "verdict": "3",
+  "guid": "288B80EEB262873E4152F0868B84072E",
+  "sec": "grammar"
+ },
+ "56199D": {
+  "answer": "would be",
+  "verdict": "3",
+  "guid": "B875DB3DC138B7194A912E04BC5B7CAA",
+  "sec": "grammar"
+ },
+ "569CFD": {
+  "answer": "didn't like",
+  "verdict": "3",
+  "guid": "187BDA91B98094714F1B692E9D38D39D",
+  "sec": "grammar"
+ },
+ "56AF6E": {
+  "answer": "was invented",
+  "verdict": "3",
+  "guid": "D8C9D1F0E70E8DDA4E7BB167C6D3AFF4",
+  "sec": "grammar"
+ },
+ "572F42": {
+  "answer": "activities",
+  "verdict": "3",
+  "guid": "08663170BE38AADB46AF2F745748A8FF",
+  "sec": "grammar"
+ },
+ "5731A9": {
+  "answer": "was",
+  "verdict": "3",
+  "guid": "98BE35E29BD59468493112C8725BF5F1",
+  "sec": "grammar"
+ },
+ "579D9A": {
+  "answer": "gave",
+  "verdict": "3",
+  "guid": "B89B370A6A998A2D4E6523F61D432D4D",
+  "sec": "grammar"
+ },
+ "579E5E": {
+  "answer": "me",
+  "verdict": "3",
+  "guid": "88CB3CD622DEA5984DB35A508390A64D",
+  "sec": "grammar"
+ },
+ "57CFAE": {
+  "answer": "second",
+  "verdict": "3",
+  "guid": "98CA31C9AFED87CE40687CB66B49225D",
+  "sec": "grammar"
+ },
+ "57E63E": {
+  "answer": "kindest",
+  "verdict": "3",
+  "guid": "E8CC3DA4C23795A8493CDBD613BD4C99",
+  "sec": "grammar"
+ },
+ "57F477": {
+  "answer": "leaves",
+  "verdict": "3",
+  "guid": "383130B4DF509DC64ED1FCA22B797FD6",
+  "sec": "grammar"
+ },
+ "583096": {
+  "answer": "greater",
+  "verdict": "3",
+  "guid": "B8DEF2A8B07E8C1445CAE132214D3184",
+  "sec": "grammar"
+ },
+ "597920": {
+  "answer": "was packing",
+  "verdict": "3",
+  "guid": "6823BB9C9C6EBDD24B4D3B12FF6DC595",
+  "sec": "grammar"
+ },
+ "59D903": {
+  "answer": "have lost",
+  "verdict": "3",
+  "guid": "28E7BB2D6A9483E4418E6CFF02E4C53B",
+  "sec": "grammar"
+ },
+ "5A4CB6": {
+  "answer": "could",
+  "verdict": "3",
+  "guid": "48D09A5102F69F0A4F2884B2870B17FE",
+  "sec": "grammar"
+ },
+ "5A9044": {
+  "answer": "didn't like",
+  "verdict": "3",
+  "guid": "080B92CD928EA3DD414684D1B51D2286",
+  "sec": "grammar"
+ },
+ "5ACFC1": {
+  "answer": "were employed",
+  "verdict": "3",
+  "guid": "A85A914C1C57AB42496A4BEF62E9E9A1",
+  "sec": "grammar"
+ },
+ "5B4375": {
+  "answer": "doesn't do",
+  "verdict": "3",
+  "guid": "38804E98F3FF99444E0D15E706F73BA5",
+  "sec": "grammar"
+ },
+ "5B6F14": {
+  "answer": "bought",
+  "verdict": "3",
+  "guid": "580D410430B2873A4C56BA6AFA95A4CC",
+  "sec": "grammar"
+ },
+ "5BB0D4": {
+  "answer": "thought",
+  "verdict": "3",
+  "guid": "7804425A64A5859744E14A23198032D5",
+  "sec": "grammar"
+ },
+ "5BE506": {
+  "answer": "rang",
+  "verdict": "3",
+  "guid": "28DC48673689A3F147A84E1419EC6B7F",
+  "sec": "grammar"
+ },
+ "5C3336": {
+  "answer": "understood",
+  "verdict": "3",
+  "guid": "E8DEAE630D08A2584F3D86A2F3057442",
+  "sec": "grammar"
+ },
+ "5C571B": {
+  "answer": "their",
+  "verdict": "3",
+  "guid": "5848A3BEEEF6B4EC4B735A3BCABD1845",
+  "sec": "grammar"
+ },
+ "5D08CD": {
+  "answer": "him",
+  "verdict": "3",
+  "guid": "A8727FBF790294C94D484D9E9A9899AA",
+  "sec": "grammar"
+ },
+ "5D328E": {
+  "answer": "best",
+  "verdict": "3",
+  "guid": "F8CE76478B51BCE94D117FE353F8C6C5",
+  "sec": "grammar"
+ },
+ "5D746D": {
+  "answer": "would stay",
+  "verdict": "3",
+  "guid": "D87370088C1DBBD347E83536A18B5433",
+  "sec": "grammar"
+ },
+ "5DF36F": {
+  "answer": "busiest",
+  "verdict": "3",
+  "guid": "D8117E7F35A2A7E447974078B350F029",
+  "sec": "grammar"
+ },
+ "5E3F03": {
+  "answer": "was used",
+  "verdict": "3",
+  "guid": "28EEC1432AFDA5904D999FAA289BD259",
+  "sec": "grammar"
+ },
+ "5E8065": {
+  "answer": "me",
+  "verdict": "3",
+  "guid": "D88FC21F8A0688D44CF35029F5AD368A",
+  "sec": "grammar"
+ },
+ "5EA3AB": {
+  "answer": "third",
+  "verdict": "3",
+  "guid": "9849CE4E67FB8D2E4723E819F0E17B76",
+  "sec": "grammar"
+ },
+ "5F01F0": {
+  "answer": "was designing",
+  "verdict": "3",
+  "guid": "182215E13DF3A339466ADDF368139809",
+  "sec": "grammar"
+ },
+ "5F2D7E": {
+  "answer": "is called",
+  "verdict": "3",
+  "guid": "38C617B6AD04BB464D9F7DCE238EB5CC",
+  "sec": "grammar"
+ },
+ "6019AB": {
+  "answer": "will cook",
+  "verdict": "3",
+  "guid": "9D452B27E5BCBCA640FF09FDE362D460",
+  "sec": "grammar"
+ },
+ "6090B6": {
+  "answer": "first",
+  "verdict": "3",
+  "guid": "4DDB2235AEC984C44F88F32150467E37",
+  "sec": "grammar"
+ },
+ "60AFA9": {
+  "answer": "older",
+  "verdict": "3",
+  "guid": "9DB9213273AD989546FF97C1D52EB0F9",
+  "sec": "grammar"
+ },
+ "60E43F": {
+  "answer": "knew",
+  "verdict": "3",
+  "guid": "ED1C20BEB211AB924873B10053B7765A",
+  "sec": "grammar"
+ },
+ "61C808": {
+  "answer": "don't think",
+  "verdict": "3",
+  "guid": "2DFA5F01032AA87D4EAC39F66EC8AC1D",
+  "sec": "grammar"
+ },
+ "61D5B0": {
+  "answer": "him",
+  "verdict": "3",
+  "guid": "4D27581D8FD8901F448C597978EC994E",
+  "sec": "grammar"
+ },
+ "62F983": {
+  "answer": "didn't ask",
+  "verdict": "3",
+  "guid": "FDE16B82024882CA4D5C234E13E9C251",
+  "sec": "grammar"
+ },
+ "6344AC": {
+  "answer": "first",
+  "verdict": "3",
+  "guid": "9DA0E0D118F3A70445F7ED749C6DD458",
+  "sec": "grammar"
+ },
+ "6365F7": {
+  "answer": "my",
+  "verdict": "3",
+  "guid": "1D3DE82D6177AB914DB97B704DB48B2A",
+  "sec": "grammar"
+ },
+ "64B82A": {
+  "answer": "played",
+  "verdict": "3",
+  "guid": "6D940F18777FB54241EC8E7AC46D0D66",
+  "sec": "grammar"
+ },
+ "64CEFF": {
+  "answer": "lived",
+  "verdict": "3",
+  "guid": "1D1A0CCF8456A83D473217A146C9CD41",
+  "sec": "grammar"
+ },
+ "653527": {
+  "answer": "knew",
+  "verdict": "3",
+  "guid": "6D3E888981BDA02A46929A2AB49CF9F5",
+  "sec": "grammar"
+ },
+ "653CBA": {
+  "answer": "will come",
+  "verdict": "3",
+  "guid": "4D9E8AE678B5933E4971CA0BEDADCDF1",
+  "sec": "grammar"
+ },
+ "671357": {
+  "answer": "stories",
+  "verdict": "3",
+  "guid": "8D353EE6C137B4084FC03394C9DABC3D",
+  "sec": "grammar"
+ },
+ "67E2DA": {
+  "answer": "us",
+  "verdict": "3",
+  "guid": "7D9C364D569C8EA54E8202674545E896",
+  "sec": "grammar"
+ },
+ "680D92": {
+  "answer": "teeth",
+  "verdict": "3",
+  "guid": "BD62F7EF8A80BC6C45DBCB997AD04652",
+  "sec": "grammar"
+ },
+ "684192": {
+  "answer": "took",
+  "verdict": "3",
+  "guid": "BD60F586F913A68546A2FDE367E06FC1",
+  "sec": "grammar"
+ },
+ "684555": {
+  "answer": "first",
+  "verdict": "3",
+  "guid": "8D80F8DEA8C9B2DD4EA55B9220B1A373",
+  "sec": "grammar"
+ },
+ "68471F": {
+  "answer": "could",
+  "verdict": "3",
+  "guid": "5D10F343B404B703486CD119248F2E3D",
+  "sec": "grammar"
+ },
+ "69543D": {
+  "answer": "taught",
+  "verdict": "3",
+  "guid": "ED78B07FD3CC956F479E30A2D5EAE67D",
+  "sec": "grammar"
+ },
+ "696BD0": {
+  "answer": "heard",
+  "verdict": "3",
+  "guid": "7D2DB463A0E2A6FF41042F6302634EB4",
+  "sec": "grammar"
+ },
+ "69C232": {
+  "answer": "is offered",
+  "verdict": "3",
+  "guid": "ED6AB69E799E8D1942A608139DE8C947",
+  "sec": "grammar"
+ },
+ "6B2B76": {
+  "answer": "had",
+  "verdict": "3",
+  "guid": "3DD64481F4E78BB74C4C56E432EEB9B5",
+  "sec": "grammar"
+ },
+ "6BF41F": {
+  "answer": "most famous",
+  "verdict": "3",
+  "guid": "5D114055E6BCA2CC4422529123336FF0",
+  "sec": "grammar"
+ },
+ "6C3483": {
+  "answer": "was held",
+  "verdict": "3",
+  "guid": "FDEEA08FA9C1AB05409BE25DBC753271",
+  "sec": "grammar"
+ },
+ "218B7F": {
+  "answer": "will be",
+  "verdict": "3",
+  "guid": "361F549CFABEB3CA4CDE5A5FAB7C4C10",
+  "sec": "grammar"
+ },
+ "21B71C": {
+  "answer": "best",
+  "verdict": "3",
+  "guid": "56A453F77350B5FB4DFA0802108A1945",
+  "sec": "grammar"
+ },
+ "21C98B": {
+  "answer": "takes",
+  "verdict": "3",
+  "guid": "F64A5B750454BADE4EB920599DC79323",
+  "sec": "grammar"
+ },
+ "220BE9": {
+  "answer": "are painted",
+  "verdict": "3",
+  "guid": "C6B2645F66088AF941F2A8C11FBC87E7",
+  "sec": "grammar"
+ },
+ "221E6D": {
+  "answer": "was built",
+  "verdict": "3",
+  "guid": "D6756CE89AC3968348B8A8D08DCDC531",
+  "sec": "grammar"
+ },
+ "226E6A": {
+  "answer": "are allowed",
+  "verdict": "3",
+  "guid": "D69D6C7E7600987641895041AD0CA852",
+  "sec": "grammar"
+ },
+ "228EE3": {
+  "answer": "could",
+  "verdict": "3",
+  "guid": "C6EF6CD0986DAF234CCCA69CB62294D2",
+  "sec": "grammar"
+ },
+ "229AEC": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "C6AB690C346CBF9F4A263AB9EF41129B",
+  "sec": "grammar"
+ },
+ "22C946": {
+  "answer": "knew",
+  "verdict": "3",
+  "guid": "06DA6B1EAFA4ACE74F2DAB7642DD77C3",
+  "sec": "grammar"
+ },
+ "23DF06": {
+  "answer": "have found",
+  "verdict": "3",
+  "guid": "26D7E1633BE386A547B243A8112F0D2F",
+  "sec": "grammar"
+ },
+ "247F4E": {
+  "answer": "was not",
+  "verdict": "3",
+  "guid": "06C30149B2E79A6947C29549FFFEEC18",
+  "sec": "grammar"
+ },
+ "24F2EF": {
+  "answer": "were written",
+  "verdict": "3",
+  "guid": "C6110616AD289C3A475B33BEBFF85E6F",
+  "sec": "grammar"
+ },
+ "24FBA7": {
+  "answer": "don't want",
+  "verdict": "3",
+  "guid": "963104647CEE886E4F53D1939D24C1F1",
+  "sec": "grammar"
+ },
+ "2512DF": {
+  "answer": "were made",
+  "verdict": "3",
+  "guid": "76158614105CA38C4E4D33F9BDC121C3",
+  "sec": "grammar"
+ },
+ "257832": {
+  "answer": "feet",
+  "verdict": "3",
+  "guid": "E6638F84A8CDB130429FA36CF074381B",
+  "sec": "grammar"
+ },
+ "2614D5": {
+  "answer": "have created",
+  "verdict": "3",
+  "guid": "7685D084E1E3A3F94C2FC0220E4FDB7A",
+  "sec": "grammar"
+ },
+ "26823C": {
+  "answer": "younger",
+  "verdict": "3",
+  "guid": "E6AFD6BFEBCEB1A8465EE73F1AC49B5D",
+  "sec": "grammar"
+ },
+ "272EF2": {
+  "answer": "bought",
+  "verdict": "3",
+  "guid": "16663C7D2A80AB7A41B2646C44A87915",
+  "sec": "grammar"
+ },
+ "277D8B": {
+  "answer": "first",
+  "verdict": "3",
+  "guid": "F6433772DC3092584A7AF1454B921725",
+  "sec": "grammar"
+ },
+ "27ADC2": {
+  "answer": "didn't want",
+  "verdict": "3",
+  "guid": "A66937C24CA7B09443126472057BFB51",
+  "sec": "grammar"
+ },
+ "27C0BC": {
+  "answer": "men",
+  "verdict": "3",
+  "guid": "46AA32C902D1A41A43DBA936AF4319A6",
+  "sec": "grammar"
+ },
+ "27D04C": {
+  "answer": "couldn't",
+  "verdict": "3",
+  "guid": "06A73201519FA64E43B28539D06F3485",
+  "sec": "grammar"
+ },
+ "284D33": {
+  "answer": "children",
+  "verdict": "3",
+  "guid": "E6E0F7A47CDD88F4488AAEB235047388",
+  "sec": "grammar"
+ },
+ "28B187": {
+  "answer": "will come",
+  "verdict": "3",
+  "guid": "F634F5056A5698CD4EB5E0F6288D3400",
+  "sec": "grammar"
+ },
+ "2913A4": {
+  "answer": "didn't have",
+  "verdict": "3",
+  "guid": "9605BEE5A7C4B3C7405231B5E9BFC584",
+  "sec": "grammar"
+ },
+ "29A02D": {
+  "answer": "didn't mind",
+  "verdict": "3",
+  "guid": "6679B2472FAEBB944E3E2DCE7DF94188",
+  "sec": "grammar"
+ },
+ "29E7CC": {
+  "answer": "feet",
+  "verdict": "3",
+  "guid": "A6ACB3B6131F820E423BBBE4E353948E",
+  "sec": "grammar"
+ },
+ "2A40A9": {
+  "answer": "wanted",
+  "verdict": "3",
+  "guid": "96B09215C16EA6EE4B79AF78B54FF827",
+  "sec": "grammar"
+ },
+ "2A43D1": {
+  "answer": "liked",
+  "verdict": "3",
+  "guid": "76509E58D771B80C405A3CF80DBE72E5",
+  "sec": "grammar"
+ },
+ "2A7520": {
+  "answer": "could",
+  "verdict": "3",
+  "guid": "662398568784BD524138552EACF50EBD",
+  "sec": "grammar"
+ },
+ "2A8210": {
+  "answer": "younger",
+  "verdict": "3",
+  "guid": "562F967AEAF387E746C665B803927C6A",
+  "sec": "grammar"
+ },
+ "2AB9B1": {
+  "answer": "younger",
+  "verdict": "3",
+  "guid": "46549B3A64B68A3F4174DAD7FEE5E16A",
+  "sec": "grammar"
+ },
+ "2B33B3": {
+  "answer": "have prepared",
+  "verdict": "3",
+  "guid": "46EE4E229A58AB9347DCA49CD508C465",
+  "sec": "grammar"
+ },
+ "2BA17D": {
+  "answer": "have lost",
+  "verdict": "3",
+  "guid": "3679458D2BB4B65643F4D7FFA4CCFCF7",
+  "sec": "grammar"
+ },
+ "2BB171": {
+  "answer": "hears",
+  "verdict": "3",
+  "guid": "3654458D2221B64D4663171B111B05A8",
+  "sec": "grammar"
+ },
+ "2BE3AB": {
+  "answer": "took",
+  "verdict": "3",
+  "guid": "964C4E92AE029DC9486F56CFF9A32561",
+  "sec": "grammar"
+ },
+ "2D3A4F": {
+  "answer": "don't know",
+  "verdict": "3",
+  "guid": "061E79F0022DB8EF49FB5DFC92CEA3CD",
+  "sec": "grammar"
+ },
+ "2DDE37": {
+  "answer": "was walking",
+  "verdict": "3",
+  "guid": "E6377C9644EEABAE4D3F52ACEF2E915C",
+  "sec": "grammar"
+ },
+ "2EB14E": {
+  "answer": "their",
+  "verdict": "3",
+  "guid": "06C4C50446C19AEE438332D9C4AEB65D",
+  "sec": "grammar"
+ },
+ "2EF88F": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "F611CFA1E2B0AC2E42149B1CBC31B4FE",
+  "sec": "grammar"
+ },
+ "2F3940": {
+  "answer": "didn't remember",
+  "verdict": "3",
+  "guid": "062E1B07D1E1A276425E65F766A49D12",
+  "sec": "grammar"
+ },
+ "316EAC": {
+  "answer": "was having",
+  "verdict": "3",
+  "guid": "9EAD5CAF87A2851543F77BECF657E33B",
+  "sec": "grammar"
+ },
+ "3235A9": {
+  "answer": "knew",
+  "verdict": "3",
+  "guid": "9EBE681B9B8CBFB44B44E22242839D2F",
+  "sec": "grammar"
+ },
+ "32560D": {
+  "answer": "feet",
+  "verdict": "3",
+  "guid": "2E786D18FFDFA83540644608A0E9D7DA",
+  "sec": "grammar"
+ },
+ "32EF69": {
+  "answer": "was",
+  "verdict": "3",
+  "guid": "DEBC61E729A0BB4D4D80A9223C04FC08",
+  "sec": "grammar"
+ },
+ "345648": {
+  "answer": "best",
+  "verdict": "3",
+  "guid": "0EF80D3E8F6FB4634C5CA751B9688A63",
+  "sec": "grammar"
+ },
+ "345E4D": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "0E780C96C64EABD44A63FE57F0BCA1DB",
+  "sec": "grammar"
+ },
+ "356B33": {
+  "answer": "better",
+  "verdict": "3",
+  "guid": "EEED84220A139AC34138E5B87AAC8A93",
+  "sec": "grammar"
+ },
+ "35881A": {
+  "answer": "was written",
+  "verdict": "3",
+  "guid": "5E9F8FF8FF5983D14183AFDAE5A86291",
+  "sec": "grammar"
+ },
+ "36486A": {
+  "answer": "us",
+  "verdict": "3",
+  "guid": "DE90DFCEC6E5AB6F430D52679FA03F3F",
+  "sec": "grammar"
+ },
+ "366093": {
+  "answer": "me",
+  "verdict": "3",
+  "guid": "BEEDD21EB32E919F4C1D4FD7C01B1E28",
+  "sec": "grammar"
+ },
+ "375105": {
+  "answer": "potatoes",
+  "verdict": "3",
+  "guid": "2E88352D7F5D9C504C7C722A529242CF",
+  "sec": "grammar"
+ },
+ "378DC8": {
+  "answer": "boxes",
+  "verdict": "3",
+  "guid": "AEFF372D5BF69176440AD82A7B78A95D",
+  "sec": "grammar"
+ },
+ "37967B": {
+  "answer": "was packed",
+  "verdict": "3",
+  "guid": "3E4B3DD5E68DA1894102E34FEB3C6B38",
+  "sec": "grammar"
+ },
+ "386443": {
+  "answer": "ran",
+  "verdict": "3",
+  "guid": "0EEDF07A6CD395C144C3E0C379F2F185",
+  "sec": "grammar"
+ },
+ "390AF9": {
+  "answer": "women",
+  "verdict": "3",
+  "guid": "1EB2B9B4E849AD6C4F0245F5E966690D",
+  "sec": "grammar"
+ },
+ "391D3D": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "EE75B7948B5A877C4CFBE7D919C06E8B",
+  "sec": "grammar"
+ },
+ "3949E5": {
+  "answer": "couldn't",
+  "verdict": "3",
+  "guid": "CE80BBF2A73284034FC3C399508941F7",
+  "sec": "grammar"
+ },
+ "394B7A": {
+  "answer": "was planting",
+  "verdict": "3",
+  "guid": "3E90B4B032D185444CB902B9E4C1A917",
+  "sec": "grammar"
+ },
+ "3A800D": {
+  "answer": "happened",
+  "verdict": "3",
+  "guid": "2E7F92939BF383B749B9430D9BA5E49F",
+  "sec": "grammar"
+ },
+ "3AB4A3": {
+  "answer": "our",
+  "verdict": "3",
+  "guid": "9EE490012AE785094B08414C7CBDC8CE",
+  "sec": "grammar"
+ },
+ "3ABC81": {
+  "answer": "worst",
+  "verdict": "3",
+  "guid": "FE549AC0163097774DD6CE91B7B98218",
+  "sec": "grammar"
+ },
+ "3AC9DF": {
+  "answer": "rains",
+  "verdict": "3",
+  "guid": "7E1A9BCA985DAF1D4F484C6B34AE9422",
+  "sec": "grammar"
+ },
+ "3B0803": {
+  "answer": "was making",
+  "verdict": "3",
+  "guid": "2EE24F9A3F41A7984C7795F8BF600FF6",
+  "sec": "grammar"
+ },
+ "3B13D5": {
+  "answer": "first",
+  "verdict": "3",
+  "guid": "7E854E9D6EF18FC843DC72FF1A112A1B",
+  "sec": "grammar"
+ },
+ "3B492C": {
+  "answer": "was covered",
+  "verdict": "3",
+  "guid": "6EA04B0DF28CA3574BA8E7B1263F7D0F",
+  "sec": "grammar"
+ },
+ "3B8B8B": {
+  "answer": "am starting",
+  "verdict": "3",
+  "guid": "FE4F448E559197524D730576CA9B08C7",
+  "sec": "grammar"
+ },
+ "3C165E": {
+  "answer": "didn't work",
+  "verdict": "3",
+  "guid": "8EC5AD4DC322978946A78DCA987549A1",
+  "sec": "grammar"
+ },
+ "3C8185": {
+  "answer": "haven't heard",
+  "verdict": "3",
+  "guid": "FE8FA55709B5B55F46E87E356EEFA8E5",
+  "sec": "grammar"
+ },
+ "3D9874": {
+  "answer": "was walking",
+  "verdict": "3",
+  "guid": "3E0B7FC83E03A7B543651F6AED787B56",
+  "sec": "grammar"
+ },
+ "3DF578": {
+  "answer": "doesn't make",
+  "verdict": "3",
+  "guid": "3EF178FAAE789A11420E68246C2BDC34",
+  "sec": "grammar"
+ },
+ "3EA4DA": {
+  "answer": "stopped",
+  "verdict": "3",
+  "guid": "7E99C0C89DC8904141FA84415CC5250D",
+  "sec": "grammar"
+ },
+ "3EDFA5": {
+  "answer": "was written",
+  "verdict": "3",
+  "guid": "9E87C1FE150B91A74AAA439186C8A8DC",
+  "sec": "grammar"
+ },
+ "3F4CB4": {
+  "answer": "first",
+  "verdict": "3",
+  "guid": "4E001AAF14A9928C43E503C2020852EF",
+  "sec": "grammar"
+ },
+ "3FBEA4": {
+  "answer": "was",
+  "verdict": "3",
+  "guid": "9E041C53F3A8999E40569312303B0D0E",
+  "sec": "grammar"
+ },
+ "3FC869": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "DEBA1F607AF7B12340AFF49FE84EC2A2",
+  "sec": "grammar"
+ },
+ "3FD6FD": {
+  "answer": "better",
+  "verdict": "3",
+  "guid": "1E771D1E768790024EDD10625C9B4FC1",
+  "sec": "grammar"
+ },
+ "409410": {
+  "answer": "was showing",
+  "verdict": "3",
+  "guid": "502B20856260B15B4244E08F5BB2FADC",
+  "sec": "grammar"
+ },
+ "40BB46": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "00D424A49B60B32D492A15E6F1A3308F",
+  "sec": "grammar"
+ },
+ "410708": {
+  "answer": "went",
+  "verdict": "3",
+  "guid": "20F253156C078A574DA34601CE031C99",
+  "sec": "grammar"
+ },
+ "41DEA9": {
+  "answer": "had",
+  "verdict": "3",
+  "guid": "90B75CF7C191AC7F4657E21A747EFAE7",
+  "sec": "grammar"
+ },
+ "429124": {
+  "answer": "policemen",
+  "verdict": "3",
+  "guid": "600B65D8F6B3B7CA4D5C06D997241D12",
+  "sec": "grammar"
+ },
+ "42CBC7": {
+  "answer": "would live",
+  "verdict": "3",
+  "guid": "A03A642137C3B88C4A2B7171EB016A07",
+  "sec": "grammar"
+ },
+ "438973": {
+  "answer": "better",
+  "verdict": "3",
+  "guid": "30EFEBAEE31CB2ED448CF37CB02A6C16",
+  "sec": "grammar"
+ },
+ "438CEB": {
+  "answer": "wanted",
+  "verdict": "3",
+  "guid": "C04FEAAA2741BC3D461934C2F992C6FF",
+  "sec": "grammar"
+ },
+ "43A445": {
+  "answer": "wanted",
+  "verdict": "3",
+  "guid": "0089E09FF873847B423EC2EDB12F8547",
+  "sec": "grammar"
+ },
+ "43FD16": {
+  "answer": "walked",
+  "verdict": "3",
+  "guid": "50D1E749C4D59E99467C94AE76C54877",
+  "sec": "grammar"
+ },
+ "440E7B": {
+  "answer": "will call",
+  "verdict": "3",
+  "guid": "30420C337A38BDAB454D2EBA16B5646C",
+  "sec": "grammar"
+ },
+ "444980": {
+  "answer": "would go",
+  "verdict": "3",
+  "guid": "F0200BEF5060B82D4DAD271A43605798",
+  "sec": "grammar"
+ },
+ "44B8EF": {
+  "answer": "foxes",
+  "verdict": "3",
+  "guid": "C0140FF29324B6D54B2838FC0E9F5531",
+  "sec": "grammar"
+ },
+ "44E182": {
+  "answer": "was driving",
+  "verdict": "3",
+  "guid": "F06C0583E85A9A8A4030D068F9483A38",
+  "sec": "grammar"
+ },
+ "0087E1": {
+  "answer": "comes",
+  "verdict": "3",
+  "guid": "C25F238D8C8B8BC94CB89D8BD074892B",
+  "sec": "grammar"
+ },
+ "00967B": {
+  "answer": "will give",
+  "verdict": "3",
+  "guid": "324B2D05E57AA48747B392376AA7FCD4",
+  "sec": "grammar"
+ },
+ "00B0A4": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "9204220583009D64411F4113DE199B16",
+  "sec": "grammar"
+ },
+ "011242": {
+  "answer": "left",
+  "verdict": "3",
+  "guid": "0265565A5CA994BD4D39B9D65AE84FF3",
+  "sec": "grammar"
+ },
+ "014427": {
+  "answer": "were writing",
+  "verdict": "3",
+  "guid": "6230507D753B8C90430078FB6F4E833A",
+  "sec": "grammar"
+ },
+ "0145F8": {
+  "answer": "children",
+  "verdict": "3",
+  "guid": "12F058DB19DFB5504F57DD31B9EAA41C",
+  "sec": "grammar"
+ },
+ "017728": {
+  "answer": "destroyed",
+  "verdict": "3",
+  "guid": "62F3534525959E9E42CF3C888EA7DD7C",
+  "sec": "grammar"
+ },
+ "02ABE0": {
+  "answer": "have spent",
+  "verdict": "3",
+  "guid": "C2296474EF16B62645E4B3AE274BACC3",
+  "sec": "grammar"
+ },
+ "02FE7F": {
+  "answer": "our",
+  "verdict": "3",
+  "guid": "32116CD0F962BBAE4456624F535A34E9",
+  "sec": "grammar"
+ },
+ "03F0F6": {
+  "answer": "could",
+  "verdict": "3",
+  "guid": "12D1E23B1946A9E1498D0F282BEE1ABE",
+  "sec": "grammar"
+ },
+ "0444A8": {
+  "answer": "him",
+  "verdict": "3",
+  "guid": "92F0000DCDB989B44344CA0BF868D9EF",
+  "sec": "grammar"
+ },
+ "04CEB4": {
+  "answer": "shook",
+  "verdict": "3",
+  "guid": "420A0C963BCD95CD481640AEA1231BF8",
+  "sec": "grammar"
+ },
+ "04F503": {
+  "answer": "would see",
+  "verdict": "3",
+  "guid": "22E108C800CD8E5448A06671F9347400",
+  "sec": "grammar"
+ },
+ "0522D7": {
+  "answer": "later",
+  "verdict": "3",
+  "guid": "7236868B740D9442442A5D7D1CC4F20E",
+  "sec": "grammar"
+ },
+ "052FB3": {
+  "answer": "bought",
+  "verdict": "3",
+  "guid": "42E681253F3CB12B4CBCD0084EE72243",
+  "sec": "grammar"
+ },
+ "055801": {
+  "answer": "couldn't",
+  "verdict": "3",
+  "guid": "22588FBE1D1085A54CE603A3B22A0AC8",
+  "sec": "grammar"
+ },
+ "05B278": {
+  "answer": "women",
+  "verdict": "3",
+  "guid": "32F4865A793BA2E64BF8202A6F0B1772",
+  "sec": "grammar"
+ },
+ "061633": {
+  "answer": "thirteenth",
+  "verdict": "3",
+  "guid": "E2E5DD3D53E7AE6C450E96287AA0CE00",
+  "sec": "grammar"
+ },
+ "0738F5": {
+  "answer": "was covered",
+  "verdict": "3",
+  "guid": "128E3F86EB01A57644356AD99735C61B",
+  "sec": "grammar"
+ },
+ "076239": {
+  "answer": "their",
+  "verdict": "3",
+  "guid": "E2BD36D6A7F7B3F542B0543CB99F2B8E",
+  "sec": "grammar"
+ },
+ "07CE5C": {
+  "answer": "haven't seen",
+  "verdict": "3",
+  "guid": "82AA3C523738A28D4E88587DCE9FFDD4",
+  "sec": "grammar"
+ },
+ "07FEA1": {
+  "answer": "was",
+  "verdict": "3",
+  "guid": "92513CFE89DE84A44A5CB423AA7004ED",
+  "sec": "grammar"
+ },
+ "0885E6": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "C2DFF895F1C8AE424ED3AD683FFC5ED0",
+  "sec": "grammar"
+ },
+ "08A8DB": {
+  "answer": "second",
+  "verdict": "3",
+  "guid": "7249FFAEED7EBEFC42AC83EBFC454BCE",
+  "sec": "grammar"
+ },
+ "0A00BA": {
+  "answer": "spent",
+  "verdict": "3",
+  "guid": "42929220F1128D72459ABF93EA82E45B",
+  "sec": "grammar"
+ },
+ "0A1FDB": {
+  "answer": "will go",
+  "verdict": "3",
+  "guid": "72459170363BA4AF45B1B855E10CCF4C",
+  "sec": "grammar"
+ },
+ "0A5A98": {
+  "answer": "was",
+  "verdict": "3",
+  "guid": "B2F8996057049B14427B65FE8528C556",
+  "sec": "grammar"
+ },
+ "0A7E53": {
+  "answer": "their",
+  "verdict": "3",
+  "guid": "82E39CEC1A1D97D24024CE0749416D0C",
+  "sec": "grammar"
+ },
+ "0B7B99": {
+  "answer": "has cooked",
+  "verdict": "3",
+  "guid": "B2B34424081A8F00476506AB42689CD6",
+  "sec": "grammar"
+ },
+ "0BC2C2": {
+  "answer": "didn't know",
+  "verdict": "3",
+  "guid": "A26A462B2A64B4BE49D527525637E7F2",
+  "sec": "grammar"
+ },
+ "0BE0D6": {
+  "answer": "was called",
+  "verdict": "3",
+  "guid": "72DC42CD33E1B3014F4D10132CF5DA91",
+  "sec": "grammar"
+ },
+ "0BF77E": {
+  "answer": "first",
+  "verdict": "3",
+  "guid": "32C143E83EFCBDBA4FC8F247AF931AFF",
+  "sec": "grammar"
+ },
+ "0BFC1F": {
+  "answer": "them",
+  "verdict": "3",
+  "guid": "52114AF99F6490C44C07890185A97D56",
+  "sec": "grammar"
+ },
+ "0DCB3B": {
+  "answer": "could",
+  "verdict": "3",
+  "guid": "E24A743FB87BB7824675FBE8D576E8D3",
+  "sec": "grammar"
+ },
+ "0DFA85": {
+  "answer": "first",
+  "verdict": "3",
+  "guid": "F281798D5B3F9E394CC28B0B6393DD74",
+  "sec": "grammar"
+ },
+ "0F08C9": {
+  "answer": "was written",
+  "verdict": "3",
+  "guid": "A2B21FED72F8AC254B58D5DFDB0EBB89",
+  "sec": "grammar"
+ },
+ "0F5FE2": {
+  "answer": "me",
+  "verdict": "3",
+  "guid": "C26811A87C708E7F4282521973BFEA7C",
+  "sec": "grammar"
+ },
+ "0FF13F": {
+  "answer": "said",
+  "verdict": "3",
+  "guid": "E21115A5A491896C42A3269F2CEE7A73",
+  "sec": "grammar"
+ },
+ "10A869": {
+  "answer": "won't take",
+  "verdict": "3",
+  "guid": "D5B92FD19B79A2EF45F0E038AD95055E",
+  "sec": "grammar"
+ },
+ "10C7C0": {
+  "answer": "him",
+  "verdict": "3",
+  "guid": "A52A23AFA399AF4342FB572853E89D9E",
+  "sec": "grammar"
+ },
+ "10FDC7": {
+  "answer": "knows",
+  "verdict": "3",
+  "guid": "A53127568CFFBC144A39697F33F0C689",
+  "sec": "grammar"
+ },
+ "112AB2": {
+  "answer": "will see",
+  "verdict": "3",
+  "guid": "456659BAD9ED89214176E2D8480E7A61",
+  "sec": "grammar"
+ },
+ "119590": {
+  "answer": "could",
+  "verdict": "3",
+  "guid": "B52B58355720B1D14E63A52C78BC2EA7",
+  "sec": "grammar"
+ },
+ "12281E": {
+  "answer": "first",
+  "verdict": "3",
+  "guid": "55C66FC4460EA5814994307FD9FDCA04",
+  "sec": "grammar"
+ },
+ "12A42E": {
+  "answer": "couldn't",
+  "verdict": "3",
+  "guid": "65C960EEEBB4B5A44576EE4A4A28F593",
+  "sec": "grammar"
+ },
+ "12E980": {
+  "answer": "didn't understand",
+  "verdict": "3",
+  "guid": "F52C6BB778D286DE47F3B70AA18B78A9",
+  "sec": "grammar"
+ },
+ "132031": {
+  "answer": "them",
+  "verdict": "3",
+  "guid": "E556E2075A8ABCC1459D739BEE4E830E",
+  "sec": "grammar"
+ },
+ "134080": {
+  "answer": "largest",
+  "verdict": "3",
+  "guid": "F520E2006BF5B7CF4ECE5FB72EE9DFF0",
+  "sec": "grammar"
+ },
+ "137305": {
+  "answer": "policemen",
+  "verdict": "3",
+  "guid": "2583EE20A6828112497054BAED47D0E3",
+  "sec": "grammar"
+ },
+ "138817": {
+  "answer": "have found",
+  "verdict": "3",
+  "guid": "553FEFAF74BF97664C58E441DE3F031F",
+  "sec": "grammar"
+ },
+ "1406A2": {
+  "answer": "me",
+  "verdict": "3",
+  "guid": "95620D324088BF024973E66A4E22A47E",
+  "sec": "grammar"
+ },
+ "14324E": {
+  "answer": "feet",
+  "verdict": "3",
+  "guid": "05CE06FEB236AC474612F5A1DF30476B",
+  "sec": "grammar"
+ },
+ "143989": {
+  "answer": "men",
+  "verdict": "3",
+  "guid": "F5BE0B82BDD3B3A44BD6211F8D1ADD57",
+  "sec": "grammar"
+ },
+ "145F1E": {
+  "answer": "had",
+  "verdict": "3",
+  "guid": "55C80160F31295B44A1D4A6E83F1522D",
+  "sec": "grammar"
+ },
+ "14EF8B": {
+  "answer": "will come",
+  "verdict": "3",
+  "guid": "F54C01ABB037B06A411FDC03F025415C",
+  "sec": "grammar"
+ },
+ "14F3C7": {
+  "answer": "had",
+  "verdict": "3",
+  "guid": "A5310EB4A5E799DD4E59CEAC18F58239",
+  "sec": "grammar"
+ },
+ "15159E": {
+  "answer": "easiest",
+  "verdict": "3",
+  "guid": "B5C588BE8E7CAB5D4FF90999A99D0BD6",
+  "sec": "grammar"
+ },
+ "15CA79": {
+  "answer": "have lost",
+  "verdict": "3",
+  "guid": "35BA8906DFFB851742D720C3DCCC93D0",
+  "sec": "grammar"
+ },
+ "163AB0": {
+  "answer": "will like",
+  "verdict": "3",
+  "guid": "452ED91692C08114433E871D7889065C",
+  "sec": "grammar"
+ },
+ "164785": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "F580D3EBCE3C86E64012785CB0508889",
+  "sec": "grammar"
+ },
+ "167A06": {
+  "answer": "brought",
+  "verdict": "3",
+  "guid": "25D3D9231A10879447402B4975ABB8A3",
+  "sec": "grammar"
+ },
+ "16FA67": {
+  "answer": "learns",
+  "verdict": "3",
+  "guid": "D531D99A919CA6D543805FEFBD668767",
+  "sec": "grammar"
+ },
+ "172E5E": {
+  "answer": "means",
+  "verdict": "3",
+  "guid": "85C63CEEA2E990DB4996D929E97FA8E1",
+  "sec": "grammar"
+ },
+ "180647": {
+  "answer": "chose",
+  "verdict": "3",
+  "guid": "0532FD91CBF2848B4CF6A646ED8FEA12",
+  "sec": "grammar"
+ },
+ "186F62": {
+  "answer": "most wonderful",
+  "verdict": "3",
+  "guid": "D56DF1DF6D9DA0C2414F4321D1385A11",
+  "sec": "grammar"
+ },
+ "18A139": {
+  "answer": "will have",
+  "verdict": "3",
+  "guid": "E5B9F50D6DC38A8B4A64C584888A0B44",
+  "sec": "grammar"
+ },
+ "18F448": {
+  "answer": "have made",
+  "verdict": "3",
+  "guid": "05F1F02388FEB0864336A2D464547568",
+  "sec": "grammar"
+ },
+ "18F88F": {
+  "answer": "was arranged",
+  "verdict": "3",
+  "guid": "F511FFD301708F4A40CCE0A103F13168",
+  "sec": "grammar"
+ },
+ "1969B5": {
+  "answer": "second",
+  "verdict": "3",
+  "guid": "458DBB47BDB8B4BF425C4A8D933BB0FE",
+  "sec": "grammar"
+ },
+ "19C783": {
+  "answer": "is walking",
+  "verdict": "3",
+  "guid": "F5EAB3F1C36E8C314D41F7504D191874",
+  "sec": "grammar"
+ },
+ "19E388": {
+  "answer": "children",
+  "verdict": "3",
+  "guid": "F5FCBED35AC3BD5A4850E672D8453D5A",
+  "sec": "grammar"
+ },
+ "19F98F": {
+  "answer": "could",
+  "verdict": "3",
+  "guid": "F511BB5D554CB3F54A552F74F4BB2B15",
+  "sec": "grammar"
+ },
+ "1B0DB4": {
+  "answer": "worse",
+  "verdict": "3",
+  "guid": "450247045C878AE544E1F368A4EAAD0E",
+  "sec": "grammar"
+ },
+ "1B5539": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "E5B848DA24FF92B34B9FCE3D6472BA1F",
+  "sec": "grammar"
+ },
+ "1B778E": {
+  "answer": "were kept",
+  "verdict": "3",
+  "guid": "F5C343447E0293F64212CCCD553EB7F1",
+  "sec": "grammar"
+ },
+ "1BD23B": {
+  "answer": "will lose",
+  "verdict": "3",
+  "guid": "E54746E121019AD8468AB6D00D8BAEF7",
+  "sec": "grammar"
+ },
+ "1BF2BB": {
+  "answer": "rained",
+  "verdict": "3",
+  "guid": "45414682038B8EE6475D9709EAB81969",
+  "sec": "grammar"
+ },
+ "1C685B": {
+  "answer": "was reading",
+  "verdict": "3",
+  "guid": "854DAFA103FF978741E02F009D1FBAD4",
+  "sec": "grammar"
+ },
+ "1C9F80": {
+  "answer": "was covered",
+  "verdict": "3",
+  "guid": "F52BA12A1A109BEA4283D4F49921CB1B",
+  "sec": "grammar"
+ },
+ "1D28BD": {
+  "answer": "better",
+  "verdict": "3",
+  "guid": "45767F43DD6B893D40AB2D3F6A181CBF",
+  "sec": "grammar"
+ },
+ "1E1C16": {
+  "answer": "will come",
+  "verdict": "3",
+  "guid": "55D5CA37BF928CDC407D4A8DB7A8E930",
+  "sec": "grammar"
+ },
+ "1E42B9": {
+  "answer": "didn't know",
+  "verdict": "3",
+  "guid": "45B0C627C07383964D796D1EB987711F",
+  "sec": "grammar"
+ },
+ "1E5B1E": {
+  "answer": "enjoyed",
+  "verdict": "3",
+  "guid": "55C8C47DC5C0941C467E49DDC220E966",
+  "sec": "grammar"
+ },
+ "1F2326": {
+  "answer": "told",
+  "verdict": "3",
+  "guid": "65D61E53D664BE5649370CB37B38E60D",
+  "sec": "grammar"
+ },
+ "201AFE": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "16C529AE5A7989F4466429DAE34ADA2F",
+  "sec": "grammar"
+ },
+ "206EC6": {
+  "answer": "women",
+  "verdict": "3",
+  "guid": "A6DD2C87D69FB81B4A1E273CA64FD0E0",
+  "sec": "grammar"
+ },
+ "21231F": {
+  "answer": "helps",
+  "verdict": "3",
+  "guid": "56165E726BC2B97E447F0332CC3F0018",
+  "sec": "grammar"
+ },
+ "214D10": {
+  "answer": "was impressed",
+  "verdict": "3",
+  "guid": "562057008312A1E4489AE552D0DE8C99",
+  "sec": "grammar"
+ },
+ "21605B": {
+  "answer": "second",
+  "verdict": "3",
+  "guid": "864D524790F489D847B6594CF77ABE1C",
+  "sec": "grammar"
+ },
+ "F844DC": {
+  "answer": "worst",
+  "verdict": "3",
+  "guid": "71A0F0F8A03C984C449E20B0822BDBC6",
+  "sec": "grammar"
+ },
+ "F90494": {
+  "answer": "more dangerous",
+  "verdict": "3",
+  "guid": "B102B06C097491DE4535A8AEFE0945EA",
+  "sec": "grammar"
+ },
+ "F96452": {
+  "answer": "was printed",
+  "verdict": "3",
+  "guid": "816DB03C2138B530483B99EB72476D19",
+  "sec": "grammar"
+ },
+ "FA167C": {
+  "answer": "fifth",
+  "verdict": "3",
+  "guid": "31A59D9577588C4E453AAB56C9D9D3F7",
+  "sec": "grammar"
+ },
+ "FA5B2B": {
+  "answer": "me",
+  "verdict": "3",
+  "guid": "614894543BFEB98D4E6836DBDC3AA7F4",
+  "sec": "grammar"
+ },
+ "FA9F96": {
+  "answer": "stories",
+  "verdict": "3",
+  "guid": "B1DB9129C14CB2354430730D0C92F67D",
+  "sec": "grammar"
+ },
+ "FAB680": {
+  "answer": "older",
+  "verdict": "3",
+  "guid": "F1249DA91BFD87094B7A190B10796A57",
+  "sec": "grammar"
+ },
+ "FADCB2": {
+  "answer": "bigger",
+  "verdict": "3",
+  "guid": "41679A7BA9ED988A4AA3780AB2C688F5",
+  "sec": "grammar"
+ },
+ "FB3554": {
+  "answer": "me",
+  "verdict": "3",
+  "guid": "810E4805DFBF9CB342CC94E80132F309",
+  "sec": "grammar"
+ },
+ "FB51F9": {
+  "answer": "was decorated",
+  "verdict": "3",
+  "guid": "11B845B96BEA8B13443F70389D45388E",
+  "sec": "grammar"
+ },
+ "FB7E11": {
+  "answer": "would die",
+  "verdict": "3",
+  "guid": "51534CCE2DE188094DF2674F1DF8EDCD",
+  "sec": "grammar"
+ },
+ "FBACAC": {
+  "answer": "her",
+  "verdict": "3",
+  "guid": "91A94AEBC7AFB8D34AFF4A56B5228864",
+  "sec": "grammar"
+ },
+ "FCBE61": {
+  "answer": "do not want",
+  "verdict": "3",
+  "guid": "D154AC7336269DDA409607AD0CDBCD9D",
+  "sec": "grammar"
+ },
+ "FCFE7E": {
+  "answer": "would help",
+  "verdict": "3",
+  "guid": "31C1AC9509A789C14ED71281EB7F3858",
+  "sec": "grammar"
+ },
+ "FD5BF4": {
+  "answer": "gave",
+  "verdict": "3",
+  "guid": "1108746AEAA08EFB4894E80D5AE04A73",
+  "sec": "grammar"
+ },
+ "FDF722": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "616173B3AEF584CC4A57F7EDCAF9FDA1",
+  "sec": "grammar"
+ },
+ "FE39E7": {
+  "answer": "had",
+  "verdict": "3",
+  "guid": "C13ECBD1FB808A1B4FEC7CAA3E36735E",
+  "sec": "grammar"
+ },
+ "FE5128": {
+  "answer": "were",
+  "verdict": "3",
+  "guid": "61F8C54BEE6B8E904144EACD0EEE8078",
+  "sec": "grammar"
+ },
+ "FEEDC4": {
+  "answer": "is improving",
+  "verdict": "3",
+  "guid": "A10CC7D92A6FBAD34A4C8BBBA28F9437",
+  "sec": "grammar"
+ },
+ "FF014B": {
+  "answer": "understood",
+  "verdict": "3",
+  "guid": "014215895A1C90734139FE016ED6DB61",
+  "sec": "grammar"
+ },
+ "FF4F38": {
+  "answer": "most patient",
+  "verdict": "3",
+  "guid": "E1F0111682B0912C4FD153636E39D0FF",
+  "sec": "grammar"
+ },
+ "FFE876": {
+  "answer": "third",
+  "verdict": "3",
+  "guid": "31DC1F38BFC784174F69AB52EB2502B8",
+  "sec": "grammar"
+ },
+ "016529": {
+  "answer": "powerful",
+  "verdict": "3",
+  "guid": "62BD58A918B39FF24B578EC9A35DB14F",
+  "sec": "wordform"
+ },
+ "01877A": {
+  "answer": "famous",
+  "verdict": "3",
+  "guid": "329F5300EAC8AAAC4B21943DCFB951F5",
+  "sec": "wordform"
+ },
+ "01BE7B": {
+  "answer": "information",
+  "verdict": "3",
+  "guid": "32445C343637B7C94DF91C7EEADCE1D9",
+  "sec": "wordform"
+ },
+ "02F361": {
+  "answer": "government",
+  "verdict": "3",
+  "guid": "D2516EF186BFB7554DD04CD11F465411",
+  "sec": "wordform"
+ },
+ "03D326": {
+  "answer": "responsibility",
+  "verdict": "3",
+  "guid": "62D7EEE7ED94A25E4C9049BB7FC34685",
+  "sec": "wordform"
+ },
+ "04CDC4": {
+  "answer": "cultural",
+  "verdict": "3",
+  "guid": "A20A0739917EA8BF40FC9A25D02843AA",
+  "sec": "wordform"
+ },
+ "064C2D": {
+  "answer": "noisy",
+  "verdict": "3",
+  "guid": "6270DA5FE12F835647207A73BAE172FD",
+  "sec": "wordform"
+ },
+ "06641C": {
+  "answer": "banker",
+  "verdict": "3",
+  "guid": "52ADD05FAA0C94B0432670C82A3C8B71",
+  "sec": "wordform"
+ },
+ "06F3ED": {
+  "answer": "traditional",
+  "verdict": "3",
+  "guid": "C271DEE0CA37BE9A4800A47FEE7A994F",
+  "sec": "wordform"
+ },
+ "078A68": {
+  "answer": "designer",
+  "verdict": "3",
+  "guid": "D2FF398F1533A745464E6E74CDD753E3",
+  "sec": "wordform"
+ },
+ "07A4C8": {
+  "answer": "friendship",
+  "verdict": "3",
+  "guid": "A2F930F72331B8BC4FDF6E422F7615F8",
+  "sec": "wordform"
+ },
+ "07B662": {
+  "answer": "unusual",
+  "verdict": "3",
+  "guid": "D2643D3714F8BF0E45DE093B513F1A34",
+  "sec": "wordform"
+ },
+ "093BF4": {
+  "answer": "fluently",
+  "verdict": "3",
+  "guid": "120EB4397141AC4E4ACC20DA8E4FDD0A",
+  "sec": "wordform"
+ },
+ "09BA7B": {
+  "answer": "dangerous",
+  "verdict": "3",
+  "guid": "3244B95FA307A5B14484CF7B05009EEF",
+  "sec": "wordform"
+ },
+ "0BC8C7": {
+  "answer": "impossible",
+  "verdict": "3",
+  "guid": "A23A4FA4DD50AA044930F28900DAA3DF",
+  "sec": "wordform"
+ },
+ "0C0028": {
+  "answer": "unusual",
+  "verdict": "3",
+  "guid": "62F2A290224DBD934724B58644BEF0C7",
+  "sec": "wordform"
+ },
+ "0C00EC": {
+  "answer": "friendly",
+  "verdict": "3",
+  "guid": "C2A2A2F5E5E9B35844C8EFB285086BAE",
+  "sec": "wordform"
+ },
+ "0C23FA": {
+  "answer": "sleepy",
+  "verdict": "3",
+  "guid": "1296AEC32D688E424F25080DCC9058D8",
+  "sec": "wordform"
+ },
+ "0CE4E5": {
+  "answer": "dangerous",
+  "verdict": "3",
+  "guid": "C28CA0EC11E596614C05D983A4F12626",
+  "sec": "wordform"
+ },
+ "0DE44E": {
+  "answer": "traditional",
+  "verdict": "3",
+  "guid": "02CC7014F9B1B4C44ABA04E00ECFAC86",
+  "sec": "wordform"
+ },
+ "0ECB39": {
+  "answer": "impossible",
+  "verdict": "3",
+  "guid": "E2BAC475EC5EB0F14F93412BABF9584B",
+  "sec": "wordform"
+ },
+ "0ED937": {
+  "answer": "attractive",
+  "verdict": "3",
+  "guid": "E237CBE376EDAAA84B380A69B33F787E",
+  "sec": "wordform"
+ },
+ "10BD6A": {
+  "answer": "international",
+  "verdict": "3",
+  "guid": "D594278596EF83E147904C8EE66BE273",
+  "sec": "wordform"
+ },
+ "10F4A5": {
+  "answer": "successful",
+  "verdict": "3",
+  "guid": "9581201F9A2BA0554D7DA48A8DCA6CE0",
+  "sec": "wordform"
+ },
+ "110BAC": {
+  "answer": "disappear",
+  "verdict": "3",
+  "guid": "95A254D4A7E8B6334CFC66BE7CDC0332",
+  "sec": "wordform"
+ },
+ "11F970": {
+  "answer": "kindness",
+  "verdict": "3",
+  "guid": "35215BEB0155826E4AD9698C277FCA13",
+  "sec": "wordform"
+ },
+ "121F42": {
+  "answer": "Naturally",
+  "verdict": "3",
+  "guid": "05656161236BA8014161D954A51D7AE9",
+  "sec": "wordform"
+ },
+ "126BE1": {
+  "answer": "healthy",
+  "verdict": "3",
+  "guid": "C55D64F38C638AAB43661F8DA2AB6B55",
+  "sec": "wordform"
+ },
+ "131B84": {
+  "answer": "performance",
+  "verdict": "3",
+  "guid": "F505E40A5BC6971D46E6A9E919390503",
+  "sec": "wordform"
+ },
+ "13598E": {
+  "answer": "national",
+  "verdict": "3",
+  "guid": "F5C8EB71DB5AB19548BC1570A3798F41",
+  "sec": "wordform"
+ },
+ "13654C": {
+  "answer": "manager",
+  "verdict": "3",
+  "guid": "05ADE8BA182CA89D48C1923853453A4E",
+  "sec": "wordform"
+ },
+ "144562": {
+  "answer": "disagree",
+  "verdict": "3",
+  "guid": "D5600831AB2E85F846A7F865ADCA1B26",
+  "sec": "wordform"
+ },
+ "183462": {
+  "answer": "location",
+  "verdict": "3",
+  "guid": "D56EF0AAD777B68C412696D82FD5E216",
+  "sec": "wordform"
+ },
+ "1874DF": {
+  "answer": "effective",
+  "verdict": "3",
+  "guid": "7513F0635651B67F43A6147B61586147",
+  "sec": "wordform"
+ },
+ "193F54": {
+  "answer": "wonderful",
+  "verdict": "3",
+  "guid": "850EB1398E2D860C478C88E6087D184A",
+  "sec": "wordform"
+ },
+ "1A849A": {
+  "answer": "punishment",
+  "verdict": "3",
+  "guid": "B59F905C5E5794B04127F3DD63083D46",
+  "sec": "wordform"
+ },
+ "1ACFD2": {
+  "answer": "wonderful",
+  "verdict": "3",
+  "guid": "756A913FCF478BEB4317DB876A442299",
+  "sec": "wordform"
+ },
+ "1AD7A6": {
+  "answer": "seriously",
+  "verdict": "3",
+  "guid": "95D793413146B96F405CF7A432843BAD",
+  "sec": "wordform"
+ },
+ "1AEAFC": {
+  "answer": "impressive",
+  "verdict": "3",
+  "guid": "15AC99E37FE380494AAEE85AE87D941B",
+  "sec": "wordform"
+ },
+ "1BD312": {
+  "answer": "stressful",
+  "verdict": "3",
+  "guid": "55674ED17BC486BD447D4147D67B611C",
+  "sec": "wordform"
+ },
+ "1BDDD0": {
+  "answer": "interesting",
+  "verdict": "3",
+  "guid": "752747D17C96AC1E49B2696B1714A34E",
+  "sec": "wordform"
+ },
+ "1BFEE5": {
+  "answer": "creative",
+  "verdict": "3",
+  "guid": "C5814CEC80ADA55740381FA39757A439",
+  "sec": "wordform"
+ },
+ "1C1768": {
+  "answer": "swimming",
+  "verdict": "3",
+  "guid": "D5F5A33F600CB0EC47DE2E66C5768B62",
+  "sec": "wordform"
+ },
+ "1CC74F": {
+  "answer": "Finally",
+  "verdict": "3",
+  "guid": "051AA3D280DBABDB4E416AAD90B0AC27",
+  "sec": "wordform"
+ },
+ "1DA67A": {
+  "answer": "creative",
+  "verdict": "3",
+  "guid": "35997D115E33903E4BB5B1BD06415CE1",
+  "sec": "wordform"
+ },
+ "1F7C78": {
+  "answer": "Fortunately",
+  "verdict": "3",
+  "guid": "35F31AA4A7E2BD384448BCD6D62D93B2",
+  "sec": "wordform"
+ },
+ "1FA3DE": {
+  "answer": "manager",
+  "verdict": "3",
+  "guid": "75C91E5036FAB8EE4C59A699EF1B88C6",
+  "sec": "wordform"
+ },
+ "20024F": {
+  "answer": "probably",
+  "verdict": "3",
+  "guid": "06122681C9CCA0B34B7473DB034991AD",
+  "sec": "wordform"
+ },
+ "205B5F": {
+  "answer": "risky",
+  "verdict": "3",
+  "guid": "861824A2DA1890424852B2EFC004B25B",
+  "sec": "wordform"
+ },
+ "222381": {
+  "answer": "fishing",
+  "verdict": "3",
+  "guid": "F6566E9B439C83AF430864F0EC817859",
+  "sec": "wordform"
+ },
+ "231C91": {
+  "answer": "professional",
+  "verdict": "3",
+  "guid": "B655EA1FA1CD8FC2449407E5F690458C",
+  "sec": "wordform"
+ },
+ "240B72": {
+  "answer": "natural",
+  "verdict": "3",
+  "guid": "366204AB7EB29B3F48FAE5056BA4F45A",
+  "sec": "wordform"
+ },
+ "246652": {
+  "answer": "information",
+  "verdict": "3",
+  "guid": "866D0D8C8FC3A7924B32A7E3BCEA7AB8",
+  "sec": "wordform"
+ },
+ "247216": {
+  "answer": "useful",
+  "verdict": "3",
+  "guid": "56D30684CDF58F5040EB636F4FCD4BA5",
+  "sec": "wordform"
+ },
+ "251823": {
+  "answer": "cheerful",
+  "verdict": "3",
+  "guid": "66E58F5FB8D4927543AAF3CC372F8048",
+  "sec": "wordform"
+ },
+ "253A9C": {
+  "answer": "tasty",
+  "verdict": "3",
+  "guid": "B6AE895D300194994DB57F85543B7E0F",
+  "sec": "wordform"
+ },
+ "25B193": {
+  "answer": "combination",
+  "verdict": "3",
+  "guid": "B6E485AECE91A7644B04726F376D7704",
+  "sec": "wordform"
+ },
+ "271596": {
+  "answer": "Unfortunately",
+  "verdict": "3",
+  "guid": "B6D538F4720587454138611BB9CB4936",
+  "sec": "wordform"
+ },
+ "271EE9": {
+  "answer": "dangerous",
+  "verdict": "3",
+  "guid": "C6B53C6B4D43A7434728C610A42959BF",
+  "sec": "wordform"
+ },
+ "277464": {
+  "answer": "rainy",
+  "verdict": "3",
+  "guid": "D60330B1BFA0B1AD49AEF92BFE9659BF",
+  "sec": "wordform"
+ },
+ "27CC70": {
+  "answer": "player",
+  "verdict": "3",
+  "guid": "362A3AE5283B877842B007FC00880853",
+  "sec": "wordform"
+ },
+ "27E586": {
+  "answer": "enjoyable",
+  "verdict": "3",
+  "guid": "F6DC3897E0698735410C792236385579",
+  "sec": "wordform"
+ },
+ "283435": {
+  "answer": "dislike",
+  "verdict": "3",
+  "guid": "E68EF0B71C3A8E244C01B97C80F98F36",
+  "sec": "wordform"
+ },
+ "285545": {
+  "answer": "teacher",
+  "verdict": "3",
+  "guid": "0688F8916E1CA9294A0DEA8EA0F0C671",
+  "sec": "wordform"
+ },
+ "290625": {
+  "answer": "national",
+  "verdict": "3",
+  "guid": "6682BD3B8A59A22947B02D785B4DAC24",
+  "sec": "wordform"
+ },
+ "2A4C22": {
+  "answer": "Unfortunately",
+  "verdict": "3",
+  "guid": "66609A098E43BAB4402AF5A8A1BC33D0",
+  "sec": "wordform"
+ },
+ "2AF325": {
+  "answer": "supporter",
+  "verdict": "3",
+  "guid": "66819EECEB98951F41A5B2998013D236",
+  "sec": "wordform"
+ },
+ "2B45A5": {
+  "answer": "appearance",
+  "verdict": "3",
+  "guid": "9680487AA208875C446D1227365DF1F9",
+  "sec": "wordform"
+ },
+ "2B47E2": {
+  "answer": "imagination",
+  "verdict": "3",
+  "guid": "C66043C93939915B4C6F54EBED4E4591",
+  "sec": "wordform"
+ },
+ "2B88FE": {
+  "answer": "tasty",
+  "verdict": "3",
+  "guid": "16CF4FBDDB52BB6047846372FD6D38DE",
+  "sec": "wordform"
+ },
+ "DA9780": {
+  "answer": "didn't listen",
+  "verdict": "3",
+  "guid": "F72B936D8E97A5654E16115C4A07DF55",
+  "sec": "grammar"
+ },
+ "DADE40": {
+  "answer": "cared",
+  "verdict": "3",
+  "guid": "07279C5E7C1CA2B5480339B7D5F75C73",
+  "sec": "grammar"
+ },
+ "DB7992": {
+  "answer": "was",
+  "verdict": "3",
+  "guid": "B7634BAEB8F597874AC2D1178F0B35D1",
+  "sec": "grammar"
+ },
+ "DBA211": {
+  "answer": "best",
+  "verdict": "3",
+  "guid": "575946EDCAFF9B28426331C87B370388",
+  "sec": "grammar"
+ },
+ "DBC094": {
+  "answer": "was",
+  "verdict": "3",
+  "guid": "B70A429ED4EAAD9547C809B8C3DCBD82",
+  "sec": "grammar"
+ },
+ "DBF8B2": {
+  "answer": "is",
+  "verdict": "3",
+  "guid": "47614F371E218EEE492CAF7244F4041B",
+  "sec": "grammar"
+ },
+ "DC1F2F": {
+  "answer": "her",
+  "verdict": "3",
+  "guid": "6715A178C95B87D8494F85C5748269A0",
+  "sec": "grammar"
+ },
+ "DC2B96": {
+  "answer": "don't know",
+  "verdict": "3",
+  "guid": "B7D6A410737DAFD042A2C36A3D0BC4DB",
+  "sec": "grammar"
+ },
+ "DCA9A1": {
+  "answer": "was drinking",
+  "verdict": "3",
+  "guid": "9759AB95E046AAAA4B0F27C25B9876F6",
+  "sec": "grammar"
+ },
+ "DCB345": {
+  "answer": "was called",
+  "verdict": "3",
+  "guid": "0784AE70B33CB05F4447A344EEDAF5E2",
+  "sec": "grammar"
+ },
+ "DCB58A": {
+  "answer": "smaller",
+  "verdict": "3",
+  "guid": "F794A886A6D2B9F442267D0BEADDBA2C",
+  "sec": "grammar"
+ },
+ "DCC8B3": {
+  "answer": "his",
+  "verdict": "3",
+  "guid": "47EAAF552C4B99E24B947C2680A992FB",
+  "sec": "grammar"
+ },
+ "DCD823": {
+  "answer": "saw",
+  "verdict": "3",
+  "guid": "67E7AF3D62B59DBB416E8AF897A185F5",
+  "sec": "grammar"
+ },
+ "DD645D": {
+  "answer": "best",
+  "verdict": "3",
+  "guid": "877D70EFE0E390D34133CC74F9900F8C",
+  "sec": "grammar"
+ },
+ "DD87C6": {
+  "answer": "didn't know",
+  "verdict": "3",
+  "guid": "A7DF73ED0B3083454885B68B8597A21A",
+  "sec": "grammar"
+ },
+ "DDE341": {
+  "answer": "helped",
+  "verdict": "3",
+  "guid": "075C7E96BEA89B074E6BB15EA785B4CD",
+  "sec": "grammar"
+ },
+ "DEE4FA": {
+  "answer": "largest",
+  "verdict": "3",
+  "guid": "179CC031D5079C2B4972DE21A0D76107",
+  "sec": "grammar"
+ },
+ "DF71A7": {
+  "answer": "us",
+  "verdict": "3",
+  "guid": "973315A1352DA2A84A491D8FDF565842",
+  "sec": "grammar"
+ },
+ "DFF72B": {
+  "answer": "women",
+  "verdict": "3",
+  "guid": "674113C390BC93CF4C614EE77E0BF1CF",
+  "sec": "grammar"
+ },
+ "E01D37": {
+  "answer": "was discovered",
+  "verdict": "3",
+  "guid": "EC35275D52FFA6F64E43F663C01F18D4",
+  "sec": "grammar"
+ },
+ "E192E8": {
+  "answer": "don't understand",
+  "verdict": "3",
+  "guid": "CCFB56930FD7BC4846F2C003E2088D1A",
+  "sec": "grammar"
+ },
+ "E19C8E": {
+  "answer": "was",
+  "verdict": "3",
+  "guid": "FCCB5A8A0954B31D4F66D99881827D9E",
+  "sec": "grammar"
+ },
+ "E208AF": {
+  "answer": "was decorated",
+  "verdict": "3",
+  "guid": "9C126F7D6B40982C45C220D43C0A04B9",
+  "sec": "grammar"
+ },
+ "E3845E": {
+  "answer": "parties",
+  "verdict": "3",
+  "guid": "8CCFE0DAC68E9214414097BE7FF8D913",
+  "sec": "grammar"
+ },
+ "E386FA": {
+  "answer": "flew",
+  "verdict": "3",
+  "guid": "1C9FED3A2047A91F4001F69924426918",
+  "sec": "grammar"
+ },
+ "E407D9": {
+  "answer": "found",
+  "verdict": "3",
+  "guid": "7CB20354F528AF1D40E9F250F1E33217",
+  "sec": "grammar"
+ },
+ "E430FE": {
+  "answer": "has become",
+  "verdict": "3",
+  "guid": "1CCE02FD89D6A8014131AEFA03DA0F00",
+  "sec": "grammar"
+ },
+ "E4FC08": {
+  "answer": "me",
+  "verdict": "3",
+  "guid": "2CF10A2D1964B9D94DE53AC99016B265",
+  "sec": "grammar"
+ },
+ "E51DCC": {
+  "answer": "foxes",
+  "verdict": "3",
+  "guid": "ACA587AA462993CD4CD8AD82A71E9FE6",
+  "sec": "grammar"
+ },
+ "E52B29": {
+  "answer": "had left",
+  "verdict": "3",
+  "guid": "6CB684E4E83ABC764170135B8F9F8690",
+  "sec": "grammar"
+ },
+ "E54015": {
+  "answer": "were covered",
+  "verdict": "3",
+  "guid": "5C8082A7E1B2AEA2443BF0C2CBD191AD",
+  "sec": "grammar"
+ },
+ "E55069": {
+  "answer": "agreed",
+  "verdict": "3",
+  "guid": "DCB8820044D2822247EBF23CEF569793",
+  "sec": "grammar"
+ },
+ "E551F5": {
+  "answer": "have seen",
+  "verdict": "3",
+  "guid": "1C8885229626853B474D7840F68AB54B",
+  "sec": "grammar"
+ },
+ "E57C46": {
+  "answer": "would give",
+  "verdict": "3",
+  "guid": "0CD38AAD8193B0A946FEC8692836F452",
+  "sec": "grammar"
+ },
+ "E60BF8": {
+  "answer": "didn't listen",
+  "verdict": "3",
+  "guid": "1CF2D44FFCA0AD354B21C0C7B8AB8B98",
+  "sec": "grammar"
+ },
+ "E68D7A": {
+  "answer": "wasn't",
+  "verdict": "3",
+  "guid": "3C9FD7A13EEB91844F1A173FCA5602F7",
+  "sec": "grammar"
+ },
+ "E6E562": {
+  "answer": "had",
+  "verdict": "3",
+  "guid": "DC6CD8A02E1B9DFA436AE97C6E137BAE",
+  "sec": "grammar"
+ },
+ "E70B96": {
+  "answer": "sixteenth",
+  "verdict": "3",
+  "guid": "BCD2346E7B6CB7AC46B060D448B8BCB5",
+  "sec": "grammar"
+ },
+ "E779E2": {
+  "answer": "can't",
+  "verdict": "3",
+  "guid": "CC633BCE75FCB50345FF5465A1E4DA58",
+  "sec": "grammar"
+ },
+ "E7E1D7": {
+  "answer": "didn't like",
+  "verdict": "3",
+  "guid": "7C3C35D4FD8DBE6B4914965A91177753",
+  "sec": "grammar"
+ },
+ "E8F201": {
+  "answer": "us",
+  "verdict": "3",
+  "guid": "2C51F6DC5BD08402421A4617D01CE36C",
+  "sec": "grammar"
+ },
+ "E91D02": {
+  "answer": "earlier",
+  "verdict": "3",
+  "guid": "2C65B745FBCDA48C4F1623B0F7C2E4CC",
+  "sec": "grammar"
+ },
+ "E9E0D0": {
+  "answer": "didn't mind",
+  "verdict": "3",
+  "guid": "7C2CB26EC06786E047BF0C1DDC599BC7",
+  "sec": "grammar"
+ },
+ "EA9C7E": {
+  "answer": "Centuries",
+  "verdict": "3",
+  "guid": "3CCB9A0EAE2985444F147AF209B13C22",
+  "sec": "grammar"
+ },
+ "EA9FC8": {
+  "answer": "men",
+  "verdict": "3",
+  "guid": "ACFB91149219BD1848A80745FAEDDF06",
+  "sec": "grammar"
+ },
+ "EABBA4": {
+  "answer": "were broken",
+  "verdict": "3",
+  "guid": "9C0494196D339A5843DF354411716EF2",
+  "sec": "grammar"
+ },
+ "EB403C": {
+  "answer": "will get",
+  "verdict": "3",
+  "guid": "ECA0429B287EB9994B8553DF0EBD2DFC",
+  "sec": "grammar"
+ },
+ "EB463C": {
+  "answer": "twentieth",
+  "verdict": "3",
+  "guid": "ECA04D584213A26A4CCCBDA502469F83",
+  "sec": "grammar"
+ },
+ "EBD5A1": {
+  "answer": "gave",
+  "verdict": "3",
+  "guid": "9C5748DD152991FA4387BC3A016D1722",
+  "sec": "grammar"
+ },
+ "EC464C": {
+  "answer": "were chatting",
+  "verdict": "3",
+  "guid": "0CA0AD05596A904C4454E5A182DD2B28",
+  "sec": "grammar"
+ },
+ "ECB12E": {
+  "answer": "was",
+  "verdict": "3",
+  "guid": "6CC4A59AFE5A801F4332A2AB6B19B184",
+  "sec": "grammar"
+ },
+ "ED8126": {
+  "answer": "will replace",
+  "verdict": "3",
+  "guid": "6CDF75FBAF30A59F44420BE6BF6A0EA4",
+  "sec": "grammar"
+ },
+ "ED964D": {
+  "answer": "was",
+  "verdict": "3",
+  "guid": "0C7B7D35475997D740333404F3347447",
+  "sec": "grammar"
+ },
+ "EE5FD5": {
+  "answer": "boxes",
+  "verdict": "3",
+  "guid": "7C88C1116D6698C54683312954261FFA",
+  "sec": "grammar"
+ },
+ "EE9072": {
+  "answer": "happened",
+  "verdict": "3",
+  "guid": "3C6BC26DA8089D044D61367F77D4AE30",
+  "sec": "grammar"
+ },
+ "EEB2A4": {
+  "answer": "were decorated",
+  "verdict": "3",
+  "guid": "9C04C681B35683344C3DEDAE42DC3E14",
+  "sec": "grammar"
+ },
+ "EEBA92": {
+  "answer": "could",
+  "verdict": "3",
+  "guid": "BC64C9A4D412BA964B1F46834F99ECE1",
+  "sec": "grammar"
+ },
+ "EECC72": {
+  "answer": "was reading",
+  "verdict": "3",
+  "guid": "3C6ACA91BCAAACB4467BFD406B7677CA",
+  "sec": "grammar"
+ },
+ "EEE845": {
+  "answer": "couldn't",
+  "verdict": "3",
+  "guid": "0C8CCFE8304C988D405E67BA1D7DB82A",
+  "sec": "grammar"
+ },
+ "EEFF1E": {
+  "answer": "arrived",
+  "verdict": "3",
+  "guid": "5CC1C16CCBE28C5A42AE1E24C179BE48",
+  "sec": "grammar"
+ },
+ "EF6BB0": {
+  "answer": "lived",
+  "verdict": "3",
+  "guid": "4C2D149293528B654C968472EEF69F66",
+  "sec": "grammar"
+ },
+ "EF885A": {
+  "answer": "children",
+  "verdict": "3",
+  "guid": "8C9F1F01BF1C89D64FF120AC1BDEA006",
+  "sec": "grammar"
+ },
+ "EFD1B9": {
+  "answer": "was shining",
+  "verdict": "3",
+  "guid": "4CB71591EF91A331491DC652F63B1A41",
+  "sec": "grammar"
+ },
+ "F034B9": {
+  "answer": "was decorated",
+  "verdict": "3",
+  "guid": "41BE202547B8879B483EBD3EBE72B54A",
+  "sec": "grammar"
+ },
+ "F118EC": {
+  "answer": "was designed",
+  "verdict": "3",
+  "guid": "C1A55FF83266B12A4BE88E367AF3EE52",
+  "sec": "grammar"
+ },
+ "F14677": {
+  "answer": "was",
+  "verdict": "3",
+  "guid": "31305D26DDBE9A264ADB7006BBDCE78E",
+  "sec": "grammar"
+ },
+ "F1AAF2": {
+  "answer": "was made",
+  "verdict": "3",
+  "guid": "116959549CC28FD94C57BA1B2F473345",
+  "sec": "grammar"
+ },
+ "F1BAC2": {
+  "answer": "liked",
+  "verdict": "3",
+  "guid": "A164593E631DB6DC4471E5092824B587",
+  "sec": "grammar"
+ },
+ "F23216": {
+  "answer": "was covered",
+  "verdict": "3",
+  "guid": "51DE665CB5099A594AFE573CF5065A9C",
+  "sec": "grammar"
+ },
+ "F27B7B": {
+  "answer": "were repairing",
+  "verdict": "3",
+  "guid": "3143648FD8D38FB9445DE056EF0316BE",
+  "sec": "grammar"
+ },
+ "F28ECA": {
+  "answer": "began",
+  "verdict": "3",
+  "guid": "A19F6CAFE8D599FB4E3D1D10DD993345",
+  "sec": "grammar"
+ },
+ "F2A046": {
+  "answer": "left",
+  "verdict": "3",
+  "guid": "01D962E9D10D8DEF437812B900397691",
+  "sec": "grammar"
+ },
+ "F2D978": {
+  "answer": "will create",
+  "verdict": "3",
+  "guid": "31F76B6C729E95954D7B763A92D12A97",
+  "sec": "grammar"
+ },
+ "F39826": {
+  "answer": "shook",
+  "verdict": "3",
+  "guid": "61DBEFBB4D2CAD4D4494E1655346BE31",
+  "sec": "grammar"
+ },
+ "F3B90F": {
+  "answer": "spoke",
+  "verdict": "3",
+  "guid": "2114EBDEF612BB6A49DF3DE1D515B490",
+  "sec": "grammar"
+ },
+ "F3FD94": {
+  "answer": "was climbing",
+  "verdict": "3",
+  "guid": "B101E71490B9847C476BD58A694D1178",
+  "sec": "grammar"
+ },
+ "F46F13": {
+  "answer": "didn't manage",
+  "verdict": "3",
+  "guid": "51ED01DE23E898DF4058029ABDFF92A4",
+  "sec": "grammar"
+ },
+ "F48B37": {
+  "answer": "would allow",
+  "verdict": "3",
+  "guid": "E13F044CFCD3889B4C1D5021D74BE77B",
+  "sec": "grammar"
+ },
+ "F48CCC": {
+  "answer": "faster",
+  "verdict": "3",
+  "guid": "A1AF0A9CBCB793AC47955AC16C025D2C",
+  "sec": "grammar"
+ },
+ "F49DC6": {
+  "answer": "knew",
+  "verdict": "3",
+  "guid": "A1DB07A5ADACA2C9483786ED7D125C8E",
+  "sec": "grammar"
+ },
+ "F4B021": {
+  "answer": "have cleaned",
+  "verdict": "3",
+  "guid": "6154024FCF4B9BD44112EA9D616B48E2",
+  "sec": "grammar"
+ },
+ "F50428": {
+  "answer": "was covered",
+  "verdict": "3",
+  "guid": "61F2803759FF9D7C4280DDC3A085FBC7",
+  "sec": "grammar"
+ },
+ "F563CA": {
+  "answer": "saw",
+  "verdict": "3",
+  "guid": "A19D8E86263AACC34FBC199F25D058CB",
+  "sec": "grammar"
+ },
+ "F60A0C": {
+  "answer": "twelfth",
+  "verdict": "3",
+  "guid": "21A2D9AC800C8B38412CFC3AB6AB111C",
+  "sec": "grammar"
+ },
+ "F6AB19": {
+  "answer": "was",
+  "verdict": "3",
+  "guid": "51B9D45382BB967743E70A0F9474E7F2",
+  "sec": "grammar"
+ },
+ "F6F9CB": {
+  "answer": "have left",
+  "verdict": "3",
+  "guid": "A141DB01EE7D84D545A87978A6DD2A69",
+  "sec": "grammar"
+ },
+ "F7F289": {
+  "answer": "was",
+  "verdict": "3",
+  "guid": "F1B136A5537AAFD2459CD69803BEBF9B",
+  "sec": "grammar"
+ },
+ "0A33BC": {
+  "answer": "left",
+  "verdict": "3",
+  "guid": "42AE9EC8A641BE264D3143E15F9A7EC8",
+  "sec": "grammar"
+ },
+ "1F5BC8": {
+  "answer": "children",
+  "verdict": "3",
+  "guid": "A5F814A30BF3B8C042CA87CF453110C0",
+  "sec": "grammar"
+ },
+ "1F6C08": {
+  "answer": "am not",
+  "verdict": "3",
+  "guid": "25FD1A33CFA9B940483667C067008DA9",
+  "sec": "grammar"
+ },
+ "97654B": {
+  "answer": "have woken",
+  "verdict": "3",
+  "guid": "0B4D3845A7F6AF8C41C07430E4AE6EC6",
+  "sec": "grammar"
+ },
+ "A358BE": {
+  "answer": "have bought",
+  "verdict": "3",
+  "guid": "49C8EF671C458A6D46E323740285BB89",
+  "sec": "grammar"
+ },
+ "859B6E": {
+  "answer": "have found",
+  "verdict": "3",
+  "guid": "DFCB840230AB925448A1C3710BB5D742",
+  "sec": "grammar"
+ },
+ "6BC17E": {
+  "answer": "have bought",
+  "verdict": "3",
+  "guid": "3DCA4571ACD9BAF441F2434ED1FE3148",
+  "sec": "grammar"
+ },
+ "E5187C": {
+  "answer": "was driving",
+  "verdict": "3",
+  "guid": "3CA58F5ABB8BA0DD4CA404329092A522",
+  "sec": "grammar"
+ },
+ "ED34CA": {
+  "answer": "has packed",
+  "verdict": "3",
+  "guid": "AC9E70D07C4BB51C44611B1F21B1925B",
+  "sec": "grammar"
+ },
+ "ED5386": {
+  "answer": "were passing",
+  "verdict": "3",
+  "guid": "FCD87EB4D8B2885441CD29A784B52CC6",
+  "sec": "grammar"
+ },
+ "78A6FB": {
+  "answer": "had helped",
+  "verdict": "3",
+  "guid": "1349FD31273081B74FF57FB6987F1B82",
+  "sec": "grammar"
+ },
+ "52267D": {
+  "answer": "famous",
+  "verdict": "3",
+  "guid": "38766DE248D9B76B495E3F01CCEEC0B8",
+  "sec": "wordform"
+ },
+ "2FE912": {
+  "answer": "their",
+  "verdict": "3",
+  "guid": "566C1B88F610A09D40C4A8699BC7DE1A",
+  "sec": "grammar"
+ },
+ "9A7886": {
+  "answer": "unlucky",
+  "verdict": "3",
+  "guid": "FBD39F04F728AAFA42690259EB711ED3",
+  "sec": "wordform"
+ },
+ "5BC134": {
+  "answer": "is making",
+  "verdict": "3",
+  "guid": "E80A45B27872B62A4AA071BC0D220825",
+  "sec": "grammar"
+ },
+ "56267F": {
+  "answer": "are kept",
+  "verdict": "3",
+  "guid": "3816DD18ACF480D84B73AE3CEBDAEABF",
+  "sec": "grammar"
+ },
+ "6E06D2": {
+  "answer": "first",
+  "verdict": "3",
+  "guid": "7D62CDB4523FA434420E683E98C8C149",
+  "sec": "grammar"
+ }
+}

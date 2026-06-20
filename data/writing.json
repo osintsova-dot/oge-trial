@@ -1,0 +1,569 @@
+[
+ {
+  "name": "Harry",
+  "subject": "Music",
+  "context": "Frankly, I don’t understand why some people like classical music. I adore rock and usually listen to it on my way home from school. If my favourite band comes to our town, I’ll definitely go to their concert",
+  "questions": "What kind of music do you like? Do you think it is necessary to have music lessons at school, why? What musical instrument would you like to play?",
+  "zid": "00DC7D"
+ },
+ {
+  "name": "Alice",
+  "subject": "Watching TV",
+  "context": "My parents say that I watch TV too much. And they are not always happy with the programmes I watch",
+  "questions": "How much time do you watch TV? What do you prefer: watching TV or browsing the Internet, and why? What else do you do in your free time?",
+  "zid": "07AE07"
+ },
+ {
+  "name": "Andrew",
+  "subject": "Mother’s Day",
+  "context": "It’s Mother’s Day next week, or Mothering Sunday. Dad and I are busy preparing a real surprise holiday for Mum",
+  "questions": "How is Mother’s Day celebrated in Russia? What presents do you usually give to your Mum? What other family holidays do you celebrate?",
+  "zid": "09D861"
+ },
+ {
+  "name": "Barbara",
+  "subject": "After school holidays",
+  "context": "My school is over. I have passed all my exams and am looking forward to my holidays",
+  "questions": "How do you usually spend your holidays? What are your plans for this summer? Do you prefer to spend your holidays away from home, why yes or no?",
+  "zid": "1350DE"
+ },
+ {
+  "name": "Jane",
+  "subject": "Exam preparation",
+  "context": "It’s the end of the year and exams are coming. Although I have good marks and I have time to revise everything, I feel nervous about my exams",
+  "questions": "What exam do you find the most difficult this year? How do you get ready for it? What do you do not to be nervous before exams?",
+  "zid": "16D85B"
+ },
+ {
+  "name": "Kate",
+  "subject": "Souvenirs",
+  "context": "We often travel. Dad enjoys seeing new places and Mum likes buying souvenirs",
+  "questions": "Why do people buy souvenirs when they travel? What’s the best souvenir to bring back in your opinion? What place would you like to visit?",
+  "zid": "189FA7"
+ },
+ {
+  "name": "Lily",
+  "subject": "Holidays",
+  "context": "You’ve probably seen the photos which I took on my holiday. During the rainy days we are having now they bring back good memories!",
+  "questions": "Where did you spend your last summer holidays? What did you do during your holidays? What school holidays do you like most of all and why?",
+  "zid": "1B144E"
+ },
+ {
+  "name": "Emma",
+  "subject": "Museum",
+  "context": "I’ve just returned from our local museum. I was surprised that a visit to a museum could be so enjoyable",
+  "questions": "Do you find visiting museums interesting and why? What museum would you like to set up, if any? What do you enjoy doing in your free time?",
+  "zid": "1C0276"
+ },
+ {
+  "name": "Henry",
+  "subject": "Career plans",
+  "context": "My family runs a family business. My dad wants me to go into the family business after I finish school. But I’m not sure what I want to do in the future",
+  "questions": "What are your career plans? What career do your parents advise you to choose? Is there any job you wouldn’t agree to do, why yes or no?",
+  "zid": "232907"
+ },
+ {
+  "name": "Ann",
+  "subject": "School clubs",
+  "context": "Our teacher has announced that a Theatre Group is starting next month. I’m going to join the club and see if I enjoy being on stage",
+  "questions": "What do you do after your classes? What club in your school is the most interesting, why do you think so? How long does it take you to do your homework?",
+  "zid": "2BD0F7"
+ },
+ {
+  "name": "Tom",
+  "subject": "Missing my computer",
+  "context": "My laptop is broken and will be at the repair centre for a week, ’cause it's holiday time now. This made me realise how dependent I am on my computer",
+  "questions": "How many hours a week do you usually spend on your computer? What do you use it for? People of what professions need excellent computer skills, in your view?",
+  "zid": "3137FA"
+ },
+ {
+  "name": "Andrew",
+  "subject": "Watching films",
+  "context": "I’m just back home from the cinema, where I saw ‘Charlie and the Chocolate Factory’ for the third time. I can’t agree when people say it’s a film for kids",
+  "questions": "Do you prefer watching films at home or at the cinema, and why? What kind of films do you like? Are cartoons still popular with you and your friends?",
+  "zid": "31B6D4"
+ },
+ {
+  "name": "Maggy",
+  "subject": "Travelling",
+  "context": "What a journey! We went by car to Brighton and spent a couple of days at the seaside. I wish we could go there again!",
+  "questions": "Why do you think travelling is so popular? Where would you like to go? How do you prefer to travel?",
+  "zid": "324F78"
+ },
+ {
+  "name": "Mike",
+  "subject": "Ecological problems",
+  "context": "One of my friends gets ill very often. The doctor says that it’s because he lives in a big city with a poor environment",
+  "questions": "What ecological problems are the most serious in your country? What can teenagers do to make their hometown cleaner? Would you like to live in a big city or in the country and why?",
+  "zid": "3BD918"
+ },
+ {
+  "name": "Ann",
+  "subject": "Diet",
+  "context": "My friend has decided to become a model and has just gone on a diet. I told her that it could be dangerous but she wouldn’t listen. Besides, she is a vegetarian, so there are not many products she can let herself eat now",
+  "questions": "Why do people become vegetarians? What do you do to keep fit? What food do you try to avoid?",
+  "zid": "3DE32A"
+ },
+ {
+  "name": "Nick",
+  "subject": "School friends",
+  "context": "We’ve moved house and now I have to go to a new school. It’s a pity because I liked my old school and I had a lot of friends there",
+  "questions": "What do you like most about your school? Have you got a lot of friends at school? What do you usually do with your school friends in your free time?",
+  "zid": "442C39"
+ },
+ {
+  "name": "Kate",
+  "subject": "School",
+  "context": "Tomorrow will be Wednesday, my favourite day at school. We don’t have too many lessons and I can attend my History Drama Club",
+  "questions": "How many lessons do you usually have a day? What’s your favourite subject at school, and why? What after-class activities can students do in your school?",
+  "zid": "4470E7"
+ },
+ {
+  "name": "Ben",
+  "subject": "Hobby",
+  "context": "I have decided to take up collecting stamps as my new hobby. My uncle is a traveller and often brings me stamps from different countries",
+  "questions": "What hobbies are popular with Russian teenagers? What hobby would you like to take up, and why? Do your friends share your interests?",
+  "zid": "495030"
+ },
+ {
+  "name": "Paul",
+  "subject": "Ecological problems",
+  "context": "Yesterday we had a class where we discussed different ecological problems. Our teacher suggested opening an eco-club, where we can do something useful for the environment",
+  "questions": "What ecological problem do you consider the most serious? What can young people do to protect the environment? Do you think ecological problems should be discussed at school, and why?",
+  "zid": "4A4575"
+ },
+ {
+  "name": "Ann",
+  "subject": "Future profession",
+  "context": "I joined the ballet school when I was five. I love dancing and I want to become a dance teacher in the future. So I’m going to take classes at the Ballet Dance Academy one day",
+  "questions": "What subjects are you good at? When did you begin making plans for the future? What job would you like to do in the future, and why?",
+  "zid": "4AB958"
+ },
+ {
+  "name": "Ben",
+  "subject": "Pets",
+  "context": "My cat is big, white and furry. He is such fun! I can’t understand people who prefer to live without pets",
+  "questions": "Why don’t some people want to have any pets? Do you approve of keeping exotic pets like spiders or snakes and why? What pets are popular in your country?",
+  "zid": "4C587B"
+ },
+ {
+  "name": "Ben",
+  "subject": "News",
+  "context": "Sometimes I hate our school radio because they talk about things everyone knows. And news should be fresh! One day I will be a reporter and will make really good news",
+  "questions": "How do you get to know what’s happening in the world? What are you going to be? Do you think English will be necessary for your future career and why?",
+  "zid": "4C737D"
+ },
+ {
+  "name": "Sam",
+  "subject": "School",
+  "context": "I’ve just changed school. I’m fond of Mathematics and it’s the major subject in my new school. The only thing I don’t like here is too much homework!",
+  "questions": "What is your favourite subject? How long does it take you to do your homework? What do you do in your free time?",
+  "zid": "55343D"
+ },
+ {
+  "name": "Kate",
+  "subject": "Christmas time",
+  "context": "It’s Christmas time and we’re having a Christmas fair next week at school. And all the money will go to charity. I just thought about making some ginger cookies for the event",
+  "questions": "What school events do you have during the school year? What is the programme of your school New Year party? What present would you like to get for the New Year?",
+  "zid": "57A737"
+ },
+ {
+  "name": "Mary",
+  "subject": "Russian towns",
+  "context": "My teacher told me that Russia has many beautiful small towns. I’d love to travel and see some of them",
+  "questions": "What small Russian towns would you recommend visiting and why? What is the best way to travel around Russia? Where would you prefer to live, in a big city or in a town, and why?",
+  "zid": "58DCC9"
+ },
+ {
+  "name": "Ann",
+  "subject": "Learning foreign languages",
+  "context": "At school I have to choose a second foreign language to learn. The problem is that I cannot make a choice about what language to take.",
+  "questions": "When did you start learning English? What do you do to improve your English? What foreign language besides English would you like to learn, and why?",
+  "zid": "592433"
+ },
+ {
+  "name": "Jim",
+  "subject": "School subjects",
+  "context": "Next month I’ll choose my subjects for the next year. I want to continue learning languages. I also need to improve my academic results in general",
+  "questions": "How many lessons do you usually have a day? What foreign languages can you learn at school? What subject do you find the most important for your future career, and why?",
+  "zid": "5C3FF5"
+ },
+ {
+  "name": "Ben",
+  "subject": "Summer",
+  "context": "I’ve just been to Australia. That was unbelievable! I definitely want to go there again!",
+  "questions": "Where did you spend your last summer? What did you like most about it? Which country would you like to visit one day, and why?",
+  "zid": "5D3935"
+ },
+ {
+  "name": "Emily",
+  "subject": "Coming late",
+  "context": "Last month I was late for my classes several times. Though I wasn’t late on purpose and it wasn’t actually my fault, I was punished",
+  "questions": "Do any students in your class sometimes come too late to school? What are their usual reasons for coming late? Is there any punishment for late comers at your school and what is it?",
+  "zid": "611FE1"
+ },
+ {
+  "name": "Ben",
+  "subject": "Clothes",
+  "context": "My mum always says, “There’s no bad weather, there’re bad clothes!” That’s why she keeps telling me to put on warm clothes even in spring",
+  "questions": "Do you agree with the English proverb about bad weather and bad clothes, and why? What clothes do you prefer to wear out of school? What are your favourite colours for clothes?",
+  "zid": "624755"
+ },
+ {
+  "name": "Jane",
+  "subject": "Family gatherings",
+  "context": "Our grandparents visited us this weekend. We had a great time and enjoyed a delicious lunch all together",
+  "questions": "Do you enjoy having family meals, and why yes or no? On what occasions do you have special family meals? Who is the best cook in your family?",
+  "zid": "68283E"
+ },
+ {
+  "name": "Jack",
+  "subject": "Life without gadgets",
+  "context": "We are carrying out an experimental project at school. The idea is to see how our life would change if we gave up all electronic gadgets",
+  "questions": "How many hours a day are you online? If you could use only one gadget, what would it be and why? What would you do if you had more free time?",
+  "zid": "6B8390"
+ },
+ {
+  "name": "Alice",
+  "subject": "Career plans",
+  "context": "Time has come to choose a profession for the future. I’m still thinking about it but I really don’t know what career to choose",
+  "questions": "What would you like to be in the future? Will you use English for your future job? What do your parents advise you to be?",
+  "zid": "708908"
+ },
+ {
+  "name": "Peter",
+  "subject": "Weather",
+  "context": "Today is Sunday, but I feel bored and unhappy. It’s already been raining hard for two days and there’s nothing to do at home",
+  "questions": "What is your favourite season and why? What do you do when the weather is rainy? How do you usually spend your weekends?",
+  "zid": "70EA5E"
+ },
+ {
+  "name": "Ben",
+  "subject": "Presents",
+  "context": "My granny is such a kind person. She always brings us presents for everything we celebrate. And I love all her presents!",
+  "questions": "What holidays do you celebrate with your family? What is your favourite holiday and why? What is the best present you’ve ever received?",
+  "zid": "74D762"
+ },
+ {
+  "name": "Ann",
+  "subject": "My best friend",
+  "context": "Oh, my friend is so charming! Everybody in the class is ready to help her. But, you know, I sometimes think she’s just using people to get what she wants",
+  "questions": "What kind of person is your best friend? When and where did you meet? How do you spend time together?",
+  "zid": "75EFBC"
+ },
+ {
+  "name": "Molly",
+  "subject": "School exams",
+  "context": "I’m having a very busy time now as I’m getting ready for my exams. As far as I know, all students in Russia have to take school exams too",
+  "questions": "When are you going to have your exams? What exams have you chosen and why? What are your plans for the summer holidays?",
+  "zid": "771EEB"
+ },
+ {
+  "name": "Andrew",
+  "subject": "School",
+  "context": "We have lots of optional courses at school but I spend so much time on my main subjects that I have no time for anything else",
+  "questions": "What school subject do you find the most difficult and why? How much time do you need to do your homework? How do you spend your time after classes?",
+  "zid": "7C64F5"
+ },
+ {
+  "name": "Ben",
+  "subject": "Theatre",
+  "context": "Last week I went to the theatre. It was a great performance and the actors were wonderful. I was impressed",
+  "questions": "Do you think it’s exciting to be a famous actor and why? When did you last see a theatrical performance? Have you ever been to the Bolshoi Theatre?",
+  "zid": "7CDF74"
+ },
+ {
+  "name": "Ann",
+  "subject": "Family gatherings",
+  "context": "We have a special tradition in our family. The last weekend of every month we cook and have a meal together: my parents, my sister Jenny and me",
+  "questions": "How do you spend time with your family? When do you give each other presents? What do you do to help your parents about the house?",
+  "zid": "7D1898"
+ },
+ {
+  "name": "Andrew",
+  "subject": "Sports",
+  "context": "I’ve decided to take up some sport to be fitter and feel better",
+  "questions": "What kinds of sports are popular with teenagers in Russia? What sports facilities are there in your school? What kind of sports competitions are usually held at your school?",
+  "zid": "7F7EC2"
+ },
+ {
+  "name": "Mark",
+  "subject": "Pocket money",
+  "context": "I saved some of my pocket money and have bought a new computer game. I’m glad that I didn’t have to ask my parents to buy it for me. It would be great to find a job next summer",
+  "questions": "How do you get your pocket money? What do Russian teenagers usually buy with their pocket money? Would you like to get a summer job, and why yes or no?",
+  "zid": "803B2E"
+ },
+ {
+  "name": "Jim",
+  "subject": "New Year resolutions",
+  "context": "On December 31 st I usually write my New Year resolutions. Unfortunately I don’t usually keep them. But this year I decided to be persistent: to make a resolution and keep it",
+  "questions": "Do you make New Year resolutions, why or why not? What new hobby or new sport would you like to try? What do you usually do in your free time?",
+  "zid": "818DBE"
+ },
+ {
+  "name": "Emily",
+  "subject": "Learning foreign languages",
+  "context": "We are having a Maths test tomorrow. It makes me feel scared! I would rather have three language tests instead of one Maths test. I really find learning foreign languages interesting and not difficult at all",
+  "questions": "What subject is the most difficult for you? What do you do to improve your English? What language apart from English would you like to learn and why?",
+  "zid": "87947D"
+ },
+ {
+  "name": "Mary",
+  "subject": "Computer",
+  "context": "I can’t imagine my life without my computer and the Internet! Now I can write all my stories and immediately send them to my friends to read",
+  "questions": "What do you use your computer for? How much time do you spend surfing the Internet? What else do you do in your free time?",
+  "zid": "8FD5D1"
+ },
+ {
+  "name": "James",
+  "subject": "Travelling to Russia",
+  "context": "My friend was very impressed by the Moscow Kremlin. He said that Russian architecture is fascinating. I’d like to go to Russia for my holidays, too",
+  "questions": "How do you usually spend your holidays? What is the best season for travelling in Russia and why? What tourist attractions would you recommend seeing in your country?",
+  "zid": "9047CB"
+ },
+ {
+  "name": "Ann",
+  "subject": "Exams",
+  "context": "After taking my school exams, I want to study English literature at university. Some people say that it is boring and it takes too much time, but I really like it",
+  "questions": "How many exams are you going to take this year? How do you prepare for your English exam? Do you like to take exams, why or why not ?",
+  "zid": "95E510"
+ },
+ {
+  "name": "Sophie",
+  "subject": "Future profession",
+  "context": "I love history so much that maybe I’ll become a historian in the future",
+  "questions": "What school subjects do you find the most important? Is there any school subject that you’d like to study more and why? What career would you like to choose in the future?",
+  "zid": "96E5FE"
+ },
+ {
+  "name": "Harry",
+  "subject": "The end of the school year",
+  "context": "The end of the school year is usually a very stressful time for me. We have to take lots of tests and exams. The only thing that makes me happy is that the holidays are coming",
+  "questions": "What exams are you taking this year? How do you prepare for your English exam? What are your plans for the coming summer holidays?",
+  "zid": "9713D4"
+ },
+ {
+  "name": "Steve",
+  "subject": "Collecting things",
+  "context": "My elder brother has decided to collect mugs, imagine that. It’s a nice collection but it takes up so much room",
+  "questions": "Why do people collect things? What do you collect or what would you like to collect? What other hobbies are popular with teenagers in your country?",
+  "zid": "99B764"
+ },
+ {
+  "name": "Ma",
+  "subject": "Robots",
+  "context": "I’ve just watched a TV series about robots, their past and future. Robots are so cool! If only they could do my homework",
+  "questions": "What jobs would you like a robot to do at your home? What else can robots be used for? Do you find science fiction films interesting , why or why not ?",
+  "zid": "9E67BB"
+ },
+ {
+  "name": "Mary",
+  "subject": "Hobbies",
+  "context": "When I’m not at school or busy with homework, I spend most of my time playing chess. This is my hobby!",
+  "questions": "What kinds of hobbies do you have? How much time do you spend on them? What skills do they develop?",
+  "zid": "A09168"
+ },
+ {
+  "name": "Ben",
+  "subject": "Books",
+  "context": "What an awful task – to read boring books all summer! And the list is so long! I like reading but the books I like are usually not my school’s choice",
+  "questions": "How long is your school’s list of books? What kind of books do you like to read? Do you think an electronic book is a good choice when you’re travelling in the summer, and why?",
+  "zid": "A1B9BB"
+ },
+ {
+  "name": "Andrew",
+  "subject": "My new school",
+  "context": "I had to change school because we had moved to a new house. My new school is right next to it. It is very convenient but everything is so strange here: new rules, a new uniform, new people. I haven’t made any friends yet",
+  "questions": "How long does it take you to get to your school? What clothes do you wear to school? How do you spend time with your school friends?",
+  "zid": "A20B5E"
+ },
+ {
+  "name": "Ann",
+  "subject": "The life of modern teenagers",
+  "context": "I am doing a project about the life of modern teenagers in different countries. I’d like to know about Russian teenagers",
+  "questions": "What time do you usually come back from school? What do you like to do in your free time? How many foreign languages would you like to speak, and why?",
+  "zid": "A8E7A4"
+ },
+ {
+  "name": "Ben",
+  "subject": "Learning foreign languages",
+  "context": "I am so fond of Japanese cartoons that I’ve decided to learn Japanese. Mum says it’s hard, but I think it’s worth it. Besides, their writing is cool!",
+  "questions": "What languages do you learn at school? What other language would you like to learn and why? What do you think about my choice of Japanese?",
+  "zid": "AB8044"
+ },
+ {
+  "name": "Ben",
+  "subject": "Holidays",
+  "context": "I’ve just returned from China. They were celebrating the Chinese New Year there. Lots of people were dressed like dragons",
+  "questions": "What are the most popular holidays in Russia? What is your favourite holiday and why? How do you celebrate it?",
+  "zid": "ACFA37"
+ },
+ {
+  "name": "Jane",
+  "subject": "Household chores",
+  "context": "My parents work long hours and don’t have enough time for the household chores. My sister and I try to help them as much as we can, and our parents have more time to spend with us",
+  "questions": "What do you do to help your parents about the house? Who usually does the shopping in your family? What do you enjoy doing all together when you have free time?",
+  "zid": "AECCF1"
+ },
+ {
+  "name": "Jim",
+  "subject": "Health",
+  "context": "I have caught a bad cold. Most people hate being ill. But I sometimes like it. It gives me some time for my hobby",
+  "questions": "How often do you miss school because of health problems? How can you entertain yourself when you are ill and have to stay indoors? What do you do to stay healthy?",
+  "zid": "B2009D"
+ },
+ {
+  "name": "Andrew",
+  "subject": "Learning foreign languages",
+  "context": "They say it’s never too late to learn something new. My Grandma decided to prove that and took up a course of French! And she absolutely loves it!",
+  "questions": "What do you find most difficult in learning English? What do you do to improve your English outside the classroom? What’s the best way to learn a foreign language?",
+  "zid": "B3D343"
+ },
+ {
+  "name": "Harry",
+  "subject": "Reading",
+  "context": "It may sound unusual, but my friend likes reading very much. As for me, I read only books from the school list",
+  "questions": "What books do you like to read? Do you prefer e-books or paper books and why? What hobbies apart from reading are popular with your friends?",
+  "zid": "B9C6FE"
+ },
+ {
+  "name": "Andrew",
+  "subject": "Music lessons",
+  "context": "My parents want me to do music. It’s not what I really want to do but I have no choice. I’ve promised my parents to take at least 20 lessons. It means I won’t have any free time for about three months!",
+  "questions": "What do you do in your free time? What kind of music do you like? What musical instrument would you like to play, if any?",
+  "zid": "BB170E"
+ },
+ {
+  "name": "Helen",
+  "subject": "Russian Nature",
+  "context": "I’ve seen wonderful pictures of Russia’s nature. It seems so different from the region where I live",
+  "questions": "What natural places in Russia are the most beautiful to visit? Do Russians often go hiking or camping in the countryside? If you could spend a summer anywhere in Russia, where would you go?",
+  "zid": "BC3107"
+ },
+ {
+  "name": "Ben",
+  "subject": "Zoo",
+  "context": "I’ve just been to the zoo. What lovely animals are there!",
+  "questions": "Which do you think is better for animals – to live in the zoo or in the wild, and why? What animals are common in your region? Have you ever seen any animal in the wild?",
+  "zid": "BD64AF"
+ },
+ {
+  "name": "Ann",
+  "subject": "Sports",
+  "context": "My brother has got a dangerous hobby – he has become a mountain biker. I worry about him. I would like him to spend more time at home. I wish he had chosen a safer entertainment",
+  "questions": "What indoor sports are most popular with teenagers in your country? Why do teenagers often do extreme sports? What kind of sport is your favourite?",
+  "zid": "C48794"
+ },
+ {
+  "name": "Andrew",
+  "subject": "Sports",
+  "context": "You’ll never believe it but I tried to run a marathon last Saturday. It was awful and in half an hour I was out of the race. So, now I realize how weak and unfit my body is",
+  "questions": "What do you do to keep fit? What sports facilities do you have in your school? What kind of sport do you find ideal for young people and why?",
+  "zid": "C7DF0E"
+ },
+ {
+  "name": "Gerald",
+  "subject": "Russian transport",
+  "context": "In my small city we usually travel by buses. Yours is a big country, I wonder how people in Russia get around",
+  "questions": "What is the most common way of travelling in Russia? Do people often have to go by long-distance trains? If you could choose, would you rather travel by train, car or plane, and why?",
+  "zid": "C9F6D4"
+ },
+ {
+  "name": "Ruth",
+  "subject": "Russian food",
+  "context": "Yesterday I tried borsch in a small Russian caf in my city. I liked it a lot. I’d like to try more Russian dishes when I visit Russia",
+  "questions": "What other traditional Russian dishes would you recommend me to taste? Do Russian families usually cook at home or eat out in restaurants? What dish is your personal favourite, and why?",
+  "zid": "CE1F87"
+ },
+ {
+  "name": "Kate",
+  "subject": "Books",
+  "context": "I’m now reading an amazing book about Thomas Edison, one of the greatest inventors of all time",
+  "questions": "What kind of books do you enjoy? Would you like to write a book, and why or why not? What qualities are necessary for a good writer?",
+  "zid": "CE9FA6"
+ },
+ {
+  "name": "Ben",
+  "subject": "School clubs",
+  "context": "I’ve just joined our school Drama club. We give performances in English and in French. Our parents and classmates think that our performances are very good",
+  "questions": "What do you like most about your school? What school clubs do you have? Have you joined any of your school clubs, and why?",
+  "zid": "DA70D6"
+ },
+ {
+  "name": "Mathew",
+  "subject": "Doing sports",
+  "context": "As you know, I am a tennis club member. I go there regularly, but my best friend doesn’t want to do any sport",
+  "questions": "Should people do sports, and why yes or no? What sports do you like? What do you do in your PE lessons?",
+  "zid": "DB4B71"
+ },
+ {
+  "name": "Lily",
+  "subject": "Family holidays",
+  "context": "Yesterday we celebrated Thanksgiving. This is one of our favourite family holidays when we all get together. And my mother makes a wonderful pumpkin pie!",
+  "questions": "What holiday do you like most and why? How do you celebrate your birthday? What present would you like to get for your next birthday?",
+  "zid": "DCEC7F"
+ },
+ {
+  "name": "Laura",
+  "subject": "Russian daily life",
+  "context": "I’ve read that Russian families often live in flats rather than houses. That seems quite different from where I am from",
+  "questions": "What are Russian homes usually like inside? Do teenagers in Russia help their parents with housework? What is your usual day like during the school year?",
+  "zid": "E442A1"
+ },
+ {
+  "name": "Ben",
+  "subject": "Future career",
+  "context": "Yesterday I did a test to see which job is the best for me. According to the results I should become a doctor. But it is absolutely impossible because I am afraid of blood",
+  "questions": "What future career would you like to have, and why? Do your parents agree with your choice? In what way will English be useful for your career?",
+  "zid": "E675D3"
+ },
+ {
+  "name": "Jane",
+  "subject": "Books",
+  "context": "My parents ask me if I’d like to get an electronic book as a birthday present. I don’t know what to answer as I’ve never used it actually",
+  "questions": "What is the main advantage of an e-book, in your opinion? What kinds of books do you like reading? How do you choose a book to read?",
+  "zid": "E8D2BE"
+ },
+ {
+  "name": "Edna",
+  "subject": "Watching films",
+  "context": "Yesterday I went to the cinema with my friends. We saw a screen version of the book we are going to discuss in our literature lesson next week",
+  "questions": "Do you prefer to read a book or watch its film adaptation first? What kinds of films do you like? Do you often go to the cinema, and why yes or no?",
+  "zid": "E8E0E6"
+ },
+ {
+  "name": "Emma",
+  "subject": "Mobile phones",
+  "context": "My mum still can’t download new music into her mobile phone. She says when she was young, there were no mobile phones at all. I just can’t imagine that!",
+  "questions": "What do you use your mobile phone for? Can you live without your mobile phone and why? What other gadgets do you find the most important for you?",
+  "zid": "EA5C0B"
+ },
+ {
+  "name": "Kate",
+  "subject": "Pets",
+  "context": "My friend has an unusual pet, a hedgehog. He found a small hedgehog in the forest and took it home",
+  "questions": "What pets are most popular in your country? Do you approve of keeping wild animals as pets, why or why not? What pet do you have or would you like to have?",
+  "zid": "F326E8"
+ },
+ {
+  "name": "Ben",
+  "subject": "Sport in everyday life",
+  "context": "Yesterday our teacher asked us to stay after classes. A basketball star came to us to talk about sport in everyday life. The way he spoke about being a teenager was funny. He said he didn’t like getting up early!",
+  "questions": "When do you get up in the morning? What do you do to keep fit? Would you like to go in for sports professionally, and why?",
+  "zid": "F80CA6"
+ },
+ {
+  "name": "Jim",
+  "subject": "Sports",
+  "context": "I have decided to do sport regularly. My friends have given me different advice on how to start but I can’t choose which sport to play",
+  "questions": "What sport do you do regularly? What sports facilities can you use in your school? Does the career of a professional sportsperson attract you , why or why not?",
+  "zid": "FAEED6"
+ },
+ {
+  "name": "Nancy",
+  "subject": "Excursion",
+  "context": "We are going on an excursion to a nearby town to see their chocolate factory. I’ve never seen how chocolate is made and I’m looking forward to this trip",
+  "questions": "Where have you been with your class? What transport do you usually use when you go on a trip? What events do you celebrate with your class?",
+  "zid": "FD59DA"
+ }
+]
