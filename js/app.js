@@ -84,10 +84,12 @@ function renderHome() {
         chip(null, t.lvl + lvl.level + ' · ' + lvl.title),
         chip(iconImg('ic-hero', '🦸'), st.heroes),
         st.freezes > 0 ? chip(iconImg('ic-freeze', '🧊'), st.freezes) : null,
-        chip(iconImg('ic-xp', '⭐'), st.xp + ' XP'),
+      ]),
+      el('div', { class: 'xp-head' }, [
+        el('span', { class: 'xp-cur' }, [iconImg('ic-xp', '⭐'), ' ' + st.xp + ' XP']),
+        el('span', { class: 'xp-note', text: lvl.next ? t.toRank(lvl.next, lvl.toNext) : t.maxRank }),
       ]),
       el('div', { class: 'xp-bar' }, [el('i', { style: { width: lvl.pct + '%' } })]),
-      el('div', { class: 'xp-note', text: lvl.next ? t.toRank(lvl.next, lvl.toNext) : t.maxRank }),
     ]),
   ]);
 

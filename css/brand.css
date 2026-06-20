@@ -154,10 +154,13 @@ img.sic.bn-ic{width:30px;height:30px}
 .at-ic .at-img{width:auto;height:40px;max-width:46px}
 .goal .ring .goal-img{width:auto;height:28px;max-width:32px}
 .perk-ic .perk-img{width:auto;height:40px;max-width:46px}
-.xp-bar{height:11px;border-radius:7px;background:rgba(0,0,0,.18);overflow:hidden;margin-top:14px}
+.xp-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-top:16px}
+.xp-cur{display:inline-flex;align-items:center;gap:5px;font-size:14px;font-weight:800;color:#fff;white-space:nowrap}
+.xp-cur .sic{width:18px;height:18px}
+.xp-bar{height:11px;border-radius:7px;background:rgba(0,0,0,.18);overflow:hidden;margin-top:8px}
 .xp-bar > i{display:block;height:100%;border-radius:7px;background:var(--xp-fill);
   box-shadow:0 0 10px rgba(255,255,255,.4);transition:width .4s ease}
-.xp-note{font-size:12px;color:rgba(255,255,255,.9);font-weight:600;margin-top:6px}
+.xp-note{font-size:12px;color:rgba(255,255,255,.9);font-weight:600;margin-top:0;text-align:right}
 
 /* ===== Сегодня / За неделю ===== */
 .tw-row{display:flex;gap:11px;margin-bottom:14px}
