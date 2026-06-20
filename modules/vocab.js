@@ -9,6 +9,7 @@ import { recordVocabReview, getName, checkNewAchievements, getState } from '../j
 import { celeb } from '../js/voice.js';
 import { DAILY_GOAL, getActiveTheme, setActiveTheme, dailyProgress,
   buildSession, dueItems, newItems, review, themeStats } from '../js/vocab_srs.js';
+import { openWordSearch } from './word_search.js';
 
 function pct(a, b) { return b ? Math.round((a / b) * 100) : 0; }
 
@@ -84,6 +85,10 @@ export async function renderVocab(container, cfg) {
       secBar(cfg.goHome, v.sub),
       el('div', { class: 'topics-body' }, [
         goalCard, startBtn, dueNote,
+        el('button', { class: 'ws-trigger-bar', onclick: openWordSearch }, [
+          el('span', { class: 'ws-mag', text: '🔎' }),
+          el('span', { text: v.searchPlaceholder }),
+        ]),
         activeBox,
         el('div', { class: 'topics-label', text: v.pickTheme }),
         list,

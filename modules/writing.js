@@ -5,6 +5,7 @@
 import { el, mount, celebrate, iconImg } from '../js/ui.js';
 import { loadJSON } from '../js/data.js';
 import { recordWriting, writingStats } from '../js/progress.js';
+import { openWordSearch } from './word_search.js';
 import { recordRound, getName, checkNewAchievements } from '../js/gamify.js';
 import { roundMessage, celeb } from '../js/voice.js';
 import { EXAM, t, plural } from '../js/exam.js';
@@ -237,7 +238,10 @@ export async function renderWriting(container, cfg) {
         stimulus,
         resultBox,
         el('div', { style: { position: 'relative' } }, [area, wc]),
-        el('div', { style: { marginTop: '14px' } }, [btn]),
+        el('div', { class: 'w-tools' }, [
+          el('button', { class: 'btn btn-ghost ws-trigger', onclick: openWordSearch, text: '📖 ' + t.vocab.searchBtn }),
+        ]),
+        el('div', { style: { marginTop: '10px' } }, [btn]),
         loader, errBox,
       ]),
     ]));
