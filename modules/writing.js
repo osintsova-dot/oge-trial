@@ -131,6 +131,10 @@ export async function renderWriting(container, cfg) {
       ]),
       el('div', { class: 'at-arrow', text: '→' }),
     ]));
+    body.push(el('button', { class: 'ws-trigger-bar', onclick: openWordSearch }, [
+      el('span', { class: 'ws-mag', text: '🔎' }),
+      el('span', { text: t.vocab.searchPlaceholder }),
+    ]));
     body.push(list);
 
     mount(container, el('div', { class: 'view' }, [
