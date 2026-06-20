@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speak &amp; Smile — описание приложения (черновик)</title>
+<style>
+  :root{
+    --p:#6C3FC5; --honey:#F5C842; --ink:#1A1A2E; --bg:#F4F4F8;
+    --muted:#6b6b80; --card:#fff; --line:#e7e7ef;
+    --grad-grammar:linear-gradient(150deg,#8A63E0,#6C3FC5);
+    --grad-wordform:linear-gradient(150deg,#F19A3E,#E07B2C);
+    --grad-reading:linear-gradient(150deg,#5B74E6,#6C3FC5);
+    --grad-vocab:linear-gradient(150deg,#16B3A6,#0E8C82);
+    --grad-writing:linear-gradient(150deg,#F5C842,#EDA92C);
+    --grad-speaking:linear-gradient(150deg,#E66A9A,#C5417A);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.55;font-size:15px}
+  .wrap{max-width:880px;margin:0 auto;padding:32px 28px 56px}
+  .draft{background:#fff3cd;border:1px solid #f0d97a;color:#7a5b00;border-radius:10px;
+    padding:8px 14px;font-size:13px;margin-bottom:20px}
+  header.hero{display:flex;align-items:center;gap:22px;background:linear-gradient(135deg,#6C3FC5,#8A63E0);
+    color:#fff;border-radius:22px;padding:26px 28px;box-shadow:0 10px 30px rgba(108,63,197,.3)}
+  header.hero img.mascot{width:104px;height:104px;flex:none;filter:drop-shadow(0 6px 10px rgba(0,0,0,.25))}
+  header.hero .logo{height:26px;margin-bottom:8px;opacity:.95}
+  header.hero h1{margin:0 0 6px;font-size:30px;letter-spacing:-.5px}
+  header.hero p{margin:0;font-size:15.5px;opacity:.95;max-width:46ch}
+  h2{font-size:21px;margin:34px 0 14px;display:flex;align-items:center;gap:9px}
+  h2 .bar{width:6px;height:22px;border-radius:3px;background:var(--honey)}
+  .lead{font-size:16.5px;color:#33334d}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px 17px;
+    box-shadow:0 2px 12px rgba(108,63,197,.06)}
+  .card h3{margin:0 0 5px;font-size:15.5px;display:flex;align-items:center;gap:8px}
+  .card .ic{width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;
+    font-size:18px;color:#fff;flex:none}
+  .card p{margin:0;font-size:13.5px;color:var(--muted)}
+  ul.feat{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 22px}
+  ul.feat li{position:relative;padding-left:24px;font-size:14px}
+  ul.feat li::before{content:"✓";position:absolute;left:0;top:0;color:#16B3A6;font-weight:900}
+  ul.feat li b{color:var(--ink)}
+  .pitch{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .pitch .box{border-radius:16px;padding:18px 20px}
+  .pitch .kids{background:linear-gradient(150deg,#fff,#fbf3ff);border:1px solid #e6d6fb}
+  .pitch .parents{background:linear-gradient(150deg,#fff,#fffaf0);border:1px solid #f0e2bd}
+  .pitch h3{margin:0 0 8px;font-size:17px}
+  .pitch ul{margin:0;padding-left:18px;font-size:14px}
+  .pitch ul li{margin-bottom:6px}
+  .soon{background:#eef0fb;border:1px dashed #b9c0ee;border-radius:14px;padding:14px 18px;font-size:14px}
+  /* мокапы экранов */
+  .shots{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;margin-top:8px}
+  .phone{width:212px;background:#000;border-radius:26px;padding:8px;box-shadow:0 12px 30px rgba(0,0,0,.22)}
+  .screen{background:var(--bg);border-radius:19px;overflow:hidden;height:404px;display:flex;flex-direction:column}
+  .scap{text-align:center;font-size:12px;color:var(--muted);margin-top:7px}
+  .sbar{background:linear-gradient(135deg,#6C3FC5,#8A63E0);color:#fff;padding:13px 13px 11px;}
+  .sbar .t{font-size:14px;font-weight:800}
+  .sbar .s{font-size:10.5px;opacity:.9}
+  .sbody{padding:11px;display:flex;flex-direction:column;gap:9px;overflow:hidden}
+  .tile{border-radius:13px;padding:11px 12px;color:#fff;font-weight:800;font-size:13px;
+    display:flex;align-items:center;gap:8px;box-shadow:0 4px 10px rgba(0,0,0,.12)}
+  .tile small{display:block;font-weight:500;font-size:10px;opacity:.9;margin-top:1px}
+  .tile.writing{color:#1A1A2E}
+  .fc{background:#fff;border-radius:14px;padding:16px 14px;box-shadow:0 3px 12px rgba(108,63,197,.12);
+    border:1px solid var(--line);text-align:center;margin-top:6px}
+  .fc .en{font-size:16px;font-weight:800;color:var(--p)}
+  .fc .def{font-size:12.5px;color:#33334d;margin-top:7px}
+  .fc .ru{font-size:11.5px;color:var(--muted);margin-top:5px}
+  .fc .ex{font-size:11.5px;color:var(--muted);font-style:italic;margin-top:6px}
+  .crit{background:#fff;border:1px solid var(--line);border-radius:11px;padding:8px 10px;display:flex;
+    justify-content:space-between;font-size:11.5px;font-weight:700}
+  .scorebig{font-size:30px;font-weight:900;color:var(--p);text-align:center;margin:4px 0}
+  .pill{display:inline-block;background:var(--honey);color:#1A1A2E;border-radius:20px;padding:3px 11px;
+    font-size:11px;font-weight:800}
+  footer{margin-top:40px;text-align:center;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);padding-top:16px}
+  @media print{
+    body{background:#fff;font-size:12.5px}
+    .wrap{max-width:none;padding:0}
+    .draft{display:none}
+    header.hero{box-shadow:none}
+    .card,.phone{box-shadow:none}
+    h2{page-break-after:avoid}
+    .grid,.pitch,.shots{page-break-inside:avoid}
+    @page{margin:14mm}
+  }
+  @media(max-width:620px){.grid,.pitch,ul.feat{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="draft">📝 Черновик, первый вариант — для обсуждения. Чтобы получить PDF: Файл → Печать → «Сохранить как PDF».</div>
+
+  <header class="hero">
+    <img class="mascot" src="./assets/spiky-cool.png" alt="Спики">
+    <div>
+      <img class="logo" src="./assets/logo.png" alt="Speak &amp; Smile">
+      <h1>Speak &amp; Smile</h1>
+      <p>Тренажёр подготовки к&nbsp;ОГЭ и&nbsp;ЕГЭ по&nbsp;английскому — серьёзная подготовка в&nbsp;формате, в&nbsp;который хочется возвращаться каждый день.</p>
+    </div>
+  </header>
+
+  <h2><span class="bar"></span>Что это</h2>
+  <p class="lead">Мобильное приложение, где подросток готовится к&nbsp;экзамену по&nbsp;английскому: тренирует грамматику, лексику, чтение и&nbsp;письмо. Задания — из&nbsp;официального банка ФИПИ, проверка письма — искусственным интеллектом по&nbsp;реальным критериям. Внутри — «по-взрослому», но&nbsp;с&nbsp;игровой мотивацией: серия дней, очки, уровни. Работает прямо в&nbsp;телефоне, без&nbsp;VPN, данные хранятся на&nbsp;устройстве.</p>
+
+  <h2><span class="bar"></span>Что умеет</h2>
+  <div class="grid">
+    <div class="card"><h3><span class="ic" style="background:var(--grad-grammar)">📝</span> Грамматика и словообразование</h3><p>Дриллы по&nbsp;банку ФИПИ: сотни заданий по&nbsp;темам, с&nbsp;пояснением «почему такая форма» простым языком.</p></div>
+    <div class="card"><h3><span class="ic" style="background:var(--grad-reading)">📖</span> Чтение</h3><p>Все форматы ОГЭ и&nbsp;ЕГЭ (соответствие заголовков, вставка частей, выбор ответа). Эталонные ключи, разбор и&nbsp;подсветка опорных предложений в&nbsp;тексте.</p></div>
+    <div class="card"><h3><span class="ic" style="background:var(--grad-writing)">✍️</span> Письмо и эссе</h3><p>Личное письмо, e-mail, эссе. ИИ-проверка по&nbsp;критериям ФИПИ: баллы, разбор ошибок «было&nbsp;→&nbsp;стало», исправленный вариант.</p></div>
+    <div class="card"><h3><span class="ic" style="background:var(--grad-vocab)">🗂</span> Тематический словарь</h3><p>2000+ слов и&nbsp;выражений по&nbsp;всем темам кодификатора. Флэшкарты с&nbsp;умным повторением и&nbsp;ежедневной нормой слов.</p></div>
+  </div>
+
+  <h2><span class="bar"></span>Фишки и особенности</h2>
+  <ul class="feat">
+    <li><b>Честная ИИ-проверка письма</b> по&nbsp;реальным критериям ФИПИ — как живой эксперт.</li>
+    <li><b>Пояснения простым языком</b> + подсветка нужного предложения прямо в&nbsp;тексте.</li>
+    <li><b>Геймификация:</b> серия дней 🔥, очки XP, уровни, «Герой дня», заморозка серии.</li>
+    <li><b>Словарь по кодификатору:</b> повторение по&nbsp;научному методу (интервалы), 15&nbsp;слов в&nbsp;день.</li>
+    <li><b>Поиск по словарю</b> прямо во&nbsp;время письма — забыл выражение, нашёл, применил.</li>
+    <li><b>Архив «Мои работы»</b> — перечитать свои письма перед экзаменом, виден объём труда.</li>
+    <li><b>Задания из банка ФИПИ</b> с&nbsp;эталонными ответами, проверка закрытых заданий — мгновенно и&nbsp;офлайн.</li>
+    <li><b>Без VPN и без рекламы,</b> работает с&nbsp;телефона, тема день/ночь, маскот Спики.</li>
+  </ul>
+
+  <h2><span class="bar"></span>Как это выглядит</h2>
+  <div class="shots">
+    <div>
+      <div class="phone"><div class="screen">
+        <div class="sbar"><div class="t">Сегодня</div><div class="s">5 из 15 слов · серия 7 🔥</div></div>
+        <div class="sbody">
+          <div class="tile" style="background:var(--grad-vocab)">🗂 Тематический словарь<small>15 слов в день</small></div>
+          <div class="tile" style="background:var(--grad-grammar)">📝 Грамматика<small>банк ФИПИ</small></div>
+          <div class="tile" style="background:var(--grad-reading)">📖 Чтение<small>3 формата</small></div>
+          <div class="tile writing" style="background:var(--grad-writing)">✍️ Письмо<small>проверка ИИ</small></div>
+        </div>
+      </div></div>
+      <div class="scap">Главный экран — разделы и&nbsp;норма дня</div>
+    </div>
+    <div>
+      <div class="phone"><div class="screen">
+        <div class="sbar" style="background:var(--grad-vocab)"><div class="t">Тематический словарь</div><div class="s">Тема недели · Nature &amp; Ecology</div></div>
+        <div class="sbody">
+          <div class="fc">
+            <div class="en">to be on the brink of extinction</div>
+            <div class="def">very close to dying out completely</div>
+            <div class="ru">быть на грани вымирания</div>
+            <div class="ex">Several species are now on the brink of extinction.</div>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:8px">
+            <div class="tile" style="background:#e2545b;flex:1;justify-content:center">Не знаю</div>
+            <div class="tile" style="background:#16B3A6;flex:1;justify-content:center">Знаю</div>
+          </div>
+        </div>
+      </div></div>
+      <div class="scap">Карточка слова — определение, перевод, пример</div>
+    </div>
+    <div>
+      <div class="phone"><div class="screen">
+        <div class="sbar" style="background:var(--grad-writing);color:#1A1A2E"><div class="t">Письмо · результат</div><div class="s">Проверено по К1–К3</div></div>
+        <div class="sbody">
+          <div class="scorebig">5<span style="font-size:16px;color:var(--muted)">/6</span></div>
+          <div class="crit"><span>К1 · Решение задачи</span><span style="color:#16B3A6">2/2</span></div>
+          <div class="crit"><span>К2 · Организация</span><span style="color:#E0A12C">1/2</span></div>
+          <div class="crit"><span>К3 · Язык</span><span style="color:#16B3A6">2/2</span></div>
+          <div style="font-size:11px;color:var(--muted);margin-top:4px">Ошибки «было&nbsp;→&nbsp;стало» и&nbsp;исправленный вариант — ниже.</div>
+        </div>
+      </div></div>
+      <div class="scap">Проверка письма — баллы и&nbsp;разбор</div>
+    </div>
+  </div>
+  <p style="text-align:center;color:var(--muted);font-size:12px;margin-top:6px">Мокапы в&nbsp;стиле приложения. Реальные скриншоты можно вставить сюда позже.</p>
+
+  <h2><span class="bar"></span>Как рассказать детям и родителям</h2>
+  <div class="pitch"><div class="box kids">
+    <h3>🦝 «Готовься к&nbsp;экзамену как в&nbsp;игре»</h3>
+    <ul>
+      <li>Заходишь каждый день, держишь <b>серию</b> и&nbsp;качаешь уровень — как в&nbsp;любимой игре, только прокачиваешь английский.</li>
+      <li>Написал письмо&nbsp;— <b>сразу видишь баллы</b> и&nbsp;где подтянуть, без&nbsp;ожидания учителя.</li>
+      <li>15&nbsp;слов в&nbsp;день&nbsp;— и&nbsp;словарный запас растёт сам собой.</li>
+      <li>Всё в&nbsp;телефоне: 15&nbsp;минут в&nbsp;транспорте&nbsp;— и&nbsp;день закрыт.</li>
+    </ul>
+  </div>
+  <div class="box parents">
+    <h3>👨‍👩‍👧 Для родителей</h3>
+    <ul>
+      <li><b>Объективно:</b> задания и&nbsp;критерии&nbsp;— официальные (ФИПИ), проверка письма&nbsp;— по&nbsp;тем&nbsp;же правилам, что на&nbsp;экзамене.</li>
+      <li><b>Виден прогресс:</b> освоенные слова, средний балл письма, серия дней&nbsp;— всё на&nbsp;экране прогресса.</li>
+      <li><b>Безопасно:</b> без&nbsp;рекламы, без&nbsp;чужих чатов; данные&nbsp;— на&nbsp;устройстве.</li>
+      <li><b>Регулярность без&nbsp;давления:</b> понятная дневная норма формирует привычку заниматься.</li>
+    </ul>
+  </div></div>
+
+  <h2><span class="bar"></span>Скоро</h2>
+  <div class="soon">📸 Распознавание письма по&nbsp;фото (написал от&nbsp;руки&nbsp;— сфотографировал&nbsp;— проверил) &nbsp;·&nbsp; 🎙 Говорение &nbsp;·&nbsp; 🎧 Аудирование &nbsp;·&nbsp; 👩‍🏫 Связка с&nbsp;учителем.</div>
+
+  <footer>
+    Speak &amp; Smile · тренажёр английского для ОГЭ/ЕГЭ · черновик описания, <span class="pill">v0.1</span><br>
+    Маскот&nbsp;— енот Спики. Цвета бренда: фиолетовый и&nbsp;медово-жёлтый.
+  </footer>
+
+</div>
+</body>
+</html>
