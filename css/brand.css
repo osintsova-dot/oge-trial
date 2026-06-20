@@ -71,12 +71,12 @@
 @keyframes ssRing{0%{transform:scale(.6);opacity:.7}100%{transform:scale(1.8);opacity:0}}
 /* Спики влетает снизу крупно (как сова Duolingo) и с отскоком встаёт на место */
 @keyframes ssFlyIn{
-  0%{transform:translateY(75vh) scale(2.4) rotate(-7deg);opacity:0}
-  18%{opacity:1}
-  48%{transform:translateY(-2vh) scale(2.0) rotate(3deg);opacity:1}
-  70%{transform:translateY(0) scale(.86) rotate(0)}
-  84%{transform:scale(1.08)}
-  100%{transform:translateY(0) scale(1)}
+  0%{transform:translateY(80vh) scale(2.3) rotate(-5deg);opacity:0}
+  8%{opacity:1}
+  22%{transform:translateY(-2vh) scale(1.95) rotate(2deg);opacity:1}      /* долетел, крупный */
+  45%{transform:translateY(-3vh) scale(1.97) rotate(-1deg)}               /* висит крупным */
+  72%{transform:translateY(-2vh) scale(1.95) rotate(1deg)}                /* ...держим ~1.5с */
+  100%{transform:translateY(0) scale(1) rotate(0)}                        /* мягко оседает, без отскока */
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
@@ -537,14 +537,14 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
   padding:28px;background:var(--grad-splash);animation:ssUp .3s ease}
 .cel-card{max-width:360px;width:100%;text-align:center;color:#fff}
 .cel-icon{font-size:92px;line-height:1;transform-origin:center bottom;
-  animation:ssFlyIn .95s cubic-bezier(.2,.7,.2,1) both,ssFloat 2.6s ease-in-out .95s infinite}
+  animation:ssFlyIn 2.8s cubic-bezier(.33,.5,.2,1) both,ssFloat 2.8s ease-in-out 2.8s infinite}
 .cel-img{width:160px;height:auto;display:block;margin:0 auto;filter:drop-shadow(0 12px 26px rgba(0,0,0,.3));
   transform-origin:center bottom;
-  animation:ssFlyIn .95s cubic-bezier(.2,.7,.2,1) both,ssFloat 2.6s ease-in-out .95s infinite}
+  animation:ssFlyIn 2.8s cubic-bezier(.33,.5,.2,1) both,ssFloat 2.8s ease-in-out 2.8s infinite}
 .cel-title{font-size:26px;font-weight:800;margin-top:16px;letter-spacing:-.3px;
-  animation:ssUp .4s ease .75s both}
+  animation:ssUp .45s ease 2.5s both}
 .cel-text{font-size:16px;color:rgba(255,255,255,.92);margin-top:10px;line-height:1.5;font-weight:600;
-  animation:ssUp .4s ease .9s both}
+  animation:ssUp .45s ease 2.65s both}
 .cel-dots{display:flex;gap:6px;justify-content:center;margin:22px 0}
 .cel-dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.4)}
 .cel-dots i.on{background:#fff}
