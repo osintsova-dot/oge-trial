@@ -17,7 +17,7 @@ export const PACK_SECTIONS = [
 // Пороги XP для званий (названия — из strings по языку экзамена)
 const LEVEL_MINS = [0, 500, 1500, 3000, 5000, 8000];
 
-const DEFAULT = { name: '', streak: { count: 0, lastDay: null }, pack: { done: [] }, heroes: 0, xp: 0, theme: 'light', history: {}, skin: 'aurora', freezes: 0, perfectRounds: 0, maxStreak: 0, achieved: [], tokens: 0, redeemed: [] };
+const DEFAULT = { name: '', streak: { count: 0, lastDay: null }, pack: { done: [] }, heroes: 0, xp: 0, theme: 'light', history: {}, skin: 'aurora', freezes: 0, perfectRounds: 0, maxStreak: 0, achieved: [], tokens: 0, redeemed: [], sound: true };
 
 // Реальные привилегии у учителя — покупаются за жетоны 🎟 (зарабатываются работой в приложении).
 // Список и цены — конфиг; меняются свободно.
@@ -315,3 +315,7 @@ export function checkNewAchievements() {
 export function getTheme() { return read().theme || 'light'; }
 export function setTheme(theme) { const s = read(); s.theme = theme; write(s); applyTheme(theme); }
 export function applyTheme(theme) { document.documentElement.setAttribute('data-theme', theme || 'light'); }
+
+// Звуки результата (вкл/выкл). По умолчанию включены.
+export function getSound() { const s = read(); return s.sound !== false; }
+export function setSound(on) { const s = read(); s.sound = !!on; write(s); }

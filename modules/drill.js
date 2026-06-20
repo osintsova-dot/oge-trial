@@ -7,6 +7,7 @@ import { checkAnswer } from '../js/checker.js';
 import { recordDrill, sectionStats, mistakeZids, crownTier } from '../js/progress.js';
 import { recordRound, getName, checkNewAchievements } from '../js/gamify.js';
 import { roundMessage, celeb } from '../js/voice.js';
+import { playCorrect, playWrong } from '../js/sound.js';
 import { t, plural } from '../js/exam.js';
 
 function pct(a, b) { return b ? Math.round((a / b) * 100) : 0; }
@@ -164,6 +165,7 @@ export async function renderDrill(container, cfg) {
         if (!val) { input.focus(); return; }
         answered = true; checkedAt = Date.now();
         const { correct, expected } = checkAnswer(val, key);
+        correct ? playCorrect() : playWrong();
         recordDrill(cfg.section, item.zid, correct, item.kes);
         results.push(correct);
         segEls[idx].className = 'seg-just ' + (correct ? 'seg-ok' : 'seg-bad');

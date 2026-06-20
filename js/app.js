@@ -5,7 +5,7 @@ import { el, mount, iconImg } from './ui.js';
 import { loadJSON } from './data.js';
 import { sectionStats, writingStats, resetAll } from './progress.js';
 import { getState, levelInfo, packStatus, streakActiveToday,
-  applyTheme, getTheme, setTheme, getName, setName,
+  applyTheme, getTheme, setTheme, getName, setName, getSound, setSound,
   dailyDigest, skinsStatus, setSkin, applySkin, achievementsStatus,
   getTokens, perksStatus, redeemPerk, recentRedeemed } from './gamify.js';
 import { EXAM, t, sectionById, plural } from './exam.js';
@@ -246,6 +246,8 @@ async function renderProgress() {
         el('div', { class: 'ach-t', text: a.title }),
       ]))),
     el('div', { class: 'prog-actions' }, [
+      el('button', { class: 'act-name', text: getSound() ? t.soundOn : t.soundOff,
+        onclick: () => { setSound(!getSound()); renderProgress(); } }),
       el('button', { class: 'act-name', text: t.changeName, onclick: () => renderWelcome(getName()) }),
       el('button', { class: 'act-reset', text: t.reset, onclick: () => {
         if (confirm(t.resetConfirm)) { resetAll(); renderProgress(); }

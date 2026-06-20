@@ -8,6 +8,7 @@ import { loadJSON } from '../js/data.js';
 import { recordDrill, sectionStats } from '../js/progress.js';
 import { recordRound, getName, checkNewAchievements } from '../js/gamify.js';
 import { roundMessage, celeb } from '../js/voice.js';
+import { playCorrect, playWrong } from '../js/sound.js';
 import { t, plural } from '../js/exam.js';
 
 const SECTION = 'reading';
@@ -179,6 +180,7 @@ export async function renderReading(container, cfg) {
       action.className = 'btn btn-primary btn-block';
       rowsWrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
       pending = { correct, total: task.statements.length };
+      correct === pending.total ? playCorrect() : playWrong();
     }
     let pending = null;
     function summary() { showSummary(pending.correct, pending.total); }
@@ -260,6 +262,7 @@ export async function renderReading(container, cfg) {
       action.textContent = t.finish;
       action.className = 'btn btn-primary btn-block';
       pending = { correct, total: LETTERS.length };
+      correct === pending.total ? playCorrect() : playWrong();
       cards.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     function summary() { showSummary(pending.correct, pending.total); }

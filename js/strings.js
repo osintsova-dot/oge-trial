@@ -108,6 +108,7 @@ export const STRINGS = {
     avgTitle: 'Средний балл за письма', avgSub: (n) => `проверено писем: ${n}`, avgCrit: 'по критериям К1–К4',
     achTitle: 'Достижения', changeName: 'Изменить имя', reset: 'Сбросить',
     resetConfirm: 'Сбросить весь прогресс на этом устройстве?',
+    soundOn: '🔊 Звук: вкл', soundOff: '🔇 Звук: выкл',
     heroWord: ['герой', 'героя', 'героев'],
     // rewards / perks
     tokensLabel: (n, w) => `${w} за работу`, tokenWord: ['жетон', 'жетона', 'жетонов'],
@@ -269,6 +270,7 @@ export const STRINGS = {
     avgTitle: 'Average writing score', avgSub: (n) => `essays checked: ${n}`, avgCrit: 'by the official criteria',
     achTitle: 'Achievements', changeName: 'Change name', reset: 'Reset',
     resetConfirm: 'Reset all progress on this device?',
+    soundOn: '🔊 Sound: on', soundOff: '🔇 Sound: off',
     heroWord: ['hero', 'heroes', 'heroes'],
     // rewards / perks
     tokensLabel: (n, w) => `${w} earned`, tokenWord: ['token', 'tokens', 'tokens'],
