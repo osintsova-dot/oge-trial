@@ -181,8 +181,9 @@ async function renderProgress() {
   document.body.classList.remove('welcome-mode');
   const st = getState();
   const w = writingStats();
-  // Лексика: освоено/всего/в работе (из SRS-прогресса)
-  const vdata = await loadJSON('vocab').catch(() => null);
+  // Лексика: освоено/всего/в работе (из SRS-прогресса). Файл — из конфига экзамена.
+  const vocabSec = sectionById('vocab');
+  const vdata = await loadJSON(vocabSec ? vocabSec.dataFile : 'vocab').catch(() => null);
   let vLearned = 0, vTotal = 0, vStarted = 0;
   if (vdata) { const vs = themeStats(vdata); for (const k in vs) { vLearned += vs[k].learned; vTotal += vs[k].total; vStarted += vs[k].started; } }
   const vPct = pct(vLearned, vTotal);
