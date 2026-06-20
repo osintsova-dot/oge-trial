@@ -11811,6 +11811,235 @@
        "def": "communication through movements and expressions"
       }
      ]
+    },
+    {
+     "subtopic": "From reading texts",
+     "items": [
+      {
+       "id": "app040",
+       "en": "to make an impression",
+       "ru": "производить впечатление",
+       "ex": "Her confidence made a strong impression on the interviewers.",
+       "def": "to cause people to form an opinion of you"
+      },
+      {
+       "id": "app041",
+       "en": "to look annoyed",
+       "ru": "выглядеть раздражённым",
+       "ex": "He always looks annoyed even when he is happy.",
+       "def": "to have a facial expression showing irritation"
+      },
+      {
+       "id": "app042",
+       "en": "a low self-esteem",
+       "ru": "низкая самооценка",
+       "ex": "Children with a low self-esteem often avoid speaking in public.",
+       "def": "a poor opinion of one's own worth"
+      },
+      {
+       "id": "app043",
+       "en": "to express one's feelings",
+       "ru": "выражать свои чувства",
+       "ex": "Some people find it hard to express their feelings openly.",
+       "def": "to show emotions through words or actions"
+      },
+      {
+       "id": "app044",
+       "en": "a positive outlook",
+       "ru": "позитивный взгляд",
+       "ex": "A positive outlook helps you cope with difficult times.",
+       "def": "an optimistic attitude towards life"
+      },
+      {
+       "id": "app045",
+       "en": "to bounce back from disappointment",
+       "ru": "оправиться после разочарования",
+       "ex": "Optimists bounce back from disappointment more easily.",
+       "def": "to recover quickly after a setback"
+      },
+      {
+       "id": "app046",
+       "en": "to lean toward something",
+       "ru": "склоняться к чему-либо",
+       "ex": "Most people lean toward one thinking pattern.",
+       "def": "to tend to prefer or favour something"
+      },
+      {
+       "id": "app047",
+       "en": "to see the bright side",
+       "ru": "видеть светлую сторону",
+       "ex": "She always tries to see the bright side of things.",
+       "def": "to focus on the positive aspects of a situation"
+      },
+      {
+       "id": "app048",
+       "en": "a guilty pleasure",
+       "ru": "тайное удовольствие",
+       "ex": "Watching cartoons is my guilty pleasure.",
+       "def": "something enjoyable that you feel slightly ashamed of"
+      },
+      {
+       "id": "app049",
+       "en": "calm and confident",
+       "ru": "спокойный и уверенный",
+       "ex": "She stayed calm and confident during the exam.",
+       "def": "relaxed and sure of oneself"
+      },
+      {
+       "id": "app050",
+       "en": "to tell two things apart",
+       "ru": "различать две вещи",
+       "ex": "It can be hard to tell the twins apart at first.",
+       "def": "to see the difference between two similar things"
+      },
+      {
+       "id": "app051",
+       "en": "to spot clear differences",
+       "ru": "заметить явные различия",
+       "ex": "You can spot clear differences between the two designs.",
+       "def": "to notice obvious distinctions easily"
+      },
+      {
+       "id": "app052",
+       "en": "slimmer in build",
+       "ru": "более стройного телосложения",
+       "ex": "He is slimmer in build than his older brother.",
+       "def": "having a thinner, less heavy body shape"
+      },
+      {
+       "id": "app053",
+       "en": "to make eye contact",
+       "ru": "устанавливать зрительный контакт",
+       "ex": "Confident people always make eye contact when speaking.",
+       "def": "to look directly into someone's eyes"
+      },
+      {
+       "id": "app054",
+       "en": "a highly confident person",
+       "ru": "очень уверенный человек",
+       "ex": "She came across as a highly confident person.",
+       "def": "someone who feels very sure of themselves"
+      },
+      {
+       "id": "app055",
+       "en": "to reflect someone's mood",
+       "ru": "отражать чьё-то настроение",
+       "ex": "Your gestures often reflect your mood.",
+       "def": "to show how a person is feeling"
+      },
+      {
+       "id": "app056",
+       "en": "gestures and postures",
+       "ru": "жесты и позы",
+       "ex": "His gestures and postures showed real confidence.",
+       "def": "movements and positions of the body"
+      },
+      {
+       "id": "app057",
+       "en": "to make a good impression",
+       "ru": "произвести хорошее впечатление",
+       "ex": "Polite manners help you make a good impression.",
+       "def": "to cause people to think well of you"
+      },
+      {
+       "id": "app058",
+       "en": "the level of one's confidence",
+       "ru": "уровень уверенности",
+       "ex": "Eye contact shows the level of one's confidence.",
+       "def": "how sure of yourself you feel"
+      },
+      {
+       "id": "app059",
+       "en": "to stand out among others",
+       "ru": "выделяться среди других",
+       "ex": "Her bright smile made her stand out among others.",
+       "def": "to be noticeably different and easily seen"
+      },
+      {
+       "id": "app060",
+       "en": "to set someone apart from others",
+       "ru": "отличать кого-то от других",
+       "ex": "Soft skills can set you apart from other applicants.",
+       "def": "to make someone clearly different and special"
+      },
+      {
+       "id": "app061",
+       "en": "the personality and character",
+       "ru": "личность и характер",
+       "ex": "Employers also value the personality and character.",
+       "def": "the qualities that make a person who they are"
+      },
+      {
+       "id": "app062",
+       "en": "a torpedo-shaped body",
+       "ru": "обтекаемое тело",
+       "ex": "The athlete had an efficient, streamlined body for fast movement.",
+       "def": "a smooth shape designed to move quickly through water or air"
+      },
+      {
+       "id": "app063",
+       "en": "to blend into the environment",
+       "ru": "сливаться с окружением",
+       "ex": "Her grey coat helped her blend into the environment.",
+       "def": "to match surroundings so as not to be noticed"
+      },
+      {
+       "id": "app064",
+       "en": "slender legs",
+       "ru": "стройные ноги",
+       "ex": "The model had long, slender legs.",
+       "def": "thin and graceful in shape"
+      },
+      {
+       "id": "app065",
+       "en": "a fingerprint unique from person to person",
+       "ru": "отпечаток, уникальный у каждого",
+       "ex": "Like a fingerprint, these marks are unique from cat to cat.",
+       "def": "a feature that is different for every individual"
+      },
+      {
+       "id": "app066",
+       "en": "graceful",
+       "ru": "грациозный",
+       "ex": "She moved gracefully across the room.",
+       "def": "moving in a smooth and elegant way"
+      },
+      {
+       "id": "app067",
+       "en": "to look graceless",
+       "ru": "выглядеть неуклюже",
+       "ex": "He looked graceless trying to dance.",
+       "def": "to appear awkward and clumsy in movement"
+      },
+      {
+       "id": "app068",
+       "en": "to be comfortable in one's own skin",
+       "ru": "чувствовать себя уверенно",
+       "ex": "Body positivity makes people comfortable in their own skin.",
+       "def": "to feel confident and accepting of how you look"
+      },
+      {
+       "id": "app069",
+       "en": "bold colouring",
+       "ru": "яркая окраска",
+       "ex": "His bold clothing stood out in the crowd.",
+       "def": "strong, striking colours that attract attention"
+      },
+      {
+       "id": "app070",
+       "en": "to be patterned with spots",
+       "ru": "быть в пятнах",
+       "ex": "The fabric was patterned with spots and stripes.",
+       "def": "covered with a regular design of marks"
+      },
+      {
+       "id": "app071",
+       "en": "a positive body image",
+       "ru": "позитивное восприятие тела",
+       "ex": "A positive body image boosts your self-confidence.",
+       "def": "acceptance and good feelings about your own body"
+      }
+     ]
     }
    ]
   },
@@ -12074,6 +12303,382 @@
        "ru": "возврат денег",
        "ex": "The shop gave me a full refund without asking questions.",
        "def": "Money given back after you return a purchase."
+      }
+     ]
+    },
+    {
+     "subtopic": "From reading texts",
+     "items": [
+      {
+       "id": "sho034",
+       "en": "fast fashion",
+       "ru": "быстрая мода",
+       "ex": "Fast fashion encourages people to buy cheap clothes constantly.",
+       "def": "cheap clothing produced rapidly to follow trends"
+      },
+      {
+       "id": "sho035",
+       "en": "to throw away",
+       "ru": "выбрасывать",
+       "ex": "We throw away too many clothes every year.",
+       "def": "to get rid of something unwanted"
+      },
+      {
+       "id": "sho036",
+       "en": "a charity shop",
+       "ru": "благотворительный магазин",
+       "ex": "Instead of buying new, head to a charity shop.",
+       "def": "a shop selling second-hand goods for a good cause"
+      },
+      {
+       "id": "sho037",
+       "en": "a second-hand shop",
+       "ru": "комиссионный магазин",
+       "ex": "You can find great clothes in a second-hand shop.",
+       "def": "a shop selling previously owned items"
+      },
+      {
+       "id": "sho038",
+       "en": "a clothes swap",
+       "ru": "обмен одеждой",
+       "ex": "Try clothes swaps with friends to save money.",
+       "def": "exchanging used clothes with other people"
+      },
+      {
+       "id": "sho039",
+       "en": "to keep late hours",
+       "ru": "поздно ложиться",
+       "ex": "City inhabitants here tend to keep late hours.",
+       "def": "to stay awake and active until late at night"
+      },
+      {
+       "id": "sho040",
+       "en": "a reusable bag",
+       "ru": "многоразовая сумка",
+       "ex": "Bring your own reusable bag to the supermarket.",
+       "def": "a bag you can use many times for shopping"
+      },
+      {
+       "id": "sho041",
+       "en": "a shopping trip",
+       "ru": "поход за покупками",
+       "ex": "Plastic bags are part of any shopping trip.",
+       "def": "an occasion of going out to buy things"
+      },
+      {
+       "id": "sho042",
+       "en": "thoughtless spending",
+       "ru": "бездумные траты",
+       "ex": "Thoughtless spending can add up very quickly.",
+       "def": "buying things without careful consideration"
+      },
+      {
+       "id": "sho043",
+       "en": "to reduce clutter",
+       "ru": "уменьшить беспорядок",
+       "ex": "Buying less helps you reduce clutter at home.",
+       "def": "to lessen the amount of untidy belongings"
+      },
+      {
+       "id": "sho044",
+       "en": "to get out of debt",
+       "ru": "выбраться из долгов",
+       "ex": "She works hard to get out of debt.",
+       "def": "to stop owing money"
+      },
+      {
+       "id": "sho045",
+       "en": "to weed out impulse buying",
+       "ru": "избавиться от импульсивных покупок",
+       "ex": "A waiting rule helps weed out impulse buying.",
+       "def": "to remove or stop unplanned purchases"
+      },
+      {
+       "id": "sho046",
+       "en": "to be on a budget",
+       "ru": "ограниченный в средствах",
+       "ex": "If you are on a budget, choose cheaper gifts.",
+       "def": "to have limited money to spend"
+      },
+      {
+       "id": "sho047",
+       "en": "a souvenir",
+       "ru": "сувенир",
+       "ex": "Tourists always want to bring back a souvenir.",
+       "def": "an object kept as a reminder of a place"
+      },
+      {
+       "id": "sho048",
+       "en": "to be tempted to buy something",
+       "ru": "соблазниться на покупку",
+       "ex": "She is often tempted to buy things online at night.",
+       "def": "to feel a strong urge to purchase something"
+      },
+      {
+       "id": "sho049",
+       "en": "consumer society",
+       "ru": "общество потребления",
+       "ex": "Consumer society pushes us to buy more than we need.",
+       "def": "a society focused on buying goods and services"
+      },
+      {
+       "id": "sho050",
+       "en": "to mend clothes",
+       "ru": "чинить одежду",
+       "ex": "If you can, mend your clothes instead of replacing them.",
+       "def": "to repair damaged clothing"
+      },
+      {
+       "id": "sho051",
+       "en": "the cheapest way to get around",
+       "ru": "самый дешёвый способ передвижения",
+       "ex": "Coaches are the cheapest way to get around the country.",
+       "def": "the least expensive method of travelling"
+      },
+      {
+       "id": "sho052",
+       "en": "to book early",
+       "ru": "бронировать заранее",
+       "ex": "If you book early, tickets can be very cheap.",
+       "def": "to reserve something well in advance"
+      },
+      {
+       "id": "sho053",
+       "en": "to travel at off-peak periods",
+       "ru": "путешествовать в непиковое время",
+       "ex": "Travel at off-peak periods to save money.",
+       "def": "to go when demand and prices are low"
+      },
+      {
+       "id": "sho054",
+       "en": "to make one's money last longer",
+       "ru": "растянуть деньги надолго",
+       "ex": "There are ways to make your money last longer.",
+       "def": "to spend money slowly so it is enough"
+      },
+      {
+       "id": "sho055",
+       "en": "to draw visitors in",
+       "ru": "привлекать посетителей",
+       "ex": "Discounts help tours draw visitors in.",
+       "def": "to attract people to come"
+      },
+      {
+       "id": "sho056",
+       "en": "an impulse buyer",
+       "ru": "импульсивный покупатель",
+       "ex": "An impulse buyer often regrets purchases later.",
+       "def": "someone who buys things without planning"
+      },
+      {
+       "id": "sho057",
+       "en": "a bargain shopper",
+       "ru": "любитель скидок",
+       "ex": "A bargain shopper always hunts for discounts.",
+       "def": "someone who looks for the lowest prices"
+      },
+      {
+       "id": "sho058",
+       "en": "to hunt down deals",
+       "ru": "выискивать выгодные предложения",
+       "ex": "She loves to hunt down deals online.",
+       "def": "to search hard for cheap offers"
+      },
+      {
+       "id": "sho059",
+       "en": "to find the lowest price",
+       "ru": "найти самую низкую цену",
+       "ex": "He always manages to find the lowest price in town.",
+       "def": "to locate the cheapest available option"
+      },
+      {
+       "id": "sho060",
+       "en": "to fit in one's budget",
+       "ru": "укладываться в бюджет",
+       "ex": "Check whether the purchase fits in your budget.",
+       "def": "to be affordable within your spending limit"
+      },
+      {
+       "id": "sho061",
+       "en": "to rein in one's spending",
+       "ru": "сдерживать траты",
+       "ex": "It helps to rein in your spending before payday.",
+       "def": "to control and reduce how much you spend"
+      },
+      {
+       "id": "sho062",
+       "en": "consumer goods",
+       "ru": "потребительские товары",
+       "ex": "The factory produces a range of consumer goods.",
+       "def": "products bought for personal everyday use"
+      },
+      {
+       "id": "sho063",
+       "en": "to be up for negotiation",
+       "ru": "подлежать обсуждению",
+       "ex": "At the market, every price is up for negotiation.",
+       "def": "able to be discussed and changed"
+      },
+      {
+       "id": "sho064",
+       "en": "to be set in stone",
+       "ru": "быть окончательным",
+       "ex": "No price here is set in stone.",
+       "def": "fixed and impossible to change"
+      },
+      {
+       "id": "sho065",
+       "en": "to make a sensible purchase",
+       "ru": "сделать разумную покупку",
+       "ex": "Always try to make a sensible purchase.",
+       "def": "to buy something wisely and reasonably"
+      },
+      {
+       "id": "sho066",
+       "en": "to be addicted to shopping",
+       "ru": "быть зависимым от шопинга",
+       "ex": "Many of us are addicted to shopping.",
+       "def": "unable to stop buying things"
+      },
+      {
+       "id": "sho067",
+       "en": "a money mindset",
+       "ru": "отношение к деньгам",
+       "ex": "Knowing your money mindset helps you save.",
+       "def": "your attitudes and habits about money"
+      },
+      {
+       "id": "sho068",
+       "en": "to suit one's needs",
+       "ru": "подходить под чьи-то нужды",
+       "ex": "Choose products that suit your needs.",
+       "def": "to be right for what someone requires"
+      },
+      {
+       "id": "sho069",
+       "en": "to draw discount prices",
+       "ru": "предлагать сниженные цены",
+       "ex": "Off-season tours often draw discount prices.",
+       "def": "to offer reduced costs to attract buyers"
+      },
+      {
+       "id": "sho070",
+       "en": "to break the bank",
+       "ru": "сильно потратиться",
+       "ex": "Planning a holiday doesn't have to break the bank.",
+       "def": "to cost more money than you can afford"
+      },
+      {
+       "id": "sho071",
+       "en": "on a shoestring",
+       "ru": "на минимальные деньги",
+       "ex": "We travelled around the country on a shoestring.",
+       "def": "using a very small amount of money"
+      },
+      {
+       "id": "sho072",
+       "en": "to save money",
+       "ru": "экономить деньги",
+       "ex": "You can save money by cooking at home.",
+       "def": "to keep money instead of spending it"
+      },
+      {
+       "id": "sho073",
+       "en": "a duty-free shop",
+       "ru": "магазин беспошлинной торговли",
+       "ex": "The small duty-free shops sell goods cheaply.",
+       "def": "a shop where goods are sold without local tax"
+      },
+      {
+       "id": "sho074",
+       "en": "a discount",
+       "ru": "скидка",
+       "ex": "Students can get a discount on tickets.",
+       "def": "a reduction in the usual price of something"
+      },
+      {
+       "id": "sho075",
+       "en": "a special offer",
+       "ru": "специальное предложение",
+       "ex": "You can find special offers at any time of day.",
+       "def": "goods sold temporarily at a lower price"
+      },
+      {
+       "id": "sho076",
+       "en": "cost-efficiency",
+       "ru": "экономичность",
+       "ex": "The cost-efficiency of cycling convinces many people.",
+       "def": "being effective without spending too much money"
+      },
+      {
+       "id": "sho077",
+       "en": "a less costly alternative",
+       "ru": "менее дорогая альтернатива",
+       "ex": "Cycling is a less costly alternative to driving.",
+       "def": "a cheaper option that does the same job"
+      },
+      {
+       "id": "sho078",
+       "en": "to be high in demand",
+       "ru": "пользоваться большим спросом",
+       "ex": "Fresh cherries are still high in demand.",
+       "def": "wanted by many people at the same time"
+      },
+      {
+       "id": "sho079",
+       "en": "to charge exorbitant prices",
+       "ru": "заламывать заоблачные цены",
+       "ex": "Restaurants charge exorbitant prices for rare dishes.",
+       "def": "to ask for unreasonably high amounts of money"
+      },
+      {
+       "id": "sho080",
+       "en": "a reasonable price",
+       "ru": "разумная цена",
+       "ex": "The quantity is small, so the price is reasonable.",
+       "def": "an amount that is fair and not too high"
+      },
+      {
+       "id": "sho081",
+       "en": "to invest in something",
+       "ru": "вложиться во что-то",
+       "ex": "Maybe it is time to invest in a new bike.",
+       "def": "to spend money on something useful for the future"
+      },
+      {
+       "id": "sho082",
+       "en": "plastic packaging",
+       "ru": "пластиковая упаковка",
+       "ex": "You can avoid the plastic packaging found in supermarkets.",
+       "def": "plastic material used to wrap goods for sale"
+      },
+      {
+       "id": "sho083",
+       "en": "to pay extra",
+       "ru": "доплачивать",
+       "ex": "Tourists who don't want to pay extra ask a local.",
+       "def": "to give more money than the standard amount"
+      },
+      {
+       "id": "sho084",
+       "en": "to be sold out",
+       "ru": "быть распроданным",
+       "ex": "Tickets for the theatre are sold out months ahead.",
+       "def": "completely bought up with none remaining"
+      },
+      {
+       "id": "sho085",
+       "en": "to pay off one's debts",
+       "ru": "расплатиться с долгами",
+       "ex": "You should pay off your debts before the new year.",
+       "def": "to give back all the money you owe"
+      },
+      {
+       "id": "sho086",
+       "en": "a win-win option",
+       "ru": "беспроигрышный вариант",
+       "ex": "Canteens are a win-win option for cheap meals.",
+       "def": "a choice that benefits everyone involved"
       }
      ]
     }
@@ -12379,6 +12984,417 @@
        "ru": "сохранять деловой тон",
        "ex": "Even after an argument, we kept things professional.",
        "def": "to act in a formal and correct business manner."
+      }
+     ]
+    },
+    {
+     "subtopic": "From reading texts",
+     "items": [
+      {
+       "id": "bus039",
+       "en": "soft skills",
+       "ru": "гибкие навыки",
+       "ex": "Soft skills are highly sought after by employers.",
+       "def": "personal abilities like teamwork and communication"
+      },
+      {
+       "id": "bus040",
+       "en": "leadership qualities",
+       "ru": "лидерские качества",
+       "ex": "Travelling helps develop your leadership qualities.",
+       "def": "traits that make a person a good leader"
+      },
+      {
+       "id": "bus041",
+       "en": "to work in a team",
+       "ru": "работать в команде",
+       "ex": "Employers value your ability to work in a team.",
+       "def": "to cooperate with others towards a goal"
+      },
+      {
+       "id": "bus042",
+       "en": "to be highly sought after",
+       "ru": "быть востребованным",
+       "ex": "Such skills are highly sought after by employers.",
+       "def": "to be very much in demand"
+      },
+      {
+       "id": "bus043",
+       "en": "to meet expectations",
+       "ru": "оправдывать ожидания",
+       "ex": "If you don't meet expectations, you face consequences.",
+       "def": "to do as well as people hope"
+      },
+      {
+       "id": "bus044",
+       "en": "a career goal",
+       "ru": "карьерная цель",
+       "ex": "You have to be present to achieve your career goals.",
+       "def": "an aim related to your professional life"
+      },
+      {
+       "id": "bus045",
+       "en": "a graduate job",
+       "ru": "работа для выпускника",
+       "ex": "Finding a graduate job can be very difficult.",
+       "def": "a position requiring a university degree"
+      },
+      {
+       "id": "bus046",
+       "en": "to build up a CV",
+       "ru": "нарабатывать резюме",
+       "ex": "I spent years building up a solid CV.",
+       "def": "to gather experience for your résumé"
+      },
+      {
+       "id": "bus047",
+       "en": "to open doors for someone",
+       "ru": "открывать двери",
+       "ex": "A degree will open doors for you.",
+       "def": "to create opportunities for someone"
+      },
+      {
+       "id": "bus048",
+       "en": "to face consequences",
+       "ru": "столкнуться с последствиями",
+       "ex": "Skip a day of work and you will face consequences.",
+       "def": "to deal with the results of your actions"
+      },
+      {
+       "id": "bus049",
+       "en": "to value something favourably",
+       "ru": "оценивать положительно",
+       "ex": "Employers value such candidates favourably.",
+       "def": "to judge something positively"
+      },
+      {
+       "id": "bus050",
+       "en": "commitment and enthusiasm",
+       "ru": "преданность и энтузиазм",
+       "ex": "The course takes commitment and enthusiasm from students.",
+       "def": "dedication and eager interest in a task"
+      },
+      {
+       "id": "bus051",
+       "en": "to make ends meet",
+       "ru": "сводить концы с концами",
+       "ex": "Many students work just to make ends meet.",
+       "def": "to earn just enough money to live on"
+      },
+      {
+       "id": "bus052",
+       "en": "to do your part",
+       "ru": "внести свой вклад",
+       "ex": "Everyone should do their part to help the team.",
+       "def": "to contribute your share of effort"
+      },
+      {
+       "id": "bus053",
+       "en": "a marketing tool",
+       "ru": "маркетинговый инструмент",
+       "ex": "The robot is used as a marketing tool to attract customers.",
+       "def": "something used to promote a product or business"
+      },
+      {
+       "id": "bus054",
+       "en": "to attract customers",
+       "ru": "привлекать клиентов",
+       "ex": "Stores use sales to attract customers.",
+       "def": "to draw people to buy your goods"
+      },
+      {
+       "id": "bus055",
+       "en": "to set a schedule",
+       "ru": "составлять расписание",
+       "ex": "Successful people set a schedule and stick to it.",
+       "def": "to plan times for your activities"
+      },
+      {
+       "id": "bus056",
+       "en": "to prioritise tasks",
+       "ru": "расставлять приоритеты",
+       "ex": "You should prioritise tasks by their urgency.",
+       "def": "to decide which tasks matter most"
+      },
+      {
+       "id": "bus057",
+       "en": "a to-do list",
+       "ru": "список дел",
+       "ex": "Work through your to-do list based on urgency.",
+       "def": "a written list of tasks to complete"
+      },
+      {
+       "id": "bus058",
+       "en": "to set goals",
+       "ru": "ставить цели",
+       "ex": "The first step is to set clear goals.",
+       "def": "to decide what you want to achieve"
+      },
+      {
+       "id": "bus059",
+       "en": "achievable goals",
+       "ru": "достижимые цели",
+       "ex": "Define your goals in clear and achievable terms.",
+       "def": "aims that are realistic to reach"
+      },
+      {
+       "id": "bus060",
+       "en": "time management",
+       "ru": "управление временем",
+       "ex": "Goal setting is crucial to good time management.",
+       "def": "organising how you use your time"
+      },
+      {
+       "id": "bus061",
+       "en": "hard skills",
+       "ru": "профессиональные навыки",
+       "ex": "Hard skills may get you an interview.",
+       "def": "technical abilities from education and training"
+      },
+      {
+       "id": "bus062",
+       "en": "communication skills",
+       "ru": "навыки общения",
+       "ex": "Strong communication skills top every employer's list.",
+       "def": "the ability to share ideas clearly with others"
+      },
+      {
+       "id": "bus063",
+       "en": "interpersonal skills",
+       "ru": "навыки межличностного общения",
+       "ex": "Teamwork relies on good interpersonal skills.",
+       "def": "abilities for getting along with other people"
+      },
+      {
+       "id": "bus064",
+       "en": "conflict resolution",
+       "ru": "разрешение конфликтов",
+       "ex": "Conflict resolution is a key workplace skill.",
+       "def": "the act of settling disagreements peacefully"
+      },
+      {
+       "id": "bus065",
+       "en": "to handle disagreements",
+       "ru": "улаживать разногласия",
+       "ex": "A good employee can handle disagreements calmly.",
+       "def": "to deal with arguments in a sensible way"
+      },
+      {
+       "id": "bus066",
+       "en": "to come to a consensus",
+       "ru": "прийти к согласию",
+       "ex": "The team finally came to a consensus.",
+       "def": "to reach agreement that everyone accepts"
+      },
+      {
+       "id": "bus067",
+       "en": "to get along with co-workers",
+       "ru": "ладить с коллегами",
+       "ex": "You must get along with co-workers to succeed.",
+       "def": "to have a friendly relationship with colleagues"
+      },
+      {
+       "id": "bus068",
+       "en": "to collaborate with others",
+       "ru": "сотрудничать с другими",
+       "ex": "Teams need to collaborate effectively.",
+       "def": "to work together to achieve a goal"
+      },
+      {
+       "id": "bus069",
+       "en": "a job description",
+       "ru": "описание должности",
+       "ex": "Every career has a clear job description.",
+       "def": "a written outline of a job's duties"
+      },
+      {
+       "id": "bus070",
+       "en": "work experience",
+       "ru": "опыт работы",
+       "ex": "Most postings demand years of work experience.",
+       "def": "practical knowledge gained from doing a job"
+      },
+      {
+       "id": "bus071",
+       "en": "an entry-level job",
+       "ru": "начальная должность",
+       "ex": "An entry-level job requires minimal experience.",
+       "def": "a position needing little prior experience"
+      },
+      {
+       "id": "bus072",
+       "en": "to land a job",
+       "ru": "получить работу",
+       "ex": "A good internship can help you land a job.",
+       "def": "to succeed in getting a job"
+      },
+      {
+       "id": "bus073",
+       "en": "to enter the workforce",
+       "ru": "выйти на рынок труда",
+       "ex": "Graduates often dread entering the workforce.",
+       "def": "to start having a paid job"
+      },
+      {
+       "id": "bus074",
+       "en": "to apply for a job",
+       "ru": "подавать заявление на работу",
+       "ex": "She applied for several jobs last week.",
+       "def": "to formally ask to be hired"
+      },
+      {
+       "id": "bus075",
+       "en": "a cover letter",
+       "ru": "сопроводительное письмо",
+       "ex": "Keep your cover letter typo-free.",
+       "def": "a letter sent with a CV to introduce yourself"
+      },
+      {
+       "id": "bus076",
+       "en": "to set boundaries",
+       "ru": "устанавливать границы",
+       "ex": "You can take a stand and set boundaries.",
+       "def": "to make clear what you will and won't accept"
+      },
+      {
+       "id": "bus077",
+       "en": "to enhance one's employability",
+       "ru": "повысить шансы на трудоустройство",
+       "ex": "Internships enhance your employability.",
+       "def": "to make yourself more attractive to employers"
+      },
+      {
+       "id": "bus078",
+       "en": "public speaking",
+       "ru": "публичные выступления",
+       "ex": "Public speaking can cause a lot of stress.",
+       "def": "speaking to a large audience"
+      },
+      {
+       "id": "bus079",
+       "en": "to portray ideas in a presentation",
+       "ru": "излагать идеи в презентации",
+       "ex": "Employers want you to portray ideas in presentations.",
+       "def": "to express thoughts clearly when presenting"
+      },
+      {
+       "id": "bus080",
+       "en": "to differentiate oneself",
+       "ru": "выделиться",
+       "ex": "Soft skills help you differentiate yourself in a search.",
+       "def": "to make yourself stand out from others"
+      },
+      {
+       "id": "bus081",
+       "en": "good time management skills",
+       "ru": "хорошие навыки тайм-менеджмента",
+       "ex": "Being punctual displays good time management skills.",
+       "def": "the ability to use your time well"
+      },
+      {
+       "id": "bus082",
+       "en": "a turning point",
+       "ru": "поворотный момент",
+       "ex": "That meeting was a real turning point for me.",
+       "def": "a moment when an important change happens"
+      },
+      {
+       "id": "bus083",
+       "en": "a work-life balance",
+       "ru": "баланс работы и личной жизни",
+       "ex": "Good time management helps maintain a work-life balance.",
+       "def": "a healthy division between job and personal life"
+      },
+      {
+       "id": "bus084",
+       "en": "time management skills",
+       "ru": "навыки управления временем",
+       "ex": "Your time management skills really need to be on point.",
+       "def": "the ability to use your time effectively"
+      },
+      {
+       "id": "bus085",
+       "en": "to decline a request",
+       "ru": "отклонить просьбу",
+       "ex": "Do not hesitate to decline a request when needed.",
+       "def": "to politely say no to something asked of you"
+      },
+      {
+       "id": "bus086",
+       "en": "to be on point",
+       "ru": "быть на высоте",
+       "ex": "Her presentation skills were really on point.",
+       "def": "to be exactly right or of high quality"
+      },
+      {
+       "id": "bus087",
+       "en": "to make a deal",
+       "ru": "заключить сделку",
+       "ex": "The players were making deals with one another.",
+       "def": "to reach an agreement, often in business"
+      },
+      {
+       "id": "bus088",
+       "en": "to team up with somebody",
+       "ru": "объединиться с кем-то",
+       "ex": "Two players may team up against the others.",
+       "def": "to join with someone to work towards a goal"
+      },
+      {
+       "id": "bus089",
+       "en": "to conduct an informational interview",
+       "ru": "провести информационное интервью",
+       "ex": "Conduct informational interviews with people in the field.",
+       "def": "to talk to someone to learn about their job"
+      },
+      {
+       "id": "bus090",
+       "en": "to make an informed decision",
+       "ru": "принять взвешенное решение",
+       "ex": "Explore each career to make an informed decision.",
+       "def": "to choose after getting all the relevant facts"
+      },
+      {
+       "id": "bus091",
+       "en": "to handle a task",
+       "ru": "справляться с задачей",
+       "ex": "He handled several difficult tasks at once.",
+       "def": "to deal with a job successfully"
+      },
+      {
+       "id": "bus092",
+       "en": "to take on a task",
+       "ru": "взяться за задачу",
+       "ex": "Technology can take on a whole host of tasks.",
+       "def": "to agree to do a particular piece of work"
+      },
+      {
+       "id": "bus093",
+       "en": "to network",
+       "ru": "налаживать связи",
+       "ex": "From networking to marketing, the tasks never end.",
+       "def": "to meet people who may be useful for your career"
+      },
+      {
+       "id": "bus094",
+       "en": "to think about what lies ahead",
+       "ru": "думать о будущем",
+       "ex": "A good owner thinks about what lies ahead.",
+       "def": "to plan for future events and challenges"
+      },
+      {
+       "id": "bus095",
+       "en": "to gain experience",
+       "ru": "набираться опыта",
+       "ex": "Students work with clients to gain experience.",
+       "def": "to acquire skill and knowledge by doing something"
+      },
+      {
+       "id": "bus096",
+       "en": "to get stuck in day-to-day operations",
+       "ru": "увязнуть в рутине",
+       "ex": "Don't get stuck in day-to-day operations.",
+       "def": "to be too busy with routine daily work"
       }
      ]
     }
@@ -12719,6 +13735,522 @@
        "ru": "вести здоровый образ жизни",
        "ex": "Eating well is essential if you want to lead a healthy lifestyle.",
        "def": "To make choices that keep your body and mind healthy."
+      }
+     ]
+    },
+    {
+     "subtopic": "From reading texts",
+     "items": [
+      {
+       "id": "soc044",
+       "en": "social responsibility",
+       "ru": "социальная ответственность",
+       "ex": "Companies must take their social responsibility seriously.",
+       "def": "duty to act for the good of society"
+      },
+      {
+       "id": "soc045",
+       "en": "to help the poor and sick",
+       "ru": "помогать бедным и больным",
+       "ex": "He travelled the countryside helping the poor and sick.",
+       "def": "to support people in need"
+      },
+      {
+       "id": "soc046",
+       "en": "to do volunteer work",
+       "ru": "заниматься волонтёрством",
+       "ex": "She decided to do volunteer work in her community.",
+       "def": "to work without pay to help others"
+      },
+      {
+       "id": "soc047",
+       "en": "to value something",
+       "ru": "ценить что-либо",
+       "ex": "People often don't value volunteer work.",
+       "def": "to consider something important or worthwhile"
+      },
+      {
+       "id": "soc048",
+       "en": "an environmentally-friendly lifestyle",
+       "ru": "экологичный образ жизни",
+       "ex": "More people are choosing an environmentally-friendly lifestyle.",
+       "def": "a way of living that protects nature"
+      },
+      {
+       "id": "soc049",
+       "en": "to reduce waste",
+       "ru": "сокращать отходы",
+       "ex": "Reusable bags help reduce waste.",
+       "def": "to produce less rubbish"
+      },
+      {
+       "id": "soc050",
+       "en": "to harm the environment",
+       "ru": "вредить окружающей среде",
+       "ex": "Plastic bags harm the environment for years.",
+       "def": "to damage the natural world"
+      },
+      {
+       "id": "soc051",
+       "en": "global warming",
+       "ru": "глобальное потепление",
+       "ex": "Global warming is a hot topic these days.",
+       "def": "the gradual rise in Earth's temperature"
+      },
+      {
+       "id": "soc052",
+       "en": "greenhouse gas emissions",
+       "ru": "выбросы парниковых газов",
+       "ex": "Cars produce huge greenhouse gas emissions.",
+       "def": "gases released that trap heat in the atmosphere"
+      },
+      {
+       "id": "soc053",
+       "en": "to contribute to pollution",
+       "ru": "способствовать загрязнению",
+       "ex": "Plastic bags contribute to the pollution of nature.",
+       "def": "to add to environmental contamination"
+      },
+      {
+       "id": "soc054",
+       "en": "to break down",
+       "ru": "разлагаться",
+       "ex": "A plastic bag can take centuries to break down.",
+       "def": "to decompose into smaller parts"
+      },
+      {
+       "id": "soc055",
+       "en": "to limit the use of something",
+       "ru": "ограничить использование",
+       "ex": "Communities should limit the use of plastic bags.",
+       "def": "to reduce how much something is used"
+      },
+      {
+       "id": "soc056",
+       "en": "to cope with something",
+       "ru": "справляться с чем-либо",
+       "ex": "People need support to cope with difficult times.",
+       "def": "to deal successfully with a problem"
+      },
+      {
+       "id": "soc057",
+       "en": "to go through difficult times",
+       "ru": "переживать трудные времена",
+       "ex": "Toxic positivity can harm people going through difficult times.",
+       "def": "to experience a hard period in life"
+      },
+      {
+       "id": "soc058",
+       "en": "to put off something",
+       "ru": "откладывать",
+       "ex": "It is easy to put off your study session.",
+       "def": "to delay doing something"
+      },
+      {
+       "id": "soc059",
+       "en": "to procrastinate",
+       "ru": "прокрастинировать",
+       "ex": "Successful students do not procrastinate.",
+       "def": "to keep delaying tasks you should do"
+      },
+      {
+       "id": "soc060",
+       "en": "to wear yourself out",
+       "ru": "изматывать себя",
+       "ex": "Multitasking can wear yourself out quickly.",
+       "def": "to make yourself extremely tired"
+      },
+      {
+       "id": "soc061",
+       "en": "to face your troubles",
+       "ru": "встретить трудности лицом к лицу",
+       "ex": "Just face your troubles however hard they seem.",
+       "def": "to confront your problems directly"
+      },
+      {
+       "id": "soc062",
+       "en": "to leave your comfort zone",
+       "ru": "выйти из зоны комфорта",
+       "ex": "Try to leave your comfort zone now and then.",
+       "def": "to do something unfamiliar or challenging"
+      },
+      {
+       "id": "soc063",
+       "en": "a healthy lifestyle",
+       "ru": "здоровый образ жизни",
+       "ex": "Exercise is a great addition to a healthy lifestyle.",
+       "def": "habits that keep your body and mind well"
+      },
+      {
+       "id": "soc064",
+       "en": "to think outside the box",
+       "ru": "мыслить нестандартно",
+       "ex": "Students should learn to think outside the box.",
+       "def": "to think in a creative, original way"
+      },
+      {
+       "id": "soc065",
+       "en": "to fall away",
+       "ru": "исчезать",
+       "ex": "The old stereotypes are starting to fall away.",
+       "def": "to gradually disappear"
+      },
+      {
+       "id": "soc066",
+       "en": "in moderation",
+       "ru": "умеренно",
+       "ex": "The best way to enjoy this is in moderation.",
+       "def": "without doing too much of something"
+      },
+      {
+       "id": "soc067",
+       "en": "to stick with a schedule",
+       "ru": "придерживаться расписания",
+       "ex": "They make a plan and stick with their schedule.",
+       "def": "to keep following a planned routine"
+      },
+      {
+       "id": "soc068",
+       "en": "youth in society",
+       "ru": "молодёжь в обществе",
+       "ex": "Volunteering taught me about youth in society.",
+       "def": "young people and their role in the community"
+      },
+      {
+       "id": "soc069",
+       "en": "to take advantage of an opportunity",
+       "ru": "воспользоваться возможностью",
+       "ex": "Why not take advantage of this opportunity?",
+       "def": "to make good use of a chance"
+      },
+      {
+       "id": "soc070",
+       "en": "to look at things from a different perspective",
+       "ru": "взглянуть с другой стороны",
+       "ex": "Travel helps you look at things from a different perspective.",
+       "def": "to consider a matter in a new way"
+      },
+      {
+       "id": "soc071",
+       "en": "to give back",
+       "ru": "отдавать обществу",
+       "ex": "Donors are delighted to give back to the college.",
+       "def": "to help others in return for past help"
+      },
+      {
+       "id": "soc072",
+       "en": "to pay it forward",
+       "ru": "делать добро дальше",
+       "ex": "Alumni want to pay it forward to new students.",
+       "def": "to help someone after being helped yourself"
+      },
+      {
+       "id": "soc073",
+       "en": "to live more sustainably",
+       "ru": "жить более экологично",
+       "ex": "There are simple ways to live more sustainably.",
+       "def": "to live in a way that protects the environment"
+      },
+      {
+       "id": "soc074",
+       "en": "one's carbon footprint",
+       "ru": "углеродный след",
+       "ex": "Cut out one flight to lighten your carbon footprint.",
+       "def": "the amount of CO2 your actions produce"
+      },
+      {
+       "id": "soc075",
+       "en": "to cut down on something",
+       "ru": "сокращать что-то",
+       "ex": "We should cut down on plastic packaging.",
+       "def": "to reduce the amount of something"
+      },
+      {
+       "id": "soc076",
+       "en": "to save the planet",
+       "ru": "спасать планету",
+       "ex": "Using less energy helps save the planet.",
+       "def": "to protect the Earth from harm"
+      },
+      {
+       "id": "soc077",
+       "en": "household waste",
+       "ru": "бытовые отходы",
+       "ex": "Household waste is a serious global problem.",
+       "def": "rubbish produced by ordinary homes"
+      },
+      {
+       "id": "soc078",
+       "en": "to end up in the ocean",
+       "ru": "попадать в океан",
+       "ex": "Many paper bags end up in the ocean.",
+       "def": "to finally arrive somewhere unwanted"
+      },
+      {
+       "id": "soc079",
+       "en": "to throw away rubbish",
+       "ru": "выбрасывать мусор",
+       "ex": "We throw away tons of rubbish every year.",
+       "def": "to get rid of waste material"
+      },
+      {
+       "id": "soc080",
+       "en": "eco-friendly products",
+       "ru": "экологичные товары",
+       "ex": "Opt for eco-friendly products when you shop.",
+       "def": "goods that do not harm the environment"
+      },
+      {
+       "id": "soc081",
+       "en": "to cope with all tasks",
+       "ru": "справляться со всеми задачами",
+       "ex": "Focus on one goal to cope with all tasks.",
+       "def": "to manage everything that needs doing"
+      },
+      {
+       "id": "soc082",
+       "en": "to be under pressure",
+       "ru": "быть под давлением",
+       "ex": "Students are often under pressure before exams.",
+       "def": "feeling stress from demands on you"
+      },
+      {
+       "id": "soc083",
+       "en": "to manage one's stress",
+       "ru": "управлять стрессом",
+       "ex": "Exercise helps you manage your stress.",
+       "def": "to keep your stress under control"
+      },
+      {
+       "id": "soc084",
+       "en": "to be pressed for time",
+       "ru": "быть в цейтноте",
+       "ex": "A short workout helps if you are pressed for time.",
+       "def": "having very little time available"
+      },
+      {
+       "id": "soc085",
+       "en": "to break a task into manageable sections",
+       "ru": "разбивать задачу на части",
+       "ex": "Break tasks into manageable sections to cope.",
+       "def": "to divide work into smaller, easier parts"
+      },
+      {
+       "id": "soc086",
+       "en": "to keep someone motivated",
+       "ru": "поддерживать мотивацию",
+       "ex": "Setting goals keeps you motivated.",
+       "def": "to keep someone's desire to act strong"
+      },
+      {
+       "id": "soc087",
+       "en": "to get back on track",
+       "ru": "вернуться в нужное русло",
+       "ex": "After a break, it's possible to get back on track.",
+       "def": "to return to making proper progress"
+      },
+      {
+       "id": "soc088",
+       "en": "to set healthy goals",
+       "ru": "ставить разумные цели",
+       "ex": "Setting healthy goals kickstarts a new lifestyle.",
+       "def": "to choose sensible aims for yourself"
+      },
+      {
+       "id": "soc089",
+       "en": "to measure one's progress",
+       "ru": "оценивать свой прогресс",
+       "ex": "Goals allow you to measure your progress.",
+       "def": "to check how much you have achieved"
+      },
+      {
+       "id": "soc090",
+       "en": "to feel overwhelmed",
+       "ru": "чувствовать себя перегруженным",
+       "ex": "Many students feel overwhelmed before deadlines.",
+       "def": "to feel unable to cope with too much"
+      },
+      {
+       "id": "soc091",
+       "en": "to make ends meet",
+       "ru": "сводить концы с концами",
+       "ex": "Part-time wages help students make ends meet.",
+       "def": "to have just enough money to live on"
+      },
+      {
+       "id": "soc092",
+       "en": "to think positively",
+       "ru": "мыслить позитивно",
+       "ex": "Try to think positively in stressful moments.",
+       "def": "to focus on good rather than bad outcomes"
+      },
+      {
+       "id": "soc093",
+       "en": "to recharge one's batteries",
+       "ru": "восстановить силы",
+       "ex": "A short break lets you recharge your batteries.",
+       "def": "to rest and get back your energy"
+      },
+      {
+       "id": "soc094",
+       "en": "digital literacy",
+       "ru": "цифровая грамотность",
+       "ex": "Young people need to master digital literacy.",
+       "def": "the ability to use information technology well"
+      },
+      {
+       "id": "soc095",
+       "en": "to reduce one's carbon footprint",
+       "ru": "снизить углеродный след",
+       "ex": "Cutting out meat helps reduce your carbon footprint.",
+       "def": "to lessen the harm your actions do to the climate"
+      },
+      {
+       "id": "soc096",
+       "en": "to do one's part",
+       "ru": "вносить свой вклад",
+       "ex": "You want to do your part to help the environment.",
+       "def": "to make your own contribution to a shared goal"
+      },
+      {
+       "id": "soc097",
+       "en": "to go green",
+       "ru": "перейти на экологичный образ жизни",
+       "ex": "Don't hesitate and go green whenever you can.",
+       "def": "to start living in an environmentally friendly way"
+      },
+      {
+       "id": "soc098",
+       "en": "environmentally friendly",
+       "ru": "экологичный",
+       "ex": "Green has become the word for all environmentally friendly things.",
+       "def": "not harmful to the natural world"
+      },
+      {
+       "id": "soc099",
+       "en": "to reduce food waste",
+       "ru": "сокращать пищевые отходы",
+       "ex": "You can reduce food waste by planning meals in advance.",
+       "def": "to throw away less uneaten food"
+      },
+      {
+       "id": "soc100",
+       "en": "to be concerned about something",
+       "ru": "беспокоиться о чём-то",
+       "ex": "Most students are now concerned about climate change.",
+       "def": "to feel worried about a particular issue"
+      },
+      {
+       "id": "soc101",
+       "en": "climate change",
+       "ru": "изменение климата",
+       "ex": "Climate change has made wildfires worse.",
+       "def": "long-term shifts in the planet's weather patterns"
+      },
+      {
+       "id": "soc102",
+       "en": "to raise awareness",
+       "ru": "повышать осведомлённость",
+       "ex": "Campaigning helps raise awareness of the problem.",
+       "def": "to make people know more about an issue"
+      },
+      {
+       "id": "soc103",
+       "en": "to take care of oneself",
+       "ru": "заботиться о себе",
+       "ex": "Taking care of yourself is really important.",
+       "def": "to look after your own health and needs"
+      },
+      {
+       "id": "soc104",
+       "en": "mental health",
+       "ru": "психическое здоровье",
+       "ex": "Start with your mental health for a healthier lifestyle.",
+       "def": "the state of your emotional and psychological well-being"
+      },
+      {
+       "id": "soc105",
+       "en": "to reduce stress levels",
+       "ru": "снижать уровень стресса",
+       "ex": "Just six minutes of reading can reduce stress levels.",
+       "def": "to make yourself feel less worried and tense"
+      },
+      {
+       "id": "soc106",
+       "en": "to put your own needs first",
+       "ru": "ставить свои нужды на первое место",
+       "ex": "Good mental health means putting your own needs first.",
+       "def": "to give priority to what you yourself require"
+      },
+      {
+       "id": "soc107",
+       "en": "to spend quality time with somebody",
+       "ru": "проводить время с пользой с кем-то",
+       "ex": "Holidays let you spend quality time with family.",
+       "def": "to give someone your full and caring attention"
+      },
+      {
+       "id": "soc108",
+       "en": "to make a positive change",
+       "ru": "сделать положительные изменения",
+       "ex": "One way to make a healthy mental change is positive self-talk.",
+       "def": "to do something that improves a situation"
+      },
+      {
+       "id": "soc109",
+       "en": "to break a habit",
+       "ru": "избавиться от привычки",
+       "ex": "People feel motivated to break an old habit.",
+       "def": "to stop doing something you do regularly"
+      },
+      {
+       "id": "soc110",
+       "en": "to form a habit",
+       "ru": "выработать привычку",
+       "ex": "The best way to form a new habit is to tie it to an old one.",
+       "def": "to develop a regular pattern of behaviour"
+      },
+      {
+       "id": "soc111",
+       "en": "to stick to one's goals",
+       "ru": "придерживаться своих целей",
+       "ex": "Only nine percent stuck to their goals last year.",
+       "def": "to continue working towards what you planned"
+      },
+      {
+       "id": "soc112",
+       "en": "a healthier lifestyle",
+       "ru": "более здоровый образ жизни",
+       "ex": "If you are looking for a healthier lifestyle, start small.",
+       "def": "a way of living that is better for your body"
+      },
+      {
+       "id": "soc113",
+       "en": "to overcome obstacles",
+       "ru": "преодолевать препятствия",
+       "ex": "The songs tell of people overcoming obstacles.",
+       "def": "to deal successfully with difficulties"
+      },
+      {
+       "id": "soc114",
+       "en": "to social media scroll",
+       "ru": "листать соцсети",
+       "ex": "Many report their mood worsens after a social media scroll.",
+       "def": "spending time browsing through social networks"
+      },
+      {
+       "id": "soc115",
+       "en": "face-to-face",
+       "ru": "лицом к лицу",
+       "ex": "They don't actually look at you face-to-face.",
+       "def": "in person, with people physically present together"
+      },
+      {
+       "id": "soc116",
+       "en": "to volunteer",
+       "ru": "заниматься волонтёрством",
+       "ex": "Many Russians are open to volunteering for new experiences.",
+       "def": "to do unpaid work to help others"
       }
      ]
     }
@@ -13085,6 +14617,529 @@
        "ru": "воплощать национальные ценности",
        "ex": "These festivals embody the nation's core values.",
        "def": "To show or represent the ideas that a country thinks are important."
+      }
+     ]
+    },
+    {
+     "subtopic": "From reading texts",
+     "items": [
+      {
+       "id": "cou047",
+       "en": "an iconic building",
+       "ru": "знаковое здание",
+       "ex": "It is one of the most iconic buildings in the world.",
+       "def": "a famous, instantly recognisable structure"
+      },
+      {
+       "id": "cou048",
+       "en": "to attract tourists",
+       "ru": "привлекать туристов",
+       "ex": "The cathedral attracts millions of tourists each year.",
+       "def": "to draw visitors to a place"
+      },
+      {
+       "id": "cou049",
+       "en": "a holiday destination",
+       "ru": "место для отдыха",
+       "ex": "It is a beautiful and fascinating holiday destination.",
+       "def": "a place people travel to for a vacation"
+      },
+      {
+       "id": "cou050",
+       "en": "national identity",
+       "ru": "национальная самобытность",
+       "ex": "The city reflects the country's national identity.",
+       "def": "the shared character of a nation's people"
+      },
+      {
+       "id": "cou051",
+       "en": "cultural treasures",
+       "ru": "культурные сокровища",
+       "ex": "The city is rich in artistic and cultural treasures.",
+       "def": "valuable works of art and heritage"
+      },
+      {
+       "id": "cou052",
+       "en": "a rich tradition",
+       "ru": "богатая традиция",
+       "ex": "Britain has a rich tradition of castle sites.",
+       "def": "a long-established and strong custom"
+      },
+      {
+       "id": "cou053",
+       "en": "medieval architecture",
+       "ru": "средневековая архитектура",
+       "ex": "The city has many monuments of medieval architecture.",
+       "def": "buildings in the style of the Middle Ages"
+      },
+      {
+       "id": "cou054",
+       "en": "to be off the beaten path",
+       "ru": "в стороне от туристических троп",
+       "ex": "The museum is off the beaten path.",
+       "def": "away from places most tourists visit"
+      },
+      {
+       "id": "cou055",
+       "en": "public transport",
+       "ru": "общественный транспорт",
+       "ex": "Public transport is often the better choice for tourists.",
+       "def": "shared transport like buses and trains"
+      },
+      {
+       "id": "cou056",
+       "en": "to get around",
+       "ru": "передвигаться",
+       "ex": "Buses are good for getting around in the city.",
+       "def": "to travel from place to place"
+      },
+      {
+       "id": "cou057",
+       "en": "to run on time",
+       "ru": "ходить по расписанию",
+       "ex": "Around 85% of the trains run on time.",
+       "def": "to arrive and depart as scheduled"
+      },
+      {
+       "id": "cou058",
+       "en": "to book a ticket in advance",
+       "ru": "забронировать билет заранее",
+       "ex": "It is worth booking your ticket as far in advance as possible.",
+       "def": "to reserve travel early"
+      },
+      {
+       "id": "cou059",
+       "en": "a city of contrasting styles",
+       "ru": "город контрастов",
+       "ex": "Madrid is a city of contrasting styles.",
+       "def": "a place mixing very different appearances"
+      },
+      {
+       "id": "cou060",
+       "en": "to put something on your bucket list",
+       "ru": "добавить в список желаний",
+       "ex": "Put a short dog sled trip on your bucket list.",
+       "def": "to list something you want to do in life"
+      },
+      {
+       "id": "cou061",
+       "en": "breathtaking views",
+       "ru": "захватывающие виды",
+       "ex": "You ski with breathtaking views over the ocean.",
+       "def": "scenery so beautiful it amazes you"
+      },
+      {
+       "id": "cou062",
+       "en": "natural diversity",
+       "ru": "природное разнообразие",
+       "ex": "Kamchatka is famous for its rich natural diversity.",
+       "def": "a wide variety of living things and landscapes"
+      },
+      {
+       "id": "cou063",
+       "en": "an education system",
+       "ru": "система образования",
+       "ex": "Studying at university differs from the school system.",
+       "def": "the way schooling is organised in a country"
+      },
+      {
+       "id": "cou064",
+       "en": "traditional dishes",
+       "ru": "традиционные блюда",
+       "ex": "The country has plenty of delicious traditional dishes.",
+       "def": "typical foods of a region or nation"
+      },
+      {
+       "id": "cou065",
+       "en": "local food",
+       "ru": "местная еда",
+       "ex": "Residents here prefer local food to imported products.",
+       "def": "food produced in the surrounding area"
+      },
+      {
+       "id": "cou066",
+       "en": "the cultural capital",
+       "ru": "культурная столица",
+       "ex": "St. Petersburg is considered Russia's cultural capital.",
+       "def": "a city central to a nation's arts and culture"
+      },
+      {
+       "id": "cou067",
+       "en": "customs and traditions",
+       "ru": "обычаи и традиции",
+       "ex": "Travel forces you to learn local customs and traditions.",
+       "def": "established ways of behaving in a culture"
+      },
+      {
+       "id": "cou068",
+       "en": "to dress modestly",
+       "ru": "одеваться скромно",
+       "ex": "Women are expected to dress modestly in temples.",
+       "def": "to wear clothes that cover the body decently"
+      },
+      {
+       "id": "cou069",
+       "en": "to dress appropriately",
+       "ru": "одеваться подобающе",
+       "ex": "Visitors should dress appropriately at religious sites.",
+       "def": "to wear suitable clothes for the occasion"
+      },
+      {
+       "id": "cou070",
+       "en": "a sign of respect",
+       "ru": "знак уважения",
+       "ex": "Using both hands is a sign of respect.",
+       "def": "an action showing you honour someone"
+      },
+      {
+       "id": "cou071",
+       "en": "to get acquainted with",
+       "ru": "познакомиться с",
+       "ex": "The visit helps you get acquainted with local history.",
+       "def": "to become familiar with something"
+      },
+      {
+       "id": "cou072",
+       "en": "cultural differences",
+       "ru": "культурные различия",
+       "ex": "I got used to cultural differences while travelling.",
+       "def": "ways in which cultures vary"
+      },
+      {
+       "id": "cou073",
+       "en": "to adapt to something",
+       "ru": "приспособиться к чему-либо",
+       "ex": "It took some time to adapt to the local way of life.",
+       "def": "to adjust to new conditions"
+      },
+      {
+       "id": "cou074",
+       "en": "the capital city",
+       "ru": "столица",
+       "ex": "Paris is the capital city of France.",
+       "def": "the main city where a government is based"
+      },
+      {
+       "id": "cou075",
+       "en": "to be situated in",
+       "ru": "находиться в",
+       "ex": "The town is situated in the north of the country.",
+       "def": "to be located in a particular place"
+      },
+      {
+       "id": "cou076",
+       "en": "to be located on the coast",
+       "ru": "располагаться на побережье",
+       "ex": "The city is located on the coast.",
+       "def": "to be positioned by the sea"
+      },
+      {
+       "id": "cou077",
+       "en": "to share a border with",
+       "ru": "граничить с",
+       "ex": "Russia shares borders with many countries.",
+       "def": "to have a common boundary with a country"
+      },
+      {
+       "id": "cou078",
+       "en": "a tourist attraction",
+       "ru": "туристическая достопримечательность",
+       "ex": "The palace is a famous tourist attraction.",
+       "def": "a place that visitors like to see"
+      },
+      {
+       "id": "cou079",
+       "en": "a popular destination",
+       "ru": "популярное направление",
+       "ex": "It is a popular destination for safaris.",
+       "def": "a place many people choose to visit"
+      },
+      {
+       "id": "cou080",
+       "en": "to be famous for something",
+       "ru": "славиться чем-то",
+       "ex": "The region is famous for its volcanoes.",
+       "def": "to be well known because of something"
+      },
+      {
+       "id": "cou081",
+       "en": "the heart of the city",
+       "ru": "центр города",
+       "ex": "The street lies in the heart of the city.",
+       "def": "the very centre of a city"
+      },
+      {
+       "id": "cou082",
+       "en": "a must-see",
+       "ru": "обязательно к посещению",
+       "ex": "The fortress is a real must-see.",
+       "def": "something you should definitely visit"
+      },
+      {
+       "id": "cou083",
+       "en": "to soak up the atmosphere",
+       "ru": "впитывать атмосферу",
+       "ex": "Stroll the streets to soak up the atmosphere.",
+       "def": "to fully enjoy the feeling of a place"
+      },
+      {
+       "id": "cou084",
+       "en": "natural beauty",
+       "ru": "природная красота",
+       "ex": "The coast is an area of outstanding natural beauty.",
+       "def": "the attractiveness of the natural world"
+      },
+      {
+       "id": "cou085",
+       "en": "a breathtaking view",
+       "ru": "захватывающий вид",
+       "ex": "From the tower you get a breathtaking view.",
+       "def": "a sight that is amazingly beautiful"
+      },
+      {
+       "id": "cou086",
+       "en": "off the beaten track",
+       "ru": "в стороне от туристических троп",
+       "ex": "Modern tourists often go off the beaten track.",
+       "def": "away from places most tourists visit"
+      },
+      {
+       "id": "cou087",
+       "en": "traditional customs",
+       "ru": "традиционные обычаи",
+       "ex": "Ancient tribes retain their traditional customs.",
+       "def": "long-established ways of doing things"
+      },
+      {
+       "id": "cou088",
+       "en": "cultural heritage",
+       "ru": "культурное наследие",
+       "ex": "The town shows respect for its cultural heritage.",
+       "def": "traditions passed down through generations"
+      },
+      {
+       "id": "cou089",
+       "en": "to be home to something",
+       "ru": "быть домом для чего-то",
+       "ex": "The region is home to rare species.",
+       "def": "to be the place where something lives"
+      },
+      {
+       "id": "cou090",
+       "en": "the historic core of the city",
+       "ru": "исторический центр города",
+       "ex": "The fortress is the historic core of the city.",
+       "def": "the oldest, original central part of a city"
+      },
+      {
+       "id": "cou091",
+       "en": "an undergraduate programme",
+       "ru": "программа бакалавриата",
+       "ex": "Most undergraduate programmes last three years.",
+       "def": "a first university degree course"
+      },
+      {
+       "id": "cou092",
+       "en": "a bachelor's degree",
+       "ru": "степень бакалавра",
+       "ex": "A surgeon starts with a bachelor's degree.",
+       "def": "a first university qualification"
+      },
+      {
+       "id": "cou093",
+       "en": "to study full-time",
+       "ru": "учиться очно",
+       "ex": "Fees depend on whether you study full-time.",
+       "def": "to do a course as your main activity"
+      },
+      {
+       "id": "cou094",
+       "en": "to study part-time",
+       "ru": "учиться заочно",
+       "ex": "Part-time courses take a couple more years.",
+       "def": "to do a course alongside other commitments"
+      },
+      {
+       "id": "cou095",
+       "en": "to complete one's studies",
+       "ru": "завершить обучение",
+       "ex": "Students must complete their studies in time.",
+       "def": "to finish a course of education"
+      },
+      {
+       "id": "cou096",
+       "en": "a transport hub",
+       "ru": "транспортный узел",
+       "ex": "Madrid is the country's transport hub.",
+       "def": "a central point where transport routes meet"
+      },
+      {
+       "id": "cou097",
+       "en": "to be visible from afar",
+       "ru": "быть видимым издалека",
+       "ex": "The skyscraper is visible from afar.",
+       "def": "able to be seen from a long distance"
+      },
+      {
+       "id": "cou098",
+       "en": "an observation deck",
+       "ru": "смотровая площадка",
+       "ex": "The tower has an observation deck for tourists.",
+       "def": "a high platform for viewing the surroundings"
+      },
+      {
+       "id": "cou099",
+       "en": "the largest country in the world",
+       "ru": "самая большая страна мира",
+       "ex": "Russia is the largest country in the world.",
+       "def": "the nation with the biggest land area"
+      },
+      {
+       "id": "cou100",
+       "en": "cultural features",
+       "ru": "культурные особенности",
+       "ex": "Learning about cultural features broadens your mind.",
+       "def": "characteristics that define a society's way of life"
+      },
+      {
+       "id": "cou101",
+       "en": "to be native to a place",
+       "ru": "быть родом из какого-то места",
+       "ex": "Pandas are bears that are native to China.",
+       "def": "to come originally from a particular region"
+      },
+      {
+       "id": "cou102",
+       "en": "to date back to a period",
+       "ru": "восходить к какому-то периоду",
+       "ex": "The high walls date back to 1500.",
+       "def": "to have existed since a certain time in the past"
+      },
+      {
+       "id": "cou103",
+       "en": "a tourist destination",
+       "ru": "туристическое направление",
+       "ex": "Thanks to its size, China is a great tourist destination.",
+       "def": "a place that many travellers choose to visit"
+      },
+      {
+       "id": "cou104",
+       "en": "to escape the hustle and bustle",
+       "ru": "сбежать от суеты",
+       "ex": "It is the perfect place to escape the hustle and bustle.",
+       "def": "to get away from busy, noisy city life"
+      },
+      {
+       "id": "cou105",
+       "en": "a visitor attraction",
+       "ru": "достопримечательность",
+       "ex": "The Hermitage is the city's most popular visitor attraction.",
+       "def": "a place people come specially to see"
+      },
+      {
+       "id": "cou106",
+       "en": "to soak up the local culture",
+       "ru": "впитывать местную культуру",
+       "ex": "I'd hoped to soak up French in a real-life setting.",
+       "def": "to absorb and enjoy a place's way of life"
+      },
+      {
+       "id": "cou107",
+       "en": "to immerse oneself in a culture",
+       "ru": "погрузиться в культуру",
+       "ex": "Teaching English is the best way to immerse yourself in another culture.",
+       "def": "to involve yourself deeply in a way of life"
+      },
+      {
+       "id": "cou108",
+       "en": "culture shock",
+       "ru": "культурный шок",
+       "ex": "Moving abroad, you will probably experience culture shock.",
+       "def": "the confusion felt in an unfamiliar culture"
+      },
+      {
+       "id": "cou109",
+       "en": "to come to grips with something",
+       "ru": "освоиться с чем-то",
+       "ex": "Soon you start to come to grips with all experiences.",
+       "def": "to begin to understand and deal with something"
+      },
+      {
+       "id": "cou110",
+       "en": "to fit in",
+       "ru": "вписаться",
+       "ex": "I borrowed clothes from friends just to fit in.",
+       "def": "to feel accepted as part of a group"
+      },
+      {
+       "id": "cou111",
+       "en": "to be situated at a crossroads",
+       "ru": "находиться на перекрёстке",
+       "ex": "Paris is situated at a crossroads of water and land routes.",
+       "def": "to be located where important routes meet"
+      },
+      {
+       "id": "cou112",
+       "en": "the geographical heart of a region",
+       "ru": "географический центр региона",
+       "ex": "Madrid lies at the geographical heart of the peninsula.",
+       "def": "the central point of an area of land"
+      },
+      {
+       "id": "cou113",
+       "en": "a landmark",
+       "ru": "достопримечательность",
+       "ex": "The Great Wall is a famous landmark.",
+       "def": "a well-known feature that helps identify a place"
+      },
+      {
+       "id": "cou114",
+       "en": "to take in the beauty of the surroundings",
+       "ru": "любоваться красотой окрестностей",
+       "ex": "You can take in the beauty of the surroundings online.",
+       "def": "to enjoy looking at a beautiful place"
+      },
+      {
+       "id": "cou115",
+       "en": "a national day",
+       "ru": "национальный праздник",
+       "ex": "His birthday is as important as Scotland's national day.",
+       "def": "an official holiday celebrating a nation"
+      },
+      {
+       "id": "cou116",
+       "en": "to host somebody",
+       "ru": "принимать кого-то в гостях",
+       "ex": "Russian hospitality is fantastic if friends host you.",
+       "def": "to receive and look after a guest"
+      },
+      {
+       "id": "cou117",
+       "en": "a family holiday",
+       "ru": "семейный праздник",
+       "ex": "New Year's Eve is more of a family holiday in Russia.",
+       "def": "a celebration spent together with relatives"
+      },
+      {
+       "id": "cou118",
+       "en": "to spread word of one's culture",
+       "ru": "распространять знания о своей культуре",
+       "ex": "Missionaries journeyed to spread their faith.",
+       "def": "to share and promote a way of life widely"
+      },
+      {
+       "id": "cou119",
+       "en": "a temperate climate",
+       "ru": "умеренный климат",
+       "ex": "Thanks to the Gulf Stream, Paris has a temperate climate.",
+       "def": "weather that is mild without extremes"
+      },
+      {
+       "id": "cou120",
+       "en": "to be regarded as something",
+       "ru": "считаться чем-то",
+       "ex": "China is regarded as mysterious and exotic.",
+       "def": "to be generally thought of in a certain way"
       }
      ]
     }
