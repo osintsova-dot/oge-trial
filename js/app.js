@@ -13,6 +13,7 @@ import { dailyProgress, themeStats } from './vocab_srs.js';
 import { renderDrill } from '../modules/drill.js';
 import { renderWriting } from '../modules/writing.js';
 import { renderReading } from '../modules/reading.js';
+import { renderReadingEge } from '../modules/ege_reading.js';
 import { renderVocab } from '../modules/vocab.js';
 
 const view = document.getElementById('view');
@@ -46,7 +47,7 @@ function route() {
   if (hash === 'rewards')  return renderRewards();
   if (sec && sec.type === 'drill')   return renderDrill(view, { ...DRILL[sec.id], goHome });
   if (sec && sec.type === 'writing') return renderWriting(view, { goHome, sectionId: sec.id });
-  if (sec && sec.type === 'reading') return renderReading(view, { goHome, dataFile: sec.dataFile });
+  if (sec && sec.type === 'reading') return (EXAM.id === 'ege' ? renderReadingEge : renderReading)(view, { goHome, dataFile: sec.dataFile });
   if (sec && sec.type === 'vocab')   return renderVocab(view, { goHome, dataFile: sec.dataFile });
   if (sec && sec.type === 'soon')    return renderSoon(sec);
   return renderHome();

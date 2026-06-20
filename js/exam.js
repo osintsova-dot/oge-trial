@@ -38,12 +38,14 @@ const CONFIGS = {
     id: 'ege', lang: 'en', badge: 'ЕГЭ · English', store: 'ege', splashImg: './assets/spiky-cool.png',
     keysFile: 'ege_keys', topicsFile: 'ege_topics', explainFile: 'ege_explanations',
     sections: [
+      { id: 'vocab',   type: 'vocab',   dataFile: 'ege_vocab',   tile: 'vocab', iconKey: 'vocab', icon: '🗂' },
       { id: 'grammar', type: 'drill',   dataFile: 'ege_grammar', topicKey: 'Грамматика',       tile: 'grammar',  icon: '📝' },
       { id: 'lexis',   type: 'drill',   dataFile: 'ege_lexis',   topicKey: 'Лексика/словообр.', tile: 'wordform', icon: '🔤' },
+      { id: 'reading', type: 'reading', dataFile: 'ege_reading', tile: 'reading', iconKey: 'reading', icon: '📖' },
       { id: 'email',   type: 'writing', tile: 'writing', icon: '✉️' },
       { id: 'essay',   type: 'writing', tile: 'grammar', iconKey: 'essay', icon: '📝' },
     ],
-    pack: ['grammar', 'lexis', 'email', 'essay'],
+    pack: ['grammar', 'lexis', 'reading', 'email', 'essay'],
     soonTile: true,
     // Письмо ЕГЭ — ДВА задания: e-mail (зад.37, К1–К3, макс 6) и эссе (зад.38, К1–К5, макс 14)
     writing: {

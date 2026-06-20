@@ -554,6 +554,26 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .rd-ttext{font-size:14px;line-height:1.52;color:var(--ink)}
 .rd-foot{margin-top:16px}
 
+/* ЕГЭ-чтение: MC-варианты (длинные, в столбик) */
+.mc-opts{display:flex;flex-direction:column;gap:6px}
+.mc-opt{text-align:left;padding:9px 12px;border-radius:10px;border:1.5px solid var(--line);
+  background:var(--card);color:var(--ink);font-size:13.5px;line-height:1.45;font-weight:500;cursor:pointer}
+.mc-opt.sel{border-color:var(--p-text);background:var(--surf);color:var(--p-text)}
+.mc-opt.right{border-color:var(--ok);background:rgba(31,157,87,.14);color:var(--ok)}
+.mc-opt.wrong{border-color:var(--bad);background:rgba(214,69,59,.14);color:var(--bad)}
+.mc-opt:disabled{cursor:default}
+
+/* ЕГЭ-чтение: вставка частей — инлайновые пропуски в тексте */
+.rd-gaptext{line-height:2.1}
+.rd-gapwrap{display:inline-flex;align-items:center;gap:3px;margin:0 2px;vertical-align:middle}
+.rd-gaplabel{display:inline-flex;align-items:center;justify-content:center;min-width:18px;height:18px;
+  border-radius:6px;background:var(--grad-reading);color:#fff;font-size:11px;font-weight:800}
+.rd-gapsel{padding:2px 6px;border-radius:8px;border:1.5px solid var(--p-text);background:var(--card);
+  color:var(--ink);font-size:13px;font-weight:700;cursor:pointer}
+.rd-gapsel.right{border-color:var(--ok);color:var(--ok)} .rd-gapsel.wrong{border-color:var(--bad);color:var(--bad)}
+.rd-gapv{font-size:12px;font-weight:800} .rd-gapv.ok{color:var(--ok)} .rd-gapv.bad{color:var(--bad)}
+.rd-partswrap{margin-top:16px}
+
 .goal-btn{width:100%;border:none;cursor:pointer;text-align:left;font:inherit;gap:14px}
 /* карточка лексики в прогрессе */
 .vocab-prog-card{width:100%;border:none;cursor:pointer;font:inherit;text-align:left;
@@ -590,6 +610,8 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
   display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px}
 .fc-front{font-size:24px;font-weight:800;color:var(--ink);line-height:1.3}
 .fc-back .fc-ru{font-size:21px;font-weight:800;color:var(--p-text);margin-bottom:10px}
+.fc-back .fc-def{font-size:18px;font-weight:700;color:var(--p-text);line-height:1.4;margin-bottom:8px}
+.fc-back .fc-ru-sub{font-size:14px;font-weight:600;color:var(--muted);margin-bottom:10px}
 .fc-back .fc-ex{font-size:14.5px;line-height:1.5;color:var(--muted);font-style:italic}
 .fc-back .fc-theme{font-size:12px;color:var(--faint);margin-top:10px}
 .fc-hint{font-size:12.5px;color:var(--faint)}

@@ -34,7 +34,7 @@ export async function renderVocab(container, cfg) {
       ]),
     ]);
   }
-  function themeRu(key) { const th = data.themes.find((x) => x.key === key); return th ? th.ru : key; }
+  function themeRu(key) { const th = data.themes.find((x) => x.key === key); return th ? (th.name || th.ru) : key; }
 
   // --- Меню: дневная норма + выбор активной темы + прогресс по темам ---
   function menuScreen() {
@@ -70,7 +70,7 @@ export async function renderVocab(container, cfg) {
       const isActive = th.key === active;
       list.appendChild(el('button', { class: 'topic-item' + (isActive ? ' vc-on' : ''), onclick: () => { setActiveTheme(th.key); menuScreen(); } }, [
         el('div', { style: { flex: '1', minWidth: '0' } }, [
-          el('div', { class: 'ti-name' }, [isActive ? '✓ ' : '', th.ru]),
+          el('div', { class: 'ti-name' }, [isActive ? '✓ ' : '', th.name || th.ru]),
           el('div', { class: 'ti-count', text: v.learnedOf(s.learned, s.total) }),
         ]),
         el('div', { class: 'ti-right' }, [
@@ -108,10 +108,11 @@ export async function renderVocab(container, cfg) {
 
       const front = el('div', { class: 'fc-front', text: it.en });
       const back = el('div', { class: 'fc-back', style: { display: 'none' } }, [
-        el('div', { class: 'fc-ru', text: it.ru }),
+        it.def ? el('div', { class: 'fc-def', text: it.def }) : null,
+        el('div', { class: it.def ? 'fc-ru fc-ru-sub' : 'fc-ru', text: it.ru }),
         it.ex ? el('div', { class: 'fc-ex', text: it.ex }) : null,
         el('div', { class: 'fc-theme', text: it.themeRu || '' }),
-      ]);
+      ].filter(Boolean));
       const hint = el('div', { class: 'fc-hint', text: v.tapToFlip });
       const cardBox = el('div', { class: 'flashcard', onclick: flip }, [front, back, hint]);
 

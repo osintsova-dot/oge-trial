@@ -40,7 +40,7 @@ export function dailyProgress() {
 function allItems(data) {
   const out = [];
   for (const th of data.themes) for (const g of th.groups) for (const it of g.items)
-    out.push({ ...it, theme: th.key, themeRu: th.ru });
+    out.push({ ...it, theme: th.key, themeRu: th.name || th.ru });
   return out;
 }
 function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
@@ -60,7 +60,7 @@ export function newItems(data, theme) {
   const th = data.themes.find((x) => x.key === theme);
   if (!th) return [];
   const items = [];
-  for (const g of th.groups) for (const it of g.items) if (!s.srs[it.id]) items.push({ ...it, theme: th.key, themeRu: th.ru });
+  for (const g of th.groups) for (const it of g.items) if (!s.srs[it.id]) items.push({ ...it, theme: th.key, themeRu: th.name || th.ru });
   return items;
 }
 // Сессия = due (вперемешку) + добор новыми из активной темы до n

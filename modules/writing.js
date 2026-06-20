@@ -206,7 +206,7 @@ Student's writing (${wcN} words):
 
 Return JSON exactly like this:
 {"totalScore":<sum 0-${task.max}>,"criteria":[${critJson}],"verdict":"<1-2 sentences in English, encouraging>","errors":[{"quote":"<exact phrase from the text>","what":"<what is wrong, in English>","fix":"<correct version>"}],"corrected":"<the full corrected text>"}
-Score every criterion within its max. totalScore = sum of criteria scores. Give 2-5 concrete errors if there are any.`;
+Score every criterion within its max. totalScore = sum of criteria scores. Give 2-5 concrete errors if there are any. IMPORTANT (official rule): if К1 (solving the communicative task) is 0, the whole task scores 0 — set every other criterion to 0 and totalScore = 0.`;
     } else {
       sys = 'Ты строгий экзаменатор ОГЭ по английскому. Оцениваешь личное письмо (задание 35) строго по официальным критериям ФИПИ. Возвращаешь ТОЛЬКО валидный JSON, без markdown. Комментарии — по-русски.';
       user =
@@ -218,7 +218,7 @@ Score every criterion within its max. totalScore = sum of criteria scores. Give 
 
 Верни JSON строго так:
 {"totalScore":<сумма 0-${task.max}>,"criteria":[${critJson}],"verdict":"<1-2 предложения по-русски>","errors":[{"quote":"<точная фраза>","what":"<что не так>","fix":"<как правильно>"}],"corrected":"<полный исправленный текст>"}
-К1 — решение задачи (полные ответы, объём, вежливость, стиль). К2 — организация, абзацы, связки, обращение/подпись. К3 — лексика+грамматика. К4 — орфография и пунктуация. В ОГЭ встречные вопросы НЕ требуются. totalScore = сумма по критериям.`;
+К1 — решение задачи (полные ответы, объём, вежливость, стиль). К2 — организация, абзацы, связки, обращение/подпись. К3 — лексика+грамматика. К4 — орфография и пунктуация. В ОГЭ встречные вопросы НЕ требуются. totalScore = сумма по критериям. ВАЖНО (правило ФИПИ): если К1=0 (коммуникативная задача не решена), то ВСЁ задание оценивается в 0 — остальные критерии тоже выставь 0 и totalScore=0.`;
     }
 
     const r = await fetch(WORKER, {
