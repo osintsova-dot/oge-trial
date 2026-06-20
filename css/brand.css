@@ -204,17 +204,23 @@ img.sic.bn-ic{width:30px;height:30px}
 .tile.grammar{background:var(--grad-grammar);box-shadow:0 6px 16px rgba(108,63,197,.3)}
 .tile.wordform{background:var(--grad-wordform);box-shadow:0 6px 16px rgba(200,75,140,.3)}
 .tile.reading{background:var(--grad-reading);box-shadow:0 6px 16px rgba(91,116,230,.3)}
-.tile.vocab{background:var(--grad-vocab);box-shadow:0 6px 16px rgba(22,179,166,.3)}
+.tile.vocab{background:var(--grad-vocab);box-shadow:0 6px 16px rgba(22,179,166,.3);grid-column:1 / -1}
+/* Словарь во всю ширину — горизонтальный баннер: текст слева, картинка справа */
+.tile.vocab{display:grid;grid-template-columns:1fr auto;column-gap:14px;align-items:center;
+  grid-template-areas:"name icon" "meta icon"}
+.tile.vocab .t-top{grid-area:icon;align-self:center}
+.tile.vocab .t-top .tile-img{height:64px;max-width:none;width:auto}
+.tile.vocab .t-name{grid-area:name;margin-top:0;font-size:19px}
+.tile.vocab .t-meta{grid-area:meta}
 .tile.speaking{background:var(--grad-speaking);box-shadow:0 6px 16px rgba(224,85,107,.3)}
 .tile.writing{background:var(--grad-writing);box-shadow:0 6px 16px rgba(245,160,40,.3);color:#1A1A2E}
-.tile.locked{background:var(--surf);color:var(--muted);box-shadow:none;cursor:default;grid-column:1 / -1;min-height:auto}
+.tile.locked{background:var(--surf);color:var(--muted);box-shadow:none;cursor:default}
 .tile .t-top{display:flex;align-items:flex-start;justify-content:space-between}
 .tile .t-icon{font-size:26px;line-height:1}
 .tile .t-pct{font-size:12px;font-weight:800}
 .tile .t-soon{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;
   color:var(--muted);background:rgba(0,0,0,.12);padding:3px 8px;border-radius:8px}
 .tile .t-name{font-size:16px;font-weight:800;margin-top:16px}
-.tile.locked .t-name{margin-top:0}
 .tile .t-meta{font-size:11.5px;margin-top:2px;opacity:.85}
 .tile.writing .t-meta{color:rgba(26,26,46,.62)}
 

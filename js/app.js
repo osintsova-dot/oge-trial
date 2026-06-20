@@ -150,12 +150,14 @@ function renderHome() {
       el('div', { class: 't-meta', text: t.sectionMeta[sec.id] || '' }),
     ]);
   };
-  const tiles = el('div', { class: 'tiles' }, EXAM.sections.map(tile));
-  const lockedTile = EXAM.soonTile ? el('div', { class: 'tile locked' }, [
+  const tileEls = EXAM.sections.map(tile);
+  // «Скоро» (Аудирование) — обычной плашкой в той же сетке, последней
+  if (EXAM.soonTile) tileEls.push(el('div', { class: 'tile locked' }, [
     el('div', { class: 't-top' }, [el('div', { class: 't-icon' }, [iconImg('ic-locked', '🔒', 'tile-img')]), el('div', { class: 't-soon', text: t.soon })]),
     el('div', { class: 't-name', text: t.soonTitle }),
     el('div', { class: 't-meta', text: t.soonMeta }),
-  ]) : null;
+  ]));
+  const tiles = el('div', { class: 'tiles' }, tileEls);
 
   const shortcuts = el('div', { class: 'shortcuts' }, [
     el('button', { class: 'shortcut', onclick: () => { location.hash = '#/progress'; } },
@@ -169,7 +171,7 @@ function renderHome() {
     el('div', { class: 'wrap view' }, [
       twRow, goal, pack,
       el('div', { class: 'sec-title', text: t.sectionsTitle }),
-      tiles, lockedTile,
+      tiles,
       el('div', { style: { height: '11px' } }),
       shortcuts,
     ]),
