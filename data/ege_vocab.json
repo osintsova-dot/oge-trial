@@ -11501,6 +11501,1594 @@
      ]
     }
    ]
+  },
+  {
+   "key": "appearance",
+   "name": "Appearance & Character",
+   "ru": "Внешность и характер",
+   "groups": [
+    {
+     "subtopic": "Physical Appearance and Build",
+     "items": [
+      {
+       "id": "app000",
+       "en": "to be of medium height",
+       "ru": "быть среднего роста",
+       "ex": "My brother is of medium height but looks taller in photos.",
+       "def": "Not tall and not short in height."
+      },
+      {
+       "id": "app001",
+       "en": "to be well-built",
+       "ru": "быть хорошо сложённым",
+       "ex": "He is well-built because he trains at the gym every day.",
+       "def": "Having a strong, muscular body."
+      },
+      {
+       "id": "app002",
+       "en": "to be slim",
+       "ru": "быть стройным",
+       "ex": "She stays slim by exercising and eating sensibly.",
+       "def": "Thin in an attractive way."
+      },
+      {
+       "id": "app003",
+       "en": "to be in one's late teens",
+       "ru": "быть на исходе подросткового возраста",
+       "ex": "The suspect appeared to be in his late teens.",
+       "def": "Being about 16 to 19 years old."
+      },
+      {
+       "id": "app004",
+       "en": "to have a fair complexion",
+       "ru": "иметь светлую кожу",
+       "ex": "People with a fair complexion should avoid strong sunlight.",
+       "def": "Having light-coloured skin."
+      },
+      {
+       "id": "app005",
+       "en": "to bear a resemblance to",
+       "ru": "быть похожим на",
+       "ex": "She bears a striking resemblance to her grandmother.",
+       "def": "To look like someone else."
+      },
+      {
+       "id": "app006",
+       "en": "to be of average build",
+       "ru": "быть средней комплекции",
+       "ex": "The witness described a man of average build and height.",
+       "def": "Not very thin or very heavy."
+      },
+      {
+       "id": "app007",
+       "en": "good-looking",
+       "ru": "привлекательный",
+       "ex": "He is undeniably good-looking, yet rather arrogant.",
+       "def": "Attractive; nice to look at."
+      }
+     ]
+    },
+    {
+     "subtopic": "Facial Features and Style",
+     "items": [
+      {
+       "id": "app008",
+       "en": "to have delicate features",
+       "ru": "иметь тонкие черты лица",
+       "ex": "Her delicate features make her photographs look elegant.",
+       "def": "Having small, fine, and pretty facial features."
+      },
+      {
+       "id": "app009",
+       "en": "to have a warm smile",
+       "ru": "иметь тёплую улыбку",
+       "ex": "A warm smile instantly makes a person seem approachable.",
+       "def": "Showing friendliness and kindness with a smile."
+      },
+      {
+       "id": "app010",
+       "en": "to be well-groomed",
+       "ru": "быть ухоженным",
+       "ex": "Being well-groomed creates a good first impression at interviews.",
+       "def": "Having a clean and tidy appearance."
+      },
+      {
+       "id": "app011",
+       "en": "to have a sharp sense of style",
+       "ru": "иметь тонкий вкус в одежде",
+       "ex": "She has a sharp sense of style that everyone admires.",
+       "def": "Choosing clothes that are very fashionable."
+      },
+      {
+       "id": "app012",
+       "en": "to wear something with confidence",
+       "ru": "носить что-то уверенно",
+       "ex": "Even simple clothes look great if you wear them with confidence.",
+       "def": "To wear something in a way that shows you feel good about it."
+      },
+      {
+       "id": "app013",
+       "en": "to look one's best",
+       "ru": "выглядеть наилучшим образом",
+       "ex": "I always try to look my best on important occasions.",
+       "def": "To look as attractive or well-dressed as possible."
+      },
+      {
+       "id": "app014",
+       "en": "to take after somebody",
+       "ru": "быть похожим на (родственника)",
+       "ex": "I take after my father in both looks and temperament.",
+       "def": "To look or behave like an older family member."
+      },
+      {
+       "id": "app015",
+       "en": "striking",
+       "ru": "эффектный, броский",
+       "ex": "Her striking appearance turns heads wherever she goes.",
+       "def": "Very noticeable because it is attractive or unusual."
+      }
+     ]
+    },
+    {
+     "subtopic": "Positive Personality Traits",
+     "items": [
+      {
+       "id": "app016",
+       "en": "to be easy-going",
+       "ru": "быть лёгким в общении",
+       "ex": "My best friend is easy-going and never makes a fuss.",
+       "def": "To be relaxed and not easily upset or worried."
+      },
+      {
+       "id": "app017",
+       "en": "to be hard-working",
+       "ru": "быть трудолюбивым",
+       "ex": "Hard-working students usually achieve impressive results.",
+       "def": "To work with a lot of effort and care."
+      },
+      {
+       "id": "app018",
+       "en": "to be open-minded",
+       "ru": "быть непредвзятым",
+       "ex": "Open-minded people accept ideas different from their own.",
+       "def": "To be willing to consider new ideas and opinions."
+      },
+      {
+       "id": "app019",
+       "en": "to be down-to-earth",
+       "ru": "быть приземлённым, реалистичным",
+       "ex": "Despite his fame, he remains down-to-earth and modest.",
+       "def": "To be practical and not have silly or unrealistic ideas."
+      },
+      {
+       "id": "app020",
+       "en": "to have a good sense of humour",
+       "ru": "иметь хорошее чувство юмора",
+       "ex": "A good sense of humour helps you cope with stress.",
+       "def": "To be able to laugh and make others laugh often."
+      },
+      {
+       "id": "app021",
+       "en": "to be reliable",
+       "ru": "быть надёжным",
+       "ex": "You can always count on a reliable friend in trouble.",
+       "def": "To be someone that others can trust and depend on."
+      },
+      {
+       "id": "app022",
+       "en": "to be self-confident",
+       "ru": "быть уверенным в себе",
+       "ex": "Self-confident speakers usually impress their audience.",
+       "def": "To be sure of your own abilities and value."
+      },
+      {
+       "id": "app023",
+       "en": "to be supportive",
+       "ru": "поддерживать (быть поддерживающим)",
+       "ex": "Supportive parents encourage children to follow their dreams.",
+       "def": "To give help and encouragement to other people."
+      }
+     ]
+    },
+    {
+     "subtopic": "Negative Traits and Temperament",
+     "items": [
+      {
+       "id": "app024",
+       "en": "to be stubborn",
+       "ru": "быть упрямым",
+       "ex": "He is so stubborn that he never admits he is wrong.",
+       "def": "To refuse to change your mind or actions."
+      },
+      {
+       "id": "app025",
+       "en": "to be bad-tempered",
+       "ru": "быть вспыльчивым",
+       "ex": "Bad-tempered colleagues make the workplace stressful.",
+       "def": "To easily become angry or annoyed."
+      },
+      {
+       "id": "app026",
+       "en": "to be selfish",
+       "ru": "быть эгоистичным",
+       "ex": "Selfish people rarely consider how others feel.",
+       "def": "To care only about yourself, not others."
+      },
+      {
+       "id": "app027",
+       "en": "to be arrogant",
+       "ru": "быть высокомерным",
+       "ex": "Nobody likes arrogant people who look down on others.",
+       "def": "To think you are better than others."
+      },
+      {
+       "id": "app028",
+       "en": "to be moody",
+       "ru": "быть в переменчивом настроении",
+       "ex": "Teenagers are often moody due to hormonal changes.",
+       "def": "To have feelings that change quickly and often."
+      },
+      {
+       "id": "app029",
+       "en": "to be narrow-minded",
+       "ru": "быть ограниченным",
+       "ex": "Narrow-minded attitudes prevent people from growing.",
+       "def": "To not accept new or different ideas."
+      },
+      {
+       "id": "app030",
+       "en": "to lose one's temper",
+       "ru": "выйти из себя",
+       "ex": "He tends to lose his temper over trivial matters.",
+       "def": "To suddenly become very angry."
+      },
+      {
+       "id": "app031",
+       "en": "to be set in one's ways",
+       "ru": "быть консервативным в привычках",
+       "ex": "Older relatives are sometimes too set in their ways.",
+       "def": "To have fixed habits that are hard to change."
+      }
+     ]
+    },
+    {
+     "subtopic": "Making an Impression",
+     "items": [
+      {
+       "id": "app032",
+       "en": "to come across as",
+       "ru": "производить впечатление (казаться)",
+       "ex": "She comes across as confident during job interviews.",
+       "def": "To seem a particular way to other people."
+      },
+      {
+       "id": "app033",
+       "en": "to make a good first impression",
+       "ru": "произвести хорошее первое впечатление",
+       "ex": "You never get a second chance to make a first impression.",
+       "def": "To create a positive opinion when you first meet."
+      },
+      {
+       "id": "app034",
+       "en": "to stand out from the crowd",
+       "ru": "выделяться из толпы",
+       "ex": "Original ideas help candidates stand out from the crowd.",
+       "def": "To be noticeably different from other people."
+      },
+      {
+       "id": "app035",
+       "en": "to have a magnetic personality",
+       "ru": "обладать притягательной личностью",
+       "ex": "Leaders with a magnetic personality inspire those around them.",
+       "def": "To attract and interest people easily."
+      },
+      {
+       "id": "app036",
+       "en": "to win somebody over",
+       "ru": "расположить к себе",
+       "ex": "His honesty quickly won the interviewer over.",
+       "def": "to make someone like you or agree with you"
+      },
+      {
+       "id": "app037",
+       "en": "to put somebody at ease",
+       "ru": "успокоить, расположить кого-то",
+       "ex": "A friendly host puts every guest at ease.",
+       "def": "to make someone feel relaxed and comfortable"
+      },
+      {
+       "id": "app038",
+       "en": "to leave a lasting impression",
+       "ru": "оставить неизгладимое впечатление",
+       "ex": "Her speech left a lasting impression on the audience.",
+       "def": "to be remembered for a long time"
+      },
+      {
+       "id": "app039",
+       "en": "body language",
+       "ru": "язык тела",
+       "ex": "Confident body language often matters more than words.",
+       "def": "communication through movements and expressions"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "shopping",
+   "name": "Shopping & Fashion",
+   "ru": "Покупки и мода",
+   "groups": [
+    {
+     "subtopic": "Shops and Shopping Habits",
+     "items": [
+      {
+       "id": "sho000",
+       "en": "to go on a shopping spree",
+       "ru": "устроить шопинг",
+       "ex": "Whenever I feel stressed, I go on a shopping spree to cheer myself up.",
+       "def": "to go shopping and buy a lot of things"
+      },
+      {
+       "id": "sho001",
+       "en": "to be a shopaholic",
+       "ru": "быть шопоголиком",
+       "ex": "My sister is a real shopaholic who can't resist a sale.",
+       "def": "to be a person who loves shopping too much"
+      },
+      {
+       "id": "sho002",
+       "en": "to browse the shelves",
+       "ru": "рассматривать товары на полках",
+       "ex": "I love browsing the shelves even when I don't intend to buy anything.",
+       "def": "to look at items on shelves without buying"
+      },
+      {
+       "id": "sho003",
+       "en": "a shopping centre",
+       "ru": "торговый центр",
+       "ex": "The new shopping centre offers everything under one roof.",
+       "def": "a large building with many shops inside"
+      },
+      {
+       "id": "sho004",
+       "en": "to be spoilt for choice",
+       "ru": "иметь огромный выбор",
+       "ex": "In big malls you're spoilt for choice, which makes deciding harder.",
+       "def": "to have so many options that it's hard to choose"
+      },
+      {
+       "id": "sho005",
+       "en": "window shopping",
+       "ru": "разглядывание витрин",
+       "ex": "Window shopping costs nothing yet gives me real pleasure.",
+       "def": "looking at shop windows without buying anything"
+      },
+      {
+       "id": "sho006",
+       "en": "to queue at the checkout",
+       "ru": "стоять в очереди на кассе",
+       "ex": "Nobody enjoys queuing at the checkout during the holiday rush.",
+       "def": "to wait in a line to pay for items"
+      },
+      {
+       "id": "sho007",
+       "en": "a loyalty card",
+       "ru": "карта постоянного клиента",
+       "ex": "A loyalty card lets you collect points and save money over time.",
+       "def": "a card that gives regular customers special benefits"
+      }
+     ]
+    },
+    {
+     "subtopic": "Money and Budgeting",
+     "items": [
+      {
+       "id": "sho008",
+       "en": "to splurge on",
+       "ru": "потратиться на",
+       "ex": "I rarely splurge on luxury items, but this jacket was worth it.",
+       "def": "To spend a lot of money on something special."
+      },
+      {
+       "id": "sho009",
+       "en": "to be on a tight budget",
+       "ru": "иметь ограниченный бюджет",
+       "ex": "As a student, I'm on a tight budget and watch every penny.",
+       "def": "To have only a small amount of money to spend."
+      },
+      {
+       "id": "sho010",
+       "en": "pocket money",
+       "ru": "карманные деньги",
+       "ex": "Managing pocket money teaches teenagers to be financially responsible.",
+       "def": "A small amount of money given to children weekly."
+      },
+      {
+       "id": "sho011",
+       "en": "to make ends meet",
+       "ru": "сводить концы с концами",
+       "ex": "Many families struggle to make ends meet during a crisis.",
+       "def": "To have just enough money for basic needs."
+      },
+      {
+       "id": "sho012",
+       "en": "a bargain",
+       "ru": "выгодная покупка",
+       "ex": "I picked up a real bargain in the end-of-season sale.",
+       "def": "Something bought for less than its usual price."
+      },
+      {
+       "id": "sho013",
+       "en": "to be good value for money",
+       "ru": "стоить своих денег",
+       "ex": "This phone is good value for money compared to its rivals.",
+       "def": "To be worth the price you pay for it."
+      },
+      {
+       "id": "sho014",
+       "en": "to live beyond one's means",
+       "ru": "жить не по средствам",
+       "ex": "Spending on credit cards can make people live beyond their means.",
+       "def": "To spend more money than you can afford."
+      },
+      {
+       "id": "sho015",
+       "en": "to save up for",
+       "ru": "копить на",
+       "ex": "I'm saving up for a laptop instead of wasting money on snacks.",
+       "def": "To keep money for a future purchase."
+      },
+      {
+       "id": "sho016",
+       "en": "an impulse buy",
+       "ru": "спонтанная покупка",
+       "ex": "Supermarkets place sweets near tills to encourage impulse buys.",
+       "def": "A purchase made suddenly without planning."
+      }
+     ]
+    },
+    {
+     "subtopic": "Clothes and Fashion",
+     "items": [
+      {
+       "id": "sho017",
+       "en": "to be in fashion",
+       "ru": "быть в моде",
+       "ex": "Oversized jackets are in fashion among teenagers this year.",
+       "def": "To be popular or stylish at the present time."
+      },
+      {
+       "id": "sho018",
+       "en": "to be out of date",
+       "ru": "выйти из моды",
+       "ex": "Those trainers are out of date, so hardly anyone wears them now.",
+       "def": "To be old-fashioned and no longer popular."
+      },
+      {
+       "id": "sho019",
+       "en": "to follow the latest trends",
+       "ru": "следить за последними тенденциями",
+       "ex": "Many teens feel pressured to follow the latest trends online.",
+       "def": "To try to wear or use what is newest."
+      },
+      {
+       "id": "sho020",
+       "en": "a fashion victim",
+       "ru": "жертва моды",
+       "ex": "A fashion victim buys clothes simply because everyone else does.",
+       "def": "A person who always follows the latest fashion, even if it looks bad."
+      },
+      {
+       "id": "sho021",
+       "en": "to dress to impress",
+       "ru": "одеваться, чтобы произвести впечатление",
+       "ex": "For a job interview, you should dress to impress.",
+       "def": "To wear nice clothes to make others think well of you."
+      },
+      {
+       "id": "sho022",
+       "en": "to suit somebody",
+       "ru": "идти кому-либо",
+       "ex": "That colour really suits you and brings out your eyes.",
+       "def": "To look good on someone or be right for them."
+      },
+      {
+       "id": "sho023",
+       "en": "designer clothes",
+       "ru": "дизайнерская одежда",
+       "ex": "Not everyone can afford designer clothes on a modest salary.",
+       "def": "Expensive clothes made by famous fashion brands."
+      },
+      {
+       "id": "sho024",
+       "en": "hand-me-downs",
+       "ru": "одежда, доставшаяся по наследству",
+       "ex": "I grew up wearing my older brother's hand-me-downs.",
+       "def": "Clothes that are given to a younger person after someone grows out of them."
+      },
+      {
+       "id": "sho025",
+       "en": "to mix and match",
+       "ru": "комбинировать вещи",
+       "ex": "You can mix and match basic pieces to create new outfits.",
+       "def": "To wear different pieces of clothing together to create a new look."
+      }
+     ]
+    },
+    {
+     "subtopic": "Online and Consumer Society",
+     "items": [
+      {
+       "id": "sho026",
+       "en": "to shop online",
+       "ru": "покупать в интернете",
+       "ex": "More and more people prefer to shop online for convenience.",
+       "def": "To buy things using a website or app on the internet."
+      },
+      {
+       "id": "sho027",
+       "en": "to add to the cart",
+       "ru": "добавить в корзину",
+       "ex": "I often add items to the cart but never actually pay for them.",
+       "def": "To choose an item and put it in your online shopping list."
+      },
+      {
+       "id": "sho028",
+       "en": "free delivery",
+       "ru": "бесплатная доставка",
+       "ex": "Free delivery is a major reason customers choose certain shops.",
+       "def": "When you pay nothing for the shipping of your order."
+      },
+      {
+       "id": "sho029",
+       "en": "to return a faulty item",
+       "ru": "вернуть бракованный товар",
+       "ex": "If the goods arrive damaged, you can return the faulty item.",
+       "def": "To send back a product that has a problem or is broken."
+      },
+      {
+       "id": "sho030",
+       "en": "a consumer society",
+       "ru": "общество потребления",
+       "ex": "In a consumer society, people are judged by what they own.",
+       "def": "A society where people buy and own a lot of things."
+      },
+      {
+       "id": "sho031",
+       "en": "to fall for advertising",
+       "ru": "поддаваться рекламе",
+       "ex": "Teenagers easily fall for advertising on social media.",
+       "def": "To believe what ads say and buy things because of them."
+      },
+      {
+       "id": "sho032",
+       "en": "to compare prices",
+       "ru": "сравнивать цены",
+       "ex": "It's wise to compare prices before making a big purchase.",
+       "def": "To look at the cost of different items before buying."
+      },
+      {
+       "id": "sho033",
+       "en": "a refund",
+       "ru": "возврат денег",
+       "ex": "The shop gave me a full refund without asking questions.",
+       "def": "Money given back after you return a purchase."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "business",
+   "name": "Business Communication",
+   "ru": "Деловое общение",
+   "groups": [
+    {
+     "subtopic": "Business Etiquette",
+     "items": [
+      {
+       "id": "bus000",
+       "en": "to make a good impression",
+       "ru": "произвести хорошее впечатление",
+       "ex": "Punctuality helps you make a good impression on clients.",
+       "def": "To create a positive opinion of yourself for others."
+      },
+      {
+       "id": "bus001",
+       "en": "to be punctual",
+       "ru": "быть пунктуальным",
+       "ex": "Being punctual shows respect for other people's time.",
+       "def": "To arrive at the correct time, not early or late."
+      },
+      {
+       "id": "bus002",
+       "en": "to dress appropriately",
+       "ru": "одеваться соответствующе",
+       "ex": "You should dress appropriately for a formal business meeting.",
+       "def": "To wear suitable clothes for a specific situation or place."
+      },
+      {
+       "id": "bus003",
+       "en": "to exchange business cards",
+       "ru": "обмениваться визитками",
+       "ex": "It is customary to exchange business cards after introductions.",
+       "def": "To give and receive small cards with work details."
+      },
+      {
+       "id": "bus004",
+       "en": "to address somebody formally",
+       "ru": "обращаться формально",
+       "ex": "In emails, address senior colleagues formally and politely.",
+       "def": "To use proper titles and last names when speaking to someone."
+      },
+      {
+       "id": "bus005",
+       "en": "to maintain eye contact",
+       "ru": "поддерживать зрительный контакт",
+       "ex": "Maintaining eye contact makes you appear trustworthy.",
+       "def": "To keep looking at a person's eyes while talking."
+      },
+      {
+       "id": "bus006",
+       "en": "to break the ice",
+       "ru": "растопить лёд (начать общение)",
+       "ex": "A short joke can break the ice before a tense meeting.",
+       "def": "To start a conversation and make people feel comfortable."
+      },
+      {
+       "id": "bus007",
+       "en": "professional conduct",
+       "ru": "профессиональное поведение",
+       "ex": "Professional conduct is expected from everyone in the office.",
+       "def": "Behaviour that is correct and expected in a work setting."
+      }
+     ]
+    },
+    {
+     "subtopic": "Business Correspondence",
+     "items": [
+      {
+       "id": "bus008",
+       "en": "to drop somebody a line",
+       "ru": "написать кому-то пару строк",
+       "ex": "Drop me a line once you have reviewed the proposal.",
+       "def": "To send a short message or note to someone."
+      },
+      {
+       "id": "bus009",
+       "en": "to attach a document",
+       "ru": "прикрепить документ",
+       "ex": "Please find attached the report you requested yesterday.",
+       "def": "To add a computer file to an email or message."
+      },
+      {
+       "id": "bus010",
+       "en": "to follow up on",
+       "ru": "напомнить, продолжить (по вопросу)",
+       "ex": "I'm writing to follow up on our previous conversation.",
+       "def": "to take further action about something discussed."
+      },
+      {
+       "id": "bus011",
+       "en": "to look forward to hearing from you",
+       "ru": "ждать вашего ответа",
+       "ex": "I look forward to hearing from you at your earliest convenience.",
+       "def": "to be excited to receive someone's reply soon."
+      },
+      {
+       "id": "bus012",
+       "en": "to get back to somebody",
+       "ru": "ответить кому-то позже",
+       "ex": "I'll get back to you as soon as I have an answer.",
+       "def": "to reply to someone at a later time."
+      },
+      {
+       "id": "bus013",
+       "en": "to keep somebody informed",
+       "ru": "держать в курсе",
+       "ex": "Please keep me informed about any changes to the schedule.",
+       "def": "to continue giving someone new information."
+      },
+      {
+       "id": "bus014",
+       "en": "to apologise for the inconvenience",
+       "ru": "извиниться за неудобства",
+       "ex": "We apologise for any inconvenience this delay may cause.",
+       "def": "to say sorry for causing trouble or problems."
+      },
+      {
+       "id": "bus015",
+       "en": "to clarify a point",
+       "ru": "уточнить момент",
+       "ex": "Could you clarify this point before we proceed?",
+       "def": "to make a specific detail easier to understand."
+      }
+     ]
+    },
+    {
+     "subtopic": "Meetings and Negotiations",
+     "items": [
+      {
+       "id": "bus016",
+       "en": "to chair a meeting",
+       "ru": "вести собрание",
+       "ex": "The manager will chair the meeting and set the agenda.",
+       "def": "to be the leader or controller of a meeting."
+      },
+      {
+       "id": "bus017",
+       "en": "to set the agenda",
+       "ru": "составить повестку дня",
+       "ex": "We should set the agenda before everyone arrives.",
+       "def": "to decide what topics to discuss in a meeting."
+      },
+      {
+       "id": "bus018",
+       "en": "to reach a mutual agreement",
+       "ru": "достичь взаимного соглашения",
+       "ex": "Both sides eventually reached a mutual agreement.",
+       "def": "to both agree on something after discussion."
+      },
+      {
+       "id": "bus019",
+       "en": "to come to a compromise",
+       "ru": "прийти к компромиссу",
+       "ex": "After long talks, they finally came to a compromise.",
+       "def": "to each give up something to reach an agreement."
+      },
+      {
+       "id": "bus020",
+       "en": "to bring up an issue",
+       "ru": "поднять вопрос",
+       "ex": "She brought up an important issue during the discussion.",
+       "def": "to start talking about a problem or subject."
+      },
+      {
+       "id": "bus021",
+       "en": "to weigh the pros and cons",
+       "ru": "взвесить все за и против",
+       "ex": "Let's weigh the pros and cons before making a decision.",
+       "def": "to consider the good and bad sides of something."
+      },
+      {
+       "id": "bus022",
+       "en": "to meet a deadline",
+       "ru": "уложиться в срок",
+       "ex": "The team worked overtime to meet the tight deadline.",
+       "def": "To finish work by the required time."
+      },
+      {
+       "id": "bus023",
+       "en": "to delegate tasks",
+       "ru": "делегировать задачи",
+       "ex": "A good leader knows how to delegate tasks effectively.",
+       "def": "To give some of your work to other people."
+      }
+     ]
+    },
+    {
+     "subtopic": "Presentations and Public Speaking",
+     "items": [
+      {
+       "id": "bus024",
+       "en": "to give a presentation",
+       "ru": "делать презентацию",
+       "ex": "I felt nervous before giving my first presentation.",
+       "def": "To show and explain information to a group."
+      },
+      {
+       "id": "bus025",
+       "en": "to address an audience",
+       "ru": "обращаться к аудитории",
+       "ex": "Confident speakers address the audience without notes.",
+       "def": "To speak directly to people who are listening."
+      },
+      {
+       "id": "bus026",
+       "en": "to get one's point across",
+       "ru": "донести свою мысль",
+       "ex": "Clear examples help you get your point across effectively.",
+       "def": "To make others understand your idea clearly."
+      },
+      {
+       "id": "bus027",
+       "en": "to engage the audience",
+       "ru": "увлечь аудиторию",
+       "ex": "Asking questions is a great way to engage the audience.",
+       "def": "To make the listeners interested and involved."
+      },
+      {
+       "id": "bus028",
+       "en": "to sum up",
+       "ru": "подвести итог",
+       "ex": "To sum up, our results clearly support this idea.",
+       "def": "To give the main ideas at the end."
+      },
+      {
+       "id": "bus029",
+       "en": "to speak off the cuff",
+       "ru": "говорить без подготовки",
+       "ex": "Experienced presenters can speak off the cuff easily.",
+       "def": "To speak without any preparation before."
+      },
+      {
+       "id": "bus030",
+       "en": "to handle questions",
+       "ru": "отвечать на вопросы",
+       "ex": "She handled difficult questions calmly and confidently.",
+       "def": "To answer people's questions after a talk."
+      },
+      {
+       "id": "bus031",
+       "en": "visual aids",
+       "ru": "наглядные материалы",
+       "ex": "Visual aids make a presentation easier to follow.",
+       "def": "Things like slides or pictures to help explain."
+      }
+     ]
+    },
+    {
+     "subtopic": "Professional Communication",
+     "items": [
+      {
+       "id": "bus032",
+       "en": "to network with people",
+       "ru": "устанавливать деловые связи",
+       "ex": "Conferences are great places to network with professionals.",
+       "def": "To meet and talk with people for work."
+      },
+      {
+       "id": "bus033",
+       "en": "to give constructive feedback",
+       "ru": "давать конструктивную обратную связь",
+       "ex": "Good managers give constructive feedback rather than criticism.",
+       "def": "To give helpful opinions to improve someone's work."
+      },
+      {
+       "id": "bus034",
+       "en": "to be on the same page",
+       "ru": "понимать друг друга, быть заодно",
+       "ex": "Let's make sure we're all on the same page first.",
+       "def": "to agree and share the same opinion about something."
+      },
+      {
+       "id": "bus035",
+       "en": "to think outside the box",
+       "ru": "мыслить нестандартно",
+       "ex": "Employers value staff who think outside the box.",
+       "def": "to think of new and creative ideas, not usual ones."
+      },
+      {
+       "id": "bus036",
+       "en": "to take the initiative",
+       "ru": "проявить инициативу",
+       "ex": "She took the initiative and solved the problem herself.",
+       "def": "to be the first to act and start something new."
+      },
+      {
+       "id": "bus037",
+       "en": "to meet someone halfway",
+       "ru": "пойти навстречу",
+       "ex": "To resolve the conflict, both managers met each other halfway.",
+       "def": "to find a solution that both sides can accept."
+      },
+      {
+       "id": "bus038",
+       "en": "to keep things professional",
+       "ru": "сохранять деловой тон",
+       "ex": "Even after an argument, we kept things professional.",
+       "def": "to act in a formal and correct business manner."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "society",
+   "name": "Modern Society",
+   "ru": "Современное общество",
+   "groups": [
+    {
+     "subtopic": "Problems of Modern Civilisation",
+     "items": [
+      {
+       "id": "soc000",
+       "en": "rapid urbanisation",
+       "ru": "стремительная урбанизация",
+       "ex": "Rapid urbanisation has put enormous pressure on housing and public transport.",
+       "def": "very fast growth of cities and towns."
+      },
+      {
+       "id": "soc001",
+       "en": "to tackle social inequality",
+       "ru": "бороться с социальным неравенством",
+       "ex": "Governments must do more to tackle social inequality in big cities.",
+       "def": "to try to reduce differences in wealth and opportunities."
+      },
+      {
+       "id": "soc002",
+       "en": "to bridge the gap between rich and poor",
+       "ru": "сократить разрыв между богатыми и бедными",
+       "ex": "Better education can help bridge the gap between rich and poor.",
+       "def": "to make the difference between rich and poor smaller."
+      },
+      {
+       "id": "soc003",
+       "en": "the pace of modern life",
+       "ru": "темп современной жизни",
+       "ex": "The relentless pace of modern life leaves little time for family.",
+       "def": "how fast everything happens in today's world."
+      },
+      {
+       "id": "soc004",
+       "en": "a throwaway culture",
+       "ru": "культура потребления и выбрасывания",
+       "ex": "Our throwaway culture generates millions of tonnes of waste each year.",
+       "def": "a habit of using things once and then throwing them away."
+      },
+      {
+       "id": "soc005",
+       "en": "mass consumerism",
+       "ru": "массовое потребление",
+       "ex": "Mass consumerism encourages people to buy things they don't really need.",
+       "def": "when many people buy a lot of products, often more than needed."
+      },
+      {
+       "id": "soc006",
+       "en": "to keep up with the latest trends",
+       "ru": "успевать за последними трендами",
+       "ex": "Many teenagers feel pressured to keep up with the latest trends.",
+       "def": "to follow and buy the newest fashions and ideas."
+      },
+      {
+       "id": "soc007",
+       "en": "the negative side of globalisation",
+       "ru": "негативная сторона глобализации",
+       "ex": "One negative side of globalisation is the loss of local traditions.",
+       "def": "The bad or harmful effects of globalisation."
+      },
+      {
+       "id": "soc008",
+       "en": "to widen the social divide",
+       "ru": "углублять социальное расслоение",
+       "ex": "Rising prices tend to widen the social divide even further.",
+       "def": "To make the difference between social groups bigger."
+      },
+      {
+       "id": "soc009",
+       "en": "overcrowded cities",
+       "ru": "перенаселённые города",
+       "ex": "Overcrowded cities often struggle to provide decent living conditions.",
+       "def": "Cities with too many people living in them."
+      }
+     ]
+    },
+    {
+     "subtopic": "Youth in Society & Values",
+     "items": [
+      {
+       "id": "soc010",
+       "en": "the younger generation",
+       "ru": "молодое поколение",
+       "ex": "The younger generation is far more concerned about the environment.",
+       "def": "Young people as a group, especially compared to older people."
+      },
+      {
+       "id": "soc011",
+       "en": "to shape one's worldview",
+       "ru": "формировать мировоззрение",
+       "ex": "School and family largely shape a young person's worldview.",
+       "def": "To form how you see and understand the world."
+      },
+      {
+       "id": "soc012",
+       "en": "peer pressure",
+       "ru": "давление сверстников",
+       "ex": "Peer pressure can push teenagers into making unwise decisions.",
+       "def": "The influence from people of the same age."
+      },
+      {
+       "id": "soc013",
+       "en": "to follow in someone's footsteps",
+       "ru": "идти по чьим-то стопам",
+       "ex": "Many students choose to follow in their parents' footsteps.",
+       "def": "To do the same things another person did before."
+      },
+      {
+       "id": "soc014",
+       "en": "a sense of belonging",
+       "ru": "чувство причастности",
+       "ex": "Joining a club gives teenagers a strong sense of belonging.",
+       "def": "The feeling of being accepted in a group or place."
+      },
+      {
+       "id": "soc015",
+       "en": "to stand up for one's beliefs",
+       "ru": "отстаивать свои убеждения",
+       "ex": "It takes courage to stand up for your beliefs in public.",
+       "def": "To defend what you strongly believe is right."
+      },
+      {
+       "id": "soc016",
+       "en": "to instil values in children",
+       "ru": "прививать ценности детям",
+       "ex": "Parents play a key role in instilling values in their children.",
+       "def": "To teach children important beliefs and principles."
+      },
+      {
+       "id": "soc017",
+       "en": "a generation gap",
+       "ru": "разрыв поколений",
+       "ex": "The generation gap often leads to misunderstandings at home.",
+       "def": "The difference in opinions between younger and older people."
+      },
+      {
+       "id": "soc018",
+       "en": "to gain independence",
+       "ru": "обретать самостоятельность",
+       "ex": "Part-time jobs help young people gain independence early on.",
+       "def": "To become free from relying on others."
+      }
+     ]
+    },
+    {
+     "subtopic": "Social Responsibility & Volunteering",
+     "items": [
+      {
+       "id": "soc019",
+       "en": "to make a valuable contribution to society",
+       "ru": "вносить ценный вклад в общество",
+       "ex": "Volunteers make a valuable contribution to society every day.",
+       "def": "To do something useful that helps society improve or develop."
+      },
+      {
+       "id": "soc020",
+       "en": "to give back to the community",
+       "ru": "отдавать долг обществу",
+       "ex": "Successful people often want to give back to the community.",
+       "def": "To help your community as a way of returning its support."
+      },
+      {
+       "id": "soc021",
+       "en": "to raise public awareness",
+       "ru": "повышать осведомлённость общества",
+       "ex": "Campaigns help raise public awareness of environmental issues.",
+       "def": "To make more people know about an important issue."
+      },
+      {
+       "id": "soc022",
+       "en": "to take responsibility for one's actions",
+       "ru": "брать ответственность за свои поступки",
+       "ex": "Adults should take responsibility for their actions.",
+       "def": "To accept that you are accountable for what you do."
+      },
+      {
+       "id": "soc023",
+       "en": "to volunteer one's time",
+       "ru": "посвящать своё время волонтёрству",
+       "ex": "More students are willing to volunteer their time for good causes.",
+       "def": "To spend your free time helping others without pay."
+      },
+      {
+       "id": "soc024",
+       "en": "to set a good example",
+       "ru": "подавать хороший пример",
+       "ex": "Celebrities can set a good example by supporting charities.",
+       "def": "To behave in a way that others can follow as a model."
+      },
+      {
+       "id": "soc025",
+       "en": "a sense of civic duty",
+       "ru": "чувство гражданского долга",
+       "ex": "A strong sense of civic duty encourages people to vote.",
+       "def": "A feeling of duty and responsibility towards your community."
+      },
+      {
+       "id": "soc026",
+       "en": "to get involved in community projects",
+       "ru": "участвовать в общественных проектах",
+       "ex": "Getting involved in community projects builds useful skills.",
+       "def": "To take part in activities that benefit the local area."
+      }
+     ]
+    },
+    {
+     "subtopic": "Charity & Helping Others",
+     "items": [
+      {
+       "id": "soc027",
+       "en": "to donate to charity",
+       "ru": "жертвовать на благотворительность",
+       "ex": "Many companies donate to charity to improve their image.",
+       "def": "To give money or goods to help a charitable organization."
+      },
+      {
+       "id": "soc028",
+       "en": "to raise funds for a good cause",
+       "ru": "собирать средства на благое дело",
+       "ex": "The school held a concert to raise funds for a good cause.",
+       "def": "To collect money to support a worthy purpose or project."
+      },
+      {
+       "id": "soc029",
+       "en": "to lend a helping hand",
+       "ru": "протянуть руку помощи",
+       "ex": "Neighbours should always be ready to lend a helping hand.",
+       "def": "To offer help or assistance to someone who needs it."
+      },
+      {
+       "id": "soc030",
+       "en": "to support those in need",
+       "ru": "поддерживать нуждающихся",
+       "ex": "Charities exist to support those in need.",
+       "def": "To help people who do not have enough or are struggling."
+      },
+      {
+       "id": "soc031",
+       "en": "to make a difference",
+       "ru": "изменить ситуацию к лучшему",
+       "ex": "Even small donations can make a real difference.",
+       "def": "to improve a situation or have a positive effect"
+      },
+      {
+       "id": "soc032",
+       "en": "to show compassion",
+       "ru": "проявлять сострадание",
+       "ex": "We should show compassion towards the homeless.",
+       "def": "to feel and show care for someone's suffering"
+      },
+      {
+       "id": "soc033",
+       "en": "a charitable organisation",
+       "ru": "благотворительная организация",
+       "ex": "Charitable organisations rely heavily on public donations.",
+       "def": "a group that helps people or causes without profit"
+      },
+      {
+       "id": "soc034",
+       "en": "to reach out to the vulnerable",
+       "ru": "помогать уязвимым людям",
+       "ex": "Volunteers reach out to the vulnerable during the winter.",
+       "def": "to give help to people who need support and protection"
+      }
+     ]
+    },
+    {
+     "subtopic": "Modern Lifestyle Challenges",
+     "items": [
+      {
+       "id": "soc035",
+       "en": "a fast-paced lifestyle",
+       "ru": "напряжённый ритм жизни",
+       "ex": "A fast-paced lifestyle can seriously damage your health.",
+       "def": "a way of living that is very busy and hurried"
+      },
+      {
+       "id": "soc036",
+       "en": "to strike a work-life balance",
+       "ru": "соблюдать баланс работы и жизни",
+       "ex": "It is hard to strike a work-life balance in a demanding job.",
+       "def": "to have enough time for work and personal life"
+      },
+      {
+       "id": "soc037",
+       "en": "to be glued to a screen",
+       "ru": "не отрываться от экрана",
+       "ex": "Children spend too much time glued to their screens.",
+       "def": "to spend too much time looking at a phone or computer"
+      },
+      {
+       "id": "soc038",
+       "en": "to suffer from burnout",
+       "ru": "страдать от выгорания",
+       "ex": "More employees are suffering from burnout these days.",
+       "def": "to feel very tired and stressed from overwork"
+      },
+      {
+       "id": "soc039",
+       "en": "to lead a sedentary lifestyle",
+       "ru": "вести малоподвижный образ жизни",
+       "ex": "Office workers often lead a sedentary lifestyle.",
+       "def": "to sit or lie down a lot and not move enough"
+      },
+      {
+       "id": "soc040",
+       "en": "the cost of living",
+       "ru": "стоимость жизни",
+       "ex": "The rising cost of living worries many young families.",
+       "def": "the amount of money needed to pay for basic needs"
+      },
+      {
+       "id": "soc041",
+       "en": "to cope with everyday stress",
+       "ru": "справляться с повседневным стрессом",
+       "ex": "Exercise helps people cope with everyday stress.",
+       "def": "to deal with daily worries and pressure successfully"
+      },
+      {
+       "id": "soc042",
+       "en": "digital addiction",
+       "ru": "цифровая зависимость",
+       "ex": "Digital addiction is becoming a serious problem among teenagers.",
+       "def": "a strong need to use digital devices too much"
+      },
+      {
+       "id": "soc043",
+       "en": "to lead a healthy lifestyle",
+       "ru": "вести здоровый образ жизни",
+       "ex": "Eating well is essential if you want to lead a healthy lifestyle.",
+       "def": "To make choices that keep your body and mind healthy."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "countries",
+   "name": "Countries & Culture",
+   "ru": "Страны и культура",
+   "groups": [
+    {
+     "subtopic": "Geography & Landscape",
+     "items": [
+      {
+       "id": "cou000",
+       "en": "to be located in the heart of",
+       "ru": "располагаться в самом центре",
+       "ex": "Moscow is located in the heart of European Russia.",
+       "def": "To be in the exact middle or most important part of a place."
+      },
+      {
+       "id": "cou001",
+       "en": "to border on a country",
+       "ru": "граничить со страной",
+       "ex": "Russia borders on more countries than any other nation.",
+       "def": "To share a border with another country."
+      },
+      {
+       "id": "cou002",
+       "en": "a landlocked country",
+       "ru": "страна без выхода к морю",
+       "ex": "A landlocked country has no direct access to the sea.",
+       "def": "A country that does not touch any sea or ocean."
+      },
+      {
+       "id": "cou003",
+       "en": "to stretch from coast to coast",
+       "ru": "простираться от побережья до побережья",
+       "ex": "Russia stretches from coast to coast across two continents.",
+       "def": "To reach from one side of the country to the other."
+      },
+      {
+       "id": "cou004",
+       "en": "a densely populated region",
+       "ru": "густонаселённый регион",
+       "ex": "The south is the most densely populated region of England.",
+       "def": "An area with many people living close together."
+      },
+      {
+       "id": "cou005",
+       "en": "breathtaking scenery",
+       "ru": "захватывающие дух пейзажи",
+       "ex": "The Caucasus is famous for its breathtaking scenery.",
+       "def": "Extremely beautiful natural views that impress you."
+      },
+      {
+       "id": "cou006",
+       "en": "a vast territory",
+       "ru": "обширная территория",
+       "ex": "Russia occupies a vast territory across eleven time zones.",
+       "def": "A very large area of land."
+      },
+      {
+       "id": "cou007",
+       "en": "to be situated on the banks of",
+       "ru": "находиться на берегах",
+       "ex": "London is situated on the banks of the Thames.",
+       "def": "To be located on the edges of a river."
+      }
+     ]
+    },
+    {
+     "subtopic": "Capitals, Regions & Landmarks",
+     "items": [
+      {
+       "id": "cou008",
+       "en": "a famous landmark",
+       "ru": "знаменитая достопримечательность",
+       "ex": "Big Ben is a famous landmark visited by millions.",
+       "def": "A well-known and important place for visitors."
+      },
+      {
+       "id": "cou009",
+       "en": "a must-see attraction",
+       "ru": "обязательная к посещению достопримечательность",
+       "ex": "Red Square is a must-see attraction in Moscow.",
+       "def": "A place that everyone should see when visiting."
+      },
+      {
+       "id": "cou010",
+       "en": "a country renowned for its landmarks",
+       "ru": "страна, славящаяся достопримечательностями",
+       "ex": "Britain is a country renowned for its historic landmarks.",
+       "def": "A country famous for its important and interesting places."
+      },
+      {
+       "id": "cou011",
+       "en": "to attract tourists from all over the world",
+       "ru": "привлекать туристов со всего мира",
+       "ex": "The Hermitage attracts tourists from all over the world.",
+       "def": "To make visitors come from many countries."
+      },
+      {
+       "id": "cou012",
+       "en": "a world heritage site",
+       "ru": "объект всемирного наследия",
+       "ex": "The Tower of London is a world heritage site.",
+       "def": "A place that is protected because of its cultural importance."
+      },
+      {
+       "id": "cou013",
+       "en": "the administrative centre",
+       "ru": "административный центр",
+       "ex": "Edinburgh is the administrative centre of Scotland.",
+       "def": "The main city where a country's government is located."
+      },
+      {
+       "id": "cou014",
+       "en": "a bustling capital",
+       "ru": "оживлённая столица",
+       "ex": "London is a bustling capital full of life and culture.",
+       "def": "A very busy and lively capital city."
+      },
+      {
+       "id": "cou015",
+       "en": "an architectural masterpiece",
+       "ru": "архитектурный шедевр",
+       "ex": "St Basil's Cathedral is a true architectural masterpiece.",
+       "def": "A building or structure that is an incredibly good example of architecture."
+      }
+     ]
+    },
+    {
+     "subtopic": "Country Studies: Russia & English-Speaking Countries",
+     "items": [
+      {
+       "id": "cou016",
+       "en": "the United Kingdom",
+       "ru": "Соединённое Королевство",
+       "ex": "The United Kingdom consists of four constituent countries.",
+       "def": "A country in Europe that includes Great Britain and Northern Ireland."
+      },
+      {
+       "id": "cou017",
+       "en": "the official language",
+       "ru": "официальный язык",
+       "ex": "English is the official language of several countries.",
+       "def": "The language that is used for government and official business."
+      },
+      {
+       "id": "cou018",
+       "en": "a constitutional monarchy",
+       "ru": "конституционная монархия",
+       "ex": "Britain remains a constitutional monarchy today.",
+       "def": "A country with a king or queen and an elected government."
+      },
+      {
+       "id": "cou019",
+       "en": "to be home to",
+       "ru": "быть родиной чего-либо",
+       "ex": "The country is home to many ethnic groups and languages.",
+       "def": "To be the place where something or many people live."
+      },
+      {
+       "id": "cou020",
+       "en": "a multicultural society",
+       "ru": "многокультурное общество",
+       "ex": "Modern Britain is a truly multicultural society.",
+       "def": "A society that includes people from many different cultures."
+      },
+      {
+       "id": "cou021",
+       "en": "a federal state",
+       "ru": "федеративное государство",
+       "ex": "Russia is a federal state made up of many regions.",
+       "def": "A country made of several states that share power with a central government."
+      },
+      {
+       "id": "cou022",
+       "en": "the head of state",
+       "ru": "глава государства",
+       "ex": "In the UK the monarch is the head of state.",
+       "def": "The person who is the leader or public representative of a country."
+      },
+      {
+       "id": "cou023",
+       "en": "a leading economic power",
+       "ru": "ведущая экономическая держава",
+       "ex": "The country has become a leading economic power.",
+       "def": "A country that has a very strong and influential economy."
+      }
+     ]
+    },
+    {
+     "subtopic": "Education Systems",
+     "items": [
+      {
+       "id": "cou024",
+       "en": "compulsory education",
+       "ru": "обязательное образование",
+       "ex": "Compulsory education in Britain begins at the age of five.",
+       "def": "Education that children must attend by law."
+      },
+      {
+       "id": "cou025",
+       "en": "a state school",
+       "ru": "государственная школа",
+       "ex": "Most British children attend a state school.",
+       "def": "A school paid for and controlled by the government."
+      },
+      {
+       "id": "cou026",
+       "en": "a private boarding school",
+       "ru": "частная школа-интернат",
+       "ex": "A private boarding school can be extremely expensive.",
+       "def": "A private school where students live during term time."
+      },
+      {
+       "id": "cou027",
+       "en": "to sit an exam",
+       "ru": "сдавать экзамен",
+       "ex": "Students in England sit their GCSE exams at sixteen.",
+       "def": "To take a formal test, often at the end of a course."
+      },
+      {
+       "id": "cou028",
+       "en": "to apply to university",
+       "ru": "поступать в университет",
+       "ex": "Many school leavers apply to university each autumn.",
+       "def": "To send a formal request to enter a university."
+      },
+      {
+       "id": "cou029",
+       "en": "higher education",
+       "ru": "высшее образование",
+       "ex": "Higher education opens up better career opportunities.",
+       "def": "Education at university or college level."
+      },
+      {
+       "id": "cou030",
+       "en": "to graduate with honours",
+       "ru": "окончить с отличием",
+       "ex": "She hopes to graduate with honours next summer.",
+       "def": "To finish university with a high level of achievement."
+      },
+      {
+       "id": "cou031",
+       "en": "a curriculum",
+       "ru": "учебная программа",
+       "ex": "The national curriculum sets out what pupils must learn.",
+       "def": "The subjects and content taught in a school or course."
+      }
+     ]
+    },
+    {
+     "subtopic": "Cultural Features & Customs",
+     "items": [
+      {
+       "id": "cou032",
+       "en": "to be steeped in history",
+       "ru": "быть пропитанным историей",
+       "ex": "The old town is steeped in history and tradition.",
+       "def": "To have a very long and rich history."
+      },
+      {
+       "id": "cou033",
+       "en": "a long-standing tradition",
+       "ru": "давняя традиция",
+       "ex": "Afternoon tea is a long-standing British tradition.",
+       "def": "A custom or practice that has existed for many years."
+      },
+      {
+       "id": "cou034",
+       "en": "to observe a custom",
+       "ru": "соблюдать обычай",
+       "ex": "Many families still observe this ancient custom.",
+       "def": "To follow a tradition or way of behaving."
+      },
+      {
+       "id": "cou035",
+       "en": "a cultural heritage",
+       "ru": "культурное наследие",
+       "ex": "We must preserve our rich cultural heritage.",
+       "def": "The traditions, buildings, and art that a country keeps from the past."
+      },
+      {
+       "id": "cou036",
+       "en": "to celebrate a national holiday",
+       "ru": "отмечать национальный праздник",
+       "ex": "Russians celebrate Victory Day as an important national holiday.",
+       "def": "To take part in events that mark a special day for a country."
+      },
+      {
+       "id": "cou037",
+       "en": "a distinctive feature",
+       "ru": "отличительная черта",
+       "ex": "Hospitality is a distinctive feature of Russian culture.",
+       "def": "A quality that makes someone or something clearly different from others."
+      },
+      {
+       "id": "cou038",
+       "en": "to hand down from generation to generation",
+       "ru": "передавать из поколения в поколение",
+       "ex": "These recipes are handed down from generation to generation.",
+       "def": "To pass customs or knowledge from older to younger people."
+      },
+      {
+       "id": "cou039",
+       "en": "a melting pot of cultures",
+       "ru": "плавильный котёл культур",
+       "ex": "New York is often called a melting pot of cultures.",
+       "def": "A place where many different cultures mix and influence each other."
+      }
+     ]
+    },
+    {
+     "subtopic": "National Identity & Heritage",
+     "items": [
+      {
+       "id": "cou040",
+       "en": "a sense of national identity",
+       "ru": "чувство национальной идентичности",
+       "ex": "Language strengthens a people's sense of national identity.",
+       "def": "A feeling of belonging to a particular country and its people."
+      },
+      {
+       "id": "cou041",
+       "en": "to take pride in one's country",
+       "ru": "гордиться своей страной",
+       "ex": "Most citizens take pride in their country's achievements.",
+       "def": "To feel proud of your country and its achievements."
+      },
+      {
+       "id": "cou042",
+       "en": "a national symbol",
+       "ru": "национальный символ",
+       "ex": "The bear is often seen as a national symbol of Russia.",
+       "def": "An object or design that officially represents a country."
+      },
+      {
+       "id": "cou043",
+       "en": "to preserve traditions",
+       "ru": "сохранять традиции",
+       "ex": "It is important to preserve traditions for future generations.",
+       "def": "To keep customs and beliefs alive for the future."
+      },
+      {
+       "id": "cou044",
+       "en": "a way of life",
+       "ru": "уклад жизни",
+       "ex": "Globalisation is gradually changing our traditional way of life.",
+       "def": "The typical habits, customs, and values of a group of people."
+      },
+      {
+       "id": "cou045",
+       "en": "a national treasure",
+       "ru": "национальное достояние",
+       "ex": "Pushkin is regarded as a national treasure in Russia.",
+       "def": "Something valuable that is important to a country's culture."
+      },
+      {
+       "id": "cou046",
+       "en": "to embody national values",
+       "ru": "воплощать национальные ценности",
+       "ex": "These festivals embody the nation's core values.",
+       "def": "To show or represent the ideas that a country thinks are important."
+      }
+     ]
+    }
+   ]
   }
  ]
 }
