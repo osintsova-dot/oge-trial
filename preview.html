@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#6C3FC5">
+  <title>Превью наград и звуков · S&S</title>
+  <link rel="stylesheet" href="./css/brand.css">
+  <style>
+    .pv { max-width: 480px; margin: 0 auto; padding: 24px 16px 64px; }
+    .pv h1 { font-size: 20px; margin: 8px 0 4px; }
+    .pv p.sub { color: var(--muted, #888); margin: 0 0 20px; font-size: 14px; }
+    .pv h2 { font-size: 14px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted, #888); margin: 24px 0 10px; }
+    .pv button { display: block; width: 100%; margin: 8px 0; }
+    .pv .row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .pv .row button { margin: 0; }
+    .pv .hint { font-size: 13px; color: var(--muted, #888); margin-top: 6px; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="pv">
+      <h1>🎬 Превью: награды и звуки</h1>
+      <p class="sub">Страница для проверки — праздничные экраны Спики и звуки без прорешивания пака.</p>
+
+      <h2>Праздничные экраны Спики</h2>
+      <button class="btn btn-honey btn-block" id="all">▶ Показать ВСЕ награды подряд (как после крутого пака)</button>
+      <p class="hint">С конфетти и фанфарой на крупных, переливчиком на остальных.</p>
+      <button class="btn btn-block" data-m="hero">🦸 Только: Спики-Герой</button>
+      <button class="btn btn-block" data-m="level">⭐ Только: новый уровень</button>
+      <button class="btn btn-block" data-m="ach">🏅 Только: достижение</button>
+      <button class="btn btn-block" data-m="streak">🔥 Только: серия</button>
+      <button class="btn btn-block" data-m="token">🎟 Только: жетон</button>
+
+      <h2>Звуки по отдельности</h2>
+      <div class="row">
+        <button class="btn" data-s="correct">✅ Верный</button>
+        <button class="btn" data-s="wrong">❌ Неверный</button>
+        <button class="btn" data-s="fanfare">🎺 Фанфара</button>
+        <button class="btn" data-s="sparkle">✨ Переливчик</button>
+      </div>
+      <p class="hint">Если тихо/громко или хочется другой характер — скажи, подкручу.</p>
+    </div>
+  </div>
+
+  <script>window.EXAM = 'oge';</script>
+  <script type="module">
+    import { celebrate } from './js/ui.js';
+    import { playCorrect, playWrong, playFanfare, playSparkle } from './js/sound.js';
+
+    const NAME = 'Артём';
+    const MOMENTS = {
+      hero:   { icon: '🦸', img: './assets/spiky-hero.png',  title: 'Новый Герой!',     text: `${NAME}, ты собрал целого Героя — это пять идеальных паков!`, confetti: true },
+      level:  { icon: '⭐', img: './assets/spiky-cheer.png', title: 'Уровень 3 · Знаток', text: `${NAME}, новый уровень! Дальше — только интереснее.`, confetti: true },
+      ach:    { icon: '🏅', img: './assets/spiky-medal.png', title: 'Достижение: Без ошибок', text: `${NAME}, целый пак без единой ошибки. Чисто!`, confetti: true },
+      streak: { icon: '🔥', img: './assets/spiky-fire.png',  title: 'Серия 7 дней!',    text: `${NAME}, неделя подряд — так держать.` },
+      token:  { icon: '🎟', img: './assets/spiky-gift.png',  title: '+2 жетона',         text: `${NAME}, лови жетоны — обменяешь у преподавателя на привилегию.` },
+    };
+
+    document.getElementById('all').onclick = () =>
+      celebrate([MOMENTS.hero, MOMENTS.level, MOMENTS.ach, MOMENTS.streak, MOMENTS.token]);
+
+    document.querySelectorAll('[data-m]').forEach((b) =>
+      b.onclick = () => celebrate([MOMENTS[b.dataset.m]]));
+
+    const SOUNDS = { correct: playCorrect, wrong: playWrong, fanfare: playFanfare, sparkle: playSparkle };
+    document.querySelectorAll('[data-s]').forEach((b) =>
+      b.onclick = () => SOUNDS[b.dataset.s]());
+  </script>
+</body>
+</html>

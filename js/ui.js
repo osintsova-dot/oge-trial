@@ -1,6 +1,7 @@
 // ui.js — крошечные хелперы для нативного DOM (без innerHTML на пользовательских данных)
 
 import { t } from './exam.js';
+import { playFanfare, playSparkle } from './sound.js';
 
 // el('div', {class:'card', onclick:fn}, [child, 'текст']) → HTMLElement
 export function el(tag, props = {}, children = []) {
@@ -107,7 +108,8 @@ export function celebrate(moments, onDone) {
       el('div', { class: 'cel-dots' }, list.map((_, k) => el('i', { class: k === i ? 'on' : '' }))),
       el('button', { class: 'btn btn-honey btn-block', text: i + 1 < list.length ? t.celNext : t.celClaim, onclick: next }),
     ]));
-    if (m.confetti) confetti({ count: 22 });
+    if (m.confetti) { confetti({ count: 22 }); playFanfare(); }
+    else playSparkle();
   };
   render();
   document.body.appendChild(overlay);

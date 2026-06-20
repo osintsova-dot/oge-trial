@@ -64,3 +64,29 @@ export function playWrong() {
   // финальное «пам» с глиссандо вниз
   note(ac, { type: 'sawtooth', f0: 196.0, f1: 138.59, t: t + 0.5, dur: 0.5, vol: 0.18, cutoff: 1000 });
 }
+
+// Аккорд: несколько нот разом (для финала фанфары).
+function chord(ac, freqs, t, dur, vol) {
+  freqs.forEach((f) => note(ac, { type: 'triangle', f0: f, t, dur, vol }));
+}
+
+// Праздник со Спики (достижение/Герой/уровень/жетон) — триумфальная фанфара с финальным аккордом.
+export function playFanfare() {
+  if (!getSound()) return;
+  const ac = audio(); if (!ac) return;
+  const t = ac.currentTime;
+  // разбег «та-та-та-ДАМ» → восходящее арпеджио
+  const run = [523.25, 659.25, 783.99, 1046.5]; // C5 E5 G5 C6
+  run.forEach((f, i) => note(ac, { type: 'triangle', f0: f, t: t + i * 0.11, dur: 0.12, vol: 0.2 }));
+  // финальный мажорный аккорд C6–E6–G6 с подзвоном
+  chord(ac, [1046.5, 1318.51, 1567.98], t + 0.46, 0.6, 0.16);
+  note(ac, { type: 'sine', f0: 2093.0, t: t + 0.46, dur: 0.5, vol: 0.08 });
+}
+
+// Лёгкий «переливчик» для второстепенных праздничных карточек (цель дня и т.п.).
+export function playSparkle() {
+  if (!getSound()) return;
+  const ac = audio(); if (!ac) return;
+  const t = ac.currentTime;
+  [1318.51, 1567.98, 2093.0].forEach((f, i) => note(ac, { type: 'sine', f0: f, t: t + i * 0.07, dur: 0.16, vol: 0.12 }));
+}
