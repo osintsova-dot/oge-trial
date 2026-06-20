@@ -73,6 +73,31 @@
   .scorebig{font-size:30px;font-weight:900;color:var(--p);text-align:center;margin:4px 0}
   .pill{display:inline-block;background:var(--honey);color:#1A1A2E;border-radius:20px;padding:3px 11px;
     font-size:11px;font-weight:800}
+  /* доп. мокапы */
+  .htop{background:linear-gradient(135deg,#6C3FC5,#8A63E0);color:#fff;padding:12px 13px}
+  .htop .row{display:flex;align-items:center;gap:8px;font-size:11px}
+  .lvl{background:rgba(255,255,255,.2);border-radius:8px;padding:2px 7px;font-weight:800;font-size:10px}
+  .xp{flex:1;height:6px;background:rgba(255,255,255,.25);border-radius:4px;overflow:hidden}
+  .xp i{display:block;height:100%;width:62%;background:var(--honey)}
+  .goal{background:#fff;border-radius:13px;padding:9px 10px;display:flex;align-items:center;gap:10px;box-shadow:0 2px 8px rgba(108,63,197,.1)}
+  .ring{width:40px;height:40px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;
+    background:conic-gradient(var(--honey) 0% 33%, #e7e7ef 33% 100%)}
+  .ring span{background:#fff;width:29px;height:29px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:800;color:var(--p)}
+  .g-t{font-size:12px;font-weight:800}.g-s{font-size:10px;color:var(--muted)}
+  .tiles2{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+  .t2{border-radius:11px;padding:9px;color:#fff;font-weight:800;font-size:11px;box-shadow:0 3px 8px rgba(0,0,0,.12)}
+  .t2 small{display:block;font-weight:500;font-size:8.5px;opacity:.9;margin-top:1px}
+  .rdtext{background:#fff;border-radius:12px;padding:11px;font-size:11px;line-height:1.55;color:#33334d;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+  .rdtext mark{background:#fff0b3;border-radius:3px;padding:0 2px}
+  .qn{display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;border-radius:5px;
+    background:var(--grad-reading);color:#fff;font-size:8px;font-weight:800;margin-left:2px}
+  .why{background:#f3f0fb;border-left:3px solid var(--p);border-radius:8px;padding:8px 10px;font-size:10.5px;margin-top:8px;color:#33334d}
+  .pcard{background:#fff;border-radius:12px;padding:10px 12px;display:flex;justify-content:space-between;align-items:center;
+    box-shadow:0 2px 8px rgba(0,0,0,.06);font-size:12px}
+  .pcard .v{font-weight:900;font-size:17px;color:var(--p)}
+  .search{background:#fff;border-radius:10px;border:1.5px solid var(--line);padding:9px 11px;font-size:11.5px;color:var(--muted);display:flex;gap:6px}
+  .sr{background:#fff;border-radius:10px;padding:8px 10px;margin-top:7px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+  .sr .e{font-size:12px;font-weight:800;color:var(--p)}.sr .d{font-size:10px;color:var(--muted);margin-top:2px}
   footer{margin-top:40px;text-align:center;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);padding-top:16px}
   @media print{
     body{background:#fff;font-size:12.5px}
@@ -81,7 +106,8 @@
     header.hero{box-shadow:none}
     .card,.phone{box-shadow:none}
     h2{page-break-after:avoid}
-    .grid,.pitch,.shots{page-break-inside:avoid}
+    .grid,.pitch{page-break-inside:avoid}
+    .shots>div,.phone,.card{page-break-inside:avoid}
     @page{margin:14mm}
   }
   @media(max-width:620px){.grid,.pitch,ul.feat{grid-template-columns:1fr}}
@@ -128,15 +154,23 @@
   <div class="shots">
     <div>
       <div class="phone"><div class="screen">
-        <div class="sbar"><div class="t">Сегодня</div><div class="s">5 из 15 слов · серия 7 🔥</div></div>
+        <div class="htop">
+          <div class="row"><span class="lvl">Lvl 5</span><span class="xp"><i></i></span><span>🔥 7</span></div>
+          <div style="font-size:14px;font-weight:800;margin-top:8px">Привет! 👋</div>
+        </div>
         <div class="sbody">
-          <div class="tile" style="background:var(--grad-vocab)">🗂 Тематический словарь<small>15 слов в день</small></div>
-          <div class="tile" style="background:var(--grad-grammar)">📝 Грамматика<small>банк ФИПИ</small></div>
-          <div class="tile" style="background:var(--grad-reading)">📖 Чтение<small>3 формата</small></div>
-          <div class="tile writing" style="background:var(--grad-writing)">✍️ Письмо<small>проверка ИИ</small></div>
+          <div class="goal"><div class="ring"><span>5/15</span></div><div><div class="g-t">Норма дня</div><div class="g-s">5 из&nbsp;15 слов сегодня</div></div></div>
+          <div class="tiles2">
+            <div class="t2" style="background:var(--grad-vocab)">🗂 Словарь<small>15 слов/день</small></div>
+            <div class="t2" style="background:var(--grad-grammar)">📝 Грамматика<small>банк ФИПИ</small></div>
+            <div class="t2" style="background:var(--grad-wordform)">🔤 Словообр.<small>лексика</small></div>
+            <div class="t2" style="background:var(--grad-reading)">📖 Чтение<small>3 формата</small></div>
+            <div class="t2" style="background:var(--grad-writing);color:#1A1A2E">✍️ Письмо<small>проверка ИИ</small></div>
+            <div class="t2" style="background:var(--grad-speaking)">🎙 Говорение<small>скоро</small></div>
+          </div>
         </div>
       </div></div>
-      <div class="scap">Главный экран — разделы и&nbsp;норма дня</div>
+      <div class="scap">Главная — уровень, серия, норма дня и&nbsp;разделы</div>
     </div>
     <div>
       <div class="phone"><div class="screen">
@@ -169,6 +203,40 @@
       </div></div>
       <div class="scap">Проверка письма — баллы и&nbsp;разбор</div>
     </div>
+    <div>
+      <div class="phone"><div class="screen">
+        <div class="sbar" style="background:var(--grad-reading)"><div class="t">Чтение</div><div class="s">Верно / Неверно / Не сказано</div></div>
+        <div class="sbody">
+          <div class="rdtext">David Beckham was born in London. <mark>His father was a kitchen fitter and his mother a hairdresser.<span class="qn">3</span></mark> He began playing football as a small child.</div>
+          <div class="crit"><span>Утверждение 3</span><span style="color:#16B3A6">✓ Верно</span></div>
+          <div class="why"><b>Почему:</b> в&nbsp;тексте прямо названы профессии родителей&nbsp;— это предложение подсвечено выше.</div>
+        </div>
+      </div></div>
+      <div class="scap">Чтение — подсветка ответа + «Почему»</div>
+    </div>
+    <div>
+      <div class="phone"><div class="screen">
+        <div class="sbar"><div class="t">Прогресс</div><div class="s">Так держать!</div></div>
+        <div class="sbody">
+          <div class="pcard"><span>🔥 Серия дней</span><span class="v">7</span></div>
+          <div class="pcard"><span>🗂 Слов освоено</span><span class="v">240</span></div>
+          <div class="pcard"><span>✍️ Средний балл письма</span><span class="v">78%</span></div>
+          <div class="pcard"><span>⭐ Уровень</span><span class="v">5</span></div>
+        </div>
+      </div></div>
+      <div class="scap">Прогресс — виден объём и&nbsp;рост</div>
+    </div>
+    <div>
+      <div class="phone"><div class="screen">
+        <div class="sbar" style="background:var(--grad-vocab)"><div class="t">Словарь · поиск</div><div class="s">Прямо во&nbsp;время письма</div></div>
+        <div class="sbody">
+          <div class="search">🔎 brink…</div>
+          <div class="sr"><div class="e">to be on the brink of extinction</div><div class="d">быть на&nbsp;грани вымирания · Nature</div></div>
+          <div class="sr"><div class="e">on the brink of</div><div class="d">на&nbsp;грани чего-либо · Society</div></div>
+        </div>
+      </div></div>
+      <div class="scap">Поиск по&nbsp;словарю прямо из&nbsp;письма</div>
+    </div>
   </div>
   <p style="text-align:center;color:var(--muted);font-size:12px;margin-top:6px">Мокапы в&nbsp;стиле приложения. Реальные скриншоты можно вставить сюда позже.</p>
 
@@ -192,8 +260,13 @@
     </ul>
   </div></div>
 
-  <h2><span class="bar"></span>Скоро</h2>
-  <div class="soon">📸 Распознавание письма по&nbsp;фото (написал от&nbsp;руки&nbsp;— сфотографировал&nbsp;— проверил) &nbsp;·&nbsp; 🎙 Говорение &nbsp;·&nbsp; 🎧 Аудирование &nbsp;·&nbsp; 👩‍🏫 Связка с&nbsp;учителем.</div>
+  <h2><span class="bar"></span>Скоро — и что в этом особенного</h2>
+  <div class="grid">
+    <div class="card"><h3><span class="ic" style="background:var(--grad-writing);color:#1A1A2E">📸</span> Письмо от руки <span class="pill">скоро</span></h3><p>Пишешь ответ <b>от руки на бумаге</b> — как на&nbsp;реальном экзамене, — фотографируешь, и&nbsp;приложение распознаёт текст. Сверяешь, правишь огрехи распознавания&nbsp;— и&nbsp;только потом проверка. <b>Особенное:</b> тренирует настоящий экзаменационный навык (почерк, объём, бумага), а&nbsp;оценка честная&nbsp;— за&nbsp;свои ошибки, не&nbsp;за&nbsp;ошибки распознавания.</p></div>
+    <div class="card"><h3><span class="ic" style="background:var(--grad-speaking)">🎙</span> Говорение <span class="pill">скоро</span></h3><p>Записываешь устный ответ (описание фото, монолог, диалог), ИИ&nbsp;слушает и&nbsp;оценивает по&nbsp;критериям ФИПИ&nbsp;— включая <b>произношение и&nbsp;беглость</b>. <b>Особенное:</b> таймер как на&nbsp;экзамене, можно переслушать себя, мгновенная обратная связь&nbsp;— помогает перестать бояться говорить.</p></div>
+    <div class="card"><h3><span class="ic" style="background:var(--grad-reading)">🎧</span> Аудирование <span class="pill">скоро</span></h3><p>Задания в&nbsp;экзаменационных форматах с&nbsp;настоящим звуком. После проверки&nbsp;— разбор со&nbsp;скриптом и&nbsp;<b>подсветкой места, где был ответ</b>; фрагмент можно переслушать и&nbsp;замедлить. <b>Особенное:</b> учит ловить ключевые слова и&nbsp;не&nbsp;паниковать на&nbsp;скорости.</p></div>
+    <div class="card"><h3><span class="ic" style="background:var(--grad-grammar)">👩‍🏫</span> Связка с учителем <span class="pill">скоро</span></h3><p>Учитель задаёт тему недели, видит прогресс ученика, читает письменные работы и&nbsp;оставляет комментарии. <b>Особенное:</b> удобно вести весь класс и&nbsp;стыковать тренажёр с&nbsp;уроками&nbsp;— ученик дома закрепляет то, что прошли вместе.</p></div>
+  </div>
 
   <footer>
     Speak &amp; Smile · тренажёр английского для ОГЭ/ЕГЭ · черновик описания, <span class="pill">v0.1</span><br>
