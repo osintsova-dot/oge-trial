@@ -521,6 +521,8 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .redeemed{background:var(--card);border-radius:14px;padding:12px 14px;box-shadow:0 2px 12px var(--shadow);margin-bottom:4px}
 .redeemed-h{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);margin-bottom:8px}
 .red-row{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:4px 0}
+.red-row .red-name{display:flex;align-items:center;gap:5px;font-weight:700;min-width:0}
+.red-row .red-ic{width:18px;height:18px;object-fit:contain;flex:none}
 .red-row .red-meta{color:var(--muted);font-weight:700;white-space:nowrap}
 
 /* Полноэкранный бейдж привилегии (показать учителю) */

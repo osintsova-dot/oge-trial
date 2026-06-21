@@ -324,7 +324,7 @@ function renderRewards() {
   const recentBlock = recent.length ? el('div', { class: 'redeemed' },
     [el('div', { class: 'redeemed-h', text: t.redeemedTitle }),
       ...recent.map((r) => el('div', { class: 'red-row' }, [
-        el('span', { text: (r.perk ? r.perk.icon + ' ' + r.perk.title : '—') }),
+        el('span', { class: 'red-name' }, r.perk ? [iconImg(r.perk.iconFile, r.perk.icon, 'red-ic'), ' ' + r.perk.title] : ['—']),
         el('span', { class: 'red-meta', text: r.code + ' · ' + fmtDate(r.ts) }),
       ]))]) : null;
 
