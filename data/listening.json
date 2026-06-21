@@ -17,7 +17,11 @@
       "what to wear on the hiking trip",
       "how to find the way through the forest"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 104.3,
+      "t": "I'd like to give you some advice on our hiking holiday."
+     }
     },
     {
      "zid": "7D08A8",
@@ -28,7 +32,11 @@
       "An umbrella",
       "A cherry cake"
      ],
-     "key": "1"
+     "key": "1",
+     "ev": {
+      "s": 152.2,
+      "t": "I've found nothing except a large indoor plant and a ceramic pot."
+     }
     },
     {
      "zid": "0E593D",
@@ -39,7 +47,11 @@
       "she doesn’t like animals",
       "she’s chosen another profession"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 212.0,
+      "t": "Of course I do, but I've always dreamed of a career in professional sports,"
+     }
     },
     {
      "zid": "F515EF",
@@ -50,7 +62,11 @@
       "Spaghetti",
       "Sandwiches"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 243.2,
+      "t": "What we can make is either spaghetti or sandwiches with ham and cheese."
+     }
     },
     {
      "zid": "E5CBA4",
@@ -1227,7 +1243,11 @@
       "A bicycle",
       "A watch"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 109.1,
+      "t": "and each customer will get a present today – a sports watch."
+     }
     },
     {
      "zid": "2EA061",
@@ -1238,7 +1258,11 @@
       "to take part in a swimming competition",
       "to go to the city concert"
      ],
-     "key": "1"
+     "key": "1",
+     "ev": {
+      "s": 103.8,
+      "t": "We are happy to say that our sports shop is celebrating the 10th anniversary of its opening"
+     }
     },
     {
      "zid": "C06EFC",
@@ -1249,7 +1273,11 @@
       "Sally had muted her phone for a concert",
       "Sally had left her phone at home"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 181.8,
+      "t": "Good to see you, Sally."
+     }
     },
     {
      "zid": "29C2CA",
@@ -1260,7 +1288,11 @@
       "Science",
       "French"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 239.8,
+      "t": "But after that, we've got science. It makes things better."
+     }
     },
     {
      "zid": "386CD7",
@@ -2634,7 +2666,8 @@
       "a new swimming pool",
       "a garden with tropical plants"
      ],
-     "key": "1"
+     "key": "1",
+     "ev": null
     },
     {
      "zid": "EDB490",
@@ -2645,7 +2678,11 @@
       "Saturday",
       "Sunday"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 156.9,
+      "t": "That's why we've moved it to Sunday, which promises to be a warm and sunny day."
+     }
     },
     {
      "zid": "03F090",
@@ -2656,7 +2693,11 @@
       "A set of paints",
       "A skateboard"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 206.7,
+      "t": "Then I would recommend this big set of paints."
+     }
     },
     {
      "zid": "8C78E3",
@@ -2667,7 +2708,11 @@
       "Writing poems",
       "Roller skating"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 248.3,
+      "t": "As for you, you've got a great talent for roller skating."
+     }
     },
     {
      "zid": "695F67",
@@ -4199,7 +4244,11 @@
       "take their lunch boxes",
       "board the bus"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 116.5,
+      "t": "Before we set off, I want to give you these boxes with your lunch."
+     }
     },
     {
      "zid": "5A18F1",
@@ -4210,7 +4259,11 @@
       "lend him his guitar for a while",
       "take part in the school performance"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 1035.8,
+      "t": "Thank you for taking part in our survey. I promise it won't take you long."
+     }
     },
     {
      "zid": "F5204D",
@@ -4221,7 +4274,11 @@
       "French",
       "Computer Studies"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 191.7,
+      "t": "and I'm hopeless at French."
+     }
     },
     {
      "zid": "0865DE",
@@ -4232,7 +4289,11 @@
       "go to the swimming pool",
       "visit a doctor"
      ],
-     "key": "1"
+     "key": "1",
+     "ev": {
+      "s": 239.4,
+      "t": "I just feel like staying at home tomorrow."
+     }
     },
     {
      "zid": "340853",
@@ -5384,7 +5445,11 @@
       "continue their shopping",
       "get together in the central lobby"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 113.5,
+      "t": "Please go on with your shopping."
+     }
     },
     {
      "zid": "2FFA67",
@@ -5395,7 +5460,11 @@
       "to take care of his pet",
       "to help him in the garden"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 104.8,
+      "t": "The fire alarm you've just heard was activated by mistake."
+     }
     },
     {
      "zid": "5E6B43",
@@ -5406,7 +5475,11 @@
       "Maths",
       "Science"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 203.2,
+      "t": "but I'd prefer ten tests in science to one in maths."
+     }
     },
     {
      "zid": "EB7418",
@@ -5417,7 +5490,11 @@
       "Nick refuses to play with him",
       "a cousin borrowed his toy car"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 223.4,
+      "t": "What's up, Nick? Why is your little brother crying?"
+     }
     },
     {
      "zid": "0658F3",
@@ -7234,7 +7311,11 @@
       "has missed their check-in time",
       "has found another passenger’s documents"
      ],
-     "key": "1"
+     "key": "1",
+     "ev": {
+      "s": 130.2,
+      "t": "We also ask you not to touch any unattended luggage or lost documents,"
+     }
     },
     {
      "zid": "25AD45",
@@ -7245,7 +7326,11 @@
       "to invite Fred to see a film with him",
       "to share his impressions of the film"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 144.2,
+      "t": "I just want to tell you that you were lucky to be late for that film we saw today."
+     }
     },
     {
      "zid": "859E73",
@@ -7256,7 +7341,11 @@
       "His father got a job there",
       "He visited his aunt and her family"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 182.2,
+      "t": "Yes, I lived there with my parents for six months."
+     }
     },
     {
      "zid": "B52DA7",
@@ -7267,7 +7356,11 @@
       "Tim had forgotten to turn on his phone",
       "Tim had got a new phone number"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 233.9,
+      "t": "I've just got a new phone number, sorry I did not tell you."
+     }
     },
     {
      "zid": "42C953",
@@ -8946,7 +9039,11 @@
       "enjoy the old photo exhibition",
       "see the tropical butterflies"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 119.2,
+      "t": "The greenhouse is inhabited by nearly a thousand butterflies,"
+     }
     },
     {
      "zid": "1DCC0D",
@@ -8957,7 +9054,11 @@
       "he and his friend will be learning together",
       "he was placed into the most advanced group"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 158.9,
+      "t": "my old friend from primary school."
+     }
     },
     {
      "zid": "C50645",
@@ -8968,7 +9069,11 @@
       "Rubber boots",
       "A warm coat"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 207.6,
+      "t": "A pair of long warm rubber boots for fishermen."
+     }
     },
     {
      "zid": "ED2819",
@@ -8979,7 +9084,8 @@
       "At a motor track",
       "In a hotel room"
      ],
-     "key": "1"
+     "key": "1",
+     "ev": null
     },
     {
      "zid": "B28913",
@@ -11381,7 +11487,11 @@
       "schoolchildren only",
       "children under five"
      ],
-     "key": "1"
+     "key": "1",
+     "ev": {
+      "s": 130.3,
+      "t": "for people of any age and with any interests."
+     }
     },
     {
      "zid": "343566",
@@ -11392,7 +11502,11 @@
       "has been caught in the rain",
       "forgot the time of their gathering"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 164.0,
+      "t": "it started to rain and I got wet to the bone."
+     }
     },
     {
      "zid": "93C67B",
@@ -11403,7 +11517,11 @@
       "At a bus stop",
       "In the fitness centre"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 200.9,
+      "t": "Look, I'm going to the fitness centre in an hour or so."
+     }
     },
     {
      "zid": "CD2086",
@@ -11414,7 +11532,11 @@
       "Baseball",
       "Boxing"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 251.8,
+      "t": "It's a baseball glove."
+     }
     },
     {
      "zid": "7386BB",
@@ -13696,7 +13818,8 @@
       "it is sleeping",
       "it has moved to another zoo"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": null
     },
     {
      "zid": "4C5108",
@@ -13707,7 +13830,11 @@
       "present her work in the Science class",
       "submit an essay on a scientist of the past"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 161.0,
+      "t": "In science class, she's going to see all of them."
+     }
     },
     {
      "zid": "B92FDF",
@@ -13718,7 +13845,8 @@
       "Next Saturday",
       "Tonight"
      ],
-     "key": "1"
+     "key": "1",
+     "ev": null
     },
     {
      "zid": "7423A3",
@@ -13729,7 +13857,11 @@
       "Invite her cousins to Britain",
       "Visit her aunt in France"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 227.4,
+      "t": "We may go to my aunt's house."
+     }
     },
     {
      "zid": "2352F4",
@@ -15586,7 +15718,11 @@
       "Swimming lessons",
       "Gymnastics lessons"
      ],
-     "key": "1"
+     "key": "1",
+     "ev": {
+      "s": 118.7,
+      "t": "However, you may take horse-riding lessons from 3 to 8 p.m."
+     }
     },
     {
      "zid": "1A9669",
@@ -15597,7 +15733,11 @@
       "he had got stuck in a traffic jam",
       "he had to take part in some other competition"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 118.7,
+      "t": "However, you may take horse-riding lessons from 3 to 8 p.m."
+     }
     },
     {
      "zid": "682257",
@@ -15608,7 +15748,11 @@
       "a vanilla cake",
       "a chocolate cake"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 184.2,
+      "t": "We've got an apple pie and a chocolate cake."
+     }
     },
     {
      "zid": "04B37B",
@@ -15619,7 +15763,11 @@
       "Ski glasses",
       "A smart watch"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 236.4,
+      "t": "Is it a headphone set or ski glasses or a smartwatch?"
+     }
     },
     {
      "zid": "E50B58",
@@ -17021,7 +17169,11 @@
       "at weekends",
       "once a week"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 112.3,
+      "t": "Apart from the English classes, which are held every day of the week,"
+     }
     },
     {
      "zid": "42482B",
@@ -17032,7 +17184,11 @@
       "a telescope to watch the stars",
       "an invitation to participate in a TV show"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 148.7,
+      "t": "and has been awarded first prize, which is a telescope."
+     }
     },
     {
      "zid": "0F736B",
@@ -17043,7 +17199,11 @@
       "The shopping street",
       "T he ancient tower"
      ],
-     "key": "1"
+     "key": "1",
+     "ev": {
+      "s": 189.7,
+      "t": "Especially the orchard garden next to the river."
+     }
     },
     {
      "zid": "6DA43C",
@@ -17054,7 +17214,8 @@
       "By train",
       "By car"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": null
     },
     {
      "zid": "8C8FB3",
@@ -18573,7 +18734,11 @@
       "telephones",
       "computers"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 110.0,
+      "t": "You'll be using the computers in our computer room, so do not bring your own ones."
+     }
     },
     {
      "zid": "7C6D94",
@@ -18584,7 +18749,11 @@
       "in a caf in the centre of the city",
       "in a shopping centre"
      ],
-     "key": "1"
+     "key": "1",
+     "ev": {
+      "s": 151.6,
+      "t": "to the right of the entrance to the terminal."
+     }
     },
     {
      "zid": "96301E",
@@ -18595,7 +18764,11 @@
       "A running marathon",
       "A book fair"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 177.3,
+      "t": "It's just a book fair,"
+     }
     },
     {
      "zid": "9C5018",
@@ -18606,7 +18779,11 @@
       "write a text with birthday wishes",
       "help to choose a birthday present"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 241.1,
+      "t": "for writing birthday wishes."
+     }
     },
     {
      "zid": "01CA56",
@@ -20613,7 +20790,11 @@
       "from Monday to Friday",
       "at weekends"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 116.3,
+      "t": "age 12 to 20 at weekends."
+     }
     },
     {
      "zid": "B7B0DE",
@@ -20624,7 +20805,11 @@
       "was at her friend’s birthday party",
       "was very busy with her homework"
      ],
-     "key": "1"
+     "key": "1",
+     "ev": {
+      "s": 667.5,
+      "t": "It's simply breathtaking."
+     }
     },
     {
      "zid": "B5B0A7",
@@ -20635,7 +20820,11 @@
       "In a student hostel",
       "With a host family"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 193.5,
+      "t": "Yes, at first I wanted to stay with a host family, but there was a vacant room in the hostel."
+     }
     },
     {
      "zid": "6E7559",
@@ -20646,7 +20835,11 @@
       "Photography",
       "Cooking"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 254.2,
+      "t": "Oh, cooking. It sounds more original than drawing and much tastier."
+     }
     },
     {
      "zid": "D14DE4",
@@ -22123,7 +22316,11 @@
       "to attend a book exhibition",
       "to share their impressions"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 546.2,
+      "t": "and share their opinions about genes."
+     }
     },
     {
      "zid": "DBC83C",
@@ -22134,7 +22331,11 @@
       "to tell Max about her summer job",
       "to invite Max to a party"
      ],
-     "key": "1"
+     "key": "1",
+     "ev": {
+      "s": 140.5,
+      "t": "I just have to tell you that I won't be able to join you for your camping trip this weekend."
+     }
     },
     {
      "zid": "5ED40C",
@@ -22145,7 +22346,8 @@
       "his pet’s health",
       "his own health"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": null
     },
     {
      "zid": "0725BB",
@@ -22156,7 +22358,11 @@
       "In the centre of the city",
       "Next to the university"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 230.7,
+      "t": "and got off at the stop city centre."
+     }
     },
     {
      "zid": "D6633E",
@@ -24328,7 +24534,11 @@
       "take part in a lottery",
       "enjoy some cakes and drinks"
      ],
-     "key": "1"
+     "key": "1",
+     "ev": {
+      "s": 112.2,
+      "t": "Of course, you can take home everything you create today."
+     }
     },
     {
      "zid": "159BD2",
@@ -24339,7 +24549,8 @@
       "what transport they are going to use",
       "where the meeting point is"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": null
     },
     {
      "zid": "C57410",
@@ -24350,7 +24561,11 @@
       "A new tablet",
       "A painting set"
      ],
-     "key": "1"
+     "key": "1",
+     "ev": {
+      "s": 183.6,
+      "t": "And I can also recommend board games."
+     }
     },
     {
      "zid": "5FDAEE",
@@ -24361,7 +24576,11 @@
       "The guitar",
       "The drums"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 235.2,
+      "t": "I chose the drums, though my mom was very much against it."
+     }
     },
     {
      "zid": "A97A54",
@@ -26328,7 +26547,11 @@
       "take part in a lottery",
       "get a free book of their choice"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 128.7,
+      "t": "everyone can choose a book on art."
+     }
     },
     {
      "zid": "95B82D",
@@ -26339,7 +26562,11 @@
       "he wants to see a football game",
       "he needs to help his friend with homework"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 146.1,
+      "t": "There's a football match here and we need to support our team."
+     }
     },
     {
      "zid": "634191",
@@ -26350,7 +26577,8 @@
       "It’s light blue",
       "It’s multicoloured"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": null
     },
     {
      "zid": "DDDCAC",
@@ -26361,7 +26589,11 @@
       "Swimming",
       "Aerobics"
      ],
-     "key": "1"
+     "key": "1",
+     "ev": {
+      "s": 234.3,
+      "t": "Swimming, aerobics, yoga or dancing?"
+     }
     },
     {
      "zid": "611D96",
@@ -27843,7 +28075,11 @@
       "any drawing tools",
       "any place to sit"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 105.6,
+      "t": "We are happy that our drawing contest has attracted your attention."
+     }
     },
     {
      "zid": "0978BF",
@@ -27854,7 +28090,11 @@
       "what to wear to the party",
       "where to spend the holiday"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 157.4,
+      "t": "My parents suggested that we go on a holiday to celebrate my birthday somewhere outside the city,"
+     }
     },
     {
      "zid": "56E075",
@@ -27865,7 +28105,11 @@
       "She has to see a doctor for her stomach ache",
       "She needs to visit a dentist for an annual check-up"
      ],
-     "key": "1"
+     "key": "1",
+     "ev": {
+      "s": 585.3,
+      "t": "I stayed with a host family, not in a student's hostel, and that was a great mistake."
+     }
     },
     {
      "zid": "154D08",
@@ -27876,7 +28120,11 @@
       "learn more about the history of the city",
       "take a boat for a sea voyage"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 157.4,
+      "t": "My parents suggested that we go on a holiday to celebrate my birthday somewhere outside the city,"
+     }
     },
     {
      "zid": "FF5060",
@@ -29443,7 +29691,8 @@
       "a dancing contest",
       "a roller skating competition"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": null
     },
     {
      "zid": "3DB37F",
@@ -29454,7 +29703,11 @@
       "get help with the homework",
       "borrow a computer to do the homework"
      ],
-     "key": "1"
+     "key": "1",
+     "ev": {
+      "s": 161.5,
+      "t": "It's really urgent because I need to complete my homework by 6pm,"
+     }
     },
     {
      "zid": "A3EC89",
@@ -29465,7 +29718,11 @@
       "The entertainment park",
       "The ice cream funfair"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 197.6,
+      "t": "First, I headed for the entertainment park,"
+     }
     },
     {
      "zid": "419F82",
@@ -29476,7 +29733,11 @@
       "A dog",
       "A parrot"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 1169.4,
+      "t": "Oh, a parrot is such an amusing pet bird."
+     }
     },
     {
      "zid": "42CFC3",
@@ -31085,7 +31346,8 @@
       "go on a day excursion",
       "enjoy a costume party"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": null
     },
     {
      "zid": "496FB0",
@@ -31096,7 +31358,11 @@
       "feed her pet bird",
       "give a book to her friend"
      ],
-     "key": "3"
+     "key": "3",
+     "ev": {
+      "s": 103.0,
+      "t": "Dear friends, on Saturday you will have an opportunity to see an authentic village of the 16th century."
+     }
     },
     {
      "zid": "9415FF",
@@ -31107,7 +31373,11 @@
       "She confused the days of the week",
       "She had to visit a doctor in the morning"
      ],
-     "key": "2"
+     "key": "2",
+     "ev": {
+      "s": 205.7,
+      "t": "Last week I missed an appointment with my doctor because I completely forgot about it."
+     }
     },
     {
      "zid": "0839D5",
@@ -31118,7 +31388,11 @@
       "a bicycle",
       "a tent"
      ],
-     "key": "1"
+     "key": "1",
+     "ev": {
+      "s": 233.3,
+      "t": "By the way, don't you have a spare backpack?"
+     }
     },
     {
      "zid": "70E447",

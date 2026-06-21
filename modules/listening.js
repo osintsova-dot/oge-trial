@@ -154,6 +154,7 @@ export async function renderListening(container, cfg) {
         } });
         return b;
       });
+      const srcWrap = el('div', { class: 'ls-src', style: { display: 'none' } });
       qNodes.push({
         type: 'choice', zid: q.zid, key: q.key,
         result() { return { correct: pick === q.key ? 1 : 0, total: 1, allOk: pick === q.key }; },
@@ -163,11 +164,19 @@ export async function renderListening(container, cfg) {
             if (val === q.key) o.classList.add('right');
             else if (val === pick) o.classList.add('wrong');
           });
+          if (q.ev) {
+            srcWrap.replaceChildren(
+              el('span', { class: 'ls-src-lbl', text: L.source + ': ' }),
+              el('button', { class: 'ls-src-q', onclick: () => { try { audio.currentTime = q.ev.s; audio.play(); } catch {} } }, ['« ', q.ev.t, ' »']),
+            );
+            srcWrap.style.display = 'block';
+          }
         },
       });
       return el('div', { class: 'ls-task' }, [
         el('div', { class: 'ls-q' }, [el('span', { class: 'ls-num', text: n + '. ' }), q.q]),
         el('div', { class: 'ls-opts' }, opts),
+        srcWrap,
       ]);
     }
 
@@ -231,12 +240,22 @@ export async function renderListening(container, cfg) {
     const sc = container.querySelector('.ls-screen'); if (sc) sc.scrollTop = 0;
   }
 
-  // --- Скрипт записи (виден только на проверке): тап по предложению → переслушать фрагмент ---
+  // --- Скрипт записи (виден только на проверке): опорные предложения подсвечены и пронумерованы
+  //     номером задания; тап по предложению → переслушать фрагмент (как в «Чтении»). ---
   function transcriptBlock(group, audio) {
-    const lines = (group.transcript || []).map((seg) =>
-      el('button', { class: 'ls-line', onclick: () => {
+    // карта: время начала опорного сегмента → номера заданий, которые на него опираются
+    const evMap = {};
+    group.questions.forEach((q, i) => {
+      if (q.ev && q.ev.s != null) (evMap[q.ev.s] = evMap[q.ev.s] || []).push(i + 1);
+    });
+    const lines = (group.transcript || []).map((seg) => {
+      const nums = evMap[seg.s];
+      const line = el('button', { class: 'ls-line' + (nums ? ' ev' : ''), onclick: () => {
         try { audio.currentTime = seg.s; audio.play(); } catch {}
-      } }, [seg.t]));
+      } }, [seg.t]);
+      if (nums) nums.forEach((n) => line.appendChild(el('span', { class: 'ls-qn', text: String(n) })));
+      return line;
+    });
     return el('div', { class: 'ls-script' }, [
       el('div', { class: 'ls-script-h', text: L.transcriptTitle }),
       el('div', { class: 'ls-script-hint', text: L.transcriptHint }),

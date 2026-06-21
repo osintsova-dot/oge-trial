@@ -821,6 +821,10 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .ls-line{display:inline;text-align:left;border:none;background:none;padding:1px 3px;border-radius:6px;
   font-size:14px;color:var(--ink);cursor:pointer;font-family:inherit}
 .ls-line:hover,.ls-line:active{background:var(--grad-listening);color:#fff}
+.ls-line.ev{background:rgba(45,194,232,.16);font-weight:600;box-shadow:inset 0 -2px 0 rgba(41,120,216,.5)}
+.ls-line.ev:hover,.ls-line.ev:active{background:var(--grad-listening);color:#fff}
+.ls-qn{display:inline-flex;align-items:center;justify-content:center;min-width:15px;height:15px;margin:0 1px 0 3px;
+  padding:0 3px;border-radius:7px;background:var(--grad-listening);color:#fff;font-size:10px;font-weight:800;vertical-align:super}
 
 /* ЕГЭ-чтение: вставка частей — инлайновые пропуски в тексте */
 .rd-gaptext{line-height:2.1}
