@@ -689,6 +689,18 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .tip-list{margin:6px 0 0;padding-left:18px}
 .tip-list li{font-size:14px;color:var(--ink);line-height:1.5;margin-bottom:6px}
 
+/* ===== Режимы заучивания лексики ===== */
+.vc-body .mode-word{font-size:28px;font-weight:800;color:var(--ink);text-align:center;margin:14px 0 6px}
+.vc-body .mode-sub{text-align:center;color:var(--muted);font-weight:600;margin-bottom:12px;font-size:14px}
+.vc-body .mc-list{margin-top:8px}
+.vc-body .mc-list .mc-opt{display:block;width:100%;margin-bottom:9px}
+.mc-opt.mc-ok{border-color:var(--ok)!important;background:rgba(31,157,87,.12)}
+.mc-opt.mc-bad{border-color:var(--bad)!important;background:rgba(214,69,59,.12)}
+.vc-body .hint-ru{text-align:center;color:var(--muted);font-weight:700;margin-top:10px;font-size:14px}
+.fc-result{text-align:center;font-weight:800;font-size:15px;margin-bottom:10px}
+.fc-result.ok{color:var(--ok)}
+.fc-result.bad{color:var(--bad)}
+
 /* ===== Прочее ===== */
 .loader{color:var(--muted);font-size:14px;padding:16px}
 .err-msg{background:rgba(214,69,59,.1);color:var(--bad);border-radius:12px;padding:10px 12px;font-size:14px;margin:8px 0}
@@ -791,7 +803,7 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .vc-on .ti-name{color:#0E8C82}
 .ti-bar i{background:var(--grad-vocab)}
 /* флэшкарта */
-.vc-body{display:flex;align-items:center;justify-content:center;min-height:46vh}
+.vc-body{display:flex;flex-direction:column;justify-content:center;min-height:46vh}
 .flashcard{width:100%;background:var(--card);border-radius:20px;padding:30px 22px;cursor:pointer;
   box-shadow:0 4px 18px var(--shadow);text-align:center;min-height:200px;
   display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px}

@@ -8,7 +8,9 @@ import { t, plural } from '../js/exam.js';
 import { recordVocabReview, getName, checkNewAchievements, getState } from '../js/gamify.js';
 import { celeb } from '../js/voice.js';
 import { DAILY_GOAL, getActiveTheme, setActiveTheme, dailyProgress,
-  buildSession, dueItems, newItems, review, themeStats } from '../js/vocab_srs.js';
+  buildSession, dueItems, review, themeStats,
+  modeForBox, clozeFor, distractors, normAnswer } from '../js/vocab_srs.js';
+function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 import { openWordSearch } from './word_search.js';
 
 function pct(a, b) { return b ? Math.round((a / b) * 100) : 0; }
@@ -54,7 +56,7 @@ export async function renderVocab(container, cfg) {
       ]),
     ]);
     const startBtn = el('button', { class: 'btn btn-honey btn-block', text: dp.done ? v.practiceMore : v.startDaily,
-      onclick: () => startSession(buildSession(data, DAILY_GOAL)) });
+      onclick: () => startSession(buildSession(data)) });
     const dueNote = el('div', { class: 'vc-note', text: due ? v.dueNote(due, plural(due, t.tasksWord)) : v.dueNone });
 
     // активная тема
@@ -96,53 +98,15 @@ export async function renderVocab(container, cfg) {
     ]));
   }
 
-  // --- Сессия флэшкарт ---
+  // --- Сессия: режим зависит от коробки; новое слово идёт цепочкой (карточка→выбор→впечатать) ---
   function startSession(cards) {
     if (!cards.length) { menuScreen(); return; }
     let idx = 0, learned = 0, sessionXp = 0, dayClosedG = null;
 
-    function card() {
-      if (idx >= cards.length) return summary();
-      const it = cards[idx];
-      let flipped = false;
-
+    // Каркас экрана раунда: верх (счёт+палочки) + тело + низ
+    function frame(body, foot) {
       const segBar = el('div', { class: 'seg-bar' });
-      for (let i = 0; i < cards.length; i++) {
-        segBar.appendChild(el('i', { class: i < idx ? 'seg-ok' : (i === idx ? 'seg-cur' : 'seg') }));
-      }
-
-      const front = el('div', { class: 'fc-front', text: it.en });
-      const back = el('div', { class: 'fc-back', style: { display: 'none' } }, [
-        it.def ? el('div', { class: 'fc-def', text: it.def }) : null,
-        el('div', { class: it.def ? 'fc-ru fc-ru-sub' : 'fc-ru', text: it.ru }),
-        it.ex ? el('div', { class: 'fc-ex', text: it.ex }) : null,
-        el('div', { class: 'fc-theme', text: it.themeRu || '' }),
-      ].filter(Boolean));
-      const hint = el('div', { class: 'fc-hint', text: v.tapToFlip });
-      const cardBox = el('div', { class: 'flashcard', onclick: flip }, [front, back, hint]);
-
-      const grade = el('div', { class: 'fc-grade', style: { display: 'none' } }, [
-        el('button', { class: 'btn fc-no', text: v.dontKnow, onclick: () => answer(false) }),
-        el('button', { class: 'btn fc-yes', text: v.know, onclick: () => answer(true) }),
-      ]);
-
-      function flip() {
-        if (flipped) return;
-        flipped = true;
-        back.style.display = 'block';
-        hint.style.display = 'none';
-        grade.style.display = 'flex';
-      }
-      function answer(ok) {
-        if (ok) learned++;
-        const wasDone = dailyProgress().done;
-        const r = review(it.id, ok);
-        const g = recordVocabReview(ok, r.done && !wasDone);
-        sessionXp += g.xpGained;
-        if (g.dayClosed) dayClosedG = g;
-        idx++; card();
-      }
-
+      for (let i = 0; i < cards.length; i++) segBar.appendChild(el('i', { class: i < idx ? 'seg-ok' : (i === idx ? 'seg-cur' : 'seg') }));
       mount(container, el('div', { class: 'round view' }, [
         el('div', { class: 'round-top' }, [
           el('div', { class: 'drill-bar' }, [
@@ -152,9 +116,97 @@ export async function renderVocab(container, cfg) {
           ]),
           segBar,
         ]),
-        el('div', { class: 'round-body vc-body' }, [cardBox]),
-        el('div', { class: 'round-foot' }, [grade]),
+        el('div', { class: 'round-body vc-body' }, [].concat(body)),
+        el('div', { class: 'round-foot' }, [].concat(foot)),
       ]));
+    }
+
+    // Завершить слово: SRS + XP/гейт (один раз на слово), следующий
+    function finishWord(it, remembered, startBox) {
+      if (remembered) learned++;
+      const wasDone = dailyProgress().done;
+      const r = review(it.id, remembered, startBox);
+      const g = recordVocabReview(remembered, r.done && !wasDone);
+      sessionXp += g.xpGained;
+      if (g.dayClosed) dayClosedG = g;
+      idx++; renderWord();
+    }
+
+    // Панель результата (✓/✗ + правильный ответ + «Дальше»)
+    function nextPanel(ok, correctText, cb) {
+      return [
+        el('div', { class: 'fc-result ' + (ok ? 'ok' : 'bad'), text: ok ? v.correct : v.wrongIs(correctText) }),
+        el('button', { class: 'btn btn-honey btn-block', text: v.next, onclick: cb }),
+      ];
+    }
+
+    // Режим «выбор перевода»: EN + 4 варианта RU
+    function chooseUI(it, onDone) {
+      const opts = shuffle([it.ru].concat(distractors(data, it, 3)));
+      let answered = false;
+      const list = el('div', { class: 'mc-list' });
+      const refresh = (foot) => {};
+      opts.forEach((opt) => {
+        const b = el('button', { class: 'mc-opt', text: opt, onclick: () => {
+          if (answered) return; answered = true;
+          const ok = opt === it.ru;
+          b.classList.add(ok ? 'mc-ok' : 'mc-bad');
+          if (!ok) [...list.children].forEach((c) => { if (c.textContent === it.ru) c.classList.add('mc-ok'); });
+          frame([el('div', { class: 'task-kind mk-kind', text: v.mChoose }), el('div', { class: 'mode-word', text: it.en }), list],
+            nextPanel(ok, it.ru, () => onDone(ok)));
+        } });
+        list.appendChild(b);
+      });
+      frame([el('div', { class: 'task-kind mk-kind', text: v.mChoose }), el('div', { class: 'mode-word', text: it.en }), list], []);
+    }
+
+    // Режим ввода (cloze/впечатать): headNodes + поле; accept — правильная строка
+    function typeUI(headNodes, accept, onDone) {
+      const input = el('input', { class: 'answer-input', type: 'text', autocomplete: 'off', placeholder: v.typePlaceholder });
+      const submit = () => {
+        const ok = normAnswer(input.value) === normAnswer(accept);
+        frame(headNodes.concat(el('div', { class: 'answer-wrap' }, [input])), nextPanel(ok, accept, () => onDone(ok)));
+        input.disabled = true;
+      };
+      const check = el('button', { class: 'btn btn-check', text: t.check, onclick: submit });
+      input.addEventListener('keydown', (e) => { if (e.key === 'Enter') submit(); });
+      frame(headNodes.concat(el('div', { class: 'answer-wrap' }, [input])), [check]);
+      input.focus();
+    }
+    const typeHead = (it) => [el('div', { class: 'task-kind mk-kind', text: v.mType }), el('div', { class: 'mode-word', text: it.ru }),
+      it.def ? el('div', { class: 'mode-sub', text: it.def }) : null].filter(Boolean);
+    function clozeUI(it, cz, onDone) {
+      typeUI([el('div', { class: 'task-kind mk-kind', text: v.mCloze }), el('div', { class: 'task-text', text: cz.sentence }),
+        el('div', { class: 'hint-ru', text: v.hintRu(it.ru) })], cz.gapAnswer, onDone);
+    }
+
+    // Интро нового слова: карточка → выбор → впечатать (чисто → старт box 2)
+    function introFlash(it) {
+      let flipped = false;
+      const front = el('div', { class: 'fc-front', text: it.en });
+      const back = el('div', { class: 'fc-back', style: { display: 'none' } }, [
+        it.def ? el('div', { class: 'fc-def', text: it.def }) : null,
+        el('div', { class: it.def ? 'fc-ru fc-ru-sub' : 'fc-ru', text: it.ru }),
+        it.ex ? el('div', { class: 'fc-ex', text: it.ex }) : null,
+        el('div', { class: 'fc-theme', text: it.themeRu || '' }),
+      ].filter(Boolean));
+      const hint = el('div', { class: 'fc-hint', text: v.tapToFlip });
+      const next = el('button', { class: 'btn btn-honey btn-block', text: v.next, style: { display: 'none' },
+        onclick: () => chooseUI(it, (choiceOk) => typeUI(typeHead(it), it.en, (typeOk) => finishWord(it, choiceOk && typeOk, 2))) });
+      const cardBox = el('div', { class: 'flashcard', onclick: () => {
+        if (flipped) return; flipped = true; back.style.display = 'block'; hint.style.display = 'none'; next.style.display = 'block';
+      } }, [front, back, hint]);
+      frame([el('div', { class: 'task-kind mk-kind', text: v.mNew }), cardBox], [next]);
+    }
+
+    function renderWord() {
+      if (idx >= cards.length) return summary();
+      const it = cards[idx];
+      if (it.box === 0) return introFlash(it);
+      const mode = modeForBox(it.box);
+      if (mode === 'choose') return chooseUI(it, (ok) => finishWord(it, ok));
+      if (mode === 'cloze') { const cz = clozeFor(it); return cz ? clozeUI(it, cz, (ok) => finishWord(it, ok)) : typeUI(typeHead(it), it.en, (ok) => finishWord(it, ok)); }
+      return typeUI(typeHead(it), it.en, (ok) => finishWord(it, ok));
     }
 
     function summary() {
@@ -174,7 +226,7 @@ export async function renderVocab(container, cfg) {
             rline('ic-streak', '🔥', t.rStreak, 'v-streak', streakNow + ' ' + t.dayWord(streakNow)),
           ]),
           el('button', { class: 'btn btn-primary btn-block', text: dp.done ? v.practiceMore : v.startDaily,
-            onclick: () => startSession(buildSession(data, DAILY_GOAL)) }),
+            onclick: () => startSession(buildSession(data)) }),
           el('div', { class: 'row-actions' }, [
             el('button', { class: 'btn btn-ghost', text: v.toThemes, onclick: menuScreen }),
             el('button', { class: 'btn btn-ghost', text: t.toHome, onclick: cfg.goHome }),
@@ -195,6 +247,6 @@ export async function renderVocab(container, cfg) {
       celebrate(moments, show);
     }
 
-    card();
+    renderWord();
   }
 }

@@ -7,7 +7,9 @@
 import { EXAM } from './exam.js';
 
 const KEY = EXAM.store + '_vocab_v1';
-export const DAILY_GOAL = 15;          // обязательная дневная норма слов
+export const DAILY_GOAL = 15;          // обязательная дневная норма слов (закрывает день/серию)
+const MIN_NEW = 5;                     // минимум новых слов в день (чтобы тема двигалась)
+const SESSION_CAP = 20;                // потолок слов за сессию (чтобы список не взрывался)
 const BOX_DAYS = [0, 1, 2, 4, 8, 16];  // интервал по коробке (box 1..5; индекс 0 не используется)
 
 function read() {
@@ -63,20 +65,55 @@ export function newItems(data, theme) {
   for (const g of th.groups) for (const it of g.items) if (!s.srs[it.id]) items.push({ ...it, theme: th.key, themeRu: th.name || th.ru });
   return items;
 }
-// Сессия = due (вперемешку) + добор новыми из активной темы до n
-export function buildSession(data, n = DAILY_GOAL) {
-  const due = dueItems(data);
-  if (due.length >= n) return due.slice(0, n);
+// Сессия = повторения (с их box) + минимум новых из активной темы. Каждый item несёт box (0=новое).
+// Повторения сначала; новых не меньше MIN_NEW (если есть), добор до DAILY_GOAL; общий потолок SESSION_CAP.
+export function buildSession(data) {
+  const s = read();
+  const due = dueItems(data).map((it) => ({ ...it, box: (s.srs[it.id] || {}).box || 1 }));
   const active = getActiveTheme() || (data.themes[0] && data.themes[0].key);
-  const fresh = newItems(data, active);
-  return due.concat(fresh.slice(0, n - due.length));
+  const fresh = newItems(data, active).map((it) => ({ ...it, box: 0 }));
+  let nNew = Math.max(DAILY_GOAL - due.length, fresh.length ? MIN_NEW : 0);
+  nNew = Math.min(nNew, fresh.length, SESSION_CAP);
+  const dueKeep = due.slice(0, SESSION_CAP - nNew);
+  return dueKeep.concat(fresh.slice(0, Math.min(nNew, SESSION_CAP - dueKeep.length)));
+}
+
+// Какой режим показать по коробке: 1–2 выбор перевода, 3 cloze, 4–5 впечатать.
+export function modeForBox(box) {
+  if (box >= 4) return 'type';
+  if (box === 3) return 'cloze';
+  return 'choose';
+}
+
+// Cloze из примера: найти фразу en в ex (регистронезависимо) → предложение с пропуском. null, если нет.
+export function clozeFor(item) {
+  const ex = item.ex || '', phrase = item.en || '';
+  if (!ex || !phrase) return null;
+  const i = ex.toLowerCase().indexOf(phrase.toLowerCase());
+  if (i < 0) return null;
+  return { sentence: ex.slice(0, i) + '____' + ex.slice(i + phrase.length), gapAnswer: ex.slice(i, i + phrase.length) };
+}
+
+// n случайных «неправильных» переводов (ru) из других слов — для режима выбора.
+export function distractors(data, item, n = 3) {
+  const all = allItems(data).filter((x) => x.id !== item.id && x.ru !== item.ru);
+  return shuffle(all).slice(0, n).map((x) => x.ru);
+}
+
+// Нормализация ввода для type/cloze: регистр, пробелы, ведущие to/a/an/the.
+export function normAnswer(s) {
+  return (s || '').toLowerCase().trim().replace(/\s+/g, ' ').replace(/^to\s+/, '').replace(/^(a|an|the)\s+/, '');
 }
 
 // --- Оценка карточки: remembered=true → коробка выше, false → сброс в 1 ---
-export function review(id, remembered) {
+// startBox — для новых слов (день-1): чистый интро → стартует с startBox (напр. 2); ошибка → box 1.
+export function review(id, remembered, startBox) {
   const s = rollDay(read());
+  const isNew = !s.srs[id];
   const cur = s.srs[id] || { box: 0, due: today() };
-  const box = remembered ? Math.min(5, (cur.box || 0) + 1) : 1;
+  let box;
+  if (isNew && startBox) box = remembered ? startBox : 1;
+  else box = remembered ? Math.min(5, (cur.box || 0) + 1) : 1;
   s.srs[id] = { box, due: addDays(BOX_DAYS[box]) };
   s.day.count += 1;
   write(s);
