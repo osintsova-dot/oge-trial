@@ -139,21 +139,24 @@ export async function renderVocab(container, cfg) {
     ]));
   }
 
-  // --- Сессия: режим зависит от коробки; новое слово идёт цепочкой (карточка→выбор→впечатать) ---
+  // --- Сессия: сначала знакомство со всеми новыми карточками, затем тренировка вперемешку ---
   function startSession(cards) {
     if (!cards.length) { menuScreen(); return; }
-    let idx = 0, learned = 0, sessionXp = 0, dayClosedG = null;
+    let learned = 0, sessionXp = 0, dayClosedG = null;
+    let curIdx = 0, curTotal = 0, curLabel = '';
+    const news = cards.filter((c) => c.box === 0);   // новые слова — для фазы знакомства
+    const train = shuffle(cards);                     // тренировка — все слова вперемешку (микс типов/слов)
 
-    // Каркас экрана раунда: верх (счёт+палочки) + тело + низ
+    // Каркас экрана: верх (метка фазы + счёт + палочки) + тело + низ
     function frame(body, foot) {
       const segBar = el('div', { class: 'seg-bar' });
-      for (let i = 0; i < cards.length; i++) segBar.appendChild(el('i', { class: i < idx ? 'seg-ok' : (i === idx ? 'seg-cur' : 'seg') }));
+      for (let i = 0; i < curTotal; i++) segBar.appendChild(el('i', { class: i < curIdx ? 'seg-ok' : (i === curIdx ? 'seg-cur' : 'seg') }));
       mount(container, el('div', { class: 'round view' }, [
         el('div', { class: 'round-top' }, [
           el('div', { class: 'drill-bar' }, [
             el('button', { class: 'drill-x', text: '✕', onclick: menuScreen }),
-            el('div', { class: 'drill-title', text: t.sections.vocab }),
-            el('div', { class: 'drill-count', text: `${idx + 1} / ${cards.length}` }),
+            el('div', { class: 'drill-title', text: curLabel || t.sections.vocab }),
+            el('div', { class: 'drill-count', text: `${curIdx + 1} / ${curTotal}` }),
           ]),
           segBar,
         ]),
@@ -162,7 +165,7 @@ export async function renderVocab(container, cfg) {
       ]));
     }
 
-    // Завершить слово: SRS + XP/гейт (один раз на слово), следующий
+    // Завершить слово: SRS + XP/гейт (один раз на слово). Не продвигает — это делает trainStep.
     function finishWord(it, remembered, startBox) {
       if (remembered) learned++;
       const wasDone = dailyProgress().done;
@@ -170,7 +173,6 @@ export async function renderVocab(container, cfg) {
       const g = recordVocabReview(remembered, r.done && !wasDone);
       sessionXp += g.xpGained;
       if (g.dayClosed) dayClosedG = g;
-      idx++; renderWord();
     }
 
     // Панель результата (✓/✗ + правильный ответ + «Дальше»)
@@ -221,8 +223,12 @@ export async function renderVocab(container, cfg) {
         el('div', { class: 'hint-ru', text: v.hintRu(it.ru) })], cz.gapAnswer, onDone);
     }
 
-    // Интро нового слова: карточка → выбор → впечатать (чисто → старт box 2)
-    function introFlash(it) {
+    // Фаза 1 — знакомство: листаем все новые карточки (переворот → «Дальше»), без оценки
+    let pi = 0;
+    function preview() {
+      if (pi >= news.length) return trainStart();
+      curLabel = v.mPreview; curTotal = news.length; curIdx = pi;
+      const it = news[pi];
       let flipped = false;
       const front = el('div', { class: 'fc-front', text: it.en });
       const back = el('div', { class: 'fc-back', style: { display: 'none' } }, [
@@ -232,22 +238,25 @@ export async function renderVocab(container, cfg) {
         el('div', { class: 'fc-theme', text: it.themeRu || '' }),
       ].filter(Boolean));
       const hint = el('div', { class: 'fc-hint', text: v.tapToFlip });
-      const next = el('button', { class: 'btn btn-honey btn-block', text: v.next, style: { display: 'none' },
-        onclick: () => chooseUI(it, (choiceOk) => typeUI(typeHead(it), it.en, (typeOk) => finishWord(it, choiceOk && typeOk, 2))) });
+      const next = el('button', { class: 'btn btn-honey btn-block', text: v.next, style: { display: 'none' }, onclick: () => { pi++; preview(); } });
       const cardBox = el('div', { class: 'flashcard', onclick: () => {
         if (flipped) return; flipped = true; back.style.display = 'block'; hint.style.display = 'none'; next.style.display = 'block';
       } }, [front, back, hint]);
-      frame([el('div', { class: 'task-kind mk-kind', text: v.mNew }), cardBox], [next]);
+      frame([el('div', { class: 'task-kind mk-kind', text: v.mPreview }), cardBox], [next]);
     }
 
-    function renderWord() {
-      if (idx >= cards.length) return summary();
-      const it = cards[idx];
-      if (it.box === 0) return introFlash(it);
+    // Фаза 2 — тренировка: все слова вперемешку, режим по коробке (новые → выбор; ошибка→box1, верно→box2)
+    let ti = 0;
+    function trainStart() { ti = 0; curLabel = v.mTrain; trainStep(); }
+    function trainStep() {
+      if (ti >= train.length) return summary();
+      curLabel = v.mTrain; curTotal = train.length; curIdx = ti;
+      const it = train[ti];
+      const done = (ok) => { finishWord(it, ok, it.box === 0 ? 2 : undefined); ti++; trainStep(); };
       const mode = modeForBox(it.box);
-      if (mode === 'choose') return chooseUI(it, (ok) => finishWord(it, ok));
-      if (mode === 'cloze') { const cz = clozeFor(it); return cz ? clozeUI(it, cz, (ok) => finishWord(it, ok)) : typeUI(typeHead(it), it.en, (ok) => finishWord(it, ok)); }
-      return typeUI(typeHead(it), it.en, (ok) => finishWord(it, ok));
+      if (mode === 'choose') return chooseUI(it, done);
+      if (mode === 'cloze') { const cz = clozeFor(it); return cz ? clozeUI(it, cz, done) : typeUI(typeHead(it), it.en, done); }
+      return typeUI(typeHead(it), it.en, done);
     }
 
     function summary() {
@@ -260,7 +269,7 @@ export async function renderVocab(container, cfg) {
       function show() {
         mount(container, el('div', { class: 'result view' }, [
           el('div', { class: 'voice-msg', text: dp.done ? v.dayClosed : v.keepGoing }),
-          el('div', { class: 'res-num' }, [String(learned), el('span', { text: '/' + cards.length })]),
+          el('div', { class: 'res-num' }, [String(learned), el('span', { text: '/' + train.length })]),
           el('div', { class: 'res-acc', text: v.dailyLeft(dp.count, dp.goal) }),
           el('div', { class: 'reward' }, [
             rline('ic-xp', '⭐', t.rXp, 'v-xp', '+' + sessionXp + ' XP'),
@@ -288,6 +297,6 @@ export async function renderVocab(container, cfg) {
       celebrate(moments, show);
     }
 
-    renderWord();
+    preview();
   }
 }
