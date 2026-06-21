@@ -13,11 +13,12 @@ const HABIT_WEEKLY = 15 * 7;  // 105 — дневной темп 15 задани
 const WARN_WEEKLY = 160;      // выше → «не успеть» (🔒); между — «интенсивно» (⚠️)
 const READING_KEY = 'Чтение';
 
-// Цели: perTopic — сколько задач на тему (Infinity = весь банк); writing — целевое число писем.
+// Цели: perTopic — сколько задач на тему (Infinity = весь банк). Письмо/эссе считаются
+// как одна «тема» с реальным числом заданий в банке (full=всё, master=15, light=5).
 const TIERS = [
-  { key: 'full',   perTopic: Infinity, writing: 20 },
-  { key: 'master', perTopic: 15,       writing: 12 },
-  { key: 'light',  perTopic: 5,        writing: 5 },
+  { key: 'full',   perTopic: Infinity },
+  { key: 'master', perTopic: 15 },
+  { key: 'light',  perTopic: 5 },
 ];
 
 // Псевдо-темы чтения из данных (когда у раздела нет КЭС в topics — напр. ЕГЭ-чтение):
@@ -34,14 +35,18 @@ async function readingTopics(dataFile) {
   } catch { return []; }
 }
 
-// Остаток под заданную «глубину». Возвращает {R, secs, weak}. extra — псевдо-темы по sec.id.
-function compute(topics, perTopic, writingTarget, extra) {
+// Остаток под заданную «глубину». extra — псевдо-темы по sec.id; writeCounts — число писем по разделу.
+// Письмо/эссе = одна «тема» с реальным числом заданий (full=всё, master=15, light=5).
+function compute(topics, perTopic, extra, writeCounts) {
   const secs = [], weak = [];
+  const witems = writingStats().items || [];
   let R = 0;
   for (const s of EXAM.sections) {
     if (s.type === 'writing') {
-      const done = writingStats().count;
-      const rem = Math.max(0, writingTarget - done);
+      const count = (writeCounts && writeCounts[s.id]) || 0;
+      if (!count) continue;
+      const done = witems.filter((it) => it.section === s.id).length;
+      const rem = Math.max(0, Math.min(perTopic, count) - done);
       R += rem;
       secs.push({ id: s.id, name: t.sections[s.id], rem, doneTopics: rem ? 0 : 1, totTopics: 1 });
       if (rem) weak.push({ section: s.id, label: t.sections[s.id], rem });
@@ -90,8 +95,13 @@ export async function weeklyPlan() {
       if (!(topics[tk] || []).length && s.dataFile) extra[s.id] = await readingTopics(s.dataFile);
     }
   }
+  // Число заданий письма/эссе по разделу (из их data-файлов в EXAM.writing.tasks)
+  const writeCounts = {};
+  for (const task of ((EXAM.writing && EXAM.writing.tasks) || [])) {
+    try { const w = await loadJSON(task.dataFile); writeCounts[task.sectionId] = Array.isArray(w) ? w.length : 0; } catch {}
+  }
   const tiers = TIERS.map((def) => {
-    const c = compute(topics, def.perTopic, def.writing, extra);
+    const c = compute(topics, def.perTopic, extra, writeCounts);
     const weekly = Math.ceil(c.R / weeks);
     return { key: def.key, R: c.R, weekly, daily: Math.ceil(weekly / 7),
       status: statusOf(weekly, c.R), secs: c.secs, weak: c.weak };
