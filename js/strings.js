@@ -160,6 +160,7 @@ export const STRINGS = {
     planVocabTitle: 'Лексика',
     planVocabLine: (l, tot) => '15 слов/день · освоено ' + l + ' из ' + tot,
     planAllDone: 'Весь банк пройден — отличная работа! Повторяй и закрепляй слабые темы.',
+    readFmt: { '1.3.1': 'Подбор заголовков', '1.3.2': 'Вставка частей', '1.3.3': 'Множественный выбор' },
     planGoals: {
       full: { name: 'Весь банк', desc: 'прорешать все вопросы' },
       master: { name: 'Освоить все темы', desc: 'каждую тему до короны' },
@@ -381,6 +382,7 @@ export const STRINGS = {
     planVocabTitle: 'Vocabulary',
     planVocabLine: (l, tot) => '15 words/day · mastered ' + l + ' of ' + tot,
     planAllDone: 'Whole bank done — great job! Keep reviewing weak topics.',
+    readFmt: { '1.3.1': 'Headings', '1.3.2': 'Gapped text', '1.3.3': 'Multiple choice' },
     planGoals: {
       full: { name: 'Whole bank', desc: 'solve every question' },
       master: { name: 'Master all topics', desc: 'every topic to a crown' },

@@ -20,8 +20,22 @@ const TIERS = [
   { key: 'light',  perTopic: 5,        writing: 5 },
 ];
 
-// Остаток под заданную «глубину». Возвращает {R, secs, weak}.
-function compute(topics, perTopic, writingTarget) {
+// Псевдо-темы чтения из данных (когда у раздела нет КЭС в topics — напр. ЕГЭ-чтение):
+// строим список по форматам с их объёмом, kes совпадает с тем, что пишет модуль чтения.
+async function readingTopics(dataFile) {
+  try {
+    const d = await loadJSON(dataFile);
+    const rf = t.readFmt || {};
+    const list = [];
+    if (Array.isArray(d.headings)) list.push({ kes: '1.3.1', label: rf['1.3.1'] || 'Headings', count: d.headings.length });
+    if (Array.isArray(d.gaps)) list.push({ kes: '1.3.2', label: rf['1.3.2'] || 'Gapped text', count: d.gaps.length });
+    if (Array.isArray(d.mc)) list.push({ kes: '1.3.3', label: rf['1.3.3'] || 'Multiple choice', count: d.mc.reduce((n, g) => n + (g.questions ? g.questions.length : 0), 0) });
+    return list;
+  } catch { return []; }
+}
+
+// Остаток под заданную «глубину». Возвращает {R, secs, weak}. extra — псевдо-темы по sec.id.
+function compute(topics, perTopic, writingTarget, extra) {
   const secs = [], weak = [];
   let R = 0;
   for (const s of EXAM.sections) {
@@ -34,8 +48,9 @@ function compute(topics, perTopic, writingTarget) {
       continue;
     }
     if (s.type !== 'drill' && s.type !== 'reading') continue;
-    const topicKey = s.topicKey || (s.id === 'reading' ? READING_KEY : null);
-    const list = topicKey ? (topics[topicKey] || []) : [];
+    const topicKey = s.topicKey || (s.type === 'reading' ? READING_KEY : null);
+    let list = topicKey ? (topics[topicKey] || []) : [];
+    if (!list.length && s.type === 'reading' && extra && extra[s.id]) list = extra[s.id];  // ЕГЭ-чтение без КЭС
     if (!list.length) continue;
     const by = sectionStats(s.id).byKes;
     let secRem = 0, doneT = 0;
@@ -67,8 +82,16 @@ export async function weeklyPlan() {
   const weeks = Math.max(1, ei.weeksLeft);
 
   const topics = await loadJSON(EXAM.topicsFile);
+  // Псевдо-темы для reading-разделов без КЭС (ЕГЭ-чтение)
+  const extra = {};
+  for (const s of EXAM.sections) {
+    if (s.type === 'reading') {
+      const tk = s.topicKey || READING_KEY;
+      if (!(topics[tk] || []).length && s.dataFile) extra[s.id] = await readingTopics(s.dataFile);
+    }
+  }
   const tiers = TIERS.map((def) => {
-    const c = compute(topics, def.perTopic, def.writing);
+    const c = compute(topics, def.perTopic, def.writing, extra);
     const weekly = Math.ceil(c.R / weeks);
     return { key: def.key, R: c.R, weekly, daily: Math.ceil(weekly / 7),
       status: statusOf(weekly, c.R), secs: c.secs, weak: c.weak };
