@@ -2,6 +2,15 @@
 // ОГЭ = ru (родной интерфейс), ЕГЭ = en (полное погружение, уровень B1).
 // Активный набор выбирается в exam.js по exam.lang.
 
+// Склонение русского числительного: forms = [1, 2-4, 5-0]. Локально, чтобы strings.js
+// не зависел от exam.js (там есть plural, но импорт сюда дал бы цикл).
+function pluralRu(n, forms) {
+  const m10 = n % 10, m100 = n % 100;
+  if (m10 === 1 && m100 !== 11) return forms[0];
+  if (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) return forms[1];
+  return forms[2];
+}
+
 export const STRINGS = {
   ru: {
     // splash
@@ -117,6 +126,8 @@ export const STRINGS = {
     skinEquipped: 'Надето', skinEquip: 'Надеть',
     skinOn: '✅ Надет сейчас', skinOpen: '✅ Открыт', perkEnough: '✅ Жетонов хватает', perkNeed: (n) => '🎟 Нужно ещё ' + n,
     levelsTitle: 'Уровни и звания', levelsHow: 'XP копится за занятия: +10 за каждый верный ответ, +30 за идеальный раунд (без ошибок). Больше XP — выше звание. Твой уровень подсвечен.',
+    ptsHelp: (bal) => '1 жетон = +1 балл к тесту. У тебя ' + bal + ' 🎟. Выбери, сколько добавить (до 10).',
+    ptsSpend: (n) => 'Спишется: ' + n + ' 🎟', ptsRedeem: 'Обменять', perkChoose: 'Выбрать',
     rewSub: 'Скины XP-полосы. Открываются за уровни и собранных героев.',
     badgeShow: '👀 Покажи этот экран учителю', badgeDone: 'Готово',
     // celebration moments
@@ -152,7 +163,7 @@ export const STRINGS = {
     perks: {
       hint: { title: 'Подсказка на тесте', desc: 'Право на одну подсказку во время теста', how: 'Настоящая привилегия у преподавателя: одна подсказка во время теста. Стоит 2 🎟. Обменяешь — получишь код, покажи его учителю. Жетоны капают за собранные паки (Герой) и вехи серии.' },
       nohw: { title: 'Урок без ДЗ', desc: 'Прийти на урок без домашнего задания', how: 'Настоящая привилегия: прийти на урок без домашки. Стоит 4 🎟. Обменяешь — получишь код для учителя. Жетоны зарабатываешь за паки и серию.' },
-      star: { title: '«Ученик недели»', desc: 'Статус недели + небольшой бонус', how: 'Настоящая привилегия: статус «Ученик недели» и небольшой бонус от преподавателя. Стоит 6 🎟. Обменяешь — получишь код для учителя.' },
+      points: { title: 'Баллы к тесту', titleN: (n) => '+' + n + ' ' + pluralRu(n, ['балл', 'балла', 'баллов']) + ' к тесту', desc: 'Обменяй жетоны на баллы: 1 🎟 = +1 балл', how: 'Настоящий бонус у преподавателя: добавь баллы к результату теста. 1 жетон = +1 балл, можно от 1 до 10 за тест (сколько хватит жетонов). Выбираешь, сколько потратить, — получишь код «+N баллов», покажи учителю.' },
     },
     voice: {
       homeIdle: ['{name}, серия ждёт. Не сливайся 😎', '{name}, твой ход. 1 раунд — погнали.', '{name}, один раунд — и ты в деле.', 'Ну что, {name}, докажем?'],
@@ -282,6 +293,8 @@ export const STRINGS = {
     skinEquipped: 'On', skinEquip: 'Equip',
     skinOn: '✅ Equipped now', skinOpen: '✅ Unlocked', perkEnough: '✅ Enough tokens', perkNeed: (n) => '🎟 ' + n + ' more needed',
     levelsTitle: 'Levels & ranks', levelsHow: 'XP builds up as you study: +10 for every correct answer, +30 for a perfect round (no mistakes). More XP — higher rank. Your level is highlighted.',
+    ptsHelp: (bal) => '1 token = +1 test point. You have ' + bal + ' 🎟. Choose how many to add (up to 10).',
+    ptsSpend: (n) => 'Spends: ' + n + ' 🎟', ptsRedeem: 'Redeem', perkChoose: 'Choose',
     rewSub: 'XP bar skins. Unlocked by levels and heroes you collect.',
     badgeShow: '👀 Show this screen to your teacher', badgeDone: 'Done',
     // celebration moments
@@ -315,7 +328,7 @@ export const STRINGS = {
     perks: {
       hint: { title: 'Hint on a test', desc: 'One hint during a test', how: 'A real perk from your teacher: one hint during a test. Costs 2 🎟. Redeem it for a code and show it to your teacher. Tokens come from completed packs (Hero) and streak milestones.' },
       nohw: { title: 'No-homework pass', desc: 'Come to class with no homework', how: 'A real perk: come to class with no homework. Costs 4 🎟. Redeem for a code to show your teacher. Earn tokens from packs and streaks.' },
-      star: { title: 'Student of the week', desc: 'Weekly status + a small bonus', how: 'A real perk: "Student of the week" status and a small bonus from your teacher. Costs 6 🎟. Redeem for a code to show your teacher.' },
+      points: { title: 'Test bonus points', titleN: (n) => '+' + n + (n === 1 ? ' point' : ' points') + ' on a test', desc: 'Trade tokens for points: 1 🎟 = +1 point', how: 'A real bonus from your teacher: add points to your test result. 1 token = +1 point, from 1 to 10 per test (as many tokens as you have). Choose how many to spend — get a "+N points" code to show your teacher.' },
     },
     voice: {
       homeIdle: ['{name}, your streak is waiting. Keep it up 😎', '{name}, your move. One round — go.', '{name}, one round and you are in.', 'So, {name}, shall we?'],

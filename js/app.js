@@ -306,17 +306,19 @@ function renderRewards() {
   const perks = perksStatus().map((p) =>
     el('div', { class: 'perk' + (p.affordable ? '' : ' off'),
       onclick: () => infoModal({
-        iconName: 'perk-' + p.id, icon: p.icon, title: p.title, text: p.how,
+        iconName: p.iconFile, icon: p.icon, title: p.title, text: p.how,
         status: { done: p.affordable, label: p.affordable ? t.perkEnough : t.perkNeed(p.cost - tokens) },
       }) }, [
-      el('div', { class: 'perk-ic' }, [iconImg('perk-' + p.id, p.icon, 'perk-img')]),
+      el('div', { class: 'perk-ic' }, [iconImg(p.iconFile, p.icon, 'perk-img')]),
       el('div', { class: 'perk-info' }, [
         el('div', { class: 'perk-t', text: p.title }),
         el('div', { class: 'perk-d', text: p.desc }),
       ]),
       el('button', { class: 'perk-btn' + (p.affordable ? '' : ' lock'), disabled: !p.affordable,
-        text: '🎟 ' + p.cost,
-        onclick: (e) => { e.stopPropagation(); const r = redeemPerk(p.id); if (r) { showBadge(r); renderRewards(); } } }),
+        text: p.variable ? t.perkChoose : ('🎟 ' + p.cost),
+        onclick: (e) => { e.stopPropagation();
+          if (p.variable) { pointsModal(p); return; }
+          const r = redeemPerk(p.id); if (r) { showBadge(r); renderRewards(); } } }),
     ]));
   const recent = recentRedeemed().slice(0, 5);
   const recentBlock = recent.length ? el('div', { class: 'redeemed' },
@@ -344,6 +346,37 @@ function renderRewards() {
 function fmtDate(ts) {
   const d = new Date(ts);
   return String(d.getDate()).padStart(2, '0') + '.' + String(d.getMonth() + 1).padStart(2, '0');
+}
+
+// Чузер для переменной привилегии «баллы к тесту»: степпер 1..min(max, баланс жетонов)
+function pointsModal(p) {
+  const max = Math.min(p.max || 10, p.balance);
+  if (max < (p.min || 1)) return;
+  let n = p.min || 1;
+  const back = el('div', { class: 'modal-back' });
+  const close = () => back.remove();
+  back.addEventListener('click', (e) => { if (e.target === back) close(); });
+  const num = el('div', { class: 'pts-num', text: '+' + n });
+  const spend = el('div', { class: 'pts-spend', text: t.ptsSpend(n) });
+  const minus = el('button', { class: 'pts-step', text: '−' });
+  const plus = el('button', { class: 'pts-step', text: '+' });
+  const upd = () => {
+    num.textContent = '+' + n; spend.textContent = t.ptsSpend(n);
+    minus.disabled = n <= (p.min || 1); plus.disabled = n >= max;
+  };
+  minus.onclick = () => { if (n > (p.min || 1)) { n--; upd(); } };
+  plus.onclick = () => { if (n < max) { n++; upd(); } };
+  back.appendChild(el('div', { class: 'modal-card' }, [
+    el('div', { class: 'modal-ic' }, [iconImg(p.iconFile, p.icon, 'modal-img')]),
+    el('div', { class: 'modal-title', text: p.title }),
+    el('div', { class: 'modal-text', text: t.ptsHelp(p.balance) }),
+    el('div', { class: 'pts-stepper' }, [minus, num, plus]),
+    spend,
+    el('button', { class: 'btn btn-honey btn-block', style: { marginTop: '16px' }, text: t.ptsRedeem,
+      onclick: () => { const r = redeemPerk('points', n); if (r) { close(); showBadge(r); renderRewards(); } } }),
+  ]));
+  document.body.appendChild(back);
+  upd();
 }
 
 function showBadge(r) {

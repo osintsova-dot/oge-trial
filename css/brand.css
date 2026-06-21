@@ -595,6 +595,15 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .modal-status.done{background:rgba(76,175,80,.16);color:#3a9d47}
 .modal-status.locked{background:var(--bg);color:var(--muted)}
 
+/* ===== Степпер выбора баллов (привилегия «баллы к тесту») ===== */
+.pts-stepper{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:16px}
+.pts-step{width:48px;height:48px;border-radius:50%;border:none;cursor:pointer;
+  font-size:26px;font-weight:800;line-height:1;color:#fff;
+  background:var(--grad-honey,linear-gradient(90deg,#EDA92C,#F5C842));box-shadow:0 3px 10px rgba(0,0,0,.18)}
+.pts-step:disabled{opacity:.35;cursor:default}
+.pts-num{min-width:88px;text-align:center;font-size:38px;font-weight:800;color:var(--ink);letter-spacing:-.5px}
+.pts-spend{margin-top:12px;font-size:14px;font-weight:800;color:var(--muted)}
+
 /* ===== Прочее ===== */
 .loader{color:var(--muted);font-size:14px;padding:16px}
 .err-msg{background:rgba(214,69,59,.1);color:var(--bad);border-radius:12px;padding:10px 12px;font-size:14px;margin:8px 0}

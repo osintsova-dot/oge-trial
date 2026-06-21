@@ -25,9 +25,18 @@ const DEFAULT = { name: '', streak: { count: 0, lastDay: null }, pack: { done: [
 export const PERKS = [
   { id: 'hint', icon: '💡', cost: 2 },
   { id: 'nohw', icon: '🎒', cost: 4 },
-  { id: 'star', icon: '⭐', cost: 6 },
+  // переменная привилегия: 1 жетон = +1 балл к тесту, выбор 1..10 (или сколько есть жетонов)
+  { id: 'points', icon: '➕', iconFile: 'perk-star', cost: 1, variable: true, min: 1, max: 10 },
 ];
-function perkText(p) { return { id: p.id, icon: p.icon, cost: p.cost, title: t.perks[p.id].title, desc: t.perks[p.id].desc, how: t.perks[p.id].how }; }
+// amount задаётся при обмене переменной привилегии — тогда title = «+N баллов…», cost = amount
+function perkText(p, amount) {
+  const d = t.perks[p.id];
+  const o = { id: p.id, icon: p.icon, iconFile: p.iconFile || ('perk-' + p.id),
+    cost: p.cost, title: d.title, desc: d.desc, how: d.how,
+    variable: !!p.variable, min: p.min || 1, max: p.max || null };
+  if (p.variable && amount != null) { o.title = d.titleN ? d.titleN(amount) : d.title; o.cost = amount; }
+  return o;
+}
 
 const FREEZE_CAP = 3; // максимум накопленных заморозок
 
@@ -278,7 +287,8 @@ export function applySkin() { document.documentElement.style.setProperty('--xp-f
 export function getTokens() { return read().tokens || 0; }
 export function perksStatus() {
   const bal = read().tokens || 0;
-  return PERKS.map((p) => ({ ...perkText(p), affordable: bal >= p.cost }));
+  return PERKS.map((p) => ({ ...perkText(p),
+    affordable: bal >= (p.variable ? (p.min || 1) : p.cost), balance: bal }));
 }
 function makeCode() {
   const h = '0123456789ABCDEF';
@@ -287,20 +297,28 @@ function makeCode() {
   return 'SS-' + c;
 }
 // Потратить жетоны на привилегию → выдать код-бейдж (показать учителю). null, если не хватает жетонов.
-export function redeemPerk(id) {
+export function redeemPerk(id, amount) {
   const s = read();
   const p = PERKS.find((x) => x.id === id);
-  if (!p || (s.tokens || 0) < p.cost) return null;
-  s.tokens -= p.cost;
+  if (!p) return null;
+  let cost;
+  if (p.variable) {
+    cost = Math.round(amount || 0);
+    if (cost < (p.min || 1)) return null;
+    if (p.max && cost > p.max) cost = p.max;
+  } else cost = p.cost;
+  if ((s.tokens || 0) < cost) return null;
+  s.tokens -= cost;
   const rec = { id, code: makeCode(), ts: Date.now() };
+  if (p.variable) rec.amount = cost;
   s.redeemed = s.redeemed || [];
   s.redeemed.unshift(rec);
   if (s.redeemed.length > 50) s.redeemed.length = 50;
   write(s);
-  return { perk: perkText(p), code: rec.code, ts: rec.ts };
+  return { perk: perkText(p, rec.amount), code: rec.code, ts: rec.ts, amount: rec.amount };
 }
 export function recentRedeemed() {
-  return (read().redeemed || []).map((r) => { const p = PERKS.find((x) => x.id === r.id); return { ...r, perk: p ? perkText(p) : null }; });
+  return (read().redeemed || []).map((r) => { const p = PERKS.find((x) => x.id === r.id); return { ...r, perk: p ? perkText(p, r.amount) : null }; });
 }
 
 // Статус всех ачивок (для экрана прогресса). Текст — из t.ach[id].
