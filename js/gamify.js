@@ -25,15 +25,17 @@ const DEFAULT = { name: '', streak: { count: 0, lastDay: null }, pack: { done: [
 export const PERKS = [
   { id: 'hint', icon: '💡', cost: 2 },
   { id: 'nohw', icon: '🎒', cost: 4 },
-  // переменная привилегия: 1 жетон = +1 балл к тесту, выбор 1..10 (или сколько есть жетонов)
-  { id: 'points', icon: '➕', iconFile: 'perk-star', cost: 1, variable: true, min: 1, max: 10 },
+  // переменные привилегии (обмен жетонов): выбираешь количество жетонов
+  { id: 'points', icon: '➕', iconFile: 'perk-star', cost: 1, variable: true, min: 1, max: 10 }, // 1 жетон = +1 балл к тесту, до 10
+  { id: 'coins', icon: '🪙', cost: 1, variable: true, min: 1, max: null },                       // 1 жетон = 5 монет «Твоя школа», без потолка
 ];
-// amount задаётся при обмене переменной привилегии — тогда title = «+N баллов…», cost = amount
+// amount задаётся при обмене переменной привилегии — тогда title = «+N…», cost = amount
 function perkText(p, amount) {
   const d = t.perks[p.id];
   const o = { id: p.id, icon: p.icon, iconFile: p.iconFile || ('perk-' + p.id),
     cost: p.cost, title: d.title, desc: d.desc, how: d.how,
-    variable: !!p.variable, min: p.min || 1, max: p.max || null };
+    variable: !!p.variable, min: p.min || 1, max: p.max || null,
+    chooseHelp: d.chooseHelp || null, chooseBig: d.chooseBig || null, badgeShow: d.badgeShow || null };
   if (p.variable && amount != null) { o.title = d.titleN ? d.titleN(amount) : d.title; o.cost = amount; }
   return o;
 }
