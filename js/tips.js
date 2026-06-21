@@ -7,8 +7,12 @@ import { loadJSON } from './data.js';
 import { EXAM, t } from './exam.js';
 import { hasSeenTip, markTipSeen } from './gamify.js';
 
-// id раздела в приложении → ключ section в памятках
-const SECTION_MEMO = { grammar: 'grammar', wordform: 'word_formation', reading: 'reading', writing: 'writing' };
+// id раздела в приложении → ключ section в памятках (по экзамену)
+const SECTION_MEMO = {
+  oge: { grammar: 'grammar', wordform: 'word_formation', reading: 'reading', writing: 'writing' },
+  ege: { grammar: 'grammar', lexis: 'lexis', reading: 'reading', email: 'email', essay: 'essay' },
+};
+function memoKey(sectionId) { return (SECTION_MEMO[EXAM.id] || {})[sectionId]; }
 
 let _memos = null;
 async function loadMemos() {
@@ -18,10 +22,10 @@ async function loadMemos() {
   return _memos;
 }
 function memoFor(memos, sectionId) {
-  const key = SECTION_MEMO[sectionId];
+  const key = memoKey(sectionId);
   return key ? (memos || []).find((m) => m.section === key) : null;
 }
-function hasMemo(sectionId) { return !!(EXAM.memosFile && SECTION_MEMO[sectionId]); }
+function hasMemo(sectionId) { return !!(EXAM.memosFile && memoKey(sectionId)); }
 
 // Кнопка «💡» для шапки раздела. null, если у раздела/экзамена нет памятки.
 export function tipButton(sectionId) {

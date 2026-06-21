@@ -395,7 +395,12 @@ export const STRINGS = {
     // Советы (для ЕГЭ контента пока нет, memosFile=null → не используется)
     tipsTitle: (sec) => sec + ' · Speaky tips',
     tipFormat: '📋 Format', tipTime: '⏱ Time', tipHow: '✅ How to do it', tipMistakes: '⚠️ Common mistakes',
-    examIntro: [],
+    examIntro: [
+      { img: './assets/spiky-talk.png', title: 'What is the EGE', text: 'The English EGE has two parts.\nWritten (~3h10m): listening, reading, grammar & vocabulary, writing.\nSpeaking (~17 min) — a separate part.\nMax 100 points: 22 to pass, 40+ for university.' },
+      { img: './assets/spiky-check.png', title: 'Written part', text: 'Four sections, you manage the time yourself:\n1) Listening (~30 min).\n2) Reading (~30 min).\n3) Grammar & vocabulary (~15 min).\n4) Writing — 2 tasks (~50 min).' },
+      { img: './assets/spiky-idea.png', title: 'Writing — two tasks', text: 'Task 37 — an email to a pen-friend: answer all questions AND ask 3 of your own (~100 words).\nTask 38 — an opinion text based on a chart, with 6 aspects (~200–250 words).\nMiss an aspect or a question and you lose points.' },
+      { img: './assets/spiky-thumb.png', title: "It's all about practice", text: "Here you'll train every section: grammar, vocabulary, reading, email and essay.\nIn each section Speaky shows how to do the task and the time to spend.\nLet's go! 💪" },
+    ],
     rewSub: 'XP bar skins. Unlocked by levels and heroes you collect.',
     badgeShow: '👀 Show this screen to your teacher', badgeDone: 'Done',
     // celebration moments

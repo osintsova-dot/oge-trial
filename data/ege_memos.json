@@ -1,0 +1,100 @@
+[
+  {
+    "section": "grammar",
+    "task": "Grammar (tasks 19–24)",
+    "format": "A connected text with gaps. To the right of each line is a CAPITALISED key word — put it into the correct grammatical form: verb tense and voice, non-finite forms, comparative/superlative of adjectives and adverbs, plural nouns, pronouns, numerals.",
+    "scoring": "Tasks 19–24, 1 point each. Spelling counts — a correct form spelt wrong gets 0.",
+    "strategy": [
+      "Read the whole sentence (and the neighbouring ones) first — the form depends on tense and meaning.",
+      "Decide the part of speech and what's needed: verb → tense/voice; adjective → comparison; noun → plural; pronoun → case.",
+      "Watch time markers (yesterday, already, since) and passive signals (by, is/are done).",
+      "Don't get stuck — mark a hard gap, move on and come back.",
+      "Write the FULL form and mind the spelling (doubled letters, -ied, irregular verbs)."
+    ],
+    "common_mistakes": [
+      "Wrong tense — ignoring time markers or the sequence of tenses.",
+      "Active vs passive mixed up.",
+      "Irregular verb forms spelt incorrectly.",
+      "Forgetting the plural or the third-person -s."
+    ],
+    "time": "6–8 minutes for both grammar/vocabulary blocks. Don't linger on one gap."
+  },
+  {
+    "section": "lexis",
+    "task": "Word formation & vocabulary (tasks 25–36)",
+    "format": "Two parts. Word formation (25–29): build a related word from the CAPITALISED key word using prefixes/suffixes (including negatives un-, in-, im-, dis-). Vocabulary (30–36): choose one of four words that fits the collocation and meaning.",
+    "scoring": "1 point per gap. Spelling matters in word formation.",
+    "strategy": [
+      "Word formation: first decide the part of speech needed (noun/adjective/adverb/verb), then the right affix.",
+      "Check the meaning — if it's negative, add un-/in-/im-/dis-.",
+      "Vocabulary: choose by collocation (which word goes with the others), not by guessing.",
+      "Re-read the sentence with your word — does it sound natural and fit the grammar?"
+    ],
+    "common_mistakes": [
+      "Right root but wrong part of speech.",
+      "Missing a needed negative prefix.",
+      "Spelling errors in the new word.",
+      "Vocabulary: picking a synonym that doesn't collocate."
+    ],
+    "time": "6–8 minutes. Do word formation thoughtfully — that's where mistakes hide."
+  },
+  {
+    "section": "reading",
+    "task": "Reading (tasks 10–18)",
+    "format": "Three formats. Headings: match texts to headings (one heading is extra). Gapped text: insert sentence-parts into the gaps (one part is extra) — it tests coherence. Multiple choice: read a long text and choose the best answer for each question.",
+    "scoring": "1 point per item.",
+    "strategy": [
+      "Headings: read each text's main idea and match the gist — don't get hooked by a repeated word.",
+      "Gapped text: use the links around the gap (pronouns, this/such, connectors) to find the right part.",
+      "Multiple choice: find the place in the text that answers the question — the answer is paraphrased, not copied.",
+      "Eliminate options that say more or less than the text actually does."
+    ],
+    "common_mistakes": [
+      "Matching by a single repeated word instead of by meaning.",
+      "Forgetting the extra heading / extra part.",
+      "Multiple choice: picking an option that's true in general but not stated in the text."
+    ],
+    "time": "About 30 minutes. Headings fast (5–7 min); spend the rest on the gapped text and multiple choice."
+  },
+  {
+    "section": "email",
+    "task": "Email to a pen-friend (task 37)",
+    "format": "You get an extract from a pen-friend's email on a topic. Write a reply: answer ALL their questions AND ask 3 questions of your own on the given subject. About 100 words, informal style.",
+    "scoring": "Max 6 points: K1 task (all answers + your 3 questions + style), K2 organisation, K3 language. Under 90 words → heavy penalty.",
+    "strategy": [
+      "Find every question in the extract and answer each one fully.",
+      "Ask 3 real questions on the stated subject — don't forget them, it's a big part of the score.",
+      "Keep an informal style: contractions, simple linkers, an opening, a friendly closing and your name.",
+      "Use paragraphs and linking words — that's a separate criterion.",
+      "Count the words; aim for ~100 (a safe range)."
+    ],
+    "common_mistakes": [
+      "Not asking 3 questions (or asking fewer).",
+      "Missing one of the friend's questions.",
+      "Formal style instead of a friendly one.",
+      "Wrong length."
+    ],
+    "time": "~20 minutes: 2–3 min plan, 12–13 min writing, 4–5 min check."
+  },
+  {
+    "section": "essay",
+    "task": "Opinion text based on a chart (task 38)",
+    "format": "A written project: you get a project topic and a table/chart. Write a structured text with 6 aspects: an intro to the topic; 2–3 facts from the data; 1–2 problems and a solution; your opinion with reasons; a conclusion. About 200–250 words, neutral style.",
+    "scoring": "Max 14 points across 5 criteria (K1–K5). All 6 aspects must be present; no copying chunks from the prompt.",
+    "strategy": [
+      "Plan all 6 aspects before writing — a missing aspect costs a lot.",
+      "Describe 2–3 real numbers from the chart in your own words.",
+      "State a problem AND a solution; give your opinion WITH reasons.",
+      "Use formal linkers and one paragraph per aspect.",
+      "Don't copy phrases from the prompt — paraphrase them.",
+      "Check the length (~200–250) and that every aspect is there."
+    ],
+    "common_mistakes": [
+      "Missing an aspect (problem/solution/opinion).",
+      "Copying text straight from the prompt.",
+      "No data from the chart, only general talk.",
+      "Wrong length or an informal style."
+    ],
+    "time": "30–35 minutes: 5 min plan, 20–22 min writing, 5–7 min check."
+  }
+]
