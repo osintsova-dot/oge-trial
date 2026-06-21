@@ -1,0 +1,3711 @@
+{
+ "exam": "ege",
+ "section": "listening",
+ "groups": [
+  {
+   "id": "g1",
+   "guid": "231BF7AB2217A29642E8DDCE8195EBC3",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/231BF7AB2217A29642E8DDCE8195EBC3/img1_1562941616.mp3",
+   "duration": 611.5,
+   "questions": [
+    {
+     "zid": "180B4F",
+     "type": "choice",
+     "q": "What do we learn about Maggie’s musical education?",
+     "options": [
+      "She attended a musical school for 9 years",
+      "She didn’t like playing the piano very much",
+      "She didn’t have a special music talent"
+     ],
+     "key": "3",
+     "ev": {
+      "s": 96.9,
+      "t": "Well, it's a long story and it's connected with my musical education."
+     }
+    },
+    {
+     "zid": "85397A",
+     "type": "choice",
+     "q": "Why did Maggie want to become an actress?",
+     "options": [
+      "This profession runs in her family",
+      "Acting on stage felt natural to her",
+      "She wanted to overcome the stage fright"
+     ],
+     "key": "2",
+     "ev": {
+      "s": 152.9,
+      "t": "I found that being on stage I felt this is home."
+     }
+    },
+    {
+     "zid": "022456",
+     "type": "choice",
+     "q": "What does Maggie say about directors and directing?",
+     "options": [
+      "She thinks she was fortunate to work with many talented directors",
+      "She feels she could herself direct a film one day",
+      "She thinks David Lynch is the best director"
+     ],
+     "key": "1",
+     "ev": {
+      "s": 184.9,
+      "t": "Well, speaking about working with good directors that has always been a certain kiss met with me."
+     }
+    },
+    {
+     "zid": "92F72A",
+     "type": "choice",
+     "q": "What does Maggie say is the most important thing for her about a film?",
+     "options": [
+      "The story",
+      "The screenplay",
+      "The partners"
+     ],
+     "key": "2",
+     "ev": null
+    },
+    {
+     "zid": "41B385",
+     "type": "choice",
+     "q": "Maggie often plays mothers because …",
+     "options": [
+      "she is a future mother herself",
+      "such roles provide lots of opportunities to an actress",
+      "people like her in such roles"
+     ],
+     "key": "2",
+     "ev": {
+      "s": 82.9,
+      "t": "In this studio we have Maggie Smith, a famous actress. Hello Maggie."
+     }
+    },
+    {
+     "zid": "ECD19F",
+     "type": "choice",
+     "q": "What does Maggie think of her appearance?",
+     "options": [
+      "She thinks she’s very beautiful",
+      "She thinks she should take care of the way she looks on screen",
+      "She thinks her looks don’t interfere with her job"
+     ],
+     "key": "3",
+     "ev": {
+      "s": 286.9,
+      "t": "I think that my looks through the years have served me well because I was never a great beauty and I was never cast as a great beauty."
+     }
+    },
+    {
+     "zid": "CD55FD",
+     "type": "choice",
+     "q": "What does Maggie love about being an actress?",
+     "options": [
+      "Being able to play both men and women",
+      "Being able to look beautiful on screen",
+      "Being able to express complex characters"
+     ],
+     "key": "3",
+     "ev": {
+      "s": 87.9,
+      "t": "Hello. It's so nice being here. Thank you for inviting me."
+     }
+    }
+   ],
+   "transcript": [
+    {
+     "s": 82.9,
+     "e": 87.9,
+     "t": "In this studio we have Maggie Smith, a famous actress. Hello Maggie."
+    },
+    {
+     "s": 87.9,
+     "e": 92.9,
+     "t": "Hello. It's so nice being here. Thank you for inviting me."
+    },
+    {
+     "s": 92.9,
+     "e": 96.9,
+     "t": "Could you please tell us about what led you to become an actress?"
+    },
+    {
+     "s": 96.9,
+     "e": 101.9,
+     "t": "Well, it's a long story and it's connected with my musical education."
+    },
+    {
+     "s": 101.9,
+     "e": 104.9,
+     "t": "Did you attend a musical school?"
+    },
+    {
+     "s": 104.9,
+     "e": 110.9,
+     "t": "When I was 9 years old I started playing the piano. I was obsessed."
+    },
+    {
+     "s": 110.9,
+     "e": 118.9,
+     "t": "I needed to play for several hours every day. But I wasn't great, though I was good and I had tremendous passion."
+    },
+    {
+     "s": 118.9,
+     "e": 127.9,
+     "t": "I didn't have any real technical skill, so no matter how much I practiced I was never going to be able to really play in front of people."
+    },
+    {
+     "s": 127.9,
+     "e": 136.9,
+     "t": "I had tremendous stage fright. Still, the piano was the beginning of me going, I need an outlet, I need a vehicle."
+    },
+    {
+     "s": 136.9,
+     "e": 140.9,
+     "t": "And then from music I joined the drama club in high school."
+    },
+    {
+     "s": 140.9,
+     "e": 145.9,
+     "t": "I got on stage and I went, oh wow, no stage fright."
+    },
+    {
+     "s": 145.9,
+     "e": 152.9,
+     "t": "I couldn't do public speaking and I couldn't play the piano in front of people, but I could act."
+    },
+    {
+     "s": 152.9,
+     "e": 157.9,
+     "t": "I found that being on stage I felt this is home."
+    },
+    {
+     "s": 157.9,
+     "e": 165.9,
+     "t": "I felt an immediate right thing and the exchange between the audience and the actors on the stage was so fulfilling."
+    },
+    {
+     "s": 165.9,
+     "e": 169.9,
+     "t": "I just went, that is the conversation I want to have."
+    },
+    {
+     "s": 169.9,
+     "e": 178.9,
+     "t": "It was unequivocal. There was nobody acting in my family but there didn't need to be. I just understood what I wanted to do at once."
+    },
+    {
+     "s": 178.9,
+     "e": 184.9,
+     "t": "Was it easy to find your director? Would you like to try directing yourself?"
+    },
+    {
+     "s": 184.9,
+     "e": 191.9,
+     "t": "Well, speaking about working with good directors that has always been a certain kiss met with me."
+    },
+    {
+     "s": 191.9,
+     "e": 199.9,
+     "t": "I was lucky. There was a period in the 1980s where you had people who were born to direct, born to shepherd stories."
+    },
+    {
+     "s": 199.9,
+     "e": 209.9,
+     "t": "Like David Lynch, who was so unusual, such a rare storyteller, so personal and private and dream like from his subconscious."
+    },
+    {
+     "s": 209.9,
+     "e": 218.9,
+     "t": "You know, people ask me why I don't direct. Well, it's because I've worked with people where that's what they were born to do."
+    },
+    {
+     "s": 218.9,
+     "e": 223.9,
+     "t": "And it's a little intimidating after you've worked with a rash of those people one after another."
+    },
+    {
+     "s": 223.9,
+     "e": 227.9,
+     "t": "Then it's like, I like acting. Acting is good."
+    },
+    {
+     "s": 227.9,
+     "e": 230.9,
+     "t": "What kind of films do you like acting in?"
+    },
+    {
+     "s": 230.9,
+     "e": 240.9,
+     "t": "I don't think the genre matters much. I even try not to look at the story itself because even a banal story may turn into a blockbuster."
+    },
+    {
+     "s": 240.9,
+     "e": 244.9,
+     "t": "What I pay attention to and fall in love with is the script."
+    },
+    {
+     "s": 244.9,
+     "e": 249.9,
+     "t": "If the script is good, I start just living in those dialogues or monologues."
+    },
+    {
+     "s": 249.9,
+     "e": 253.9,
+     "t": "You play a lot of family women. How come?"
+    },
+    {
+     "s": 253.9,
+     "e": 258.9,
+     "t": "I've always played mums. I once played someone who wants to be a mum."
+    },
+    {
+     "s": 258.9,
+     "e": 268.9,
+     "t": "The thing with the role of a mother in our legacy, in world history, in world mythology, is that the role of a mother encompasses the entire universe."
+    },
+    {
+     "s": 268.9,
+     "e": 273.9,
+     "t": "There is no limit to what you can express if you are representing that in a story."
+    },
+    {
+     "s": 273.9,
+     "e": 277.9,
+     "t": "I've just got nominated for an Emmy for playing a mother."
+    },
+    {
+     "s": 277.9,
+     "e": 281.9,
+     "t": "Modern women are constantly looking for ways to be more beautiful."
+    },
+    {
+     "s": 281.9,
+     "e": 286.9,
+     "t": "As a woman and as an actress, are you satisfied with your appearance?"
+    },
+    {
+     "s": 286.9,
+     "e": 294.9,
+     "t": "I think that my looks through the years have served me well because I was never a great beauty and I was never cast as a great beauty."
+    },
+    {
+     "s": 294.9,
+     "e": 299.9,
+     "t": "So I never leaned on it and I never really made that a high value."
+    },
+    {
+     "s": 299.9,
+     "e": 305.9,
+     "t": "I've always been kind of androgynous and it's one of the reasons why I love being an actress."
+    },
+    {
+     "s": 305.9,
+     "e": 309.9,
+     "t": "I love experimenting with the male and the female in any character."
+    },
+    {
+     "s": 309.9,
+     "e": 316.9,
+     "t": "That balance, the yin and the yang of it, is always in play because everybody is male and female."
+    },
+    {
+     "s": 316.9,
+     "e": 320.9,
+     "t": "Thank you Maggie. It has been a real pleasure talking with you today."
+    },
+    {
+     "s": 343.7,
+     "e": 348.9,
+     "t": "Hello everybody and welcome to our daily program Stardom."
+    },
+    {
+     "s": 348.9,
+     "e": 354.9,
+     "t": "Today in our studio we have Maggie Smith, a famous actress. Hello Maggie."
+    },
+    {
+     "s": 354.9,
+     "e": 359.9,
+     "t": "Hello. It's so nice being here. Thank you for inviting me."
+    },
+    {
+     "s": 359.9,
+     "e": 363.9,
+     "t": "Could you please tell us about what led you to become an actress?"
+    },
+    {
+     "s": 363.9,
+     "e": 368.9,
+     "t": "Well, it's a long story and it's connected with my musical education."
+    },
+    {
+     "s": 368.9,
+     "e": 371.9,
+     "t": "Did you attend a musical school?"
+    },
+    {
+     "s": 371.9,
+     "e": 375.9,
+     "t": "When I was 9 years old, I started playing the piano."
+    },
+    {
+     "s": 375.9,
+     "e": 380.9,
+     "t": "I was obsessed. I needed to play for several hours every day."
+    },
+    {
+     "s": 380.9,
+     "e": 386.9,
+     "t": "But I wasn't great, though I was good and I had tremendous passion."
+    },
+    {
+     "s": 386.9,
+     "e": 390.9,
+     "t": "I didn't have any real technical skill, so no matter how much I practiced"
+    },
+    {
+     "s": 390.9,
+     "e": 394.9,
+     "t": "I was never going to be able to really play in front of people."
+    },
+    {
+     "s": 394.9,
+     "e": 397.9,
+     "t": "I had tremendous stage fright."
+    },
+    {
+     "s": 397.9,
+     "e": 401.9,
+     "t": "Still, the piano was the beginning of me going, I need an outlet."
+    },
+    {
+     "s": 401.9,
+     "e": 403.9,
+     "t": "I need a vehicle."
+    },
+    {
+     "s": 403.9,
+     "e": 407.9,
+     "t": "And then from music I joined the drama club in high school."
+    },
+    {
+     "s": 407.9,
+     "e": 413.9,
+     "t": "I got on stage and I went, oh wow, no stage fright."
+    },
+    {
+     "s": 413.9,
+     "e": 418.9,
+     "t": "I couldn't do public speaking and I couldn't play the piano in front of people,"
+    },
+    {
+     "s": 418.9,
+     "e": 420.9,
+     "t": "but I could act."
+    },
+    {
+     "s": 420.9,
+     "e": 424.9,
+     "t": "I found that being on stage I felt this is home."
+    },
+    {
+     "s": 424.9,
+     "e": 429.9,
+     "t": "I felt an immediate right thing and the exchange between the audience"
+    },
+    {
+     "s": 429.9,
+     "e": 432.9,
+     "t": "and the actors on the stage was so fulfilling."
+    },
+    {
+     "s": 432.9,
+     "e": 436.9,
+     "t": "I just went, that is the conversation I want to have."
+    },
+    {
+     "s": 436.9,
+     "e": 438.9,
+     "t": "It was unequivocal."
+    },
+    {
+     "s": 438.9,
+     "e": 442.9,
+     "t": "There was nobody acting in my family, but there didn't need to be."
+    },
+    {
+     "s": 442.9,
+     "e": 446.9,
+     "t": "I just understood what I wanted to do at once."
+    },
+    {
+     "s": 446.9,
+     "e": 448.9,
+     "t": "Was it easy to find your director?"
+    },
+    {
+     "s": 448.9,
+     "e": 451.9,
+     "t": "Would you like to try directing yourself?"
+    },
+    {
+     "s": 451.9,
+     "e": 455.9,
+     "t": "Well, speaking about working with good directors,"
+    },
+    {
+     "s": 455.9,
+     "e": 458.9,
+     "t": "that has always been a certain kid's met with me."
+    },
+    {
+     "s": 458.9,
+     "e": 460.9,
+     "t": "I was lucky."
+    },
+    {
+     "s": 460.9,
+     "e": 465.9,
+     "t": "There was a period in the 1980s where you had people who were born to direct,"
+    },
+    {
+     "s": 465.9,
+     "e": 467.9,
+     "t": "born to shepherd's stories."
+    },
+    {
+     "s": 467.9,
+     "e": 472.9,
+     "t": "Like David Lynch, who was so unusual, such a rare storyteller,"
+    },
+    {
+     "s": 472.9,
+     "e": 477.9,
+     "t": "so personal and private and dreamlike from his subconscious."
+    },
+    {
+     "s": 477.9,
+     "e": 480.9,
+     "t": "You know, people ask me why I don't direct."
+    },
+    {
+     "s": 480.9,
+     "e": 485.9,
+     "t": "Well, it's because I've worked with people where that's what they were born to do"
+    },
+    {
+     "s": 485.9,
+     "e": 491.9,
+     "t": "and it's a little intimidating after you've worked with a rash of those people one after another."
+    },
+    {
+     "s": 491.9,
+     "e": 495.9,
+     "t": "Then it's like, I like acting. Acting is good."
+    },
+    {
+     "s": 495.9,
+     "e": 498.9,
+     "t": "What kind of films do you like acting in?"
+    },
+    {
+     "s": 498.9,
+     "e": 501.9,
+     "t": "I don't think the genre matters much."
+    },
+    {
+     "s": 501.9,
+     "e": 508.9,
+     "t": "I even try not to look at the story itself because even a banal story may turn into a blockbuster."
+    },
+    {
+     "s": 508.9,
+     "e": 512.9,
+     "t": "What I pay attention to and fall in love with is the script."
+    },
+    {
+     "s": 512.9,
+     "e": 517.9,
+     "t": "If the script is good, I start just living in those dialogues or monologues."
+    },
+    {
+     "s": 517.9,
+     "e": 521.9,
+     "t": "You play a lot of family women. How come?"
+    },
+    {
+     "s": 521.9,
+     "e": 523.9,
+     "t": "I've always played mums."
+    },
+    {
+     "s": 523.9,
+     "e": 526.9,
+     "t": "I once played someone who wants to be a mum."
+    },
+    {
+     "s": 526.9,
+     "e": 529.9,
+     "t": "The thing with the role of a mother in our legacy,"
+    },
+    {
+     "s": 529.9,
+     "e": 532.9,
+     "t": "in world history, in world mythology,"
+    },
+    {
+     "s": 532.9,
+     "e": 536.9,
+     "t": "is that the role of a mother encompasses the entire universe."
+    },
+    {
+     "s": 536.9,
+     "e": 541.9,
+     "t": "There is no limit to what you can express if you are representing that in a story."
+    },
+    {
+     "s": 541.9,
+     "e": 545.9,
+     "t": "I've just got nominated for an Emmy for playing a mother."
+    },
+    {
+     "s": 545.9,
+     "e": 549.9,
+     "t": "Modern women are constantly looking for ways to be more beautiful."
+    },
+    {
+     "s": 549.9,
+     "e": 554.9,
+     "t": "As a woman and as an actress, are you satisfied with your appearance?"
+    },
+    {
+     "s": 554.9,
+     "e": 557.9,
+     "t": "I think that my looks through the years have served me well"
+    },
+    {
+     "s": 557.9,
+     "e": 562.9,
+     "t": "because I was never a great beauty and I was never cast as a great beauty."
+    },
+    {
+     "s": 562.9,
+     "e": 567.9,
+     "t": "So I never leaned on it and I never really made that a high value."
+    },
+    {
+     "s": 567.9,
+     "e": 570.9,
+     "t": "I've always been kind of androgynous"
+    },
+    {
+     "s": 570.9,
+     "e": 573.9,
+     "t": "and it's one of the reasons why I love being an actress."
+    },
+    {
+     "s": 573.9,
+     "e": 577.9,
+     "t": "I love experimenting with the male and the female in any character."
+    },
+    {
+     "s": 577.9,
+     "e": 580.9,
+     "t": "That balance, the yin and the yang of it,"
+    },
+    {
+     "s": 580.9,
+     "e": 584.9,
+     "t": "is always in play because everybody is male and female."
+    },
+    {
+     "s": 584.9,
+     "e": 588.9,
+     "t": "Thank you, Maggie. It has been a real pleasure talking with you today."
+    }
+   ]
+  },
+  {
+   "id": "g2",
+   "guid": "62A03D4D8C59B52E47C33451F68BFC3D",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/62A03D4D8C59B52E47C33451F68BFC3D/img1_1689774662.mp3",
+   "duration": 605.0,
+   "questions": [
+    {
+     "zid": "07462C",
+     "type": "choice",
+     "q": "What do we learn about Leona Brown at the beginning of the interview?",
+     "options": [
+      "She’s won many literary awards",
+      "She’s published two novels so far",
+      "She keeps writing fiction"
+     ],
+     "key": "3",
+     "ev": {
+      "s": 79.5,
+      "t": "Today in our studio we have Leona Brown, a prize-winning short fiction writer."
+     }
+    },
+    {
+     "zid": "3474B4",
+     "type": "choice",
+     "q": "Leona thinks that many of her readers find it surprising that she …",
+     "options": [
+      "writes a lot of love stories",
+      "leaves unanswered questions",
+      "uses many main characters"
+     ],
+     "key": "2",
+     "ev": null
+    },
+    {
+     "zid": "422918",
+     "type": "choice",
+     "q": "Leona defines her book A Good Person mostly as a …",
+     "options": [
+      "romance",
+      "drama",
+      "detective story"
+     ],
+     "key": "2",
+     "ev": {
+      "s": 120.5,
+      "t": "The scenes seem to focus instead on the interactions and moments that happen in the wake of that off-page drama."
+     }
+    },
+    {
+     "zid": "2B55D6",
+     "type": "choice",
+     "q": "Leona characterizes Sylvia as …",
+     "options": [
+      "a good student",
+      "a middle-aged woman",
+      "an inexperienced girl"
+     ],
+     "key": "3",
+     "ev": null
+    },
+    {
+     "zid": "0B457D",
+     "type": "choice",
+     "q": "Which of the following is TRUE about Leona’s normal working process?",
+     "options": [
+      "She pays a lot of attention to drafts",
+      "Word choice is not important for her",
+      "Her writing is often spontaneous"
+     ],
+     "key": "3",
+     "ev": {
+      "s": 284.5,
+      "t": "There is no pre-writing."
+     }
+    },
+    {
+     "zid": "D2818D",
+     "type": "choice",
+     "q": "According to Leona, … makes the story interesting.",
+     "options": [
+      "the plot",
+      "the storyteller",
+      "the setting"
+     ],
+     "key": "2",
+     "ev": null
+    },
+    {
+     "zid": "7E1C01",
+     "type": "choice",
+     "q": "Leona thinks while reading people should feel …",
+     "options": [
+      "their own emotions",
+      "the author’s emotions",
+      "the characters’ emotions"
+     ],
+     "key": "1",
+     "ev": {
+      "s": 314.5,
+      "t": "the more room readers have to feel their own emotions."
+     }
+    }
+   ],
+   "transcript": [
+    {
+     "s": 73.0,
+     "e": 79.5,
+     "t": "Hello everybody and welcome to our weekly program – The Writer's Workshop."
+    },
+    {
+     "s": 79.5,
+     "e": 84.5,
+     "t": "Today in our studio we have Leona Brown, a prize-winning short fiction writer."
+    },
+    {
+     "s": 84.5,
+     "e": 85.5,
+     "t": "Hello Leona."
+    },
+    {
+     "s": 85.5,
+     "e": 89.5,
+     "t": "Good afternoon. Thank you for inviting me here today."
+    },
+    {
+     "s": 89.5,
+     "e": 93.5,
+     "t": "Will you please tell us a bit about your literary achievements?"
+    },
+    {
+     "s": 93.5,
+     "e": 100.5,
+     "t": "Of course. So far I've written a novel and some collections of interlocking stories."
+    },
+    {
+     "s": 100.5,
+     "e": 104.5,
+     "t": "My novel is basically a story about finding hope."
+    },
+    {
+     "s": 104.5,
+     "e": 108.5,
+     "t": "I'm currently working on two other novels and a collection of essays."
+    },
+    {
+     "s": 108.5,
+     "e": 115.5,
+     "t": "Some literary critics think your novel A Good Person is a love story. What would you say to that?"
+    },
+    {
+     "s": 115.5,
+     "e": 120.5,
+     "t": "Well, a lot of the action in the story happens off the page."
+    },
+    {
+     "s": 120.5,
+     "e": 128.5,
+     "t": "The scenes seem to focus instead on the interactions and moments that happen in the wake of that off-page drama."
+    },
+    {
+     "s": 128.5,
+     "e": 134.5,
+     "t": "I know some readers were particularly struck at how the story avoided certain storylines."
+    },
+    {
+     "s": 134.5,
+     "e": 141.5,
+     "t": "For example, the drama that's built on the main hero's relationship is an important part of the story,"
+    },
+    {
+     "s": 141.5,
+     "e": 147.5,
+     "t": "but it remains secondary to what's going on with another main character, Sylvia."
+    },
+    {
+     "s": 147.5,
+     "e": 153.5,
+     "t": "Another writer might have made it a much bigger part of the story. What will all of them do?"
+    },
+    {
+     "s": 153.5,
+     "e": 158.5,
+     "t": "This question is present, but it's kept to a lower register."
+    },
+    {
+     "s": 158.5,
+     "e": 165.5,
+     "t": "So, there is a developing romance that gets folded into all the other stuff going on in the story."
+    },
+    {
+     "s": 165.5,
+     "e": 172.5,
+     "t": "As a result, one could call this a love story, but that wouldn't feel quite right, I don't think."
+    },
+    {
+     "s": 172.5,
+     "e": 178.5,
+     "t": "When you were working on this story, what was your sense of what kind of story it was?"
+    },
+    {
+     "s": 178.5,
+     "e": 181.5,
+     "t": "I never did think of this as a love story."
+    },
+    {
+     "s": 181.5,
+     "e": 188.5,
+     "t": "My process in developing a story or an essay is almost always exploratory for the first few drafts,"
+    },
+    {
+     "s": 188.5,
+     "e": 192.5,
+     "t": "and that was the case with this one even more than usual."
+    },
+    {
+     "s": 192.5,
+     "e": 197.5,
+     "t": "It began with memories of a time and a place that I wanted to explore for meanings."
+    },
+    {
+     "s": 197.5,
+     "e": 205.5,
+     "t": "I had quite a lot of it drafted before I figured out that its true subject was the drama going on inside Sylvia,"
+    },
+    {
+     "s": 205.5,
+     "e": 208.5,
+     "t": "a drama she's only partly aware of."
+    },
+    {
+     "s": 208.5,
+     "e": 215.5,
+     "t": "Once I decided what the story was about, I rewrote it several, in fact, many times,"
+    },
+    {
+     "s": 215.5,
+     "e": 220.5,
+     "t": "hoping to make all the parts of it work together to make that drama felt."
+    },
+    {
+     "s": 220.5,
+     "e": 225.5,
+     "t": "So, Sylvia is your main character in this novel, isn't she?"
+    },
+    {
+     "s": 225.5,
+     "e": 229.5,
+     "t": "Yes. I'd say this is a story about Sylvia."
+    },
+    {
+     "s": 229.5,
+     "e": 234.5,
+     "t": "The drama I was most interested in delving into was happening inside her."
+    },
+    {
+     "s": 234.5,
+     "e": 241.5,
+     "t": "She's trying on different versions of herself and hasn't yet come to realize that life is serious business."
+    },
+    {
+     "s": 241.5,
+     "e": 246.5,
+     "t": "She's reaching for some idea of cool and naively."
+    },
+    {
+     "s": 246.5,
+     "e": 253.5,
+     "t": "She half thinks she's already achieved it, but she's yet to take a deep look at anything in her life."
+    },
+    {
+     "s": 253.5,
+     "e": 259.5,
+     "t": "I love her and I forgive her faults because she's young and a slow learner."
+    },
+    {
+     "s": 259.5,
+     "e": 262.5,
+     "t": "What can you tell us about your working process?"
+    },
+    {
+     "s": 262.5,
+     "e": 267.5,
+     "t": "In my opinion, stories are constructed through language, not memory."
+    },
+    {
+     "s": 267.5,
+     "e": 270.5,
+     "t": "I write at the level of the sentence."
+    },
+    {
+     "s": 270.5,
+     "e": 278.5,
+     "t": "I sit there looking at the doors and windows a sentence has opened for the sentence that can follow and so on."
+    },
+    {
+     "s": 278.5,
+     "e": 280.5,
+     "t": "I do not write with a plan."
+    },
+    {
+     "s": 280.5,
+     "e": 284.5,
+     "t": "I do not know where a story is going ahead of time."
+    },
+    {
+     "s": 284.5,
+     "e": 286.5,
+     "t": "There is no pre-writing."
+    },
+    {
+     "s": 286.5,
+     "e": 290.5,
+     "t": "It all happens in the moment of looking at the words."
+    },
+    {
+     "s": 290.5,
+     "e": 294.5,
+     "t": "How do you understand the plot is going to be interesting for readers?"
+    },
+    {
+     "s": 294.5,
+     "e": 300.5,
+     "t": "I do not believe circumstances are intrinsically interesting or uninteresting."
+    },
+    {
+     "s": 300.5,
+     "e": 305.5,
+     "t": "Narrators create interest by their passionate investment in the story they are telling."
+    },
+    {
+     "s": 305.5,
+     "e": 309.5,
+     "t": "The less the narrator asks for something from the reader,"
+    },
+    {
+     "s": 309.5,
+     "e": 314.5,
+     "t": "something like feel my feelings, share my understandings, and so on,"
+    },
+    {
+     "s": 314.5,
+     "e": 319.5,
+     "t": "the more room readers have to feel their own emotions."
+    },
+    {
+     "s": 319.5,
+     "e": 323.5,
+     "t": "Thank you, Leona. It has been very interesting talking to you."
+    },
+    {
+     "s": 323.5,
+     "e": 327.0,
+     "t": "Thank you."
+    },
+    {
+     "s": 346.5,
+     "e": 353.0,
+     "t": "Hello everybody and welcome to our weekly program, The Writers Workshop."
+    },
+    {
+     "s": 353.0,
+     "e": 358.0,
+     "t": "Today in our studio we have Leona Brown, a prize-winning short fiction writer."
+    },
+    {
+     "s": 358.0,
+     "e": 360.0,
+     "t": "Hello, Leona."
+    },
+    {
+     "s": 360.0,
+     "e": 364.0,
+     "t": "Good afternoon. Thank you for inviting me here today."
+    },
+    {
+     "s": 364.0,
+     "e": 367.0,
+     "t": "Please tell us a bit about your literary achievements."
+    },
+    {
+     "s": 367.0,
+     "e": 374.0,
+     "t": "Of course. So far, I've written a novel and some collections of interlocking stories."
+    },
+    {
+     "s": 374.0,
+     "e": 378.0,
+     "t": "My novel is basically a story about finding hope."
+    },
+    {
+     "s": 378.0,
+     "e": 383.0,
+     "t": "I'm currently working on two other novels and a collection of essays."
+    },
+    {
+     "s": 383.0,
+     "e": 388.0,
+     "t": "Some literary critics think your novel, A Good Person, is a love story."
+    },
+    {
+     "s": 388.0,
+     "e": 390.0,
+     "t": "What would you say to that?"
+    },
+    {
+     "s": 390.0,
+     "e": 394.0,
+     "t": "A lot of the action in the story happens off the page."
+    },
+    {
+     "s": 394.0,
+     "e": 398.0,
+     "t": "The scenes seem to focus instead on the interactions"
+    },
+    {
+     "s": 398.0,
+     "e": 402.0,
+     "t": "and moments that happen in the wake of that off-page drama."
+    },
+    {
+     "s": 402.0,
+     "e": 405.0,
+     "t": "I know some readers were particularly struck"
+    },
+    {
+     "s": 405.0,
+     "e": 408.0,
+     "t": "at how the story avoided certain storylines."
+    },
+    {
+     "s": 408.0,
+     "e": 413.0,
+     "t": "For example, the drama that's built on the main hero's relationship"
+    },
+    {
+     "s": 413.0,
+     "e": 415.0,
+     "t": "is an important part of the story,"
+    },
+    {
+     "s": 415.0,
+     "e": 421.0,
+     "t": "but it remains secondary to what's going on with another main character, Sylvia."
+    },
+    {
+     "s": 421.0,
+     "e": 425.0,
+     "t": "Another writer might have made it a much bigger part of the story."
+    },
+    {
+     "s": 425.0,
+     "e": 427.0,
+     "t": "What will all of them do?"
+    },
+    {
+     "s": 427.0,
+     "e": 432.0,
+     "t": "This question is present, but it's kept to a lower register."
+    },
+    {
+     "s": 432.0,
+     "e": 437.0,
+     "t": "So, there is a developing romance that gets folded into all the other stuff"
+    },
+    {
+     "s": 437.0,
+     "e": 439.0,
+     "t": "going on in the story."
+    },
+    {
+     "s": 439.0,
+     "e": 442.0,
+     "t": "As a result, one could call this a love story,"
+    },
+    {
+     "s": 442.0,
+     "e": 445.0,
+     "t": "but that wouldn't feel quite right, I don't think."
+    },
+    {
+     "s": 445.0,
+     "e": 448.0,
+     "t": "When you were working on this story,"
+    },
+    {
+     "s": 448.0,
+     "e": 451.0,
+     "t": "what was your sense of what kind of story it was?"
+    },
+    {
+     "s": 451.0,
+     "e": 455.0,
+     "t": "I never did think of this as a love story."
+    },
+    {
+     "s": 455.0,
+     "e": 458.0,
+     "t": "My process in developing a story or an essay"
+    },
+    {
+     "s": 458.0,
+     "e": 462.0,
+     "t": "is almost always exploratory for the first few drafts,"
+    },
+    {
+     "s": 462.0,
+     "e": 465.0,
+     "t": "and that was the case with this one even more than usual."
+    },
+    {
+     "s": 465.0,
+     "e": 468.0,
+     "t": "It began with memories of a time and a place"
+    },
+    {
+     "s": 468.0,
+     "e": 471.0,
+     "t": "that I wanted to explore for meanings."
+    },
+    {
+     "s": 471.0,
+     "e": 474.0,
+     "t": "I had quite a lot of it drafted before I figured out"
+    },
+    {
+     "s": 474.0,
+     "e": 479.0,
+     "t": "that its true subject was the drama going on inside Sylvia,"
+    },
+    {
+     "s": 479.0,
+     "e": 482.0,
+     "t": "a drama she's only partly aware of."
+    },
+    {
+     "s": 482.0,
+     "e": 485.0,
+     "t": "Once I decided what the story was about,"
+    },
+    {
+     "s": 485.0,
+     "e": 489.0,
+     "t": "I rewrote it several, in fact, many times,"
+    },
+    {
+     "s": 489.0,
+     "e": 492.0,
+     "t": "hoping to make all the parts of it work together"
+    },
+    {
+     "s": 492.0,
+     "e": 494.0,
+     "t": "to make that drama felt."
+    },
+    {
+     "s": 494.0,
+     "e": 499.0,
+     "t": "So, Sylvia is your main character in this novel, isn't she?"
+    },
+    {
+     "s": 499.0,
+     "e": 502.0,
+     "t": "Yes, I'd say this is a story about Sylvia."
+    },
+    {
+     "s": 502.0,
+     "e": 505.0,
+     "t": "The drama I was most interested in delving into"
+    },
+    {
+     "s": 505.0,
+     "e": 508.0,
+     "t": "was happening inside her."
+    },
+    {
+     "s": 508.0,
+     "e": 511.0,
+     "t": "She's trying on different versions of herself"
+    },
+    {
+     "s": 511.0,
+     "e": 515.0,
+     "t": "and hasn't yet come to realize that life is serious business."
+    },
+    {
+     "s": 515.0,
+     "e": 520.0,
+     "t": "She's reaching for some idea of cool and naively."
+    },
+    {
+     "s": 520.0,
+     "e": 523.0,
+     "t": "She half thinks she's already achieved it,"
+    },
+    {
+     "s": 523.0,
+     "e": 527.0,
+     "t": "but she's yet to take a deep look at anything in her life."
+    },
+    {
+     "s": 527.0,
+     "e": 530.0,
+     "t": "I love her, and I forgive her faults"
+    },
+    {
+     "s": 530.0,
+     "e": 533.0,
+     "t": "because she's young and a slow learner."
+    },
+    {
+     "s": 533.0,
+     "e": 536.0,
+     "t": "What can you tell us about your working process?"
+    },
+    {
+     "s": 536.0,
+     "e": 540.0,
+     "t": "In my opinion, stories are constructed through language,"
+    },
+    {
+     "s": 540.0,
+     "e": 542.0,
+     "t": "not memory."
+    },
+    {
+     "s": 542.0,
+     "e": 544.0,
+     "t": "I write at the level of the sentence."
+    },
+    {
+     "s": 544.0,
+     "e": 547.0,
+     "t": "I sit there, looking at the doors and windows"
+    },
+    {
+     "s": 547.0,
+     "e": 550.0,
+     "t": "a sentence has opened for the sentence that can follow,"
+    },
+    {
+     "s": 550.0,
+     "e": 552.0,
+     "t": "and so on."
+    },
+    {
+     "s": 552.0,
+     "e": 554.0,
+     "t": "I do not write with a plan."
+    },
+    {
+     "s": 554.0,
+     "e": 558.0,
+     "t": "I do not know where a story is going ahead of time."
+    },
+    {
+     "s": 558.0,
+     "e": 560.0,
+     "t": "There is no pre-writing."
+    },
+    {
+     "s": 560.0,
+     "e": 564.0,
+     "t": "It all happens in the moment of looking at the words."
+    },
+    {
+     "s": 564.0,
+     "e": 568.0,
+     "t": "How do you understand the plot is going to be interesting for readers?"
+    },
+    {
+     "s": 568.0,
+     "e": 572.0,
+     "t": "I do not believe circumstances are intrinsically interesting"
+    },
+    {
+     "s": 572.0,
+     "e": 574.0,
+     "t": "or uninteresting."
+    },
+    {
+     "s": 574.0,
+     "e": 577.0,
+     "t": "Narrators create interest by their passionate investment"
+    },
+    {
+     "s": 577.0,
+     "e": 579.0,
+     "t": "in the story they are telling."
+    },
+    {
+     "s": 579.0,
+     "e": 583.0,
+     "t": "The less the narrator asks for something from the reader,"
+    },
+    {
+     "s": 583.0,
+     "e": 587.0,
+     "t": "something like feel my feelings, share my understandings,"
+    },
+    {
+     "s": 587.0,
+     "e": 592.0,
+     "t": "and so on, the more room readers have to feel their own emotions."
+    },
+    {
+     "s": 592.0,
+     "e": 594.0,
+     "t": "Thank you, Leona."
+    },
+    {
+     "s": 594.0,
+     "e": 597.0,
+     "t": "It has been very interesting talking to you."
+    },
+    {
+     "s": 597.0,
+     "e": 600.4,
+     "t": "Thank you."
+    }
+   ]
+  },
+  {
+   "id": "g3",
+   "guid": "8EF5B87B5E8AA0644E4DA9C34086B0A1",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/8EF5B87B5E8AA0644E4DA9C34086B0A1/img1_1562919214.mp3",
+   "duration": 523.5,
+   "questions": [
+    {
+     "zid": "525473",
+     "type": "choice",
+     "q": "What do we learn about Julia at the beginning of the interview?",
+     "options": [
+      "She has written a number of books",
+      "She is the author of How to Get Published",
+      "She organizes events for writers"
+     ],
+     "key": "1",
+     "ev": {
+      "s": 76.7,
+      "t": "Hello everybody, welcome to our weekly program 5 minutes with a star. Today in our studio we have Julia Summer, a prolific writer, some of whose books are international bestsellers. Hello Julia."
+     }
+    },
+    {
+     "zid": "07903A",
+     "type": "choice",
+     "q": "Which of the following is TRUE about the writers’ conference?",
+     "options": [
+      "It’s for young writers",
+      "It’s an international event",
+      "Julia is the only presenter there"
+     ],
+     "key": "2",
+     "ev": {
+      "s": 76.7,
+      "t": "Hello everybody, welcome to our weekly program 5 minutes with a star. Today in our studio we have Julia Summer, a prolific writer, some of whose books are international bestsellers. Hello Julia."
+     }
+    },
+    {
+     "zid": "D9B595",
+     "type": "choice",
+     "q": "Which of the following is NOT listed as a stage in Julia’s writing process?",
+     "options": [
+      "Thinking on the personality of the main character",
+      "Deciding on the supporting characters",
+      "Creating outlines before every draft"
+     ],
+     "key": "3",
+     "ev": {
+      "s": 252.7,
+      "t": "That it's easy, that anyone can write a book, that everyone has a story. Sorry, that's three. The top misconception is probably that it's quick. It's not. Even if you're lucky enough to write one book, get representation from an agent and a publishing deal, it could be years before that book hits the shelves."
+     }
+    },
+    {
+     "zid": "10E39C",
+     "type": "choice",
+     "q": "What is, according to Julia, the advantage of face-to-face events?",
+     "options": [
+      "Their atmosphere",
+      "Their bigger attendance",
+      "Possibility to speak there"
+     ],
+     "key": "1",
+     "ev": {
+      "s": 114.7,
+      "t": "My writing process typically involves a what if idea or scenario. I'll run it past my agent and editor to see if it gets their approval. Then I'll start to brainstorm it. I'll ask questions of my main character. Who is he or she? What happened in his or her past that shaped his or her personality? And, most importantly, what does he or she want more than anything else in the world?"
+     }
+    },
+    {
+     "zid": "8F854E",
+     "type": "choice",
+     "q": "How do people feel, according to Julia, leaving face-to-face events for writers?",
+     "options": [
+      "Enthusiastic",
+      "Exhausted",
+      "Experienced"
+     ],
+     "key": "1",
+     "ev": null
+    },
+    {
+     "zid": "7FDE20",
+     "type": "choice",
+     "q": "In what way is the authors’ advice for young writers different from that of editors?",
+     "options": [
+      "They know the special feelings involved",
+      "They are more specific about the process",
+      "They never mention getting published"
+     ],
+     "key": "1",
+     "ev": {
+      "s": 218.7,
+      "t": "I think writers can offer a completely different perspective to editors and agents. Agents and editors can talk about the process, the mechanics of getting published. But only authors can talk about the emotions involved. We know how it feels to be rejected and to doubt ourselves, and we can share the joys too."
+     }
+    },
+    {
+     "zid": "7A2634",
+     "type": "choice",
+     "q": "What illusion do people have about writing a book, according to Julia?",
+     "options": [
+      "It requires a lot of luck",
+      "It takes a lot of time",
+      "Anybody has a story to tell"
+     ],
+     "key": "3",
+     "ev": {
+      "s": 252.7,
+      "t": "That it's easy, that anyone can write a book, that everyone has a story. Sorry, that's three. The top misconception is probably that it's quick. It's not. Even if you're lucky enough to write one book, get representation from an agent and a publishing deal, it could be years before that book hits the shelves."
+     }
+    }
+   ],
+   "transcript": [
+    {
+     "s": 76.7,
+     "e": 88.7,
+     "t": "Hello everybody, welcome to our weekly program 5 minutes with a star. Today in our studio we have Julia Summer, a prolific writer, some of whose books are international bestsellers. Hello Julia."
+    },
+    {
+     "s": 88.7,
+     "e": 92.7,
+     "t": "Good afternoon, it's a pleasure being here. Thank you for inviting me."
+    },
+    {
+     "s": 92.7,
+     "e": 114.7,
+     "t": "You will be speaking on establishing pace and plot of a novel undercoming how to get published conference which is going to be a truly important event for writers from all over the world. At what stage of the writing process does this plotting enter the structure of your novels and how does this affect your overall writing process?"
+    },
+    {
+     "s": 114.7,
+     "e": 137.7,
+     "t": "My writing process typically involves a what if idea or scenario. I'll run it past my agent and editor to see if it gets their approval. Then I'll start to brainstorm it. I'll ask questions of my main character. Who is he or she? What happened in his or her past that shaped his or her personality? And, most importantly, what does he or she want more than anything else in the world?"
+    },
+    {
+     "s": 137.7,
+     "e": 159.7,
+     "t": "Then I'll think about supporting characters, particularly the antagonist. Once I've got my cast, I'll begin thinking about structure. I'll plot on a whiteboard using the four act structure and add post-it notes for scenes. If I've got time, I'll then run that past my agent and editor in case they have any concerns. And if they give the thumbs up, I'll start writing the first draft."
+    },
+    {
+     "s": 159.7,
+     "e": 170.7,
+     "t": "Speaking about the coming conference, what would you say is the major benefit for attending publishing events for writers as compared to, say, online resources on the subject?"
+    },
+    {
+     "s": 170.7,
+     "e": 187.7,
+     "t": "I think the major difference between online and face-to-face events is energy. Whenever I've taught or attended an event, it's the energy in the room that I really notice. There's a rich atmosphere of expectation, optimism and motivation that you don't get if you're sitting alone at your computer."
+    },
+    {
+     "s": 188.7,
+     "e": 203.7,
+     "t": "There's also the opportunity to swap stories with other attendees, learn from the questions that are asked and the answers given by the speaker. There's a sense of community that you don't get online and people often leave feeling fired up, motivated and determined."
+    },
+    {
+     "s": 203.7,
+     "e": 218.7,
+     "t": "Why do you think it's important to have writers talking about their own pathways and careers at events like how to get published? What is it that writers can offer that is different from the advice of editors and agents?"
+    },
+    {
+     "s": 218.7,
+     "e": 236.7,
+     "t": "I think writers can offer a completely different perspective to editors and agents. Agents and editors can talk about the process, the mechanics of getting published. But only authors can talk about the emotions involved. We know how it feels to be rejected and to doubt ourselves, and we can share the joys too."
+    },
+    {
+     "s": 236.7,
+     "e": 246.7,
+     "t": "A publisher or agent may feel proud when their author's book is published, but what we feel is so much greater than that. And we all have such different experiences."
+    },
+    {
+     "s": 246.7,
+     "e": 252.7,
+     "t": "What would you say is the top misconception people have about process of getting published?"
+    },
+    {
+     "s": 252.7,
+     "e": 270.7,
+     "t": "That it's easy, that anyone can write a book, that everyone has a story. Sorry, that's three. The top misconception is probably that it's quick. It's not. Even if you're lucky enough to write one book, get representation from an agent and a publishing deal, it could be years before that book hits the shelves."
+    },
+    {
+     "s": 270.7,
+     "e": 274.7,
+     "t": "Thank you Julia. It has been really interesting talking to you."
+    },
+    {
+     "s": 274.7,
+     "e": 275.7,
+     "t": "Thank you."
+    },
+    {
+     "s": 298.5,
+     "e": 312.9,
+     "t": "Hello everybody, welcome to our weekly program Five Minutes with a Star. Today in our studio we have Julia Summer, a prolific writer, some of whose books are international bestsellers. Hello Julia."
+    },
+    {
+     "s": 312.9,
+     "e": 317.9,
+     "t": "Good afternoon. It's a pleasure being here. Thank you for inviting me."
+    },
+    {
+     "s": 317.9,
+     "e": 328.9,
+     "t": "You will be speaking on establishing pace and plot of a novel and the coming How to Get Published conference, which is going to be a truly important event for writers from all over the world."
+    },
+    {
+     "s": 328.9,
+     "e": 338.9,
+     "t": "At what stage of the writing process does this plotting enter the structure of your novels and how does this affect your overall writing process?"
+    },
+    {
+     "s": 338.9,
+     "e": 351.9,
+     "t": "My writing process typically involves a what if idea or scenario. I'll run it past my agent and editor to see if it gets their approval. Then I'll start to brainstorm it. I'll ask questions of my main character."
+    },
+    {
+     "s": 351.9,
+     "e": 361.9,
+     "t": "Who is he or she? What happened in his or her past that shaped his or her personality? And, most importantly, what does he or she want more than anything else in the world?"
+    },
+    {
+     "s": 361.9,
+     "e": 373.9,
+     "t": "Then I'll think about supporting characters, particularly the antagonist. Once I've got my cast, I'll begin thinking about structure. I'll plot on a whiteboard using the four-act structure and add post-it notes for scenes."
+    },
+    {
+     "s": 373.9,
+     "e": 383.9,
+     "t": "If I've got time, I'll then run that past my agent and editor in case they have any concerns. And if they give the thumbs up, I'll start writing the first draft."
+    },
+    {
+     "s": 383.9,
+     "e": 395.9,
+     "t": "Speaking about the coming conference, what would you say is the major benefit for attending publishing events for writers as compared to, say, online resources on the subject?"
+    },
+    {
+     "s": 395.9,
+     "e": 405.9,
+     "t": "I think the major difference between online and face-to-face events is energy. Whenever I've taught or attended an event, it's the energy in the room that I really notice."
+    },
+    {
+     "s": 405.9,
+     "e": 412.9,
+     "t": "There's a rich atmosphere of expectation, optimism, and motivation that you don't get if you're sitting alone at your computer."
+    },
+    {
+     "s": 412.9,
+     "e": 420.9,
+     "t": "There's also the opportunity to swap stories with other attendees, learn from the questions that are asked and the answers given by the speaker."
+    },
+    {
+     "s": 420.9,
+     "e": 427.9,
+     "t": "There's a sense of community that you don't get online, and people often leave feeling fired up, motivated, and determined."
+    },
+    {
+     "s": 427.9,
+     "e": 436.9,
+     "t": "Why do you think it's important to have writers talking about their own pathways and careers at events like how to get published?"
+    },
+    {
+     "s": 436.9,
+     "e": 442.9,
+     "t": "What is it that writers can offer that is different from the advice of editors and agents?"
+    },
+    {
+     "s": 442.9,
+     "e": 447.9,
+     "t": "I think writers can offer a completely different perspective to editors and agents."
+    },
+    {
+     "s": 447.9,
+     "e": 455.9,
+     "t": "Agents and editors can talk about the process, the mechanics of getting published, but only authors can talk about the emotions involved."
+    },
+    {
+     "s": 455.9,
+     "e": 461.9,
+     "t": "We know how it feels to be rejected and to doubt ourselves, and we can share the joys, too."
+    },
+    {
+     "s": 461.9,
+     "e": 471.9,
+     "t": "A publisher or agent may feel proud when their author's book is published, but what we feel is so much greater than that, and we all have such different experiences."
+    },
+    {
+     "s": 471.9,
+     "e": 477.9,
+     "t": "What would you say is the top misconception people have about the process of getting published?"
+    },
+    {
+     "s": 477.9,
+     "e": 486.9,
+     "t": "That it's easy, that anyone can write a book, that everyone has a story. Sorry, that's three. The top misconception is probably that it's quick. It's not."
+    },
+    {
+     "s": 486.9,
+     "e": 495.9,
+     "t": "Even if you're lucky enough to write one book, get representation from an agent and a publishing deal, it could be years before that book hits the shelves."
+    },
+    {
+     "s": 495.9,
+     "e": 499.9,
+     "t": "Thank you, Julia. It has been really interesting talking to you."
+    }
+   ]
+  },
+  {
+   "id": "g4",
+   "guid": "3D5D70C0DC5F89014E8960E39C88DA8F",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/3D5D70C0DC5F89014E8960E39C88DA8F/img1_1562919081.mp3",
+   "duration": 515.1,
+   "questions": [
+    {
+     "zid": "392F51",
+     "type": "choice",
+     "q": "What do we learn about Alyson at the beginning of the interview?",
+     "options": [
+      "She is a college student",
+      "She has published her first novel",
+      "You can’t buy her books online"
+     ],
+     "key": "2",
+     "ev": {
+      "s": 74.5,
+      "t": "Good afternoon, dear listeners, and welcome to our program. We continue to interview writers for you, and today in our studio we have Alison Gray, a young writer, and we are going to discuss her debut novel and the way she started her literary career. Hello, Alison."
+     }
+    },
+    {
+     "zid": "07934B",
+     "type": "choice",
+     "q": "How does Alyson feel when she sees her book in shops?",
+     "options": [
+      "She still can’t believe it’s true",
+      "She feels very proud of herself",
+      "She wants to buy it for herself"
+     ],
+     "key": "1",
+     "ev": {
+      "s": 103.7,
+      "t": "Honestly, it's sort of surreal. Everyone who wants to be a writer imagines the day they'll finally hold their finished book in their hands. Part of you believes it will never happen, so when that day finally arrives, it's a strange feeling."
+     }
+    },
+    {
+     "zid": "40D696",
+     "type": "choice",
+     "q": "How did Alyson start to write?",
+     "options": [
+      "She wrote poems for her classmates’ birthdays",
+      "Her teacher at school gave the class weekly writing tasks",
+      "She attended specialized writing school"
+     ],
+     "key": "2",
+     "ev": {
+      "s": 137.7,
+      "t": "I think my literary aspirations began when I was about 10 years old. I had a teacher that year that used to give us an hour every week to write stories or poems."
+     }
+    },
+    {
+     "zid": "1B7C60",
+     "type": "choice",
+     "q": "What does Alyson say about her college days?",
+     "options": [
+      "She was surprised there was a college-wide literary contest",
+      "She missed her school English teacher and classmates",
+      "She kept on writing through them"
+     ],
+     "key": "3",
+     "ev": {
+      "s": 116.7,
+      "t": "My sister jokingly asked if I was sleeping with the book under my pillow every night. I'm not quite that bad, but I do still keep picking it up, flipping through the pages and marveling at it. I don't think the reality has completely sunk in yet."
+     }
+    },
+    {
+     "zid": "D70913",
+     "type": "choice",
+     "q": "What does Alyson say about her literary prize at college?",
+     "options": [
+      "It was not much money",
+      "It was her first prize ever",
+      "It made her feel like a writer"
+     ],
+     "key": "3",
+     "ev": {
+      "s": 103.7,
+      "t": "Honestly, it's sort of surreal. Everyone who wants to be a writer imagines the day they'll finally hold their finished book in their hands. Part of you believes it will never happen, so when that day finally arrives, it's a strange feeling."
+     }
+    },
+    {
+     "zid": "5416CA",
+     "type": "choice",
+     "q": "The first advice from Alyson as a published writer for beginners is about …",
+     "options": [
+      "readers",
+      "criticism",
+      "editors"
+     ],
+     "key": "2",
+     "ev": {
+      "s": 222.7,
+      "t": "Well, my major piece of advice is to learn how to steal yourself for criticism and rejection."
+     }
+    },
+    {
+     "zid": "7EE243",
+     "type": "choice",
+     "q": "Why does Alyson believe that the scale of the first publication is not that important?",
+     "options": [
+      "A smaller journal is preferable",
+      "Getting a small fee is still better than nothing",
+      "Your work could be noticed anywhere"
+     ],
+     "key": "3",
+     "ev": {
+      "s": 147.7,
+      "t": "We were allowed to work on anything we wanted to, and I loved it. It was the highlight of my week."
+     }
+    }
+   ],
+   "transcript": [
+    {
+     "s": 74.5,
+     "e": 95.7,
+     "t": "Good afternoon, dear listeners, and welcome to our program. We continue to interview writers for you, and today in our studio we have Alison Gray, a young writer, and we are going to discuss her debut novel and the way she started her literary career. Hello, Alison."
+    },
+    {
+     "s": 95.7,
+     "e": 98.7,
+     "t": "Good afternoon. Thank you for inviting me here."
+    },
+    {
+     "s": 98.7,
+     "e": 103.7,
+     "t": "You can now see your debut novel in every bookstore. How does it feel?"
+    },
+    {
+     "s": 103.7,
+     "e": 116.7,
+     "t": "Honestly, it's sort of surreal. Everyone who wants to be a writer imagines the day they'll finally hold their finished book in their hands. Part of you believes it will never happen, so when that day finally arrives, it's a strange feeling."
+    },
+    {
+     "s": 116.7,
+     "e": 130.7,
+     "t": "My sister jokingly asked if I was sleeping with the book under my pillow every night. I'm not quite that bad, but I do still keep picking it up, flipping through the pages and marveling at it. I don't think the reality has completely sunk in yet."
+    },
+    {
+     "s": 130.7,
+     "e": 137.7,
+     "t": "Have you always wanted to be a writer, and was there a particular moment you thought I can do this?"
+    },
+    {
+     "s": 137.7,
+     "e": 147.7,
+     "t": "I think my literary aspirations began when I was about 10 years old. I had a teacher that year that used to give us an hour every week to write stories or poems."
+    },
+    {
+     "s": 147.7,
+     "e": 153.7,
+     "t": "We were allowed to work on anything we wanted to, and I loved it. It was the highlight of my week."
+    },
+    {
+     "s": 153.7,
+     "e": 158.7,
+     "t": "At the end of the hour, we had the opportunity to read our compositions in front of the class."
+    },
+    {
+     "s": 158.7,
+     "e": 169.7,
+     "t": "I was a pretty shy kid who didn't get much attention, but when I got up in front of the class and read, everyone would get quiet, genuinely listen and clap enthusiastically for me when I finished."
+    },
+    {
+     "s": 169.7,
+     "e": 179.7,
+     "t": "I think they were particularly impressed by the fact that I could make up poems that rhymed, so I developed what was probably a very niche role for a fifth grader."
+    },
+    {
+     "s": 179.7,
+     "e": 184.7,
+     "t": "I was the girl who could write. From that point on, writing was what I wanted to do."
+    },
+    {
+     "s": 184.7,
+     "e": 187.7,
+     "t": "Did you continue writing at college?"
+    },
+    {
+     "s": 187.7,
+     "e": 197.7,
+     "t": "Of course. In my freshman year in college, I submitted a couple of short stories to a university-wide creative writing competition called the Hopwood Awards, and I won a cash prize."
+    },
+    {
+     "s": 197.7,
+     "e": 206.7,
+     "t": "My university was a large one, so the prize was fairly competitive. That felt like the first serious evidence that I might actually have some sort of real knack for writing."
+    },
+    {
+     "s": 206.7,
+     "e": 216.7,
+     "t": "My work has been recognized not by my friends or an encouraging English teacher, but by complete strangers who'd picked my work out of a large pile of entries."
+    },
+    {
+     "s": 216.7,
+     "e": 222.7,
+     "t": "Do you have any advice for the yet-to-be-published writers listening to you right now?"
+    },
+    {
+     "s": 222.7,
+     "e": 227.7,
+     "t": "Well, my major piece of advice is to learn how to steal yourself for criticism and rejection."
+    },
+    {
+     "s": 227.7,
+     "e": 231.7,
+     "t": "Try not to turn it into something personal because it's not personal, actually."
+    },
+    {
+     "s": 231.7,
+     "e": 235.7,
+     "t": "It's not easy, but it will make your life better if you can."
+    },
+    {
+     "s": 235.7,
+     "e": 244.7,
+     "t": "Taste and writing in literature is subjective. I always remind myself that there isn't one book out there so brilliantly written that it doesn't have its staunch detractors."
+    },
+    {
+     "s": 244.7,
+     "e": 248.7,
+     "t": "People who are happy to detail for you exactly what they don't like about it."
+    },
+    {
+     "s": 248.7,
+     "e": 253.7,
+     "t": "The other thing would be to make sure that you're getting your work out there where people can see it."
+    },
+    {
+     "s": 253.7,
+     "e": 260.7,
+     "t": "It doesn't have to be a major publication. I have writer friends who have editors or agents contact them after reading their work in smaller journals."
+    },
+    {
+     "s": 260.7,
+     "e": 266.7,
+     "t": "Opportunities can arrive from places you never expected. You want to give people the chance to find you."
+    },
+    {
+     "s": 266.7,
+     "e": 270.7,
+     "t": "Thank you, Alison. It has been really interesting talking to you."
+    },
+    {
+     "s": 270.7,
+     "e": 272.7,
+     "t": "Thank you. The pleasure is all mine, I guess."
+    },
+    {
+     "s": 296.5,
+     "e": 299.5,
+     "t": "Good afternoon, dear listeners, and welcome to our program."
+    },
+    {
+     "s": 299.5,
+     "e": 307.5,
+     "t": "We continue to interview writers for you and today in our studio we have Alison Gray, a young writer,"
+    },
+    {
+     "s": 307.5,
+     "e": 313.5,
+     "t": "and we are going to discuss her debut novel and the way she started her literary career."
+    },
+    {
+     "s": 313.5,
+     "e": 315.5,
+     "t": "Hello, Alison."
+    },
+    {
+     "s": 315.5,
+     "e": 318.5,
+     "t": "Good afternoon. Thank you for inviting me here."
+    },
+    {
+     "s": 318.5,
+     "e": 323.5,
+     "t": "You can now see your debut novel in every bookstore. How does it feel?"
+    },
+    {
+     "s": 323.5,
+     "e": 331.5,
+     "t": "Honestly, it's sort of surreal. Everyone who wants to be a writer imagines the day they'll finally hold their finished book in their hands."
+    },
+    {
+     "s": 331.5,
+     "e": 336.5,
+     "t": "Part of you believes it will never happen, so when that day finally arrives, it's a strange feeling."
+    },
+    {
+     "s": 336.5,
+     "e": 341.5,
+     "t": "My sister jokingly asked if I was sleeping with the book under my pillow every night."
+    },
+    {
+     "s": 341.5,
+     "e": 347.5,
+     "t": "I'm not quite that bad, but I do still keep picking it up, flipping through the pages and marveling at it."
+    },
+    {
+     "s": 347.5,
+     "e": 350.5,
+     "t": "I don't think the reality has completely sunk in yet."
+    },
+    {
+     "s": 350.5,
+     "e": 356.5,
+     "t": "Have you always wanted to be a writer and was there a particular moment you thought I can do this?"
+    },
+    {
+     "s": 356.5,
+     "e": 361.5,
+     "t": "I think my literary aspirations began when I was about ten years old."
+    },
+    {
+     "s": 361.5,
+     "e": 367.5,
+     "t": "I had a teacher that year that used to give us an hour every week to write stories or poems."
+    },
+    {
+     "s": 367.5,
+     "e": 371.5,
+     "t": "We were allowed to work on anything we wanted to, and I loved it."
+    },
+    {
+     "s": 371.5,
+     "e": 373.5,
+     "t": "It was the highlight of my week."
+    },
+    {
+     "s": 373.5,
+     "e": 378.5,
+     "t": "At the end of the hour, we had the opportunity to read our compositions in front of the class."
+    },
+    {
+     "s": 378.5,
+     "e": 383.5,
+     "t": "I was a pretty shy kid who didn't get much attention, but when I got up in front of the class"
+    },
+    {
+     "s": 383.5,
+     "e": 389.5,
+     "t": "and read, everyone would get quiet, genuinely listen and clap enthusiastically for me when I finished."
+    },
+    {
+     "s": 389.5,
+     "e": 395.5,
+     "t": "I think they were particularly impressed by the fact that I could make up poems that rhymed."
+    },
+    {
+     "s": 395.5,
+     "e": 399.5,
+     "t": "So I developed what was probably a very niche role for a fifth grader."
+    },
+    {
+     "s": 399.5,
+     "e": 404.5,
+     "t": "I was the girl who could write. From that point on, writing was what I wanted to do."
+    },
+    {
+     "s": 404.5,
+     "e": 407.5,
+     "t": "Did you continue writing at college?"
+    },
+    {
+     "s": 407.5,
+     "e": 414.5,
+     "t": "Of course, in my freshman year in college, I submitted a couple of short stories to a university-wide creative writing competition"
+    },
+    {
+     "s": 414.5,
+     "e": 417.5,
+     "t": "called the Hopwood Awards, and I won a cash prize."
+    },
+    {
+     "s": 417.5,
+     "e": 421.5,
+     "t": "My university was a large one, so the prize was fairly competitive."
+    },
+    {
+     "s": 421.5,
+     "e": 426.5,
+     "t": "That felt like the first serious evidence that I might actually have some sort of real knack for writing."
+    },
+    {
+     "s": 426.5,
+     "e": 431.5,
+     "t": "My work has been recognized not by my friends or an encouraging English teacher,"
+    },
+    {
+     "s": 431.5,
+     "e": 436.5,
+     "t": "but by complete strangers who'd picked my work out of a large pile of entries."
+    },
+    {
+     "s": 436.5,
+     "e": 442.5,
+     "t": "Do you have any advice for the yet-to-be-published writers listening to you right now?"
+    },
+    {
+     "s": 442.5,
+     "e": 447.5,
+     "t": "Well, my major piece of advice is to learn how to steal yourself for criticism and rejection."
+    },
+    {
+     "s": 447.5,
+     "e": 451.5,
+     "t": "Try not to turn it into something personal, because it's not personal, actually."
+    },
+    {
+     "s": 451.5,
+     "e": 455.5,
+     "t": "It's not easy, but it will make your life better if you can."
+    },
+    {
+     "s": 455.5,
+     "e": 457.5,
+     "t": "Taste in writing and literature is subjective."
+    },
+    {
+     "s": 457.5,
+     "e": 461.5,
+     "t": "I always remind myself that there isn't one book out there so brilliantly written"
+    },
+    {
+     "s": 461.5,
+     "e": 464.5,
+     "t": "that it doesn't have its staunch detractors."
+    },
+    {
+     "s": 464.5,
+     "e": 468.5,
+     "t": "People who are happy to detail for you exactly what they don't like about it."
+    },
+    {
+     "s": 468.5,
+     "e": 471.5,
+     "t": "The other thing would be to make sure that you're getting your work out there"
+    },
+    {
+     "s": 471.5,
+     "e": 473.5,
+     "t": "where people can see it."
+    },
+    {
+     "s": 473.5,
+     "e": 475.5,
+     "t": "It doesn't have to be a major publication."
+    },
+    {
+     "s": 475.5,
+     "e": 478.5,
+     "t": "I have writer friends who have editors or agents contact them"
+    },
+    {
+     "s": 478.5,
+     "e": 480.5,
+     "t": "after reading their work in smaller journals."
+    },
+    {
+     "s": 480.5,
+     "e": 483.5,
+     "t": "Opportunities can arrive from places you never expected."
+    },
+    {
+     "s": 483.5,
+     "e": 486.5,
+     "t": "You want to give people the chance to find you."
+    },
+    {
+     "s": 486.5,
+     "e": 490.5,
+     "t": "Thank you, Alison. It has been really interesting talking to you."
+    },
+    {
+     "s": 490.5,
+     "e": 492.5,
+     "t": "Thank you. The pleasure is all mine, I guess."
+    }
+   ]
+  },
+  {
+   "id": "g5",
+   "guid": "3B2A8FC06EE3AF404101DE39E10FEFCC",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/3B2A8FC06EE3AF404101DE39E10FEFCC/img1_1562940565.mp3",
+   "duration": 523.2,
+   "questions": [
+    {
+     "zid": "1398B6",
+     "type": "choice",
+     "q": "What does Jessica say about the reaction to her new album?",
+     "options": [
+      "She got more criticisms than compliments",
+      "It was really upsetting for her",
+      "Some people thought she’s shallow"
+     ],
+     "key": "3",
+     "ev": null
+    },
+    {
+     "zid": "B07B55",
+     "type": "choice",
+     "q": "What kind of person does Jessica appear to be?",
+     "options": [
+      "Self-confident",
+      "Modest",
+      "Unhappy"
+     ],
+     "key": "1",
+     "ev": {
+      "s": 125.7,
+      "t": "Would you consider yourself a self-critical person?"
+     }
+    },
+    {
+     "zid": "950140",
+     "type": "choice",
+     "q": "What does Jessica say about her work on the lyrics?",
+     "options": [
+      "She prefers to invite co-writers",
+      "She usually works on them at the end",
+      "She works on them in the studio"
+     ],
+     "key": "2",
+     "ev": {
+      "s": 120.7,
+      "t": "I just can't really remember them"
+     }
+    },
+    {
+     "zid": "26CF8C",
+     "type": "choice",
+     "q": "Jessica prefers the working process to be …",
+     "options": [
+      "spontaneous",
+      "creative",
+      "regulated"
+     ],
+     "key": "3",
+     "ev": null
+    },
+    {
+     "zid": "0838C5",
+     "type": "choice",
+     "q": "What is Jessica’s attitude to live performances?",
+     "options": [
+      "She rather likes them",
+      "They scare her",
+      "She prefers studio work to them"
+     ],
+     "key": "1",
+     "ev": {
+      "s": 120.7,
+      "t": "I just can't really remember them"
+     }
+    },
+    {
+     "zid": "70B908",
+     "type": "choice",
+     "q": "Which of the following is TRUE about Jessica’s London show?",
+     "options": [
+      "She played all the old hits there",
+      "She was its main artist",
+      "She had expected a bigger crowd"
+     ],
+     "key": "2",
+     "ev": null
+    },
+    {
+     "zid": "43E94B",
+     "type": "choice",
+     "q": "What kind of shows does Jessica dislike?",
+     "options": [
+      "Solo shows",
+      "Small shows",
+      "Support shows"
+     ],
+     "key": "3",
+     "ev": {
+      "s": 263.7,
+      "t": "But bad shows, it's always the support shows, isn't it?"
+     }
+    }
+   ],
+   "transcript": [
+    {
+     "s": 0.0,
+     "e": 2.0,
+     "t": "3-9"
+    },
+    {
+     "s": 5.7,
+     "e": 7.7,
+     "t": "In the 3-9 task,"
+    },
+    {
+     "s": 7.7,
+     "e": 9.7,
+     "t": "write in the answer field"
+    },
+    {
+     "s": 9.7,
+     "e": 12.7,
+     "t": "the number 1, 2 or 3"
+    },
+    {
+     "s": 12.7,
+     "e": 14.7,
+     "t": "with the corresponding"
+    },
+    {
+     "s": 14.7,
+     "e": 16.7,
+     "t": "option of the answer."
+    },
+    {
+     "s": 21.7,
+     "e": 23.7,
+     "t": "to get acquainted with the tasks."
+    },
+    {
+     "s": 83.7,
+     "e": 85.7,
+     "t": "A young, promising musician."
+    },
+    {
+     "s": 85.7,
+     "e": 87.7,
+     "t": "Hello, Jessica."
+    },
+    {
+     "s": 87.7,
+     "e": 89.7,
+     "t": "Hello. It's so nice being here."
+    },
+    {
+     "s": 89.7,
+     "e": 91.7,
+     "t": "Thank you for inviting me."
+    },
+    {
+     "s": 91.7,
+     "e": 95.7,
+     "t": "Your new album has been warmly welcomed by the public."
+    },
+    {
+     "s": 95.7,
+     "e": 98.7,
+     "t": "Have you got any critical remarks about it?"
+    },
+    {
+     "s": 98.7,
+     "e": 100.7,
+     "t": "I've got a couple of remarks."
+    },
+    {
+     "s": 100.7,
+     "e": 105.7,
+     "t": "They are about me being just another pretty girl singing about love and relationships."
+    },
+    {
+     "s": 105.7,
+     "e": 107.7,
+     "t": "I can't say it was a massive takedown,"
+    },
+    {
+     "s": 107.7,
+     "e": 109.7,
+     "t": "but I found it personally offensive."
+    },
+    {
+     "s": 109.7,
+     "e": 111.7,
+     "t": "I think the reason that stuck with me"
+    },
+    {
+     "s": 111.7,
+     "e": 113.7,
+     "t": "was because I found it so frustrating."
+    },
+    {
+     "s": 113.7,
+     "e": 118.7,
+     "t": "But actually, that's kind of the only proper negative feedback that I've had."
+    },
+    {
+     "s": 118.7,
+     "e": 120.7,
+     "t": "Then, in terms of compliments,"
+    },
+    {
+     "s": 120.7,
+     "e": 122.7,
+     "t": "I just can't really remember them"
+    },
+    {
+     "s": 122.7,
+     "e": 125.7,
+     "t": "because you always tend to stick a bit more on the negatives, don't you?"
+    },
+    {
+     "s": 125.7,
+     "e": 129.7,
+     "t": "Would you consider yourself a self-critical person?"
+    },
+    {
+     "s": 129.7,
+     "e": 131.7,
+     "t": "Yeah, massively."
+    },
+    {
+     "s": 131.7,
+     "e": 133.7,
+     "t": "I'm self-critical."
+    },
+    {
+     "s": 133.7,
+     "e": 136.7,
+     "t": "I don't want to show anyone anything until the work is done."
+    },
+    {
+     "s": 136.7,
+     "e": 139.7,
+     "t": "I self-edit so harshly at the beginning."
+    },
+    {
+     "s": 139.7,
+     "e": 142.7,
+     "t": "I would never let anyone hear something that I wasn't happy with."
+    },
+    {
+     "s": 142.7,
+     "e": 144.7,
+     "t": "But then, once I've made it,"
+    },
+    {
+     "s": 144.7,
+     "e": 146.7,
+     "t": "I'm also not going to turn around and go."
+    },
+    {
+     "s": 146.7,
+     "e": 148.7,
+     "t": "If I'm putting it out,"
+    },
+    {
+     "s": 148.7,
+     "e": 150.7,
+     "t": "anything creative that I do,"
+    },
+    {
+     "s": 150.7,
+     "e": 151.7,
+     "t": "I think that it's good,"
+    },
+    {
+     "s": 151.7,
+     "e": 153.7,
+     "t": "otherwise I wouldn't put it out."
+    },
+    {
+     "s": 153.7,
+     "e": 155.7,
+     "t": "But I am self-critical across the board"
+    },
+    {
+     "s": 155.7,
+     "e": 158.7,
+     "t": "and in other areas of my life, I think."
+    },
+    {
+     "s": 158.7,
+     "e": 160.7,
+     "t": "How fully formed are your songs"
+    },
+    {
+     "s": 160.7,
+     "e": 163.7,
+     "t": "by the time you bring them to a producer?"
+    },
+    {
+     "s": 163.7,
+     "e": 166.7,
+     "t": "Show someone lyrics or play them for someone?"
+    },
+    {
+     "s": 166.7,
+     "e": 168.7,
+     "t": "Like, completely finished."
+    },
+    {
+     "s": 168.7,
+     "e": 170.7,
+     "t": "Lyrics are usually the last thing that I would do,"
+    },
+    {
+     "s": 170.7,
+     "e": 173.7,
+     "t": "so a couple of the lyrics I will be finishing in the studio last minute"
+    },
+    {
+     "s": 173.7,
+     "e": 176.7,
+     "t": "because we've got to get the vocals recorded."
+    },
+    {
+     "s": 176.7,
+     "e": 179.7,
+     "t": "I sometimes find lyrics quite difficult towards the end,"
+    },
+    {
+     "s": 179.7,
+     "e": 182.7,
+     "t": "but it's done musically in terms of the structure,"
+    },
+    {
+     "s": 182.7,
+     "e": 184.7,
+     "t": "in terms of the arrangement."
+    },
+    {
+     "s": 184.7,
+     "e": 186.7,
+     "t": "So, it's all fully formed."
+    },
+    {
+     "s": 186.7,
+     "e": 189.7,
+     "t": "I have no one else involved in the writing process."
+    },
+    {
+     "s": 189.7,
+     "e": 192.7,
+     "t": "I would hate to feel that I was going into the studio"
+    },
+    {
+     "s": 192.7,
+     "e": 194.7,
+     "t": "with something wishy-washy and not done."
+    },
+    {
+     "s": 194.7,
+     "e": 196.7,
+     "t": "It's because I'm a control freak,"
+    },
+    {
+     "s": 196.7,
+     "e": 198.7,
+     "t": "so I want to know that everything is sorted"
+    },
+    {
+     "s": 198.7,
+     "e": 200.7,
+     "t": "and what's going to come out the other end,"
+    },
+    {
+     "s": 200.7,
+     "e": 202.7,
+     "t": "obviously, with a bit of leeway."
+    },
+    {
+     "s": 202.7,
+     "e": 206.7,
+     "t": "What has the experience been like playing these songs live?"
+    },
+    {
+     "s": 206.7,
+     "e": 208.7,
+     "t": "It's just been really fun."
+    },
+    {
+     "s": 208.7,
+     "e": 210.7,
+     "t": "It's the music I always imagined myself playing"
+    },
+    {
+     "s": 210.7,
+     "e": 211.7,
+     "t": "when I was a kid."
+    },
+    {
+     "s": 211.7,
+     "e": 213.7,
+     "t": "It's been nice to use my instrument a bit more"
+    },
+    {
+     "s": 213.7,
+     "e": 215.7,
+     "t": "rather than just propping up a whole song"
+    },
+    {
+     "s": 215.7,
+     "e": 217.7,
+     "t": "with a guitar and my vocals."
+    },
+    {
+     "s": 217.7,
+     "e": 220.7,
+     "t": "There's so much more energy in the crowd as well,"
+    },
+    {
+     "s": 220.7,
+     "e": 222.7,
+     "t": "and it's nice to feel like you're a part of something"
+    },
+    {
+     "s": 222.7,
+     "e": 225.7,
+     "t": "in a room rather than just performing for a crowd."
+    },
+    {
+     "s": 225.7,
+     "e": 227.7,
+     "t": "So, I've enjoyed it loads,"
+    },
+    {
+     "s": 227.7,
+     "e": 229.7,
+     "t": "and it's also been an exciting challenge"
+    },
+    {
+     "s": 229.7,
+     "e": 231.7,
+     "t": "because recently I have been taking older material"
+    },
+    {
+     "s": 231.7,
+     "e": 233.7,
+     "t": "and basically giving it a bit of a second life"
+    },
+    {
+     "s": 233.7,
+     "e": 235.7,
+     "t": "and making it sound like it could have"
+    },
+    {
+     "s": 235.7,
+     "e": 237.7,
+     "t": "potentially belonged on this record,"
+    },
+    {
+     "s": 237.7,
+     "e": 239.7,
+     "t": "which has been really fun."
+    },
+    {
+     "s": 239.7,
+     "e": 242.7,
+     "t": "Are there any particular shows that stand out in your mind?"
+    },
+    {
+     "s": 242.7,
+     "e": 244.7,
+     "t": "On a tour, the Big London show"
+    },
+    {
+     "s": 244.7,
+     "e": 246.7,
+     "t": "is always going to be very exciting."
+    },
+    {
+     "s": 246.7,
+     "e": 249.7,
+     "t": "A couple of weeks ago, I played in London,"
+    },
+    {
+     "s": 249.7,
+     "e": 251.7,
+     "t": "which is the biggest show I've ever headlined."
+    },
+    {
+     "s": 251.7,
+     "e": 253.7,
+     "t": "That was a real moment,"
+    },
+    {
+     "s": 253.7,
+     "e": 255.7,
+     "t": "and it was playing all the new material."
+    },
+    {
+     "s": 255.7,
+     "e": 257.7,
+     "t": "It was amazing to see the shift"
+    },
+    {
+     "s": 257.7,
+     "e": 259.7,
+     "t": "and hear everyone singing everything back,"
+    },
+    {
+     "s": 259.7,
+     "e": 261.7,
+     "t": "but there have been smaller shows in my life"
+    },
+    {
+     "s": 261.7,
+     "e": 263.7,
+     "t": "which made me happy."
+    },
+    {
+     "s": 263.7,
+     "e": 266.7,
+     "t": "But bad shows, it's always the support shows, isn't it?"
+    },
+    {
+     "s": 266.7,
+     "e": 268.7,
+     "t": "It's when you are struggling to fight"
+    },
+    {
+     "s": 268.7,
+     "e": 270.7,
+     "t": "against the noise of the crowd."
+    },
+    {
+     "s": 270.7,
+     "e": 272.7,
+     "t": "That's always quite soul-destroying."
+    },
+    {
+     "s": 272.7,
+     "e": 274.7,
+     "t": "Thank you, Jessica."
+    },
+    {
+     "s": 274.7,
+     "e": 276.7,
+     "t": "It has been a real pleasure talking with you today."
+    },
+    {
+     "s": 299.3,
+     "e": 304.6,
+     "t": "Hello, everybody, and welcome to our daily program, Stardom."
+    },
+    {
+     "s": 304.6,
+     "e": 307.6,
+     "t": "Today in our studio, we have Jessica Summer,"
+    },
+    {
+     "s": 307.6,
+     "e": 309.6,
+     "t": "a young, promising musician."
+    },
+    {
+     "s": 309.6,
+     "e": 311.6,
+     "t": "Hello, Jessica."
+    },
+    {
+     "s": 311.6,
+     "e": 313.6,
+     "t": "Hello. It's so nice being here."
+    },
+    {
+     "s": 313.6,
+     "e": 315.6,
+     "t": "Thank you for inviting me."
+    },
+    {
+     "s": 315.6,
+     "e": 319.6,
+     "t": "Your new album has been warmly welcomed by the public."
+    },
+    {
+     "s": 319.6,
+     "e": 322.6,
+     "t": "Have you got any critical remarks about it?"
+    },
+    {
+     "s": 322.6,
+     "e": 324.6,
+     "t": "I've got a couple of remarks."
+    },
+    {
+     "s": 324.6,
+     "e": 327.6,
+     "t": "They are about me being just another pretty girl"
+    },
+    {
+     "s": 327.6,
+     "e": 329.6,
+     "t": "singing about love and relationships."
+    },
+    {
+     "s": 329.6,
+     "e": 331.6,
+     "t": "I can't say it was a massive takedown,"
+    },
+    {
+     "s": 331.6,
+     "e": 333.6,
+     "t": "but I found it personally offensive."
+    },
+    {
+     "s": 333.6,
+     "e": 335.6,
+     "t": "I think the reason that stuck with me"
+    },
+    {
+     "s": 335.6,
+     "e": 338.6,
+     "t": "was because I found it so frustrating."
+    },
+    {
+     "s": 338.6,
+     "e": 340.6,
+     "t": "But actually, that's kind of the only"
+    },
+    {
+     "s": 340.6,
+     "e": 342.6,
+     "t": "proper negative feedback that I've had."
+    },
+    {
+     "s": 342.6,
+     "e": 344.6,
+     "t": "Then, in terms of compliments,"
+    },
+    {
+     "s": 344.6,
+     "e": 346.6,
+     "t": "I just can't really remember them"
+    },
+    {
+     "s": 346.6,
+     "e": 348.6,
+     "t": "because you always tend to stick a bit more"
+    },
+    {
+     "s": 348.6,
+     "e": 350.6,
+     "t": "on the negatives, don't you?"
+    },
+    {
+     "s": 350.6,
+     "e": 353.6,
+     "t": "Would you consider yourself a self-critical person?"
+    },
+    {
+     "s": 353.6,
+     "e": 356.6,
+     "t": "Yeah, massively. I'm self-critical."
+    },
+    {
+     "s": 356.6,
+     "e": 358.6,
+     "t": "I don't want to show anyone anything"
+    },
+    {
+     "s": 358.6,
+     "e": 360.6,
+     "t": "until the work is done."
+    },
+    {
+     "s": 360.6,
+     "e": 362.6,
+     "t": "I self-edit so harshly at the beginning."
+    },
+    {
+     "s": 362.6,
+     "e": 364.6,
+     "t": "I would never let anyone hear something"
+    },
+    {
+     "s": 364.6,
+     "e": 366.6,
+     "t": "that I wasn't happy with."
+    },
+    {
+     "s": 366.6,
+     "e": 368.6,
+     "t": "But then, once I've made it,"
+    },
+    {
+     "s": 368.6,
+     "e": 370.6,
+     "t": "I'm also not going to turn around and go."
+    },
+    {
+     "s": 370.6,
+     "e": 372.6,
+     "t": "If I'm putting it out,"
+    },
+    {
+     "s": 372.6,
+     "e": 374.6,
+     "t": "anything creative that I do,"
+    },
+    {
+     "s": 374.6,
+     "e": 376.6,
+     "t": "I think that it's good,"
+    },
+    {
+     "s": 376.6,
+     "e": 378.6,
+     "t": "otherwise I wouldn't put it out."
+    },
+    {
+     "s": 378.6,
+     "e": 380.6,
+     "t": "But I am self-critical across the board"
+    },
+    {
+     "s": 380.6,
+     "e": 382.6,
+     "t": "and in other areas of my life, I think."
+    },
+    {
+     "s": 382.6,
+     "e": 384.6,
+     "t": "How fully formed are your songs"
+    },
+    {
+     "s": 384.6,
+     "e": 386.6,
+     "t": "by the time you bring them to a producer?"
+    },
+    {
+     "s": 386.6,
+     "e": 388.6,
+     "t": "Show someone lyrics,"
+    },
+    {
+     "s": 388.6,
+     "e": 390.6,
+     "t": "or play them for someone?"
+    },
+    {
+     "s": 390.6,
+     "e": 392.6,
+     "t": "Like, completely finished."
+    },
+    {
+     "s": 392.6,
+     "e": 394.6,
+     "t": "Lyrics are usually the last thing that I would do,"
+    },
+    {
+     "s": 394.6,
+     "e": 396.6,
+     "t": "so a couple of the lyrics I will be"
+    },
+    {
+     "s": 396.6,
+     "e": 398.6,
+     "t": "finishing in the studio last minute"
+    },
+    {
+     "s": 398.6,
+     "e": 400.6,
+     "t": "because we've got to get the vocals recorded."
+    },
+    {
+     "s": 400.6,
+     "e": 402.6,
+     "t": "I sometimes find lyrics quite difficult"
+    },
+    {
+     "s": 402.6,
+     "e": 404.6,
+     "t": "towards the end, but it's done musically"
+    },
+    {
+     "s": 404.6,
+     "e": 406.6,
+     "t": "in terms of the structure,"
+    },
+    {
+     "s": 406.6,
+     "e": 408.6,
+     "t": "in terms of the arrangement."
+    },
+    {
+     "s": 408.6,
+     "e": 410.6,
+     "t": "So, it's all fully formed."
+    },
+    {
+     "s": 410.6,
+     "e": 412.6,
+     "t": "I have no one else involved"
+    },
+    {
+     "s": 412.6,
+     "e": 414.6,
+     "t": "in the writing process."
+    },
+    {
+     "s": 414.6,
+     "e": 416.6,
+     "t": "It's great to feel that I was going into the studio"
+    },
+    {
+     "s": 416.6,
+     "e": 418.6,
+     "t": "with something wishy-washy and not done."
+    },
+    {
+     "s": 418.6,
+     "e": 420.6,
+     "t": "It's because I'm a control freak,"
+    },
+    {
+     "s": 420.6,
+     "e": 422.6,
+     "t": "so I want to know that everything is sorted"
+    },
+    {
+     "s": 422.6,
+     "e": 424.6,
+     "t": "and what's going to come out the other end,"
+    },
+    {
+     "s": 424.6,
+     "e": 426.6,
+     "t": "obviously with a bit of leeway."
+    },
+    {
+     "s": 426.6,
+     "e": 428.6,
+     "t": "What has the experience been like"
+    },
+    {
+     "s": 428.6,
+     "e": 430.6,
+     "t": "playing these songs live?"
+    },
+    {
+     "s": 430.6,
+     "e": 432.6,
+     "t": "It's just been really fun."
+    },
+    {
+     "s": 432.6,
+     "e": 434.6,
+     "t": "It's the music I always imagined myself"
+    },
+    {
+     "s": 434.6,
+     "e": 436.6,
+     "t": "playing when I was a kid."
+    },
+    {
+     "s": 436.6,
+     "e": 438.6,
+     "t": "It's been nice to use my instrument a bit more"
+    },
+    {
+     "s": 438.6,
+     "e": 440.6,
+     "t": "rather than just propping up a whole song"
+    },
+    {
+     "s": 440.6,
+     "e": 442.6,
+     "t": "with a guitar and my vocals."
+    },
+    {
+     "s": 442.6,
+     "e": 444.6,
+     "t": "There's more energy in the crowd as well"
+    },
+    {
+     "s": 444.6,
+     "e": 446.6,
+     "t": "and it's nice to feel like you're a part of something"
+    },
+    {
+     "s": 446.6,
+     "e": 448.6,
+     "t": "in a room rather than just performing for a crowd."
+    },
+    {
+     "s": 448.6,
+     "e": 450.6,
+     "t": "So, I've enjoyed it loads"
+    },
+    {
+     "s": 450.6,
+     "e": 452.6,
+     "t": "and it's also been an exciting challenge"
+    },
+    {
+     "s": 452.6,
+     "e": 454.6,
+     "t": "because recently I have been taking older material"
+    },
+    {
+     "s": 454.6,
+     "e": 456.6,
+     "t": "and basically giving it a bit of a second life"
+    },
+    {
+     "s": 456.6,
+     "e": 458.6,
+     "t": "and making it sound like it could have"
+    },
+    {
+     "s": 458.6,
+     "e": 460.6,
+     "t": "potentially belonged on this record,"
+    },
+    {
+     "s": 460.6,
+     "e": 462.6,
+     "t": "which has been really fun."
+    },
+    {
+     "s": 462.6,
+     "e": 464.6,
+     "t": "Are there any particular shows"
+    },
+    {
+     "s": 464.6,
+     "e": 466.6,
+     "t": "that stand out in your mind?"
+    },
+    {
+     "s": 466.6,
+     "e": 468.6,
+     "t": "On a tour, the Big London show"
+    },
+    {
+     "s": 468.6,
+     "e": 470.6,
+     "t": "is always going to be very exciting."
+    },
+    {
+     "s": 470.6,
+     "e": 472.6,
+     "t": "A couple of weeks ago,"
+    },
+    {
+     "s": 472.6,
+     "e": 474.6,
+     "t": "I played in London, which is the biggest show"
+    },
+    {
+     "s": 474.6,
+     "e": 476.6,
+     "t": "I've ever headlined."
+    },
+    {
+     "s": 476.6,
+     "e": 478.6,
+     "t": "That was a real moment and it was playing"
+    },
+    {
+     "s": 478.6,
+     "e": 480.6,
+     "t": "all the new material."
+    },
+    {
+     "s": 480.6,
+     "e": 482.6,
+     "t": "It was amazing to see the shift"
+    },
+    {
+     "s": 482.6,
+     "e": 484.6,
+     "t": "and hear everyone singing everything back"
+    },
+    {
+     "s": 484.6,
+     "e": 486.6,
+     "t": "but there have been smaller shows in my life"
+    },
+    {
+     "s": 486.6,
+     "e": 488.6,
+     "t": "which made me happy."
+    },
+    {
+     "s": 488.6,
+     "e": 490.6,
+     "t": "But bad shows, it's always the support shows, isn't it?"
+    },
+    {
+     "s": 490.6,
+     "e": 492.6,
+     "t": "It's when you are struggling"
+    },
+    {
+     "s": 492.6,
+     "e": 494.6,
+     "t": "to fight against the noise of the crowd"
+    },
+    {
+     "s": 494.6,
+     "e": 496.6,
+     "t": "that's always quite soul destroying."
+    },
+    {
+     "s": 496.6,
+     "e": 498.6,
+     "t": "Thank you, Jessica."
+    },
+    {
+     "s": 498.6,
+     "e": 500.6,
+     "t": "It was a real pleasure talking with you today."
+    },
+    {
+     "s": 504.9,
+     "e": 506.9,
+     "t": "You now have 15 seconds"
+    },
+    {
+     "s": 506.9,
+     "e": 508.9,
+     "t": "to check your answers."
+    }
+   ]
+  },
+  {
+   "id": "g6",
+   "guid": "049F4B8CBA85B1DC49C55F1BA076E8C0",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/049F4B8CBA85B1DC49C55F1BA076E8C0/img1_1721126599.mp3",
+   "duration": 604.0,
+   "questions": [
+    {
+     "zid": "BB894A",
+     "type": "choice",
+     "q": "What do we learn about Kelly Green at the beginning of the interview?",
+     "options": [
+      "She’s starred only in operas",
+      "She’s had some big roles",
+      "She is already an old lady"
+     ],
+     "key": "2",
+     "ev": {
+      "s": 126.1,
+      "t": "Well, I guess you have just listed all of my major roles. I have been exceptionally lucky to get them considering my age."
+     }
+    },
+    {
+     "zid": "0A1FC7",
+     "type": "choice",
+     "q": "Kelly was offered a role in The Ghost because she …",
+     "options": [
+      "was a newcomer to London",
+      "could dance very well",
+      "managed to impress the producer"
+     ],
+     "key": "3",
+     "ev": {
+      "s": 170.1,
+      "t": "The producer of The Ghost noticed me in one of the shows and offered the main role in his musical To Me."
+     }
+    },
+    {
+     "zid": "675D12",
+     "type": "choice",
+     "q": "How does Kelly see her heroine in The Ghost ?",
+     "options": [
+      "She’s a typical woman of the late 1800s",
+      "She is extraordinary and inspiring",
+      "She fights hard for her country’s independence"
+     ],
+     "key": "2",
+     "ev": {
+      "s": 188.1,
+      "t": "To me, however, she is extraordinary. When you think about her, a woman in the late 1800s, you get stunned at how she worked her way to independence."
+     }
+    },
+    {
+     "zid": "847CCF",
+     "type": "choice",
+     "q": "Speaking about The Ghost , Kelly says she …",
+     "options": [
+      "will keep some details secret for now",
+      "finds some of her colleagues unhelpful",
+      "dislikes the music in the show"
+     ],
+     "key": "1",
+     "ev": null
+    },
+    {
+     "zid": "4A2CA9",
+     "type": "choice",
+     "q": "Kelly thinks that London …",
+     "options": [
+      "is the best place for tourists",
+      "has too many theatres",
+      "is a really great city"
+     ],
+     "key": "3",
+     "ev": {
+      "s": 180.1,
+      "t": "In my opinion, she is really a misunderstood woman and is often marked as the villain of this piece."
+     }
+    },
+    {
+     "zid": "8186B1",
+     "type": "choice",
+     "q": "According to Kelly, working in London is different from the USA because …",
+     "options": [
+      "there are fewer theatres in the USA",
+      "London theatres have a long history",
+      "London has more prestigious roles than the USA"
+     ],
+     "key": "2",
+     "ev": {
+      "s": 277.1,
+      "t": "How long will you be performing in London and what comes next for you after the ghost?"
+     }
+    },
+    {
+     "zid": "A6855E",
+     "type": "choice",
+     "q": "Which of the following is TRUE about Kelly’s plans?",
+     "options": [
+      "She expects to get new offers",
+      "She is not going to leave London",
+      "She wants to cancel the current contract"
+     ],
+     "key": "1",
+     "ev": null
+    }
+   ],
+   "transcript": [
+    {
+     "s": 86.1,
+     "e": 92.1,
+     "t": "Today in our studio we are lucky to have Kelly Green, a famous opera singer. Hello Kelly."
+    },
+    {
+     "s": 92.1,
+     "e": 98.1,
+     "t": "Good afternoon. It's a pleasure being here. Thank you so much for inviting me here today."
+    },
+    {
+     "s": 98.1,
+     "e": 104.1,
+     "t": "I'd like to give our listeners a few facts about our guest. Kelly Green is a lyric soprano"
+    },
+    {
+     "s": 104.1,
+     "e": 109.1,
+     "t": "who has appeared internationally in both operas and musicals."
+    },
+    {
+     "s": 109.1,
+     "e": 114.1,
+     "t": "Her opera credits include Madeline and The Marriage of Figaro."
+    },
+    {
+     "s": 114.1,
+     "e": 122.1,
+     "t": "Her other theatre credits include North American tours of The Sound of Music, Into the Woods, Mary Poppins,"
+    },
+    {
+     "s": 122.1,
+     "e": 126.1,
+     "t": "West Side Story and The Addams Family."
+    },
+    {
+     "s": 126.1,
+     "e": 134.1,
+     "t": "Well, I guess you have just listed all of my major roles. I have been exceptionally lucky to get them considering my age."
+    },
+    {
+     "s": 134.1,
+     "e": 139.1,
+     "t": "Not many actresses of my age are offered roles like that."
+    },
+    {
+     "s": 139.1,
+     "e": 146.1,
+     "t": "You have recently joined the cast of the iconic musical The Ghost. Can you tell us how it all happened?"
+    },
+    {
+     "s": 146.1,
+     "e": 155.1,
+     "t": "Well, I moved to London two years ago and was so fortunate to get roles in two world premiere operas almost at once."
+    },
+    {
+     "s": 155.1,
+     "e": 164.1,
+     "t": "It took me a lot of auditions to get these roles, but they were important for me as they included acting, singing and dance calls."
+    },
+    {
+     "s": 164.1,
+     "e": 170.1,
+     "t": "They were an amazing experience and I loved every moment of these two performances."
+    },
+    {
+     "s": 170.1,
+     "e": 178.1,
+     "t": "The producer of The Ghost noticed me in one of the shows and offered the main role in his musical To Me."
+    },
+    {
+     "s": 178.1,
+     "e": 180.1,
+     "t": "How would you describe your heroine?"
+    },
+    {
+     "s": 180.1,
+     "e": 188.1,
+     "t": "In my opinion, she is really a misunderstood woman and is often marked as the villain of this piece."
+    },
+    {
+     "s": 188.1,
+     "e": 199.1,
+     "t": "To me, however, she is extraordinary. When you think about her, a woman in the late 1800s, you get stunned at how she worked her way to independence."
+    },
+    {
+     "s": 199.1,
+     "e": 201.1,
+     "t": "It is quite inspiring."
+    },
+    {
+     "s": 201.1,
+     "e": 207.1,
+     "t": "Many opera singers have performed this role. What is special about your vision of her?"
+    },
+    {
+     "s": 207.1,
+     "e": 210.1,
+     "t": "This role is already a part of my soul."
+    },
+    {
+     "s": 210.1,
+     "e": 220.1,
+     "t": "In fact, the music and artistic staff of the musical have been so collaborative and supportive in helping me really make this character my own."
+    },
+    {
+     "s": 220.1,
+     "e": 227.1,
+     "t": "I have added little bits and nuances throughout the piece that I think the audience will really love."
+    },
+    {
+     "s": 227.1,
+     "e": 232.1,
+     "t": "But it wouldn't be a good idea to reveal them all just before the first night show."
+    },
+    {
+     "s": 232.1,
+     "e": 235.1,
+     "t": "You'll have to come and see it for yourself."
+    },
+    {
+     "s": 235.1,
+     "e": 242.1,
+     "t": "You have performed at many venues in the USA. How does it feel to be living and performing in London?"
+    },
+    {
+     "s": 242.1,
+     "e": 250.1,
+     "t": "I absolutely love being here in London. I have always loved the city, so it was a dream come true when I moved here."
+    },
+    {
+     "s": 250.1,
+     "e": 254.1,
+     "t": "The theatre culture and history here are so rich."
+    },
+    {
+     "s": 254.1,
+     "e": 263.1,
+     "t": "You know, I have performed in 48 out of 50 US states so far and we do have some stunning venues in the United States."
+    },
+    {
+     "s": 263.1,
+     "e": 272.1,
+     "t": "However, I must say there is something quite special about performing in a venue that has been around since before the US was a country."
+    },
+    {
+     "s": 272.1,
+     "e": 277.1,
+     "t": "It is such an honor to sing in a place where so much history has been made."
+    },
+    {
+     "s": 277.1,
+     "e": 283.1,
+     "t": "How long will you be performing in London and what comes next for you after the ghost?"
+    },
+    {
+     "s": 283.1,
+     "e": 287.1,
+     "t": "I will be singing the role for about a year on this current contract."
+    },
+    {
+     "s": 287.1,
+     "e": 298.1,
+     "t": "I will be headed to New Jersey, the USA for a short trip in the Spring for Beethoven's Ninth Symphony concert with the Bay Atlantic Symphony"
+    },
+    {
+     "s": 298.1,
+     "e": 301.1,
+     "t": "and then continuing my current journey here."
+    },
+    {
+     "s": 301.1,
+     "e": 307.1,
+     "t": "I'm excited to see what the future holds and am so grateful for this next step."
+    },
+    {
+     "s": 307.1,
+     "e": 310.1,
+     "t": "Hopefully I'll get more exciting roles."
+    },
+    {
+     "s": 310.1,
+     "e": 317.1,
+     "t": "I love exploring new characters and I feel I get better as an actress with each new role that I get."
+    },
+    {
+     "s": 317.1,
+     "e": 320.1,
+     "t": "Thank you very much for talking with us today Kelly."
+    },
+    {
+     "s": 320.1,
+     "e": 325.1,
+     "t": "We wish you good luck and we're looking forward to seeing more performances starring you."
+    },
+    {
+     "s": 325.1,
+     "e": 328.4,
+     "t": "Thank you."
+    },
+    {
+     "s": 348.7,
+     "e": 355.0,
+     "t": "Hello everybody and welcome to our daily program Five Minutes with a Star."
+    },
+    {
+     "s": 355.0,
+     "e": 360.0,
+     "t": "Today in our studio we are lucky to have Kelly Green, a famous opera singer."
+    },
+    {
+     "s": 360.0,
+     "e": 361.0,
+     "t": "Hello Kelly."
+    },
+    {
+     "s": 361.0,
+     "e": 364.0,
+     "t": "Good afternoon. It's a pleasure being here."
+    },
+    {
+     "s": 364.0,
+     "e": 367.0,
+     "t": "Thank you so much for inviting me here today."
+    },
+    {
+     "s": 367.0,
+     "e": 371.0,
+     "t": "I'd like to give our listeners a few facts about our guest."
+    },
+    {
+     "s": 371.0,
+     "e": 378.0,
+     "t": "Kelly Green is a lyric soprano who has appeared internationally in both operas and musicals."
+    },
+    {
+     "s": 378.0,
+     "e": 383.0,
+     "t": "Her opera credits include Madeline and The Marriage of Figaro."
+    },
+    {
+     "s": 383.0,
+     "e": 395.0,
+     "t": "Her other theatre credits include North American tours of The Sound of Music, Into the Woods, Mary Poppins, West Side Story and The Adams Family."
+    },
+    {
+     "s": 395.0,
+     "e": 399.0,
+     "t": "Well, I guess you have just listed all of my major roles."
+    },
+    {
+     "s": 399.0,
+     "e": 404.0,
+     "t": "I have been exceptionally lucky to get them considering my age."
+    },
+    {
+     "s": 404.0,
+     "e": 408.0,
+     "t": "Not many actresses of my age are offered roles like that."
+    },
+    {
+     "s": 408.0,
+     "e": 412.0,
+     "t": "You have recently joined the cast of the iconic musical The Ghost."
+    },
+    {
+     "s": 412.0,
+     "e": 415.0,
+     "t": "Can you tell us how it all happened?"
+    },
+    {
+     "s": 415.0,
+     "e": 424.0,
+     "t": "Well, I moved to London two years ago and was so fortunate to get roles in two world premiere operas almost at once."
+    },
+    {
+     "s": 424.0,
+     "e": 433.0,
+     "t": "It took me a lot of auditions to get these roles but they were important for me as they included acting, singing and dance calls."
+    },
+    {
+     "s": 433.0,
+     "e": 439.0,
+     "t": "They were an amazing experience and I loved every moment of these two performances."
+    },
+    {
+     "s": 439.0,
+     "e": 447.0,
+     "t": "The producer of The Ghost noticed me in one of the shows and offered the main role in his musical To Me."
+    },
+    {
+     "s": 447.0,
+     "e": 450.0,
+     "t": "How would you describe your heroine?"
+    },
+    {
+     "s": 450.0,
+     "e": 457.0,
+     "t": "In my opinion, she is really a misunderstood woman and is often marked as the villain of this piece."
+    },
+    {
+     "s": 457.0,
+     "e": 460.0,
+     "t": "To me, however, she is extraordinary."
+    },
+    {
+     "s": 460.0,
+     "e": 468.0,
+     "t": "When you think about her, a woman in the late 1800s, you get stunned at how she worked her way to independence."
+    },
+    {
+     "s": 468.0,
+     "e": 470.0,
+     "t": "It is quite inspiring."
+    },
+    {
+     "s": 470.0,
+     "e": 476.0,
+     "t": "Many opera singers have performed this role. What is special about your vision of her?"
+    },
+    {
+     "s": 476.0,
+     "e": 479.0,
+     "t": "This role is already a part of my soul."
+    },
+    {
+     "s": 479.0,
+     "e": 489.0,
+     "t": "In fact, the music and artistic staff of the musical have been so collaborative and supportive in helping me really make this character my own."
+    },
+    {
+     "s": 489.0,
+     "e": 496.0,
+     "t": "I have added little bits and nuances throughout the piece that I think the audience will really love."
+    },
+    {
+     "s": 496.0,
+     "e": 501.0,
+     "t": "But it wouldn't be a good idea to reveal them all just before the first night show."
+    },
+    {
+     "s": 501.0,
+     "e": 504.0,
+     "t": "You'll have to come and see it for yourself."
+    },
+    {
+     "s": 504.0,
+     "e": 511.0,
+     "t": "You have performed at many venues in the USA. How does it feel to be living and performing in London?"
+    },
+    {
+     "s": 511.0,
+     "e": 516.0,
+     "t": "I absolutely love being here in London. I have always loved the city."
+    },
+    {
+     "s": 516.0,
+     "e": 519.0,
+     "t": "So it was a dream come true when I moved here."
+    },
+    {
+     "s": 519.0,
+     "e": 523.0,
+     "t": "The theatre culture and history here are so rich."
+    },
+    {
+     "s": 523.0,
+     "e": 528.0,
+     "t": "You know, I have performed in 48 out of 50 US states so far."
+    },
+    {
+     "s": 528.0,
+     "e": 532.0,
+     "t": "And we do have some stunning venues in the United States."
+    },
+    {
+     "s": 532.0,
+     "e": 541.0,
+     "t": "However, I must say, there is something quite special about performing in a venue that has been around since before the US was a country."
+    },
+    {
+     "s": 541.0,
+     "e": 546.0,
+     "t": "It is such an honor to sing in a place where so much history has been made."
+    },
+    {
+     "s": 546.0,
+     "e": 552.0,
+     "t": "How long will you be performing in London? And what comes next for you after The Ghost?"
+    },
+    {
+     "s": 552.0,
+     "e": 556.0,
+     "t": "I will be singing the role for about a year on this current contract."
+    },
+    {
+     "s": 556.0,
+     "e": 567.0,
+     "t": "I will be headed to New Jersey, the USA for a short trip in the spring for Beethoven's Ninth Symphony Concert with the Bay Atlantic Symphony."
+    },
+    {
+     "s": 567.0,
+     "e": 571.0,
+     "t": "And then continuing my current journey here."
+    },
+    {
+     "s": 571.0,
+     "e": 577.0,
+     "t": "I'm excited to see what the future holds and am so grateful for this next step."
+    },
+    {
+     "s": 577.0,
+     "e": 580.0,
+     "t": "Hopefully I'll get more exciting roles."
+    },
+    {
+     "s": 580.0,
+     "e": 586.0,
+     "t": "I love exploring new characters and I feel I get better as an actress with each new role that I get."
+    },
+    {
+     "s": 586.0,
+     "e": 589.0,
+     "t": "Thank you very much for talking with us today Kelly."
+    },
+    {
+     "s": 589.0,
+     "e": 594.0,
+     "t": "We wish you good luck and we're looking forward to seeing more performances starring you."
+    },
+    {
+     "s": 594.0,
+     "e": 596.0,
+     "t": "Thank you."
+    }
+   ]
+  }
+ ]
+}

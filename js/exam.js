@@ -45,6 +45,7 @@ const CONFIGS = {
       { id: 'grammar', type: 'drill',   dataFile: 'ege_grammar', topicKey: 'Грамматика',       tile: 'grammar',  icon: '📝' },
       { id: 'lexis',   type: 'drill',   dataFile: 'ege_lexis',   topicKey: 'Лексика/словообр.', tile: 'wordform', icon: '🔤' },
       { id: 'reading', type: 'reading', dataFile: 'ege_reading', tile: 'reading', iconKey: 'reading', icon: '📖' },
+      { id: 'listening', type: 'listening', dataFile: 'ege_listening', tile: 'listening', iconKey: 'listening', icon: '🎧' },
       { id: 'email',   type: 'writing', tile: 'writing', icon: '✉️' },
       { id: 'essay',   type: 'writing', tile: 'grammar', iconKey: 'essay', icon: '📝' },
     ],

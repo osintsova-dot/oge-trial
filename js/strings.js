@@ -320,7 +320,7 @@ export const STRINGS = {
     listening: {
       pickVariant: 'Choose a variant',
       variant: (n) => 'Variant ' + n,
-      variantSub: '11 tasks · FIPI audio',
+      variantSub: 'multiple choice · FIPI audio',
       listenHint: 'Listen to the recording (in the exam it plays twice) and do the tasks',
       audioErr: 'Could not load the audio — you need an internet connection. Try again later.',
       matchInstr: 'Match each speaker (A–E) to a statement. One statement is extra.',
@@ -480,8 +480,8 @@ export const STRINGS = {
     celNext: 'Next →', celClaim: 'Claim!',
     achGot: '✅ Earned', achLocked: '🔒 Not yet', modalClose: 'Got it',
     friend: 'friend',
-    sections: { vocab: 'Topic Vocabulary', grammar: 'Grammar', wordform: 'Word formation', reading: 'Reading', writing: 'Writing', speaking: 'Speaking', lexis: 'Vocabulary', email: 'Email', essay: 'Essay' },
-    sectionMeta: { vocab: 'theme of the week · 15 words a day', grammar: '389 tasks · grammar', wordform: '728 tasks · word forms', reading: '469 tasks · 3 formats', writing: 'writing', speaking: 'soon', lexis: '728 tasks · vocabulary', email: 'task 37 · K1–K3', essay: 'task 38 · K1–K5' },
+    sections: { vocab: 'Topic Vocabulary', grammar: 'Grammar', wordform: 'Word formation', reading: 'Reading', listening: 'Listening', writing: 'Writing', speaking: 'Speaking', lexis: 'Vocabulary', email: 'Email', essay: 'Essay' },
+    sectionMeta: { vocab: 'theme of the week · 15 words a day', grammar: '389 tasks · grammar', wordform: '728 tasks · word forms', reading: '469 tasks · 3 formats', listening: 'FIPI audio · multiple choice', writing: 'writing', speaking: 'soon', lexis: '728 tasks · vocabulary', email: 'task 37 · K1–K3', essay: 'task 38 · K1–K5' },
     ranks: ['Rookie', 'Trainee', 'Skilled', 'Pro', 'Master', 'Legend'],
     skins: {
       aurora: { name: 'Aurora', desc: 'Purple → honey', need: 'available now', how: 'A skin is the colour of your XP bar at the top. "Aurora" (purple → honey) is available right away — equip it in one tap.' },
