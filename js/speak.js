@@ -13,9 +13,11 @@ export function canSpeak() { return typeof window !== 'undefined' && 'speechSynt
 function pickVoice() {
   if (!voices.length) loadVoices();
   const gb = voices.filter((v) => /en[-_]?GB/i.test(v.lang) || /british|united kingdom|\(uk\)/i.test(v.name));
-  const prefer = ['Daniel', 'Kate', 'Serena', 'Sonia', 'Arthur', 'Oliver', 'Libby', 'George', 'Martha', 'Stephanie'];
-  for (const p of prefer) { const m = gb.find((v) => v.name.includes(p)); if (m) return m; }
-  return gb[0] || voices.find((v) => /^en/i.test(v.lang)) || null;
+  // женские британские голоса в приоритете
+  const female = ['Kate', 'Serena', 'Sonia', 'Libby', 'Hazel', 'Stephanie', 'Martha', 'Amy', 'Emma'];
+  for (const p of female) { const m = gb.find((v) => v.name.includes(p)); if (m) return m; }
+  const f2 = gb.find((v) => /female|женск/i.test(v.name));
+  return f2 || gb[0] || voices.find((v) => /^en/i.test(v.lang)) || null;
 }
 
 // Произнести английский текст британским голосом.
