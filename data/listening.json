@@ -77,115 +77,64 @@
      "zid": "B5ED73",
      "type": "fill",
      "label": "Current job",
-     "key": "librarian"
+     "key": "librarian",
+     "ev": {
+      "s": 1119.5,
+      "t": "In fact, I was in the library for a different reason. I work there. I'm a librarian."
+     }
     },
     {
      "zid": "516C81",
      "type": "fill",
      "label": "Number of jobs he/she has done",
-     "key": "twelve"
+     "key": "twelve",
+     "ev": {
+      "s": 1141.9,
+      "t": "You've already tried 12 different jobs? Fantastic."
+     }
     },
     {
      "zid": "81655A",
      "type": "fill",
      "label": "The foreign language he/she speaks",
-     "key": "Chinese"
+     "key": "Chinese",
+     "ev": {
+      "s": 1153.8,
+      "t": "Of course. The language I learned in college was Chinese and I'm still learning it"
+     }
     },
     {
      "zid": "BA3459",
      "type": "fill",
      "label": "Hobby",
-     "key": "travelling"
+     "key": "travelling",
+     "ev": {
+      "s": 1177.1,
+      "t": "Hmm, no. I like travelling. It's my real hobby. And my favourite destination is China."
+     }
     },
     {
      "zid": "9F82AF",
      "type": "fill",
      "label": "The musical instrument he/she plays",
-     "key": "piano"
+     "key": "piano",
+     "ev": {
+      "s": 1202.2,
+      "t": "Do you mean the Chinese bamboo flute? No, but I play the piano. Well enough."
+     }
     },
     {
      "zid": "07CA19",
      "type": "fill",
      "label": "Regular sports activity",
-     "key": "jogging"
+     "key": "jogging",
+     "ev": {
+      "s": 1220.7,
+      "t": "Hmm, I go jogging. I would like to go swimming but there's no swimming pool nearby so I jog"
+     }
     }
    ],
    "transcript": [
-    {
-     "s": 0.0,
-     "e": 4.6,
-     "t": "Now you will perform the task by auditing."
-    },
-    {
-     "s": 5.4,
-     "e": 8.1,
-     "t": "The texts will sound two times."
-    },
-    {
-     "s": 9.3,
-     "e": 11.8,
-     "t": "After each listening of the texts,"
-    },
-    {
-     "s": 12.2,
-     "e": 16.8,
-     "t": "you will have time to perform and check the tasks."
-    },
-    {
-     "s": 17.7,
-     "e": 20.7,
-     "t": "All pauses are turned on by audio recording."
-    },
-    {
-     "s": 21.8,
-     "e": 27.9,
-     "t": "Stop and repeat of audio recording are not provided."
-    },
-    {
-     "s": 29.8,
-     "e": 32.6,
-     "t": "Task 1.4"
-    },
-    {
-     "s": 34.6,
-     "e": 37.7,
-     "t": "You will hear four short texts"
-    },
-    {
-     "s": 38.2,
-     "e": 43.4,
-     "t": "marked with letters A, B, C, D."
-    },
-    {
-     "s": 44.4,
-     "e": 46.5,
-     "t": "In the task 1.4,"
-    },
-    {
-     "s": 46.9,
-     "e": 52.1,
-     "t": "write in the field of answers the number 1, 2 or 3,"
-    },
-    {
-     "s": 52.6,
-     "e": 56.4,
-     "t": "which corresponds to the choice of the answer option."
-    },
-    {
-     "s": 57.6,
-     "e": 60.0,
-     "t": "You will hear the recording twice."
-    },
-    {
-     "s": 61.0,
-     "e": 66.0,
-     "t": "You have 30 seconds to get acquainted with the tasks."
-    },
-    {
-     "s": 96.1,
-     "e": 98.0,
-     "t": "Now we are ready to start."
-    },
     {
      "s": 102.9,
      "e": 103.8,
@@ -402,16 +351,6 @@
      "t": "It would be nice of you to help me set the table."
     },
     {
-     "s": 270.6,
-     "e": 273.7,
-     "t": "You have 20 seconds to complete the task."
-    },
-    {
-     "s": 293.9,
-     "e": 296.3,
-     "t": "Now you will hear the texts again."
-    },
-    {
      "s": 301.6,
      "e": 305.6,
      "t": "Hi everyone, I'd like to give you some advice on our hiking holiday."
@@ -617,21 +556,6 @@
      "t": "It would be nice of you to help me set the table."
     },
     {
-     "s": 469.3,
-     "e": 471.2,
-     "t": "This is the end of the task."
-    },
-    {
-     "s": 471.6,
-     "e": 474.6,
-     "t": "You now have 20 seconds to check your answers."
-    },
-    {
-     "s": 519.6,
-     "e": 567.0,
-     "t": "Now we are ready to start. Good afternoon. Today we have asked five people to give us"
-    },
-    {
      "s": 567.0,
      "e": 571.4,
      "t": "a short interview and share their opinions about films and cinema."
@@ -817,16 +741,6 @@
      "t": "Then I can pause at any time I need so it's really convenient."
     },
     {
-     "s": 772.3,
-     "e": 797.3,
-     "t": "You have 20 seconds to complete the task. Now you will hear the texts again."
-    },
-    {
-     "s": 799.3,
-     "e": 804.5,
-     "t": "Good afternoon. Today we have asked five people to give us a short interview"
-    },
-    {
      "s": 804.5,
      "e": 809.9,
      "t": "and share their opinions about films and cinema. Now we would like to present"
@@ -987,16 +901,6 @@
      "t": "Then I can pause at any time I need so it's really convenient."
     },
     {
-     "s": 1008.4,
-     "e": 1013.7,
-     "t": "This is the end of the task. You now have 20 seconds to check your answers."
-    },
-    {
-     "s": 1033.7,
-     "e": 1042.4,
-     "t": "Task 611. You help your friend, a young radio journalist,"
-    },
-    {
      "s": 1043.1,
      "e": 1050.1,
      "t": "analyze the interviews prepared for them. Listen to the audio recording of the interview"
@@ -1005,16 +909,6 @@
      "s": 1050.8,
      "e": 1057.0,
      "t": "and bring the data to the table. You can write no more than one word without"
-    },
-    {
-     "s": 1057.8,
-     "e": 1071.2,
-     "t": "the text. You have 30 seconds to get familiar with the tasks."
-    },
-    {
-     "s": 1101.4,
-     "e": 1107.1,
-     "t": "Now we are ready to start. First of all, I would like to thank"
     },
     {
      "s": 1107.1,
@@ -1167,16 +1061,6 @@
      "t": "I hate getting up early and evenings are better for me."
     },
     {
-     "s": 1240.1,
-     "e": 1246.7,
-     "t": "I see. And one more question. You have 20 seconds to complete the task."
-    },
-    {
-     "s": 1266.6,
-     "e": 1273.3,
-     "t": "Now you will hear the text again. First of all, I would like to thank you for agreeing"
-    },
-    {
      "s": 1273.3,
      "e": 1276.9,
      "t": "to take part in our survey. It's really very important for us."
@@ -1325,16 +1209,6 @@
      "s": 1401.5,
      "e": 1404.5,
      "t": "I hate getting up early and evenings are better for me."
-    },
-    {
-     "s": 1405.5,
-     "e": 1413.8,
-     "t": "I see. And one more question. This is the end of the task. You now have 20 seconds to check"
-    },
-    {
-     "s": 1413.8,
-     "e": 1436.4,
-     "t": "your answers. This is the end of the listening test."
     }
    ]
   },
@@ -1413,115 +1287,64 @@
      "zid": "8F68E4",
      "type": "fill",
      "label": "Age of the respondent",
-     "key": "sixty"
+     "key": "sixty",
+     "ev": {
+      "s": 1038.9,
+      "t": "OK, I'm 60."
+     }
     },
     {
      "zid": "775E26",
      "type": "fill",
      "label": "Regular sports activity",
-     "key": "tennis"
+     "key": "tennis",
+     "ev": {
+      "s": 1049.5,
+      "t": "No, but I've been playing tennis since childhood"
+     }
     },
     {
      "zid": "43DFAD",
      "type": "fill",
      "label": "Favourite food",
-     "key": "vegetables"
+     "key": "vegetables",
+     "ev": {
+      "s": 118.9,
+      "t": "our young guests can visit the place where we grow fruit and vegetables for our restaurant."
+     }
     },
     {
      "zid": "3CB55E",
      "type": "fill",
      "label": "Country of birth",
-     "key": "India"
+     "key": "India",
+     "ev": {
+      "s": 1072.0,
+      "t": "I'm from India and we have traditions of cooking vegetables there."
+     }
     },
     {
      "zid": "64F0AC",
      "type": "fill",
      "label": "Current job",
-     "key": "engineer"
+     "key": "engineer",
+     "ev": {
+      "s": 1086.6,
+      "t": "Yes, I went to university in the United States to be an engineer and"
+     }
     },
     {
      "zid": "EA08E4",
      "type": "fill",
      "label": "Hobby",
-     "key": "fishing"
+     "key": "fishing",
+     "ev": {
+      "s": 1132.8,
+      "t": "Now I go fishing whenever I have an opportunity."
+     }
     }
    ],
    "transcript": [
-    {
-     "s": 0.0,
-     "e": 4.6,
-     "t": "Now you will perform the task by auditing."
-    },
-    {
-     "s": 5.4,
-     "e": 8.1,
-     "t": "The texts will sound two times."
-    },
-    {
-     "s": 9.3,
-     "e": 11.8,
-     "t": "After each listening of the texts,"
-    },
-    {
-     "s": 12.3,
-     "e": 16.8,
-     "t": "you will have time to perform and check the task."
-    },
-    {
-     "s": 17.7,
-     "e": 20.7,
-     "t": "All pauses are turned on by audio recording."
-    },
-    {
-     "s": 21.8,
-     "e": 27.9,
-     "t": "Stop and repeat of audio recording are not provided."
-    },
-    {
-     "s": 29.9,
-     "e": 32.6,
-     "t": "Task 1.4"
-    },
-    {
-     "s": 34.6,
-     "e": 37.7,
-     "t": "You will hear four short texts"
-    },
-    {
-     "s": 38.2,
-     "e": 43.4,
-     "t": "marked with letters A, B, C, D."
-    },
-    {
-     "s": 44.4,
-     "e": 46.5,
-     "t": "In the task 1.4,"
-    },
-    {
-     "s": 46.9,
-     "e": 52.1,
-     "t": "write in the field of the answer the number 1, 2 or 3,"
-    },
-    {
-     "s": 52.6,
-     "e": 56.4,
-     "t": "which corresponds to the choice of the answer option."
-    },
-    {
-     "s": 57.6,
-     "e": 60.0,
-     "t": "You will hear the recording twice."
-    },
-    {
-     "s": 61.0,
-     "e": 66.0,
-     "t": "You have 30 seconds to get acquainted with the tasks."
-    },
-    {
-     "s": 96.1,
-     "e": 97.9,
-     "t": "Now we are ready to start."
-    },
     {
      "s": 103.0,
      "e": 106.5,
@@ -1751,16 +1574,6 @@
      "s": 257.1,
      "e": 258.4,
      "t": "Congratulations."
-    },
-    {
-     "s": 260.5,
-     "e": 263.7,
-     "t": "You have 20 seconds to complete the task."
-    },
-    {
-     "s": 283.9,
-     "e": 286.3,
-     "t": "Now you will hear the texts again."
     },
     {
      "s": 291.6,
@@ -2028,16 +1841,6 @@
      "t": "Congratulations."
     },
     {
-     "s": 449.2,
-     "e": 451.1,
-     "t": "This is the end of the task."
-    },
-    {
-     "s": 451.4,
-     "e": 454.6,
-     "t": "You now have 20 seconds to check your answers."
-    },
-    {
      "s": 502.0,
      "e": 506.0,
      "t": "You only get one extra rubric from each list."
@@ -2048,29 +1851,9 @@
      "t": "There's one extra rubric on the list."
     },
     {
-     "s": 511.8,
-     "e": 513.8,
-     "t": "You'll hear the recording twice."
-    },
-    {
-     "s": 514.8,
-     "e": 519.2,
-     "t": "You have 20 seconds to get to know the task."
-    },
-    {
-     "s": 539.2,
-     "e": 541.2,
-     "t": "Now we are ready to start."
-    },
-    {
      "s": 543.2,
      "e": 544.0,
      "t": "Good afternoon."
-    },
-    {
-     "s": 544.5,
-     "e": 547.6,
-     "t": "Today we have asked five people to give a short interview"
     },
     {
      "s": 547.8,
@@ -2288,24 +2071,9 @@
      "t": "I'd actually prefer to have more fun."
     },
     {
-     "s": 719.7,
-     "e": 722.5,
-     "t": "You have 20 seconds to complete the task."
-    },
-    {
-     "s": 742.4,
-     "e": 744.8,
-     "t": "Now you will hear the texts again."
-    },
-    {
      "s": 746.7,
      "e": 748.0,
      "t": "Good afternoon."
-    },
-    {
-     "s": 748.0,
-     "e": 751.1,
-     "t": "Today we have asked five people to give a short interview"
     },
     {
      "s": 751.3,
@@ -2528,16 +2296,6 @@
      "t": "I'd actually prefer to have more fun."
     },
     {
-     "s": 923.3,
-     "e": 925.1,
-     "t": "Speaker E. This is the end of the task."
-    },
-    {
-     "s": 925.5,
-     "e": 928.6,
-     "t": "You now have 20 seconds to check your answers."
-    },
-    {
      "s": 968.6,
      "e": 971.7,
      "t": "You can write no more than one word"
@@ -2556,16 +2314,6 @@
      "s": 979.1,
      "e": 981.3,
      "t": "You'll hear the letter twice."
-    },
-    {
-     "s": 982.1,
-     "e": 986.1,
-     "t": "You have 30 seconds to get familiar with the tasks."
-    },
-    {
-     "s": 1016.0,
-     "e": 1018.1,
-     "t": "Now we are ready to start."
     },
     {
      "s": 1020.2,
@@ -2803,16 +2551,6 @@
      "t": "Thank you for your time, but I've got a few more questions if you don't mind."
     },
     {
-     "s": 1151.5,
-     "e": 1154.4,
-     "t": "You have 20 seconds to complete the task."
-    },
-    {
-     "s": 1174.2,
-     "e": 1176.3,
-     "t": "Now you will hear the text again."
-    },
-    {
      "s": 1178.5,
      "e": 1182.2,
      "t": "First of all, I would like to thank you for taking part in our survey."
@@ -3036,21 +2774,6 @@
      "s": 1303.8,
      "e": 1307.6,
      "t": "Thank you for your time, but I've got a few more questions if you don't mind."
-    },
-    {
-     "s": 1309.8,
-     "e": 1311.7,
-     "t": "This is the end of the task."
-    },
-    {
-     "s": 1312.1,
-     "e": 1315.1,
-     "t": "You now have 20 seconds to check your answers."
-    },
-    {
-     "s": 1334.7,
-     "e": 1337.0,
-     "t": "This is the end of the listening test."
     }
    ]
   },
@@ -3129,115 +2852,64 @@
      "zid": "485324",
      "type": "fill",
      "label": "Current job",
-     "key": "policeman"
+     "key": "policeman",
+     "ev": {
+      "s": 1074.2,
+      "t": "I'm a policeman and it's part of my job to ask people questions."
+     }
     },
     {
      "zid": "E7364E",
      "type": "fill",
      "label": "Favourite food",
-     "key": "chicken"
+     "key": "chicken",
+     "ev": {
+      "s": 1103.2,
+      "t": "For me it's chicken."
+     }
     },
     {
      "zid": "1BFA96",
      "type": "fill",
      "label": "Regular sports activity",
-     "key": "athletics"
+     "key": "athletics",
+     "ev": {
+      "s": 1124.2,
+      "t": "Athletics, that's what I do."
+     }
     },
     {
      "zid": "578A81",
      "type": "fill",
      "label": "Age of the respondent",
-     "key": "fifty"
+     "key": "fifty",
+     "ev": {
+      "s": 1144.2,
+      "t": "50, yeah."
+     }
     },
     {
      "zid": "FD8064",
      "type": "fill",
      "label": "Country of birth",
-     "key": "Ireland"
+     "key": "Ireland",
+     "ev": {
+      "s": 1155.2,
+      "t": "In Ireland, of course."
+     }
     },
     {
      "zid": "1C2493",
      "type": "fill",
      "label": "Hobby",
-     "key": "gardening"
+     "key": "gardening",
+     "ev": {
+      "s": 1183.2,
+      "t": "I love gardening."
+     }
     }
    ],
    "transcript": [
-    {
-     "s": 0.0,
-     "e": 4.6,
-     "t": "Now you will perform the task by auditing."
-    },
-    {
-     "s": 5.4,
-     "e": 8.1,
-     "t": "The texts will sound two times."
-    },
-    {
-     "s": 9.3,
-     "e": 11.8,
-     "t": "After each listening of the texts,"
-    },
-    {
-     "s": 12.3,
-     "e": 16.8,
-     "t": "you will have time to perform and check the task."
-    },
-    {
-     "s": 17.7,
-     "e": 20.7,
-     "t": "All pauses are turned on by audio recording."
-    },
-    {
-     "s": 21.8,
-     "e": 27.9,
-     "t": "Stop and repeat of audio recording are not provided."
-    },
-    {
-     "s": 29.9,
-     "e": 32.6,
-     "t": "Task 1.4"
-    },
-    {
-     "s": 34.6,
-     "e": 37.7,
-     "t": "You will hear four short texts"
-    },
-    {
-     "s": 38.2,
-     "e": 43.4,
-     "t": "marked with letters A, B, C, D."
-    },
-    {
-     "s": 44.4,
-     "e": 46.5,
-     "t": "In the task 1.4,"
-    },
-    {
-     "s": 46.9,
-     "e": 52.1,
-     "t": "write in the field of the answer number 1, 2 or 3,"
-    },
-    {
-     "s": 52.6,
-     "e": 56.4,
-     "t": "which corresponds to the option of the answer."
-    },
-    {
-     "s": 57.6,
-     "e": 60.0,
-     "t": "You will hear the recording twice."
-    },
-    {
-     "s": 61.0,
-     "e": 66.0,
-     "t": "You have 30 seconds to get familiar with the tasks."
-    },
-    {
-     "s": 96.1,
-     "e": 98.0,
-     "t": "Now we are ready to start."
-    },
     {
      "s": 103.1,
      "e": 104.4,
@@ -3472,16 +3144,6 @@
      "s": 266.4,
      "e": 267.5,
      "t": "Show me how to do this."
-    },
-    {
-     "s": 269.5,
-     "e": 272.6,
-     "t": "You have twenty seconds to complete the task."
-    },
-    {
-     "s": 292.9,
-     "e": 295.2,
-     "t": "Now you will hear the texts again."
     },
     {
      "s": 300.6,
@@ -3729,21 +3391,6 @@
      "t": "Show me how to do this."
     },
     {
-     "s": 464.6,
-     "e": 468.0,
-     "t": "This is the end of the task."
-    },
-    {
-     "s": 468.0,
-     "e": 471.0,
-     "t": "You now have 20 seconds to check your answers."
-    },
-    {
-     "s": 472.0,
-     "e": 492.2,
-     "t": "Task 5."
-    },
-    {
      "s": 493.2,
      "e": 497.5,
      "t": "You prepare a theme radio broadcast"
@@ -3754,49 +3401,14 @@
      "t": "with five different people's statements"
     },
     {
-     "s": 500.5,
-     "e": 507.5,
-     "t": "marked with letters A, B, C, D, I."
-    },
-    {
-     "s": 508.5,
-     "e": 516.5,
-     "t": "Choose each statement corresponding to its content of the column from the list 1-6."
-    },
-    {
-     "s": 516.5,
-     "e": 521.5,
-     "t": "Use each column from the list only once."
-    },
-    {
      "s": 522.5,
      "e": 526.5,
      "t": "There is one extra column on the list."
     },
     {
-     "s": 527.5,
-     "e": 529.5,
-     "t": "You will hear the recording twice."
-    },
-    {
-     "s": 530.5,
-     "e": 534.5,
-     "t": "You have 20 seconds to check your answers."
-    },
-    {
-     "s": 535.5,
-     "e": 556.8,
-     "t": "Now we are ready to start."
-    },
-    {
      "s": 557.8,
      "e": 558.8,
      "t": "Good afternoon."
-    },
-    {
-     "s": 558.8,
-     "e": 563.1,
-     "t": "Today we have asked five people to give us a short interview"
     },
     {
      "s": 563.1,
@@ -4089,24 +3701,9 @@
      "t": "are happy and proud to wear their uniforms."
     },
     {
-     "s": 743.2,
-     "e": 747.6,
-     "t": "You have 20 seconds to complete the task."
-    },
-    {
-     "s": 747.6,
-     "e": 769.7,
-     "t": "Now, you will hear the texts again."
-    },
-    {
      "s": 769.7,
      "e": 771.7,
      "t": "Good afternoon."
-    },
-    {
-     "s": 771.7,
-     "e": 774.7,
-     "t": "Today, we have asked five people to give us a short interview"
     },
     {
      "s": 774.7,
@@ -4414,26 +4011,6 @@
      "t": "are happy and proud to wear their uniforms."
     },
     {
-     "s": 954.8,
-     "e": 956.8,
-     "t": "This is the end of the task."
-    },
-    {
-     "s": 956.8,
-     "e": 961.3,
-     "t": "You now have 20 seconds to check your answers."
-    },
-    {
-     "s": 963.3,
-     "e": 985.5,
-     "t": "20 seconds to check your answers."
-    },
-    {
-     "s": 1013.8,
-     "e": 1015.8,
-     "t": "Now we are ready to start."
-    },
-    {
      "s": 1015.8,
      "e": 1019.8,
      "t": "Excuse me, do you mind if I ask you a few questions?"
@@ -4722,16 +4299,6 @@
      "s": 1196.2,
      "e": 1200.6,
      "t": "And one more question if you don't mind."
-    },
-    {
-     "s": 1200.6,
-     "e": 1203.6,
-     "t": "You have 20 seconds to complete the task."
-    },
-    {
-     "s": 1203.6,
-     "e": 1225.6,
-     "t": "Now you will hear the text again."
     },
     {
      "s": 1225.6,
@@ -5054,21 +4621,6 @@
      "t": "And one more question if you don't mind."
     },
     {
-     "s": 1370.8,
-     "e": 1372.8,
-     "t": "This is the end of the task."
-    },
-    {
-     "s": 1372.8,
-     "e": 1395.5,
-     "t": "You now have 20 seconds to check your answers."
-    },
-    {
-     "s": 1395.5,
-     "e": 1400.1,
-     "t": "This is the end of the listening test."
-    },
-    {
      "s": 1400.1,
      "e": 1404.1,
      "t": "Time spent on the task and the glass."
@@ -5150,115 +4702,64 @@
      "zid": "259BDB",
      "type": "fill",
      "label": "Regular sports activity",
-     "key": "cycling"
+     "key": "cycling",
+     "ev": {
+      "s": 1079.9,
+      "t": "You do cycling quite often."
+     }
     },
     {
      "zid": "2444B3",
      "type": "fill",
      "label": "The means of transport he/she prefers",
-     "key": "plane"
+     "key": "plane",
+     "ev": {
+      "s": 1105.9,
+      "t": "The plane, of course."
+     }
     },
     {
      "zid": "4631FD",
      "type": "fill",
      "label": "Favourite school subject",
-     "key": "history"
+     "key": "history",
+     "ev": {
+      "s": 1121.9,
+      "t": "It's history."
+     }
     },
     {
      "zid": "F8EA58",
      "type": "fill",
      "label": "Country of birth",
-     "key": "Scotland"
+     "key": "Scotland",
+     "ev": {
+      "s": 1127.9,
+      "t": "And I was born in Scotland"
+     }
     },
     {
      "zid": "3DE8E2",
      "type": "fill",
      "label": "Hobby",
-     "key": "blogging"
+     "key": "blogging",
+     "ev": {
+      "s": 1163.9,
+      "t": "I do some blogging."
+     }
     },
     {
      "zid": "604DB1",
      "type": "fill",
      "label": "Number of the Internet followers",
-     "key": "ninety"
+     "key": "ninety",
+     "ev": {
+      "s": 1173.9,
+      "t": "90 at the moment."
+     }
     }
    ],
    "transcript": [
-    {
-     "s": 0.0,
-     "e": 4.6,
-     "t": "Now you will perform the task by auditing."
-    },
-    {
-     "s": 5.3,
-     "e": 8.1,
-     "t": "The texts will sound twice."
-    },
-    {
-     "s": 9.3,
-     "e": 11.8,
-     "t": "After each listening of the texts,"
-    },
-    {
-     "s": 12.2,
-     "e": 16.8,
-     "t": "you will have time to perform and check the task."
-    },
-    {
-     "s": 17.7,
-     "e": 20.7,
-     "t": "All pauses are turned on by audio recording."
-    },
-    {
-     "s": 21.8,
-     "e": 28.0,
-     "t": "Stop and repeat of audio recording are not provided."
-    },
-    {
-     "s": 29.9,
-     "e": 32.9,
-     "t": "Task 1.4"
-    },
-    {
-     "s": 34.7,
-     "e": 37.8,
-     "t": "You will hear 4 short texts"
-    },
-    {
-     "s": 38.2,
-     "e": 43.7,
-     "t": "marked with letters A, B, C, D."
-    },
-    {
-     "s": 44.4,
-     "e": 46.7,
-     "t": "In the task 1.4,"
-    },
-    {
-     "s": 46.9,
-     "e": 52.3,
-     "t": "write in the answer field the number 1, 2 or 3,"
-    },
-    {
-     "s": 52.7,
-     "e": 56.7,
-     "t": "which corresponds to the choice of the answer option."
-    },
-    {
-     "s": 57.7,
-     "e": 60.2,
-     "t": "You will hear the recording twice."
-    },
-    {
-     "s": 61.2,
-     "e": 66.2,
-     "t": "You have 30 seconds to get acquainted with the tasks."
-    },
-    {
-     "s": 96.2,
-     "e": 98.2,
-     "t": "Now we are ready to start."
-    },
     {
      "s": 102.9,
      "e": 104.4,
@@ -5573,16 +5074,6 @@
      "s": 262.8,
      "e": 266.0,
      "t": "in the hotel room."
-    },
-    {
-     "s": 266.0,
-     "e": 269.0,
-     "t": "You have 20 seconds to complete the task."
-    },
-    {
-     "s": 269.0,
-     "e": 291.6,
-     "t": "Now you will hear the texts again."
     },
     {
      "s": 295.2,
@@ -5950,11 +5441,6 @@
      "t": "in the hotel room."
     },
     {
-     "s": 458.2,
-     "e": 461.6,
-     "t": "This is the end of the task."
-    },
-    {
      "s": 461.6,
      "e": 463.6,
      "t": "You now have 20 seconds"
@@ -6058,11 +5544,6 @@
      "s": 522.2,
      "e": 524.2,
      "t": "in the list."
-    },
-    {
-     "s": 524.2,
-     "e": 526.2,
-     "t": "You will hear the recording twice."
     },
     {
      "s": 526.2,
@@ -6460,24 +5941,9 @@
      "t": "on the upper floor of the building."
     },
     {
-     "s": 743.5,
-     "e": 764.6,
-     "t": "You have 20 seconds to complete the task."
-    },
-    {
-     "s": 764.6,
-     "e": 766.6,
-     "t": "Now you will hear the texts again."
-    },
-    {
      "s": 766.6,
      "e": 769.9,
      "t": "Good afternoon."
-    },
-    {
-     "s": 769.9,
-     "e": 771.9,
-     "t": "Today we have asked five people"
     },
     {
      "s": 771.9,
@@ -6885,11 +6351,6 @@
      "t": "on the upper floor of the building."
     },
     {
-     "s": 956.6,
-     "e": 958.6,
-     "t": "This is the end of the task."
-    },
-    {
      "s": 958.6,
      "e": 960.6,
      "t": "You now have 20 seconds"
@@ -6898,11 +6359,6 @@
      "s": 960.6,
      "e": 981.9,
      "t": "to check your answers."
-    },
-    {
-     "s": 981.9,
-     "e": 983.9,
-     "t": "The task is 6.11."
     },
     {
      "s": 983.9,
@@ -6978,11 +6434,6 @@
      "s": 1013.2,
      "e": 1015.2,
      "t": "You have 30 seconds"
-    },
-    {
-     "s": 1015.2,
-     "e": 1017.2,
-     "t": "to get acquainted"
     },
     {
      "s": 1017.2,
@@ -7268,16 +6719,6 @@
      "s": 1181.9,
      "e": 1185.2,
      "t": "I wish you success."
-    },
-    {
-     "s": 1185.2,
-     "e": 1188.2,
-     "t": "You have 20 seconds to complete the task."
-    },
-    {
-     "s": 1188.2,
-     "e": 1210.3,
-     "t": "Now you will hear the text again."
     },
     {
      "s": 1210.3,
@@ -7605,11 +7046,6 @@
      "t": "I wish you success."
     },
     {
-     "s": 1341.6,
-     "e": 1344.9,
-     "t": "This is the end of the task."
-    },
-    {
      "s": 1344.9,
      "e": 1346.9,
      "t": "You now have 20 seconds"
@@ -7618,11 +7054,6 @@
      "s": 1346.9,
      "e": 1348.9,
      "t": "to check your answers."
-    },
-    {
-     "s": 1348.9,
-     "e": 1369.6,
-     "t": "This is the end"
     },
     {
      "s": 1369.6,
@@ -7706,115 +7137,64 @@
      "zid": "43C34E",
      "type": "fill",
      "label": "The most difficult school subject",
-     "key": "geography"
+     "key": "geography",
+     "ev": {
+      "s": 1082.3,
+      "t": "And the most difficult one, I believe it's geography."
+     }
     },
     {
      "zid": "82AF79",
      "type": "fill",
      "label": "Hobby",
-     "key": "photography"
+     "key": "photography",
+     "ev": {
+      "s": 1104.4,
+      "t": "I like taking photos. Photography is my hobby and I'm good at it."
+     }
     },
     {
      "zid": "DDBAB7",
      "type": "fill",
      "label": "Number of books read in the summer",
-     "key": "eighteen"
+     "key": "eighteen",
+     "ev": {
+      "s": 1125.0,
+      "t": "In that, I guess, 18."
+     }
     },
     {
      "zid": "278EF7",
      "type": "fill",
      "label": "The foreign language he/she speaks",
-     "key": "Spanish"
+     "key": "Spanish",
+     "ev": {
+      "s": 1132.8,
+      "t": "I speak Spanish."
+     }
     },
     {
      "zid": "06C656",
      "type": "fill",
      "label": "Regular sports activity",
-     "key": "volleyball"
+     "key": "volleyball",
+     "ev": {
+      "s": 1147.9,
+      "t": "I play volleyball if it counts."
+     }
     },
     {
      "zid": "E06DB3",
      "type": "fill",
      "label": "The pet he/she would like to have",
-     "key": "horse"
+     "key": "horse",
+     "ev": {
+      "s": 118.7,
+      "t": "However, you may take horse-riding lessons from 3 to 8 p.m."
+     }
     }
    ],
    "transcript": [
-    {
-     "s": 0.0,
-     "e": 4.6,
-     "t": "Now you will perform the task by auditing."
-    },
-    {
-     "s": 5.4,
-     "e": 8.1,
-     "t": "The texts will sound two times."
-    },
-    {
-     "s": 9.3,
-     "e": 11.8,
-     "t": "After each listening of the texts,"
-    },
-    {
-     "s": 12.2,
-     "e": 16.8,
-     "t": "you will have time to perform and check the task."
-    },
-    {
-     "s": 17.7,
-     "e": 20.6,
-     "t": "All pauses are turned on by audio recording."
-    },
-    {
-     "s": 21.8,
-     "e": 27.9,
-     "t": "Stop and repeat of audio recording are not provided."
-    },
-    {
-     "s": 29.9,
-     "e": 32.6,
-     "t": "Task 1.4"
-    },
-    {
-     "s": 34.6,
-     "e": 37.7,
-     "t": "You will hear four short texts"
-    },
-    {
-     "s": 38.2,
-     "e": 43.4,
-     "t": "marked with letters A, B, C, D."
-    },
-    {
-     "s": 44.4,
-     "e": 46.5,
-     "t": "In the task 1.4,"
-    },
-    {
-     "s": 46.9,
-     "e": 52.1,
-     "t": "write in the field of the answer number 1, 2 or 3,"
-    },
-    {
-     "s": 52.7,
-     "e": 56.4,
-     "t": "which corresponds to the choice of the answer option."
-    },
-    {
-     "s": 57.6,
-     "e": 59.9,
-     "t": "You will hear the recording twice."
-    },
-    {
-     "s": 61.0,
-     "e": 66.0,
-     "t": "You have 30 seconds to get acquainted with the tasks."
-    },
-    {
-     "s": 96.1,
-     "e": 98.0,
-     "t": "Now we are ready to start."
-    },
     {
      "s": 102.9,
      "e": 104.1,
@@ -8034,16 +7414,6 @@
      "s": 259.2,
      "e": 261.1,
      "t": "but ridiculous with your smart dress."
-    },
-    {
-     "s": 263.1,
-     "e": 266.3,
-     "t": "You have 20 seconds to complete the task."
-    },
-    {
-     "s": 286.5,
-     "e": 288.8,
-     "t": "Now you will hear the texts again."
     },
     {
      "s": 294.1,
@@ -8301,16 +7671,6 @@
      "t": "but ridiculous with your smart dress."
     },
     {
-     "s": 454.4,
-     "e": 456.2,
-     "t": "This is the end of the task."
-    },
-    {
-     "s": 456.7,
-     "e": 459.7,
-     "t": "You now have 20 seconds to check your answers."
-    },
-    {
      "s": 498.4,
      "e": 502.9,
      "t": "Each of you will say the appropriate number of your answers."
@@ -8331,29 +7691,9 @@
      "t": "There is one extra number in the list."
     },
     {
-     "s": 517.1,
-     "e": 519.0,
-     "t": "You will hear the answer twice."
-    },
-    {
-     "s": 520.0,
-     "e": 524.4,
-     "t": "You have 20 seconds to get to know your answers."
-    },
-    {
-     "s": 544.4,
-     "e": 546.4,
-     "t": "Now we are ready to start."
-    },
-    {
      "s": 548.4,
      "e": 549.1,
      "t": "Good afternoon."
-    },
-    {
-     "s": 549.5,
-     "e": 553.0,
-     "t": "Today we have asked five people to give us a short interview"
     },
     {
      "s": 553.4,
@@ -8561,24 +7901,9 @@
      "t": "There would be no need to travel far."
     },
     {
-     "s": 741.2,
-     "e": 744.2,
-     "t": "You have 20 seconds to complete the task."
-    },
-    {
-     "s": 764.0,
-     "e": 766.4,
-     "t": "Now you will hear the texts again."
-    },
-    {
      "s": 768.3,
      "e": 769.1,
      "t": "Good afternoon."
-    },
-    {
-     "s": 769.3,
-     "e": 776.3,
-     "t": "Today we have asked five people to give us a short interview and share their opinions about visiting museums."
     },
     {
      "s": 776.8,
@@ -8756,16 +8081,6 @@
      "t": "There would be no need to travel far."
     },
     {
-     "s": 962.5,
-     "e": 966.6,
-     "t": "This is the end of the task. You now have 20 seconds to check your answers."
-    },
-    {
-     "s": 986.4,
-     "e": 989.1,
-     "t": "Task 6.11"
-    },
-    {
      "s": 991.1,
      "e": 995.2,
      "t": "You help your friend, a young radio journalist,"
@@ -8789,21 +8104,6 @@
      "s": 1013.4,
      "e": 1016.2,
      "t": "The number must be written in letters."
-    },
-    {
-     "s": 1017.1,
-     "e": 1019.2,
-     "t": "You will hear the recording twice."
-    },
-    {
-     "s": 1019.9,
-     "e": 1024.0,
-     "t": "You have 30 seconds to get acquainted with the tasks."
-    },
-    {
-     "s": 1054.0,
-     "e": 1056.0,
-     "t": "Now we are ready to start."
     },
     {
      "s": 1058.1,
@@ -9001,16 +8301,6 @@
      "t": "Thank you. One more question."
     },
     {
-     "s": 1190.3,
-     "e": 1193.2,
-     "t": "You have 20 seconds to complete the task."
-    },
-    {
-     "s": 1213.0,
-     "e": 1215.1,
-     "t": "Now you will hear the text again."
-    },
-    {
      "s": 1217.2,
      "e": 1220.2,
      "t": "Thank you for taking part in our survey. I appreciate it."
@@ -9204,21 +8494,6 @@
      "s": 1345.7,
      "e": 1347.4,
      "t": "Thank you. One more question."
-    },
-    {
-     "s": 1349.5,
-     "e": 1351.7,
-     "t": "This is the end of the task."
-    },
-    {
-     "s": 1351.7,
-     "e": 1354.8,
-     "t": "You now have 20 seconds to check your answers."
-    },
-    {
-     "s": 1354.8,
-     "e": 1376.7,
-     "t": "This is the end of the listening test."
     }
    ]
   },
@@ -9297,110 +8572,64 @@
      "zid": "051C7C",
      "type": "fill",
      "label": "Current job",
-     "key": "designer"
+     "key": "designer",
+     "ev": {
+      "s": 1068.2,
+      "t": "I'm a designer."
+     }
     },
     {
      "zid": "75080E",
      "type": "fill",
      "label": "Number of hours spent online per week",
-     "key": "thirty"
+     "key": "thirty",
+     "ev": {
+      "s": 1097.7,
+      "t": "But I think generally it's 30 hours per week."
+     }
     },
     {
      "zid": "E9F5C0",
      "type": "fill",
      "label": "Regular sports activity",
-     "key": "badminton"
+     "key": "badminton",
+     "ev": {
+      "s": 1120.0,
+      "t": "So I play badminton."
+     }
     },
     {
      "zid": "1DD2A0",
      "type": "fill",
      "label": "Country of birth",
-     "key": "Greece"
+     "key": "Greece",
+     "ev": {
+      "s": 1137.5,
+      "t": "In Greece, I still have lots of relatives there."
+     }
     },
     {
      "zid": "4632EC",
      "type": "fill",
      "label": "Favourite type of music",
-     "key": "classical"
+     "key": "classical",
+     "ev": {
+      "s": 1156.2,
+      "t": "To tell you the truth, I prefer classical music to anything else."
+     }
     },
     {
      "zid": "217AA8",
      "type": "fill",
      "label": "Pet",
-     "key": "rabbit"
+     "key": "rabbit",
+     "ev": {
+      "s": 1185.4,
+      "t": "Exactly, it's a rabbit."
+     }
     }
    ],
    "transcript": [
-    {
-     "s": 0.0,
-     "e": 4.6,
-     "t": "Now you will perform the task by auditing."
-    },
-    {
-     "s": 5.3,
-     "e": 8.1,
-     "t": "The texts will sound two times."
-    },
-    {
-     "s": 9.3,
-     "e": 11.8,
-     "t": "After each listening of the texts,"
-    },
-    {
-     "s": 12.2,
-     "e": 16.8,
-     "t": "you will have time to perform and check the task."
-    },
-    {
-     "s": 17.7,
-     "e": 20.6,
-     "t": "All pauses are turned on by audio recording."
-    },
-    {
-     "s": 21.8,
-     "e": 27.9,
-     "t": "The pause and repeat of audio recording are not provided."
-    },
-    {
-     "s": 29.8,
-     "e": 32.8,
-     "t": "Task 1.4"
-    },
-    {
-     "s": 34.5,
-     "e": 37.7,
-     "t": "You will hear four short texts"
-    },
-    {
-     "s": 38.0,
-     "e": 43.5,
-     "t": "marked with letters A, B, C, D."
-    },
-    {
-     "s": 44.3,
-     "e": 52.2,
-     "t": "In the task 1.4 write in the field the answer to the number 1, 2 or 3,"
-    },
-    {
-     "s": 52.5,
-     "e": 56.5,
-     "t": "which corresponds to the choice of the answer option."
-    },
-    {
-     "s": 57.5,
-     "e": 60.0,
-     "t": "You will hear the recording twice."
-    },
-    {
-     "s": 61.0,
-     "e": 66.0,
-     "t": "You have 30 seconds to get familiar with the tasks."
-    },
-    {
-     "s": 96.0,
-     "e": 98.0,
-     "t": "Now we are ready to start."
-    },
     {
      "s": 102.7,
      "e": 106.7,
@@ -9430,11 +8659,6 @@
      "s": 119.8,
      "e": 122.8,
      "t": "but remember that you musn't use them for any purpose."
-    },
-    {
-     "s": 123.3,
-     "e": 126.3,
-     "t": "If you do, your test will not be greeted."
     },
     {
      "s": 126.8,
@@ -9692,16 +8916,6 @@
      "t": "A special souvenir. I bought it long ago."
     },
     {
-     "s": 259.1,
-     "e": 264.4,
-     "t": "You have 20 seconds to complete the task."
-    },
-    {
-     "s": 264.4,
-     "e": 286.9,
-     "t": "Now you will hear the texts again."
-    },
-    {
      "s": 291.6,
      "e": 297.0,
      "t": "And finally, I would like to tell you about your exam on Monday."
@@ -9735,11 +8949,6 @@
      "s": 310.0,
      "e": 314.0,
      "t": "but remember that you mustn't use them for any purpose."
-    },
-    {
-     "s": 314.0,
-     "e": 317.0,
-     "t": "If you do, your test will not be graded."
     },
     {
      "s": 317.0,
@@ -10022,16 +9231,6 @@
      "t": "I bought it long ago."
     },
     {
-     "s": 453.6,
-     "e": 455.6,
-     "t": "This is the end of the task."
-    },
-    {
-     "s": 455.6,
-     "e": 457.6,
-     "t": "You now have 20 seconds to check"
-    },
-    {
      "s": 457.6,
      "e": 478.9,
      "t": "your answers."
@@ -10052,19 +9251,9 @@
      "t": "number of your answers"
     },
     {
-     "s": 500.2,
-     "e": 504.2,
-     "t": "from the list 1, 6."
-    },
-    {
      "s": 504.2,
      "e": 506.2,
      "t": "Use each number"
-    },
-    {
-     "s": 506.2,
-     "e": 510.2,
-     "t": "from the list only once."
     },
     {
      "s": 510.2,
@@ -10092,19 +9281,9 @@
      "t": "to check your answers."
     },
     {
-     "s": 542.6,
-     "e": 544.6,
-     "t": "Now we are ready to start."
-    },
-    {
      "s": 544.6,
      "e": 547.9,
      "t": "Good afternoon."
-    },
-    {
-     "s": 547.9,
-     "e": 549.9,
-     "t": "Today we have asked five people"
     },
     {
      "s": 549.9,
@@ -10472,24 +9651,9 @@
      "t": "the situation will improve."
     },
     {
-     "s": 737.7,
-     "e": 762.5,
-     "t": "You have 20 seconds to complete the task."
-    },
-    {
-     "s": 762.5,
-     "e": 765.5,
-     "t": "Now you will hear the texts again."
-    },
-    {
      "s": 765.5,
      "e": 768.7,
      "t": "Good afternoon."
-    },
-    {
-     "s": 768.7,
-     "e": 770.7,
-     "t": "Today we have asked five people"
     },
     {
      "s": 770.7,
@@ -10812,21 +9976,6 @@
      "t": "the situation will improve."
     },
     {
-     "s": 959.6,
-     "e": 961.6,
-     "t": "This is the end of the task."
-    },
-    {
-     "s": 961.6,
-     "e": 964.6,
-     "t": "You now have 20 seconds to check your answers."
-    },
-    {
-     "s": 1004.1,
-     "e": 1006.1,
-     "t": "Now we are ready to start."
-    },
-    {
      "s": 1006.1,
      "e": 1009.1,
      "t": "I'm glad you found some time to talk to me."
@@ -11112,16 +10261,6 @@
      "t": "One more question if you don't mind."
     },
     {
-     "s": 1202.6,
-     "e": 1225.2,
-     "t": "You have 20 seconds to complete the task."
-    },
-    {
-     "s": 1225.2,
-     "e": 1229.4,
-     "t": "Now you will hear the text again."
-    },
-    {
      "s": 1229.4,
      "e": 1232.1,
      "t": "I'm glad you've found some time to talk to me."
@@ -11395,21 +10534,6 @@
      "s": 1370.7,
      "e": 1374.9,
      "t": "One more question if you don't mind."
-    },
-    {
-     "s": 1374.9,
-     "e": 1377.1,
-     "t": "This is the end of the task."
-    },
-    {
-     "s": 1377.1,
-     "e": 1399.7,
-     "t": "You now have 20 seconds to check your answers."
-    },
-    {
-     "s": 1399.7,
-     "e": 1404.3,
-     "t": "This is the end of the listening test."
     }
    ]
   },
@@ -11488,110 +10612,64 @@
      "zid": "386EA1",
      "type": "fill",
      "label": "The foreign language he/she speaks",
-     "key": "French"
+     "key": "French",
+     "ev": {
+      "s": 1045.5,
+      "t": "You said you've been to France. Do you speak French as a foreign language?"
+     }
     },
     {
      "zid": "121F01",
      "type": "fill",
      "label": "Age of the respondent",
-     "key": "eighteen"
+     "key": "eighteen",
+     "ev": {
+      "s": 1063.5,
+      "t": "It's my last year at school. I'm 18 already."
+     }
     },
     {
      "zid": "55EDB9",
      "type": "fill",
      "label": "Favourite school subject",
-     "key": "science"
+     "key": "science",
+     "ev": {
+      "s": 1079.5,
+      "t": "Neither. I love science. I've always loved it."
+     }
     },
     {
      "zid": "6C8DB7",
      "type": "fill",
      "label": "Dream job",
-     "key": "actress"
+     "key": "actress",
+     "ev": {
+      "s": 1095.5,
+      "t": "Well, I've always dreamt of being an actress"
+     }
     },
     {
      "zid": "2616CF",
      "type": "fill",
      "label": "Hobby",
-     "key": "singing"
+     "key": "singing",
+     "ev": {
+      "s": 1129.5,
+      "t": "Yeah, your hobby is singing. It's not a common one."
+     }
     },
     {
      "zid": "5399C7",
      "type": "fill",
      "label": "Regular sports activity",
-     "key": "aerobics"
+     "key": "aerobics",
+     "ev": {
+      "s": 1141.5,
+      "t": "No, I do aerobics."
+     }
     }
    ],
    "transcript": [
-    {
-     "s": 0.0,
-     "e": 4.6,
-     "t": "Now you will perform the task by auditing."
-    },
-    {
-     "s": 5.3,
-     "e": 8.1,
-     "t": "The texts will sound two times."
-    },
-    {
-     "s": 9.3,
-     "e": 11.8,
-     "t": "After each listening of the texts,"
-    },
-    {
-     "s": 12.2,
-     "e": 16.8,
-     "t": "you will have time to perform and check the task."
-    },
-    {
-     "s": 17.7,
-     "e": 20.7,
-     "t": "All pauses are turned on by audio recording."
-    },
-    {
-     "s": 21.8,
-     "e": 27.9,
-     "t": "The pause and repeat of audio recording are not provided."
-    },
-    {
-     "s": 29.9,
-     "e": 32.9,
-     "t": "Task 1.4"
-    },
-    {
-     "s": 34.7,
-     "e": 37.8,
-     "t": "You will hear 4 short texts"
-    },
-    {
-     "s": 38.2,
-     "e": 43.6,
-     "t": "marked with letters A, B, C, D."
-    },
-    {
-     "s": 44.4,
-     "e": 46.7,
-     "t": "In the task 1.4,"
-    },
-    {
-     "s": 46.9,
-     "e": 52.3,
-     "t": "write in the field of answers the number 1, 2 or 3,"
-    },
-    {
-     "s": 52.7,
-     "e": 56.6,
-     "t": "which corresponds to the option of the answer."
-    },
-    {
-     "s": 57.7,
-     "e": 60.2,
-     "t": "You will hear the recording twice."
-    },
-    {
-     "s": 60.5,
-     "e": 66.2,
-     "t": "You have 30 seconds to get acquainted with the tasks."
-    },
     {
      "s": 122.8,
      "e": 126.8,
@@ -11881,11 +10959,6 @@
      "s": 261.9,
      "e": 283.5,
      "t": "to complete the task."
-    },
-    {
-     "s": 283.5,
-     "e": 285.5,
-     "t": "Now you will hear the texts again."
     },
     {
      "s": 290.6,
@@ -12238,11 +11311,6 @@
      "t": "because of the noise from the traffic."
     },
     {
-     "s": 447.0,
-     "e": 449.0,
-     "t": "This is the end of the task."
-    },
-    {
      "s": 449.0,
      "e": 451.0,
      "t": "You now have 20 seconds"
@@ -12256,11 +11324,6 @@
      "s": 472.3,
      "e": 474.3,
      "t": "Question 5"
-    },
-    {
-     "s": 474.3,
-     "e": 477.6,
-     "t": "You're preparing a theme radio show"
     },
     {
      "s": 477.6,
@@ -12298,11 +11361,6 @@
      "t": "its content"
     },
     {
-     "s": 491.6,
-     "e": 493.6,
-     "t": "from the list 1, 6."
-    },
-    {
      "s": 493.6,
      "e": 495.6,
      "t": "Use"
@@ -12311,11 +11369,6 @@
      "s": 495.6,
      "e": 497.6,
      "t": "each sentence"
-    },
-    {
-     "s": 497.6,
-     "e": 499.6,
-     "t": "from the list"
     },
     {
      "s": 499.6,
@@ -12343,11 +11396,6 @@
      "t": "in the list."
     },
     {
-     "s": 509.6,
-     "e": 511.6,
-     "t": "You'll hear the recording twice."
-    },
-    {
      "s": 511.6,
      "e": 513.6,
      "t": "You have 20 seconds"
@@ -12363,19 +11411,9 @@
      "t": "Now we are"
     },
     {
-     "s": 536.9,
-     "e": 538.9,
-     "t": "ready to start."
-    },
-    {
      "s": 538.9,
      "e": 542.2,
      "t": "Good afternoon."
-    },
-    {
-     "s": 542.2,
-     "e": 544.2,
-     "t": "Today we have asked 5 people"
     },
     {
      "s": 544.2,
@@ -12753,24 +11791,9 @@
      "t": "Once a week is enough."
     },
     {
-     "s": 720.4,
-     "e": 722.4,
-     "t": "You have 20 seconds to complete the task."
-    },
-    {
-     "s": 722.4,
-     "e": 743.6,
-     "t": "Now you will hear the texts"
-    },
-    {
      "s": 743.6,
      "e": 746.8,
      "t": "again."
-    },
-    {
-     "s": 746.8,
-     "e": 748.8,
-     "t": "Good afternoon. Today we have asked"
     },
     {
      "s": 748.8,
@@ -13148,16 +12171,6 @@
      "t": "Once a week is enough."
     },
     {
-     "s": 926.3,
-     "e": 928.3,
-     "t": "This is the end of the task."
-    },
-    {
-     "s": 928.3,
-     "e": 930.3,
-     "t": "You now have 20 seconds to check your answers."
-    },
-    {
      "s": 951.6,
      "e": 954.9,
      "t": "You can enter"
@@ -13228,11 +12241,6 @@
      "t": "The number"
     },
     {
-     "s": 980.9,
-     "e": 982.9,
-     "t": "you hear the recording twice."
-    },
-    {
      "s": 982.9,
      "e": 984.9,
      "t": "You have 30 seconds"
@@ -13241,11 +12249,6 @@
      "s": 984.9,
      "e": 986.9,
      "t": "to get to know the tasks."
-    },
-    {
-     "s": 1018.2,
-     "e": 1020.2,
-     "t": "Now we are ready to start."
     },
     {
      "s": 1020.2,
@@ -13498,11 +12501,6 @@
      "t": "to complete the task."
     },
     {
-     "s": 1179.9,
-     "e": 1181.9,
-     "t": "Now you will hear the text again."
-    },
-    {
      "s": 1181.9,
      "e": 1185.2,
      "t": "Excuse me."
@@ -13733,34 +12731,9 @@
      "t": "And it can be great fun if you choose the right instructor."
     },
     {
-     "s": 1320.6,
-     "e": 1322.6,
-     "t": "This is the end of the task."
-    },
-    {
-     "s": 1322.6,
-     "e": 1324.6,
-     "t": "You now have 20 seconds to check"
-    },
-    {
      "s": 1324.6,
      "e": 1345.3,
      "t": "your answers."
-    },
-    {
-     "s": 1345.3,
-     "e": 1347.3,
-     "t": "This is the end of the listening test."
-    },
-    {
-     "s": 1350.9,
-     "e": 1352.9,
-     "t": "The end of the listening test."
-    },
-    {
-     "s": 1352.9,
-     "e": 1354.9,
-     "t": "This is the end of the listening test."
     },
     {
      "s": 1354.9,
@@ -13844,115 +12817,64 @@
      "zid": "7DDC92",
      "type": "fill",
      "label": "Age of the respondent",
-     "key": "fourteen"
+     "key": "fourteen",
+     "ev": {
+      "s": 1055.7,
+      "t": "14, in case you need my age for your survey."
+     }
     },
     {
      "zid": "84DE77",
      "type": "fill",
      "label": "City of birth",
-     "key": "London"
+     "key": "London",
+     "ev": {
+      "s": 1063.7,
+      "t": "In London."
+     }
     },
     {
      "zid": "D4F488",
      "type": "fill",
      "label": "Favourite school subject",
-     "key": "literature"
+     "key": "literature",
+     "ev": {
+      "s": 1085.7,
+      "t": "I like literature most of all, and I'm good at it."
+     }
     },
     {
      "zid": "C990F5",
      "type": "fill",
      "label": "Dish for breakfast",
-     "key": "sandwich"
+     "key": "sandwich",
+     "ev": {
+      "s": 1105.7,
+      "t": "A sandwich."
+     }
     },
     {
      "zid": "AFD5D3",
      "type": "fill",
      "label": "The job he/she would like to do in the future",
-     "key": "journalist"
+     "key": "journalist",
+     "ev": {
+      "s": 1138.7,
+      "t": "And as for my career, I want to be a journalist like you."
+     }
     },
     {
      "zid": "98C7E7",
      "type": "fill",
      "label": "Hobby",
-     "key": "painting"
+     "key": "painting",
+     "ev": {
+      "s": 1160.7,
+      "t": "No, it's definitely not. It's painting."
+     }
     }
    ],
    "transcript": [
-    {
-     "s": 0.0,
-     "e": 4.6,
-     "t": "Now you will perform the task by auditing."
-    },
-    {
-     "s": 5.3,
-     "e": 8.1,
-     "t": "The texts will sound two times."
-    },
-    {
-     "s": 9.3,
-     "e": 11.8,
-     "t": "After each listening of the texts,"
-    },
-    {
-     "s": 12.2,
-     "e": 16.8,
-     "t": "you will have time to perform and check the tasks."
-    },
-    {
-     "s": 17.7,
-     "e": 20.6,
-     "t": "All pauses are turned on by audio recording."
-    },
-    {
-     "s": 21.8,
-     "e": 27.9,
-     "t": "The pause and repeat of audio recording are not provided."
-    },
-    {
-     "s": 29.8,
-     "e": 32.8,
-     "t": "Task 1.4"
-    },
-    {
-     "s": 34.5,
-     "e": 37.7,
-     "t": "You will hear four short texts"
-    },
-    {
-     "s": 38.0,
-     "e": 43.5,
-     "t": "marked with letters A, B, C, D."
-    },
-    {
-     "s": 44.3,
-     "e": 46.5,
-     "t": "In the task 1.4,"
-    },
-    {
-     "s": 46.8,
-     "e": 52.2,
-     "t": "write in the answer field the number 1, 2 or 3,"
-    },
-    {
-     "s": 52.5,
-     "e": 56.5,
-     "t": "which corresponds to the choice of the answer option."
-    },
-    {
-     "s": 57.5,
-     "e": 60.0,
-     "t": "You will hear the recording twice."
-    },
-    {
-     "s": 61.0,
-     "e": 66.0,
-     "t": "You have 30 seconds to get familiar with the tasks."
-    },
-    {
-     "s": 96.0,
-     "e": 98.0,
-     "t": "Now we are ready to start."
-    },
     {
      "s": 102.7,
      "e": 106.2,
@@ -14179,11 +13101,6 @@
      "t": "Wait a moment Alice. I'll introduce you to your instructor. She'll explain everything."
     },
     {
-     "s": 268.3,
-     "e": 294.9,
-     "t": "You have 20 seconds to complete the task. Now you will hear the texts again."
-    },
-    {
      "s": 297.4,
      "e": 306.0,
      "t": "Dear friends, the week of documentary films which we held last month attracted lots of attention."
@@ -14334,16 +13251,6 @@
      "t": "Wait a moment Alice. I'll introduce you to your instructor. She'll explain everything."
     },
     {
-     "s": 465.8,
-     "e": 491.1,
-     "t": "This is the end of the task. You now have 20 seconds to check your answers."
-    },
-    {
-     "s": 491.1,
-     "e": 493.1,
-     "t": "Task 5."
-    },
-    {
      "s": 493.1,
      "e": 501.4,
      "t": "You prepare a theme radio broadcast with 5 different people's statements,"
@@ -14352,36 +13259,6 @@
      "s": 501.4,
      "e": 508.4,
      "t": "A, B, C, D, E, A, B, C, D, E."
-    },
-    {
-     "s": 508.4,
-     "e": 517.4,
-     "t": "Choose each statement corresponding to its content of the column from the list 1-6."
-    },
-    {
-     "s": 517.4,
-     "e": 523.4,
-     "t": "Use each column from the list only once."
-    },
-    {
-     "s": 523.4,
-     "e": 531.4,
-     "t": "There is one extra column in the list. You will hear the recording twice."
-    },
-    {
-     "s": 531.4,
-     "e": 555.8,
-     "t": "You have 20 seconds to get acquainted with the task."
-    },
-    {
-     "s": 555.8,
-     "e": 561.1,
-     "t": "Now we are ready to start. Good afternoon."
-    },
-    {
-     "s": 561.1,
-     "e": 565.1,
-     "t": "Today we have asked five people to give us a short interview"
     },
     {
      "s": 565.1,
@@ -14664,19 +13541,9 @@
      "t": "It's really hard."
     },
     {
-     "s": 744.8,
-     "e": 767.0,
-     "t": "Now you will hear the texts again."
-    },
-    {
      "s": 767.0,
      "e": 769.3,
      "t": "Good afternoon."
-    },
-    {
-     "s": 769.3,
-     "e": 771.3,
-     "t": "Today we have asked five people"
     },
     {
      "s": 771.3,
@@ -14984,21 +13851,6 @@
      "t": "It's really hard."
     },
     {
-     "s": 949.0,
-     "e": 952.4,
-     "t": "This is the end of the task."
-    },
-    {
-     "s": 952.4,
-     "e": 956.4,
-     "t": "You now have 20 seconds to check your answers."
-    },
-    {
-     "s": 997.0,
-     "e": 1047.7,
-     "t": "Now we are ready to start."
-    },
-    {
      "s": 1047.7,
      "e": 1049.7,
      "t": "Well, first of all,"
@@ -15224,16 +14076,6 @@
      "t": "Amazing. One more question if you don't mind."
     },
     {
-     "s": 1174.7,
-     "e": 1199.1,
-     "t": "You have 20 seconds to complete the task."
-    },
-    {
-     "s": 1199.1,
-     "e": 1201.1,
-     "t": "Now you will hear the text again."
-    },
-    {
      "s": 1201.1,
      "e": 1208.5,
      "t": "Well, first of all, I would like to thank you for agreeing to take part in our survey."
@@ -15407,21 +14249,6 @@
      "s": 1326.5,
      "e": 1331.9,
      "t": "Amazing. One more question if you don't mind."
-    },
-    {
-     "s": 1331.9,
-     "e": 1333.9,
-     "t": "This is the end of the task."
-    },
-    {
-     "s": 1333.9,
-     "e": 1337.9,
-     "t": "You now have 20 seconds to check your answers."
-    },
-    {
-     "s": 1337.9,
-     "e": 1359.7,
-     "t": "This is the end of the listening test."
     },
     {
      "s": 1359.7,

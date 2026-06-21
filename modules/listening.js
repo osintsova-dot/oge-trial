@@ -174,6 +174,7 @@ export async function renderListening(container, cfg) {
       const input = el('input', { class: 'ls-input', type: 'text', autocomplete: 'off',
         autocapitalize: 'off', spellcheck: 'false', placeholder: '…' });
       const verdict = el('div', { class: 'ls-cv', style: { display: 'none' } });
+      const srcWrap = el('div', { class: 'ls-src', style: { display: 'none' } });
       qNodes.push({
         type: 'fill', zid: q.zid, key: q.key,
         result() { const ok = norm(input.value) === norm(q.key); return { correct: ok ? 1 : 0, total: 1, allOk: ok }; },
@@ -183,11 +184,19 @@ export async function renderListening(container, cfg) {
           verdict.className = 'ls-cv block ' + (ok ? 'ok' : 'bad');
           verdict.textContent = ok ? '✓' : ('✕ ' + L.correctIs(q.key));
           verdict.style.display = 'block';
+          // опора: предложение из записи, где звучит ответ (тап → переслушать)
+          if (q.ev) {
+            srcWrap.replaceChildren(
+              el('span', { class: 'ls-src-lbl', text: L.source + ': ' }),
+              el('button', { class: 'ls-src-q', onclick: () => { try { audio.currentTime = q.ev.s; audio.play(); } catch {} } }, ['« ', q.ev.t, ' »']),
+            );
+            srcWrap.style.display = 'block';
+          }
         },
       });
       return el('div', { class: 'ls-task ls-fill' }, [
         el('div', { class: 'ls-q' }, [el('span', { class: 'ls-num', text: n + '. ' }), q.label]),
-        input, verdict,
+        input, verdict, srcWrap,
       ]);
     }
 
