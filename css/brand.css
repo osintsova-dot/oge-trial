@@ -277,9 +277,9 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .sec-bar .sb-sub{font-size:12px;color:rgba(255,255,255,.82)}
 .sec-bar.writing .sb-title{color:#1A1A2E}
 .sec-bar.writing .sb-sub{color:rgba(26,26,46,.7)}
-.sec-bar .sb-action{width:38px;height:38px;border-radius:12px;background:rgba(255,255,255,.22);
+.sec-bar .sb-action,.sec-bar .tip-btn{width:38px;height:38px;border-radius:12px;background:rgba(255,255,255,.22);
   display:flex;align-items:center;justify-content:center;font-size:18px;cursor:pointer;color:#fff;border:none;flex:none}
-.sec-bar.writing .sb-action{background:rgba(0,0,0,.12);color:#1A1A2E}
+.sec-bar.writing .sb-action,.sec-bar.writing .tip-btn{background:rgba(0,0,0,.12);color:#1A1A2E}
 
 /* ===== Список тем ===== */
 .topics-body{padding:14px 16px 40px}
@@ -605,6 +605,33 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .pts-step:disabled{opacity:.35;cursor:default}
 .pts-num{min-width:88px;text-align:center;font-size:38px;font-weight:800;color:var(--ink);letter-spacing:-.5px}
 .pts-spend{margin-top:12px;font-size:14px;font-weight:800;color:var(--muted)}
+
+/* ===== Онбординг: дата экзамена ===== */
+.date-row{display:flex;gap:10px;width:100%;margin:18px 0 4px}
+.date-sel{flex:1;padding:13px 12px;border-radius:14px;border:none;background:#fff;color:#1A1A2E;
+  font-size:16px;font-weight:700;font-family:inherit}
+.splash .skip-link{display:block;margin:14px auto 0;background:none;border:none;color:rgba(255,255,255,.92);
+  font-weight:700;font-size:14px;cursor:pointer;text-decoration:underline}
+
+/* ===== Счётчик до экзамена на главной ===== */
+.cd-card{display:flex;align-items:center;gap:12px;width:100%;text-align:left;border:none;cursor:pointer;
+  background:var(--grad-hero);color:#fff;border-radius:16px;padding:12px 14px;margin-bottom:14px;box-shadow:0 2px 12px var(--shadow)}
+.cd-img{width:54px;height:54px;object-fit:contain;flex:none}
+.cd-in{flex:1;min-width:0}
+.cd-h{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.4px;opacity:.85}
+.cd-v{font-size:18px;font-weight:800;margin-top:2px;line-height:1.2}
+.cd-arrow{font-size:26px;font-weight:700;opacity:.85;flex:none}
+.cd-set{background:var(--card);color:var(--ink)}
+.cd-set .cd-h{color:var(--muted)}
+
+/* ===== Советы Спики (модалка раздела) ===== */
+.tips-card{max-height:84vh;overflow-y:auto;text-align:left}
+.tips-card .modal-title{text-align:center}
+.tip-block{margin-top:14px}
+.tip-lbl{font-size:13px;font-weight:800;color:var(--p-text)}
+.tip-txt{font-size:14px;color:var(--ink);margin-top:4px;line-height:1.5}
+.tip-list{margin:6px 0 0;padding-left:18px}
+.tip-list li{font-size:14px;color:var(--ink);line-height:1.5;margin-bottom:6px}
 
 /* ===== Прочее ===== */
 .loader{color:var(--muted);font-size:14px;padding:16px}

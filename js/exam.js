@@ -7,6 +7,7 @@ import { STRINGS } from './strings.js';
 const CONFIGS = {
   oge: {
     id: 'oge', lang: 'ru', badge: 'ОГЭ · English', store: 'oge', splashImg: './assets/spiky-cool.png',
+    examShort: 'ОГЭ', memosFile: 'memos',
     keysFile: 'keys', topicsFile: 'topics', explainFile: 'explanations',
     // type: 'drill' — закрытые задания по ключу; 'writing' — письмо с AI-проверкой
     sections: [
@@ -36,6 +37,7 @@ const CONFIGS = {
 
   ege: {
     id: 'ege', lang: 'en', badge: 'ЕГЭ · English', store: 'ege', splashImg: './assets/spiky-cool.png',
+    examShort: 'ЕГЭ', memosFile: null,
     keysFile: 'ege_keys', topicsFile: 'ege_topics', explainFile: 'ege_explanations',
     sections: [
       { id: 'vocab',   type: 'vocab',   dataFile: 'ege_vocab',   tile: 'vocab', iconKey: 'vocab', icon: '🗂' },

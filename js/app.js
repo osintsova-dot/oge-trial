@@ -1,13 +1,14 @@
 // app.js — оболочка: hash-роутер, splash, главная, прогресс, награды, тема.
 // Экзамен-независимая: структура из exam.js (EXAM), тексты из strings (t).
 
-import { el, mount, iconImg, infoModal } from './ui.js';
+import { el, mount, iconImg, infoModal, slides } from './ui.js';
 import { loadJSON } from './data.js';
 import { sectionStats, writingStats, resetAll } from './progress.js';
 import { getState, levelInfo, levelTable, packStatus, streakActiveToday,
   applyTheme, getTheme, setTheme, getName, setName, getSound, setSound,
   dailyDigest, skinsStatus, setSkin, applySkin, achievementsStatus,
-  getTokens, perksStatus, redeemPerk, recentRedeemed } from './gamify.js';
+  getTokens, perksStatus, redeemPerk, recentRedeemed,
+  getExamDate, setExamDate, isOnboarded, setOnboarded, examInfo } from './gamify.js';
 import { EXAM, t, sectionById, plural } from './exam.js';
 import { dailyProgress, themeStats } from './vocab_srs.js';
 import { renderDrill } from '../modules/drill.js';
@@ -183,9 +184,35 @@ function renderHome() {
       [el('div', { class: 's-ic' }, [iconImg('ic-rewards', '🎖', 's-img')]), el('div', { class: 's-t', text: t.rewards })]),
   ]);
 
+  // Счётчик до экзамена (тап → перечитать формат) либо приглашение поставить дату
+  const ei = examInfo();
+  let countdown = null;
+  if (ei && ei.state !== 'past') {
+    const txt = ei.state === 'thisMonth' ? t.countdownThisMonth(EXAM.examShort)
+      : (ei.daysLeft <= 14 ? t.countdownDays(ei.daysLeft, EXAM.examShort) : t.countdownFuture(ei.weeksLeft, EXAM.examShort));
+    countdown = el('button', { class: 'cd-card', onclick: renderExamIntro }, [
+      el('img', { class: 'cd-img', src: './assets/spiky-check.png', alt: '' }),
+      el('div', { class: 'cd-in' }, [
+        el('div', { class: 'cd-h', text: t.countdownTitle }),
+        el('div', { class: 'cd-v', text: txt }),
+      ]),
+      el('div', { class: 'cd-arrow', text: '›' }),
+    ]);
+  } else if (!getExamDate()) {
+    countdown = el('button', { class: 'cd-card cd-set', onclick: () => renderExamDate(true) }, [
+      el('img', { class: 'cd-img', src: './assets/spiky-check.png', alt: '' }),
+      el('div', { class: 'cd-in' }, [
+        el('div', { class: 'cd-h', text: t.countdownSetTitle }),
+        el('div', { class: 'cd-v', text: t.countdownSetPrompt }),
+      ]),
+      el('div', { class: 'cd-arrow', text: '›' }),
+    ]);
+  }
+
   mount(view, el('div', {}, [
     hero,
     el('div', { class: 'wrap view' }, [
+      countdown,
       twRow, goal, pack,
       el('div', { class: 'sec-title', text: t.sectionsTitle }),
       tiles,
@@ -272,7 +299,8 @@ async function renderProgress() {
     el('div', { class: 'prog-actions' }, [
       el('button', { class: 'act-name', text: getSound() ? t.soundOn : t.soundOff,
         onclick: () => { setSound(!getSound()); renderProgress(); } }),
-      el('button', { class: 'act-name', text: t.changeName, onclick: () => renderWelcome(getName()) }),
+      el('button', { class: 'act-name', text: t.changeName, onclick: () => renderWelcome(getName(), true) }),
+      el('button', { class: 'act-name', text: '📅 ' + t.countdownSetTitle, onclick: () => renderExamDate(true) }),
       el('button', { class: 'act-reset', text: t.reset, onclick: () => {
         if (confirm(t.resetConfirm)) { resetAll(); renderProgress(); }
       } }),
@@ -416,7 +444,8 @@ function renderSoon(sec) {
 }
 
 // --- Splash / знакомство ---
-function renderWelcome(prefill) {
+// edit=true — режим «изменить имя» (из прогресса): после ввода сразу домой, без онбординга.
+function renderWelcome(prefill, edit) {
   document.body.classList.add('welcome-mode');
   const input = el('input', { class: 'name-input', type: 'text', placeholder: t.namePlaceholder,
     maxlength: '24', autocomplete: 'off', value: prefill || '' });
@@ -425,7 +454,7 @@ function renderWelcome(prefill) {
     const n = input.value.trim();
     if (!n) { input.focus(); return; }
     setName(n);
-    goHome();
+    if (edit) goHome(); else renderExamDate();
   };
   go.addEventListener('click', submit);
   input.addEventListener('keydown', (e) => { if (e.key === 'Enter') submit(); });
@@ -444,6 +473,47 @@ function renderWelcome(prefill) {
   input.focus();
 }
 
+// --- Шаг онбординга: дата экзамена (месяц/год). edit=true — из «Прогресса». ---
+function renderExamDate(edit) {
+  document.body.classList.add('welcome-mode');
+  const cur = getExamDate();              // 'YYYY-MM' или null
+  const curY = cur ? Number(cur.split('-')[0]) : null;
+  const curM = cur ? Number(cur.split('-')[1]) : null;
+  const nowY = new Date().getFullYear();
+  const years = [nowY, nowY + 1, nowY + 2];
+
+  const mSel = el('select', { class: 'date-sel' },
+    [el('option', { value: '', text: '—' }),
+      ...t.months.map((m, i) => el('option', { value: String(i + 1), text: m, selected: curM === i + 1 ? 'selected' : null }))]);
+  const ySel = el('select', { class: 'date-sel' },
+    years.map((y) => el('option', { value: String(y), text: String(y), selected: (curY || nowY) === y ? 'selected' : null })));
+
+  const proceed = (ym) => { setExamDate(ym); if (edit) goHome(); else renderExamIntro(); };
+  const next = el('button', { class: 'go', text: t.examNext, onclick: () => {
+    const m = mSel.value, y = ySel.value;
+    proceed(m ? (y + '-' + String(m).padStart(2, '0')) : null);
+  } });
+  const skip = el('button', { class: 'skip-link', text: t.examSkip, onclick: () => proceed(null) });
+
+  mount(view, el('div', { class: 'splash' }, [
+    el('div', { class: 'shine' }),
+    el('div', { class: 'inner' }, [
+      el('img', { src: './assets/spiky-check.png', alt: 'Speaky' }),
+      el('div', { class: 'greet', text: t.examWhenTitle(EXAM.examShort) }),
+      el('div', { class: 'note', text: t.examWhenSub }),
+      el('div', { class: 'date-row' }, [mSel, ySel]),
+      next, skip,
+    ]),
+  ]));
+}
+
+// --- Шаг онбординга: рассказ о формате (карточки-слайды). Также пере-открывается с главной. ---
+function renderExamIntro() {
+  const cards = t.examIntro || [];
+  if (!cards.length) { setOnboarded(true); goHome(); return; }
+  slides(cards, { lastCta: t.go, onDone: () => { setOnboarded(true); goHome(); } });
+}
+
 // --- Иконки нижнего меню (картинки с откатом на эмодзи) ---
 const NAV_IC = { home: ['ic-home', '🏠'], progress: ['ic-progress', '📊'], rewards: ['ic-rewards', '🎖'] };
 document.querySelectorAll('#bottom-nav a').forEach((a) => {
@@ -456,4 +526,5 @@ applyTheme(getTheme());
 applySkin();
 window.addEventListener('hashchange', route);
 if (!getName()) renderWelcome();
+else if (!isOnboarded()) renderExamDate();   // имя есть, но онбординг не завершён → дата + интро
 else route();

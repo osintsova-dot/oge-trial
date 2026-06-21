@@ -10,6 +10,7 @@ import { recordDrill, sectionStats } from '../js/progress.js';
 import { recordRound, getName, checkNewAchievements } from '../js/gamify.js';
 import { roundMessage, celeb } from '../js/voice.js';
 import { t, plural } from '../js/exam.js';
+import { tipButton, autoTipOnce } from '../js/tips.js';
 
 const SECTION = 'reading';
 const L7 = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
@@ -70,6 +71,7 @@ export async function renderReadingEge(container, cfg) {
   const title = t.sections.reading;
 
   menuScreen();
+  autoTipOnce('reading');
 
   function secBar(onBack, sub) {
     return el('div', { class: 'sec-bar reading' }, [
@@ -78,6 +80,7 @@ export async function renderReadingEge(container, cfg) {
         el('div', { class: 'sb-title', text: title }),
         el('div', { class: 'sb-sub', text: sub }),
       ]),
+      tipButton('reading'),
     ]);
   }
 

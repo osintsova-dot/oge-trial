@@ -9,6 +9,7 @@ import { openWordSearch } from './word_search.js';
 import { recordRound, getName, checkNewAchievements } from '../js/gamify.js';
 import { roundMessage, celeb } from '../js/voice.js';
 import { EXAM, t, plural } from '../js/exam.js';
+import { tipButton, autoTipOnce } from '../js/tips.js';
 
 const WORKER = 'https://purple-cake-2966.o-sintsova.workers.dev'; // прокси DeepSeek
 
@@ -81,6 +82,7 @@ export async function renderWriting(container, cfg) {
   const [wMin, wMax] = task.words;
 
   pickScreen();
+  autoTipOnce(cfg.sectionId);
 
   function secBar(onBack, sub) {
     return el('div', { class: 'sec-bar writing' }, [
@@ -89,6 +91,7 @@ export async function renderWriting(container, cfg) {
         el('div', { class: 'sb-title', text: headTitle }),
         el('div', { class: 'sb-sub', text: sub }),
       ]),
+      tipButton(cfg.sectionId),
       el('button', { class: 'sb-action', text: '🔎', title: t.vocab.searchTitle, onclick: openWordSearch }),
     ]);
   }

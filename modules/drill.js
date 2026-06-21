@@ -9,6 +9,7 @@ import { recordRound, getName, checkNewAchievements } from '../js/gamify.js';
 import { roundMessage, celeb } from '../js/voice.js';
 import { playCorrect, playWrong } from '../js/sound.js';
 import { t, plural } from '../js/exam.js';
+import { tipButton, autoTipOnce } from '../js/tips.js';
 
 function pct(a, b) { return b ? Math.round((a / b) * 100) : 0; }
 function accColor(p) { return p >= 65 ? 'var(--ok)' : p >= 50 ? 'var(--warn)' : 'var(--bad)'; }
@@ -61,6 +62,7 @@ export async function renderDrill(container, cfg) {
   const meta = `${withKey.length} ${plural(withKey.length, t.tasksWord)} · ${themes.length} ${plural(themes.length, t.topicsWord)}`;
 
   themeScreen();
+  autoTipOnce(cfg.section);
 
   function themeScreen() {
     const stats = sectionStats(cfg.section);
@@ -103,6 +105,7 @@ export async function renderDrill(container, cfg) {
           el('div', { class: 'sb-title', text: cfg.title }),
           el('div', { class: 'sb-sub', text: meta }),
         ]),
+        tipButton(cfg.section),
       ]),
       el('div', { class: 'topics-body' }, [
         mistakeCard,

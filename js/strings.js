@@ -127,6 +127,28 @@ export const STRINGS = {
     skinOn: '✅ Надет сейчас', skinOpen: '✅ Открыт', perkEnough: '✅ Жетонов хватает', perkNeed: (n) => '🎟 Нужно ещё ' + n,
     levelsTitle: 'Уровни и звания', levelsHow: 'XP копится за занятия: +10 за каждый верный ответ, +30 за идеальный раунд (без ошибок). Больше XP — выше звание. Твой уровень подсвечен.',
     ptsSpend: (n) => 'Спишется: ' + n + ' 🎟', ptsRedeem: 'Обменять', perkChoose: 'Выбрать',
+    // Онбординг: дата экзамена
+    months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+    examWhenTitle: (exam) => 'Когда сдаёшь ' + exam + '?',
+    examWhenSub: 'Поставлю счётчик на главной. Дату можно изменить позже.',
+    examMonthLabel: 'Месяц', examYearLabel: 'Год', examNext: 'Дальше →', examSkip: 'Пока не знаю',
+    // Счётчик на главной
+    countdownTitle: 'До экзамена',
+    countdownFuture: (w, exam) => '≈ ' + w + ' ' + pluralRu(w, ['неделя', 'недели', 'недель']) + ' до ' + exam,
+    countdownDays: (d, exam) => d + ' ' + pluralRu(d, ['день', 'дня', 'дней']) + ' до ' + exam,
+    countdownThisMonth: (exam) => exam + ' уже в этом месяце 💪',
+    countdownSetTitle: 'Когда экзамен?',
+    countdownSetPrompt: 'Поставь дату — включу счётчик',
+    // Советы Спики по разделу
+    tipsTitle: (sec) => sec + ' · советы Спики',
+    tipFormat: '📋 Формат', tipTime: '⏱ Время', tipHow: '✅ Как делать', tipMistakes: '⚠️ Частые ошибки',
+    // Рассказ о формате (карточки-слайды). Числа: всего 68, порог 29, письмо 10 (проверено); время — из памяток.
+    examIntro: [
+      { img: './assets/spiky-talk.png', title: 'Что такое ОГЭ', text: 'Экзамен по английскому состоит из двух частей: письменная (≈2 часа) и устная — говорение (≈15 минут). Всего 68 баллов. На тройку хватит 29 баллов, на пятёрку — от 58.' },
+      { img: './assets/spiky-check.png', title: 'Письменная часть — 4 раздела', text: '1) Аудирование (≈30 мин) — слушаешь и отвечаешь. 2) Чтение (≈25–30 мин). 3) Грамматика и лексика (≈15–20 мин). 4) Письмо (≈20–25 мин). Время между разделами распределяешь сам — поглядывай на часы.' },
+      { img: './assets/spiky-idea.png', title: 'Письмо и говорение', text: 'Письмо (задание 35) — личное письмо другу, 100–120 слов, 10 баллов. Важно: меньше 90 слов — ноль за всё задание! Говорение — отдельная часть: читаешь текст вслух и отвечаешь на вопросы.' },
+      { img: './assets/spiky-thumb.png', title: 'Главное — тренировка', text: 'Здесь ты прокачаешь каждый раздел: грамматику, словообразование, чтение, письмо и лексику. В каждом разделе Спики подскажет, как делать задание и сколько на него тратить времени. Поехали! 💪' },
+    ],
     rewSub: 'Скины XP-полосы. Открываются за уровни и собранных героев.',
     badgeShow: '👀 Покажи этот экран учителю', badgeDone: 'Готово',
     // celebration moments
@@ -294,6 +316,22 @@ export const STRINGS = {
     skinOn: '✅ Equipped now', skinOpen: '✅ Unlocked', perkEnough: '✅ Enough tokens', perkNeed: (n) => '🎟 ' + n + ' more needed',
     levelsTitle: 'Levels & ranks', levelsHow: 'XP builds up as you study: +10 for every correct answer, +30 for a perfect round (no mistakes). More XP — higher rank. Your level is highlighted.',
     ptsSpend: (n) => 'Spends: ' + n + ' 🎟', ptsRedeem: 'Redeem', perkChoose: 'Choose',
+    // Онбординг: дата экзамена
+    months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    examWhenTitle: (exam) => 'When is your ' + exam + '?',
+    examWhenSub: 'I will put a countdown on the home screen. You can change the date later.',
+    examMonthLabel: 'Month', examYearLabel: 'Year', examNext: 'Next →', examSkip: "Don't know yet",
+    // Счётчик
+    countdownTitle: 'Until the exam',
+    countdownFuture: (w, exam) => '≈ ' + w + (w === 1 ? ' week' : ' weeks') + ' until ' + exam,
+    countdownDays: (d, exam) => d + (d === 1 ? ' day' : ' days') + ' until ' + exam,
+    countdownThisMonth: (exam) => exam + ' is this month 💪',
+    countdownSetTitle: 'When is the exam?',
+    countdownSetPrompt: 'Set the date — I will start a countdown',
+    // Советы (для ЕГЭ контента пока нет, memosFile=null → не используется)
+    tipsTitle: (sec) => sec + ' · Speaky tips',
+    tipFormat: '📋 Format', tipTime: '⏱ Time', tipHow: '✅ How to do it', tipMistakes: '⚠️ Common mistakes',
+    examIntro: [],
     rewSub: 'XP bar skins. Unlocked by levels and heroes you collect.',
     badgeShow: '👀 Show this screen to your teacher', badgeDone: 'Done',
     // celebration moments

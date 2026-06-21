@@ -10,6 +10,7 @@ import { recordRound, getName, checkNewAchievements } from '../js/gamify.js';
 import { roundMessage, celeb } from '../js/voice.js';
 import { playCorrect, playWrong } from '../js/sound.js';
 import { t, plural } from '../js/exam.js';
+import { tipButton, autoTipOnce } from '../js/tips.js';
 
 const SECTION = 'reading';
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
@@ -75,6 +76,7 @@ export async function renderReading(container, cfg) {
   const title = t.sections.reading;
 
   menuScreen();
+  autoTipOnce('reading');
 
   function secBar(onBack, sub) {
     return el('div', { class: 'sec-bar reading' }, [
@@ -83,6 +85,7 @@ export async function renderReading(container, cfg) {
         el('div', { class: 'sb-title', text: title }),
         el('div', { class: 'sb-sub', text: sub }),
       ]),
+      tipButton('reading'),
     ]);
   }
 

@@ -17,7 +17,7 @@ export const PACK_SECTIONS = [
 // Пороги XP для званий (названия — из strings по языку экзамена)
 const LEVEL_MINS = [0, 500, 1500, 3000, 5000, 8000];
 
-const DEFAULT = { name: '', streak: { count: 0, lastDay: null }, pack: { done: [] }, heroes: 0, xp: 0, theme: 'light', history: {}, skin: 'aurora', freezes: 0, perfectRounds: 0, maxStreak: 0, achieved: [], tokens: 0, redeemed: [], sound: true };
+const DEFAULT = { name: '', streak: { count: 0, lastDay: null }, pack: { done: [] }, heroes: 0, xp: 0, theme: 'light', history: {}, skin: 'aurora', freezes: 0, perfectRounds: 0, maxStreak: 0, achieved: [], tokens: 0, redeemed: [], sound: true, examDate: null, onboarded: false, tipsSeen: [] };
 
 // Реальные привилегии у учителя — покупаются за жетоны 🎟 (зарабатываются работой в приложении).
 // Список и цены — конфиг; меняются свободно.
@@ -95,6 +95,35 @@ export function streakActiveToday() { return read().streak.lastDay === todayStr(
 // Имя ученика (персонализация)
 export function getName() { return read().name || ''; }
 export function setName(name) { const s = read(); s.name = (name || '').trim().slice(0, 24); write(s); }
+
+// Дата экзамена (гранулярность «месяц/год», строка 'YYYY-MM' или null)
+export function getExamDate() { return read().examDate || null; }
+export function setExamDate(ym) { const s = read(); s.examDate = ym || null; write(s); }
+
+// Онбординг пройден (имя + дата + интро)
+export function isOnboarded() { return !!read().onboarded; }
+export function setOnboarded(v) { const s = read(); s.onboarded = !!v; write(s); }
+
+// Виден ли уже совет Спики по разделу (авто-показ только в первый раз)
+export function hasSeenTip(id) { return (read().tipsSeen || []).includes(id); }
+export function markTipSeen(id) { const s = read(); s.tipsSeen = s.tipsSeen || []; if (!s.tipsSeen.includes(id)) { s.tipsSeen.push(id); write(s); } }
+
+// Сводка по дате экзамена для счётчика. null, если дата не задана.
+// state: 'future' | 'thisMonth' | 'past'. Считаем до 1-го числа выбранного месяца.
+export function examInfo() {
+  const ym = read().examDate;
+  if (!ym) return null;
+  const [y, m] = ym.split('-').map(Number);
+  if (!y || !m) return null;
+  const target = ymd(new Date(y, m - 1, 1));
+  const today = new Date();
+  const days = daysBetween(todayStr(), target);
+  const sameMonth = today.getFullYear() === y && (today.getMonth() + 1) === m;
+  let state = 'future';
+  if (sameMonth || (days <= 0 && days > -28)) state = 'thisMonth';
+  if (days <= -28) state = 'past';
+  return { ym, year: y, month: m, daysLeft: days, weeksLeft: Math.max(0, Math.round(days / 7)), state };
+}
 
 // Таблица всех уровней: [{level, min, title}] — для экрана-объяснения «какие уровни»
 export function levelTable() {

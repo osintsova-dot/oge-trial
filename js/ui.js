@@ -141,3 +141,27 @@ export function infoModal(opts) {
   back.appendChild(card);
   document.body.appendChild(back);
 }
+
+// Слайды-карточки (рассказ о формате экзамена). По образцу celebrate, но спокойнее:
+// без конфетти/фанфар, Спики на каждой карте, кнопка «Дальше →», на последней — lastCta.
+// cards = [{ img, icon, title, text }]; onDone() — по завершении.
+export function slides(cards, { onDone, lastCta } = {}) {
+  const list = (cards || []).filter(Boolean);
+  if (!list.length) { if (onDone) onDone(); return; }
+  const overlay = el('div', { class: 'celebrate slides' });
+  let i = 0;
+  const next = () => { i++; if (i >= list.length) { overlay.remove(); if (onDone) onDone(); } else render(); };
+  const render = () => {
+    const c = list[i];
+    overlay.replaceChildren(el('div', { class: 'cel-card' }, [
+      spikyIcon(c.img, c.icon || '🦝'),
+      el('div', { class: 'cel-title', text: c.title }),
+      el('div', { class: 'cel-text', text: c.text }),
+      el('div', { class: 'cel-dots' }, list.map((_, k) => el('i', { class: k === i ? 'on' : '' }))),
+      el('button', { class: 'btn btn-honey btn-block', text: i + 1 < list.length ? (t.celNext || 'Дальше →') : (lastCta || t.go || 'Поехали!'), onclick: next }),
+    ]));
+    playSparkle();
+  };
+  render();
+  document.body.appendChild(overlay);
+}

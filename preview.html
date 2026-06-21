@@ -36,6 +36,11 @@
       <p class="hint">Нажми на любой значок — откроется карточка «за что». На повторяемых стоит счётчик (×5 = собрал пак 5 раз, 21 = рекорд серии). Это ДЕМО-данные, реальный прогресс не трогается.</p>
       <div id="achgrid" class="ach-grid" style="margin-top:12px"></div>
 
+      <h2>Онбординг и советы (новое)</h2>
+      <p class="hint">Рассказ о формате ОГЭ (карточки-слайды) и советы Спики по разделу. В приложении интро показывается при первом запуске, а советы — кнопкой «💡» в разделе + авто при первом входе.</p>
+      <button class="btn btn-block" id="introBtn">📋 Рассказ о формате ОГЭ</button>
+      <button class="btn btn-block" id="tipBtn">💡 Совет Спики (Письмо)</button>
+
       <h2>Уровни и звания · тап открывает лестницу</h2>
       <p class="hint">Новая лестница: Новичок → Стажёр → Знаток → Профи → Мастер → Легенда. В приложении это открывается тапом по званию или XP-полосе на главной. Тут для примера текущий уровень — «Знаток».</p>
       <button class="btn btn-block" id="levels">⭐ Показать уровни и звания</button>
@@ -58,10 +63,14 @@
 
   <script>window.EXAM = 'oge';</script>
   <script type="module">
-    import { celebrate, el, iconImg, infoModal } from './js/ui.js';
+    import { celebrate, el, iconImg, infoModal, slides } from './js/ui.js';
     import { playCorrect, playWrong, playFanfare, playSparkle } from './js/sound.js';
     import { t } from './js/exam.js';
     import { levelTable } from './js/gamify.js';
+    import { openTips } from './js/tips.js';
+
+    document.getElementById('introBtn').onclick = () => slides(t.examIntro, { lastCta: t.go, onDone: () => {} });
+    document.getElementById('tipBtn').onclick = () => openTips('writing');
 
     const NAME = 'Артём';
     const MOMENTS = {
