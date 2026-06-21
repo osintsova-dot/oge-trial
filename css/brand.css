@@ -41,6 +41,7 @@
   --grad-reading:linear-gradient(150deg,#5B74E6,#6C3FC5);
   --grad-vocab:linear-gradient(150deg,#16B3A6,#0E8C82);
   --grad-speaking:linear-gradient(150deg,#F2785C,#E0556B);
+  --grad-listening:linear-gradient(150deg,#2DC2E8,#2978D8);
 
   /* Заливка XP-полосы (градиент активного скина; ставится из JS) */
   --xp-fill:linear-gradient(90deg,#6C3FC5,#F5C842);
@@ -211,6 +212,7 @@ img.sic.bn-ic{width:30px;height:30px}
 .tile.grammar{background:var(--grad-grammar);box-shadow:0 6px 16px rgba(108,63,197,.3)}
 .tile.wordform{background:var(--grad-wordform);box-shadow:0 6px 16px rgba(200,75,140,.3)}
 .tile.reading{background:var(--grad-reading);box-shadow:0 6px 16px rgba(91,116,230,.3)}
+.tile.listening{background:var(--grad-listening);box-shadow:0 6px 16px rgba(41,120,216,.3)}
 .tile.vocab{background:var(--grad-vocab);box-shadow:0 6px 16px rgba(22,179,166,.3);grid-column:1 / -1}
 /* Словарь во всю ширину — горизонтальный баннер: текст слева, картинка справа */
 .tile.vocab{display:grid;grid-template-columns:1fr auto;column-gap:14px;align-items:center;
@@ -268,6 +270,7 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .sec-bar.grammar{background:var(--grad-grammar)}
 .sec-bar.wordform{background:var(--grad-wordform)}
 .sec-bar.reading{background:var(--grad-reading)}
+.sec-bar.listening{background:var(--grad-listening)}
 .sec-bar.vocab{background:var(--grad-vocab)}
 .sec-bar.speaking{background:var(--grad-speaking)}
 .sec-bar.writing{background:linear-gradient(135deg,#F5C842,#EDA92C)}
@@ -289,6 +292,7 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .all-topics.grammar{background:var(--grad-grammar)}
 .all-topics.wordform{background:var(--grad-wordform)}
 .all-topics.reading{background:var(--grad-reading)}
+.all-topics.listening{background:var(--grad-listening)}
 .all-topics.writing{background:var(--grad-writing)}
 .all-topics.writing .at-t,.all-topics.writing .at-s,.all-topics.writing .at-arrow{color:#1A1A2E}
 .all-topics.writing .at-s{opacity:.7}
@@ -770,6 +774,48 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .mc-opt.right{border-color:var(--ok);background:rgba(31,157,87,.14);color:var(--ok)}
 .mc-opt.wrong{border-color:var(--bad);background:rgba(214,69,59,.14);color:var(--bad)}
 .mc-opt:disabled{cursor:default}
+
+/* === Аудирование === */
+.ls-body{padding:0 16px 28px}
+.ls-player{position:sticky;top:0;z-index:5;background:var(--bg,#F4F4F8);padding:12px 0 10px;margin-bottom:6px}
+.ls-listen{font-size:13px;color:var(--muted);margin-bottom:8px;line-height:1.45}
+.ls-audio{width:100%;height:40px}
+.ls-auderr{margin-top:8px;font-size:13px;color:var(--bad);font-weight:600}
+.ls-questions{display:flex;flex-direction:column;gap:14px}
+.ls-task{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+.ls-q{font-size:14.5px;line-height:1.5;color:var(--ink);font-weight:600;margin-bottom:10px}
+.ls-num{color:var(--p-text);font-weight:800}
+.ls-opts{display:flex;flex-direction:column;gap:6px}
+.ls-opt{text-align:left;padding:9px 12px;border-radius:10px;border:1.5px solid var(--line);
+  background:var(--card);color:var(--ink);font-size:13.5px;line-height:1.45;font-weight:500;cursor:pointer}
+.ls-opt.sel{border-color:var(--p-text);background:var(--surf);color:var(--p-text)}
+.ls-opt.right{border-color:var(--ok);background:rgba(31,157,87,.14);color:var(--ok)}
+.ls-opt.wrong{border-color:var(--bad);background:rgba(214,69,59,.14);color:var(--bad)}
+.ls-opt:disabled{cursor:default}
+.ls-rub-title{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin:2px 0 4px}
+.ls-rubrics{margin:0 0 12px;padding-left:22px;font-size:13.5px;line-height:1.6;color:var(--ink)}
+.ls-rubrics li{margin-bottom:2px}
+.ls-mrows{display:flex;flex-direction:column;gap:8px}
+.ls-mrow{display:flex;align-items:center;gap:10px}
+.ls-letter{width:28px;height:28px;border-radius:8px;background:var(--grad-listening);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-weight:800;flex:none}
+.ls-sel{padding:7px 12px;border-radius:10px;border:1.5px solid var(--line);background:var(--card);
+  color:var(--ink);font-size:14px;font-weight:700;cursor:pointer}
+.ls-sel.right{border-color:var(--ok);color:var(--ok)} .ls-sel.wrong{border-color:var(--bad);color:var(--bad)}
+.ls-cv{font-size:13px;font-weight:700} .ls-cv.ok{color:var(--ok)} .ls-cv.bad{color:var(--bad)}
+.ls-cv.block{margin-top:6px}
+.ls-fill .ls-input{width:100%;background:var(--input-bg);border:2px solid var(--line);border-radius:12px;
+  padding:11px 13px;font-size:15px;color:var(--ink);font-weight:600}
+.ls-input.right{border-color:var(--ok)} .ls-input.wrong{border-color:var(--bad)}
+.ls-foot{margin-top:18px}
+/* Скрипт записи (только на проверке) */
+.ls-script{margin-top:18px;background:var(--surf);border-radius:14px;padding:14px}
+.ls-script-h{font-size:15px;font-weight:800;color:var(--ink);margin-bottom:2px}
+.ls-script-hint{font-size:12.5px;color:var(--muted);margin-bottom:10px}
+.ls-lines{display:flex;flex-wrap:wrap;gap:2px;line-height:1.7}
+.ls-line{display:inline;text-align:left;border:none;background:none;padding:1px 3px;border-radius:6px;
+  font-size:14px;color:var(--ink);cursor:pointer;font-family:inherit}
+.ls-line:hover,.ls-line:active{background:var(--grad-listening);color:#fff}
 
 /* ЕГЭ-чтение: вставка частей — инлайновые пропуски в тексте */
 .rd-gaptext{line-height:2.1}

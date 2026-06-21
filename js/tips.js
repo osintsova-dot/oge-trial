@@ -9,7 +9,7 @@ import { hasSeenTip, markTipSeen } from './gamify.js';
 
 // id раздела в приложении → ключ section в памятках (по экзамену)
 const SECTION_MEMO = {
-  oge: { grammar: 'grammar', wordform: 'word_formation', reading: 'reading', writing: 'writing' },
+  oge: { grammar: 'grammar', wordform: 'word_formation', reading: 'reading', listening: 'listening', writing: 'writing' },
   ege: { grammar: 'grammar', lexis: 'lexis', reading: 'reading', email: 'email', essay: 'essay' },
 };
 function memoKey(sectionId) { return (SECTION_MEMO[EXAM.id] || {})[sectionId]; }

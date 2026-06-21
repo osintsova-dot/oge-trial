@@ -15,11 +15,12 @@ const CONFIGS = {
       { id: 'grammar',  type: 'drill',   dataFile: 'grammar',  topicKey: 'Грамматика',       tile: 'grammar',  icon: '📝' },
       { id: 'wordform', type: 'drill',   dataFile: 'wordform', topicKey: 'Словообразование', tile: 'wordform', icon: '🔤' },
       { id: 'reading',  type: 'reading', dataFile: 'reading',  tile: 'reading', iconKey: 'reading', icon: '📖' },
+      { id: 'listening', type: 'listening', dataFile: 'listening', tile: 'listening', iconKey: 'listening', icon: '🎧' },
       { id: 'writing',  type: 'writing', tile: 'writing', icon: '✉️' },
       { id: 'speaking', type: 'soon',    tile: 'speaking', iconKey: 'speaking', icon: '🎤' },
     ],
     pack: ['grammar', 'wordform', 'reading', 'writing'],
-    soonTile: true,
+    soonTile: false,
     // Письмо ОГЭ — одно задание (личное письмо, задание 35, К1–К4, макс 10)
     writing: {
       kind: 'oge',
