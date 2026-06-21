@@ -689,6 +689,15 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .tip-list{margin:6px 0 0;padding-left:18px}
 .tip-list li{font-size:14px;color:var(--ink);line-height:1.5;margin-bottom:6px}
 
+/* ===== Финал недели (лексика) ===== */
+.finale-card{background:var(--grad-writing,linear-gradient(120deg,#F5C842,#EDA92C));margin-bottom:14px}
+.finale-card .cd-h{color:#6b4e00}
+.finale-card .cd-v,.finale-card .cd-arrow{color:#3a2a00}
+.finale-card .plan-sub{color:#6b4e00}
+.finale-hero{text-align:center;padding:14px 8px 10px}
+.finale-img{width:120px;height:auto;margin:0 auto 8px;display:block;filter:drop-shadow(0 8px 18px rgba(0,0,0,.18))}
+.finale-h{font-size:17px;font-weight:800;color:var(--ink);line-height:1.4}
+
 /* ===== Режимы заучивания лексики ===== */
 .vc-body .mode-word{font-size:28px;font-weight:800;color:var(--ink);text-align:center;margin:14px 0 6px}
 .vc-body .mode-sub{text-align:center;color:var(--muted);font-weight:600;margin-bottom:12px;font-size:14px}

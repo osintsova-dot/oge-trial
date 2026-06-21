@@ -4,12 +4,13 @@
 
 import { el, mount, iconImg, confetti, celebrate } from '../js/ui.js';
 import { loadJSON } from '../js/data.js';
-import { t, plural } from '../js/exam.js';
-import { recordVocabReview, getName, checkNewAchievements, getState } from '../js/gamify.js';
+import { EXAM, t, plural } from '../js/exam.js';
+import { recordVocabReview, getName, checkNewAchievements, getState, isThemeFinaled, recordThemeFinale } from '../js/gamify.js';
 import { celeb } from '../js/voice.js';
 import { DAILY_GOAL, getActiveTheme, setActiveTheme, dailyProgress,
-  buildSession, dueItems, review, themeStats,
+  buildSession, dueItems, review, themeStats, themeDetail,
   modeForBox, clozeFor, distractors, normAnswer } from '../js/vocab_srs.js';
+import { themeZids } from '../js/themes.js';
 function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 import { openWordSearch } from './word_search.js';
 
@@ -65,15 +66,28 @@ export async function renderVocab(container, cfg) {
       el('div', { class: 'vc-a-sub', text: v.learningSub }),
     ]);
 
-    // список тем — выбрать активную; прогресс learned/total
+    // финал недели: активная тема готова → карточка сверху
+    const ready = themeDetail(data, active).ready;
+    const finaleCard = ready ? el('button', { class: 'cd-card finale-card', onclick: openFinale }, [
+      el('img', { class: 'cd-img', src: './assets/spiky-medal.png', alt: '' }),
+      el('div', { class: 'cd-in' }, [
+        el('div', { class: 'cd-h', text: v.finaleTitle }),
+        el('div', { class: 'cd-v', text: v.finaleCardTitle(themeRu(active)) }),
+        el('div', { class: 'plan-sub', text: v.finaleCardSub }),
+      ]),
+      el('div', { class: 'cd-arrow', text: '›' }),
+    ]) : null;
+
+    // список тем — выбрать активную; прогресс learned/total; 🏆 у готовых
     const list = el('div', { class: 'topic-list' });
     for (const th of data.themes) {
       const s = stats[th.key];
       const p = pct(s.learned, s.total);
       const isActive = th.key === active;
+      const done = isThemeFinaled(th.key) || themeDetail(data, th.key).ready;
       list.appendChild(el('button', { class: 'topic-item' + (isActive ? ' vc-on' : ''), onclick: () => { setActiveTheme(th.key); menuScreen(); } }, [
         el('div', { style: { flex: '1', minWidth: '0' } }, [
-          el('div', { class: 'ti-name' }, [isActive ? '✓ ' : '', th.name || th.ru]),
+          el('div', { class: 'ti-name' }, [isActive ? '✓ ' : '', (done ? '🏆 ' : ''), th.name || th.ru]),
           el('div', { class: 'ti-count', text: v.learnedOf(s.learned, s.total) }),
         ]),
         el('div', { class: 'ti-right' }, [
@@ -86,6 +100,7 @@ export async function renderVocab(container, cfg) {
     mount(container, el('div', { class: 'view' }, [
       secBar(cfg.goHome, v.sub),
       el('div', { class: 'topics-body' }, [
+        finaleCard,
         goalCard, startBtn, dueNote,
         el('button', { class: 'ws-trigger-bar', onclick: openWordSearch }, [
           el('span', { class: 'ws-mag', text: '🔎' }),
@@ -94,6 +109,32 @@ export async function renderVocab(container, cfg) {
         activeBox,
         el('div', { class: 'topics-label', text: v.pickTheme }),
         list,
+      ]),
+    ]));
+  }
+
+  // --- Финал недели: тема освоена → награда + письмо/эссе по теме ---
+  function openFinale() {
+    const active = getActiveTheme();
+    const r = recordThemeFinale(active);   // +2 жетона один раз
+    const moments = r.already ? [] : [{ icon: '🏆', img: './assets/spiky-medal.png', title: v.finaleCeleb, text: celeb('hero', getName()), confetti: true }];
+    celebrate(moments, () => finaleScreen(active));
+  }
+  async function finaleScreen(active) {
+    let hasLetters = true;
+    try { hasLetters = (await themeZids(active)).writing.size > 0; } catch {}
+    const tasks = (EXAM.writing && EXAM.writing.tasks) || [];
+    const btns = tasks.map((tk) => el('button', { class: 'btn btn-honey btn-block',
+      text: v.finaleWrite(t.sections[tk.sectionId] || tk.sectionId), onclick: () => { location.hash = '#' + tk.sectionId; } }));
+    mount(container, el('div', { class: 'view' }, [
+      secBar(menuScreen, v.finaleTitle),
+      el('div', { class: 'topics-body' }, [
+        el('div', { class: 'finale-hero' }, [
+          el('img', { class: 'finale-img', src: './assets/spiky-medal.png', alt: '' }),
+          el('div', { class: 'finale-h', text: v.finaleSub(themeRu(active)) }),
+        ]),
+        ...(hasLetters ? btns : [el('div', { class: 'vc-note', text: v.finaleNoTasks })]),
+        el('button', { class: 'btn btn-ghost btn-block', text: v.finalePickNew, onclick: menuScreen }),
       ]),
     ]));
   }

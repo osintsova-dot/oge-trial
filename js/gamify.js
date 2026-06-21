@@ -18,7 +18,7 @@ export const PACK_SECTIONS = [
 const LEVEL_MINS = [0, 500, 1500, 3000, 5000, 8000];
 
 const DEFAULT = { name: '', streak: { count: 0, lastDay: null }, pack: { done: [] }, heroes: 0, xp: 0, theme: 'light', history: {}, skin: 'aurora', freezes: 0, perfectRounds: 0, maxStreak: 0, achieved: [], tokens: 0, redeemed: [], sound: true, examDate: null, onboarded: false, tipsSeen: [], planGoal: null,
-  week: { start: null, counts: {}, targets: {}, claimed: false } };
+  week: { start: null, counts: {}, targets: {}, claimed: false }, themesDone: [] };
 
 // Реальные привилегии у учителя — покупаются за жетоны 🎟 (зарабатываются работой в приложении).
 // Список и цены — конфиг; меняются свободно.
@@ -108,6 +108,15 @@ export function setPlanGoal(g) { const s = read(); s.planGoal = g || null; write
 // Онбординг пройден (имя + дата + интро)
 export function isOnboarded() { return !!read().onboarded; }
 export function setOnboarded(v) { const s = read(); s.onboarded = !!v; write(s); }
+
+// Финал недели: тема пройдена (лексика+письмо). Награда — жетоны, один раз на тему.
+export function isThemeFinaled(key) { return (read().themesDone || []).includes(key); }
+export function recordThemeFinale(key) {
+  const s = read(); s.themesDone = s.themesDone || [];
+  if (s.themesDone.includes(key)) return { tokensEarned: 0, already: true };
+  s.themesDone.push(key); s.tokens = (s.tokens || 0) + 2; write(s);
+  return { tokensEarned: 2, already: false, tokens: s.tokens };
+}
 
 // Виден ли уже совет Спики по разделу (авто-показ только в первый раз)
 export function hasSeenTip(id) { return (read().tipsSeen || []).includes(id); }

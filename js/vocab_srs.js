@@ -136,4 +136,19 @@ export function themeStats(data) {
   return res;
 }
 
+// Готовность темы к финалу недели: все слова показаны (started) + ≥70% дошли до box≥3.
+export function themeDetail(data, key) {
+  const s = read();
+  const th = data.themes.find((x) => x.key === key);
+  if (!th) return { total: 0, started: 0, strong: 0, ready: false };
+  let total = 0, started = 0, strong = 0;
+  for (const g of th.groups) for (const it of g.items) {
+    total++;
+    const r = s.srs[it.id];
+    if (r) { started++; if (r.box >= 3) strong++; }
+  }
+  const ready = total > 0 && started >= total && strong >= Math.ceil(total * 0.7);
+  return { total, started, strong, ready };
+}
+
 export function resetVocab() { try { localStorage.removeItem(KEY); } catch {} }

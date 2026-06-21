@@ -1,0 +1,1711 @@
+{
+ "travelling": {
+  "ru": "Путешествия/страны",
+  "total": 55,
+  "breakdown": {
+   "oge_reading": 21,
+   "oge_writing": 7,
+   "ege_reading": 17,
+   "ege_writing": 10
+  },
+  "tasks": [
+   {
+    "id": "087901",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "0B4A5B",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "0E5F9D",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "137991",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "1A38E6",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "303746",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "33AD40",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "3D1A47",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "7F9883",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "A5D68B",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "B0E987",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "B5ED91",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "C4EC56",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "C96561",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "CF0207",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "D61DF5",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "DF31E8",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "E4C94E",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "E8F598",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "F6224C",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "FF9550",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "189FA7",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "1B144E",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "324F78",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "58DCC9",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "5D3935",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "9047CB",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "C9F6D4",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "20F035",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "386674",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "4BF591",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "4EA94E",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "558D07",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "6DA073",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "A51C35",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "A76eD2",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "AB2C6E",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "B357A0",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "B8E838",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "BB7F6E",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "C3ADA0",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "C8524F",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "CA6498",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "DF9CD3",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "F19CC4",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "155DC3",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "44D7DB",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "5BB213",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "8AF2B1",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "8E8BE2",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "9034AA",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "9311E1",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "A2EFFD",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "DBD145",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "E8F951",
+    "exam": "ege",
+    "section": "writing"
+   }
+  ]
+ },
+ "school": {
+  "ru": "Школа",
+  "total": 26,
+  "breakdown": {
+   "oge_writing": 14,
+   "ege_reading": 4,
+   "ege_writing": 8
+  },
+  "tasks": [
+   {
+    "id": "1350DE",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "16D85B",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "2BD0F7",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "442C39",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "4470E7",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "55343D",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "5C3FF5",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "611FE1",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "771EEB",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "7C64F5",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "95E510",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "9713D4",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "A20B5E",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "DA70D6",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "249E3A",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "4928F1",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "4961A7",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "A680ED",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "33F428",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "3DF9D6",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "57CF70",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "5ABD7C",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "702B61",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "738173",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "9E9969",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "BD469F",
+    "exam": "ege",
+    "section": "writing"
+   }
+  ]
+ },
+ "health_sport": {
+  "ru": "Здоровье и спорт",
+  "total": 26,
+  "breakdown": {
+   "oge_writing": 8,
+   "ege_reading": 4,
+   "ege_writing": 14
+  },
+  "tasks": [
+   {
+    "id": "3DE32A",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "7F7EC2",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "B2009D",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "C48794",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "C7DF0E",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "DB4B71",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "F80CA6",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "FAEED6",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "373EFB",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "CA21B0",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "CB80DE",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "F2565D",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "025435",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "0C6EC1",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "1F8212",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "25A789",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "4DD229",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "52F62E",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "6C8DE7",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "9DED0B",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "A62372",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "A8F69F",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "A918C7",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "AFFFEB",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "BF0D1C",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "ED6B46",
+    "exam": "ege",
+    "section": "writing"
+   }
+  ]
+ },
+ "career": {
+  "ru": "Профессии",
+  "total": 24,
+  "breakdown": {
+   "oge_writing": 5,
+   "ege_reading": 2,
+   "ege_writing": 17
+  },
+  "tasks": [
+   {
+    "id": "232907",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "4AB958",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "708908",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "96E5FE",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "E675D3",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "7A7A5C",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "C86FFA",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "1B953D",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "25D736",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "30271A",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "31009E",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "3B6308",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "3CF68C",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "427CE3",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "4608B9",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "4DBA46",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "53940A",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "57FeF7",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "69BB82",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "9525AC",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "984B01",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "C0FD54",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "C2EAF0",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "ceD260",
+    "exam": "ege",
+    "section": "writing"
+   }
+  ]
+ },
+ "nature_ecology": {
+  "ru": "Природа и экология",
+  "total": 22,
+  "breakdown": {
+   "oge_reading": 4,
+   "oge_writing": 5,
+   "ege_reading": 4,
+   "ege_writing": 9
+  },
+  "tasks": [
+   {
+    "id": "2ECDE3",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "49E1EB",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "7F082C",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "B94546",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "3BD918",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "4A4575",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "624755",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "70EA5E",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "BC3107",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "0A03BA",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "2D1E45",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "4E7210",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "A983ED",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "036A69",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "4F70ED",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "624695",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "6FBDF2",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "7FC7F3",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "8c3193",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "93ABAC",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "BB2C61",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "FDE2C5",
+    "exam": "ege",
+    "section": "writing"
+   }
+  ]
+ },
+ "books_films": {
+  "ru": "Книги и фильмы",
+  "total": 19,
+  "breakdown": {
+   "oge_reading": 1,
+   "oge_writing": 6,
+   "ege_reading": 2,
+   "ege_writing": 10
+  },
+  "tasks": [
+   {
+    "id": "3B4DE8",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "31B6D4",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "7CDF74",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "A1B9BB",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "B9C6FE",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "E8D2BE",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "E8E0E6",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "0CAFD3",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "11773C",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "177B79",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "19C7D2",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "643C8E",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "730B2F",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "A3251B",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "BBFA2F",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "CF0893",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "E0980A",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "F1A8A4",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "ee5eeA",
+    "exam": "ege",
+    "section": "writing"
+   }
+  ]
+ },
+ "animals": {
+  "ru": "Животные",
+  "total": 18,
+  "breakdown": {
+   "oge_reading": 1,
+   "oge_writing": 3,
+   "ege_reading": 11,
+   "ege_writing": 3
+  },
+  "tasks": [
+   {
+    "id": "E5A063",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "4C587B",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "BD64AF",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "F326E8",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "03c087",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "0B8B5E",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "1E3F1D",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "361531",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "38E423",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "3B462B",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "720410",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "975BF2",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "9BB643",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "B4AA39",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "BA198E",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "21E97A",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "4D39E5",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "83E30B",
+    "exam": "ege",
+    "section": "writing"
+   }
+  ]
+ },
+ "holidays_traditions": {
+  "ru": "Праздники и традиции",
+  "total": 17,
+  "breakdown": {
+   "oge_reading": 4,
+   "oge_writing": 6,
+   "ege_reading": 1,
+   "ege_writing": 6
+  },
+  "tasks": [
+   {
+    "id": "1400E4",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "181811",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "724E9B",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "D511A0",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "09D861",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "57A737",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "74D762",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "818DBE",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "ACFA37",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "DCEC7F",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "E354A1",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "06D68c",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "710069",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "8c40D6",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "9Fccee",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "AFC69B",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "BC4F49",
+    "exam": "ege",
+    "section": "writing"
+   }
+  ]
+ },
+ "science_history": {
+  "ru": "Наука и история",
+  "total": 15,
+  "breakdown": {
+   "oge_reading": 2,
+   "ege_reading": 7,
+   "ege_writing": 6
+  },
+  "tasks": [
+   {
+    "id": "301CB0",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "C08D38",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "0598F2",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "322415",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "650087",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "70C55E",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "D3BAFB",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "E562BA",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "F5B5E5",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "167B4F",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "38D09B",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "4B9CEB",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "55AAF6",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "6614DB",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "C6FB7C",
+    "exam": "ege",
+    "section": "writing"
+   }
+  ]
+ },
+ "hobbies_leisure": {
+  "ru": "Досуг и хобби",
+  "total": 14,
+  "breakdown": {
+   "oge_reading": 1,
+   "oge_writing": 4,
+   "ege_reading": 1,
+   "ege_writing": 8
+  },
+  "tasks": [
+   {
+    "id": "2DE195",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "495030",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "803B2E",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "99B764",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "A09168",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "3D9FFD",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "0B587B",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "2EA969",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "30F23D",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "317D65",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "51F135",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "591A86",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "6953C7",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "F8A6C6",
+    "exam": "ege",
+    "section": "writing"
+   }
+  ]
+ },
+ "technology": {
+  "ru": "Технологии",
+  "total": 12,
+  "breakdown": {
+   "oge_reading": 1,
+   "oge_writing": 5,
+   "ege_writing": 6
+  },
+  "tasks": [
+   {
+    "id": "34AA44",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "3137FA",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "6B8390",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "8FD5D1",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "9E67BB",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "EA5C0B",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "0BA57E",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "1B0710",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "213F2A",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "9F689D",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "E40EFE",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "F70942",
+    "exam": "ege",
+    "section": "writing"
+   }
+  ]
+ },
+ "food": {
+  "ru": "Еда",
+  "total": 12,
+  "breakdown": {
+   "oge_writing": 2,
+   "ege_reading": 2,
+   "ege_writing": 8
+  },
+  "tasks": [
+   {
+    "id": "CE1F87",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "FD59DA",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "186C0F",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "9EFD0C",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "215F4E",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "5A2D17",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "682EEE",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "70C4A8",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "7F57cD",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "AA610E",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "BC8FE0",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "F78394",
+    "exam": "ege",
+    "section": "writing"
+   }
+  ]
+ },
+ "family_friends": {
+  "ru": "Семья и друзья",
+  "total": 10,
+  "breakdown": {
+   "oge_writing": 6,
+   "ege_writing": 4
+  },
+  "tasks": [
+   {
+    "id": "68283E",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "75EFBC",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "7D1898",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "A8E7A4",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "AECCF1",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "E442A1",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "4436B1",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "59C0BB",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "AD1476",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "B23D09",
+    "exam": "ege",
+    "section": "writing"
+   }
+  ]
+ },
+ "other": {
+  "ru": "Разное/смешанное",
+  "total": 10,
+  "breakdown": {
+   "ege_writing": 10
+  },
+  "tasks": [
+   {
+    "id": "699FEB",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "75EDEE",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "80EF23",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "873B9C",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "B287A4",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "C394C3",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "C542BF",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "FA38C6",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "FC5101",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "FD7204",
+    "exam": "ege",
+    "section": "writing"
+   }
+  ]
+ },
+ "foreign_languages": {
+  "ru": "Иностранные языки",
+  "total": 8,
+  "breakdown": {
+   "oge_writing": 4,
+   "ege_writing": 4
+  },
+  "tasks": [
+   {
+    "id": "592433",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "87947D",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "AB8044",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "B3D343",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "328E52",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "937A56",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "A65718",
+    "exam": "ege",
+    "section": "writing"
+   },
+   {
+    "id": "A99117",
+    "exam": "ege",
+    "section": "writing"
+   }
+  ]
+ },
+ "music": {
+  "ru": "Музыка",
+  "total": 5,
+  "breakdown": {
+   "oge_reading": 1,
+   "oge_writing": 2,
+   "ege_reading": 1,
+   "ege_writing": 1
+  },
+  "tasks": [
+   {
+    "id": "587DBA",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "00DC7D",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "BB170E",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "4827B3",
+    "exam": "ege",
+    "section": "reading"
+   },
+   {
+    "id": "097A7C",
+    "exam": "ege",
+    "section": "writing"
+   }
+  ]
+ },
+ "media": {
+  "ru": "СМИ",
+  "total": 3,
+  "breakdown": {
+   "oge_writing": 2,
+   "ege_writing": 1
+  },
+  "tasks": [
+   {
+    "id": "07AE07",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "4C737D",
+    "exam": "oge",
+    "section": "writing"
+   },
+   {
+    "id": "8B0852",
+    "exam": "ege",
+    "section": "writing"
+   }
+  ]
+ },
+ "art_museums": {
+  "ru": "Искусство и музеи",
+  "total": 2,
+  "breakdown": {
+   "oge_reading": 1,
+   "oge_writing": 1
+  },
+  "tasks": [
+   {
+    "id": "B40DD5",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "1C0276",
+    "exam": "oge",
+    "section": "writing"
+   }
+  ]
+ },
+ "people_bio": {
+  "ru": "Известные люди",
+  "total": 2,
+  "breakdown": {
+   "oge_reading": 1,
+   "oge_writing": 1
+  },
+  "tasks": [
+   {
+    "id": "C441EE",
+    "exam": "oge",
+    "section": "reading"
+   },
+   {
+    "id": "CE9FA6",
+    "exam": "oge",
+    "section": "writing"
+   }
+  ]
+ }
+}

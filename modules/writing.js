@@ -10,6 +10,8 @@ import { recordRound, getName, checkNewAchievements } from '../js/gamify.js';
 import { roundMessage, celeb } from '../js/voice.js';
 import { EXAM, t, plural } from '../js/exam.js';
 import { tipButton, autoTipOnce } from '../js/tips.js';
+import { getActiveTheme } from '../js/vocab_srs.js';
+import { themeZids } from '../js/themes.js';
 
 const WORKER = 'https://purple-cake-2966.o-sintsova.workers.dev'; // прокси DeepSeek
 
@@ -81,6 +83,10 @@ export async function renderWriting(container, cfg) {
   const headSub = t.sectionMeta[cfg.sectionId] || '';
   const [wMin, wMax] = task.words;
 
+  // тема недели: закрепим её письма сверху
+  let themeW = new Set(), themeName = '';
+  try { const z = await themeZids(getActiveTheme()); themeW = z.writing; themeName = z.name; } catch {}
+
   pickScreen();
   autoTipOnce(cfg.sectionId);
 
@@ -109,22 +115,29 @@ export async function renderWriting(container, cfg) {
     for (const w of works) (byZid[w.zid] = byZid[w.zid] || []).push(w);
 
     const list = el('div', { class: 'topic-list' });
-    items.forEach((it, i) => {
+    const itemBtn = (it, i) => {
       const recs = byZid[it.zid];
       const best = recs ? Math.max(...recs.map((r) => (r.max ? (r.score || 0) / r.max : 0))) : null;
       const col = best != null ? critColor(best, 1) : null;
       const right = best != null
         ? el('div', { class: 'w-badge', style: { color: col }, text: '✓' + (recs.length > 1 ? ' ×' + recs.length : '') })
         : el('div', { class: 'at-arrow', text: '→' });
-      list.appendChild(el('button', { class: 'topic-item' + (best != null ? ' w-done' : ''),
+      return el('button', { class: 'topic-item' + (best != null ? ' w-done' : ''),
         style: best != null ? { borderLeftColor: col } : {}, onclick: () => taskScreen(i) }, [
         el('div', { style: { flex: '1', minWidth: '0' } }, [
           el('div', { class: 'ti-name', text: itemTitle(it, i) }),
           el('div', { class: 'ti-count', text: snippet(it) }),
         ]),
         right,
-      ]));
-    });
+      ]);
+    };
+    // письма темы недели — наверх, с подписью
+    const themed = [], rest = [];
+    items.forEach((it, i) => (themeW.has(it.zid) ? themed : rest).push([it, i]));
+    if (themed.length) list.appendChild(el('div', { class: 'topics-label', text: t.vocab.themeWeekLabel(themeName) }));
+    themed.forEach(([it, i]) => list.appendChild(itemBtn(it, i)));
+    if (themed.length && rest.length) list.appendChild(el('div', { class: 'topics-label', text: t.wAllLetters }));
+    rest.forEach(([it, i]) => list.appendChild(itemBtn(it, i)));
 
     const body = [];
     body.push(el('button', { class: 'all-topics writing', onclick: worksScreen }, [
