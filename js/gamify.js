@@ -192,6 +192,17 @@ export function packStatus() {
   return { done, total: ids.length, ids, sections, complete: done.length === ids.length, claimed: !!w.claimed };
 }
 
+// Размер раунда дрилла = дневная доля недельной нормы раздела (план дня).
+// Норма выполнена за неделю → обычная практика (10). Ограничено доступными заданиями.
+export function dailyRoundSize(sectionId, available) {
+  const s = read();
+  const w = currentWeek(s);
+  const target = packTarget(w, sectionId);
+  const count = w.counts[sectionId] || 0;
+  const size = (count >= target) ? 10 : Math.max(5, Math.min(20, Math.ceil(target / 7)));
+  return Math.max(1, Math.min(available || size, size));
+}
+
 // Засчитать задания раздела в недельный пак; вернуть {heroAwarded}. delta — число заданий (для письма =1).
 function bumpPack(s, section, delta) {
   const w = currentWeek(s);

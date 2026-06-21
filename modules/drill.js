@@ -5,7 +5,7 @@ import { el, mount, confetti, celebrate, iconImg } from '../js/ui.js';
 import { loadJSON } from '../js/data.js';
 import { checkAnswer } from '../js/checker.js';
 import { recordDrill, sectionStats, mistakeZids, crownTier } from '../js/progress.js';
-import { recordRound, getName, checkNewAchievements } from '../js/gamify.js';
+import { recordRound, getName, checkNewAchievements, dailyRoundSize } from '../js/gamify.js';
 import { roundMessage, celeb } from '../js/voice.js';
 import { playCorrect, playWrong } from '../js/sound.js';
 import { t, plural } from '../js/exam.js';
@@ -124,14 +124,13 @@ export async function renderDrill(container, cfg) {
   }
 
   function startDrill(pool, themeName) {
-    const ROUND = 15;
     const order = shuffle(pool);
     let roundStart = 0;
     let queue, idx, results;
     startRound();
 
     function startRound() {
-      const n = Math.min(ROUND, order.length);
+      const n = dailyRoundSize(cfg.section, order.length);   // размер раунда = план дня по разделу
       queue = [];
       for (let i = 0; i < n; i++) queue.push(order[(roundStart + i) % order.length]);
       roundStart = (roundStart + n) % order.length;
