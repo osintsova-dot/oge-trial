@@ -95,18 +95,19 @@ export async function renderListening(container, cfg) {
     // состояние ответов и узлы для разбора
     const qNodes = [];   // { q, type, getResult, mark(correct, key) , inputs }
     const qWrap = el('div', { class: 'ls-questions' });
-    let num = 0;
 
-    group.questions.forEach((q) => {
-      if (q.type === 'match') qWrap.appendChild(buildMatch(q));
-      else if (q.type === 'choice') qWrap.appendChild(buildChoice(q, ++num));
-      else qWrap.appendChild(buildFill(q, ++num));
+    // номер = позиция в варианте (= номер задания ФИПИ: 1-4 выбор, 5 соответствие, 6-11 вписать)
+    group.questions.forEach((q, i) => {
+      const n = i + 1;
+      if (q.type === 'match') qWrap.appendChild(buildMatch(q, n));
+      else if (q.type === 'choice') qWrap.appendChild(buildChoice(q, n));
+      else qWrap.appendChild(buildFill(q, n));
     });
 
     const action = el('button', { class: 'btn btn-check btn-block', text: L.checkAll });
     action.addEventListener('click', () => { if (!checked) doCheck(); else showSummary(pending.correct, pending.total); });
 
-    function buildMatch(q) {
+    function buildMatch(q, n) {
       const rubrics = el('ol', { class: 'ls-rubrics' }, q.rubrics.map((r) => el('li', { text: r })));
       const rows = q.speakers.map((sp, i) => {
         const sel = el('select', { class: 'ls-sel' });
@@ -136,7 +137,7 @@ export async function renderListening(container, cfg) {
         },
       });
       return el('div', { class: 'ls-task ls-match' }, [
-        el('div', { class: 'ls-q', text: L.matchInstr }),
+        el('div', { class: 'ls-q' }, [el('span', { class: 'ls-num', text: n + '. ' }), L.matchInstr]),
         el('div', { class: 'ls-rub-title', text: L.rubricsLabel }),
         rubrics,
         el('div', { class: 'ls-mrows' }, rows.map((r) => r.row)),
