@@ -153,10 +153,12 @@ export function slides(cards, { onDone, lastCta } = {}) {
   const next = () => { i++; if (i >= list.length) { overlay.remove(); if (onDone) onDone(); } else render(); };
   const render = () => {
     const c = list[i];
+    // текст: абзацы разделяются '\n' → каждый своим блоком (легче читать)
+    const paras = String(c.text || '').split('\n').map((s) => s.trim()).filter(Boolean);
     overlay.replaceChildren(el('div', { class: 'cel-card' }, [
       spikyIcon(c.img, c.icon || '🦝'),
       el('div', { class: 'cel-title', text: c.title }),
-      el('div', { class: 'cel-text', text: c.text }),
+      el('div', { class: 'cel-text' }, paras.map((p) => el('p', { text: p }))),
       el('div', { class: 'cel-dots' }, list.map((_, k) => el('i', { class: k === i ? 'on' : '' }))),
       el('button', { class: 'btn btn-honey btn-block', text: i + 1 < list.length ? (t.celNext || 'Дальше →') : (lastCta || t.go || 'Поехали!'), onclick: next }),
     ]));
