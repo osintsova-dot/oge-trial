@@ -625,6 +625,53 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .cd-arrow{font-size:26px;font-weight:700;opacity:.85;flex:none}
 .cd-set{background:var(--card);color:var(--ink)}
 .cd-set .cd-h{color:var(--muted)}
+/* карточка плана — светлая (чтобы отличалась от градиентного счётчика) */
+.cd-card.plan-card{background:var(--card)}
+.plan-card .cd-h{color:var(--p-text)}
+.plan-card .cd-v{color:var(--ink)}
+.plan-card .cd-arrow{color:var(--muted)}
+.plan-sub{font-size:12.5px;font-weight:700;color:var(--muted);margin-top:3px}
+
+/* ===== Экран «План подготовки» ===== */
+.plan-bar{background:var(--grad-hero)}
+.plan-body{padding:14px 16px 40px;overflow-x:hidden}
+.plan-summary{background:var(--card);border-radius:16px;padding:16px;box-shadow:0 2px 12px var(--shadow);margin-bottom:14px;text-align:center}
+.plan-summary .ps-weeks{font-size:13px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.4px}
+.plan-summary .ps-vol{font-size:24px;font-weight:800;color:var(--ink);margin-top:6px;letter-spacing:-.3px}
+.plan-summary .ps-day{font-size:14px;font-weight:700;color:var(--p-text);margin-top:2px}
+.plan-min-banner{background:rgba(224,162,30,.14);color:var(--ink);border-radius:14px;padding:12px 14px;
+  font-size:13.5px;font-weight:600;line-height:1.5;margin:4px 0 14px}
+.plan-weeks{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.4px;color:var(--p-text);margin:2px 0 12px;text-align:center}
+.plan-choose-hdr{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);margin:4px 0 8px}
+.goal-card{display:flex;align-items:center;gap:10px;width:100%;text-align:left;border:none;cursor:pointer;
+  background:var(--card);border-radius:14px;padding:13px 15px;box-shadow:0 2px 12px var(--shadow);margin-bottom:8px;
+  border:2px solid transparent}
+.goal-card.on{border-color:var(--purple)}
+.goal-main{flex:1;min-width:0}
+.goal-name{font-size:15.5px;font-weight:800;color:var(--ink)}
+.goal-rec{font-size:12px;font-weight:700;color:var(--purple);text-transform:none;letter-spacing:0}
+.goal-desc{font-size:12.5px;color:var(--muted);font-weight:600;margin-top:2px}
+.goal-side{flex:none;text-align:right}
+.goal-wk{font-size:14px;font-weight:800;color:var(--ink);white-space:nowrap}
+.goal-mark{font-size:12px;font-weight:700;white-space:nowrap;margin-top:2px}
+.goal-mark.ok{color:var(--ok)}
+.goal-mark.tight{color:var(--warn)}
+.goal-mark.hard{color:var(--bad)}
+.goal-mark.done{color:var(--ok)}
+.plan-sec{background:var(--card);border-radius:14px;padding:13px 15px;box-shadow:0 2px 12px var(--shadow);margin-bottom:10px;cursor:pointer}
+.plan-sec-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.plan-sec-name{font-size:16px;font-weight:800;color:var(--ink);flex:1;min-width:0}
+.plan-sec-rem{font-size:13px;font-weight:700;color:var(--p-text);white-space:nowrap;flex:none}
+.plan-sec-sub{font-size:12.5px;color:var(--muted);font-weight:600;margin:3px 0 8px}
+.plan-topics-hdr{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);margin:18px 0 8px}
+.plan-topic{display:flex;justify-content:space-between;gap:10px;padding:9px 14px;background:var(--card);
+  border-radius:12px;box-shadow:0 2px 12px var(--shadow);margin-bottom:6px}
+.plan-topic{align-items:baseline}
+.plan-topic .pt-label{font-size:13.5px;color:var(--ink);font-weight:600;flex:1;min-width:0}
+.plan-topic .pt-left{font-size:13px;color:var(--muted);font-weight:700;white-space:nowrap;flex:none}
+.plan-vocab{background:var(--card);border-radius:14px;padding:13px 15px;box-shadow:0 2px 12px var(--shadow);
+  margin-top:14px;cursor:pointer}
+.plan-done-msg,.plan-vocab+.plan-done-msg{font-size:16px;font-weight:700;color:var(--ink);text-align:center;padding:20px}
 
 /* ===== Советы Спики (модалка раздела) ===== */
 .tips-card{max-height:84vh;overflow-y:auto;text-align:left}

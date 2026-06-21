@@ -17,7 +17,7 @@ export const PACK_SECTIONS = [
 // Пороги XP для званий (названия — из strings по языку экзамена)
 const LEVEL_MINS = [0, 500, 1500, 3000, 5000, 8000];
 
-const DEFAULT = { name: '', streak: { count: 0, lastDay: null }, pack: { done: [] }, heroes: 0, xp: 0, theme: 'light', history: {}, skin: 'aurora', freezes: 0, perfectRounds: 0, maxStreak: 0, achieved: [], tokens: 0, redeemed: [], sound: true, examDate: null, onboarded: false, tipsSeen: [] };
+const DEFAULT = { name: '', streak: { count: 0, lastDay: null }, pack: { done: [] }, heroes: 0, xp: 0, theme: 'light', history: {}, skin: 'aurora', freezes: 0, perfectRounds: 0, maxStreak: 0, achieved: [], tokens: 0, redeemed: [], sound: true, examDate: null, onboarded: false, tipsSeen: [], planGoal: null };
 
 // Реальные привилегии у учителя — покупаются за жетоны 🎟 (зарабатываются работой в приложении).
 // Список и цены — конфиг; меняются свободно.
@@ -99,6 +99,10 @@ export function setName(name) { const s = read(); s.name = (name || '').trim().s
 // Дата экзамена (гранулярность «месяц/год», строка 'YYYY-MM' или null)
 export function getExamDate() { return read().examDate || null; }
 export function setExamDate(ym) { const s = read(); s.examDate = ym || null; write(s); }
+
+// Цель подготовки, выбранная учеником: 'full' | 'master' | 'light' | null (=рекомендация)
+export function getPlanGoal() { return read().planGoal || null; }
+export function setPlanGoal(g) { const s = read(); s.planGoal = g || null; write(s); }
 
 // Онбординг пройден (имя + дата + интро)
 export function isOnboarded() { return !!read().onboarded; }

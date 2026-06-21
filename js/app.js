@@ -8,9 +8,10 @@ import { getState, levelInfo, levelTable, packStatus, streakActiveToday,
   applyTheme, getTheme, setTheme, getName, setName, getSound, setSound,
   dailyDigest, skinsStatus, setSkin, applySkin, achievementsStatus,
   getTokens, perksStatus, redeemPerk, recentRedeemed,
-  getExamDate, setExamDate, isOnboarded, setOnboarded, examInfo } from './gamify.js';
+  getExamDate, setExamDate, isOnboarded, setOnboarded, examInfo, setPlanGoal } from './gamify.js';
 import { EXAM, t, sectionById, plural } from './exam.js';
 import { dailyProgress, themeStats } from './vocab_srs.js';
+import { weeklyPlan } from './planner.js';
 import { renderDrill } from '../modules/drill.js';
 import { renderWriting } from '../modules/writing.js';
 import { renderReading } from '../modules/reading.js';
@@ -46,6 +47,7 @@ function route() {
   document.body.classList.toggle('in-flow', !!(sec && ['drill', 'writing', 'reading', 'vocab', 'soon'].includes(sec.type)));
   if (hash === 'progress') return renderProgress();
   if (hash === 'rewards')  return renderRewards();
+  if (hash === 'plan')     return renderPlan();
   if (sec && sec.type === 'drill')   return renderDrill(view, { ...DRILL[sec.id], goHome });
   if (sec && sec.type === 'writing') return renderWriting(view, { goHome, sectionId: sec.id });
   if (sec && sec.type === 'reading') return (EXAM.id === 'ege' ? renderReadingEge : renderReading)(view, { goHome, dataFile: sec.dataFile });
@@ -209,10 +211,15 @@ function renderHome() {
     ]);
   }
 
+  // Карточка недельного плана заполняется асинхронно (грузит topics)
+  const planCard = el('div', { id: 'plan-card' });
+  fillPlanCard(planCard);
+
   mount(view, el('div', {}, [
     hero,
     el('div', { class: 'wrap view' }, [
       countdown,
+      planCard,
       twRow, goal, pack,
       el('div', { class: 'sec-title', text: t.sectionsTitle }),
       tiles,
@@ -220,6 +227,105 @@ function renderHome() {
       shortcuts,
     ]),
   ]));
+}
+
+// Заполнить карточку недельного плана (async: planner грузит topics)
+async function fillPlanCard(node) {
+  let p;
+  try { p = await weeklyPlan(); } catch { return; }
+  if (!p || !p.hasDate || p.past) return;   // нет даты / экзамен прошёл → без карточки
+  if (p.allDone) {
+    node.replaceChildren(el('button', { class: 'cd-card', onclick: () => { location.hash = '#plan'; } }, [
+      el('img', { class: 'cd-img', src: './assets/spiky-thumb.png', alt: '' }),
+      el('div', { class: 'cd-in' }, [
+        el('div', { class: 'cd-h', text: t.planCardTitle }),
+        el('div', { class: 'cd-v', text: t.planDoneCard }),
+      ]),
+    ]));
+    return;
+  }
+  const c = p.chosen;
+  const name = t.planGoals[c.key].name;
+  node.replaceChildren(el('button', { class: 'cd-card plan-card', onclick: () => { location.hash = '#plan'; } }, [
+    el('img', { class: 'cd-img', src: './assets/spiky-check.png', alt: '' }),
+    el('div', { class: 'cd-in' }, [
+      el('div', { class: 'cd-h', text: t.planCardTitle }),
+      el('div', { class: 'cd-v', text: t.planToCover(c.weekly) }),
+      el('div', { class: 'plan-sub', text: t.planMark[c.status] + ' ' + t.planGoalCardSub(name, t.planPerDay(c.daily)) }),
+    ]),
+    el('div', { class: 'cd-arrow', text: '›' }),
+  ]));
+}
+
+// --- Экран «План подготовки» ---
+async function renderPlan() {
+  document.body.classList.remove('welcome-mode');
+  mount(view, el('div', { class: 'view' }, [el('div', { class: 'loader', text: '…' })]));
+  let p;
+  try { p = await weeklyPlan(); } catch { goHome(); return; }
+  if (!p || !p.hasDate) { goHome(); return; }
+
+  const head = el('div', { class: 'sec-bar plan-bar' }, [
+    el('button', { class: 'back', text: '←', onclick: goHome }),
+    el('div', { style: { flex: '1' } }, [el('div', { class: 'sb-title', text: t.planTitle })]),
+  ]);
+  const body = el('div', { class: 'plan-body' });
+  body.appendChild(el('div', { class: 'plan-weeks', text: t.planWeeksLeft(p.weeks) }));
+
+  if (p.allDone) {
+    body.appendChild(el('div', { class: 'plan-done-msg', text: t.planAllDone }));
+  } else {
+    // Выбор цели (3 уровня) с пометками ✅/⚠️/🔒
+    body.appendChild(el('div', { class: 'plan-choose-hdr', text: t.planChooseHdr }));
+    for (const tier of p.tiers) {
+      const g = t.planGoals[tier.key];
+      const active = tier.key === p.chosenKey;
+      body.appendChild(el('button', { class: 'goal-card' + (active ? ' on' : ''),
+        onclick: () => { setPlanGoal(tier.key); renderPlan(); } }, [
+        el('div', { class: 'goal-main' }, [
+          el('div', { class: 'goal-name' }, [g.name, tier.key === p.recommendedKey ? el('span', { class: 'goal-rec', text: ' · ' + t.planRecommended }) : null]),
+          el('div', { class: 'goal-desc', text: g.desc }),
+        ]),
+        el('div', { class: 'goal-side' }, [
+          el('div', { class: 'goal-wk', text: tier.R ? t.planToCover(tier.weekly) : t.planMarkText.done }),
+          el('div', { class: 'goal-mark ' + tier.status, text: t.planMark[tier.status] + ' ' + (tier.R ? t.planPerDay(tier.daily) : '') }),
+        ]),
+      ]));
+    }
+    const chosen = p.chosen;
+    if (chosen.status === 'hard') body.appendChild(el('div', { class: 'plan-min-banner', text: t.planHardHint }));
+
+    // Разбивка выбранной цели по разделам
+    for (const s of chosen.secs) {
+      const pctDone = s.totTopics ? Math.round((s.doneTopics / s.totTopics) * 100) : 0;
+      body.appendChild(el('div', { class: 'plan-sec', onclick: () => { location.hash = '#' + s.id; } }, [
+        el('div', { class: 'plan-sec-top' }, [
+          el('div', { class: 'plan-sec-name', text: s.name }),
+          el('div', { class: 'plan-sec-rem', text: s.rem ? t.planSecRem(s.rem, Math.ceil(s.rem / p.weeks)) : t.planSecDone }),
+        ]),
+        el('div', { class: 'plan-sec-sub', text: t.planSecLine(s.doneTopics, s.totTopics) }),
+        el('div', { class: 'ti-bar' }, [el('i', { style: { width: pctDone + '%', background: 'var(--ok)' } })]),
+      ]));
+    }
+    // Что осталось по темам (топ-10 выбранной цели)
+    if (chosen.weak.length) {
+      body.appendChild(el('div', { class: 'plan-topics-hdr', text: t.planTopicsHdr }));
+      for (const w of chosen.weak.slice(0, 10)) {
+        body.appendChild(el('div', { class: 'plan-topic' }, [
+          el('div', { class: 'pt-label', text: w.label }),
+          el('div', { class: 'pt-left', text: t.planTopicLeft(w.rem) }),
+        ]));
+      }
+    }
+  }
+
+  // Лексика — всегда (отдельный темп)
+  body.appendChild(el('div', { class: 'plan-vocab', onclick: () => { location.hash = '#vocab'; } }, [
+    el('div', { class: 'plan-sec-name', text: t.planVocabTitle }),
+    el('div', { class: 'plan-sec-sub', text: t.planVocabLine(p.vocab.learned, p.vocab.total) }),
+  ]));
+
+  mount(view, el('div', { class: 'view' }, [head, body]));
 }
 
 // --- Прогресс ---
