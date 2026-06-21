@@ -6385,6 +6385,532 @@
      ]
     }
    ]
+  },
+  {
+   "key": "listening",
+   "ru": "Из аудирования",
+   "groups": [
+    {
+     "subtopic": "Вариант 1 · Поход · советы",
+     "items": [
+      {
+       "id": "lsn000",
+       "en": "hiking",
+       "ru": "пеший туризм, поход",
+       "ex": "I'd like to give you some advice on our hiking holiday."
+      },
+      {
+       "id": "lsn001",
+       "en": "railway station",
+       "ru": "железнодорожная станция",
+       "ex": "Tomorrow I'll be waiting for you at the railway station at 8 am."
+      },
+      {
+       "id": "lsn002",
+       "en": "route",
+       "ru": "маршрут",
+       "ex": "Our route goes through bushes and rocky hills."
+      },
+      {
+       "id": "lsn003",
+       "en": "comfortable",
+       "ru": "удобный",
+       "ex": "Wear comfortable jeans or sport trousers."
+      },
+      {
+       "id": "lsn004",
+       "en": "to scratch",
+       "ru": "поцарапать",
+       "ex": "If you don't want your legs to be scratched and mosquito bitten,"
+      },
+      {
+       "id": "lsn005",
+       "en": "mosquito",
+       "ru": "комар",
+       "ex": "If you don't want your legs to be scratched and mosquito bitten,"
+      },
+      {
+       "id": "lsn006",
+       "en": "equipped",
+       "ru": "оборудованный",
+       "ex": "We'll be taking breaks at places equipped with barbecues,"
+      },
+      {
+       "id": "lsn007",
+       "en": "to take a break",
+       "ru": "делать перерыв",
+       "ex": "We'll be taking breaks at places equipped with barbecues,"
+      },
+      {
+       "id": "lsn008",
+       "en": "advice",
+       "ru": "совет",
+       "ex": "I'd like to give you some advice on our hiking holiday."
+      },
+      {
+       "id": "lsn009",
+       "en": "to enjoy",
+       "ru": "наслаждаться",
+       "ex": "where we can enjoy baked and grilled food."
+      }
+     ]
+    },
+    {
+     "subtopic": "Вариант 2 · Отель · приём гостей",
+     "items": [
+      {
+       "id": "lsn010",
+       "en": "guest",
+       "ru": "гость",
+       "ex": "Dear guests, we are happy to welcome you to our hotel."
+      },
+      {
+       "id": "lsn011",
+       "en": "to welcome",
+       "ru": "приветствовать",
+       "ex": "Dear guests, we are happy to welcome you to our hotel."
+      },
+      {
+       "id": "lsn012",
+       "en": "surprise",
+       "ru": "сюрприз",
+       "ex": "This year we've got a surprise for you which is going to be particularly interesting"
+      },
+      {
+       "id": "lsn013",
+       "en": "aquarium",
+       "ru": "аквариум",
+       "ex": "Now, along with splashing in the pool and seeing the aquarium with tropical fish,"
+      },
+      {
+       "id": "lsn014",
+       "en": "tropical",
+       "ru": "тропический",
+       "ex": "Now, along with splashing in the pool and seeing the aquarium with tropical fish,"
+      },
+      {
+       "id": "lsn015",
+       "en": "enclosure",
+       "ru": "вольер",
+       "ex": "and an enclosure with hens, ducks, rabbits and even a couple of goats."
+      },
+      {
+       "id": "lsn016",
+       "en": "to grow",
+       "ru": "выращивать",
+       "ex": "our young guests can visit the place where we grow fruit and vegetables for our restaurant."
+      },
+      {
+       "id": "lsn017",
+       "en": "particularly",
+       "ru": "особенно",
+       "ex": "This year we've got a surprise for you which is going to be particularly interesting"
+      },
+      {
+       "id": "lsn018",
+       "en": "garden",
+       "ru": "сад",
+       "ex": "Right behind our building, there's a territory with a garden"
+      },
+      {
+       "id": "lsn019",
+       "en": "restaurant",
+       "ru": "ресторан",
+       "ex": "our young guests can visit the place where we grow fruit and vegetables for our restaurant."
+      }
+     ]
+    },
+    {
+     "subtopic": "Вариант 3 · Объявление · тревога",
+     "items": [
+      {
+       "id": "lsn020",
+       "en": "attention",
+       "ru": "внимание",
+       "ex": "Attention, please!"
+      },
+      {
+       "id": "lsn021",
+       "en": "fire alarm",
+       "ru": "пожарная сигнализация",
+       "ex": "The fire alarm you've just heard was activated by mistake."
+      },
+      {
+       "id": "lsn022",
+       "en": "to activate",
+       "ru": "активировать, включить",
+       "ex": "The fire alarm you've just heard was activated by mistake."
+      },
+      {
+       "id": "lsn023",
+       "en": "danger",
+       "ru": "опасность",
+       "ex": "There's no danger and there's no need for evacuation."
+      },
+      {
+       "id": "lsn024",
+       "en": "evacuation",
+       "ru": "эвакуация",
+       "ex": "There's no danger and there's no need for evacuation."
+      },
+      {
+       "id": "lsn025",
+       "en": "to test",
+       "ru": "проверять, тестировать",
+       "ex": "At the moment, our electronic specialists are testing the fire alarm system"
+      },
+      {
+       "id": "lsn026",
+       "en": "to avoid",
+       "ru": "избегать",
+       "ex": "to avoid a similar situation in the future."
+      },
+      {
+       "id": "lsn027",
+       "en": "to apologize",
+       "ru": "извиняться",
+       "ex": "We apologize for the inconvenience and wish you happy shopping."
+      },
+      {
+       "id": "lsn028",
+       "en": "inconvenience",
+       "ru": "неудобство",
+       "ex": "We apologize for the inconvenience and wish you happy shopping."
+      },
+      {
+       "id": "lsn029",
+       "en": "situation",
+       "ru": "ситуация",
+       "ex": "to avoid a similar situation in the future."
+      }
+     ]
+    },
+    {
+     "subtopic": "Вариант 4 · Парк и оранжерея",
+     "items": [
+      {
+       "id": "lsn030",
+       "en": "visitor",
+       "ru": "посетитель",
+       "ex": "Dear visitors,"
+      },
+      {
+       "id": "lsn031",
+       "en": "to borrow",
+       "ru": "брать на время",
+       "ex": "Please be aware that you can borrow a bike for free."
+      },
+      {
+       "id": "lsn032",
+       "en": "entrance",
+       "ru": "вход",
+       "ex": "To the right of the main entrance,"
+      },
+      {
+       "id": "lsn033",
+       "en": "greenhouse",
+       "ru": "теплица, оранжерея",
+       "ex": "The greenhouse is inhabited by nearly a thousand butterflies,"
+      },
+      {
+       "id": "lsn034",
+       "en": "inhabited",
+       "ru": "населённый, обитаемый",
+       "ex": "The greenhouse is inhabited by nearly a thousand butterflies,"
+      },
+      {
+       "id": "lsn035",
+       "en": "butterfly",
+       "ru": "бабочка",
+       "ex": "The greenhouse is inhabited by nearly a thousand butterflies,"
+      },
+      {
+       "id": "lsn036",
+       "en": "discount",
+       "ru": "скидка",
+       "ex": "Children under 16 have discounts."
+      },
+      {
+       "id": "lsn037",
+       "en": "exhibition",
+       "ru": "выставка",
+       "ex": "Don't miss a chance to see our free exhibition of retro photos"
+      },
+      {
+       "id": "lsn038",
+       "en": "to share",
+       "ru": "делиться",
+       "ex": "Hi dad, I want to share some news."
+      },
+      {
+       "id": "lsn039",
+       "en": "level",
+       "ru": "уровень",
+       "ex": "I was at the language school and took a test for the level."
+      }
+     ]
+    },
+    {
+     "subtopic": "Вариант 5 · Школа · занятия",
+     "items": [
+      {
+       "id": "lsn040",
+       "en": "to offer",
+       "ru": "предлагать",
+       "ex": "our language school offers different activities to make your stay here pleasant and exciting."
+      },
+      {
+       "id": "lsn041",
+       "en": "activity",
+       "ru": "занятие, деятельность",
+       "ex": "our language school offers different activities to make your stay here pleasant and exciting."
+      },
+      {
+       "id": "lsn042",
+       "en": "unfortunately",
+       "ru": "к сожалению",
+       "ex": "Unfortunately, the swimming pool cannot be used for two more weeks"
+      },
+      {
+       "id": "lsn043",
+       "en": "renovation",
+       "ru": "ремонт",
+       "ex": "until the renovation works are completed."
+      },
+      {
+       "id": "lsn044",
+       "en": "to complete",
+       "ru": "завершать",
+       "ex": "until the renovation works are completed."
+      },
+      {
+       "id": "lsn045",
+       "en": "horse-riding",
+       "ru": "верховая езда",
+       "ex": "However, you may take horse-riding lessons from 3 to 8 p.m."
+      },
+      {
+       "id": "lsn046",
+       "en": "trained",
+       "ru": "обученный",
+       "ex": "The horses are calm and well trained."
+      },
+      {
+       "id": "lsn047",
+       "en": "rehabilitation",
+       "ru": "реабилитация",
+       "ex": "In fact, our horses are often used for the needs of the children's rehabilitation centre"
+      },
+      {
+       "id": "lsn048",
+       "en": "pleasant",
+       "ru": "приятный",
+       "ex": "our language school offers different activities to make your stay here pleasant and exciting."
+      },
+      {
+       "id": "lsn049",
+       "en": "to complement",
+       "ru": "дополнять",
+       "ex": "until the renovation works are completed."
+      }
+     ]
+    },
+    {
+     "subtopic": "Вариант 6 · Экзамен · прибытие",
+     "items": [
+      {
+       "id": "lsn050",
+       "en": "finally",
+       "ru": "наконец",
+       "ex": "And finally, I would like to tell you about your exam on Monday."
+      },
+      {
+       "id": "lsn051",
+       "en": "computer-based",
+       "ru": "компьютерный (на компьютере)",
+       "ex": "It's going to be a computer-based exam."
+      },
+      {
+       "id": "lsn052",
+       "en": "reception",
+       "ru": "стойка регистрации, ресепшн",
+       "ex": "You'll have to leave them on the reception desk anyway."
+      },
+      {
+       "id": "lsn053",
+       "en": "mobile phone",
+       "ru": "мобильный телефон",
+       "ex": "You can keep your mobile phones on you,"
+      },
+      {
+       "id": "lsn054",
+       "en": "purpose",
+       "ru": "цель, назначение",
+       "ex": "but remember that you musn't use them for any purpose."
+      },
+      {
+       "id": "lsn055",
+       "en": "textbook",
+       "ru": "учебник",
+       "ex": "No textbooks or notebooks, of course."
+      },
+      {
+       "id": "lsn056",
+       "en": "to arrive",
+       "ru": "прибывать",
+       "ex": "I've already arrived, but can see neither you nor mom."
+      },
+      {
+       "id": "lsn057",
+       "en": "neither",
+       "ru": "ни тот, ни другой",
+       "ex": "I've already arrived, but can see neither you nor mom."
+      },
+      {
+       "id": "lsn058",
+       "en": "arrival",
+       "ru": "прибытие, прилёт",
+       "ex": "I've already arrived, but can see neither you nor mom."
+      },
+      {
+       "id": "lsn059",
+       "en": "brand-new",
+       "ru": "совершенно новый",
+       "ex": "I'm wearing a brand-new blue coat"
+      }
+     ]
+    },
+    {
+     "subtopic": "Вариант 7 · Опрос · приглашение",
+     "items": [
+      {
+       "id": "lsn060",
+       "en": "presentation",
+       "ru": "презентация",
+       "ex": "If you have questions or presentations, would you like to visit in our library in the future?"
+      },
+      {
+       "id": "lsn061",
+       "en": "opinion",
+       "ru": "мнение",
+       "ex": "Your opinion is very important to us."
+      },
+      {
+       "id": "lsn062",
+       "en": "important",
+       "ru": "важный",
+       "ex": "Your opinion is very important to us."
+      },
+      {
+       "id": "lsn063",
+       "en": "camping",
+       "ru": "поход с палатками",
+       "ex": "I just have to tell you that I won't be able to join you for your camping trip this weekend."
+      },
+      {
+       "id": "lsn064",
+       "en": "relatives",
+       "ru": "родственники",
+       "ex": "our relatives are very nice and hospitable."
+      },
+      {
+       "id": "lsn065",
+       "en": "hospitable",
+       "ru": "гостеприимный",
+       "ex": "our relatives are very nice and hospitable."
+      },
+      {
+       "id": "lsn066",
+       "en": "to entertain",
+       "ru": "развлекать",
+       "ex": "they threw a party for us and did everything to entertain us."
+      },
+      {
+       "id": "lsn067",
+       "en": "disappointed",
+       "ru": "разочарованный",
+       "ex": "I feel a bit disappointed,"
+      },
+      {
+       "id": "lsn068",
+       "en": "tourist guide",
+       "ru": "гид, экскурсовод",
+       "ex": "I'm going to be a sort of tourist guide for them."
+      },
+      {
+       "id": "lsn069",
+       "en": "weekend",
+       "ru": "выходные",
+       "ex": "I just have to tell you that I won't be able to join you for your camping trip this weekend."
+      }
+     ]
+    },
+    {
+     "subtopic": "Вариант 8 · Кино и выставка",
+     "items": [
+      {
+       "id": "lsn070",
+       "en": "documentary",
+       "ru": "документальный фильм",
+       "ex": "Dear friends, the week of documentary films,"
+      },
+      {
+       "id": "lsn071",
+       "en": "to attract attention",
+       "ru": "привлекать внимание",
+       "ex": "which we held last month, attracted lots of attention."
+      },
+      {
+       "id": "lsn072",
+       "en": "event",
+       "ru": "мероприятие, событие",
+       "ex": "Today, we're starting a new event"
+      },
+      {
+       "id": "lsn073",
+       "en": "contemporary",
+       "ru": "современный",
+       "ex": "at our exhibition of contemporary art."
+      },
+      {
+       "id": "lsn074",
+       "en": "local",
+       "ru": "местный",
+       "ex": "In the week ahead, you're going to enjoy the works of our local artists."
+      },
+      {
+       "id": "lsn075",
+       "en": "instead of",
+       "ru": "вместо",
+       "ex": "Instead of a lottery, this time,"
+      },
+      {
+       "id": "lsn076",
+       "en": "lottery",
+       "ru": "лотерея",
+       "ex": "Instead of a lottery, this time,"
+      },
+      {
+       "id": "lsn077",
+       "en": "to reward",
+       "ru": "вознаграждать",
+       "ex": "we're going to reward all our guests."
+      },
+      {
+       "id": "lsn078",
+       "en": "to exchange",
+       "ru": "обменивать",
+       "ex": "Keep your ticket. You can exchange it for a book."
+      },
+      {
+       "id": "lsn079",
+       "en": "to support",
+       "ru": "поддерживать, болеть за",
+       "ex": "There's a football match here and we need to support our team."
+      }
+     ]
+    }
+   ]
   }
  ]
 }
