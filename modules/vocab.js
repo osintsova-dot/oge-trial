@@ -5,7 +5,8 @@
 import { el, mount, iconImg, confetti, celebrate } from '../js/ui.js';
 import { loadJSON } from '../js/data.js';
 import { EXAM, t, plural } from '../js/exam.js';
-import { recordVocabReview, getName, checkNewAchievements, getState, isThemeFinaled, recordThemeFinale } from '../js/gamify.js';
+import { recordVocabReview, getName, checkNewAchievements, getState, isThemeFinaled, recordThemeFinale, getSound } from '../js/gamify.js';
+import { speak, canSpeak } from '../js/speak.js';
 import { celeb } from '../js/voice.js';
 import { DAILY_GOAL, getActiveTheme, setActiveTheme, dailyProgress,
   buildSession, dueItems, review, themeStats, themeDetail,
@@ -39,6 +40,11 @@ export async function renderVocab(container, cfg) {
     ]);
   }
   function themeRu(key) { const th = data.themes.find((x) => x.key === key); return th ? (th.name || th.ru) : key; }
+  // Кнопка 🔊 — британское произношение английского слова
+  function spkBtn(text) {
+    if (!canSpeak()) return null;
+    return el('button', { class: 'speak-btn', text: '🔊', title: 'Произношение', onclick: (e) => { e.stopPropagation(); speak(text); } });
+  }
 
   // --- Меню: дневная норма + выбор активной темы + прогресс по темам ---
   function menuScreen() {
@@ -175,40 +181,42 @@ export async function renderVocab(container, cfg) {
       if (g.dayClosed) dayClosedG = g;
     }
 
-    // Панель результата (✓/✗ + правильный ответ + «Дальше»)
-    function nextPanel(ok, correctText, cb) {
+    // Панель результата (✓/✗ + произношение англ. + «Дальше»). speakText — что озвучить (англ.).
+    function nextPanel(ok, correctText, cb, speakText) {
+      if (speakText && getSound()) speak(speakText);
       return [
         el('div', { class: 'fc-result ' + (ok ? 'ok' : 'bad'), text: ok ? v.correct : v.wrongIs(correctText) }),
+        speakText && canSpeak() ? el('button', { class: 'btn btn-ghost speak-line', onclick: () => speak(speakText) }, ['🔊 ', speakText]) : null,
         el('button', { class: 'btn btn-honey btn-block', text: v.next, onclick: cb }),
-      ];
+      ].filter(Boolean);
     }
 
-    // Режим «выбор перевода»: EN + 4 варианта RU
+    // Режим «выбор перевода»: EN (+🔊) + 4 варианта RU
     function chooseUI(it, onDone) {
       const opts = shuffle([it.ru].concat(distractors(data, it, 3)));
       let answered = false;
       const list = el('div', { class: 'mc-list' });
-      const refresh = (foot) => {};
+      const wordRow = () => el('div', { class: 'mode-word' }, [el('span', { text: it.en }), spkBtn(it.en)]);
       opts.forEach((opt) => {
         const b = el('button', { class: 'mc-opt', text: opt, onclick: () => {
           if (answered) return; answered = true;
           const ok = opt === it.ru;
           b.classList.add(ok ? 'mc-ok' : 'mc-bad');
           if (!ok) [...list.children].forEach((c) => { if (c.textContent === it.ru) c.classList.add('mc-ok'); });
-          frame([el('div', { class: 'task-kind mk-kind', text: v.mChoose }), el('div', { class: 'mode-word', text: it.en }), list],
-            nextPanel(ok, it.ru, () => onDone(ok)));
+          frame([el('div', { class: 'task-kind mk-kind', text: v.mChoose }), wordRow(), list],
+            nextPanel(ok, it.ru, () => onDone(ok), it.en));
         } });
         list.appendChild(b);
       });
-      frame([el('div', { class: 'task-kind mk-kind', text: v.mChoose }), el('div', { class: 'mode-word', text: it.en }), list], []);
+      frame([el('div', { class: 'task-kind mk-kind', text: v.mChoose }), wordRow(), list], []);
     }
 
-    // Режим ввода (cloze/впечатать): headNodes + поле; accept — правильная строка
+    // Режим ввода (cloze/впечатать): headNodes + поле; accept — правильная строка (англ.)
     function typeUI(headNodes, accept, onDone) {
       const input = el('input', { class: 'answer-input', type: 'text', autocomplete: 'off', placeholder: v.typePlaceholder });
       const submit = () => {
         const ok = normAnswer(input.value) === normAnswer(accept);
-        frame(headNodes.concat(el('div', { class: 'answer-wrap' }, [input])), nextPanel(ok, accept, () => onDone(ok)));
+        frame(headNodes.concat(el('div', { class: 'answer-wrap' }, [input])), nextPanel(ok, accept, () => onDone(ok), accept));
         input.disabled = true;
       };
       const check = el('button', { class: 'btn btn-check', text: t.check, onclick: submit });
@@ -230,7 +238,7 @@ export async function renderVocab(container, cfg) {
       curLabel = v.mPreview; curTotal = news.length; curIdx = pi;
       const it = news[pi];
       let flipped = false;
-      const front = el('div', { class: 'fc-front', text: it.en });
+      const front = el('div', { class: 'fc-front' }, [el('span', { text: it.en }), spkBtn(it.en)]);
       const back = el('div', { class: 'fc-back', style: { display: 'none' } }, [
         it.def ? el('div', { class: 'fc-def', text: it.def }) : null,
         el('div', { class: it.def ? 'fc-ru fc-ru-sub' : 'fc-ru', text: it.ru }),
@@ -243,6 +251,7 @@ export async function renderVocab(container, cfg) {
         if (flipped) return; flipped = true; back.style.display = 'block'; hint.style.display = 'none'; next.style.display = 'block';
       } }, [front, back, hint]);
       frame([el('div', { class: 'task-kind mk-kind', text: v.mPreview }), cardBox], [next]);
+      if (getSound()) speak(it.en);   // авто-озвучка нового слова на знакомстве
     }
 
     // Фаза 2 — тренировка: все слова вперемешку, режим по коробке (новые → выбор; ошибка→box1, верно→box2)
