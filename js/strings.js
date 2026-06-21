@@ -115,6 +115,8 @@ export const STRINGS = {
     perksSub: 'Привилегии у учителя. Получи бейдж и покажи его на уроке.',
     skinsTitle: 'Образы XP-полосы', redeemedTitle: 'Использованные',
     skinEquipped: 'Надето', skinEquip: 'Надеть',
+    skinOn: '✅ Надет сейчас', skinOpen: '✅ Открыт', perkEnough: '✅ Жетонов хватает', perkNeed: (n) => '🎟 Нужно ещё ' + n,
+    levelsTitle: 'Уровни и звания', levelsHow: 'XP копится за занятия: +10 за каждый верный ответ, +30 за идеальный раунд (без ошибок). Больше XP — выше звание. Твой уровень подсвечен.',
     rewSub: 'Скины XP-полосы. Открываются за уровни и собранных героев.',
     badgeShow: '👀 Покажи этот экран учителю', badgeDone: 'Готово',
     // celebration moments
@@ -129,13 +131,13 @@ export const STRINGS = {
     sections: { vocab: 'Тематический словарь', grammar: 'Грамматика', wordform: 'Словообразование', reading: 'Чтение', writing: 'Письмо', speaking: 'Говорение', lexis: 'Лексика', email: 'Письмо (e-mail)', essay: 'Эссе' },
     sectionMeta: { vocab: 'тема недели · 15 слов в день', grammar: '661 задание · 15 тем', wordform: '437 заданий · 7 тем', reading: '28 текстов + 38 заданий', writing: 'задание 35 · К1–К4', speaking: 'скоро', lexis: '728 заданий', email: 'задание 37 · К1–К3', essay: 'задание 38 · К1–К5' },
     // звания / скины / ачивки / привилегии
-    ranks: ['Новичок', 'Ученик', 'Грамотей', 'Знаток', 'Мастер ОГЭ', 'Гуру'],
+    ranks: ['Новичок', 'Стажёр', 'Знаток', 'Профи', 'Мастер', 'Легенда'],
     skins: {
-      aurora: { name: 'Аврора', desc: 'Фиолетовый → медовый', need: 'доступно сразу' },
-      sunset: { name: 'Закат', desc: 'Малина → оранжевый', need: 'Уровень 2' },
-      grape: { name: 'Виноград', desc: 'Глубокий фиолет', need: 'Уровень 4' },
-      honeycomb: { name: 'Медовый', desc: 'Тёплый медовый', need: '2 героя' },
-      guru: { name: 'Гуру', desc: 'Весь спектр S&S', need: 'Звание «Гуру»' },
+      aurora: { name: 'Аврора', desc: 'Фиолетовый → медовый', need: 'доступно сразу', how: 'Скин — это цвет твоей XP-полосы вверху экрана. «Аврора» (фиолетовый → медовый) доступна сразу, надевается одним тапом.' },
+      sunset: { name: 'Закат', desc: 'Малина → оранжевый', need: 'Уровень 2', how: 'Скин раскрашивает XP-полосу. «Закат» (малина → оранжевый) открывается на 2-м уровне — копи XP за верные ответы.' },
+      grape: { name: 'Виноград', desc: 'Глубокий фиолет', need: 'Уровень 4', how: 'Скин раскрашивает XP-полосу. «Виноград» (глубокий фиолет) открывается на 4-м уровне.' },
+      honeycomb: { name: 'Медовый', desc: 'Тёплый медовый', need: '2 героя', how: 'Скин раскрашивает XP-полосу. «Медовый» открывается, когда станешь Героем 2 раза (соберёшь пак дважды).' },
+      guru: { name: 'Гуру', desc: 'Весь спектр S&S', need: 'Звание «Легенда»', how: 'Скин раскрашивает XP-полосу. «Гуру» (весь спектр Speak & Smile) открывается с высшим званием «Легенда» — это 6-й уровень.' },
     },
     ach: {
       first: { title: 'Первый шаг', desc: 'Первый раунд', how: 'Реши свой самый первый раунд — заработай первые XP. Лиха беда начало!' },
@@ -148,9 +150,9 @@ export const STRINGS = {
       frosty: { title: 'Запасливый', desc: '3 заморозки в запасе', how: 'Накопи 3 заморозки серии 🧊 (по одной за каждый идеальный раунд). Заморозка прикрывает пропущенный день.' },
     },
     perks: {
-      hint: { title: 'Подсказка на тесте', desc: 'Право на одну подсказку во время теста' },
-      nohw: { title: 'Урок без ДЗ', desc: 'Прийти на урок без домашнего задания' },
-      star: { title: '«Ученик недели»', desc: 'Статус недели + небольшой бонус' },
+      hint: { title: 'Подсказка на тесте', desc: 'Право на одну подсказку во время теста', how: 'Настоящая привилегия у преподавателя: одна подсказка во время теста. Стоит 2 🎟. Обменяешь — получишь код, покажи его учителю. Жетоны капают за собранные паки (Герой) и вехи серии.' },
+      nohw: { title: 'Урок без ДЗ', desc: 'Прийти на урок без домашнего задания', how: 'Настоящая привилегия: прийти на урок без домашки. Стоит 4 🎟. Обменяешь — получишь код для учителя. Жетоны зарабатываешь за паки и серию.' },
+      star: { title: '«Ученик недели»', desc: 'Статус недели + небольшой бонус', how: 'Настоящая привилегия: статус «Ученик недели» и небольшой бонус от преподавателя. Стоит 6 🎟. Обменяешь — получишь код для учителя.' },
     },
     voice: {
       homeIdle: ['{name}, серия ждёт. Не сливайся 😎', '{name}, твой ход. 1 раунд — погнали.', '{name}, один раунд — и ты в деле.', 'Ну что, {name}, докажем?'],
@@ -278,6 +280,8 @@ export const STRINGS = {
     perksSub: 'Perks from your teacher. Get a badge and show it in class.',
     skinsTitle: 'XP bar skins', redeemedTitle: 'Used',
     skinEquipped: 'On', skinEquip: 'Equip',
+    skinOn: '✅ Equipped now', skinOpen: '✅ Unlocked', perkEnough: '✅ Enough tokens', perkNeed: (n) => '🎟 ' + n + ' more needed',
+    levelsTitle: 'Levels & ranks', levelsHow: 'XP builds up as you study: +10 for every correct answer, +30 for a perfect round (no mistakes). More XP — higher rank. Your level is highlighted.',
     rewSub: 'XP bar skins. Unlocked by levels and heroes you collect.',
     badgeShow: '👀 Show this screen to your teacher', badgeDone: 'Done',
     // celebration moments
@@ -290,13 +294,13 @@ export const STRINGS = {
     friend: 'friend',
     sections: { vocab: 'Topic Vocabulary', grammar: 'Grammar', wordform: 'Word formation', reading: 'Reading', writing: 'Writing', speaking: 'Speaking', lexis: 'Vocabulary', email: 'Email', essay: 'Essay' },
     sectionMeta: { vocab: 'theme of the week · 15 words a day', grammar: '389 tasks · grammar', wordform: '728 tasks · word forms', reading: '469 tasks · 3 formats', writing: 'writing', speaking: 'soon', lexis: '728 tasks · vocabulary', email: 'task 37 · K1–K3', essay: 'task 38 · K1–K5' },
-    ranks: ['Rookie', 'Learner', 'Skilled', 'Expert', 'Master', 'Guru'],
+    ranks: ['Rookie', 'Trainee', 'Skilled', 'Pro', 'Master', 'Legend'],
     skins: {
-      aurora: { name: 'Aurora', desc: 'Purple → honey', need: 'available now' },
-      sunset: { name: 'Sunset', desc: 'Berry → orange', need: 'Level 2' },
-      grape: { name: 'Grape', desc: 'Deep purple', need: 'Level 4' },
-      honeycomb: { name: 'Honey', desc: 'Warm honey', need: '2 heroes' },
-      guru: { name: 'Guru', desc: 'Full S&S spectrum', need: 'Reach "Guru"' },
+      aurora: { name: 'Aurora', desc: 'Purple → honey', need: 'available now', how: 'A skin is the colour of your XP bar at the top. "Aurora" (purple → honey) is available right away — equip it in one tap.' },
+      sunset: { name: 'Sunset', desc: 'Berry → orange', need: 'Level 2', how: 'A skin colours your XP bar. "Sunset" (berry → orange) unlocks at level 2 — earn XP for correct answers.' },
+      grape: { name: 'Grape', desc: 'Deep purple', need: 'Level 4', how: 'A skin colours your XP bar. "Grape" (deep purple) unlocks at level 4.' },
+      honeycomb: { name: 'Honey', desc: 'Warm honey', need: '2 heroes', how: 'A skin colours your XP bar. "Honey" unlocks once you become a Hero twice (collect the pack twice).' },
+      guru: { name: 'Guru', desc: 'Full S&S spectrum', need: 'Reach "Legend"', how: 'A skin colours your XP bar. "Guru" (the full Speak & Smile spectrum) unlocks at the top rank "Legend" — level 6.' },
     },
     ach: {
       first: { title: 'First step', desc: 'First round', how: 'Finish your very first round and earn your first XP. Every journey starts here!' },
@@ -309,9 +313,9 @@ export const STRINGS = {
       frosty: { title: 'Stocked up', desc: '3 freezes saved', how: 'Save up 3 streak freezes 🧊 (one for each perfect round). A freeze covers a missed day.' },
     },
     perks: {
-      hint: { title: 'Hint on a test', desc: 'One hint during a test' },
-      nohw: { title: 'No-homework pass', desc: 'Come to class with no homework' },
-      star: { title: 'Student of the week', desc: 'Weekly status + a small bonus' },
+      hint: { title: 'Hint on a test', desc: 'One hint during a test', how: 'A real perk from your teacher: one hint during a test. Costs 2 🎟. Redeem it for a code and show it to your teacher. Tokens come from completed packs (Hero) and streak milestones.' },
+      nohw: { title: 'No-homework pass', desc: 'Come to class with no homework', how: 'A real perk: come to class with no homework. Costs 4 🎟. Redeem for a code to show your teacher. Earn tokens from packs and streaks.' },
+      star: { title: 'Student of the week', desc: 'Weekly status + a small bonus', how: 'A real perk: "Student of the week" status and a small bonus from your teacher. Costs 6 🎟. Redeem for a code to show your teacher.' },
     },
     voice: {
       homeIdle: ['{name}, your streak is waiting. Keep it up 😎', '{name}, your move. One round — go.', '{name}, one round and you are in.', 'So, {name}, shall we?'],

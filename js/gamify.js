@@ -27,7 +27,7 @@ export const PERKS = [
   { id: 'nohw', icon: '🎒', cost: 4 },
   { id: 'star', icon: '⭐', cost: 6 },
 ];
-function perkText(p) { return { id: p.id, icon: p.icon, cost: p.cost, title: t.perks[p.id].title, desc: t.perks[p.id].desc }; }
+function perkText(p) { return { id: p.id, icon: p.icon, cost: p.cost, title: t.perks[p.id].title, desc: t.perks[p.id].desc, how: t.perks[p.id].how }; }
 
 const FREEZE_CAP = 3; // максимум накопленных заморозок
 
@@ -84,6 +84,11 @@ export function streakActiveToday() { return read().streak.lastDay === todayStr(
 // Имя ученика (персонализация)
 export function getName() { return read().name || ''; }
 export function setName(name) { const s = read(); s.name = (name || '').trim().slice(0, 24); write(s); }
+
+// Таблица всех уровней: [{level, min, title}] — для экрана-объяснения «какие уровни»
+export function levelTable() {
+  return LEVEL_MINS.map((min, k) => ({ level: k + 1, min, title: t.ranks[k] }));
+}
 
 // Уровень и звание по XP (названия берём из t.ranks)
 export function levelInfo(xp) {
@@ -247,7 +252,7 @@ export function skinsStatus() {
   const s = read();
   const cur = getSkin();
   return SKINS.map((sk) => ({ id: sk.id, grad: sk.grad,
-    name: t.skins[sk.id].name, desc: t.skins[sk.id].desc, need: t.skins[sk.id].need,
+    name: t.skins[sk.id].name, desc: t.skins[sk.id].desc, need: t.skins[sk.id].need, how: t.skins[sk.id].how,
     unlocked: !!sk.req(s), equipped: sk.id === cur }));
 }
 export function getSkin() {

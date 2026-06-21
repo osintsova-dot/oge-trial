@@ -36,6 +36,10 @@
       <p class="hint">Нажми на любой значок — откроется карточка «за что». На повторяемых стоит счётчик (×5 = собрал пак 5 раз, 21 = рекорд серии). Это ДЕМО-данные, реальный прогресс не трогается.</p>
       <div id="achgrid" class="ach-grid" style="margin-top:12px"></div>
 
+      <h2>Уровни и звания · тап открывает лестницу</h2>
+      <p class="hint">Новая лестница: Новичок → Стажёр → Знаток → Профи → Мастер → Легенда. В приложении это открывается тапом по званию или XP-полосе на главной. Тут для примера текущий уровень — «Знаток».</p>
+      <button class="btn btn-block" id="levels">⭐ Показать уровни и звания</button>
+
       <h2>Звуки по отдельности</h2>
       <div class="row">
         <button class="btn" data-s="correct">✅ Верный</button>
@@ -52,6 +56,7 @@
     import { celebrate, el, iconImg, infoModal } from './js/ui.js';
     import { playCorrect, playWrong, playFanfare, playSparkle } from './js/sound.js';
     import { t } from './js/exam.js';
+    import { levelTable } from './js/gamify.js';
 
     const NAME = 'Артём';
     const MOMENTS = {
@@ -92,6 +97,12 @@
         el('div', { class: 'ach-ic' }, [iconImg('ach-' + a.id, a.icon, 'ach-img')]),
         el('div', { class: 'ach-t', text: A[a.id].title }),
       ])));
+
+    // демо уровней: текущий = 3 «Знаток»
+    document.getElementById('levels').onclick = () => infoModal({
+      icon: '⭐', iconName: 'ic-xp', title: t.levelsTitle, text: t.levelsHow,
+      list: levelTable().map((r) => ({ left: t.lvl + r.level + ' · ' + r.title, right: r.min + ' XP', active: r.level === 3 })),
+    });
 
     const SOUNDS = { correct: playCorrect, wrong: playWrong, fanfare: playFanfare, sparkle: playSparkle };
     document.querySelectorAll('[data-s]').forEach((b) =>

@@ -4,7 +4,7 @@
 import { el, mount, iconImg, infoModal } from './ui.js';
 import { loadJSON } from './data.js';
 import { sectionStats, writingStats, resetAll } from './progress.js';
-import { getState, levelInfo, packStatus, streakActiveToday,
+import { getState, levelInfo, levelTable, packStatus, streakActiveToday,
   applyTheme, getTheme, setTheme, getName, setName, getSound, setSound,
   dailyDigest, skinsStatus, setSkin, applySkin, achievementsStatus,
   getTokens, perksStatus, redeemPerk, recentRedeemed } from './gamify.js';
@@ -60,6 +60,19 @@ function setActiveTab(hash) {
 }
 
 // --- Главная ---
+// Модалка-лестница: все уровни и пороги XP, текущий подсвечен
+function levelsModal() {
+  const cur = levelInfo(getState().xp).level;
+  infoModal({
+    icon: '⭐', iconName: 'ic-xp', title: t.levelsTitle, text: t.levelsHow,
+    list: levelTable().map((r) => ({
+      left: t.lvl + r.level + ' · ' + r.title,
+      right: r.min + ' XP',
+      active: r.level === cur,
+    })),
+  });
+}
+
 function renderHome() {
   document.body.classList.remove('welcome-mode');
   const st = getState();
@@ -81,15 +94,17 @@ function renderHome() {
       ]),
       el('div', { class: 'chips' }, [
         chip(iconImg('ic-streak', '🔥'), st.streak.count),
-        chip(null, t.lvl + lvl.level + ' · ' + lvl.title),
+        el('div', { class: 'chip chip-tap', onclick: levelsModal }, [el('span', { text: t.lvl + lvl.level + ' · ' + lvl.title })]),
         chip(iconImg('ic-hero', '🦸'), st.heroes),
         st.freezes > 0 ? chip(iconImg('ic-freeze', '🧊'), st.freezes) : null,
       ]),
-      el('div', { class: 'xp-head' }, [
-        el('span', { class: 'xp-cur' }, [iconImg('ic-xp', '⭐'), ' ' + st.xp + ' XP']),
-        el('span', { class: 'xp-note', text: lvl.next ? t.toRank(lvl.next, lvl.toNext) : t.maxRank }),
+      el('div', { class: 'xp-block', onclick: levelsModal }, [
+        el('div', { class: 'xp-head' }, [
+          el('span', { class: 'xp-cur' }, [iconImg('ic-xp', '⭐'), ' ' + st.xp + ' XP']),
+          el('span', { class: 'xp-note', text: lvl.next ? t.toRank(lvl.next, lvl.toNext) : t.maxRank }),
+        ]),
+        el('div', { class: 'xp-bar' }, [el('i', { style: { width: lvl.pct + '%' } })]),
       ]),
-      el('div', { class: 'xp-bar' }, [el('i', { style: { width: lvl.pct + '%' } })]),
     ]),
   ]);
 
@@ -272,9 +287,13 @@ function renderRewards() {
   const rows = skins.map((k) => {
     let btn;
     if (k.equipped) btn = el('button', { class: 's-btn equipped', text: t.skinEquipped });
-    else if (k.unlocked) btn = el('button', { class: 's-btn equip', text: t.skinEquip, onclick: () => { if (setSkin(k.id)) renderRewards(); } });
+    else if (k.unlocked) btn = el('button', { class: 's-btn equip', text: t.skinEquip, onclick: (e) => { e.stopPropagation(); if (setSkin(k.id)) renderRewards(); } });
     else btn = el('button', { class: 's-btn lock', text: '🔒 ' + k.need });
-    return el('div', { class: 'skin' + (k.unlocked ? '' : ' locked') }, [
+    return el('div', { class: 'skin' + (k.unlocked ? '' : ' locked'),
+      onclick: () => infoModal({
+        swatch: k.grad, title: k.name, text: k.how,
+        status: { done: k.unlocked, label: k.equipped ? t.skinOn : (k.unlocked ? t.skinOpen : '🔒 ' + k.need) },
+      }) }, [
       el('div', { class: 's-top' }, [
         el('div', {}, [el('div', { class: 's-name', text: k.name }), el('div', { class: 's-desc', text: k.desc })]),
         btn,
@@ -285,7 +304,11 @@ function renderRewards() {
 
   const tokens = getTokens();
   const perks = perksStatus().map((p) =>
-    el('div', { class: 'perk' + (p.affordable ? '' : ' off') }, [
+    el('div', { class: 'perk' + (p.affordable ? '' : ' off'),
+      onclick: () => infoModal({
+        iconName: 'perk-' + p.id, icon: p.icon, title: p.title, text: p.how,
+        status: { done: p.affordable, label: p.affordable ? t.perkEnough : t.perkNeed(p.cost - tokens) },
+      }) }, [
       el('div', { class: 'perk-ic' }, [iconImg('perk-' + p.id, p.icon, 'perk-img')]),
       el('div', { class: 'perk-info' }, [
         el('div', { class: 'perk-t', text: p.title }),
@@ -293,7 +316,7 @@ function renderRewards() {
       ]),
       el('button', { class: 'perk-btn' + (p.affordable ? '' : ' lock'), disabled: !p.affordable,
         text: '🎟 ' + p.cost,
-        onclick: () => { const r = redeemPerk(p.id); if (r) { showBadge(r); renderRewards(); } } }),
+        onclick: (e) => { e.stopPropagation(); const r = redeemPerk(p.id); if (r) { showBadge(r); renderRewards(); } } }),
     ]));
   const recent = recentRedeemed().slice(0, 5);
   const recentBlock = recent.length ? el('div', { class: 'redeemed' },

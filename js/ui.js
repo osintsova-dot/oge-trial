@@ -121,10 +121,19 @@ export function infoModal(opts) {
   const back = el('div', { class: 'modal-back' });
   const close = () => back.remove();
   back.addEventListener('click', (e) => { if (e.target === back) close(); });
+  // иконка: либо градиентный кружок (скины), либо картинка с откатом на эмодзи
+  const head = opts.swatch
+    ? el('div', { class: 'modal-ic' }, [el('div', { class: 'modal-swatch', style: { background: opts.swatch } })])
+    : el('div', { class: 'modal-ic' }, [iconImg(opts.iconName, opts.icon, 'modal-img')]);
   const card = el('div', { class: 'modal-card' + (opts.status && !opts.status.done ? ' locked' : '') }, [
-    el('div', { class: 'modal-ic' }, [iconImg(opts.iconName, opts.icon, 'modal-img')]),
+    head,
     el('div', { class: 'modal-title', text: opts.title }),
     el('div', { class: 'modal-text', text: opts.text }),
+    opts.list ? el('div', { class: 'modal-list' }, opts.list.map((r) =>
+      el('div', { class: 'modal-row' + (r.active ? ' active' : '') }, [
+        el('span', { class: 'mr-name', text: r.left }),
+        el('span', { class: 'mr-xp', text: r.right }),
+      ]))) : null,
     opts.note ? el('div', { class: 'modal-note', text: opts.note }) : null,
     opts.status ? el('div', { class: 'modal-status ' + (opts.status.done ? 'done' : 'locked'), text: opts.status.label }) : null,
     el('button', { class: 'btn btn-honey btn-block', style: { marginTop: '18px' }, text: t.modalClose, onclick: close }),
