@@ -8,7 +8,7 @@ import { getState, levelInfo, levelTable, packStatus, streakActiveToday,
   applyTheme, getTheme, setTheme, getName, setName, getSound, setSound,
   dailyDigest, skinsStatus, setSkin, applySkin, achievementsStatus,
   getTokens, perksStatus, redeemPerk, recentRedeemed,
-  getExamDate, setExamDate, isOnboarded, setOnboarded, examInfo, setPlanGoal } from './gamify.js';
+  getExamDate, setExamDate, isOnboarded, setOnboarded, examInfo, setPlanGoal, setWeekTargets } from './gamify.js';
 import { EXAM, t, sectionById, plural } from './exam.js';
 import { dailyProgress, themeStats } from './vocab_srs.js';
 import { weeklyPlan } from './planner.js';
@@ -81,7 +81,6 @@ function renderHome() {
   const st = getState();
   const name = getName() || t.friend;
   const lvl = levelInfo(st.xp);
-  const pk = packStatus();
   const dg = dailyDigest();
 
   const chip = (icon, txt) => el('div', { class: 'chip' }, icon ? [icon, el('span', { text: ' ' + txt })] : [el('span', { text: txt })]);
@@ -140,23 +139,8 @@ function renderHome() {
     el('div', { class: 'at-arrow', text: '→' }),
   ]);
 
-  const packItems = pk.ids.map((id) => {
-    const sec = EXAM.sections.find((s) => s.id === id);
-    const done = pk.done.includes(id);
-    return el('div', { class: 'pk-cell' + (done ? ' done' : '') }, [
-      el('div', { class: 'pk-ic' }, [iconImg(sec && sec.iconFile ? sec.iconFile : ('ic-' + (sec ? (sec.iconKey || sec.tile) : id)), sec ? sec.icon : '•', 'pk-img')]),
-      el('div', { class: 'pk-name', text: t.sections[id] || id }),
-      done ? el('div', { class: 'pk-chk', text: '✓' }) : null,
-    ]);
-  });
-  const pack = el('div', { class: 'pack' }, [
-    el('div', { class: 'p-head' }, [
-      el('div', { class: 'p-t', text: t.packTitle }),
-      el('div', { class: 'p-n', text: t.packOf(pk.done.length, pk.total) }),
-    ]),
-    el('div', { class: 'pk-cells' }, packItems),
-    el('div', { class: 'p-note', text: t.packNote }),
-  ]);
+  // Пак недели заполняется асинхронно (после установки недельных целей из плана)
+  const pack = el('div', { id: 'pack-card' });
 
   const tile = (sec) => {
     const stt = sec.type === 'drill' ? sectionStats(sec.id) : null;
@@ -213,7 +197,7 @@ function renderHome() {
 
   // Карточка недельного плана заполняется асинхронно (грузит topics)
   const planCard = el('div', { id: 'plan-card' });
-  fillPlanCard(planCard);
+  fillPlanCard(planCard).then(() => fillPackCard(pack));
 
   mount(view, el('div', {}, [
     hero,
@@ -230,10 +214,41 @@ function renderHome() {
 }
 
 // Заполнить карточку недельного плана (async: planner грузит topics)
+// Пак недели: ячейки разделов с прогрессом count/target к недельной норме
+function fillPackCard(node) {
+  const pk = packStatus();
+  const packItems = pk.sections.map((ps) => {
+    const sec = EXAM.sections.find((s) => s.id === ps.id);
+    return el('div', { class: 'pk-cell' + (ps.done ? ' done' : '') }, [
+      el('div', { class: 'pk-ic' }, [iconImg(sec && sec.iconFile ? sec.iconFile : ('ic-' + (sec ? (sec.iconKey || sec.tile) : ps.id)), sec ? sec.icon : '•', 'pk-img')]),
+      el('div', { class: 'pk-name', text: t.sections[ps.id] || ps.id }),
+      ps.done ? el('div', { class: 'pk-chk', text: '✓' })
+        : (ps.target != null ? el('div', { class: 'pk-prog', text: ps.count + '/' + ps.target }) : null),
+    ]);
+  });
+  node.replaceChildren(el('div', { class: 'pack' }, [
+    el('div', { class: 'p-head' }, [
+      el('div', { class: 'p-t', text: t.packTitle }),
+      el('div', { class: 'p-n', text: t.packOf(pk.done.length, pk.total) }),
+    ]),
+    el('div', { class: 'pk-cells' }, packItems),
+    el('div', { class: 'p-note', text: t.packNote }),
+  ]));
+}
+
+// Недельные цели пака = норма по разделам из выбранной цели плана
+function syncWeekTargets(p) {
+  if (!p || !p.hasDate || !p.chosen) return;
+  const tgt = {};
+  for (const sec of p.chosen.secs) if (EXAM.pack.includes(sec.id)) tgt[sec.id] = Math.ceil(sec.rem / p.weeks);
+  setWeekTargets(tgt);
+}
+
 async function fillPlanCard(node) {
   let p;
   try { p = await weeklyPlan(); } catch { return; }
   if (!p || !p.hasDate || p.past) return;   // нет даты / экзамен прошёл → без карточки
+  syncWeekTargets(p);
   if (p.allDone) {
     node.replaceChildren(el('button', { class: 'cd-card', onclick: () => { location.hash = '#plan'; } }, [
       el('img', { class: 'cd-img', src: './assets/spiky-thumb.png', alt: '' }),
@@ -264,6 +279,7 @@ async function renderPlan() {
   let p;
   try { p = await weeklyPlan(); } catch { goHome(); return; }
   if (!p || !p.hasDate) { goHome(); return; }
+  syncWeekTargets(p);
 
   const head = el('div', { class: 'sec-bar plan-bar' }, [
     el('button', { class: 'back', text: '←', onclick: goHome }),

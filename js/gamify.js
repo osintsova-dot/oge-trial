@@ -17,7 +17,8 @@ export const PACK_SECTIONS = [
 // Пороги XP для званий (названия — из strings по языку экзамена)
 const LEVEL_MINS = [0, 500, 1500, 3000, 5000, 8000];
 
-const DEFAULT = { name: '', streak: { count: 0, lastDay: null }, pack: { done: [] }, heroes: 0, xp: 0, theme: 'light', history: {}, skin: 'aurora', freezes: 0, perfectRounds: 0, maxStreak: 0, achieved: [], tokens: 0, redeemed: [], sound: true, examDate: null, onboarded: false, tipsSeen: [], planGoal: null };
+const DEFAULT = { name: '', streak: { count: 0, lastDay: null }, pack: { done: [] }, heroes: 0, xp: 0, theme: 'light', history: {}, skin: 'aurora', freezes: 0, perfectRounds: 0, maxStreak: 0, achieved: [], tokens: 0, redeemed: [], sound: true, examDate: null, onboarded: false, tipsSeen: [], planGoal: null,
+  week: { start: null, counts: {}, targets: {}, claimed: false } };
 
 // Реальные привилегии у учителя — покупаются за жетоны 🎟 (зарабатываются работой в приложении).
 // Список и цены — конфиг; меняются свободно.
@@ -153,12 +154,52 @@ export function availableSections() {
   const done = read().pack.done;
   return PACK_SECTIONS.filter((s) => !done.includes(s.key));
 }
+// Текущий недельный цикл пака (плавающие 7 дней от старта). Сбрасывает счётчики по истечении 7 дней.
+function currentWeek(s) {
+  const today = todayStr();
+  if (!s.week || !s.week.start || daysBetween(s.week.start, today) >= 7) {
+    s.week = { start: today, counts: {}, targets: (s.week && s.week.targets) || {}, claimed: false };
+  }
+  return s.week;
+}
+
+// Недельная цель раздела: из плана, иначе дефолт (чтобы пак работал и без даты/плана)
+function packTarget(w, id) {
+  if (w.targets && w.targets[id] != null) return w.targets[id];
+  const sec = EXAM.sections.find((x) => x.id === id);
+  return (sec && sec.type === 'writing') ? 2 : 10;
+}
+
+// Недельные цели пака по разделам (задаёт app из выбранной цели плана). {sectionId: tasksPerWeek}
+export function setWeekTargets(targets) {
+  const s = read();
+  const w = currentWeek(s);
+  w.targets = targets || {};
+  write(s);
+}
+
+// Статус пака недели: по каждому разделу из EXAM.pack — count/target/done; complete — собран ли весь.
 export function packStatus() {
-  const done = read().pack.done;
-  return {
-    done, total: EXAM.pack.length, ids: EXAM.pack,
-    complete: EXAM.pack.every((id) => done.includes(id)),
-  };
+  const s = read();
+  const w = currentWeek(s);
+  const ids = EXAM.pack;
+  const sections = ids.map((id) => {
+    const target = packTarget(w, id);
+    const count = w.counts[id] || 0;
+    return { id, count, target, done: count >= target };
+  });
+  const done = sections.filter((x) => x.done).map((x) => x.id);
+  return { done, total: ids.length, ids, sections, complete: done.length === ids.length, claimed: !!w.claimed };
+}
+
+// Засчитать задания раздела в недельный пак; вернуть {heroAwarded}. delta — число заданий (для письма =1).
+function bumpPack(s, section, delta) {
+  const w = currentWeek(s);
+  if (!EXAM.pack.includes(section)) return { heroAwarded: false };
+  w.counts[section] = (w.counts[section] || 0) + delta;
+  const allDone = EXAM.pack.every((id) => (w.counts[id] || 0) >= packTarget(w, id));
+  if (allDone && !w.claimed) { s.heroes += 1; w.claimed = true; return { heroAwarded: true }; }
+  return { heroAwarded: false };
 }
 
 // Засчитать завершённый раунд раздела. correct/total — для XP.
@@ -183,19 +224,14 @@ export function recordRound(section, correct, total) {
     if ((s.freezes || 0) < FREEZE_CAP) { s.freezes = (s.freezes || 0) + 1; freezeEarned = true; }
   }
 
-  // Пак: отметить раздел пройденным
-  let sectionNewlyDone = false;
-  if (EXAM.pack.includes(section) && !s.pack.done.includes(section)) {
-    s.pack.done.push(section);
-    sectionNewlyDone = true;
-  }
-  // Пак собран → Герой, сброс на новый круг
-  let heroAwarded = false;
-  if (EXAM.pack.every((id) => s.pack.done.includes(id))) {
-    s.heroes += 1;
-    s.pack.done = [];
-    heroAwarded = true;
-  }
+  // Пак недели: засчитать задания раздела к недельной норме (письмо считаем как 1 задание).
+  const isWriting = (EXAM.sections.find((x) => x.id === section) || {}).type === 'writing';
+  const w = currentWeek(s);
+  const secDoneBefore = EXAM.pack.includes(section) && (w.counts[section] || 0) >= packTarget(w, section);
+  const hero = bumpPack(s, section, isWriting ? 1 : total);
+  const heroAwarded = hero.heroAwarded;
+  const secDoneAfter = EXAM.pack.includes(section) && (w.counts[section] || 0) >= packTarget(w, section);
+  const sectionNewlyDone = !secDoneBefore && secDoneAfter;
 
   // Жетоны 🎟 за работу: +1 за собранный пак (Героя), +2 за веху серии
   let tokensEarned = 0;
