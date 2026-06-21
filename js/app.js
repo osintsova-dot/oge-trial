@@ -275,12 +275,11 @@ async function renderPlan() {
   if (p.allDone) {
     body.appendChild(el('div', { class: 'plan-done-msg', text: t.planAllDone }));
   } else {
-    // Выбор цели (3 уровня) с пометками ✅/⚠️/🔒
-    body.appendChild(el('div', { class: 'plan-choose-hdr', text: t.planChooseHdr }));
-    for (const tier of p.tiers) {
+    // Выбор цели (3 уровня) с пометками ✅/⚠️/🔒 — единой плашкой, отдельно от разделов
+    const goalCards = p.tiers.map((tier) => {
       const g = t.planGoals[tier.key];
       const active = tier.key === p.chosenKey;
-      body.appendChild(el('button', { class: 'goal-card' + (active ? ' on' : ''),
+      return el('button', { class: 'goal-card' + (active ? ' on' : ''),
         onclick: () => { setPlanGoal(tier.key); renderPlan(); } }, [
         el('div', { class: 'goal-main' }, [
           el('div', { class: 'goal-name' }, [g.name, tier.key === p.recommendedKey ? el('span', { class: 'goal-rec', text: ' · ' + t.planRecommended }) : null]),
@@ -290,8 +289,12 @@ async function renderPlan() {
           el('div', { class: 'goal-wk', text: tier.R ? t.planToCover(tier.weekly) : t.planMarkText.done }),
           el('div', { class: 'goal-mark ' + tier.status, text: t.planMark[tier.status] + ' ' + (tier.R ? t.planPerDay(tier.daily) : '') }),
         ]),
-      ]));
-    }
+      ]);
+    });
+    body.appendChild(el('div', { class: 'goal-group' }, [
+      el('div', { class: 'plan-choose-hdr', text: t.planChooseHdr }),
+      ...goalCards,
+    ]));
     const chosen = p.chosen;
     if (chosen.status === 'hard') body.appendChild(el('div', { class: 'plan-min-banner', text: t.planHardHint }));
 
