@@ -32,6 +32,10 @@
       <button class="btn btn-block" data-m="streak">🔥 Только: серия</button>
       <button class="btn btn-block" data-m="token">🎟 Только: жетон</button>
 
+      <h2>Достижения · тап открывает объяснение</h2>
+      <p class="hint">Нажми на любой значок — откроется карточка «за что». На повторяемых стоит счётчик (×5 = собрал пак 5 раз, 21 = рекорд серии). Это ДЕМО-данные, реальный прогресс не трогается.</p>
+      <div id="achgrid" class="ach-grid" style="margin-top:12px"></div>
+
       <h2>Звуки по отдельности</h2>
       <div class="row">
         <button class="btn" data-s="correct">✅ Верный</button>
@@ -45,8 +49,9 @@
 
   <script>window.EXAM = 'oge';</script>
   <script type="module">
-    import { celebrate } from './js/ui.js';
+    import { celebrate, el, iconImg, infoModal } from './js/ui.js';
     import { playCorrect, playWrong, playFanfare, playSparkle } from './js/sound.js';
+    import { t } from './js/exam.js';
 
     const NAME = 'Артём';
     const MOMENTS = {
@@ -62,6 +67,31 @@
 
     document.querySelectorAll('[data-m]').forEach((b) =>
       b.onclick = () => celebrate([MOMENTS[b.dataset.m]]));
+
+    // ДЕМО-достижения: фиксированные счётчики, реальный localStorage не трогаем
+    const A = t.ach;
+    const DEMO = [
+      { id: 'first',       icon: '🐣', done: true },
+      { id: 'perfect',     icon: '✨', done: true,  badge: '×3',  rep: A.perfect.rep(3) },
+      { id: 'hero',        icon: '🦸', done: true,  badge: '×5',  rep: A.hero.rep(5) },
+      { id: 'hundred',     icon: '💯', done: false },
+      { id: 'week',        icon: '📅', done: true,  badge: '21',  rep: A.week.rep(21) },
+      { id: 'gold',        icon: '👑', done: true,  badge: '×2',  rep: A.gold.rep(2) },
+      { id: 'fivehundred', icon: '🔥', done: false },
+      { id: 'frosty',      icon: '🧊', done: true },
+    ];
+    const grid = document.getElementById('achgrid');
+    DEMO.forEach((a) => grid.appendChild(
+      el('div', { class: 'ach' + (a.done ? '' : ' off'),
+        onclick: () => infoModal({
+          iconName: 'ach-' + a.id, icon: a.icon, title: A[a.id].title, text: A[a.id].how,
+          note: a.done ? (a.rep || null) : null,
+          status: { done: a.done, label: a.done ? t.achGot : t.achLocked },
+        }) }, [
+        a.badge ? el('span', { class: 'ach-badge', text: a.badge }) : null,
+        el('div', { class: 'ach-ic' }, [iconImg('ach-' + a.id, a.icon, 'ach-img')]),
+        el('div', { class: 'ach-t', text: A[a.id].title }),
+      ])));
 
     const SOUNDS = { correct: playCorrect, wrong: playWrong, fanfare: playFanfare, sparkle: playSparkle };
     document.querySelectorAll('[data-s]').forEach((b) =>

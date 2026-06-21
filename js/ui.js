@@ -114,3 +114,21 @@ export function celebrate(moments, onDone) {
   render();
   document.body.appendChild(overlay);
 }
+
+// Простая модалка-объяснение: иконка + заголовок + текст + статус-бейдж.
+// opts: { iconName, icon, title, text, status:{label,done} }
+export function infoModal(opts) {
+  const back = el('div', { class: 'modal-back' });
+  const close = () => back.remove();
+  back.addEventListener('click', (e) => { if (e.target === back) close(); });
+  const card = el('div', { class: 'modal-card' + (opts.status && !opts.status.done ? ' locked' : '') }, [
+    el('div', { class: 'modal-ic' }, [iconImg(opts.iconName, opts.icon, 'modal-img')]),
+    el('div', { class: 'modal-title', text: opts.title }),
+    el('div', { class: 'modal-text', text: opts.text }),
+    opts.note ? el('div', { class: 'modal-note', text: opts.note }) : null,
+    opts.status ? el('div', { class: 'modal-status ' + (opts.status.done ? 'done' : 'locked'), text: opts.status.label }) : null,
+    el('button', { class: 'btn btn-honey btn-block', style: { marginTop: '18px' }, text: t.modalClose, onclick: close }),
+  ]);
+  back.appendChild(card);
+  document.body.appendChild(back);
+}

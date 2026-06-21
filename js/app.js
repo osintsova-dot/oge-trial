@@ -1,7 +1,7 @@
 // app.js — оболочка: hash-роутер, splash, главная, прогресс, награды, тема.
 // Экзамен-независимая: структура из exam.js (EXAM), тексты из strings (t).
 
-import { el, mount, iconImg } from './ui.js';
+import { el, mount, iconImg, infoModal } from './ui.js';
 import { loadJSON } from './data.js';
 import { sectionStats, writingStats, resetAll } from './progress.js';
 import { getState, levelInfo, packStatus, streakActiveToday,
@@ -245,7 +245,12 @@ async function renderProgress() {
     ]),
     el('div', { class: 'prog-section-title', text: t.achTitle }),
     el('div', { class: 'ach-grid' }, achievementsStatus().map((a) =>
-      el('div', { class: 'ach' + (a.done ? '' : ' off'), title: a.desc }, [
+      el('div', { class: 'ach' + (a.done ? '' : ' off'), title: a.desc,
+        onclick: () => infoModal({
+          iconName: 'ach-' + a.id, icon: a.icon, title: a.title, text: a.how, note: a.done ? a.rep : null,
+          status: { done: a.done, label: a.done ? t.achGot : t.achLocked },
+        }) }, [
+        a.badge ? el('span', { class: 'ach-badge', text: a.badge }) : null,
         el('div', { class: 'ach-ic' }, [iconImg('ach-' + a.id, a.icon, 'ach-img')]),
         el('div', { class: 'ach-t', text: a.title }),
       ]))),
