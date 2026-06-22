@@ -192,7 +192,9 @@ function currentWeek(s) {
 function packTarget(w, id) {
   if (w.targets && w.targets[id] != null) return w.targets[id];
   const sec = EXAM.sections.find((x) => x.id === id);
-  return (sec && sec.type === 'writing') ? 2 : 10;
+  if (sec && sec.type === 'writing') return 2;
+  if (sec && sec.type === 'speaking') return 3; // говорение — мягкая недельная норма
+  return 10;
 }
 
 // Недельные цели пака по разделам (задаёт app из выбранной цели плана). {sectionId: tasksPerWeek}

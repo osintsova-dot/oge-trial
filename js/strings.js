@@ -110,6 +110,7 @@ export const STRINGS = {
       surveyQs: 'Вопросы и образцы ответов',
       listenNative: 'Послушать носителя по теме',
       randomTask: 'Случайное задание',
+      surveyCard: (th) => 'Опрос: ' + th,
       doneOf: (d, n) => `${d}/${n} выполнено`,
       catLabel: (k) => ({ read: 'Чтение вслух', survey: 'Телефонный опрос', monologue: 'Монолог' }[k] || ''),
       recStart: '🎤 Записать', recStop: '⏹ Стоп', recAgain: '↺ Перезаписать',
@@ -191,6 +192,7 @@ export const STRINGS = {
     // progress
     progTitle: 'Мой прогресс', bySection: 'По разделам',
     solved: (a, c) => `решено ${a} · верно ${c}`, noSolved: 'пока нет решённых заданий',
+    progDone: (d, m) => `пройдено ${d} из ${m}`,
     avgTitle: 'Средний балл за письма', avgSub: (n) => `проверено писем: ${n}`, avgCrit: 'по критериям К1–К4',
     achTitle: 'Достижения', changeName: 'Изменить имя', reset: 'Сбросить',
     resetConfirm: 'Сбросить весь прогресс на этом устройстве?',
@@ -457,6 +459,7 @@ export const STRINGS = {
     // progress
     progTitle: 'My progress', bySection: 'By section',
     solved: (a, c) => `done ${a} · correct ${c}`, noSolved: 'no tasks solved yet',
+    progDone: (d, m) => `${d} of ${m} done`,
     avgTitle: 'Average writing score', avgSub: (n) => `essays checked: ${n}`, avgCrit: 'by the official criteria',
     achTitle: 'Achievements', changeName: 'Change name', reset: 'Reset',
     resetConfirm: 'Reset all progress on this device?',

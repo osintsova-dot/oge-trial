@@ -8,7 +8,8 @@ import { getState, levelInfo, levelTable, packStatus, streakActiveToday,
   applyTheme, getTheme, setTheme, getName, setName, getSound, setSound,
   dailyDigest, skinsStatus, setSkin, applySkin, achievementsStatus,
   getTokens, perksStatus, redeemPerk, recentRedeemed,
-  getExamDate, setExamDate, isOnboarded, setOnboarded, examInfo, setPlanGoal, setWeekTargets } from './gamify.js';
+  getExamDate, setExamDate, isOnboarded, setOnboarded, examInfo, setPlanGoal, setWeekTargets,
+  getListeningDone, getSpeakingDone } from './gamify.js';
 import { EXAM, t, sectionById, plural } from './exam.js';
 import { dailyProgress, themeStats } from './vocab_srs.js';
 import { weeklyPlan } from './planner.js';
@@ -395,7 +396,35 @@ async function renderProgress() {
       el('div', { class: 'pr-meta', text: s.attempted ? t.solved(s.attempted, s.correct) : t.noSolved }),
     ]);
   };
-  const drillSecs = EXAM.sections.filter((s) => s.type === 'drill' || s.type === 'reading' || s.type === 'listening');
+  const drillSecs = EXAM.sections.filter((s) => s.type === 'drill' || s.type === 'reading');
+
+  // Разделы без «процента верных» (аудирование/говорение) — показываем «пройдено N из M».
+  const doneRow = (sec, done, total) => {
+    const p = total ? pct(done, total) : 0;
+    const c = accColor(p);
+    return el('button', { class: 'prog-row', onclick: () => { location.hash = '#/' + sec.id; } }, [
+      el('div', { class: 'pr-top' }, [
+        el('div', { class: 'pr-ic' }, [iconImg('ic-' + (sec.iconKey || sec.tile), sec.icon, 'pr-img')]),
+        el('div', { class: 'pr-name', text: t.sections[sec.id] }),
+        el('div', { class: 'pr-pct', style: { color: c }, text: done + '/' + total }),
+      ]),
+      el('div', { class: 'pr-bar' }, [el('i', { style: { width: p + '%', background: c } })]),
+      el('div', { class: 'pr-meta', text: done ? t.progDone(done, total) : t.noSolved }),
+    ]);
+  };
+  const doneRows = [];
+  const lSec = EXAM.sections.find((s) => s.type === 'listening');
+  if (lSec) {
+    const ld = await loadJSON(lSec.dataFile).catch(() => null);
+    const ltot = ld && ld.groups ? ld.groups.length : 0;
+    doneRows.push(doneRow(lSec, Object.keys(getListeningDone()).length, ltot));
+  }
+  const spSec = EXAM.sections.find((s) => s.type === 'speaking');
+  if (spSec) {
+    const sd = await loadJSON(spSec.dataFile).catch(() => null);
+    const stot = sd ? ((sd.read || []).length + (sd.survey || []).length + (sd.monologue || []).length) : 0;
+    doneRows.push(doneRow(spSec, Object.keys(getSpeakingDone()).length, stot));
+  }
 
   mount(view, el('div', { class: 'wrap view' }, [
     el('div', { class: 'prog-head' }, [el('div', { class: 'ph-title', text: t.progTitle }), themeBtn()]),
@@ -406,7 +435,7 @@ async function renderProgress() {
     ]),
     vocabCard,
     el('div', { class: 'prog-section-title', text: t.bySection }),
-    el('div', { class: 'prog-rows' }, drillSecs.map(progRow)),
+    el('div', { class: 'prog-rows' }, [...drillSecs.map(progRow), ...doneRows]),
     el('button', { class: 'avg-card', onclick: () => { const ws = EXAM.sections.find((s) => s.type === 'writing'); location.hash = '#/' + (ws ? ws.id : 'writing'); } }, [
       el('div', { class: 'a-ic' }, [iconImg('ic-writing', '✉️', 'a-img')]),
       el('div', { style: { flex: '1' } }, [

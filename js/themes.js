@@ -17,6 +17,14 @@ export async function themeName(themeKey) {
   return (th && th.ru) || '';
 }
 
+// Карта всех тем { key: ru-название } (для подписей списков).
+export async function allThemeNames() {
+  const all = await loadThemes();
+  const out = {};
+  for (const k in all) out[k] = all[k].ru || k;
+  return out;
+}
+
 // zid-наборы заданий темы для текущего экзамена: { writing:Set, reading:Set, name }
 export async function themeZids(themeKey) {
   const th = (await loadThemes())[themeKey];

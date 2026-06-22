@@ -19,7 +19,7 @@ const CONFIGS = {
       { id: 'writing',  type: 'writing', tile: 'writing', icon: '✉️' },
       { id: 'speaking', type: 'speaking', dataFile: 'oge_speaking', tile: 'speaking', iconKey: 'speaking', icon: '🎤' },
     ],
-    pack: ['grammar', 'wordform', 'reading', 'listening', 'writing'],
+    pack: ['grammar', 'wordform', 'reading', 'listening', 'writing', 'speaking'],
     soonTile: false,
     // Письмо ОГЭ — одно задание (личное письмо, задание 35, К1–К4, макс 10)
     writing: {

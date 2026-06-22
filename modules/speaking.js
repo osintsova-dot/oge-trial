@@ -7,7 +7,7 @@ import { loadJSON } from '../js/data.js';
 import { recordRound, getName, getSpeakingDone, markSpeakingDone } from '../js/gamify.js';
 import { speak, canSpeak, pauseSpeak, resumeSpeak, stopSpeak } from '../js/speak.js';
 import { getActiveTheme } from '../js/vocab_srs.js';
-import { themeName } from '../js/themes.js';
+import { themeName, allThemeNames } from '../js/themes.js';
 import { t } from '../js/exam.js';
 import { tipButton, autoTipOnce } from '../js/tips.js';
 
@@ -41,10 +41,13 @@ export async function renderSpeaking(container, cfg) {
     ]);
   }
 
-  // подпись карточки задания в списке (для монолога — тема, иначе — фрагмент)
-  function cardLabel(kind, item) {
+  // подпись карточки задания в списке (монолог — тема; опрос — «Опрос: тема»; чтение — фрагмент)
+  function cardLabel(kind, item, names) {
     if (kind === 'monologue') return cap(item.topic || '');
-    if (kind === 'survey') return shorten(item.questions && item.questions[0] || '', 56);
+    if (kind === 'survey') {
+      const th = names && names[item.theme];
+      return th ? S.surveyCard(th) : shorten(item.questions && item.questions[0] || '', 56);
+    }
     return shorten(item.text || '', 56);
   }
   function cap(s) { return s ? s[0].toUpperCase() + s.slice(1) : s; }
@@ -81,14 +84,14 @@ export async function renderSpeaking(container, cfg) {
     const cat = CATS.find((c) => c.key === kind);
     const arr = cat.arr;
     const doneMap = getSpeakingDone();
-    let active = '', activeName = '';
-    try { active = getActiveTheme(); activeName = active ? await themeName(active) : ''; } catch {}
+    let active = '', activeName = '', names = {};
+    try { active = getActiveTheme(); activeName = active ? await themeName(active) : ''; names = await allThemeNames(); } catch {}
 
     const taskBtn = (it, i) => {
       const isDone = !!doneMap[kind + ':' + it.zid];
       return el('button', { class: 'sp-item' + (isDone ? ' done' : ''), onclick: () => startTask(kind, it) }, [
         el('span', { class: 'sp-item-n', text: '№ ' + (i + 1) }),
-        el('span', { class: 'sp-item-t', text: cardLabel(kind, it) }),
+        el('span', { class: 'sp-item-t', text: cardLabel(kind, it, names) }),
         el('span', { class: 'sp-item-chk', text: isDone ? '✓' : '' }),
       ]);
     };
