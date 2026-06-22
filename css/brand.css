@@ -803,6 +803,7 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .ls-rubrics{margin:0 0 12px;padding-left:22px;font-size:13.5px;line-height:1.6;color:var(--ink)}
 .ls-rubrics li{margin-bottom:2px}
 .ls-mrows{display:flex;flex-direction:column;gap:8px}
+.ls-mitem{display:flex;flex-direction:column;gap:4px}
 .ls-mrow{display:flex;align-items:center;gap:10px}
 .ls-letter{width:28px;height:28px;border-radius:8px;background:var(--grad-listening);color:#fff;
   display:flex;align-items:center;justify-content:center;font-weight:800;flex:none}

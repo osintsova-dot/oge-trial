@@ -131,6 +131,16 @@ export async function renderListening(container, cfg) {
     const qNodes = [];   // { q, type, getResult, mark(correct, key) , inputs }
     const qWrap = el('div', { class: 'ls-questions' });
 
+    // «🔊 В записи: «предложение»» (тап → переслушать) — заполняет переданный контейнер
+    function fillSrc(container, ev) {
+      if (!ev) return;
+      container.replaceChildren(
+        el('span', { class: 'ls-src-lbl', text: L.source + ': ' }),
+        el('button', { class: 'ls-src-q', onclick: () => { try { audio.currentTime = ev.s; audio.play(); } catch {} } }, ['« ', ev.t, ' »']),
+      );
+      container.style.display = 'block';
+    }
+
     // номер = позиция в варианте (= номер задания ФИПИ: 1-4 выбор, 5 соответствие, 6-11 вписать)
     group.questions.forEach((q, i) => {
       const n = i + 1;
@@ -150,11 +160,12 @@ export async function renderListening(container, cfg) {
         sel.appendChild(el('option', { value: '', text: L.pick }));
         q.rubrics.forEach((_, ri) => sel.appendChild(el('option', { value: String(ri + 1), text: String(ri + 1) })));
         const verdict = el('span', { class: 'ls-cv', style: { display: 'none' } });
-        const row = el('div', { class: 'ls-mrow' }, [
-          el('div', { class: 'ls-letter', text: sp }),
-          sel, verdict,
+        const src = el('div', { class: 'ls-src', style: { display: 'none' } });
+        const row = el('div', { class: 'ls-mitem' }, [
+          el('div', { class: 'ls-mrow' }, [el('div', { class: 'ls-letter', text: sp }), sel, verdict]),
+          src,
         ]);
-        return { sp, sel, verdict, row };
+        return { sp, sel, verdict, row, src };
       });
       qNodes.push({
         type: 'match', zid: q.zid, key: q.key, kes: q.kes, rows,
@@ -169,6 +180,7 @@ export async function renderListening(container, cfg) {
             r.verdict.className = 'ls-cv ' + (ok ? 'ok' : 'bad');
             r.verdict.textContent = ok ? '✓' : ('✕ ' + want);
             r.verdict.style.display = 'inline-block';
+            fillSrc(r.src, (q.evs || []).find((e) => e.label === r.sp));
           });
         },
       });
@@ -260,12 +272,13 @@ export async function renderListening(container, cfg) {
           return b;
         });
         const verdict = el('div', { class: 'ls-cv block', style: { display: 'none' } });
+        const src = el('div', { class: 'ls-src', style: { display: 'none' } });
         const row = el('div', { class: 'tfns-row' }, [
           el('div', { class: 'tfns-head' }, [el('span', { class: 'tfns-letter', text: st.letter }), el('span', { class: 'tfns-st', text: st.text })]),
           el('div', { class: 'tfns-opts' }, btns),
-          verdict,
+          verdict, src,
         ]);
-        return { state, btns, verdict, row };
+        return { state, btns, verdict, row, src, st };
       });
       qNodes.push({
         type: 'tfns', zid: q.zid, key: q.key, kes: q.kes,
@@ -277,6 +290,7 @@ export async function renderListening(container, cfg) {
             r.verdict.className = 'ls-cv block ' + (ok ? 'ok' : 'bad');
             r.verdict.textContent = ok ? '✓' : ('✕ ' + labels[Number(want) - 1]);
             r.verdict.style.display = 'block';
+            fillSrc(r.src, (q.evs || []).find((e) => e.label === r.st.letter));
           });
         },
       });
@@ -329,6 +343,7 @@ export async function renderListening(container, cfg) {
     const evMap = {};
     group.questions.forEach((q, i) => {
       if (q.ev && q.ev.s != null) (evMap[q.ev.s] = evMap[q.ev.s] || []).push(i + 1);
+      if (q.evs) q.evs.forEach((e) => { if (e.s != null) (evMap[e.s] = evMap[e.s] || []).push(e.label); });
     });
     const lines = (group.transcript || []).map((seg) => {
       const nums = evMap[seg.s];

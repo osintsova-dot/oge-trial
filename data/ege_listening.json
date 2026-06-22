@@ -32,7 +32,10 @@
       "She wanted to overcome the stage fright"
      ],
      "key": "2",
-     "ev": null,
+     "ev": {
+      "s": 152.9,
+      "t": "I found that being on stage I felt this is home."
+     },
      "kes": "1.2.3"
     },
     {
@@ -45,7 +48,10 @@
       "She thinks David Lynch is the best director"
      ],
      "key": "1",
-     "ev": null,
+     "ev": {
+      "s": 184.9,
+      "t": "Well, speaking about working with good directors that has always been a certain kiss met with me."
+     },
      "kes": "1.2.3"
     },
     {
@@ -1374,7 +1380,10 @@
       "Creating outlines before every draft"
      ],
      "key": "3",
-     "ev": null,
+     "ev": {
+      "s": 252.7,
+      "t": "That it's easy, that anyone can write a book, that everyone has a story. Sorry, that's three. The top misconception is probably that it's quick. It's not. Even if you're lucky enough to write one book, get representation from an agent and a publishing deal, it could be years before that book hits the shelves."
+     },
      "kes": "1.2.3"
     },
     {
@@ -1413,7 +1422,10 @@
       "They never mention getting published"
      ],
      "key": "1",
-     "ev": null,
+     "ev": {
+      "s": 218.7,
+      "t": "I think writers can offer a completely different perspective to editors and agents. Agents and editors can talk about the process, the mechanics of getting published. But only authors can talk about the emotions involved. We know how it feels to be rejected and to doubt ourselves, and we can share the joys too."
+     },
      "kes": "1.2.3"
     },
     {
@@ -1692,7 +1704,10 @@
       "It made her feel like a writer"
      ],
      "key": "3",
-     "ev": null,
+     "ev": {
+      "s": 103.7,
+      "t": "Honestly, it's sort of surreal. Everyone who wants to be a writer imagines the day they'll finally hold their finished book in their hands. Part of you believes it will never happen, so when that day finally arrives, it's a strange feeling."
+     },
      "kes": "1.2.3"
     },
     {
@@ -2185,7 +2200,10 @@
       "Support shows"
      ],
      "key": "3",
-     "ev": null,
+     "ev": {
+      "s": 263.7,
+      "t": "But bad shows, it's always the support shows, isn't it?"
+     },
      "kes": "1.2.3"
     }
    ],
@@ -3204,7 +3222,10 @@
       "London has more prestigious roles than the USA"
      ],
      "key": "2",
-     "ev": null,
+     "ev": {
+      "s": 277.1,
+      "t": "How long will you be performing in London and what comes next for you after the ghost?"
+     },
      "kes": "1.2.3"
     },
     {
@@ -3664,7 +3685,7 @@
    "cat": "mc",
    "guid": "9ED00DA6348C96BD4AA3F76D1314A32D",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/9ED00DA6348C96BD4AA3F76D1314A32D/img1_1562919195.mp3",
-   "duration": 0,
+   "duration": 510.6,
    "questions": [
     {
      "zid": "0FAA9F",
@@ -3741,7 +3762,10 @@
       "Keeping the novel not too long"
      ],
      "key": "2",
-     "ev": null,
+     "ev": {
+      "s": 211.2,
+      "t": "There were certainly challenges. The biggest one is that you have to leave your readers enough clues so that they can figure out what's going on."
+     },
      "kes": "1.2.3"
     },
     {
@@ -3758,14 +3782,240 @@
      "kes": "1.2.3"
     }
    ],
-   "transcript": []
+   "transcript": [
+    {
+     "s": 76.9,
+     "e": 91.2,
+     "t": "Good afternoon everyone and here we are in the studio talking to Alice Black, a young writer who has just published her first novel Starz and it has already become an international bestseller. Hello Alice."
+    },
+    {
+     "s": 91.2,
+     "e": 96.2,
+     "t": "Good afternoon. It's such a pleasure being here. Thank you for inviting me."
+    },
+    {
+     "s": 96.2,
+     "e": 102.2,
+     "t": "Before we start to discuss your novel, will you please tell the listeners a bit about yourself?"
+    },
+    {
+     "s": 102.2,
+     "e": 121.2,
+     "t": "Of course, I grew up in Michigan and received my BA in Creative Writing from the University of Michigan. In my freshman year I won a Hopwood Award for my fiction. Then my short fiction appeared in various publications. I live in Washington DC and I work for the National Geographic Society Library."
+    },
+    {
+     "s": 121.2,
+     "e": 128.2,
+     "t": "Some of our listeners might not know much about your novel Starz. Could you please tell us about it in brief?"
+    },
+    {
+     "s": 129.2,
+     "e": 139.2,
+     "t": "Well, the novel is written as a series of emails from the narrator, a botany professor and mother of two named Jessica, who was married to the chief of a space tourism company."
+    },
+    {
+     "s": 139.2,
+     "e": 148.2,
+     "t": "When the novel opens, a tragic accident has just happened. One of the company's shuttles has exploded shortly after liftoff and everyone on board has been killed."
+    },
+    {
+     "s": 148.2,
+     "e": 163.2,
+     "t": "So in her emails, Jessica narrates what follows the tragedy, the media frenzy that follows the accidents after math, the impact on her marriage, the revelations about the company and the fact that she doesn't know her husband Liam as well as she thought she did."
+    },
+    {
+     "s": 163.2,
+     "e": 176.2,
+     "t": "The person she is emailing is a man named Arthur, her friend and colleague, who is out of the country on sabbatical. But as the novel goes on, the reader slowly realizes that Jess and Arthur's relationship has its own complicated history."
+    },
+    {
+     "s": 176.2,
+     "e": 183.2,
+     "t": "The format of your novel is quite unusual. Was it your original plan to write the novel in this way?"
+    },
+    {
+     "s": 183.2,
+     "e": 193.2,
+     "t": "Definitely not. It was never part of my plan to write an epistolary novel. When I started writing the novel, it was just Jessica's voice in my head and she was confiding to someone."
+    },
+    {
+     "s": 193.2,
+     "e": 203.2,
+     "t": "I hadn't made a concrete decision about the form I was going to use. The idea to structure the story as a private email communication came later, but it seemed to fit the intimate tone perfectly."
+    },
+    {
+     "s": 203.2,
+     "e": 211.2,
+     "t": "Once that decision has been made to use the style, was it a challenge to maintain it or was it just something you adopted to?"
+    },
+    {
+     "s": 211.2,
+     "e": 218.2,
+     "t": "There were certainly challenges. The biggest one is that you have to leave your readers enough clues so that they can figure out what's going on."
+    },
+    {
+     "s": 218.2,
+     "e": 226.2,
+     "t": "To follow what the letter or in this case, email, writers are referring to. But you also don't want to have the narrator over-explaining things."
+    },
+    {
+     "s": 226.2,
+     "e": 233.2,
+     "t": "You need to maintain the illusion of eavesdropping on a conversation, which is one of the great appeals of the epistolary form."
+    },
+    {
+     "s": 233.2,
+     "e": 240.2,
+     "t": "I've always been very much interested in the writer's daily routine. What's a typical writing day for you?"
+    },
+    {
+     "s": 240.2,
+     "e": 249.2,
+     "t": "I work a 9 to 5 job and I try to squeeze some writing time after work, a couple of nights during the week, but the solid majority of my writing takes place at the weekend."
+    },
+    {
+     "s": 249.2,
+     "e": 257.2,
+     "t": "I typically get up in the morning, drink an unhealthy amount of coffee, and try to get to my desk before I get distracted by other things I have to do."
+    },
+    {
+     "s": 257.2,
+     "e": 263.2,
+     "t": "I work until lunch, and if I'm feeling motivated, I'll try to get another hour or two of writing in the afternoon."
+    },
+    {
+     "s": 263.2,
+     "e": 267.2,
+     "t": "Thank you Alice. It has been very interesting talking with you."
+    },
+    {
+     "s": 267.2,
+     "e": 273.4,
+     "t": "Thank you. I'll be happy to come to your program once more, really."
+    },
+    {
+     "s": 295.2,
+     "e": 307.2,
+     "t": "Good afternoon everyone, and here we are in the studio talking to Alice Black, a young writer who has just published her first novel, Stars, and it has already become an international bestseller."
+    },
+    {
+     "s": 307.2,
+     "e": 308.2,
+     "t": "Hello Alice."
+    },
+    {
+     "s": 308.2,
+     "e": 313.2,
+     "t": "Good afternoon. It's such a pleasure being here. Thank you for inviting me."
+    },
+    {
+     "s": 313.2,
+     "e": 319.2,
+     "t": "Before we start to discuss your novel, will you please tell the listeners a bit about yourself?"
+    },
+    {
+     "s": 319.2,
+     "e": 329.2,
+     "t": "Of course. I grew up in Michigan and received my BA in creative writing from the University of Michigan. In my freshman year, I won a Hopwood Award for my fiction."
+    },
+    {
+     "s": 329.2,
+     "e": 338.2,
+     "t": "Then, my short fiction appeared in various publications. I live in Washington, DC, and I work for the National Geographic Society Library."
+    },
+    {
+     "s": 338.2,
+     "e": 345.2,
+     "t": "Some of our listeners might not know much about your novel, Stars. Could you please tell us about it in brief?"
+    },
+    {
+     "s": 345.2,
+     "e": 355.2,
+     "t": "Well, the novel is written as a series of emails from the narrator, a botany professor and mother of two named Jessica, who was married to the chief of a space tourism company."
+    },
+    {
+     "s": 355.2,
+     "e": 365.2,
+     "t": "When the novel opens, a tragic accident has just happened. One of the company's shuttles has exploded shortly after liftoff, and everyone on board has been killed."
+    },
+    {
+     "s": 365.2,
+     "e": 380.2,
+     "t": "So in her emails, Jessica narrates what follows the tragedy, the media frenzy that follows the accidents after math, the impact on her marriage, the revelations about the company and the fact that she doesn't know her husband Liam as well as she thought she did."
+    },
+    {
+     "s": 380.2,
+     "e": 393.2,
+     "t": "The person she is emailing is a man named Arthur, her friend and colleague, who is out of the country on sabbatical. But as the novel goes on, the reader slowly realizes that Jess and Arthur's relationship has its own complicated history."
+    },
+    {
+     "s": 393.2,
+     "e": 401.2,
+     "t": "The format of your novel is quite unusual. Was it your original plan to write the novel in this way?"
+    },
+    {
+     "s": 401.2,
+     "e": 410.2,
+     "t": "Definitely not. It was never part of my plan to write an epistolary novel. When I started writing the novel, it was just Jessica's voice in my head, and she was confiding to someone."
+    },
+    {
+     "s": 410.2,
+     "e": 421.2,
+     "t": "I hadn't made a concrete decision about the form I was going to use. The idea to structure the story as a private email communication came later, but it seemed to fit the intimate tone perfectly."
+    },
+    {
+     "s": 421.2,
+     "e": 429.2,
+     "t": "Once that decision has been made to use this style, was it a challenge to maintain it, or was it just something you adopted to?"
+    },
+    {
+     "s": 429.2,
+     "e": 440.2,
+     "t": "There were certainly challenges. The biggest one is that you have to leave your readers enough clues so that they can figure out what's going on, to follow what the letter, or in this case, email, writers are referring to."
+    },
+    {
+     "s": 440.2,
+     "e": 450.2,
+     "t": "But you also don't want to have the narrator over explaining things. You need to maintain the illusion of eavesdropping on a conversation, which is one of the great appeals of the epistolary form."
+    },
+    {
+     "s": 450.2,
+     "e": 457.2,
+     "t": "I've always been very much interested in the writer's daily routine. What's a typical writing day for you?"
+    },
+    {
+     "s": 457.2,
+     "e": 466.2,
+     "t": "I work a nine to five job, and I try to squeeze some writing time after work, a couple of nights during the week, but the solid majority of my writing takes place at the weekend."
+    },
+    {
+     "s": 466.2,
+     "e": 474.2,
+     "t": "I typically get up in the morning, drink an unhealthy amount of coffee, and try to get to my desk before I get distracted by other things I have to do."
+    },
+    {
+     "s": 474.2,
+     "e": 480.2,
+     "t": "I work until lunch, and if I'm feeling motivated, I'll try to get another hour or two of writing in the afternoon."
+    },
+    {
+     "s": 480.2,
+     "e": 484.2,
+     "t": "Thank you Alice. It has been very interesting talking with you."
+    },
+    {
+     "s": 484.2,
+     "e": 490.4,
+     "t": "Thank you. I'll be happy to come to your program once more, really."
+    }
+   ]
   },
   {
    "id": "mc8",
    "cat": "mc",
    "guid": "5F63810D90BDB47742247752EDCEFA1B",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/5F63810D90BDB47742247752EDCEFA1B/img1_1689774540.mp3",
-   "duration": 0,
+   "duration": 580.0,
    "questions": [
     {
      "zid": "857F12",
@@ -3855,11 +4105,590 @@
       "Dogs fight with people in the story"
      ],
      "key": "1",
-     "ev": null,
+     "ev": {
+      "s": 242.3,
+      "t": "The story has the dogs of the main characters"
+     },
      "kes": "1.2.3"
     }
    ],
-   "transcript": []
+   "transcript": [
+    {
+     "s": 72.9,
+     "e": 79.3,
+     "t": "Hello everybody and welcome to our weekly program, the Writers Workshop."
+    },
+    {
+     "s": 79.3,
+     "e": 86.8,
+     "t": "Today in our studio we have Stacey Swan, a prize-winning short fiction writer, an editor and an educator."
+    },
+    {
+     "s": 86.8,
+     "e": 88.8,
+     "t": "Hello Stacey."
+    },
+    {
+     "s": 88.8,
+     "e": 92.8,
+     "t": "Good afternoon. Thank you for inviting me here today."
+    },
+    {
+     "s": 92.8,
+     "e": 98.8,
+     "t": "You're currently spending much time editing other writers' work for American short fiction."
+    },
+    {
+     "s": 98.8,
+     "e": 100.8,
+     "t": "How does it affect your own work?"
+    },
+    {
+     "s": 100.8,
+     "e": 107.8,
+     "t": "I think my time at American short fiction had a huge impact on my learning curve as a writer."
+    },
+    {
+     "s": 107.8,
+     "e": 112.3,
+     "t": "I started volunteering as a reader there while I was still in grad school,"
+    },
+    {
+     "s": 112.3,
+     "e": 117.3,
+     "t": "and for the next seven years or so I read dozens of submissions a month."
+    },
+    {
+     "s": 117.3,
+     "e": 124.3,
+     "t": "For some reason it is so much easier to see the flaws in our own work after we've seen them in someone else's."
+    },
+    {
+     "s": 124.3,
+     "e": 130.8,
+     "t": "My primary agenda though was always whether or not I thought the story would be a good fit for the journal,"
+    },
+    {
+     "s": 130.8,
+     "e": 136.3,
+     "t": "but subconsciously I was probably filing away plenty of things to steal."
+    },
+    {
+     "s": 136.3,
+     "e": 140.3,
+     "t": "As a writer what do you think about drafting and drafts?"
+    },
+    {
+     "s": 140.3,
+     "e": 146.8,
+     "t": "I teach a course of creative writing at university and I always tell my writing students"
+    },
+    {
+     "s": 146.8,
+     "e": 154.3,
+     "t": "that while they are drafting they should lock their internal critic in the trunk of their car and just drive."
+    },
+    {
+     "s": 154.3,
+     "e": 158.3,
+     "t": "I find revision easier and more enjoyable than drafting"
+    },
+    {
+     "s": 158.3,
+     "e": 163.3,
+     "t": "and that's mostly because the internal critic is so bad while I draft."
+    },
+    {
+     "s": 163.3,
+     "e": 167.8,
+     "t": "If I don't put him away he'll drive me away from the computer."
+    },
+    {
+     "s": 167.8,
+     "e": 170.8,
+     "t": "You must be doing a lot of editing later then."
+    },
+    {
+     "s": 170.8,
+     "e": 174.8,
+     "t": "Of course my first drafts are huge messes"
+    },
+    {
+     "s": 174.8,
+     "e": 180.3,
+     "t": "and it can take me multiple revisions to even pin down the basic plot arc."
+    },
+    {
+     "s": 180.3,
+     "e": 185.3,
+     "t": "I used to think revision was 100% about the critical brain"
+    },
+    {
+     "s": 185.3,
+     "e": 188.8,
+     "t": "because that's the only part I use when editing others."
+    },
+    {
+     "s": 188.8,
+     "e": 193.8,
+     "t": "I certainly wouldn't want to let my free writing brain loose on someone else's work"
+    },
+    {
+     "s": 193.8,
+     "e": 198.3,
+     "t": "but I'm starting to think there may be room for it when I revise my own."
+    },
+    {
+     "s": 198.3,
+     "e": 202.8,
+     "t": "Your recent story The Pull has enjoyed tremendous success."
+    },
+    {
+     "s": 202.8,
+     "e": 206.3,
+     "t": "Why do you think the readers loved it so much?"
+    },
+    {
+     "s": 206.3,
+     "e": 213.3,
+     "t": "Well I tend to explain it by the fact that the story traps together two incompatible characters"
+    },
+    {
+     "s": 213.3,
+     "e": 216.3,
+     "t": "though I can't say I did it on purpose."
+    },
+    {
+     "s": 216.8,
+     "e": 218.8,
+     "t": "When it comes to drafting fiction"
+    },
+    {
+     "s": 218.8,
+     "e": 224.8,
+     "t": "I always like to say that my subconsciousness is way smarter than my conscious brain."
+    },
+    {
+     "s": 224.8,
+     "e": 228.3,
+     "t": "I didn't set out to make the central characters incompatible"
+    },
+    {
+     "s": 228.3,
+     "e": 233.3,
+     "t": "but I suspect that my subconsciousness after so many years of writing"
+    },
+    {
+     "s": 233.3,
+     "e": 236.3,
+     "t": "tends to maximise tension when it can."
+    },
+    {
+     "s": 236.3,
+     "e": 242.3,
+     "t": "I did intentionally want the relationship to make my characters feel trapped and limited though."
+    },
+    {
+     "s": 242.3,
+     "e": 245.3,
+     "t": "The story has the dogs of the main characters"
+    },
+    {
+     "s": 245.3,
+     "e": 247.3,
+     "t": "How did you make the parallel?"
+    },
+    {
+     "s": 247.3,
+     "e": 250.3,
+     "t": "Highly literary and artificial by nature."
+    },
+    {
+     "s": 250.3,
+     "e": 252.3,
+     "t": "Seems so natural."
+    },
+    {
+     "s": 252.3,
+     "e": 254.3,
+     "t": "I'm glad you found the parallel natural."
+    },
+    {
+     "s": 254.3,
+     "e": 261.3,
+     "t": "The naturalness probably stems from the fact that I didn't start out with the dog and people parallel in mind."
+    },
+    {
+     "s": 261.3,
+     "e": 265.3,
+     "t": "Indeed, the parallel between the human couple and dog couple"
+    },
+    {
+     "s": 265.3,
+     "e": 267.3,
+     "t": "the dogs can't help fighting"
+    },
+    {
+     "s": 267.3,
+     "e": 270.3,
+     "t": "is very clear and seems intentional"
+    },
+    {
+     "s": 270.3,
+     "e": 273.3,
+     "t": "and yet it's not at all awkward or forced."
+    },
+    {
+     "s": 273.3,
+     "e": 278.3,
+     "t": "Perhaps it's just the old saying about dog owners resembling their dogs."
+    },
+    {
+     "s": 278.3,
+     "e": 282.3,
+     "t": "How do you manage to give such clear definitions to your characters?"
+    },
+    {
+     "s": 282.3,
+     "e": 288.3,
+     "t": "The final version of my stories is usually not that different from how they come out on the first draft."
+    },
+    {
+     "s": 288.3,
+     "e": 293.3,
+     "t": "It's likely that I'm nailing down my characters for myself as a writer"
+    },
+    {
+     "s": 293.3,
+     "e": 295.3,
+     "t": "before I let them loose in a scene."
+    },
+    {
+     "s": 295.3,
+     "e": 300.3,
+     "t": "I suspect this is because of the short fiction I was reading at the time"
+    },
+    {
+     "s": 300.3,
+     "e": 303.3,
+     "t": "and the overall atmosphere of my MFA program"
+    },
+    {
+     "s": 303.3,
+     "e": 306.3,
+     "t": "where I got my training as a short story writer."
+    },
+    {
+     "s": 306.3,
+     "e": 310.3,
+     "t": "Thank you Stacey, it has been very interesting talking to you."
+    },
+    {
+     "s": 310.3,
+     "e": 313.7,
+     "t": "Thank you."
+    },
+    {
+     "s": 335.7,
+     "e": 339.7,
+     "t": "Hello everybody and welcome to our weekly program, The Writers Workshop."
+    },
+    {
+     "s": 339.7,
+     "e": 342.7,
+     "t": "Today in our studio we have Stacey Swan"
+    },
+    {
+     "s": 342.7,
+     "e": 347.7,
+     "t": "a prize-winning short fiction writer, an editor and an educator."
+    },
+    {
+     "s": 347.7,
+     "e": 349.7,
+     "t": "Hello Stacey."
+    },
+    {
+     "s": 349.7,
+     "e": 353.7,
+     "t": "Good afternoon. Thank you for inviting me here today."
+    },
+    {
+     "s": 353.7,
+     "e": 359.7,
+     "t": "You're currently spending much time editing other writer's work for American short fiction."
+    },
+    {
+     "s": 359.7,
+     "e": 361.7,
+     "t": "How does it affect your own work?"
+    },
+    {
+     "s": 361.7,
+     "e": 364.7,
+     "t": "I think my time at American short fiction"
+    },
+    {
+     "s": 364.7,
+     "e": 368.7,
+     "t": "had a huge impact on my learning curve as a writer."
+    },
+    {
+     "s": 368.7,
+     "e": 372.7,
+     "t": "I started volunteering as a reader there while I was still in grad school"
+    },
+    {
+     "s": 372.7,
+     "e": 377.7,
+     "t": "and for the next seven years or so I read dozens of submissions a month."
+    },
+    {
+     "s": 377.7,
+     "e": 382.7,
+     "t": "For some reason it is so much easier to see the flaws in our own work"
+    },
+    {
+     "s": 382.7,
+     "e": 384.7,
+     "t": "after we've seen them in someone else's."
+    },
+    {
+     "s": 384.7,
+     "e": 388.7,
+     "t": "My primary agenda though was always whether or not"
+    },
+    {
+     "s": 388.7,
+     "e": 391.7,
+     "t": "I thought the story would be a good fit for the journal"
+    },
+    {
+     "s": 391.7,
+     "e": 396.7,
+     "t": "but subconsciously I was probably filing away plenty of things to steal."
+    },
+    {
+     "s": 396.7,
+     "e": 400.7,
+     "t": "As a writer what do you think about drafting and drafts?"
+    },
+    {
+     "s": 400.7,
+     "e": 404.7,
+     "t": "I teach a course of creative writing at university"
+    },
+    {
+     "s": 404.7,
+     "e": 409.7,
+     "t": "and I always tell my writing students that while they are drafting"
+    },
+    {
+     "s": 409.7,
+     "e": 414.7,
+     "t": "they should lock their internal critic in the trunk of their car and just drive."
+    },
+    {
+     "s": 414.7,
+     "e": 418.7,
+     "t": "I find revision easier and more enjoyable than drafting"
+    },
+    {
+     "s": 418.7,
+     "e": 423.7,
+     "t": "and that's mostly because the internal critic is so bad while I draft."
+    },
+    {
+     "s": 423.7,
+     "e": 427.7,
+     "t": "If I don't put him away he'll drive me away from the computer."
+    },
+    {
+     "s": 427.7,
+     "e": 431.7,
+     "t": "You must be doing a lot of editing later then."
+    },
+    {
+     "s": 431.7,
+     "e": 435.7,
+     "t": "Of course my first drafts are huge messes"
+    },
+    {
+     "s": 435.7,
+     "e": 440.7,
+     "t": "and it can take me multiple revisions to even pin down the basic plot arc."
+    },
+    {
+     "s": 440.7,
+     "e": 445.7,
+     "t": "I used to think revision was 100% about the critical brain"
+    },
+    {
+     "s": 445.7,
+     "e": 449.7,
+     "t": "because that's the only part I use when editing others."
+    },
+    {
+     "s": 449.7,
+     "e": 454.7,
+     "t": "I certainly wouldn't want to let my free writing brain loose on someone else's work"
+    },
+    {
+     "s": 454.7,
+     "e": 459.7,
+     "t": "but I'm starting to think there may be room for it when I revise my own."
+    },
+    {
+     "s": 459.7,
+     "e": 463.7,
+     "t": "Your recent story The Pull has enjoyed tremendous success."
+    },
+    {
+     "s": 463.7,
+     "e": 467.7,
+     "t": "Why do you think the readers loved it so much?"
+    },
+    {
+     "s": 467.7,
+     "e": 474.7,
+     "t": "Well I tend to explain it by the fact that the story traps together two incompatible characters"
+    },
+    {
+     "s": 474.7,
+     "e": 477.7,
+     "t": "though I can't say I did it on purpose."
+    },
+    {
+     "s": 477.7,
+     "e": 479.7,
+     "t": "When it comes to drafting fiction"
+    },
+    {
+     "s": 479.7,
+     "e": 485.7,
+     "t": "I always like to say that my subconsciousness is way smarter than my conscious brain."
+    },
+    {
+     "s": 485.7,
+     "e": 489.7,
+     "t": "I didn't set out to make the central characters incompatible"
+    },
+    {
+     "s": 489.7,
+     "e": 493.7,
+     "t": "but I suspect that my subconsciousness after so many years of writing"
+    },
+    {
+     "s": 493.7,
+     "e": 496.7,
+     "t": "tends to maximise tension when it can."
+    },
+    {
+     "s": 496.7,
+     "e": 502.7,
+     "t": "I did intentionally want the relationship to make my characters feel trapped and limited though."
+    },
+    {
+     "s": 502.7,
+     "e": 505.7,
+     "t": "The story has the dogs of the main characters."
+    },
+    {
+     "s": 505.7,
+     "e": 507.7,
+     "t": "How did you make the parallel?"
+    },
+    {
+     "s": 507.7,
+     "e": 510.7,
+     "t": "Highly literary and artificial by nature."
+    },
+    {
+     "s": 510.7,
+     "e": 512.7,
+     "t": "Seems so natural."
+    },
+    {
+     "s": 512.7,
+     "e": 514.7,
+     "t": "I'm glad you found the parallel natural."
+    },
+    {
+     "s": 514.7,
+     "e": 521.7,
+     "t": "The naturalness probably stems from the fact that I didn't start out with the dog and people parallel in mind."
+    },
+    {
+     "s": 521.7,
+     "e": 525.7,
+     "t": "Indeed the parallel between the human couple and dog couple"
+    },
+    {
+     "s": 525.7,
+     "e": 527.7,
+     "t": "the dogs can't help fighting"
+    },
+    {
+     "s": 527.7,
+     "e": 530.7,
+     "t": "is very clear and seems intentional"
+    },
+    {
+     "s": 530.7,
+     "e": 533.7,
+     "t": "and yet it's not at all awkward or forced."
+    },
+    {
+     "s": 533.7,
+     "e": 538.7,
+     "t": "Perhaps it's just the old saying about dog owners resembling their dogs."
+    },
+    {
+     "s": 538.7,
+     "e": 543.7,
+     "t": "How do you manage to give such clear definitions to your characters?"
+    },
+    {
+     "s": 543.7,
+     "e": 549.7,
+     "t": "The final version of my stories is usually not that different from how they come out on the first draft."
+    },
+    {
+     "s": 549.7,
+     "e": 553.7,
+     "t": "It's likely that I'm nailing down my characters for myself as a writer"
+    },
+    {
+     "s": 553.7,
+     "e": 555.7,
+     "t": "before I let them loose in a scene."
+    },
+    {
+     "s": 555.7,
+     "e": 560.7,
+     "t": "I suspect this is because of the short fiction I was reading at the time"
+    },
+    {
+     "s": 560.7,
+     "e": 563.7,
+     "t": "and the overall atmosphere of my MFA programme"
+    },
+    {
+     "s": 563.7,
+     "e": 567.7,
+     "t": "where I got my training as a short story writer."
+    },
+    {
+     "s": 567.7,
+     "e": 571.7,
+     "t": "Thank you Stacey, it has been very interesting talking to you."
+    },
+    {
+     "s": 571.7,
+     "e": 572.7,
+     "t": "Thank you."
+    }
+   ]
   },
   {
    "id": "mc9",
@@ -5983,7 +6812,7 @@
    "transcript": []
   },
   {
-   "id": "em1",
+   "id": "em5",
    "cat": "match",
    "guid": "423F45B31A9AB71D4D0B47200E53BA95",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/423F45B31A9AB71D4D0B47200E53BA95/img1_1721126730.mp3",
@@ -6011,6 +6840,18 @@
       "F"
      ],
      "key": "473625",
+     "evs": [
+      {
+       "label": "D",
+       "s": 69.5,
+       "t": "I must say, it is very hard now to choose a good present for your nearest and dearest."
+      },
+      {
+       "label": "F",
+       "s": 69.5,
+       "t": "I must say, it is very hard now to choose a good present for your nearest and dearest."
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -6673,7 +7514,7 @@
    ]
   },
   {
-   "id": "em2",
+   "id": "em5",
    "cat": "match",
    "guid": "464121440B1490C84154F8883BB97B61",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/464121440B1490C84154F8883BB97B61/img1_1721126919.mp3",
@@ -6701,6 +7542,28 @@
       "F"
      ],
      "key": "512634",
+     "evs": [
+      {
+       "label": "A",
+       "s": 384.0,
+       "t": "I also put on beautiful music which helps me to meditate. You shouldn't just take a yoga mat and"
+      },
+      {
+       "label": "B",
+       "s": 131.2,
+       "t": "postures. Speaker C. I think yoga is great for me because I have created a certain place in my house"
+      },
+      {
+       "label": "C",
+       "s": 131.2,
+       "t": "postures. Speaker C. I think yoga is great for me because I have created a certain place in my house"
+      },
+      {
+       "label": "D",
+       "s": 82.7,
+       "t": "get rid of many problems as long as you don't demand too much from yourself. Yoga is not about"
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -7023,7 +7886,7 @@
    ]
   },
   {
-   "id": "em3",
+   "id": "em5",
    "cat": "match",
    "guid": "16E4641C908183934BD6CB7F67816A4D",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/16E4641C908183934BD6CB7F67816A4D/img1_1679489237.mp3",
@@ -7051,6 +7914,33 @@
       "F"
      ],
      "key": "371524",
+     "evs": [
+      {
+       "label": "A",
+       "s": 70.6,
+       "t": "I find it horrible when people look at their smartphones while eating out with friends or during family dinners."
+      },
+      {
+       "label": "B",
+       "s": 70.6,
+       "t": "I find it horrible when people look at their smartphones while eating out with friends or during family dinners."
+      },
+      {
+       "label": "C",
+       "s": 180.3,
+       "t": "Besides, teachers can't be sure that such students are not using their mobiles for cheating,"
+      },
+      {
+       "label": "D",
+       "s": 129.0,
+       "t": "We are not allowed to use mobile phones at school and it drives me mad."
+      },
+      {
+       "label": "E",
+       "s": 101.4,
+       "t": "Every time I'm on a bus, I hear many people talking on their phones with their friends or relatives."
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -7473,7 +8363,7 @@
    ]
   },
   {
-   "id": "em4",
+   "id": "em5",
    "cat": "match",
    "guid": "B6E041B6D59D9EE3438ADFEB532AC11A",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/B6E041B6D59D9EE3438ADFEB532AC11A/img1_1689774593.mp3",
@@ -7501,6 +8391,13 @@
       "F"
      ],
      "key": "531726",
+     "evs": [
+      {
+       "label": "A",
+       "s": 91.2,
+       "t": "If you ask me, well, I think dogs are the best pets ever."
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -8216,6 +9113,33 @@
       "F"
      ],
      "key": "413625",
+     "evs": [
+      {
+       "label": "A",
+       "s": 60.7,
+       "t": "If you ask me, I think guinea pigs are perfect pets."
+      },
+      {
+       "label": "B",
+       "s": 60.7,
+       "t": "If you ask me, I think guinea pigs are perfect pets."
+      },
+      {
+       "label": "C",
+       "s": 60.7,
+       "t": "If you ask me, I think guinea pigs are perfect pets."
+      },
+      {
+       "label": "D",
+       "s": 60.7,
+       "t": "If you ask me, I think guinea pigs are perfect pets."
+      },
+      {
+       "label": "E",
+       "s": 131.6,
+       "t": "I think guinea pigs are a great choice for you if you want an animal"
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -8788,7 +9712,7 @@
    ]
   },
   {
-   "id": "em6",
+   "id": "em5",
    "cat": "match",
    "guid": "EEF32EC2FF82A84A49A1B04F95819716",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/EEF32EC2FF82A84A49A1B04F95819716/img1_1689774700.mp3",
@@ -8816,6 +9740,38 @@
       "F"
      ],
      "key": "372546",
+     "evs": [
+      {
+       "label": "A",
+       "s": 125.4,
+       "t": "Of course, I can't enjoy the nature while riding it,"
+      },
+      {
+       "label": "B",
+       "s": 96.1,
+       "t": "If you ask me, well, I don't have a bike because I can't ride it."
+      },
+      {
+       "label": "C",
+       "s": 135.3,
+       "t": "I don't like riding a bike."
+      },
+      {
+       "label": "D",
+       "s": 135.3,
+       "t": "I don't like riding a bike."
+      },
+      {
+       "label": "E",
+       "s": 135.3,
+       "t": "I don't like riding a bike."
+      },
+      {
+       "label": "F",
+       "s": 135.3,
+       "t": "I don't like riding a bike."
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -9468,7 +10424,7 @@
    ]
   },
   {
-   "id": "em7",
+   "id": "em5",
    "cat": "match",
    "guid": "3EFD60B08954BCF540D34BC80FBDA7C6",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/3EFD60B08954BCF540D34BC80FBDA7C6/img1_1689774767.mp3",
@@ -9496,6 +10452,38 @@
       "F"
      ],
      "key": "517342",
+     "evs": [
+      {
+       "label": "A",
+       "s": 186.2,
+       "t": "They give you so much energy during the day."
+      },
+      {
+       "label": "B",
+       "s": 58.2,
+       "t": "I know it may sound strange, but I do love cold weather."
+      },
+      {
+       "label": "C",
+       "s": 58.2,
+       "t": "I know it may sound strange, but I do love cold weather."
+      },
+      {
+       "label": "D",
+       "s": 147.3,
+       "t": "Cold days are not for me."
+      },
+      {
+       "label": "E",
+       "s": 213.6,
+       "t": "The other day our teacher told us why cold weather feels more pleasant than hot weather."
+      },
+      {
+       "label": "F",
+       "s": 147.3,
+       "t": "Cold days are not for me."
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -10073,7 +11061,7 @@
    ]
   },
   {
-   "id": "em8",
+   "id": "em5",
    "cat": "match",
    "guid": "6A83DC00883EB7354E6B6C1D03214439",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/6A83DC00883EB7354E6B6C1D03214439/img1_1562919023.mp3",
@@ -10101,6 +11089,28 @@
       "F"
      ],
      "key": "512463",
+     "evs": [
+      {
+       "label": "A",
+       "s": 156.6,
+       "t": "my future career with the language,"
+      },
+      {
+       "label": "B",
+       "s": 125.0,
+       "t": "What I want to see is the Russian nature,"
+      },
+      {
+       "label": "D",
+       "s": 186.9,
+       "t": "of these two major cities in Russia"
+      },
+      {
+       "label": "E",
+       "s": 81.1,
+       "t": "The thing is, there are so many Russian painters,"
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -10913,7 +11923,7 @@
    ]
   },
   {
-   "id": "em9",
+   "id": "em5",
    "cat": "match",
    "guid": "1BFDAEE4BA62959F48E73AD86876A3B2",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/1BFDAEE4BA62959F48E73AD86876A3B2/img1_1562941634.mp3",
@@ -10941,6 +11951,33 @@
       "F"
      ],
      "key": "641275",
+     "evs": [
+      {
+       "label": "A",
+       "s": 73.7,
+       "t": "I don't think textbooks and internet podcasts are enough to start learning such a difficult language. You still need a teacher."
+      },
+      {
+       "label": "B",
+       "s": 179.3,
+       "t": "I think I'll try learning Chinese, and I hope I'll be good at it."
+      },
+      {
+       "label": "C",
+       "s": 131.3,
+       "t": "When I tell people that I learn Chinese, they are usually very surprised because they think Chinese is a very difficult language to learn."
+      },
+      {
+       "label": "D",
+       "s": 66.7,
+       "t": "I live in a small town where there are few opportunities to learn such an exotic language as Chinese."
+      },
+      {
+       "label": "E",
+       "s": 184.3,
+       "t": "The truth is, of all the things you can do with your spare time, learning Mandarin Chinese is one of the best investments you can make."
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -11238,7 +12275,7 @@
    ]
   },
   {
-   "id": "em10",
+   "id": "em5",
    "cat": "match",
    "guid": "68ADB8CC51FA8CE04FC94AADB848F293",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/68ADB8CC51FA8CE04FC94AADB848F293/img1_1562941596.mp3",
@@ -11266,6 +12303,38 @@
       "F"
      ],
      "key": "475623",
+     "evs": [
+      {
+       "label": "A",
+       "s": 132.1,
+       "t": "They say Germany is the country of poets and thinkers. I'm definitely not a poet, but I'd like to become a scientist in the future. That's why I learned German."
+      },
+      {
+       "label": "B",
+       "s": 76.8,
+       "t": "I honestly don't understand why some people might want to learn German. Isn't there a more comfortable and fun way to pass your time than studying this complex language?"
+      },
+      {
+       "label": "C",
+       "s": 76.8,
+       "t": "I honestly don't understand why some people might want to learn German. Isn't there a more comfortable and fun way to pass your time than studying this complex language?"
+      },
+      {
+       "label": "D",
+       "s": 169.3,
+       "t": "I guess everybody knows that there are a lot of award-winning scientists born in Germany, so it doesn't come as a surprise that German is very important in the academic community."
+      },
+      {
+       "label": "E",
+       "s": 197.9,
+       "t": "My friends and I attend courses of German at our local linguistic centre. I'm a rather ambitious person and I hope knowing German will help me go up the career ladder faster."
+      },
+      {
+       "label": "F",
+       "s": 228.7,
+       "t": "I learn German because I'm interested in art and literature. Though Germans have a reputation for being left-brained and analytical,"
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -11498,7 +12567,7 @@
    ]
   },
   {
-   "id": "em11",
+   "id": "em5",
    "cat": "match",
    "guid": "B35081C5DFE69B784CC576645C0338BC",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/B35081C5DFE69B784CC576645C0338BC/img1_1689774090.mp3",
@@ -11526,6 +12595,7 @@
       "F"
      ],
      "key": "572614",
+     "evs": [],
      "kes": "1.2.1"
     }
    ],
@@ -12173,7 +13243,7 @@
    ]
   },
   {
-   "id": "em12",
+   "id": "em5",
    "cat": "match",
    "guid": "761F16930DCB9BC9475D303694E76C5C",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/761F16930DCB9BC9475D303694E76C5C/img1_1562918613.mp3",
@@ -12201,6 +13271,28 @@
       "F"
      ],
      "key": "571326",
+     "evs": [
+      {
+       "label": "A",
+       "s": 293.4,
+       "t": "Honestly, keeping my place clean isn't so difficult for me. This is mainly because I have an excellent habit of putting my things away every time I'm finished with them."
+      },
+      {
+       "label": "B",
+       "s": 234.8,
+       "t": "I love house cleaning for many reasons. Firstly, it's an excellent way for me to relax and unwind after a stressful day at school."
+      },
+      {
+       "label": "D",
+       "s": 138.1,
+       "t": "If you ask me, I think house cleaning makes no sense. My mother and I spend a lot of valuable time on it, and I wish we would do something else instead."
+      },
+      {
+       "label": "F",
+       "s": 234.8,
+       "t": "I love house cleaning for many reasons. Firstly, it's an excellent way for me to relax and unwind after a stressful day at school."
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -12413,7 +13505,7 @@
    ]
   },
   {
-   "id": "em13",
+   "id": "em5",
    "cat": "match",
    "guid": "031CCFD2ED8EB9A74D432A6FD37BD74A",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/031CCFD2ED8EB9A74D432A6FD37BD74A/img1_1721126638.mp3",
@@ -12441,6 +13533,33 @@
       "F"
      ],
      "key": "471625",
+     "evs": [
+      {
+       "label": "A",
+       "s": 135.2,
+       "t": "Why wait for a certain time of the year"
+      },
+      {
+       "label": "C",
+       "s": 149.9,
+       "t": "of celebrating New Year are not very"
+      },
+      {
+       "label": "D",
+       "s": 135.2,
+       "t": "Why wait for a certain time of the year"
+      },
+      {
+       "label": "E",
+       "s": 249.2,
+       "t": "to celebrate New Year."
+      },
+      {
+       "label": "F",
+       "s": 94.2,
+       "t": "before New Year comes."
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -13433,7 +14552,7 @@
    ]
   },
   {
-   "id": "em14",
+   "id": "em5",
    "cat": "match",
    "guid": "8E9DFB3E68189E404063D6565A9A49C9",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/8E9DFB3E68189E404063D6565A9A49C9/img1_1562940760.mp3",
@@ -13461,6 +14580,38 @@
       "F"
      ],
      "key": "351642",
+     "evs": [
+      {
+       "label": "A",
+       "s": 134.1,
+       "t": "I think one of the major reasons people choose to watch a period drama like Downton Abbey is that it provides a window into another time so that you can escape from your own time and place."
+      },
+      {
+       "label": "B",
+       "s": 66.8,
+       "t": "I absolutely love Downton Abbey."
+      },
+      {
+       "label": "C",
+       "s": 134.1,
+       "t": "I think one of the major reasons people choose to watch a period drama like Downton Abbey is that it provides a window into another time so that you can escape from your own time and place."
+      },
+      {
+       "label": "D",
+       "s": 134.1,
+       "t": "I think one of the major reasons people choose to watch a period drama like Downton Abbey is that it provides a window into another time so that you can escape from your own time and place."
+      },
+      {
+       "label": "E",
+       "s": 66.8,
+       "t": "I absolutely love Downton Abbey."
+      },
+      {
+       "label": "F",
+       "s": 66.8,
+       "t": "I absolutely love Downton Abbey."
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -13718,7 +14869,7 @@
    ]
   },
   {
-   "id": "em15",
+   "id": "em5",
    "cat": "match",
    "guid": "ADE74E69DB1595884302D9A1BB7CC4C6",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/ADE74E69DB1595884302D9A1BB7CC4C6/img1_1562929727.mp3",
@@ -13746,6 +14897,38 @@
       "F"
      ],
      "key": "462735",
+     "evs": [
+      {
+       "label": "A",
+       "s": 81.1,
+       "t": "So it's easy for me. I guess changing schools can be difficult for an introvert or a very pessimistic person."
+      },
+      {
+       "label": "B",
+       "s": 81.1,
+       "t": "So it's easy for me. I guess changing schools can be difficult for an introvert or a very pessimistic person."
+      },
+      {
+       "label": "C",
+       "s": 177.4,
+       "t": "When changing schools, you certainly get something new, and probably it's even much better than what you had before,"
+      },
+      {
+       "label": "D",
+       "s": 81.1,
+       "t": "So it's easy for me. I guess changing schools can be difficult for an introvert or a very pessimistic person."
+      },
+      {
+       "label": "E",
+       "s": 91.5,
+       "t": "I have never had to change schools, but I think I wouldn't mind that if I had to."
+      },
+      {
+       "label": "F",
+       "s": 81.1,
+       "t": "So it's easy for me. I guess changing schools can be difficult for an introvert or a very pessimistic person."
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -14028,7 +15211,7 @@
    ]
   },
   {
-   "id": "em16",
+   "id": "em5",
    "cat": "match",
    "guid": "1FEFF0BC3C09AFDE4D5841622D39E3F7",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/1FEFF0BC3C09AFDE4D5841622D39E3F7/img1_1721126394.mp3",
@@ -14056,6 +15239,33 @@
       "F"
      ],
      "key": "461723",
+     "evs": [
+      {
+       "label": "A",
+       "s": 176.3,
+       "t": "I think people love Scotland for different reasons. Some of them adore Scottish history, while others explore its beautiful nature."
+      },
+      {
+       "label": "B",
+       "s": 418.4,
+       "t": "I think people love Scotland for different reasons. Some of them adore Scottish history, while others explore its beautiful nature. As for me I love Scotland too. My roommate comes from Scotland and I sometimes spend a day or two there at his parents place."
+      },
+      {
+       "label": "C",
+       "s": 209.9,
+       "t": "If you ask me, I think all those stories about Scotland as a beautiful country full of ancient castles and mysterious legends is just an exaggeration."
+      },
+      {
+       "label": "D",
+       "s": 453.3,
+       "t": "If you ask me I think all those stories about Scotland as a beautiful country full of ancient castles and mysterious legends is just an exaggeration. I went on a tour to Scotland and I wasn't impressed at all. All those ruins are just ruins. Most of them are in a terrible state. I must say Scottish food is too greasy for me."
+      },
+      {
+       "label": "E",
+       "s": 176.3,
+       "t": "I think people love Scotland for different reasons. Some of them adore Scottish history, while others explore its beautiful nature."
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -14283,7 +15493,7 @@
    ]
   },
   {
-   "id": "em17",
+   "id": "em5",
    "cat": "match",
    "guid": "9BF7C728FFF99DAB4E239BE8BFD3AC0F",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/9BF7C728FFF99DAB4E239BE8BFD3AC0F/img1_1721126832.mp3",
@@ -14311,6 +15521,23 @@
       "F"
      ],
      "key": "361524",
+     "evs": [
+      {
+       "label": "A",
+       "s": 72.6,
+       "t": "that it's practically impossible to devote some proper time to house cleaning."
+      },
+      {
+       "label": "D",
+       "s": 90.6,
+       "t": "It helps me not to have piles of things around and my rooms always look tidy enough."
+      },
+      {
+       "label": "F",
+       "s": 83.6,
+       "t": "Every evening before I go to bed I walk around all the rooms looking for the things which are not on their places."
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -14833,7 +16060,7 @@
    ]
   },
   {
-   "id": "em18",
+   "id": "em5",
    "cat": "match",
    "guid": "C4720483EBD98ED246348E0F313E80C1",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/C4720483EBD98ED246348E0F313E80C1/img1_1679489491.mp3",
@@ -14861,6 +16088,28 @@
       "F"
      ],
      "key": "257416",
+     "evs": [
+      {
+       "label": "B",
+       "s": 110.4,
+       "t": "So I have decided to take up cooking classes."
+      },
+      {
+       "label": "C",
+       "s": 145.5,
+       "t": "But the only way to actually become a good cook is to practice."
+      },
+      {
+       "label": "D",
+       "s": 145.5,
+       "t": "But the only way to actually become a good cook is to practice."
+      },
+      {
+       "label": "E",
+       "s": 183.6,
+       "t": "It will make your cooking experiments much more pleasant"
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -15528,7 +16777,7 @@
    ]
   },
   {
-   "id": "em19",
+   "id": "em5",
    "cat": "match",
    "guid": "F4F4B738A7969AD347E73BEFE489B177",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/F4F4B738A7969AD347E73BEFE489B177/img1_1714743607.mp3",
@@ -15556,6 +16805,38 @@
       "F"
      ],
      "key": "617453",
+     "evs": [
+      {
+       "label": "A",
+       "s": 89.8,
+       "t": "of those snack habits with fruit and homemade recipes. Fresh fruit is low in calories. If you eat"
+      },
+      {
+       "label": "B",
+       "s": 89.8,
+       "t": "of those snack habits with fruit and homemade recipes. Fresh fruit is low in calories. If you eat"
+      },
+      {
+       "label": "C",
+       "s": 222.2,
+       "t": "and strawberries are particularly beneficial. She makes me have at least four portions of fresh fruit"
+      },
+      {
+       "label": "D",
+       "s": 89.8,
+       "t": "of those snack habits with fruit and homemade recipes. Fresh fruit is low in calories. If you eat"
+      },
+      {
+       "label": "E",
+       "s": 259.4,
+       "t": "Well, my answer is it's because I eat a lot of fresh fruit. You see, fruit helps stabilize"
+      },
+      {
+       "label": "F",
+       "s": 89.8,
+       "t": "of those snack habits with fruit and homemade recipes. Fresh fruit is low in calories. If you eat"
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -15873,7 +17154,7 @@
    ]
   },
   {
-   "id": "em20",
+   "id": "em5",
    "cat": "match",
    "guid": "BADAD8E5EF2CBFA046EA370D459B7A73",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/BADAD8E5EF2CBFA046EA370D459B7A73/img1_1689774474.mp3",
@@ -15901,6 +17182,38 @@
       "F"
      ],
      "key": "631572",
+     "evs": [
+      {
+       "label": "A",
+       "s": 195.3,
+       "t": "In my opinion, we pay too much attention to various exercises to train our memory,"
+      },
+      {
+       "label": "B",
+       "s": 127.7,
+       "t": "I do understand how important it is to have a good memory."
+      },
+      {
+       "label": "C",
+       "s": 105.6,
+       "t": "But I honestly think that learning things by heart is the best way to train your memory."
+      },
+      {
+       "label": "D",
+       "s": 57.2,
+       "t": "Speaker A. I think everybody should train their memory."
+      },
+      {
+       "label": "E",
+       "s": 127.7,
+       "t": "I do understand how important it is to have a good memory."
+      },
+      {
+       "label": "F",
+       "s": 177.6,
+       "t": "Who needs to memorize phone numbers, dates, and other things"
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -16368,7 +17681,7 @@
    ]
   },
   {
-   "id": "em21",
+   "id": "em5",
    "cat": "match",
    "guid": "1A36B9231ED681F04AFB8FE1A5E9C1C3",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/1A36B9231ED681F04AFB8FE1A5E9C1C3/img1_1679489714.mp3",
@@ -16396,6 +17709,33 @@
       "F"
      ],
      "key": "247135",
+     "evs": [
+      {
+       "label": "A",
+       "s": 64.6,
+       "t": "I don't play tennis, but I love watching it."
+      },
+      {
+       "label": "B",
+       "s": 67.6,
+       "t": "As a fan and spectator, I see lots of pros of tennis compared to other sports."
+      },
+      {
+       "label": "C",
+       "s": 73.6,
+       "t": "First of all, top level tennis players are amazing to watch"
+      },
+      {
+       "label": "D",
+       "s": 64.6,
+       "t": "I don't play tennis, but I love watching it."
+      },
+      {
+       "label": "F",
+       "s": 67.6,
+       "t": "As a fan and spectator, I see lots of pros of tennis compared to other sports."
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -16988,7 +18328,7 @@
    ]
   },
   {
-   "id": "em22",
+   "id": "em5",
    "cat": "match",
    "guid": "B1380C12E2B9BD7B4B7696337FD0D09E",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/B1380C12E2B9BD7B4B7696337FD0D09E/img1_1562919145.mp3",
@@ -17016,6 +18356,33 @@
       "F"
      ],
      "key": "461573",
+     "evs": [
+      {
+       "label": "A",
+       "s": 75.1,
+       "t": "So I don't think that taking a bath is so much worse. Of course, I take showers too."
+      },
+      {
+       "label": "B",
+       "s": 130.4,
+       "t": "A lot of my friends are constantly telling me how much taking a bath helps them to relax."
+      },
+      {
+       "label": "C",
+       "s": 258.1,
+       "t": "With such technologies, taking a shower is fun and healthy and baths can't ever beat it."
+      },
+      {
+       "label": "D",
+       "s": 75.1,
+       "t": "So I don't think that taking a bath is so much worse. Of course, I take showers too."
+      },
+      {
+       "label": "E",
+       "s": 209.3,
+       "t": "You see, there are advantages and disadvantages to both showers and baths."
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -17453,7 +18820,7 @@
    ]
   },
   {
-   "id": "em23",
+   "id": "em5",
    "cat": "match",
    "guid": "03C8E53F074080BB4308203DB62F8A6D",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/03C8E53F074080BB4308203DB62F8A6D/img1_1562941499.mp3",
@@ -17481,6 +18848,38 @@
       "F"
      ],
      "key": "246153",
+     "evs": [
+      {
+       "label": "A",
+       "s": 67.0,
+       "t": "I started doing yoga a couple of years ago."
+      },
+      {
+       "label": "B",
+       "s": 70.0,
+       "t": "At that time my main reasons for choosing yoga were improving flexibility and overall physical fitness."
+      },
+      {
+       "label": "C",
+       "s": 210.7,
+       "t": "For me, yoga is not simply a way to solve some of my health problems or relax after a stressful day at school."
+      },
+      {
+       "label": "D",
+       "s": 177.2,
+       "t": "I think many people treat yoga as a kind of fitness to improve their posture."
+      },
+      {
+       "label": "E",
+       "s": 141.2,
+       "t": "I think practicing yoga isn't about trying to throw ourselves away and become something better."
+      },
+      {
+       "label": "F",
+       "s": 111.3,
+       "t": "Step by step I came to notice that the health benefits of yoga are very real."
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -17878,7 +19277,7 @@
    ]
   },
   {
-   "id": "em24",
+   "id": "em5",
    "cat": "match",
    "guid": "BCA632B53D64865045C532CDF071A182",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/BCA632B53D64865045C532CDF071A182/img1_1679489558.mp3",
@@ -17906,6 +19305,23 @@
       "F"
      ],
      "key": "372416",
+     "evs": [
+      {
+       "label": "A",
+       "s": 80.8,
+       "t": "But with Lego, I can build spaceships, cars and trains."
+      },
+      {
+       "label": "D",
+       "s": 249.9,
+       "t": "A lot of Lego sets are really impressive."
+      },
+      {
+       "label": "F",
+       "s": 138.4,
+       "t": "I think there can be different reasons why young adults like me enjoy playing Lego."
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -18598,7 +20014,7 @@
    ]
   },
   {
-   "id": "em25",
+   "id": "em5",
    "cat": "match",
    "guid": "43D7EE2BBE259CDE4627215159CE5B71",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/43D7EE2BBE259CDE4627215159CE5B71/img1_1562941675.mp3",
@@ -18626,6 +20042,23 @@
       "F"
      ],
      "key": "176324",
+     "evs": [
+      {
+       "label": "A",
+       "s": 77.1,
+       "t": "To me, it's different. I always have my mobile phone on me so that I can contact my parents or the police in case of an emergency."
+      },
+      {
+       "label": "B",
+       "s": 77.1,
+       "t": "To me, it's different. I always have my mobile phone on me so that I can contact my parents or the police in case of an emergency."
+      },
+      {
+       "label": "C",
+       "s": 303.6,
+       "t": "I'm a teenager and I think I need a cell phone. For many of my friends, a mobile phone is just a cool gadget they can boast of in the company of their friends."
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -18928,7 +20361,7 @@
    ]
   },
   {
-   "id": "em26",
+   "id": "em5",
    "cat": "match",
    "guid": "FE68287A33599E974AD86AF137F4AE5B",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/FE68287A33599E974AD86AF137F4AE5B/img1_1562940547.mp3",
@@ -18956,6 +20389,28 @@
       "F"
      ],
      "key": "513624",
+     "evs": [
+      {
+       "label": "A",
+       "s": 297.3,
+       "t": "I think people love dogs for many different reasons"
+      },
+      {
+       "label": "C",
+       "s": 142.9,
+       "t": "Well, sometimes dogs really are better companions than people."
+      },
+      {
+       "label": "D",
+       "s": 175.9,
+       "t": "When we discuss our pets, we understand that dogs are very clever."
+      },
+      {
+       "label": "E",
+       "s": 205.5,
+       "t": "I don't have a dog because I'm allergic to fur, but I love looking at them."
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -19433,7 +20888,7 @@
    ]
   },
   {
-   "id": "em27",
+   "id": "em5",
    "cat": "match",
    "guid": "21A4C5843885AA7748517AFBF3C93414",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/21A4C5843885AA7748517AFBF3C93414/img1_1683034235.mp3",
@@ -19461,6 +20916,33 @@
       "F"
      ],
      "key": "627453",
+     "evs": [
+      {
+       "label": "A",
+       "s": 71.8,
+       "t": "We gather together in the kitchen and start cooking something tasty."
+      },
+      {
+       "label": "B",
+       "s": 99.2,
+       "t": "I can't say I love cooking very much, but I am a student and I am often short of money."
+      },
+      {
+       "label": "D",
+       "s": 159.3,
+       "t": "Cooking is a great way to do it as I know exactly how much fat there is in my dish."
+      },
+      {
+       "label": "E",
+       "s": 159.3,
+       "t": "Cooking is a great way to do it as I know exactly how much fat there is in my dish."
+      },
+      {
+       "label": "F",
+       "s": 99.2,
+       "t": "I can't say I love cooking very much, but I am a student and I am often short of money."
+      }
+     ],
      "kes": "1.2.1"
     }
    ],
@@ -20154,6 +21636,28 @@
       }
      ],
      "key": "1231232",
+     "evs": [
+      {
+       "label": "B",
+       "s": 106.7,
+       "t": "I don't remember you having so many problems with maths before."
+      },
+      {
+       "label": "C",
+       "s": 112.7,
+       "t": "Well, in September I returned from that exchange programme in France"
+      },
+      {
+       "label": "E",
+       "s": 197.7,
+       "t": "I've heard that they have morning classes with a discount,"
+      },
+      {
+       "label": "F",
+       "s": 193.7,
+       "t": "They are said to have classes in mini groups as well as tutorials."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -20762,6 +22266,33 @@
       }
      ],
      "key": "2132131",
+     "evs": [
+      {
+       "label": "A",
+       "s": 251.8,
+       "t": "Not bad, thanks. I've just come back from my backpacking trip around Asia."
+      },
+      {
+       "label": "B",
+       "s": 141.4,
+       "t": "When I arrived in a city, I mainly used public transport. It's quite good in most Asian countries."
+      },
+      {
+       "label": "C",
+       "s": 108.4,
+       "t": "I also visited royal palaces and national parks in South Korea and climbed to the summit of Mount Fuji in Japan."
+      },
+      {
+       "label": "E",
+       "s": 141.4,
+       "t": "When I arrived in a city, I mainly used public transport. It's quite good in most Asian countries."
+      },
+      {
+       "label": "F",
+       "s": 240.8,
+       "t": "Hi, Jack. Long time no see."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -21170,6 +22701,33 @@
       }
      ],
      "key": "1331212",
+     "evs": [
+      {
+       "label": "C",
+       "s": 94.1,
+       "t": "Oh Miss Clark, of course we did a good job, but we are very grateful to our teachers."
+      },
+      {
+       "label": "D",
+       "s": 76.1,
+       "t": "Good evening Miss Clark, thank you for the compliment."
+      },
+      {
+       "label": "E",
+       "s": 162.1,
+       "t": "I believe that every student has the potential for success, and it'll be so exciting"
+      },
+      {
+       "label": "F",
+       "s": 76.1,
+       "t": "Good evening Miss Clark, thank you for the compliment."
+      },
+      {
+       "label": "G",
+       "s": 76.1,
+       "t": "Good evening Miss Clark, thank you for the compliment."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -21578,6 +23136,33 @@
       }
      ],
      "key": "1312213",
+     "evs": [
+      {
+       "label": "A",
+       "s": 97.0,
+       "t": "You see, I've always dreamed of learning to draw, but I never had enough time to take up drawing."
+      },
+      {
+       "label": "D",
+       "s": 97.0,
+       "t": "You see, I've always dreamed of learning to draw, but I never had enough time to take up drawing."
+      },
+      {
+       "label": "E",
+       "s": 163.1,
+       "t": "I've seen some fluid art pictures and abstract watercolor paintings. They are awesome!"
+      },
+      {
+       "label": "F",
+       "s": 87.0,
+       "t": "Well, I'm thinking of going to an art school, but I'm not sure. What do you think?"
+      },
+      {
+       "label": "G",
+       "s": 68.7,
+       "t": "Hi, Julie. Long time no see."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -21981,6 +23566,33 @@
       }
      ],
      "key": "1132232",
+     "evs": [
+      {
+       "label": "A",
+       "s": 79.1,
+       "t": "Hello, Emily. I am well. Classes this semester seem interesting, but I am sure they will be a lot of work, as always."
+      },
+      {
+       "label": "B",
+       "s": 137.1,
+       "t": "My friend was visiting his grandparents in the cottage next door, so we spent some time running around the countryside, climbing trees and picking wild berries."
+      },
+      {
+       "label": "C",
+       "s": 121.1,
+       "t": "It was great. I spent two months at my grandparents cottage on a lake. My grandfather is into fishing, so every day we went out on a boat with him. The weather was hot, so I was able to sunbathe and swim a lot."
+      },
+      {
+       "label": "D",
+       "s": 147.1,
+       "t": "Sounds like a nice relaxing summer time. I wish I had done the same. I envy you for having spent it outdoors because my summer wasn't nearly as active as yours."
+      },
+      {
+       "label": "F",
+       "s": 179.1,
+       "t": "Then in July I went to the seaside with my family. We visited Greece, but the sea was stormy most of the time, so we mostly did some sightseeing and shopping."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -22234,6 +23846,33 @@
       }
      ],
      "key": "2132213",
+     "evs": [
+      {
+       "label": "C",
+       "s": 273.6,
+       "t": "No, I didn't. I'm probably the only person in the UK who hasn't read all the Harry Potter books."
+      },
+      {
+       "label": "D",
+       "s": 112.1,
+       "t": "I'm probably the only person in the UK who hasn't read all the Harry Potter books."
+      },
+      {
+       "label": "E",
+       "s": 112.1,
+       "t": "I'm probably the only person in the UK who hasn't read all the Harry Potter books."
+      },
+      {
+       "label": "F",
+       "s": 133.1,
+       "t": "That's surprising indeed, considering that Joanne Rowling, you know, the lady who is the author of the Harry Potter series,"
+      },
+      {
+       "label": "G",
+       "s": 188.1,
+       "t": "Perhaps I'll be able to tell my brother some interesting facts about Harry Potter after reading your project paper."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -22647,6 +24286,23 @@
       }
      ],
      "key": "1122332",
+     "evs": [
+      {
+       "label": "A",
+       "s": 82.4,
+       "t": "Russia? Such a great choice. I spent a year in Russia as an exchange student and I absolutely loved the country."
+      },
+      {
+       "label": "D",
+       "s": 116.4,
+       "t": "Okay, the first issue is the money. Should I take cash or can I pay by my credit card?"
+      },
+      {
+       "label": "G",
+       "s": 198.4,
+       "t": "Well, I thought soups were quite nice. Generally speaking, Russian cuisine isn't spicy. I think you'll like it."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -22955,6 +24611,23 @@
       }
      ],
      "key": "2321312",
+     "evs": [
+      {
+       "label": "B",
+       "s": 78.4,
+       "t": "I hoped to spend much time outdoors playing football and things like that, but no such luck."
+      },
+      {
+       "label": "C",
+       "s": 102.4,
+       "t": "My brother plays computer games all day long and he appears to be quite happy."
+      },
+      {
+       "label": "D",
+       "s": 125.4,
+       "t": "Why don't you read a book then? There's a new bookstore on High Street."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -23318,6 +24991,23 @@
       }
      ],
      "key": "1232131",
+     "evs": [
+      {
+       "label": "D",
+       "s": 160.3,
+       "t": "You will see St Basil's Cathedral. It's a gorgeous building."
+      },
+      {
+       "label": "E",
+       "s": 102.3,
+       "t": "I think I'd like to see only Moscow this time."
+      },
+      {
+       "label": "F",
+       "s": 199.3,
+       "t": "There you will see Sa Kanan and Sa Bell and the state Kremlin Palace initially known as the Palace of Congresses."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -23706,6 +25396,33 @@
       }
      ],
      "key": "2132131",
+     "evs": [
+      {
+       "label": "B",
+       "s": 104.1,
+       "t": "That's great, Karen. I do hope you can give me some useful tips on my future trip."
+      },
+      {
+       "label": "C",
+       "s": 166.1,
+       "t": "I think your host family will help you there."
+      },
+      {
+       "label": "D",
+       "s": 156.1,
+       "t": "Okay. Will my mobile phone work there?"
+      },
+      {
+       "label": "E",
+       "s": 169.1,
+       "t": "Okay. Did you have to use public transport?"
+      },
+      {
+       "label": "F",
+       "s": 173.1,
+       "t": "Well, I got to school by a city bus. I found public transport in Russia to be quite good, rather cheap and easy to use, though sometimes overcrowded."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -24134,6 +25851,23 @@
       }
      ],
      "key": "2312311",
+     "evs": [
+      {
+       "label": "C",
+       "s": 130.2,
+       "t": "It says in the past it was necessary for people to make their first impressions very quickly in order to escape from any dangerous situations."
+      },
+      {
+       "label": "D",
+       "s": 203.2,
+       "t": "Sure, Miles. I think I should finish the book by the end of the week. Does Saturday sound fine to you?"
+      },
+      {
+       "label": "F",
+       "s": 188.2,
+       "t": "I say, Lily, can you lend me the book as soon as you've finished it?"
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -24517,6 +26251,43 @@
       }
      ],
      "key": "1332212",
+     "evs": [
+      {
+       "label": "A",
+       "s": 101.0,
+       "t": "Oh, Peter, your offer is just on time as my best friend has just told me she won't be able to be my travel companion this summer."
+      },
+      {
+       "label": "B",
+       "s": 83.0,
+       "t": "I guess so. The good thing is that I can afford it as I have saved a good sum of money plus my granny gave me a generous check for my birthday last week."
+      },
+      {
+       "label": "C",
+       "s": 101.0,
+       "t": "Oh, Peter, your offer is just on time as my best friend has just told me she won't be able to be my travel companion this summer."
+      },
+      {
+       "label": "D",
+       "s": 117.0,
+       "t": "Russia? I say, Peter. It's not half a bad idea. I've always wanted to see Moscow, the capital of the country."
+      },
+      {
+       "label": "E",
+       "s": 150.1,
+       "t": "What we need is planning our trip carefully. I don't think we know much about Russia, so we need to buy some guidebooks or surf the net."
+      },
+      {
+       "label": "F",
+       "s": 108.0,
+       "t": "So we have to decide on where to go. I was thinking about something unusual. What would you say if I suggested going to Russia for about two weeks?"
+      },
+      {
+       "label": "G",
+       "s": 117.0,
+       "t": "Russia? I say, Peter. It's not half a bad idea. I've always wanted to see Moscow, the capital of the country."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -24805,6 +26576,23 @@
       }
      ],
      "key": "1213221",
+     "evs": [
+      {
+       "label": "E",
+       "s": 111.6,
+       "t": "Sounds like a lot of work, Abby. I don't think I could play a musical instrument."
+      },
+      {
+       "label": "F",
+       "s": 179.6,
+       "t": "That's right. I forgot that you're on our school teams."
+      },
+      {
+       "label": "G",
+       "s": 210.6,
+       "t": "Maybe you can come to the cinema with us next time, Abbie,"
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -25353,6 +27141,23 @@
       }
      ],
      "key": "1321122",
+     "evs": [
+      {
+       "label": "A",
+       "s": 60.4,
+       "t": "Hi, Sandra. It's good to see you here in the library."
+      },
+      {
+       "label": "C",
+       "s": 100.5,
+       "t": "Don't use the computer over there in the corner."
+      },
+      {
+       "label": "F",
+       "s": 72.5,
+       "t": "In fact, I don't like working in the library very much."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -25866,6 +27671,28 @@
       }
      ],
      "key": "2132123",
+     "evs": [
+      {
+       "label": "A",
+       "s": 254.3,
+       "t": "Really? What's up? Aren't you enjoying your summer holidays?"
+      },
+      {
+       "label": "D",
+       "s": 123.2,
+       "t": "Will you go on a shopping spree?"
+      },
+      {
+       "label": "E",
+       "s": 169.2,
+       "t": "The last time my room was repaired, ages ago,"
+      },
+      {
+       "label": "G",
+       "s": 148.2,
+       "t": "I say why don't you redecorate your room?"
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -26374,6 +28201,13 @@
       }
      ],
      "key": "2312123",
+     "evs": [
+      {
+       "label": "F",
+       "s": 165.1,
+       "t": "I've never heard about doodling before. Could you please tell me more about it?"
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -26977,6 +28811,33 @@
       }
      ],
      "key": "2331221",
+     "evs": [
+      {
+       "label": "A",
+       "s": 90.5,
+       "t": "Still, I wouldn't say it was a holiday. I went to Kenya to work as a volunteer there."
+      },
+      {
+       "label": "B",
+       "s": 178.8,
+       "t": "I visited some gorgeous beaches and enjoyed snorkelling while in Kenya."
+      },
+      {
+       "label": "C",
+       "s": 114.1,
+       "t": "or look after orphaned animals in animal shelters."
+      },
+      {
+       "label": "E",
+       "s": 183.9,
+       "t": "What was the food like there? It was delicious. I enjoyed eating fresh seafood there."
+      },
+      {
+       "label": "F",
+       "s": 142.8,
+       "t": "You were a star, Chris. Please tell me more about your volunteering experience."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -27365,6 +29226,18 @@
       }
      ],
      "key": "1231321",
+     "evs": [
+      {
+       "label": "C",
+       "s": 297.5,
+       "t": "What present can be better than being given a choice?"
+      },
+      {
+       "label": "G",
+       "s": 140.1,
+       "t": "So then what are we going to buy after all, Jack?"
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -28083,6 +29956,23 @@
       }
      ],
      "key": "1133222",
+     "evs": [
+      {
+       "label": "C",
+       "s": 119.5,
+       "t": "Well, I couldn't travel around much because my parents wouldn't let me do it."
+      },
+      {
+       "label": "E",
+       "s": 159.5,
+       "t": "As for me, I especially liked the floating markets there."
+      },
+      {
+       "label": "G",
+       "s": 173.5,
+       "t": "There are four such markets in Bangkok as far as I remember."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -28601,6 +30491,33 @@
       }
      ],
      "key": "1232231",
+     "evs": [
+      {
+       "label": "B",
+       "s": 81.3,
+       "t": "You're right, Amanda. I'm going to travel again and this time my destination is Russia."
+      },
+      {
+       "label": "C",
+       "s": 81.3,
+       "t": "You're right, Amanda. I'm going to travel again and this time my destination is Russia."
+      },
+      {
+       "label": "D",
+       "s": 143.3,
+       "t": "Anyway, take some warm clothes with you and take an umbrella."
+      },
+      {
+       "label": "E",
+       "s": 186.3,
+       "t": "I'm flying to Moscow alone and then my pen friend will meet me there"
+      },
+      {
+       "label": "F",
+       "s": 186.3,
+       "t": "I'm flying to Moscow alone and then my pen friend will meet me there"
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -29124,6 +31041,28 @@
       }
      ],
      "key": "1322231",
+     "evs": [
+      {
+       "label": "A",
+       "s": 187.3,
+       "t": "When I'm reading the book, I think it's possible,"
+      },
+      {
+       "label": "B",
+       "s": 114.3,
+       "t": "Their people could swap things and services without using money."
+      },
+      {
+       "label": "D",
+       "s": 216.3,
+       "t": "At least the book makes us think about buying fewer things."
+      },
+      {
+       "label": "F",
+       "s": 89.3,
+       "t": "She comes from Germany and she has been living for more than 15 years without using any money,"
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -29637,6 +31576,18 @@
       }
      ],
      "key": "1232213",
+     "evs": [
+      {
+       "label": "D",
+       "s": 293.8,
+       "t": "Are you going to take a book to read? I love reading on the beach. Of course, I don't read any serious novels while I'm on holiday."
+      },
+      {
+       "label": "G",
+       "s": 352.8,
+       "t": "I wish I could see your holiday sketchbooks. There must be a lot of interesting pictures there. It's probably even better than photos as they are sure to reflect your personal impressions."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -30030,6 +31981,38 @@
       }
      ],
      "key": "2321132",
+     "evs": [
+      {
+       "label": "A",
+       "s": 187.3,
+       "t": "We visited different film locations in and around London."
+      },
+      {
+       "label": "C",
+       "s": 119.3,
+       "t": "was to go on a city jogging tour."
+      },
+      {
+       "label": "D",
+       "s": 119.3,
+       "t": "was to go on a city jogging tour."
+      },
+      {
+       "label": "E",
+       "s": 184.3,
+       "t": "One more tour I took was a movie tour around London."
+      },
+      {
+       "label": "F",
+       "s": 197.3,
+       "t": "Did you see the locations for the Dark Knight?"
+      },
+      {
+       "label": "G",
+       "s": 184.3,
+       "t": "One more tour I took was a movie tour around London."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -30713,6 +32696,28 @@
       }
      ],
      "key": "2123123",
+     "evs": [
+      {
+       "label": "C",
+       "s": 97.6,
+       "t": "Well Andy, I'm sorry but I kind of think she's right. She's just worried about your health, that's all."
+      },
+      {
+       "label": "D",
+       "s": 128.6,
+       "t": "Sarah, you sound like you don't play computer games. Is that so?"
+      },
+      {
+       "label": "F",
+       "s": 162.6,
+       "t": "Football sounds fun. I like to play it with the boys from my class after school but the thought of joining a team has never crossed my mind."
+      },
+      {
+       "label": "G",
+       "s": 199.6,
+       "t": "It was good seeing you Sarah. Have a good time at the practice and thank you for the idea about joining a team."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -31041,6 +33046,28 @@
       }
      ],
      "key": "2211233",
+     "evs": [
+      {
+       "label": "A",
+       "s": 80.0,
+       "t": "I think they'll choose Greece, which isn't bad. I love Greece."
+      },
+      {
+       "label": "C",
+       "s": 121.0,
+       "t": "Why do so many tourists go there?"
+      },
+      {
+       "label": "E",
+       "s": 97.0,
+       "t": "I may have told you that my elder cousin lives on Mull. That's a Scottish island."
+      },
+      {
+       "label": "G",
+       "s": 208.1,
+       "t": "You may book a room in my cousin's guest house, Sam. It's very good."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -31424,6 +33451,18 @@
       }
      ],
      "key": "1332122",
+     "evs": [
+      {
+       "label": "D",
+       "s": 119.4,
+       "t": "Basically, this is a board game for a small group. Six players maximum."
+      },
+      {
+       "label": "E",
+       "s": 98.4,
+       "t": "Well, I play board games with my sister and her friends."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -31882,6 +33921,23 @@
       }
      ],
      "key": "2312213",
+     "evs": [
+      {
+       "label": "D",
+       "s": 95.6,
+       "t": "No, it's only the afternoon shift. I work at my mother's office."
+      },
+      {
+       "label": "E",
+       "s": 100.6,
+       "t": "Your mother is a travel agent, isn't she? So what do you do at her office?"
+      },
+      {
+       "label": "F",
+       "s": 137.6,
+       "t": "and help other agents to select tours for our clients."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -32355,6 +34411,33 @@
       }
      ],
      "key": "1232213",
+     "evs": [
+      {
+       "label": "A",
+       "s": 74.2,
+       "t": "Hi, Mike. It's so good to see you. I haven't seen you since the prom."
+      },
+      {
+       "label": "B",
+       "s": 93.2,
+       "t": "Well, my parents went to Peru on a special expedition. You know, they are doctors,"
+      },
+      {
+       "label": "C",
+       "s": 114.2,
+       "t": "like theirs to have a beach holiday somewhere in Spain."
+      },
+      {
+       "label": "E",
+       "s": 97.2,
+       "t": "and they said they wanted to treat children in Peru during their summer vacation."
+      },
+      {
+       "label": "F",
+       "s": 178.2,
+       "t": "I did some other odd jobs, but when I become a doctor,"
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -32848,6 +34931,33 @@
       }
      ],
      "key": "2131322",
+     "evs": [
+      {
+       "label": "A",
+       "s": 250.8,
+       "t": "Not much. I'm going to the mall. I need to buy a present for my little brother. It's his birthday next week. He's going to be six years old already. It's unbelievable."
+      },
+      {
+       "label": "D",
+       "s": 178.3,
+       "t": "Do his friends have mobile phones? You see, if they do, it's going to be very difficult to talk him out of getting a mobile."
+      },
+      {
+       "label": "E",
+       "s": 121.3,
+       "t": "I've asked him. He wants a smartphone."
+      },
+      {
+       "label": "F",
+       "s": 178.3,
+       "t": "Do his friends have mobile phones? You see, if they do, it's going to be very difficult to talk him out of getting a mobile."
+      },
+      {
+       "label": "G",
+       "s": 196.3,
+       "t": "Paul, why don't you go to the mall with me? Are you free now?"
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -33186,6 +35296,18 @@
       }
      ],
      "key": "2131213",
+     "evs": [
+      {
+       "label": "C",
+       "s": 93.7,
+       "t": "Not many people here in Birmingham can boast of having visited Russia."
+      },
+      {
+       "label": "D",
+       "s": 132.7,
+       "t": "How did you find Russian people?"
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -33909,6 +36031,7 @@
       }
      ],
      "key": "1213322",
+     "evs": [],
      "kes": "1.2.2"
     }
    ],
@@ -34632,6 +36755,33 @@
       }
      ],
      "key": "1233113",
+     "evs": [
+      {
+       "label": "A",
+       "s": 267.6,
+       "t": "I was with my parents. We went camping there for two weeks. One week we spent at a camping ground near a small lake and the other week we went whitewater rafting down the river."
+      },
+      {
+       "label": "B",
+       "s": 267.6,
+       "t": "I was with my parents. We went camping there for two weeks. One week we spent at a camping ground near a small lake and the other week we went whitewater rafting down the river."
+      },
+      {
+       "label": "E",
+       "s": 158.5,
+       "t": "Well, Nick, tastes differ. So what have you been doing these last two weeks before school starts?"
+      },
+      {
+       "label": "F",
+       "s": 186.5,
+       "t": "Yes, I did. I love the maps and illustrations on it. I hope we have our history teacher from last year again this year."
+      },
+      {
+       "label": "G",
+       "s": 220.5,
+       "t": "Yes, me too. It was good to chat with you, Ellen."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -34965,6 +37115,13 @@
       }
      ],
      "key": "1332221",
+     "evs": [
+      {
+       "label": "F",
+       "s": 166.2,
+       "t": "At the weekend, we also serve five o'clock tea with delicious sandwiches"
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -35378,6 +37535,28 @@
       }
      ],
      "key": "1233122",
+     "evs": [
+      {
+       "label": "A",
+       "s": 30.0,
+       "t": "Good morning, and welcome to the Star Sports Club."
+      },
+      {
+       "label": "D",
+       "s": 97.8,
+       "t": "I had PE classes in high school, and sometimes I do some stretching"
+      },
+      {
+       "label": "F",
+       "s": 168.8,
+       "t": "We have classes of many dancing styles."
+      },
+      {
+       "label": "G",
+       "s": 245.9,
+       "t": "but I can't make up my mind which one to choose."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -36031,6 +38210,18 @@
       }
      ],
      "key": "1332121",
+     "evs": [
+      {
+       "label": "E",
+       "s": 97.5,
+       "t": "So we booked a tour around Scotland."
+      },
+      {
+       "label": "G",
+       "s": 97.5,
+       "t": "So we booked a tour around Scotland."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -36644,6 +38835,28 @@
       }
      ],
      "key": "2132311",
+     "evs": [
+      {
+       "label": "A",
+       "s": 77.8,
+       "t": "Not like I'm really keen on studies, but after such a good summer it's not so bad to come back to college."
+      },
+      {
+       "label": "B",
+       "s": 110.8,
+       "t": "Well, that's enough about me. Tell me about your amazing summer. You went travelling, didn't you?"
+      },
+      {
+       "label": "D",
+       "s": 157.8,
+       "t": "Well, we spent a couple of days in Moscow, but then we took a tour around the Golden Ring."
+      },
+      {
+       "label": "F",
+       "s": 203.8,
+       "t": "Yes, the tour guide was a very nice Russian lady with excellent English."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -37007,6 +39220,23 @@
       }
      ],
      "key": "2131122",
+     "evs": [
+      {
+       "label": "B",
+       "s": 99.0,
+       "t": "Are you saying that people left their trash around after they left the shore?"
+      },
+      {
+       "label": "D",
+       "s": 132.0,
+       "t": "You know, Jim, I've actually always wanted to be a volunteer,"
+      },
+      {
+       "label": "F",
+       "s": 139.0,
+       "t": "How did you become a volunteer?"
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -37630,6 +39860,28 @@
       }
      ],
      "key": "2131132",
+     "evs": [
+      {
+       "label": "A",
+       "s": 179.9,
+       "t": "At our leisure centre, we have a special club."
+      },
+      {
+       "label": "B",
+       "s": 83.9,
+       "t": "I've got so much time on my hands, and I don't know how to spend it."
+      },
+      {
+       "label": "F",
+       "s": 196.9,
+       "t": "If you can't find it in your local library, you'll have to borrow it from somewhere or buy it."
+      },
+      {
+       "label": "G",
+       "s": 389.1,
+       "t": "Take the form to fill in. Our classes are Tuesday and Friday, 5pm."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -38263,6 +40515,33 @@
       }
      ],
      "key": "2312231",
+     "evs": [
+      {
+       "label": "A",
+       "s": 69.1,
+       "t": "Oh, I'm fine. So how are your summer holidays?"
+      },
+      {
+       "label": "C",
+       "s": 113.1,
+       "t": "I'm going on an expedition to the Atlas Mountains in Morocco."
+      },
+      {
+       "label": "E",
+       "s": 176.1,
+       "t": "I see. Well, Jason, I hope you have a great trip."
+      },
+      {
+       "label": "F",
+       "s": 188.1,
+       "t": "Will you post them on social media?"
+      },
+      {
+       "label": "G",
+       "s": 181.1,
+       "t": "I expect you to take thousands of pictures of Morocco."
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -38896,6 +41175,18 @@
       }
      ],
      "key": "2123231",
+     "evs": [
+      {
+       "label": "D",
+       "s": 108.3,
+       "t": "Sure. I suggest you should have a look at the Royal Hotel."
+      },
+      {
+       "label": "G",
+       "s": 201.3,
+       "t": "Sure. Well, I think I'm going to order this tour now. When can I come to your agency?"
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
@@ -39349,6 +41640,7 @@
       }
      ],
      "key": "1232313",
+     "evs": [],
      "kes": "1.2.2"
     }
    ],
@@ -39837,6 +42129,28 @@
       }
      ],
      "key": "2231111",
+     "evs": [
+      {
+       "label": "A",
+       "s": 62.9,
+       "t": "Are you enjoying your summer holidays?"
+      },
+      {
+       "label": "B",
+       "s": 82.9,
+       "t": "I'm going to work as a volunteer"
+      },
+      {
+       "label": "C",
+       "s": 124.9,
+       "t": "is the Galapagos Islands in Ecuador"
+      },
+      {
+       "label": "G",
+       "s": 198.9,
+       "t": "I bet you are keen on trying the Italian food there"
+      }
+     ],
      "kes": "1.2.2"
     }
    ],
