@@ -149,6 +149,25 @@ export async function renderSpeaking(container, cfg) {
     return el('div', { class: 'sp-sample' }, [head, body]);
   }
 
+  // Вопросы опроса + образцы ответов (свёрнуто): каждый вопрос → эталонный ответ с озвучкой.
+  function surveySampleBlock(questions, samples) {
+    if (!questions || !questions.length) return null;
+    const rows = questions.map((q, i) => {
+      const ans = samples && samples[i];
+      const kids = [el('div', { class: 'sp-qa-q', text: (i + 1) + '. ' + q })];
+      if (ans) { kids.push(el('div', { class: 'sp-qa-a', text: ans })); kids.push(spkBtn(ans)); }
+      return el('div', { class: 'sp-qa' }, kids);
+    });
+    const body = el('div', { class: 'sp-sample-body', style: { display: 'none' } }, rows);
+    let open = false;
+    const head = el('button', { class: 'sp-sample-head' }, [
+      el('span', { text: '📝 ' + (samples ? S.sampleTitle : S.surveyQs) }),
+      el('span', { class: 'sp-sample-chev', text: '▾' }),
+    ]);
+    head.addEventListener('click', () => { open = !open; body.style.display = open ? '' : 'none'; head.querySelector('.sp-sample-chev').textContent = open ? '▴' : '▾'; });
+    return el('div', { class: 'sp-sample' }, [head, body]);
+  }
+
   // Кнопка «послушать носителя по теме» — фрагмент из аудирования (если подобран).
   function nativeBlock(native) {
     if (!native || !native.audio) return null;
@@ -179,7 +198,8 @@ export async function renderSpeaking(container, cfg) {
         el('div', { class: 'sp-step', text: S.yourTurn }),
         recorder(),
         checklist(S.critSurvey),
-      ];
+        surveySampleBlock(item.questions, item.samples),
+      ].filter(Boolean);
     } else {
       body = [
         el('div', { class: 'sp-instr', text: S.monoInstr(item.topic) }),

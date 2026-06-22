@@ -107,6 +107,7 @@ export const STRINGS = {
       listenModel: 'Послушать эталон',
       ttsPause: 'Пауза', ttsResume: 'Продолжить', ttsStop: 'Стоп',
       sampleTitle: 'Образец ответа',
+      surveyQs: 'Вопросы и образцы ответов',
       listenNative: 'Послушать носителя по теме',
       recStart: '🎤 Записать', recStop: '⏹ Стоп', recAgain: '↺ Перезаписать',
       recOn: 'Идёт запись… говори', micErr: 'Нет доступа к микрофону — разреши его в браузере',

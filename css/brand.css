@@ -320,6 +320,11 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .sp-sample-chev{color:var(--muted);font-size:13px}
 .sp-sample-body{padding:0 15px 15px}
 .sp-sample-text{margin-top:10px;font-size:15px;line-height:1.65;color:var(--ink)}
+/* вопрос+ответ в опросе */
+.sp-qa{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+.sp-qa:first-child{margin-top:10px;padding-top:0;border-top:none}
+.sp-qa-q{font-size:14px;font-weight:700;color:var(--p-text);line-height:1.45}
+.sp-qa-a{margin-top:6px;font-size:15px;line-height:1.6;color:var(--ink)}
 /* послушать носителя по теме */
 .sp-native-wrap{margin-top:14px}
 .sp-native{width:100%;background:var(--grad-listening);color:#fff;border:none;font-weight:800}
