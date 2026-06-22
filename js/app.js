@@ -408,7 +408,7 @@ async function renderProgress() {
       el('div', { class: 'pr-top' }, [
         el('div', { class: 'pr-ic' }, [iconImg('ic-' + (sec.iconKey || sec.tile), sec.icon, 'pr-img')]),
         el('div', { class: 'pr-name', text: t.sections[sec.id] }),
-        el('div', { class: 'pr-pct', style: { color: c }, text: done + '/' + total }),
+        el('div', { class: 'pr-pct', style: { color: c }, text: p + '%' }),
       ]),
       el('div', { class: 'pr-bar' }, [el('i', { style: { width: p + '%', background: c } })]),
       el('div', { class: 'pr-meta', text: done ? t.progDone(done, total) : t.noSolved }),

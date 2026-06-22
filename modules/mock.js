@@ -10,7 +10,7 @@ import { recordRound, getName, getMockResults, recordMock } from '../js/gamify.j
 import { t } from '../js/exam.js';
 
 const WORKER = 'https://purple-cake-2966.o-sintsova.workers.dev';
-const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
+const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G']; // EGE headings = 7 текстов A–G; ОГЭ matching/gaps (A–F) — лишние отфильтруются по texts[L]
 
 function norm(s) { return (s || '').toString().toLowerCase().trim().replace(/[.,!?;:]/g, '').replace(/\s+/g, ' '); }
 function keyOk(got, key) {
@@ -162,6 +162,7 @@ export async function renderMock(container, cfg) {
     if (it.kind === 'fill') return fillItem(it, i, answers);
     if (it.kind === 'match') return lmatchItem(it, i, answers);
     if (it.kind === 'rmatch') return rmatchItem(it, answers);
+    if (it.kind === 'gaps') return gapsItem(it, answers);
     if (it.kind === 'tfns') return tfnsItem(it, answers);
     if (it.kind === 'gap') return gapItem(it, i, answers);
     return el('div');
@@ -217,8 +218,31 @@ export async function renderMock(container, cfg) {
       ]);
     });
     return el('div', { class: 'mock-q' }, [
-      el('div', { class: 'rd-qtitle', text: M.matchTitle }), qList,
+      el('div', { class: 'rd-qtitle', text: it.title || M.matchTitle }), qList,
       el('div', { class: 'rd-texts' }, cards),
+    ]);
+  }
+
+  // EGE «вставка частей»: пассаж с маркерами {A}..{F} + список частей, select на каждый пропуск.
+  function gapsItem(it, answers) {
+    answers[it.zid] = answers[it.zid] || {};
+    const parts = el('ol', { class: 'rd-qlist' }, it.parts.map((p) => el('li', { text: p })));
+    const wrap = el('div', { class: 'mock-gaps-passage' });
+    const chunks = (it.passage || '').split(/\{([A-F])\}/);
+    chunks.forEach((ch, idx) => {
+      if (idx % 2 === 0) { if (ch) wrap.appendChild(el('span', { text: ch })); return; }
+      const L = ch; // буква пропуска
+      const sel = el('select', { class: 'rd-sel rd-sel-inline' });
+      sel.appendChild(el('option', { value: '', text: L }));
+      it.parts.forEach((_, pi) => sel.appendChild(el('option', { value: String(pi + 1), text: String(pi + 1) })));
+      if (answers[it.zid][L]) sel.value = answers[it.zid][L];
+      sel.addEventListener('change', () => { answers[it.zid][L] = sel.value; });
+      wrap.appendChild(sel);
+    });
+    return el('div', { class: 'mock-q' }, [
+      el('div', { class: 'rd-qtitle', text: M.gapsTitle }),
+      el('div', { class: 'mock-parts-title', text: M.partsLabel }), parts,
+      wrap,
     ]);
   }
 
@@ -262,19 +286,21 @@ export async function renderMock(container, cfg) {
 
   function renderWritingItem(sec, answers) {
     const tk = sec.task;
-    const ta = el('textarea', { class: 'mock-textarea', rows: '10', placeholder: M.writePh, value: answers.writing || '' });
-    ta.addEventListener('input', () => { answers.writing = ta.value; updateWc(); });
+    const akey = 'w:' + (sec.wkind || 'letter');
+    const ta = el('textarea', { class: 'mock-textarea', rows: '10', placeholder: M.writePh, value: answers[akey] || '' });
+    ta.addEventListener('input', () => { answers[akey] = ta.value; updateWc(); });
     const wc = el('div', { class: 'mock-wc' });
     function updateWc() { const n = (ta.value.trim().match(/\S+/g) || []).length; wc.textContent = M.words(n); }
     updateWc();
-    return el('div', { class: 'mock-q' }, [
-      el('div', { class: 'letter-card' }, [
-        tk.context ? el('div', { class: 'mock-letter-ctx', text: tk.context }) : null,
-        el('div', { class: 'mock-letter-q', text: tk.questions || '' }),
-      ]),
-      el('div', { class: 'mock-write-instr', text: M.writeInstr }),
-      ta, wc,
-    ]);
+    // ОГЭ-письмо: контекст + вопросы; ЕГЭ email/essay: один prompt
+    const card = tk.prompt
+      ? el('div', { class: 'letter-card' }, [el('div', { class: 'mock-letter-q', text: tk.prompt })])
+      : el('div', { class: 'letter-card' }, [
+          tk.context ? el('div', { class: 'mock-letter-ctx', text: tk.context }) : null,
+          el('div', { class: 'mock-letter-q', text: tk.questions || '' }),
+        ]);
+    const instr = sec.words ? M.writeWords(sec.words[0], sec.words[1]) : M.writeInstr;
+    return el('div', { class: 'mock-q' }, [card, el('div', { class: 'mock-write-instr', text: instr }), ta, wc]);
   }
 
   // ---- Подсчёт по завершении ----
@@ -300,6 +326,9 @@ export async function renderMock(container, cfg) {
         } else if (it.kind === 'rmatch') {
           const a = answers[it.zid] || {};
           LETTERS.filter((L) => it.texts[L] != null).forEach((L, idx) => { const ok = (a[L] || '') === it.answer[idx]; add(it.kes, ok); if (ok) sc++; });
+        } else if (it.kind === 'gaps') {
+          const a = answers[it.zid] || {};
+          (it.gaps || LETTERS).forEach((L, idx) => { const ok = (a[L] || '') === it.answer[idx]; add(it.kes, ok); if (ok) sc++; });
         } else if (it.kind === 'tfns') {
           const a = answers['tf:' + it.group] || {};
           it.statements.forEach((st) => { const ok = (a[st.num] || '') === st.answer; add(it.kes, ok); if (ok) sc++; });
@@ -308,21 +337,21 @@ export async function renderMock(container, cfg) {
       secScores.push({ id: sec.id, title: sec.title, score: sc, max: sec.maxPts });
     }
 
-    // Письмо — AI (если есть текст и сеть). Иначе — отложенная оценка.
-    const wSec = v.sections.find((s) => s.id === 'writing');
-    let writing = null;
-    const wText = (answers.writing || '').trim();
-    if (wSec) {
+    // Письмо — AI (если есть текст и сеть). Иначе — отложенная оценка. Может быть несколько (ЕГЭ: email+essay).
+    const wSecs = v.sections.filter((s) => s.id === 'writing');
+    const writings = [];
+    for (const wSec of wSecs) {
+      const wText = (answers['w:' + (wSec.wkind || 'letter')] || '').trim();
       if (!wText) {
-        writing = { status: 'empty', score: 0, max: wSec.maxPts };
+        writings.push({ wkind: wSec.wkind, title: wSec.title, status: 'empty', score: 0, max: wSec.maxPts });
         secScores.push({ id: 'writing', title: wSec.title, score: 0, max: wSec.maxPts });
       } else {
         try {
-          const res = await evalLetter(wText, wSec.task);
-          writing = { status: 'graded', score: res.totalScore || 0, max: wSec.maxPts, result: res, text: wText };
-          secScores.push({ id: 'writing', title: wSec.title, score: writing.score, max: wSec.maxPts });
+          const res = await evalWriting(wText, wSec);
+          writings.push({ wkind: wSec.wkind, title: wSec.title, status: 'graded', score: res.totalScore || 0, max: wSec.maxPts, result: res });
+          secScores.push({ id: 'writing', title: wSec.title, score: res.totalScore || 0, max: wSec.maxPts });
         } catch (e) {
-          writing = { status: 'pending', score: null, max: wSec.maxPts, text: wText };
+          writings.push({ wkind: wSec.wkind, title: wSec.title, status: 'pending', score: null, max: wSec.maxPts });
           // в total письмо не входит, пока не оценено
         }
       }
@@ -333,17 +362,18 @@ export async function renderMock(container, cfg) {
     const result = {
       date: new Date().toISOString().slice(0, 10),
       variantId: v.id, num: v.num, total, max: autoMax,
-      sections: secScores, byKes, writing: writing ? { status: writing.status, score: writing.score, max: writing.max } : null,
+      sections: secScores, byKes,
+      writing: writings.map((w) => ({ wkind: w.wkind, status: w.status, score: w.score, max: w.max })),
       auto,
     };
     recordMock(result);
     // немного XP за пройденный пробник (как тренировка)
-    recordRound('mock', Math.min(total, 1) ? 1 : 0, 1);
+    recordRound('mock', total > 0 ? 1 : 0, 1);
 
-    resultScreen(v, result, writing, auto);
+    resultScreen(v, result, writings, auto);
   }
 
-  function resultScreen(v, result, writing, auto) {
+  function resultScreen(v, result, writings, auto) {
     const pct = result.max ? Math.round(result.total / result.max * 100) : 0;
     const rows = result.sections.map((s) => el('div', { class: 'mock-res-row' }, [
       el('div', { class: 'mrr-t', text: s.title }),
@@ -358,9 +388,9 @@ export async function renderMock(container, cfg) {
       ]);
     });
 
-    let wNote = null;
-    if (writing && writing.status === 'pending') wNote = el('div', { class: 'mock-wnote', text: M.writePending });
-    else if (writing && writing.status === 'empty') wNote = el('div', { class: 'mock-wnote', text: M.writeEmpty });
+    const wNotes = (writings || []).filter((w) => w.status === 'pending' || w.status === 'empty')
+      .map((w) => el('div', { class: 'mock-wnote', text: (w.status === 'pending' ? M.writePending : M.writeEmpty) + (w.title ? ' (' + w.title + ')' : '') }));
+    const wFb = (writings || []).filter((w) => w.status === 'graded').map((w) => writingFeedback(w.result, w.title));
 
     mount(container, el('div', { class: 'result view' }, [
       el('div', { class: 'mock-result-hero' }, [
@@ -369,42 +399,48 @@ export async function renderMock(container, cfg) {
         el('div', { class: 'mock-big-sub', text: M.pointsScored(pct) }),
         el('div', { class: 'mock-note', text: M.writtenPartNote }),
       ]),
-      wNote,
+      ...wNotes,
       el('div', { class: 'mock-res-card' }, [el('div', { class: 'mock-res-h', text: M.bySection }), ...rows]),
-      writing && writing.status === 'graded' ? writingFeedback(writing.result) : null,
+      ...wFb,
       kesRows.length ? el('div', { class: 'mock-res-card' }, [el('div', { class: 'mock-res-h', text: M.byKes }), el('div', { class: 'mock-kes', text: '' }), ...kesRows]) : null,
       el('button', { class: 'btn btn-primary btn-block', text: M.backToList, onclick: introScreen }),
       el('div', { class: 'row-actions' }, [el('button', { class: 'btn btn-ghost', text: t.toHome, onclick: cfg.goHome })]),
     ]));
   }
 
-  function writingFeedback(res) {
+  function writingFeedback(res, title) {
     const crit = (res.criteria || []).map((c) => el('div', { class: 'mock-crit' }, [
       el('span', { class: 'mc-code', text: c.code }),
       el('span', { class: 'mc-name', text: c.name }),
       el('span', { class: 'mc-sc', text: (c.score ?? '–') + '/' + c.max }),
     ]));
     return el('div', { class: 'mock-res-card' }, [
-      el('div', { class: 'mock-res-h', text: M.writingResult }),
+      el('div', { class: 'mock-res-h', text: M.writingResult + (title ? ' · ' + title : '') }),
       res.verdict ? el('div', { class: 'mock-verdict', text: res.verdict }) : null,
       ...crit,
     ]);
   }
 
-  async function evalLetter(text, task) {
+  // AI-оценка письма — по критериям из задания (ОГЭ-письмо ru / ЕГЭ email|essay en).
+  async function evalWriting(text, sec) {
     const wcN = (text.trim().match(/\S+/g) || []).length;
-    const stim = (task.context || '') + ' ' + (task.questions || '');
-    const sys = 'Ты строгий экзаменатор ОГЭ по английскому. Оцениваешь личное письмо (задание 35) строго по официальным критериям ФИПИ. Возвращаешь ТОЛЬКО валидный JSON, без markdown. Комментарии — по-русски.';
-    const user =
-`Критерии: К1 (max 3) Решение коммуникативной задачи; К2 (max 2) Организация текста; К3 (max 3) Лексико-грамматическое оформление; К4 (max 2) Орфография и пунктуация. Объём 100–120 слов.
-Контекст письма друга: ${stim}
-
-Письмо ученика (${wcN} слов):
-"""${text}"""
-
-Верни JSON строго так:
-{"totalScore":<сумма 0-10>,"criteria":[{"code":"К1","name":"Решение коммуникативной задачи","score":<0-3>,"max":3,"comment":"<...>"},{"code":"К2","name":"Организация текста","score":<0-2>,"max":2,"comment":"<...>"},{"code":"К3","name":"Лексико-грамматическое оформление","score":<0-3>,"max":3,"comment":"<...>"},{"code":"К4","name":"Орфография и пунктуация","score":<0-2>,"max":2,"comment":"<...>"}],"verdict":"<1-2 предложения по-русски>"}
-В ОГЭ встречные вопросы НЕ требуются. totalScore = сумма по критериям. ВАЖНО: если К1=0, всё задание = 0 (остальные критерии 0, totalScore 0).`;
+    const task = sec.task;
+    const crit = sec.criteria || [];
+    const critSpec = crit.map((c) => `${c.code} (max ${c.max}): ${c.name}`).join('; ');
+    const critJson = crit.map((c) => `{"code":"${c.code}","name":"${c.name}","score":<0-${c.max}>,"max":${c.max},"comment":"<...>"}`).join(',');
+    const stim = task.prompt || ((task.context || '') + ' ' + (task.questions || ''));
+    const mx = crit.reduce((s, c) => s + c.max, 0);
+    let sys, user;
+    if (sec.lang === 'en') {
+      const kind = sec.wkind === 'essay'
+        ? 'task 38, a data-based opinion essay (200-250 words): opening, report facts, comparisons with comments, a problem and a solution, conclusion with own opinion.'
+        : 'task 37, a personal email (100-140 words): answer the friend\'s questions AND ask 3 questions, correct opening, closing phrase and name.';
+      sys = 'You are a strict but kind English exam examiner. Assess strictly by the official criteria and reply ONLY with valid JSON, no markdown. Comments in English, B1, short.';
+      user = `Task: ${kind}\nCriteria: ${critSpec}.\n\nPrompt:\n"""${stim}"""\n\nStudent's writing (${wcN} words):\n"""${text}"""\n\nReturn JSON exactly: {"totalScore":<0-${mx}>,"criteria":[${critJson}],"verdict":"<1-2 sentences, English>"}\ntotalScore = sum of criteria. If К1 (communicative task) is 0, the whole task is 0.`;
+    } else {
+      sys = 'Ты строгий экзаменатор ОГЭ по английскому. Оцениваешь личное письмо (задание 35) строго по официальным критериям ФИПИ. Возвращаешь ТОЛЬКО валидный JSON, без markdown. Комментарии — по-русски.';
+      user = `Критерии: ${critSpec}. Объём ${sec.words ? sec.words[0] + '–' + sec.words[1] : '100–120'} слов.\nКонтекст письма друга: ${stim}\n\nПисьмо ученика (${wcN} слов):\n"""${text}"""\n\nВерни JSON строго так:\n{"totalScore":<0-${mx}>,"criteria":[${critJson}],"verdict":"<1-2 предложения по-русски>"}\nВ ОГЭ встречные вопросы НЕ требуются. totalScore = сумма по критериям. ВАЖНО: если К1=0, всё задание = 0.`;
+    }
     const r = await fetch(WORKER, {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ model: 'deepseek-chat', max_tokens: 1500,
