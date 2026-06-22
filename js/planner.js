@@ -35,6 +35,20 @@ async function readingTopics(dataFile) {
   } catch { return []; }
 }
 
+// Псевдо-темы аудирования по КЭС (1.2.1 соответствие, 1.2.2/1.2.3 выбор/вписать) с объёмом.
+async function listeningTopics(dataFile) {
+  try {
+    const d = await loadJSON(dataFile);
+    const by = {};
+    for (const g of (d.groups || [])) for (const q of (g.questions || [])) {
+      const k = q.kes || (q.type === 'match' ? '1.2.1' : '1.2.2');
+      by[k] = (by[k] || 0) + 1;
+    }
+    const lf = (t.listening && t.listening.kes) || {};
+    return Object.keys(by).sort().map((k) => ({ kes: k, label: lf[k] || ('КЭС ' + k), count: by[k] }));
+  } catch { return []; }
+}
+
 // Остаток под заданную «глубину». extra — псевдо-темы по sec.id; writeCounts — число писем по разделу.
 // Письмо/эссе = одна «тема» с реальным числом заданий (full=всё, master=15, light=5).
 function compute(topics, perTopic, extra, writeCounts) {
@@ -52,10 +66,10 @@ function compute(topics, perTopic, extra, writeCounts) {
       if (rem) weak.push({ section: s.id, label: t.sections[s.id], rem });
       continue;
     }
-    if (s.type !== 'drill' && s.type !== 'reading') continue;
+    if (s.type !== 'drill' && s.type !== 'reading' && s.type !== 'listening') continue;
     const topicKey = s.topicKey || (s.type === 'reading' ? READING_KEY : null);
     let list = topicKey ? (topics[topicKey] || []) : [];
-    if (!list.length && s.type === 'reading' && extra && extra[s.id]) list = extra[s.id];  // ЕГЭ-чтение без КЭС
+    if (!list.length && (s.type === 'reading' || s.type === 'listening') && extra && extra[s.id]) list = extra[s.id];  // чтение/аудирование без КЭС в topics
     if (!list.length) continue;
     const by = sectionStats(s.id).byKes;
     let secRem = 0, doneT = 0;
@@ -93,6 +107,8 @@ export async function weeklyPlan() {
     if (s.type === 'reading') {
       const tk = s.topicKey || READING_KEY;
       if (!(topics[tk] || []).length && s.dataFile) extra[s.id] = await readingTopics(s.dataFile);
+    } else if (s.type === 'listening' && s.dataFile) {
+      extra[s.id] = await listeningTopics(s.dataFile);
     }
   }
   // Число заданий письма/эссе по разделу (из их data-файлов в EXAM.writing.tasks)

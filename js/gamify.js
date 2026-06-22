@@ -118,6 +118,15 @@ export function recordThemeFinale(key) {
   return { tokensEarned: 2, already: false, tokens: s.tokens };
 }
 
+// Пройденные варианты аудирования: {variantId: {correct, total}} — храним лучший результат.
+export function getListeningDone() { return read().listeningDone || {}; }
+export function recordListeningVariant(vid, correct, total) {
+  const s = read(); s.listeningDone = s.listeningDone || {};
+  const prev = s.listeningDone[vid];
+  if (!prev || correct > prev.correct) s.listeningDone[vid] = { correct, total };
+  write(s);
+}
+
 // Виден ли уже совет Спики по разделу (авто-показ только в первый раз)
 export function hasSeenTip(id) { return (read().tipsSeen || []).includes(id); }
 export function markTipSeen(id) { const s = read(); s.tipsSeen = s.tipsSeen || []; if (!s.tipsSeen.includes(id)) { s.tipsSeen.push(id); write(s); } }

@@ -19,7 +19,7 @@ const CONFIGS = {
       { id: 'writing',  type: 'writing', tile: 'writing', icon: '✉️' },
       { id: 'speaking', type: 'soon',    tile: 'speaking', iconKey: 'speaking', icon: '🎤' },
     ],
-    pack: ['grammar', 'wordform', 'reading', 'writing'],
+    pack: ['grammar', 'wordform', 'reading', 'listening', 'writing'],
     soonTile: false,
     // Письмо ОГЭ — одно задание (личное письмо, задание 35, К1–К4, макс 10)
     writing: {
@@ -49,7 +49,7 @@ const CONFIGS = {
       { id: 'email',   type: 'writing', tile: 'writing', icon: '✉️' },
       { id: 'essay',   type: 'writing', tile: 'grammar', iconKey: 'essay', icon: '📝' },
     ],
-    pack: ['grammar', 'lexis', 'reading', 'email', 'essay'],
+    pack: ['grammar', 'lexis', 'reading', 'listening', 'email', 'essay'],
     soonTile: true,
     // Письмо ЕГЭ — ДВА задания: e-mail (зад.37, К1–К3, макс 6) и эссе (зад.38, К1–К5, макс 14)
     writing: {

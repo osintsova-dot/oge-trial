@@ -815,8 +815,19 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .ls-foot{margin-top:18px}
 /* Скрипт записи (только на проверке) */
 .ls-script{margin-top:18px;background:var(--surf);border-radius:14px;padding:14px}
-.ls-script-h{font-size:15px;font-weight:800;color:var(--ink);margin-bottom:2px}
-.ls-script-hint{font-size:12.5px;color:var(--muted);margin-bottom:10px}
+.ls-script-toggle{display:flex;align-items:center;justify-content:space-between;width:100%;border:none;background:none;
+  padding:2px 0;cursor:pointer;font-family:inherit}
+.ls-script-caret{color:var(--p-text);font-size:14px;font-weight:800}
+.ls-script-h{font-size:15px;font-weight:800;color:var(--ink)}
+.ls-script-hint{font-size:12.5px;color:var(--muted);margin:4px 0 10px}
+/* разбивка по кодификатору на экране результата */
+.ls-kes-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:14px 0}
+.ls-kes-h{font-size:12px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px}
+.ls-kes-row{display:flex;justify-content:space-between;align-items:center;padding:3px 0;font-size:14px;color:var(--ink)}
+.ls-kes-v{font-weight:800}
+/* пройденный вариант в меню */
+.all-topics.ls-done{opacity:.92}
+.all-topics.ls-done .at-arrow{color:#fff;font-size:20px}
 .ls-lines{display:flex;flex-wrap:wrap;gap:2px;line-height:1.7}
 .ls-line{display:inline;text-align:left;border:none;background:none;padding:1px 3px;border-radius:6px;
   font-size:14px;color:var(--ink);cursor:pointer;font-family:inherit}

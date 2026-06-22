@@ -21,7 +21,8 @@
      "ev": {
       "s": 104.3,
       "t": "I'd like to give you some advice on our hiking holiday."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "7D08A8",
@@ -36,7 +37,8 @@
      "ev": {
       "s": 152.2,
       "t": "I've found nothing except a large indoor plant and a ceramic pot."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "0E593D",
@@ -51,7 +53,8 @@
      "ev": {
       "s": 212.0,
       "t": "Of course I do, but I've always dreamed of a career in professional sports,"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "F515EF",
@@ -66,7 +69,8 @@
      "ev": {
       "s": 243.2,
       "t": "What we can make is either spaghetti or sandwiches with ham and cheese."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "E5CBA4",
@@ -87,7 +91,8 @@
       "D",
       "E"
      ],
-     "key": "32614"
+     "key": "32614",
+     "kes": "1.2.1"
     },
     {
      "zid": "B5ED73",
@@ -97,7 +102,8 @@
      "ev": {
       "s": 1119.5,
       "t": "In fact, I was in the library for a different reason. I work there. I'm a librarian."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "516C81",
@@ -107,7 +113,8 @@
      "ev": {
       "s": 1141.9,
       "t": "You've already tried 12 different jobs? Fantastic."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "81655A",
@@ -117,7 +124,8 @@
      "ev": {
       "s": 1153.8,
       "t": "Of course. The language I learned in college was Chinese and I'm still learning it"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "BA3459",
@@ -127,7 +135,8 @@
      "ev": {
       "s": 1177.1,
       "t": "Hmm, no. I like travelling. It's my real hobby. And my favourite destination is China."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "9F82AF",
@@ -137,7 +146,8 @@
      "ev": {
       "s": 1202.2,
       "t": "Do you mean the Chinese bamboo flute? No, but I play the piano. Well enough."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "07CA19",
@@ -147,7 +157,8 @@
      "ev": {
       "s": 1220.7,
       "t": "Hmm, I go jogging. I would like to go swimming but there's no swimming pool nearby so I jog"
-     }
+     },
+     "kes": "1.2.2"
     }
    ],
    "transcript": [
@@ -1247,7 +1258,8 @@
      "ev": {
       "s": 109.1,
       "t": "and each customer will get a present today – a sports watch."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "2EA061",
@@ -1262,7 +1274,8 @@
      "ev": {
       "s": 103.8,
       "t": "We are happy to say that our sports shop is celebrating the 10th anniversary of its opening"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "C06EFC",
@@ -1277,7 +1290,8 @@
      "ev": {
       "s": 181.8,
       "t": "Good to see you, Sally."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "29C2CA",
@@ -1292,7 +1306,8 @@
      "ev": {
       "s": 239.8,
       "t": "But after that, we've got science. It makes things better."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "386CD7",
@@ -1313,7 +1328,8 @@
       "D",
       "E"
      ],
-     "key": "62143"
+     "key": "62143",
+     "kes": "1.2.1"
     },
     {
      "zid": "F06083",
@@ -1323,7 +1339,8 @@
      "ev": {
       "s": 1085.0,
       "t": "I love arts and I do some painting myself."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "41D484",
@@ -1333,7 +1350,8 @@
      "ev": {
       "s": 1091.0,
       "t": "You need to see Italy then."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "B4EE70",
@@ -1343,14 +1361,16 @@
      "ev": {
       "s": 1124.5,
       "t": "I'm a scientist."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "0D5C25",
      "type": "fill",
      "label": "Age of the respondent",
      "key": "forty",
-     "ev": null
+     "ev": null,
+     "kes": "1.2.2"
     },
     {
      "zid": "CD3C89",
@@ -1360,7 +1380,8 @@
      "ev": {
       "s": 1157.0,
       "t": "It's pasta."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "E9381A",
@@ -1370,7 +1391,8 @@
      "ev": {
       "s": 1180.5,
       "t": "I play basketball with my colleagues at least twice a week."
-     }
+     },
+     "kes": "1.2.2"
     }
    ],
    "transcript": [
@@ -2667,7 +2689,8 @@
       "a garden with tropical plants"
      ],
      "key": "1",
-     "ev": null
+     "ev": null,
+     "kes": "1.2.2"
     },
     {
      "zid": "EDB490",
@@ -2682,7 +2705,8 @@
      "ev": {
       "s": 156.9,
       "t": "That's why we've moved it to Sunday, which promises to be a warm and sunny day."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "03F090",
@@ -2697,7 +2721,8 @@
      "ev": {
       "s": 206.7,
       "t": "Then I would recommend this big set of paints."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "8C78E3",
@@ -2712,7 +2737,8 @@
      "ev": {
       "s": 248.3,
       "t": "As for you, you've got a great talent for roller skating."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "695F67",
@@ -2733,7 +2759,8 @@
       "D",
       "E"
      ],
-     "key": "41632"
+     "key": "41632",
+     "kes": "1.2.1"
     },
     {
      "zid": "8F68E4",
@@ -2743,7 +2770,8 @@
      "ev": {
       "s": 1038.9,
       "t": "OK, I'm 60."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "775E26",
@@ -2753,7 +2781,8 @@
      "ev": {
       "s": 1049.5,
       "t": "No, but I've been playing tennis since childhood"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "43DFAD",
@@ -2763,7 +2792,8 @@
      "ev": {
       "s": 118.9,
       "t": "our young guests can visit the place where we grow fruit and vegetables for our restaurant."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "3CB55E",
@@ -2773,7 +2803,8 @@
      "ev": {
       "s": 1072.0,
       "t": "I'm from India and we have traditions of cooking vegetables there."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "64F0AC",
@@ -2783,7 +2814,8 @@
      "ev": {
       "s": 1086.6,
       "t": "Yes, I went to university in the United States to be an engineer and"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "EA08E4",
@@ -2793,7 +2825,8 @@
      "ev": {
       "s": 1132.8,
       "t": "Now I go fishing whenever I have an opportunity."
-     }
+     },
+     "kes": "1.2.2"
     }
    ],
    "transcript": [
@@ -4248,7 +4281,8 @@
      "ev": {
       "s": 116.5,
       "t": "Before we set off, I want to give you these boxes with your lunch."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "5A18F1",
@@ -4263,7 +4297,8 @@
      "ev": {
       "s": 1035.8,
       "t": "Thank you for taking part in our survey. I promise it won't take you long."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "F5204D",
@@ -4278,7 +4313,8 @@
      "ev": {
       "s": 191.7,
       "t": "and I'm hopeless at French."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "0865DE",
@@ -4293,7 +4329,8 @@
      "ev": {
       "s": 239.4,
       "t": "I just feel like staying at home tomorrow."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "340853",
@@ -4314,7 +4351,8 @@
       "D",
       "E"
      ],
-     "key": "63154"
+     "key": "63154",
+     "kes": "1.2.1"
     },
     {
      "zid": "FA5983",
@@ -4324,7 +4362,8 @@
      "ev": {
       "s": 111.3,
       "t": "Our driver, Jeff, is in his place too, so we are ready to go."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "068A3F",
@@ -4334,7 +4373,8 @@
      "ev": {
       "s": 1072.1,
       "t": "Hmm, let me count. 30, yes, 30."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "DAEA35",
@@ -4344,7 +4384,8 @@
      "ev": {
       "s": 191.7,
       "t": "and I'm hopeless at French."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "12B99A",
@@ -4354,7 +4395,8 @@
      "ev": {
       "s": 1111.9,
       "t": "Yes, in Oxford, my native city. I was born there and went to school there."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "51DAE4",
@@ -4364,7 +4406,8 @@
      "ev": {
       "s": 1142.9,
       "t": "No, it isn't. My favourite drink, for example, is juice."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "4530B1",
@@ -4374,7 +4417,8 @@
      "ev": {
       "s": 222.1,
       "t": "I'm going to the swimming pool. How about joining me?"
-     }
+     },
+     "kes": "1.2.2"
     }
    ],
    "transcript": [
@@ -5449,7 +5493,8 @@
      "ev": {
       "s": 113.5,
       "t": "Please go on with your shopping."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "2FFA67",
@@ -5464,7 +5509,8 @@
      "ev": {
       "s": 104.8,
       "t": "The fire alarm you've just heard was activated by mistake."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "5E6B43",
@@ -5479,7 +5525,8 @@
      "ev": {
       "s": 203.2,
       "t": "but I'd prefer ten tests in science to one in maths."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "EB7418",
@@ -5494,7 +5541,8 @@
      "ev": {
       "s": 223.4,
       "t": "What's up, Nick? Why is your little brother crying?"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "0658F3",
@@ -5515,7 +5563,8 @@
       "D",
       "E"
      ],
-     "key": "36512"
+     "key": "36512",
+     "kes": "1.2.1"
     },
     {
      "zid": "485324",
@@ -5525,7 +5574,8 @@
      "ev": {
       "s": 1074.2,
       "t": "I'm a policeman and it's part of my job to ask people questions."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "E7364E",
@@ -5535,7 +5585,8 @@
      "ev": {
       "s": 1103.2,
       "t": "For me it's chicken."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "1BFA96",
@@ -5545,7 +5596,8 @@
      "ev": {
       "s": 1124.2,
       "t": "Athletics, that's what I do."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "578A81",
@@ -5555,7 +5607,8 @@
      "ev": {
       "s": 1144.2,
       "t": "50, yeah."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "FD8064",
@@ -5565,7 +5618,8 @@
      "ev": {
       "s": 1155.2,
       "t": "In Ireland, of course."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "1C2493",
@@ -5575,7 +5629,8 @@
      "ev": {
       "s": 1183.2,
       "t": "I love gardening."
-     }
+     },
+     "kes": "1.2.2"
     }
    ],
    "transcript": [
@@ -7315,7 +7370,8 @@
      "ev": {
       "s": 130.2,
       "t": "We also ask you not to touch any unattended luggage or lost documents,"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "25AD45",
@@ -7330,7 +7386,8 @@
      "ev": {
       "s": 144.2,
       "t": "I just want to tell you that you were lucky to be late for that film we saw today."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "859E73",
@@ -7345,7 +7402,8 @@
      "ev": {
       "s": 182.2,
       "t": "Yes, I lived there with my parents for six months."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "B52DA7",
@@ -7360,7 +7418,8 @@
      "ev": {
       "s": 233.9,
       "t": "I've just got a new phone number, sorry I did not tell you."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "42C953",
@@ -7381,14 +7440,16 @@
       "D",
       "E"
      ],
-     "key": "51634"
+     "key": "51634",
+     "kes": "1.2.1"
     },
     {
      "zid": "6E88F6",
      "type": "fill",
      "label": "The number of the academic year he/she is in",
      "key": "eleven",
-     "ev": null
+     "ev": null,
+     "kes": "1.2.2"
     },
     {
      "zid": "082E0A",
@@ -7398,7 +7459,8 @@
      "ev": {
       "s": 1042.5,
       "t": "I have to take science."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "5181C6",
@@ -7408,7 +7470,8 @@
      "ev": {
       "s": 1054.0,
       "t": "We always play basketball in PE"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "F80FF3",
@@ -7418,7 +7481,8 @@
      "ev": {
       "s": 1087.1,
       "t": "I plan my week to leave Wednesday free."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "4EE58B",
@@ -7428,7 +7492,8 @@
      "ev": {
       "s": 1112.9,
       "t": "Only German, but I speak it almost fluently."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "AA5DA6",
@@ -7438,7 +7503,8 @@
      "ev": {
       "s": 1137.4,
       "t": "But we go fishing on holiday."
-     }
+     },
+     "kes": "1.2.2"
     }
    ],
    "transcript": [
@@ -9043,7 +9109,8 @@
      "ev": {
       "s": 119.2,
       "t": "The greenhouse is inhabited by nearly a thousand butterflies,"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "1DCC0D",
@@ -9058,7 +9125,8 @@
      "ev": {
       "s": 158.9,
       "t": "my old friend from primary school."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "C50645",
@@ -9073,7 +9141,8 @@
      "ev": {
       "s": 207.6,
       "t": "A pair of long warm rubber boots for fishermen."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "ED2819",
@@ -9085,7 +9154,8 @@
       "In a hotel room"
      ],
      "key": "1",
-     "ev": null
+     "ev": null,
+     "kes": "1.2.2"
     },
     {
      "zid": "B28913",
@@ -9106,7 +9176,8 @@
       "D",
       "E"
      ],
-     "key": "51362"
+     "key": "51362",
+     "kes": "1.2.1"
     },
     {
      "zid": "259BDB",
@@ -9116,7 +9187,8 @@
      "ev": {
       "s": 1079.9,
       "t": "You do cycling quite often."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "2444B3",
@@ -9126,7 +9198,8 @@
      "ev": {
       "s": 1105.9,
       "t": "The plane, of course."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "4631FD",
@@ -9136,7 +9209,8 @@
      "ev": {
       "s": 1121.9,
       "t": "It's history."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "F8EA58",
@@ -9146,7 +9220,8 @@
      "ev": {
       "s": 1127.9,
       "t": "And I was born in Scotland"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "3DE8E2",
@@ -9156,7 +9231,8 @@
      "ev": {
       "s": 1163.9,
       "t": "I do some blogging."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "604DB1",
@@ -9166,7 +9242,8 @@
      "ev": {
       "s": 1173.9,
       "t": "90 at the moment."
-     }
+     },
+     "kes": "1.2.2"
     }
    ],
    "transcript": [
@@ -11491,7 +11568,8 @@
      "ev": {
       "s": 130.3,
       "t": "for people of any age and with any interests."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "343566",
@@ -11506,7 +11584,8 @@
      "ev": {
       "s": 164.0,
       "t": "it started to rain and I got wet to the bone."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "93C67B",
@@ -11521,7 +11600,8 @@
      "ev": {
       "s": 200.9,
       "t": "Look, I'm going to the fitness centre in an hour or so."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "CD2086",
@@ -11536,7 +11616,8 @@
      "ev": {
       "s": 251.8,
       "t": "It's a baseball glove."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "7386BB",
@@ -11557,7 +11638,8 @@
       "D",
       "E"
      ],
-     "key": "43156"
+     "key": "43156",
+     "kes": "1.2.1"
     },
     {
      "zid": "374951",
@@ -11567,7 +11649,8 @@
      "ev": {
       "s": 1098.4,
       "t": "Now he's a big dog."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "C972FE",
@@ -11577,7 +11660,8 @@
      "ev": {
       "s": 1124.4,
       "t": "I'm short-sighted and a pilot"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "F5E14F",
@@ -11587,7 +11671,8 @@
      "ev": {
       "s": 1148.4,
       "t": "15 on average?"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "7F18C4",
@@ -11597,7 +11682,8 @@
      "ev": {
       "s": 1160.4,
       "t": "I speak Russian but not very fluently yet."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "5BFB75",
@@ -11607,7 +11693,8 @@
      "ev": {
       "s": 1184.4,
       "t": "but my favorite food is fish."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "6CC961",
@@ -11617,7 +11704,8 @@
      "ev": {
       "s": 1194.4,
       "t": "Of course. I go skateboarding with friends."
-     }
+     },
+     "kes": "1.2.2"
     }
    ],
    "transcript": [
@@ -13819,7 +13907,8 @@
       "it has moved to another zoo"
      ],
      "key": "2",
-     "ev": null
+     "ev": null,
+     "kes": "1.2.2"
     },
     {
      "zid": "4C5108",
@@ -13834,7 +13923,8 @@
      "ev": {
       "s": 161.0,
       "t": "In science class, she's going to see all of them."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "B92FDF",
@@ -13846,7 +13936,8 @@
       "Tonight"
      ],
      "key": "1",
-     "ev": null
+     "ev": null,
+     "kes": "1.2.2"
     },
     {
      "zid": "7423A3",
@@ -13861,7 +13952,8 @@
      "ev": {
       "s": 227.4,
       "t": "We may go to my aunt's house."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "2352F4",
@@ -13882,7 +13974,8 @@
       "D",
       "E"
      ],
-     "key": "51632"
+     "key": "51632",
+     "kes": "1.2.1"
     },
     {
      "zid": "A5F271",
@@ -13892,7 +13985,8 @@
      "ev": {
       "s": 1068.3,
       "t": "20. Yes, right."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "3BF1E4",
@@ -13902,7 +13996,8 @@
      "ev": {
       "s": 1077.3,
       "t": "In Canada, in the north of Canada."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "BAB8C3",
@@ -13912,7 +14007,8 @@
      "ev": {
       "s": 1094.3,
       "t": "Looks like you like pizza?"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "644490",
@@ -13922,7 +14018,8 @@
      "ev": {
       "s": 1119.3,
       "t": "You're talking like my dentist."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "2F0B27",
@@ -13932,7 +14029,8 @@
      "ev": {
       "s": 1141.3,
       "t": "Cooking is my hobby."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "2840C1",
@@ -13942,7 +14040,8 @@
      "ev": {
       "s": 1160.3,
       "t": "I love traveling by train"
-     }
+     },
+     "kes": "1.2.2"
     }
    ],
    "transcript": [
@@ -15722,7 +15821,8 @@
      "ev": {
       "s": 118.7,
       "t": "However, you may take horse-riding lessons from 3 to 8 p.m."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "1A9669",
@@ -15737,7 +15837,8 @@
      "ev": {
       "s": 118.7,
       "t": "However, you may take horse-riding lessons from 3 to 8 p.m."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "682257",
@@ -15752,7 +15853,8 @@
      "ev": {
       "s": 184.2,
       "t": "We've got an apple pie and a chocolate cake."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "04B37B",
@@ -15767,7 +15869,8 @@
      "ev": {
       "s": 236.4,
       "t": "Is it a headphone set or ski glasses or a smartwatch?"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "E50B58",
@@ -15788,7 +15891,8 @@
       "D",
       "E"
      ],
-     "key": "15362"
+     "key": "15362",
+     "kes": "1.2.1"
     },
     {
      "zid": "43C34E",
@@ -15798,7 +15902,8 @@
      "ev": {
       "s": 1082.3,
       "t": "And the most difficult one, I believe it's geography."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "82AF79",
@@ -15808,7 +15913,8 @@
      "ev": {
       "s": 1104.4,
       "t": "I like taking photos. Photography is my hobby and I'm good at it."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "DDBAB7",
@@ -15818,7 +15924,8 @@
      "ev": {
       "s": 1125.0,
       "t": "In that, I guess, 18."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "278EF7",
@@ -15828,7 +15935,8 @@
      "ev": {
       "s": 1132.8,
       "t": "I speak Spanish."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "06C656",
@@ -15838,7 +15946,8 @@
      "ev": {
       "s": 1147.9,
       "t": "I play volleyball if it counts."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "E06DB3",
@@ -15848,7 +15957,8 @@
      "ev": {
       "s": 118.7,
       "t": "However, you may take horse-riding lessons from 3 to 8 p.m."
-     }
+     },
+     "kes": "1.2.2"
     }
    ],
    "transcript": [
@@ -17173,7 +17283,8 @@
      "ev": {
       "s": 112.3,
       "t": "Apart from the English classes, which are held every day of the week,"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "42482B",
@@ -17188,7 +17299,8 @@
      "ev": {
       "s": 148.7,
       "t": "and has been awarded first prize, which is a telescope."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "0F736B",
@@ -17203,7 +17315,8 @@
      "ev": {
       "s": 189.7,
       "t": "Especially the orchard garden next to the river."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "6DA43C",
@@ -17215,7 +17328,8 @@
       "By car"
      ],
      "key": "3",
-     "ev": null
+     "ev": null,
+     "kes": "1.2.2"
     },
     {
      "zid": "8C8FB3",
@@ -17236,14 +17350,16 @@
       "D",
       "E"
      ],
-     "key": "24156"
+     "key": "24156",
+     "kes": "1.2.1"
     },
     {
      "zid": "192F7D",
      "type": "fill",
      "label": "Age of the respondent",
      "key": "forty",
-     "ev": null
+     "ev": null,
+     "kes": "1.2.2"
     },
     {
      "zid": "8DFEAB",
@@ -17253,7 +17369,8 @@
      "ev": {
       "s": 1086.2,
       "t": "Yes, I'm a nurse. I work in a hospital."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "FDBBC8",
@@ -17263,7 +17380,8 @@
      "ev": {
       "s": 1118.2,
       "t": "The only thing I cannot do without is chocolate."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "99C669",
@@ -17273,7 +17391,8 @@
      "ev": {
       "s": 1137.2,
       "t": "But I was born in Australia, and to tell you the truth, I'm missing my native country."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "683AC4",
@@ -17283,7 +17402,8 @@
      "ev": {
       "s": 1156.2,
       "t": "Yes, it is, but I've never gone surfing. The best holiday activity for me is camping."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "F5BA46",
@@ -17293,7 +17413,8 @@
      "ev": {
       "s": 1182.2,
       "t": "No, I don't. As for my hobby, I'd say it's painting."
-     }
+     },
+     "kes": "1.2.2"
     }
    ],
    "transcript": [
@@ -18738,7 +18859,8 @@
      "ev": {
       "s": 110.0,
       "t": "You'll be using the computers in our computer room, so do not bring your own ones."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "7C6D94",
@@ -18753,7 +18875,8 @@
      "ev": {
       "s": 151.6,
       "t": "to the right of the entrance to the terminal."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "96301E",
@@ -18768,7 +18891,8 @@
      "ev": {
       "s": 177.3,
       "t": "It's just a book fair,"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "9C5018",
@@ -18783,7 +18907,8 @@
      "ev": {
       "s": 241.1,
       "t": "for writing birthday wishes."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "01CA56",
@@ -18804,7 +18929,8 @@
       "D",
       "E"
      ],
-     "key": "31465"
+     "key": "31465",
+     "kes": "1.2.1"
     },
     {
      "zid": "051C7C",
@@ -18814,7 +18940,8 @@
      "ev": {
       "s": 1068.2,
       "t": "I'm a designer."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "75080E",
@@ -18824,7 +18951,8 @@
      "ev": {
       "s": 1097.7,
       "t": "But I think generally it's 30 hours per week."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "E9F5C0",
@@ -18834,7 +18962,8 @@
      "ev": {
       "s": 1120.0,
       "t": "So I play badminton."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "1DD2A0",
@@ -18844,7 +18973,8 @@
      "ev": {
       "s": 1137.5,
       "t": "In Greece, I still have lots of relatives there."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "4632EC",
@@ -18854,7 +18984,8 @@
      "ev": {
       "s": 1156.2,
       "t": "To tell you the truth, I prefer classical music to anything else."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "217AA8",
@@ -18864,7 +18995,8 @@
      "ev": {
       "s": 1185.4,
       "t": "Exactly, it's a rabbit."
-     }
+     },
+     "kes": "1.2.2"
     }
    ],
    "transcript": [
@@ -20794,7 +20926,8 @@
      "ev": {
       "s": 116.3,
       "t": "age 12 to 20 at weekends."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "B7B0DE",
@@ -20809,7 +20942,8 @@
      "ev": {
       "s": 667.5,
       "t": "It's simply breathtaking."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "B5B0A7",
@@ -20824,7 +20958,8 @@
      "ev": {
       "s": 193.5,
       "t": "Yes, at first I wanted to stay with a host family, but there was a vacant room in the hostel."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "6E7559",
@@ -20839,7 +20974,8 @@
      "ev": {
       "s": 254.2,
       "t": "Oh, cooking. It sounds more original than drawing and much tastier."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "D14DE4",
@@ -20860,7 +20996,8 @@
       "D",
       "E"
      ],
-     "key": "26143"
+     "key": "26143",
+     "kes": "1.2.1"
     },
     {
      "zid": "442B84",
@@ -20870,7 +21007,8 @@
      "ev": {
       "s": 1036.2,
       "t": "Rome is my native city."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "F48045",
@@ -20880,7 +21018,8 @@
      "ev": {
       "s": 1056.2,
       "t": "I'm 30."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "48B427",
@@ -20890,7 +21029,8 @@
      "ev": {
       "s": 1068.2,
       "t": "But when I have a choice, I always choose classical jazz."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "96C6FD",
@@ -20900,7 +21040,8 @@
      "ev": {
       "s": 1077.2,
       "t": "Are you a musician, a costume designer, a music band manager?"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "F96828",
@@ -20910,7 +21051,8 @@
      "ev": {
       "s": 627.9,
       "t": "I'm always too busy, having classes at school, going to the swimming pool,"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "4DDA09",
@@ -20920,7 +21062,8 @@
      "ev": {
       "s": 1130.2,
       "t": "I like rice."
-     }
+     },
+     "kes": "1.2.2"
     }
    ],
    "transcript": [
@@ -22320,7 +22463,8 @@
      "ev": {
       "s": 546.2,
       "t": "and share their opinions about genes."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "DBC83C",
@@ -22335,7 +22479,8 @@
      "ev": {
       "s": 140.5,
       "t": "I just have to tell you that I won't be able to join you for your camping trip this weekend."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "5ED40C",
@@ -22347,7 +22492,8 @@
       "his own health"
      ],
      "key": "2",
-     "ev": null
+     "ev": null,
+     "kes": "1.2.2"
     },
     {
      "zid": "0725BB",
@@ -22362,7 +22508,8 @@
      "ev": {
       "s": 230.7,
       "t": "and got off at the stop city centre."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "D6633E",
@@ -22383,7 +22530,8 @@
       "D",
       "E"
      ],
-     "key": "52614"
+     "key": "52614",
+     "kes": "1.2.1"
     },
     {
      "zid": "386EA1",
@@ -22393,7 +22541,8 @@
      "ev": {
       "s": 1045.5,
       "t": "You said you've been to France. Do you speak French as a foreign language?"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "121F01",
@@ -22403,7 +22552,8 @@
      "ev": {
       "s": 1063.5,
       "t": "It's my last year at school. I'm 18 already."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "55EDB9",
@@ -22413,7 +22563,8 @@
      "ev": {
       "s": 1079.5,
       "t": "Neither. I love science. I've always loved it."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "6C8DB7",
@@ -22423,7 +22574,8 @@
      "ev": {
       "s": 1095.5,
       "t": "Well, I've always dreamt of being an actress"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "2616CF",
@@ -22433,7 +22585,8 @@
      "ev": {
       "s": 1129.5,
       "t": "Yeah, your hobby is singing. It's not a common one."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "5399C7",
@@ -22443,7 +22596,8 @@
      "ev": {
       "s": 1141.5,
       "t": "No, I do aerobics."
-     }
+     },
+     "kes": "1.2.2"
     }
    ],
    "transcript": [
@@ -24538,7 +24692,8 @@
      "ev": {
       "s": 112.2,
       "t": "Of course, you can take home everything you create today."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "159BD2",
@@ -24550,7 +24705,8 @@
       "where the meeting point is"
      ],
      "key": "3",
-     "ev": null
+     "ev": null,
+     "kes": "1.2.2"
     },
     {
      "zid": "C57410",
@@ -24565,7 +24721,8 @@
      "ev": {
       "s": 183.6,
       "t": "And I can also recommend board games."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "5FDAEE",
@@ -24580,7 +24737,8 @@
      "ev": {
       "s": 235.2,
       "t": "I chose the drums, though my mom was very much against it."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "A97A54",
@@ -24601,7 +24759,8 @@
       "D",
       "E"
      ],
-     "key": "63214"
+     "key": "63214",
+     "kes": "1.2.1"
     },
     {
      "zid": "658C53",
@@ -24611,7 +24770,8 @@
      "ev": {
       "s": 176.9,
       "t": "She's turning 13 next Friday."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "7E25EC",
@@ -24621,7 +24781,8 @@
      "ev": {
       "s": 1072.0,
       "t": "Does this mean you do cycling as a sport?"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "B47070",
@@ -24631,7 +24792,8 @@
      "ev": {
       "s": 1107.5,
       "t": "Hamburgers."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "18158F",
@@ -24641,7 +24803,8 @@
      "ev": {
       "s": 1123.0,
       "t": "No, I was born in France"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "601ED1",
@@ -24651,7 +24814,8 @@
      "ev": {
       "s": 1099.9,
       "t": "The coach gives us some advice, of course, on what to eat"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "DC0D67",
@@ -24661,7 +24825,8 @@
      "ev": {
       "s": 1171.3,
       "t": "All they agreed on was a goldfish."
-     }
+     },
+     "kes": "1.2.2"
     }
    ],
    "transcript": [
@@ -26551,7 +26716,8 @@
      "ev": {
       "s": 128.7,
       "t": "everyone can choose a book on art."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "95B82D",
@@ -26566,7 +26732,8 @@
      "ev": {
       "s": 146.1,
       "t": "There's a football match here and we need to support our team."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "634191",
@@ -26578,7 +26745,8 @@
       "It’s multicoloured"
      ],
      "key": "3",
-     "ev": null
+     "ev": null,
+     "kes": "1.2.2"
     },
     {
      "zid": "DDDCAC",
@@ -26593,7 +26761,8 @@
      "ev": {
       "s": 234.3,
       "t": "Swimming, aerobics, yoga or dancing?"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "611D96",
@@ -26614,7 +26783,8 @@
       "D",
       "E"
      ],
-     "key": "26153"
+     "key": "26153",
+     "kes": "1.2.1"
     },
     {
      "zid": "7DDC92",
@@ -26624,7 +26794,8 @@
      "ev": {
       "s": 1055.7,
       "t": "14, in case you need my age for your survey."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "84DE77",
@@ -26634,7 +26805,8 @@
      "ev": {
       "s": 1063.7,
       "t": "In London."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "D4F488",
@@ -26644,7 +26816,8 @@
      "ev": {
       "s": 1085.7,
       "t": "I like literature most of all, and I'm good at it."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "C990F5",
@@ -26654,7 +26827,8 @@
      "ev": {
       "s": 1105.7,
       "t": "A sandwich."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "AFD5D3",
@@ -26664,7 +26838,8 @@
      "ev": {
       "s": 1138.7,
       "t": "And as for my career, I want to be a journalist like you."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "98C7E7",
@@ -26674,7 +26849,8 @@
      "ev": {
       "s": 1160.7,
       "t": "No, it's definitely not. It's painting."
-     }
+     },
+     "kes": "1.2.2"
     }
    ],
    "transcript": [
@@ -28079,7 +28255,8 @@
      "ev": {
       "s": 105.6,
       "t": "We are happy that our drawing contest has attracted your attention."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "0978BF",
@@ -28094,7 +28271,8 @@
      "ev": {
       "s": 157.4,
       "t": "My parents suggested that we go on a holiday to celebrate my birthday somewhere outside the city,"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "56E075",
@@ -28109,7 +28287,8 @@
      "ev": {
       "s": 585.3,
       "t": "I stayed with a host family, not in a student's hostel, and that was a great mistake."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "154D08",
@@ -28124,7 +28303,8 @@
      "ev": {
       "s": 157.4,
       "t": "My parents suggested that we go on a holiday to celebrate my birthday somewhere outside the city,"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "FF5060",
@@ -28145,7 +28325,8 @@
       "D",
       "E"
      ],
-     "key": "53261"
+     "key": "53261",
+     "kes": "1.2.1"
     },
     {
      "zid": "9587C7",
@@ -28155,7 +28336,8 @@
      "ev": {
       "s": 1080.8,
       "t": "I'm 30."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "FCA2F3",
@@ -28165,7 +28347,8 @@
      "ev": {
       "s": 1088.6,
       "t": "I'm a firefighter."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "F17443",
@@ -28175,7 +28358,8 @@
      "ev": {
       "s": 1115.5,
       "t": "My favourite sport is skiing, and I go skiing quite regularly."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "23AB85",
@@ -28185,7 +28369,8 @@
      "ev": {
       "s": 1130.3,
       "t": "From Canada, children start going skiing at a very early age there."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "643385",
@@ -28195,7 +28380,8 @@
      "ev": {
       "s": 1162.8,
       "t": "I listen to rock."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "DD857F",
@@ -28205,7 +28391,8 @@
      "ev": {
       "s": 1175.0,
       "t": "And now, reading probably."
-     }
+     },
+     "kes": "1.2.2"
     }
    ],
    "transcript": [
@@ -29692,7 +29879,8 @@
       "a roller skating competition"
      ],
      "key": "2",
-     "ev": null
+     "ev": null,
+     "kes": "1.2.2"
     },
     {
      "zid": "3DB37F",
@@ -29707,7 +29895,8 @@
      "ev": {
       "s": 161.5,
       "t": "It's really urgent because I need to complete my homework by 6pm,"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "A3EC89",
@@ -29722,7 +29911,8 @@
      "ev": {
       "s": 197.6,
       "t": "First, I headed for the entertainment park,"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "419F82",
@@ -29737,7 +29927,8 @@
      "ev": {
       "s": 1169.4,
       "t": "Oh, a parrot is such an amusing pet bird."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "42CFC3",
@@ -29758,7 +29949,8 @@
       "D",
       "E"
      ],
-     "key": "25163"
+     "key": "25163",
+     "kes": "1.2.1"
     },
     {
      "zid": "3BA761",
@@ -29768,14 +29960,16 @@
      "ev": {
       "s": 1221.0,
       "t": "I work as a waitress in the cafe over there,"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "6844D1",
      "type": "fill",
      "label": "Age of the respondent",
      "key": "nineteen",
-     "ev": null
+     "ev": null,
+     "kes": "1.2.2"
     },
     {
      "zid": "F847ED",
@@ -29785,7 +29979,8 @@
      "ev": {
       "s": 1096.0,
       "t": "Literature."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "BB2DB6",
@@ -29795,7 +29990,8 @@
      "ev": {
       "s": 1118.8,
       "t": "Yes, I speak Italian."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "8984E3",
@@ -29805,7 +30001,8 @@
      "ev": {
       "s": 1138.2,
       "t": "Yes, I play the violin."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "C37FC8",
@@ -29815,7 +30012,8 @@
      "ev": {
       "s": 1169.4,
       "t": "Oh, a parrot is such an amusing pet bird."
-     }
+     },
+     "kes": "1.2.2"
     }
    ],
    "transcript": [
@@ -31347,7 +31545,8 @@
       "enjoy a costume party"
      ],
      "key": "2",
-     "ev": null
+     "ev": null,
+     "kes": "1.2.2"
     },
     {
      "zid": "496FB0",
@@ -31362,7 +31561,8 @@
      "ev": {
       "s": 103.0,
       "t": "Dear friends, on Saturday you will have an opportunity to see an authentic village of the 16th century."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "9415FF",
@@ -31377,7 +31577,8 @@
      "ev": {
       "s": 205.7,
       "t": "Last week I missed an appointment with my doctor because I completely forgot about it."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "0839D5",
@@ -31392,7 +31593,8 @@
      "ev": {
       "s": 233.3,
       "t": "By the way, don't you have a spare backpack?"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "70E447",
@@ -31413,7 +31615,8 @@
       "D",
       "E"
      ],
-     "key": "15246"
+     "key": "15246",
+     "kes": "1.2.1"
     },
     {
      "zid": "0A1036",
@@ -31423,7 +31626,8 @@
      "ev": {
       "s": 1063.8,
       "t": "Science. I like learning new things about the world around me."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "67AD44",
@@ -31433,7 +31637,8 @@
      "ev": {
       "s": 1088.4,
       "t": "Well, to Moscow. Neither me nor any one of my friends has ever been there."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "C9EC89",
@@ -31443,7 +31648,8 @@
      "ev": {
       "s": 1101.1,
       "t": "I eat neither meat nor fish. I'm a vegetarian. That's why vegetables are my essential food."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "E6363E",
@@ -31453,7 +31659,8 @@
      "ev": {
       "s": 1135.7,
       "t": "Nothing special. We play volleyball a lot in the school ground and in the yard and on the beach."
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "D86663",
@@ -31463,14 +31670,16 @@
      "ev": {
       "s": 1154.8,
       "t": "artist. I like creating things and I often design gifts for my friends. Mom says my pictures are"
-     }
+     },
+     "kes": "1.2.2"
     },
     {
      "zid": "09812E",
      "type": "fill",
      "label": "Number of the Internet followers",
      "key": "eighty",
-     "ev": null
+     "ev": null,
+     "kes": "1.2.2"
     }
    ],
    "transcript": [

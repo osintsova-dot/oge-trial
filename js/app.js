@@ -392,7 +392,7 @@ async function renderProgress() {
       el('div', { class: 'pr-meta', text: s.attempted ? t.solved(s.attempted, s.correct) : t.noSolved }),
     ]);
   };
-  const drillSecs = EXAM.sections.filter((s) => s.type === 'drill' || s.type === 'reading');
+  const drillSecs = EXAM.sections.filter((s) => s.type === 'drill' || s.type === 'reading' || s.type === 'listening');
 
   mount(view, el('div', { class: 'wrap view' }, [
     el('div', { class: 'prog-head' }, [el('div', { class: 'ph-title', text: t.progTitle }), themeBtn()]),

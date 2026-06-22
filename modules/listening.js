@@ -5,7 +5,7 @@
 import { el, mount, celebrate, iconImg } from '../js/ui.js';
 import { loadJSON } from '../js/data.js';
 import { recordDrill, sectionStats } from '../js/progress.js';
-import { recordRound, getName, checkNewAchievements } from '../js/gamify.js';
+import { recordRound, getName, checkNewAchievements, recordListeningVariant, getListeningDone } from '../js/gamify.js';
 import { roundMessage, celeb } from '../js/voice.js';
 import { playCorrect, playWrong } from '../js/sound.js';
 import { t, plural } from '../js/exam.js';
@@ -61,14 +61,18 @@ export async function renderListening(container, cfg) {
     const stats = sectionStats(SECTION);
     const sub = `${data.groups.length} ${plural(data.groups.length, t.varWord || ['вариант', 'варианта', 'вариантов'])}` +
       (stats.attempted ? ` · ${pct(stats.correct, stats.attempted)}%` : '');
-    const cards = data.groups.map((g, i) => el('button', { class: 'all-topics listening', onclick: () => startVariant(g) }, [
-      el('div', { class: 'at-ic' }, [iconImg('ic-listening', '🎧', 'at-img')]),
-      el('div', { style: { flex: '1' } }, [
-        el('div', { class: 'at-t', text: L.variant(i + 1) }),
-        el('div', { class: 'at-s', text: L.variantSub }),
-      ]),
-      el('div', { class: 'at-arrow', text: '→' }),
-    ]));
+    const done = getListeningDone();
+    const cards = data.groups.map((g, i) => {
+      const d = done[g.vid || g.id];
+      return el('button', { class: 'all-topics listening' + (d ? ' ls-done' : ''), onclick: () => startVariant(g) }, [
+        el('div', { class: 'at-ic' }, [iconImg('ic-listening', '🎧', 'at-img')]),
+        el('div', { style: { flex: '1' } }, [
+          el('div', { class: 'at-t', text: L.variant(i + 1) }),
+          el('div', { class: 'at-s', text: d ? L.doneScore(d.correct, d.total) : L.variantSub }),
+        ]),
+        el('div', { class: 'at-arrow', text: d ? '✓' : '→' }),
+      ]);
+    });
     mount(container, el('div', { class: 'view' }, [
       secBar(cfg.goHome, sub),
       el('div', { class: 'topics-body' }, [
@@ -105,7 +109,7 @@ export async function renderListening(container, cfg) {
     });
 
     const action = el('button', { class: 'btn btn-check btn-block', text: L.checkAll });
-    action.addEventListener('click', () => { if (!checked) doCheck(); else showSummary(pending.correct, pending.total); });
+    action.addEventListener('click', () => { if (!checked) doCheck(); else showSummary(pending.correct, pending.total, pending.byKes, group); });
 
     function buildMatch(q, n) {
       const rubrics = el('ol', { class: 'ls-rubrics' }, q.rubrics.map((r) => el('li', { text: r })));
@@ -121,7 +125,7 @@ export async function renderListening(container, cfg) {
         return { sp, sel, verdict, row };
       });
       qNodes.push({
-        type: 'match', zid: q.zid, key: q.key, rows,
+        type: 'match', zid: q.zid, key: q.key, kes: q.kes, rows,
         result() {
           let c = 0; rows.forEach((r, i) => { if (r.sel.value === q.key[i]) c++; });
           return { correct: c, total: rows.length, allOk: c === rows.length };
@@ -156,7 +160,7 @@ export async function renderListening(container, cfg) {
       });
       const srcWrap = el('div', { class: 'ls-src', style: { display: 'none' } });
       qNodes.push({
-        type: 'choice', zid: q.zid, key: q.key,
+        type: 'choice', zid: q.zid, key: q.key, kes: q.kes,
         result() { return { correct: pick === q.key ? 1 : 0, total: 1, allOk: pick === q.key }; },
         mark() {
           opts.forEach((o, k) => {
@@ -186,7 +190,7 @@ export async function renderListening(container, cfg) {
       const verdict = el('div', { class: 'ls-cv', style: { display: 'none' } });
       const srcWrap = el('div', { class: 'ls-src', style: { display: 'none' } });
       qNodes.push({
-        type: 'fill', zid: q.zid, key: q.key,
+        type: 'fill', zid: q.zid, key: q.key, kes: q.kes,
         result() { const ok = norm(input.value) === norm(q.key); return { correct: ok ? 1 : 0, total: 1, allOk: ok }; },
         mark() {
           input.disabled = true; const ok = norm(input.value) === norm(q.key);
@@ -214,15 +218,19 @@ export async function renderListening(container, cfg) {
     function doCheck() {
       checked = true;
       let correct = 0, total = 0;
+      const byKes = {};
       qNodes.forEach((qn) => {
         const r = qn.result();
         correct += r.correct; total += r.total;
-        recordDrill(SECTION, qn.zid, qn.type === 'match' ? r.allOk : r.allOk, KES);
+        const k = qn.kes || KES;
+        if (!byKes[k]) byKes[k] = { correct: 0, total: 0 };
+        byKes[k].correct += r.correct; byKes[k].total += r.total;
+        recordDrill(SECTION, qn.zid, r.allOk, k);
         qn.mark();
       });
-      pending = { correct, total };
+      pending = { correct, total, byKes };
       correct === total ? playCorrect() : playWrong();
-      // открываем скрипт (только сейчас) + тап-переслушать
+      // скрипт открывается (только сейчас), но СВЁРНУТ в плашку — чтобы результаты были сразу видны
       qWrap.appendChild(transcriptBlock(group, audio));
       action.textContent = t.finish;
       action.className = 'btn btn-primary btn-block';
@@ -256,27 +264,49 @@ export async function renderListening(container, cfg) {
       if (nums) nums.forEach((n) => line.appendChild(el('span', { class: 'ls-qn', text: String(n) })));
       return line;
     });
+    // плашка-аккордеон: по умолчанию свёрнута, чтобы результаты были сразу видны
+    const body = el('div', { class: 'ls-lines', style: { display: 'none' } }, lines);
+    const head = el('button', { class: 'ls-script-toggle' }, [
+      el('span', { class: 'ls-script-h', text: '📄 ' + L.transcriptTitle }),
+      el('span', { class: 'ls-script-caret', text: '▸' }),
+    ]);
+    head.addEventListener('click', () => {
+      const open = body.style.display !== 'none';
+      body.style.display = open ? 'none' : '';
+      head.querySelector('.ls-script-caret').textContent = open ? '▸' : '▾';
+    });
     return el('div', { class: 'ls-script' }, [
-      el('div', { class: 'ls-script-h', text: L.transcriptTitle }),
+      head,
       el('div', { class: 'ls-script-hint', text: L.transcriptHint }),
-      el('div', { class: 'ls-lines' }, lines),
+      body,
     ]);
   }
 
   // --- Итог раунда + награды ---
-  function showSummary(correct, total) {
+  function showSummary(correct, total, byKes, group) {
+    if (group) recordListeningVariant(group.vid || group.id, correct, total);
     const g = recordRound(SECTION, correct, total);
     const name = getName();
     const acc = pct(correct, total);
     const praise = acc >= 80 ? t.praiseHigh : acc >= 60 ? t.praiseMid : t.praiseLow;
     const rline = (iconName, emoji, label, vc, value) => el('div', { class: 'reward-line' },
       [el('span', { class: 'rl-label' }, [iconImg(iconName, emoji), el('span', { text: ' ' + label })]), el('b', { class: vc, text: value })]);
+    // разбивка по кодификатору (КЭС): название + точность
+    const kesNames = L.kes || {};
+    const kesRows = Object.keys(byKes || {}).sort().map((k) => {
+      const b = byKes[k]; const p = pct(b.correct, b.total);
+      return el('div', { class: 'ls-kes-row' }, [
+        el('span', { class: 'ls-kes-name', text: kesNames[k] || ('КЭС ' + k) }),
+        el('b', { class: 'ls-kes-v', style: { color: p >= 60 ? 'var(--ok)' : 'var(--bad)' }, text: `${b.correct}/${b.total}` }),
+      ]);
+    });
 
     function showResult() {
       mount(container, el('div', { class: 'result view' }, [
         el('div', { class: 'voice-msg', text: roundMessage(name, correct, total, g.heroAwarded) }),
         el('div', { class: 'res-num' }, [String(correct), el('span', { text: '/' + total })]),
         el('div', { class: 'res-acc', text: t.accLine(acc, praise) }),
+        kesRows.length ? el('div', { class: 'ls-kes-card' }, [el('div', { class: 'ls-kes-h', text: L.byKesTitle }), ...kesRows]) : null,
         el('div', { class: 'reward' }, [
           rline('ic-streak', '🔥', t.rStreak, 'v-streak', g.streak + ' ' + t.dayWord(g.streak)),
           rline('ic-xp', '⭐', t.rXp, 'v-xp', '+' + g.xpGained + ' XP'),

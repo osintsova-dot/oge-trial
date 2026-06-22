@@ -79,6 +79,9 @@ export const STRINGS = {
       pick: '—',
       checkAll: 'Проверить',
       nextText: 'Другой вариант',
+      byKesTitle: 'По кодификатору',
+      kes: { '1.2.1': 'Основное содержание', '1.2.2': 'Запрашиваемая информация', '1.2.3': 'Полное понимание' },
+      doneScore: (c, tot) => `✓ Пройдено · ${c}/${tot}`,
     },
     // vocab (лексика — тема недели + флэшкарты/SRS)
     vocab: {
@@ -335,6 +338,9 @@ export const STRINGS = {
       pick: '—',
       checkAll: 'Check',
       nextText: 'Another variant',
+      byKesTitle: 'By codifier',
+      kes: { '1.2.1': 'Main idea', '1.2.2': 'Specific information', '1.2.3': 'Full understanding' },
+      doneScore: (c, tot) => `✓ Done · ${c}/${tot}`,
     },
     vocab: {
       sub: 'Theme of the week · 15 words a day',
