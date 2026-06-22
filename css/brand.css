@@ -820,8 +820,16 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
   color:var(--p-text);font-style:italic;cursor:pointer;text-align:left}
 .ls-src-q:hover,.ls-src-q:active{background:var(--grad-listening);color:#fff;font-style:normal}
 .ls-foot{margin-top:18px}
-/* категории меню EGE */
+/* категории меню — сворачиваемые плашки */
 .ls-cat-h{font-size:12px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin:14px 2px 8px}
+.ls-cat-plate{display:flex;align-items:center;gap:10px;width:100%;margin:10px 0 0;padding:15px 16px;border:none;
+  border-radius:16px;background:var(--grad-listening);color:#fff;cursor:pointer;font-family:inherit;
+  box-shadow:0 4px 14px rgba(41,120,216,.28)}
+.ls-cat-plate.done{box-shadow:0 4px 14px rgba(31,157,87,.3);outline:2px solid var(--ok);outline-offset:-2px}
+.ls-cat-name{flex:1;text-align:left;font-size:15.5px;font-weight:800}
+.ls-cat-cnt{font-size:13px;font-weight:800;opacity:.92;background:rgba(255,255,255,.22);padding:2px 9px;border-radius:10px}
+.ls-cat-caret{font-size:13px;font-weight:800;opacity:.9}
+.ls-cat-cards{margin-top:8px}
 /* EGE задание 2: True/False/Not stated */
 .ls-tfns .tfns-rows{display:flex;flex-direction:column;gap:12px}
 .tfns-row{border-top:1px solid var(--line);padding-top:10px}

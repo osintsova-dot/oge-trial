@@ -87,12 +87,25 @@ export async function renderListening(container, cfg) {
         el('div', { class: 'at-arrow', text: d ? '✓' : '→' }),
       ]);
     };
+    // каждая категория — сворачиваемая плашка (свёрнута по умолчанию), в шапке счёт выполнено/всего
     const body = [el('div', { class: 'topics-label', text: L.pickVariant })];
     for (const c of ['match', 'tf', 'mc', '_']) {
       const arr = cats[c]; if (!arr) continue;
-      if (c !== '_') body.push(el('div', { class: 'ls-cat-h', text: ((L.cat && L.cat[c]) || c) + ' · ' + arr.length }));
-      // ОГЭ (без категорий) → «Вариант N» (полный вариант); ЕГЭ-категории → «№ N» (отдельные задания/блоки)
-      arr.forEach((g, i) => body.push(card(g, c === '_' ? L.variant(data.groups.indexOf(g) + 1) : ('№ ' + (i + 1)))));
+      const doneN = arr.filter((g) => done[g.vid || g.id]).length;
+      const name = c === '_' ? (L.allVariants || 'Варианты') : ((L.cat && L.cat[c]) || c);
+      const cardsWrap = el('div', { class: 'ls-cat-cards', style: { display: 'none' } },
+        arr.map((g, i) => card(g, c === '_' ? L.variant(data.groups.indexOf(g) + 1) : ('№ ' + (i + 1)))));
+      const caret = el('span', { class: 'ls-cat-caret', text: '▸' });
+      const plate = el('button', { class: 'ls-cat-plate' + (arr.length && doneN === arr.length ? ' done' : ''), onclick: () => {
+        const open = cardsWrap.style.display !== 'none';
+        cardsWrap.style.display = open ? 'none' : '';
+        caret.textContent = open ? '▾' : '▸';
+      } }, [
+        el('span', { class: 'ls-cat-name', text: name }),
+        el('span', { class: 'ls-cat-cnt', text: doneN + '/' + arr.length }),
+        caret,
+      ]);
+      body.push(plate, cardsWrap);
     }
     mount(container, el('div', { class: 'view' }, [
       secBar(cfg.goHome, sub),

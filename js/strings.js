@@ -89,6 +89,7 @@ export const STRINGS = {
       tfnsInstr: 'Верно / Неверно / Не сказано — отметь каждое утверждение',
       cat: { match: 'Соответствие говорящих', tf: 'Верно · Неверно · Не сказано', mc: 'Выбор ответа' },
       catShort: { match: 'соответствие', tf: 'верно/неверно', mc: 'выбор' },
+      allVariants: 'Варианты',
     },
     // vocab (лексика — тема недели + флэшкарты/SRS)
     vocab: {
@@ -355,6 +356,7 @@ export const STRINGS = {
       tfnsInstr: 'True / False / Not stated — mark each statement',
       cat: { match: 'Task 1 · Match the speakers', tf: 'Task 2 · True / False / Not stated', mc: 'Multiple choice' },
       catShort: { match: 'matching', tf: 'true/false', mc: 'multiple choice' },
+      allVariants: 'Variants',
     },
     vocab: {
       sub: 'Theme of the week · 15 words a day',

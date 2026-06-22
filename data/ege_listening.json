@@ -23665,6 +23665,434 @@
    ]
   },
   {
+   "id": "tf10",
+   "cat": "tf",
+   "guid": "66D4EA0E90858AE44BF9F137FC6E0C92",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/66D4EA0E90858AE44BF9F137FC6E0C92/img1_1562941645.mp3",
+   "duration": 410.4,
+   "questions": [
+    {
+     "zid": "23BC26",
+     "type": "tfns",
+     "task": "Определи по диалогу: Верно / Неверно / Не сказано.",
+     "statements": [
+      {
+       "letter": "A",
+       "text": "Steve didn t want to meet Karen ."
+      },
+      {
+       "letter": "B",
+       "text": "Steve wants Karen to give him some advice."
+      },
+      {
+       "letter": "C",
+       "text": "Steve s host family lives close to his future school."
+      },
+      {
+       "letter": "D",
+       "text": "Steve will have to buy another mobile phone in Russia ."
+      },
+      {
+       "letter": "E",
+       "text": "Karen was generally satisfied with Russian public transport."
+      },
+      {
+       "letter": "F",
+       "text": "Karen thinks buses are the best means of transport in Russia ."
+      },
+      {
+       "letter": "G",
+       "text": "Steve feels more confident after talking to Karen."
+      }
+     ],
+     "key": "2132131",
+     "kes": "1.2.2"
+    }
+   ],
+   "transcript": [
+    {
+     "s": 5.5,
+     "e": 9.5,
+     "t": "3. Decide which of the preceding statements, a.g.,"
+    },
+    {
+     "s": 9.5,
+     "e": 12.5,
+     "t": "correspond to the content of the text."
+    },
+    {
+     "s": 12.5,
+     "e": 14.5,
+     "t": "1. True."
+    },
+    {
+     "s": 14.5,
+     "e": 16.5,
+     "t": "4. Which do not correspond?"
+    },
+    {
+     "s": 16.5,
+     "e": 18.5,
+     "t": "2. False."
+    },
+    {
+     "s": 18.5,
+     "e": 20.5,
+     "t": "And what is not said in the text?"
+    },
+    {
+     "s": 20.5,
+     "e": 22.5,
+     "t": "That is, on the basis of the text,"
+    },
+    {
+     "s": 22.5,
+     "e": 25.5,
+     "t": "it is impossible to give neither a positive nor a negative answer."
+    },
+    {
+     "s": 25.5,
+     "e": 28.5,
+     "t": "3. Not stated."
+    },
+    {
+     "s": 28.5,
+     "e": 32.5,
+     "t": "4. Bring the number of the selected version of the answer to the table."
+    },
+    {
+     "s": 62.1,
+     "e": 67.1,
+     "t": "Hi, Steve. You look so deep in your thoughts. What's the matter with you?"
+    },
+    {
+     "s": 67.1,
+     "e": 73.1,
+     "t": "Oh, hi, Karen. It's so good that I have met you. I have been looking for you, actually."
+    },
+    {
+     "s": 73.1,
+     "e": 75.1,
+     "t": "Why? What's up?"
+    },
+    {
+     "s": 75.1,
+     "e": 79.1,
+     "t": "Remember I decided to take part in the exchange program?"
+    },
+    {
+     "s": 79.1,
+     "e": 81.1,
+     "t": "Yes, of course."
+    },
+    {
+     "s": 81.1,
+     "e": 84.1,
+     "t": "So, I'll spend the next term in Russia."
+    },
+    {
+     "s": 84.1,
+     "e": 88.1,
+     "t": "It's going to be a city somewhere in the central part of Russia."
+    },
+    {
+     "s": 88.1,
+     "e": 92.1,
+     "t": "It's called Kirov, but the locals call it Vyadka."
+    },
+    {
+     "s": 92.1,
+     "e": 99.1,
+     "t": "Congratulations! I was an AFS student in Russia, too, though I stayed in Kazan."
+    },
+    {
+     "s": 99.1,
+     "e": 104.1,
+     "t": "In fact, it's not that far from Kirov, I believe. We should look at the map."
+    },
+    {
+     "s": 104.1,
+     "e": 110.1,
+     "t": "That's great, Karen. I do hope you can give me some useful tips on my future trip."
+    },
+    {
+     "s": 110.1,
+     "e": 114.1,
+     "t": "I'll be only happy to help you. What would you like to know?"
+    },
+    {
+     "s": 114.1,
+     "e": 120.1,
+     "t": "As far as I understand, I don't have to worry about how I will get to my destination. Am I right?"
+    },
+    {
+     "s": 120.1,
+     "e": 126.1,
+     "t": "Yes, you are. You'll be met at the airport in Moscow and there will be a transfer to Kirov."
+    },
+    {
+     "s": 126.1,
+     "e": 130.1,
+     "t": "Your accommodation is already settled upon, if I'm not mistaken."
+    },
+    {
+     "s": 130.1,
+     "e": 134.1,
+     "t": "Yes, I'm going to stay with a family with two kids."
+    },
+    {
+     "s": 134.1,
+     "e": 138.1,
+     "t": "One of them is my age and I'm going to study in the same class with him."
+    },
+    {
+     "s": 138.1,
+     "e": 143.1,
+     "t": "I think that's very convenient. He may sit next to you and help you when you need it."
+    },
+    {
+     "s": 143.1,
+     "e": 146.1,
+     "t": "This way, you'll get used to your new life much quicker."
+    },
+    {
+     "s": 146.1,
+     "e": 150.1,
+     "t": "What about clothes? Should I pack warm clothes?"
+    },
+    {
+     "s": 150.1,
+     "e": 156.1,
+     "t": "Oh, winters are harsh there. I strongly advise you take a lot of warm clothes and footwear."
+    },
+    {
+     "s": 156.1,
+     "e": 160.1,
+     "t": "Okay. Will my mobile phone work there?"
+    },
+    {
+     "s": 160.1,
+     "e": 166.1,
+     "t": "It'll work fine, but I had to change the operators to save my money. It was cheaper that way."
+    },
+    {
+     "s": 166.1,
+     "e": 169.1,
+     "t": "I think your host family will help you there."
+    },
+    {
+     "s": 169.1,
+     "e": 173.1,
+     "t": "Okay. Did you have to use public transport?"
+    },
+    {
+     "s": 173.1,
+     "e": 183.1,
+     "t": "Well, I got to school by a city bus. I found public transport in Russia to be quite good, rather cheap and easy to use, though sometimes overcrowded."
+    },
+    {
+     "s": 183.1,
+     "e": 186.1,
+     "t": "Did you use the taxi service at all?"
+    },
+    {
+     "s": 186.1,
+     "e": 189.1,
+     "t": "Sometimes. It's not that expensive."
+    },
+    {
+     "s": 189.1,
+     "e": 193.1,
+     "t": "Okay. Is there anything else I need to know?"
+    },
+    {
+     "s": 193.1,
+     "e": 198.1,
+     "t": "Let me think. You will need to convert it with you for your electrical items."
+    },
+    {
+     "s": 198.1,
+     "e": 203.1,
+     "t": "Thank you. Now I feel much better about my upcoming adventure."
+    },
+    {
+     "s": 203.1,
+     "e": 207.1,
+     "t": "Don't worry. You'll be fine. You'll enjoy it, believe me."
+    },
+    {
+     "s": 207.1,
+     "e": 212.1,
+     "t": "I hope so. Look, I've got to go. See you later."
+    },
+    {
+     "s": 212.1,
+     "e": 215.4,
+     "t": "Bye."
+    },
+    {
+     "s": 237.2,
+     "e": 242.2,
+     "t": "Hi, Steve. You look so deep in your thoughts. What's the matter with you?"
+    },
+    {
+     "s": 242.2,
+     "e": 248.2,
+     "t": "Oh, hi, Karen. It's so good that I have met you. I have been looking for you, actually."
+    },
+    {
+     "s": 248.2,
+     "e": 250.2,
+     "t": "Why? What's up?"
+    },
+    {
+     "s": 250.2,
+     "e": 254.2,
+     "t": "Remember I decided to take part in the exchange program?"
+    },
+    {
+     "s": 254.2,
+     "e": 256.2,
+     "t": "Yes, of course."
+    },
+    {
+     "s": 256.2,
+     "e": 263.2,
+     "t": "So, I'll spend the next term in Russia. It's going to be a city somewhere in the central part of Russia."
+    },
+    {
+     "s": 263.2,
+     "e": 267.2,
+     "t": "It's called Kirov, but the locals call it Vyadka."
+    },
+    {
+     "s": 267.2,
+     "e": 274.2,
+     "t": "Congratulations! I was an AFS student in Russia too, though I stayed in Kazan."
+    },
+    {
+     "s": 274.2,
+     "e": 279.2,
+     "t": "In fact, it's not that far from Kirov, I believe. We should look at the map."
+    },
+    {
+     "s": 279.2,
+     "e": 284.2,
+     "t": "That's great, Karen. I do hope you can give me some useful tips on my future trip."
+    },
+    {
+     "s": 285.2,
+     "e": 289.2,
+     "t": "I'll be only happy to help you. What would you like to know?"
+    },
+    {
+     "s": 289.2,
+     "e": 295.2,
+     "t": "As far as I understand, I don't have to worry about how I will get to my destination. Am I right?"
+    },
+    {
+     "s": 295.2,
+     "e": 301.2,
+     "t": "Yes, you are. You'll be met at the airport in Moscow and there will be a transfer to Kirov."
+    },
+    {
+     "s": 301.2,
+     "e": 305.2,
+     "t": "Your accommodation is already settled upon, if I'm not mistaken."
+    },
+    {
+     "s": 305.2,
+     "e": 313.2,
+     "t": "Yes, I'm going to stay with a family with two kids. One of them is my age and I'm going to study in the same class with him."
+    },
+    {
+     "s": 313.2,
+     "e": 318.2,
+     "t": "I think that's very convenient. He may sit next to you and help you when you need it."
+    },
+    {
+     "s": 318.2,
+     "e": 321.2,
+     "t": "This way, you'll get used to your new life much quicker."
+    },
+    {
+     "s": 321.2,
+     "e": 325.2,
+     "t": "What about clothes? Should I pack warm clothes?"
+    },
+    {
+     "s": 325.2,
+     "e": 331.2,
+     "t": "Oh, winters are harsh there. I strongly advise you take a lot of warm clothes and footwear."
+    },
+    {
+     "s": 331.2,
+     "e": 335.2,
+     "t": "Okay. Will my mobile phone work there?"
+    },
+    {
+     "s": 335.2,
+     "e": 341.2,
+     "t": "It'll work fine, but I have to change the operators to save my money. It was cheaper that way."
+    },
+    {
+     "s": 341.2,
+     "e": 344.2,
+     "t": "I think your host family will help you there."
+    },
+    {
+     "s": 344.2,
+     "e": 348.2,
+     "t": "Okay. Did you have to use public transport?"
+    },
+    {
+     "s": 348.2,
+     "e": 358.2,
+     "t": "Well, I got to school by a city bus. I found public transport in Russia to be quite good, rather cheap and easy to use, though sometimes overcrowded."
+    },
+    {
+     "s": 358.2,
+     "e": 361.2,
+     "t": "Did you use the taxi service at all?"
+    },
+    {
+     "s": 361.2,
+     "e": 364.2,
+     "t": "Sometimes. It's not that expensive."
+    },
+    {
+     "s": 364.2,
+     "e": 368.2,
+     "t": "Okay. Is there anything else I need to know?"
+    },
+    {
+     "s": 368.2,
+     "e": 373.2,
+     "t": "Let me think. You will need a converter with you for your electrical items."
+    },
+    {
+     "s": 373.2,
+     "e": 378.2,
+     "t": "Thank you. Now I feel much better about my upcoming adventure."
+    },
+    {
+     "s": 378.2,
+     "e": 382.2,
+     "t": "Don't worry. You'll be fine. You'll enjoy it, believe me."
+    },
+    {
+     "s": 382.2,
+     "e": 387.2,
+     "t": "I hope so. Look, I've got to go. See you later."
+    },
+    {
+     "s": 387.2,
+     "e": 390.4,
+     "t": "Bye."
+    }
+   ]
+  },
+  {
    "id": "tf11",
    "cat": "tf",
    "guid": "A62FD497E4BBB6A847B85A8E927DDF99",
@@ -26892,6 +27320,724 @@
      "s": 393.2,
      "e": 396.0,
      "t": "Perhaps you can join me. That would be great."
+    }
+   ]
+  },
+  {
+   "id": "tf18",
+   "cat": "tf",
+   "guid": "704F03F0DE03A337406FE3463435FC56",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/704F03F0DE03A337406FE3463435FC56/img1_1598623966.mp3",
+   "duration": 401.3,
+   "questions": [
+    {
+     "zid": "4487DB",
+     "type": "tfns",
+     "task": "Определи по диалогу: Верно / Неверно / Не сказано.",
+     "statements": [
+      {
+       "letter": "A",
+       "text": "The conversation takes place on Tuesday."
+      },
+      {
+       "letter": "B",
+       "text": "Jack knows what kind of present they &#xFFFD; ll buy for Linda."
+      },
+      {
+       "letter": "C",
+       "text": "Rose knows Linda better than Jack does."
+      },
+      {
+       "letter": "D",
+       "text": "Linda follows the latest fashion trends."
+      },
+      {
+       "letter": "E",
+       "text": "Linda doesn t like gift certificates."
+      },
+      {
+       "letter": "F",
+       "text": "Linda can t have a pet because of her mother."
+      },
+      {
+       "letter": "G",
+       "text": "Rose and Jack are going to the shop straight away."
+      }
+     ],
+     "key": "1231321",
+     "kes": "1.2.2"
+    }
+   ],
+   "transcript": [
+    {
+     "s": 0.0,
+     "e": 3.3,
+     "t": "Question 2"
+    },
+    {
+     "s": 5.3,
+     "e": 9.3,
+     "t": "Decide which of the preceding statements"
+    },
+    {
+     "s": 9.3,
+     "e": 12.3,
+     "t": "A, G correspond to the content of the text."
+    },
+    {
+     "s": 12.3,
+     "e": 14.3,
+     "t": "1, true."
+    },
+    {
+     "s": 14.3,
+     "e": 16.3,
+     "t": "Which do not correspond."
+    },
+    {
+     "s": 16.3,
+     "e": 18.3,
+     "t": "2, false."
+    },
+    {
+     "s": 18.3,
+     "e": 20.3,
+     "t": "And what is not said in the text."
+    },
+    {
+     "s": 20.3,
+     "e": 22.3,
+     "t": "That is, on the basis of the text"
+    },
+    {
+     "s": 22.3,
+     "e": 25.3,
+     "t": "it is impossible to give any positive or negative answer."
+    },
+    {
+     "s": 25.3,
+     "e": 27.3,
+     "t": "3, not stated."
+    },
+    {
+     "s": 27.3,
+     "e": 29.3,
+     "t": "Take the number chosen by you"
+    },
+    {
+     "s": 29.3,
+     "e": 31.3,
+     "t": "the answer option into the table."
+    },
+    {
+     "s": 59.6,
+     "e": 64.1,
+     "t": "Hello, Rose. It's great you are here."
+    },
+    {
+     "s": 64.1,
+     "e": 66.1,
+     "t": "I need to talk to you."
+    },
+    {
+     "s": 66.1,
+     "e": 69.1,
+     "t": "Oh, hi Jack. Why? What's the matter?"
+    },
+    {
+     "s": 69.1,
+     "e": 73.1,
+     "t": "I hope you do remember it's Linda's birthday tomorrow."
+    },
+    {
+     "s": 73.1,
+     "e": 75.1,
+     "t": "Her birthday is on Wednesday."
+    },
+    {
+     "s": 75.1,
+     "e": 78.1,
+     "t": "Yes it is. And today is..."
+    },
+    {
+     "s": 78.1,
+     "e": 81.1,
+     "t": "Oh, I've clean forgotten."
+    },
+    {
+     "s": 81.1,
+     "e": 83.1,
+     "t": "What are we going to do?"
+    },
+    {
+     "s": 83.1,
+     "e": 85.1,
+     "t": "We don't even have a present."
+    },
+    {
+     "s": 85.1,
+     "e": 88.1,
+     "t": "Don't you worry. We still have enough time to buy one."
+    },
+    {
+     "s": 88.1,
+     "e": 90.1,
+     "t": "We just need to decide what to buy."
+    },
+    {
+     "s": 90.1,
+     "e": 92.1,
+     "t": "It's the hardest thing."
+    },
+    {
+     "s": 92.1,
+     "e": 94.1,
+     "t": "We've known Linda for ages"
+    },
+    {
+     "s": 94.1,
+     "e": 97.1,
+     "t": "and we've given her so many presents already."
+    },
+    {
+     "s": 97.1,
+     "e": 99.1,
+     "t": "Yes, we need to think of something new."
+    },
+    {
+     "s": 99.1,
+     "e": 102.1,
+     "t": "It can't be clothes or perfume."
+    },
+    {
+     "s": 102.1,
+     "e": 104.1,
+     "t": "Linda loves these things"
+    },
+    {
+     "s": 104.1,
+     "e": 106.1,
+     "t": "and she's a true fashionista"
+    },
+    {
+     "s": 106.1,
+     "e": 108.1,
+     "t": "but her taste is very changeable."
+    },
+    {
+     "s": 108.1,
+     "e": 110.1,
+     "t": "She likes one thing today"
+    },
+    {
+     "s": 110.1,
+     "e": 113.1,
+     "t": "but she is into something else the next day"
+    },
+    {
+     "s": 113.1,
+     "e": 115.1,
+     "t": "so he may make a mistake."
+    },
+    {
+     "s": 115.1,
+     "e": 117.1,
+     "t": "I agree. So what is left?"
+    },
+    {
+     "s": 117.1,
+     "e": 119.1,
+     "t": "Maybe a gift certificate?"
+    },
+    {
+     "s": 119.1,
+     "e": 121.1,
+     "t": "What present can be better"
+    },
+    {
+     "s": 121.1,
+     "e": 123.1,
+     "t": "than being given a choice?"
+    },
+    {
+     "s": 123.1,
+     "e": 125.1,
+     "t": "It can be a gift certificate"
+    },
+    {
+     "s": 125.1,
+     "e": 127.1,
+     "t": "to some clothes shop"
+    },
+    {
+     "s": 127.1,
+     "e": 129.1,
+     "t": "or a jewellery outlet."
+    },
+    {
+     "s": 129.1,
+     "e": 132.1,
+     "t": "I don't know. I wouldn't like such a present."
+    },
+    {
+     "s": 132.1,
+     "e": 134.1,
+     "t": "It looks as if you don't care"
+    },
+    {
+     "s": 134.1,
+     "e": 137.1,
+     "t": "and don't want to spend time choosing a proper gift."
+    },
+    {
+     "s": 137.1,
+     "e": 140.1,
+     "t": "Well, there's a grain of truth in what you've said."
+    },
+    {
+     "s": 140.1,
+     "e": 144.1,
+     "t": "So then what are we going to buy after all, Jack?"
+    },
+    {
+     "s": 144.1,
+     "e": 147.1,
+     "t": "Rose, I think I have an idea."
+    },
+    {
+     "s": 147.1,
+     "e": 149.1,
+     "t": "Why don't we buy her a pet?"
+    },
+    {
+     "s": 149.1,
+     "e": 151.1,
+     "t": "She doesn't have any."
+    },
+    {
+     "s": 151.1,
+     "e": 154.1,
+     "t": "Surely she'd be happy to get a kitten or a puppy."
+    },
+    {
+     "s": 154.1,
+     "e": 156.1,
+     "t": "No, she doesn't"
+    },
+    {
+     "s": 156.1,
+     "e": 159.1,
+     "t": "because she is allergic to most pets, right?"
+    },
+    {
+     "s": 159.1,
+     "e": 161.1,
+     "t": "Oh no, I've run out of ideas then."
+    },
+    {
+     "s": 161.1,
+     "e": 163.1,
+     "t": "I'm lost."
+    },
+    {
+     "s": 163.1,
+     "e": 165.1,
+     "t": "It's your turn to come up with something now."
+    },
+    {
+     "s": 165.1,
+     "e": 168.1,
+     "t": "Look, we can buy her a dancing mat."
+    },
+    {
+     "s": 168.1,
+     "e": 171.1,
+     "t": "A dancing mat? What is it?"
+    },
+    {
+     "s": 171.1,
+     "e": 173.1,
+     "t": "I've never heard of dancing mats."
+    },
+    {
+     "s": 173.1,
+     "e": 177.1,
+     "t": "It's a device which you can connect to your laptop or PC"
+    },
+    {
+     "s": 177.1,
+     "e": 180.1,
+     "t": "and put on some music and dance to it"
+    },
+    {
+     "s": 180.1,
+     "e": 182.1,
+     "t": "and the mat shows you how to move."
+    },
+    {
+     "s": 182.1,
+     "e": 185.1,
+     "t": "It shows you the steps and things like that."
+    },
+    {
+     "s": 185.1,
+     "e": 188.1,
+     "t": "You can select different dancing styles"
+    },
+    {
+     "s": 188.1,
+     "e": 191.1,
+     "t": "and learn to dance very quickly indeed."
+    },
+    {
+     "s": 191.1,
+     "e": 194.1,
+     "t": "Yes, she is going to love it."
+    },
+    {
+     "s": 194.1,
+     "e": 197.1,
+     "t": "She'll be a disco queen in a couple of months this way."
+    },
+    {
+     "s": 197.1,
+     "e": 199.1,
+     "t": "That's a great idea, Rose."
+    },
+    {
+     "s": 199.1,
+     "e": 201.1,
+     "t": "I hope it's not that expensive though."
+    },
+    {
+     "s": 201.1,
+     "e": 204.1,
+     "t": "I'm a bit short of money at the moment."
+    },
+    {
+     "s": 204.1,
+     "e": 206.1,
+     "t": "It's affordable, I'm sure."
+    },
+    {
+     "s": 206.1,
+     "e": 208.1,
+     "t": "So what are we waiting for?"
+    },
+    {
+     "s": 208.1,
+     "e": 210.1,
+     "t": "Let's go to the shop, shall we?"
+    },
+    {
+     "s": 210.1,
+     "e": 213.1,
+     "t": "I don't have any plans for today anyway."
+    },
+    {
+     "s": 213.1,
+     "e": 217.4,
+     "t": "Okay, let's go. I'm free at the moment."
+    },
+    {
+     "s": 220.4,
+     "e": 237.1,
+     "t": "Now you'll hear the text again."
+    },
+    {
+     "s": 237.1,
+     "e": 241.5,
+     "t": "Hello, Rose. It's great you are here."
+    },
+    {
+     "s": 241.5,
+     "e": 243.5,
+     "t": "I need to talk to you."
+    },
+    {
+     "s": 243.5,
+     "e": 246.5,
+     "t": "Oh, hi, Jack. Why? What's the matter?"
+    },
+    {
+     "s": 246.5,
+     "e": 250.5,
+     "t": "I hope you do remember it's Linda's birthday tomorrow."
+    },
+    {
+     "s": 250.5,
+     "e": 252.5,
+     "t": "Her birthday is on Wednesday."
+    },
+    {
+     "s": 252.5,
+     "e": 255.5,
+     "t": "Yes, it is. And today is..."
+    },
+    {
+     "s": 255.5,
+     "e": 258.5,
+     "t": "Oh, I've clean forgotten."
+    },
+    {
+     "s": 258.5,
+     "e": 260.5,
+     "t": "What are we going to do?"
+    },
+    {
+     "s": 260.5,
+     "e": 262.5,
+     "t": "We don't even have a present."
+    },
+    {
+     "s": 262.5,
+     "e": 265.5,
+     "t": "Don't you worry. We still have enough time to buy one."
+    },
+    {
+     "s": 265.5,
+     "e": 267.5,
+     "t": "We just need to decide what to buy."
+    },
+    {
+     "s": 267.5,
+     "e": 269.5,
+     "t": "It's the hardest thing."
+    },
+    {
+     "s": 269.5,
+     "e": 271.5,
+     "t": "We've known Linda for ages."
+    },
+    {
+     "s": 271.5,
+     "e": 274.5,
+     "t": "And we've given her so many presents already."
+    },
+    {
+     "s": 274.5,
+     "e": 277.5,
+     "t": "Yes, we need to think of something new."
+    },
+    {
+     "s": 277.5,
+     "e": 279.5,
+     "t": "It can't be clothes or perfume."
+    },
+    {
+     "s": 279.5,
+     "e": 281.5,
+     "t": "Linda loves these things."
+    },
+    {
+     "s": 281.5,
+     "e": 283.5,
+     "t": "And she's a true fashionista."
+    },
+    {
+     "s": 283.5,
+     "e": 286.5,
+     "t": "But her taste is very changeable."
+    },
+    {
+     "s": 286.5,
+     "e": 288.5,
+     "t": "She likes one thing today."
+    },
+    {
+     "s": 288.5,
+     "e": 290.5,
+     "t": "But she is into something else the next day."
+    },
+    {
+     "s": 290.5,
+     "e": 292.5,
+     "t": "So we may make a mistake."
+    },
+    {
+     "s": 292.5,
+     "e": 294.5,
+     "t": "I agree. So what is left?"
+    },
+    {
+     "s": 294.5,
+     "e": 297.5,
+     "t": "Maybe a gift certificate?"
+    },
+    {
+     "s": 297.5,
+     "e": 301.5,
+     "t": "What present can be better than being given a choice?"
+    },
+    {
+     "s": 301.5,
+     "e": 304.5,
+     "t": "It can be a gift certificate to some clothes shop"
+    },
+    {
+     "s": 304.5,
+     "e": 306.5,
+     "t": "or a jewellery outlet."
+    },
+    {
+     "s": 306.5,
+     "e": 309.5,
+     "t": "I don't know. I wouldn't like such a present."
+    },
+    {
+     "s": 309.5,
+     "e": 312.5,
+     "t": "It looks as if you don't care and don't want to spend time"
+    },
+    {
+     "s": 312.5,
+     "e": 314.5,
+     "t": "choosing a proper gift."
+    },
+    {
+     "s": 314.5,
+     "e": 317.5,
+     "t": "Well, there's a grain of truth in what you've said."
+    },
+    {
+     "s": 317.5,
+     "e": 321.5,
+     "t": "So then what are we going to buy after all, Jack?"
+    },
+    {
+     "s": 321.5,
+     "e": 324.5,
+     "t": "Rose, I think I have an idea."
+    },
+    {
+     "s": 324.5,
+     "e": 326.5,
+     "t": "Why don't we buy her a pet?"
+    },
+    {
+     "s": 326.5,
+     "e": 328.5,
+     "t": "She doesn't have any."
+    },
+    {
+     "s": 328.5,
+     "e": 331.5,
+     "t": "Surely she'd be happy to get a kitten or a puppy."
+    },
+    {
+     "s": 331.5,
+     "e": 333.5,
+     "t": "No, she doesn't."
+    },
+    {
+     "s": 333.5,
+     "e": 336.5,
+     "t": "Because she is allergic to most pets, right?"
+    },
+    {
+     "s": 336.5,
+     "e": 339.5,
+     "t": "Oh no. I've run out of ideas then."
+    },
+    {
+     "s": 339.5,
+     "e": 342.5,
+     "t": "I'm lost. It's your turn to come up with something now."
+    },
+    {
+     "s": 342.5,
+     "e": 345.5,
+     "t": "Look, we can buy her a dancing mat."
+    },
+    {
+     "s": 345.5,
+     "e": 348.5,
+     "t": "A dancing mat? What is it?"
+    },
+    {
+     "s": 348.5,
+     "e": 350.5,
+     "t": "I've never heard of dancing mats."
+    },
+    {
+     "s": 350.5,
+     "e": 354.5,
+     "t": "It's a device which you can connect to your laptop or PC"
+    },
+    {
+     "s": 354.5,
+     "e": 357.5,
+     "t": "and put on some music and dance to it."
+    },
+    {
+     "s": 357.5,
+     "e": 359.5,
+     "t": "And the mat shows you how to move."
+    },
+    {
+     "s": 359.5,
+     "e": 362.5,
+     "t": "It shows you the steps and things like that."
+    },
+    {
+     "s": 362.5,
+     "e": 365.5,
+     "t": "You can select different dancing styles"
+    },
+    {
+     "s": 365.5,
+     "e": 368.5,
+     "t": "and learn to dance very quickly indeed."
+    },
+    {
+     "s": 368.5,
+     "e": 371.5,
+     "t": "Yes, she is going to love it."
+    },
+    {
+     "s": 371.5,
+     "e": 374.5,
+     "t": "She'll be a disco queen in a couple of months this way."
+    },
+    {
+     "s": 374.5,
+     "e": 376.5,
+     "t": "That's a great idea, Rose."
+    },
+    {
+     "s": 376.5,
+     "e": 378.5,
+     "t": "I hope it's not that expensive though."
+    },
+    {
+     "s": 378.5,
+     "e": 381.5,
+     "t": "I'm a bit short of money at the moment."
+    },
+    {
+     "s": 381.5,
+     "e": 383.5,
+     "t": "It's affordable, I'm sure."
+    },
+    {
+     "s": 383.5,
+     "e": 385.5,
+     "t": "So what are we waiting for?"
+    },
+    {
+     "s": 385.5,
+     "e": 387.5,
+     "t": "Let's go to the shop, shall we?"
+    },
+    {
+     "s": 387.5,
+     "e": 390.5,
+     "t": "I don't have any plans for today anyway."
+    },
+    {
+     "s": 390.5,
+     "e": 394.9,
+     "t": "Okay, let's go. I'm free at the moment."
     }
    ]
   },
