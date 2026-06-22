@@ -81,7 +81,10 @@ export const STRINGS = {
       nextText: 'Другой вариант',
       byKesTitle: 'По кодификатору',
       kes: { '1.2.1': 'Основное содержание', '1.2.2': 'Запрашиваемая информация', '1.2.3': 'Полное понимание' },
-      doneScore: (c, tot) => `✓ Пройдено · ${c}/${tot}`,
+      doneScore: (c, tot) => `✓ Пройдено · ${c}/${tot} б.`,
+      tasksPts: (n, pts) => `${n} заданий · ${pts} ${pluralRu(pts, ['балл', 'балла', 'баллов'])}`,
+      maxPts: (pts) => `максимум за раздел — ${pts} ${pluralRu(pts, ['балл', 'балла', 'баллов'])}`,
+      pointsWord: (pts) => pluralRu(pts, ['балл', 'балла', 'баллов']),
     },
     // vocab (лексика — тема недели + флэшкарты/SRS)
     vocab: {
@@ -340,7 +343,10 @@ export const STRINGS = {
       nextText: 'Another variant',
       byKesTitle: 'By codifier',
       kes: { '1.2.1': 'Main idea', '1.2.2': 'Specific information', '1.2.3': 'Full understanding' },
-      doneScore: (c, tot) => `✓ Done · ${c}/${tot}`,
+      doneScore: (c, tot) => `✓ Done · ${c}/${tot} pts`,
+      tasksPts: (n, pts) => `${n} tasks · ${pts} point${pts === 1 ? '' : 's'}`,
+      maxPts: (pts) => `${pts} point${pts === 1 ? '' : 's'} max for this part`,
+      pointsWord: (pts) => (pts === 1 ? 'point' : 'points'),
     },
     vocab: {
       sub: 'Theme of the week · 15 words a day',

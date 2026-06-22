@@ -16,6 +16,10 @@ const KES = '1.2';
 
 function pct(a, b) { return b ? Math.round((a / b) * 100) : 0; }
 function randInt(n) { return Math.floor(Math.random() * n); }
+// баллы за вариант = по 1 за вопрос, соответствие = по 1 за говорящего (как в ОГЭ: 15 баллов)
+function variantPoints(g) {
+  return (g.questions || []).reduce((s, q) => s + (q.type === 'match' ? (q.speakers ? q.speakers.length : 1) : 1), 0);
+}
 
 // Нормализация ввода «вписать слово»: как у ФИПИ — регистр не важен, артикль/лишние пробелы убираем.
 function norm(s) {
@@ -68,7 +72,7 @@ export async function renderListening(container, cfg) {
         el('div', { class: 'at-ic' }, [iconImg('ic-listening', '🎧', 'at-img')]),
         el('div', { style: { flex: '1' } }, [
           el('div', { class: 'at-t', text: L.variant(i + 1) }),
-          el('div', { class: 'at-s', text: d ? L.doneScore(d.correct, d.total) : L.variantSub }),
+          el('div', { class: 'at-s', text: d ? L.doneScore(d.correct, d.total) : L.tasksPts(g.questions.length, variantPoints(g)) }),
         ]),
         el('div', { class: 'at-arrow', text: d ? '✓' : '→' }),
       ]);
@@ -304,8 +308,9 @@ export async function renderListening(container, cfg) {
     function showResult() {
       mount(container, el('div', { class: 'result view' }, [
         el('div', { class: 'voice-msg', text: roundMessage(name, correct, total, g.heroAwarded) }),
-        el('div', { class: 'res-num' }, [String(correct), el('span', { text: '/' + total })]),
+        el('div', { class: 'res-num' }, [String(correct), el('span', { text: '/' + total + ' ' + L.pointsWord(total) })]),
         el('div', { class: 'res-acc', text: t.accLine(acc, praise) }),
+        el('div', { class: 'ls-maxpts', text: L.maxPts(total) }),
         kesRows.length ? el('div', { class: 'ls-kes-card' }, [el('div', { class: 'ls-kes-h', text: L.byKesTitle }), ...kesRows]) : null,
         el('div', { class: 'reward' }, [
           rline('ic-streak', '🔥', t.rStreak, 'v-streak', g.streak + ' ' + t.dayWord(g.streak)),
