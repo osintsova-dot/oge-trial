@@ -9,7 +9,7 @@ import { getState, levelInfo, levelTable, packStatus, streakActiveToday,
   dailyDigest, skinsStatus, setSkin, applySkin, achievementsStatus,
   getTokens, perksStatus, redeemPerk, recentRedeemed,
   getExamDate, setExamDate, isOnboarded, setOnboarded, examInfo, setPlanGoal, setWeekTargets,
-  getListeningDone, getSpeakingDone } from './gamify.js';
+  getListeningDone, getSpeakingDone, mockPromptNow, markMockPromptShown } from './gamify.js';
 import { EXAM, t, sectionById, plural } from './exam.js';
 import { dailyProgress, themeStats } from './vocab_srs.js';
 import { weeklyPlan } from './planner.js';
@@ -218,6 +218,27 @@ function renderHome() {
       shortcuts,
     ]),
   ]));
+
+  // Всплывающее напоминание о пробнике (не чаще раза в день, если есть раздел)
+  const mp = mockPromptNow();
+  if (mp && sectionById('mock')) { markMockPromptShown(); showMockPrompt(mp); }
+}
+
+// Модалка-напоминание «пора пройти пробный» / «зафиксируй точку А»
+function showMockPrompt(sch) {
+  const back = el('div', { class: 'modal-back' });
+  const close = () => back.remove();
+  back.addEventListener('click', (e) => { if (e.target === back) close(); });
+  const title = sch.first ? t.mockPrompt.firstTitle : t.mockPrompt.dueTitle;
+  const text = sch.first ? t.mockPrompt.firstText : (sch.weekly ? t.mockPrompt.weeklyText : t.mockPrompt.dueText);
+  back.appendChild(el('div', { class: 'modal-card' }, [
+    el('div', { class: 'modal-ic' }, [iconImg('spiky-check', '📋', 'modal-img')]),
+    el('div', { class: 'modal-title', text: title }),
+    el('div', { class: 'modal-text', text: text }),
+    el('button', { class: 'btn btn-primary btn-block', text: t.mockPrompt.go, onclick: () => { close(); location.hash = '#/mock'; } }),
+    el('button', { class: 'btn btn-ghost btn-block', text: t.mockPrompt.later, onclick: close }),
+  ]));
+  document.body.appendChild(back);
 }
 
 // Заполнить карточку недельного плана (async: planner грузит topics)

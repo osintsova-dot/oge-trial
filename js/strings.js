@@ -174,6 +174,15 @@ export const STRINGS = {
       writePending: 'Письмо не удалось проверить (нет интернета) — оно не вошло в баллы.',
       writeEmpty: 'Письмо не написано — 0 баллов за раздел.',
     },
+    mockPrompt: {
+      firstTitle: 'Зафиксируй точку А',
+      firstText: 'Пройди первый пробный экзамен — увидим твой старт, а дальше будем отслеживать рост.',
+      dueTitle: 'Пора пройти пробный',
+      dueText: 'Прошёл месяц с прошлого пробника. Проверь форму на целом варианте с таймером.',
+      weeklyText: 'До экзамена меньше месяца — пробники теперь раз в неделю. Время для нового!',
+      go: 'Пройти пробный',
+      later: 'Позже',
+    },
     // vocab (лексика — тема недели + флэшкарты/SRS)
     vocab: {
       sub: 'Тема недели · 15 слов в день',
@@ -635,6 +644,15 @@ export const STRINGS = {
       backToList: 'Back to variants',
       writePending: 'Writing could not be graded (no internet) — it is not in the score.',
       writeEmpty: 'Writing left empty — 0 for the section.',
+    },
+    mockPrompt: {
+      firstTitle: 'Set your Point A',
+      firstText: 'Take your first mock exam — we\'ll fix your starting point and track your progress from there.',
+      dueTitle: 'Time for a mock',
+      dueText: 'A month has passed since your last mock. Check your form on a full timed paper.',
+      weeklyText: 'Less than a month to the exam — mocks are weekly now. Time for a new one!',
+      go: 'Take the mock',
+      later: 'Later',
     },
     sections: { vocab: 'Topic Vocabulary', grammar: 'Grammar', wordform: 'Word formation', reading: 'Reading', listening: 'Listening', writing: 'Writing', speaking: 'Speaking', mock: 'Mock exam', lexis: 'Vocabulary', email: 'Email', essay: 'Essay' },
     sectionMeta: { vocab: 'theme of the week · 15 words a day', grammar: '389 tasks · grammar', wordform: '728 tasks · word forms', reading: '469 tasks · 3 formats', listening: 'FIPI audio · multiple choice', writing: 'writing', speaking: 'soon', mock: 'full timed paper', lexis: '728 tasks · vocabulary', email: 'task 37 · K1–K3', essay: 'task 38 · K1–K5' },

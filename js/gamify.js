@@ -144,6 +144,28 @@ export function recordMock(result) {
 // Дата последнего пробника ('YYYY-MM-DD') или null.
 export function lastMockDate() { const a = read().mockResults || []; return a.length ? a[a.length - 1].date : null; }
 
+// Пора ли проходить пробник: раз в месяц; при ≤4 недель до экзамена — раз в неделю.
+// Первый раз (нет результатов) → «точка А». Если экзамен прошёл — не напоминаем.
+// Возвращает {due, first, weekly, interval, daysSince} или {due:false}.
+export function mockSchedule() {
+  const info = examInfo();
+  if (info && info.state === 'past') return { due: false };
+  const last = lastMockDate();
+  if (!last) return { due: true, first: true, weekly: false };
+  const weekly = !!(info && info.weeksLeft <= 4 && info.state !== 'past');
+  const interval = weekly ? 7 : 30;
+  const daysSince = daysBetween(last, todayStr());
+  return { due: daysSince >= interval, first: false, weekly, interval, daysSince };
+}
+// Показать ли всплывающее напоминание о пробнике СЕЙЧАС (не чаще раза в день). null, если нет.
+export function mockPromptNow() {
+  const sch = mockSchedule();
+  if (!sch.due) return null;
+  if (read().mockPromptDate === todayStr()) return null;
+  return sch;
+}
+export function markMockPromptShown() { const s = read(); s.mockPromptDate = todayStr(); write(s); }
+
 // Виден ли уже совет Спики по разделу (авто-показ только в первый раз)
 export function hasSeenTip(id) { return (read().tipsSeen || []).includes(id); }
 export function markTipSeen(id) { const s = read(); s.tipsSeen = s.tipsSeen || []; if (!s.tipsSeen.includes(id)) { s.tipsSeen.push(id); write(s); } }
