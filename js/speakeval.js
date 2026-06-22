@@ -50,3 +50,36 @@ export async function evalSpeaking(kind, item, transcript) {
   res.max = mx;
   return res;
 }
+
+// EGE speaking — критерии ОРИЕНТИРОВОЧНЫЕ (официальные максимумы ФИПИ не подтверждены).
+function egeCriteria(kind) {
+  if (kind === 'ask') return [{ code: 'Q1', name: 'Question 1', max: 1 }, { code: 'Q2', name: 'Question 2', max: 1 }, { code: 'Q3', name: 'Question 3', max: 1 }, { code: 'Q4', name: 'Question 4', max: 1 }, { code: 'Q5', name: 'Question 5', max: 1 }];
+  if (kind === 'interview') return [{ code: 'A1', name: 'Answer 1', max: 1 }, { code: 'A2', name: 'Answer 2', max: 1 }, { code: 'A3', name: 'Answer 3', max: 1 }, { code: 'A4', name: 'Answer 4', max: 1 }, { code: 'A5', name: 'Answer 5', max: 1 }];
+  if (kind === 'compare') return [{ code: 'K1', name: 'Task completion (all plan points)', max: 3 }, { code: 'K2', name: 'Organisation', max: 3 }, { code: 'K3', name: 'Language', max: 3 }];
+  return [{ code: 'R', name: 'Reading completeness (pronunciation: ask a teacher)', max: 1 }];
+}
+
+export async function evalEgeSpeaking(kind, item, transcript) {
+  const crit = egeCriteria(kind);
+  const mx = crit.reduce((s, c) => s + c.max, 0);
+  const instr = item.instruction || '';
+  let task;
+  if (kind === 'ask') task = `EGE Speaking task 2: the student must ask direct questions about an advertisement on the given points. Task & points:\n"""${instr}"""\nScore 1 per grammatically correct, relevant DIRECT question matching a required point.`;
+  else if (kind === 'interview') task = `EGE Speaking task 3: the student answers 5 interview questions (heard from audio) with full answers (2-3 sentences each). Score 1 per full, relevant answer. Task:\n"""${instr}"""`;
+  else if (kind === 'compare') task = `EGE Speaking task 4: the student compares two photos as a monologue following the plan in the task. Judge content (plan points covered), organisation (opening, linkers, conclusion) and language. Task:\n"""${instr}"""`;
+  else task = `EGE Speaking task 1: reading a text aloud. The text is shown as an image, so the reference text is NOT available. Judge ONLY rough completeness/fluency from the recognised words; word-level mismatches are ASR errors, not the student's. Pronunciation/intonation CANNOT be judged here — say so.`;
+  const critJson = crit.map((c) => `{"code":"${c.code}","name":"${c.name}","score":<0-${c.max}>,"max":${c.max},"comment":"<short, English>"}`).join(',');
+  const sys = 'You are an experienced EGE English examiner (speaking). Reply ONLY with valid JSON, no markdown. Comments in clear B1 English. Be fair: this is auto speech recognition, ignore minor ASR errors; if the very first words are off-topic, treat them as an ASR artifact, not part of the answer.';
+  const user = `${task}\n\nRecognised speech of the student:\n"""${transcript}"""\n\nReturn JSON exactly:\n{"totalScore":<0-${mx}>,"criteria":[${critJson}],"verdict":"<2-3 sentences: strengths and what to improve>"}\ntotalScore = sum of criteria.`;
+  const r = await fetch(EVAL_WORKER, {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ model: 'deepseek-chat', max_tokens: 1300, messages: [{ role: 'system', content: sys }, { role: 'user', content: user }] }),
+  });
+  if (!r.ok) throw new Error('HTTP ' + r.status);
+  const d = await r.json();
+  if (d.error) throw new Error(d.error.message || 'err');
+  if (!d.choices || !d.choices[0]) throw new Error('empty');
+  const res = JSON.parse(d.choices[0].message.content.replace(/```json|```/g, '').trim());
+  res.max = mx;
+  return res;
+}

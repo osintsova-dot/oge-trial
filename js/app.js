@@ -20,6 +20,7 @@ import { renderReadingEge } from '../modules/ege_reading.js';
 import { renderVocab } from '../modules/vocab.js';
 import { renderListening } from '../modules/listening.js';
 import { renderSpeaking } from '../modules/speaking.js';
+import { renderEgeSpeaking } from '../modules/ege_speaking.js';
 import { renderMock } from '../modules/mock.js';
 
 const view = document.getElementById('view');
@@ -48,7 +49,7 @@ function route() {
   setActiveTab(hash);
   const sec = sectionById(hash);
   // В режиме решения (дрилл/письмо) нижнее меню прячем, чтобы не перекрывало кнопки
-  document.body.classList.toggle('in-flow', !!(sec && ['drill', 'writing', 'reading', 'vocab', 'listening', 'speaking', 'mock', 'soon'].includes(sec.type)));
+  document.body.classList.toggle('in-flow', !!(sec && ['drill', 'writing', 'reading', 'vocab', 'listening', 'speaking', 'egespeaking', 'mock', 'soon'].includes(sec.type)));
   if (hash === 'progress') return renderProgress();
   if (hash === 'rewards')  return renderRewards();
   if (hash === 'plan')     return renderPlan();
@@ -58,6 +59,7 @@ function route() {
   if (sec && sec.type === 'vocab')   return renderVocab(view, { goHome, dataFile: sec.dataFile });
   if (sec && sec.type === 'listening') return renderListening(view, { goHome, dataFile: sec.dataFile });
   if (sec && sec.type === 'speaking') return renderSpeaking(view, { goHome, dataFile: sec.dataFile });
+  if (sec && sec.type === 'egespeaking') return renderEgeSpeaking(view, { goHome, dataFile: sec.dataFile });
   if (sec && sec.type === 'mock') return renderMock(view, { goHome, dataFile: sec.dataFile });
   if (sec && sec.type === 'soon')    return renderSoon(sec);
   return renderHome();
@@ -442,10 +444,10 @@ async function renderProgress() {
     const ltot = ld && ld.groups ? ld.groups.length : 0;
     doneRows.push(doneRow(lSec, Object.keys(getListeningDone()).length, ltot));
   }
-  const spSec = EXAM.sections.find((s) => s.type === 'speaking');
+  const spSec = EXAM.sections.find((s) => s.type === 'speaking' || s.type === 'egespeaking');
   if (spSec) {
     const sd = await loadJSON(spSec.dataFile).catch(() => null);
-    const stot = sd ? ((sd.read || []).length + (sd.survey || []).length + (sd.monologue || []).length) : 0;
+    const stot = sd ? ['read', 'survey', 'monologue', 'ask', 'interview', 'compare'].reduce((n, k) => n + ((sd[k] || []).length), 0) : 0;
     doneRows.push(doneRow(spSec, Object.keys(getSpeakingDone()).length, stot));
   }
 

@@ -49,6 +49,7 @@ const CONFIGS = {
       { id: 'listening', type: 'listening', dataFile: 'ege_listening', tile: 'listening', iconKey: 'listening', icon: '🎧' },
       { id: 'email',   type: 'writing', tile: 'writing', icon: '✉️' },
       { id: 'essay',   type: 'writing', tile: 'grammar', iconKey: 'essay', icon: '📝' },
+      { id: 'speaking', type: 'egespeaking', dataFile: 'ege_speaking', tile: 'speaking', iconKey: 'speaking', icon: '🎤' },
       { id: 'mock',    type: 'mock', dataFile: 'ege_mock', tile: 'mock', iconKey: 'mock', icon: '📋' },
     ],
     pack: ['grammar', 'lexis', 'reading', 'listening', 'email', 'essay'],
