@@ -285,7 +285,8 @@ export async function renderListening(container, cfg) {
       pending = { correct, total, byKes };
       correct === total ? playCorrect() : playWrong();
       // скрипт открывается (только сейчас), но СВЁРНУТ в плашку — чтобы результаты были сразу видны
-      qWrap.appendChild(transcriptBlock(group, audio));
+      const tb = transcriptBlock(group, audio);
+      if (tb) qWrap.appendChild(tb);
       action.textContent = t.finish;
       action.className = 'btn btn-primary btn-block';
       action.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -305,6 +306,7 @@ export async function renderListening(container, cfg) {
   // --- Скрипт записи (виден только на проверке): опорные предложения подсвечены и пронумерованы
   //     номером задания; тап по предложению → переслушать фрагмент (как в «Чтении»). ---
   function transcriptBlock(group, audio) {
+    if (!group.transcript || !group.transcript.length) return null;  // нет скрипта (MC без STT) — плашку не показываем
     // карта: время начала опорного сегмента → номера заданий, которые на него опираются
     const evMap = {};
     group.questions.forEach((q, i) => {

@@ -215,9 +215,10 @@ img.sic.bn-ic{width:30px;height:30px}
 .tile.wordform{background:var(--grad-wordform);box-shadow:0 6px 16px rgba(200,75,140,.3)}
 .tile.reading{background:var(--grad-reading);box-shadow:0 6px 16px rgba(91,116,230,.3)}
 .tile.listening{background:var(--grad-listening);box-shadow:0 6px 16px rgba(41,120,216,.3)}
-/* квадратные иконки (аудирование, новое словообразование) — увеличиваем под массу landscape-иконок */
+/* квадратные иконки (аудирование, словообразование, грамматика) — крупнее под массу landscape-иконок */
 .tile.listening .t-icon .tile-img,
-.tile.wordform .t-icon .tile-img{height:64px;max-width:64px}
+.tile.wordform .t-icon .tile-img,
+.tile.grammar .t-icon .tile-img{height:64px;max-width:64px}
 .all-topics.listening .at-ic .at-img{height:48px;max-width:48px}
 .tile.vocab{background:var(--grad-vocab);box-shadow:0 6px 16px rgba(22,179,166,.3);grid-column:1 / -1}
 /* Словарь во всю ширину — горизонтальный баннер: текст слева, картинка справа */

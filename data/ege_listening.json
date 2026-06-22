@@ -3660,6 +3660,2329 @@
    ]
   },
   {
+   "id": "mc7",
+   "cat": "mc",
+   "guid": "9ED00DA6348C96BD4AA3F76D1314A32D",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/9ED00DA6348C96BD4AA3F76D1314A32D/img1_1562919195.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "0FAA9F",
+     "type": "choice",
+     "q": "Which of the following is NOT true about Alice’s novel Stars ?",
+     "options": [
+      "It’s her debut book",
+      "It’s quite popular with readers",
+      "It’s published all over the world"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "E2480E",
+     "type": "choice",
+     "q": "What do we learn about Alice at the beginning of the interview?",
+     "options": [
+      "She won numerous prizes for her writing",
+      "She became famous when still at college",
+      "Writing is not her only occupation"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "EFCD0F",
+     "type": "choice",
+     "q": "What’s the name of the main character of the novel Stars ?",
+     "options": [
+      "Jessica",
+      "Liam",
+      "Arthur"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "76BFEB",
+     "type": "choice",
+     "q": "Alice ’s novel starts with a …",
+     "options": [
+      "police investigation",
+      "marriage",
+      "a catastrophe"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "703B12",
+     "type": "choice",
+     "q": "What is unusual about the format of Alice’s novel?",
+     "options": [
+      "It’s narrated by the voice in character’s head",
+      "It’s a number of e-mail messages",
+      "It’s an exchange of private letters"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "5EFC09",
+     "type": "choice",
+     "q": "According to Alice, what was the biggest difficulty in writing her novel?",
+     "options": [
+      "Explaining to the reader every event",
+      "Leaving the reader enough indications on what’s happening",
+      "Keeping the novel not too long"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "0A341F",
+     "type": "choice",
+     "q": "When does Alice do most of her writing?",
+     "options": [
+      "At working hours",
+      "Returning home from work",
+      "At the weekends"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc8",
+   "cat": "mc",
+   "guid": "5F63810D90BDB47742247752EDCEFA1B",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/5F63810D90BDB47742247752EDCEFA1B/img1_1689774540.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "857F12",
+     "type": "choice",
+     "q": "What do we learn about Stacey Swan at the beginning of the interview?",
+     "options": [
+      "She’s won many literary awards",
+      "She spends much time teaching",
+      "She works in different spheres"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "0B58A6",
+     "type": "choice",
+     "q": "Stacey started to work for American Short Fiction as a …",
+     "options": [
+      "volunteer",
+      "writer",
+      "editor"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "6C51E4",
+     "type": "choice",
+     "q": "Stacey’s editing experience helps her to …",
+     "options": [
+      "steal ideas from others",
+      "see problems in her works",
+      "write more novel drafts"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "DDB75D",
+     "type": "choice",
+     "q": "Stacey likes …",
+     "options": [
+      "drafting",
+      "editing",
+      "drawing"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "F391BE",
+     "type": "choice",
+     "q": "Stacey describes her initial drafts as …",
+     "options": [
+      "chaotic",
+      "lengthy",
+      "perfect"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "E3E8E1",
+     "type": "choice",
+     "q": "In Stacey’s story The Pull the central characters are …",
+     "options": [
+      "good friends",
+      "reserved people",
+      "complete opposites"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "B1363F",
+     "type": "choice",
+     "q": "Which of the following is TRUE about the story The Pull ?",
+     "options": [
+      "Dogs play a big part in the story",
+      "Stacey copied the dogs from her pets",
+      "Dogs fight with people in the story"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc9",
+   "cat": "mc",
+   "guid": "907AD75AB4C7A63544D0DC2566FADD14",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/907AD75AB4C7A63544D0DC2566FADD14/img2_1562940794.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "11B65E",
+     "type": "choice",
+     "q": "What do we learn about Paul at the beginning of the interview?",
+     "options": [
+      "He has worked as a fashion model",
+      "He’s planning to finish his acting career",
+      "He’s getting too old to perform"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "8C8307",
+     "type": "choice",
+     "q": "Which of the following is NOT Paul’s achievement?",
+     "options": [
+      "Academy Award",
+      "Two Oscars",
+      "World’s best actor"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "FA8EB4",
+     "type": "choice",
+     "q": "What does Paul say about the beginning of his acting career?",
+     "options": [
+      "It had many ups and downs",
+      "He was out of work for a year",
+      "He can’t remember any failures"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "63FB07",
+     "type": "choice",
+     "q": "How does Paul feel about Paris?",
+     "options": [
+      "He has mixed feelings about it",
+      "He hates visiting it as a tourist",
+      "He compares it to London unfavourably"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "76EF0D",
+     "type": "choice",
+     "q": "What does Paul say is the best way for him to relax?",
+     "options": [
+      "To avoid all the noise",
+      "To go to the mountains",
+      "To stay in a cabin up the hills"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "B7D844",
+     "type": "choice",
+     "q": "Which of the following is TRUE about Paul’s school friends?",
+     "options": [
+      "All of them live in London",
+      "They used to be scandalous fans",
+      "They play football professionally"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "0B85DB",
+     "type": "choice",
+     "q": "Who is Brando for Paul?",
+     "options": [
+      "A role model",
+      "An old friend",
+      "A person to admire"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc10",
+   "cat": "mc",
+   "guid": "A29B4EBCDFCFA29B418BAE2126C57DD2",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/A29B4EBCDFCFA29B418BAE2126C57DD2/img1_1689774807.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "0B93CA",
+     "type": "choice",
+     "q": "What do we learn about Judy White at the beginning of the interview?",
+     "options": [
+      "She’s a successful playwright",
+      "She’s written many bestsellers",
+      "She dislikes living in New York"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "3B0679",
+     "type": "choice",
+     "q": "Which of the following is TRUE about the structure of the book If I Knew… ?",
+     "options": [
+      "It was written in a random order",
+      "It reminds the reader of a typical classic novel",
+      "It is a part of a bigger collection of stories"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "8C4468",
+     "type": "choice",
+     "q": "What unites stories in Judy’s book?",
+     "options": [
+      "Common main characters",
+      "The place where they happen",
+      "Central ideas and messages"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "986E46",
+     "type": "choice",
+     "q": "The presenter characterizes the dialogues in the book as …",
+     "options": [
+      "interesting",
+      "theatrical",
+      "unnatural"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "FAC6C8",
+     "type": "choice",
+     "q": "What does Judy do to create realistic dialogues?",
+     "options": [
+      "She copies the speech of her friends",
+      "She tries to follow the rules of the genre",
+      "She considers the characters’ personalities"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "F4614B",
+     "type": "choice",
+     "q": "Judy describes herself as …",
+     "options": [
+      "unsuccessful",
+      "lonely",
+      "outgoing"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "EFC4AD",
+     "type": "choice",
+     "q": "Which of the following is TRUE about the setting of the book If I Knew… ?",
+     "options": [
+      "Judy knows nobody there",
+      "Judy dislikes this place",
+      "Judy used to live there"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc11",
+   "cat": "mc",
+   "guid": "C4E1D08402F3AD1D4C282FB1DBBF6733",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/C4E1D08402F3AD1D4C282FB1DBBF6733/img1_1723804807.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "B6F4E3",
+     "type": "choice",
+     "q": "What do we learn about Lisa Black at the beginning of the interview?",
+     "options": [
+      "All of her books are bestsellers",
+      "She has an undergraduate degree in psychology",
+      "She has two world-famous books"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "5B6221",
+     "type": "choice",
+     "q": "Lisa compares weightlifting and studying to show that …",
+     "options": [
+      "to develop, one needs to work hard",
+      "sport is necessary for brain work",
+      "these processes are not very hard"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "A317CE",
+     "type": "choice",
+     "q": "Lisa considers a stress-free life to be",
+     "options": [
+      "the best choice",
+      "impossible",
+      "a must"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "3D7588",
+     "type": "choice",
+     "q": "Lisa thinks stress is good if it is …",
+     "options": [
+      "manageable",
+      "chronic",
+      "short-term"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "DD4795",
+     "type": "choice",
+     "q": "Lisa explains to her clients that anxiety in fact is …",
+     "options": [
+      "a way to make you work more",
+      "a protective mechanism",
+      "a thing one needs to get rid of"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "5B776C",
+     "type": "choice",
+     "q": "According to Lisa, while discussing the worst-case scenarios with their children, parents should concentrate on the …",
+     "options": [
+      "things they say",
+      "way they sound",
+      "solution to the problem"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "0CF6ED",
+     "type": "choice",
+     "q": "Lisa advises parents to … the fact that their children are sometimes stressed.",
+     "options": [
+      "accept",
+      "dread",
+      "reject"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc12",
+   "cat": "mc",
+   "guid": "3268D359B34AA24949A18AA91BBCE7D3",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/3268D359B34AA24949A18AA91BBCE7D3/img1_1562929745.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "C581DE",
+     "type": "choice",
+     "q": "What do we learn about Vanessa at the beginning of the interview?",
+     "options": [
+      "She is a beginner",
+      "She has won her first writing award",
+      "She writes affecting novels"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "F665D2",
+     "type": "choice",
+     "q": "In her childhood Vanessa produced a …",
+     "options": [
+      "newspaper",
+      "collection of poems",
+      "comedy"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "DB22CF",
+     "type": "choice",
+     "q": "What made Vanessa start her writing career?",
+     "options": [
+      "Reading a book bought by chance",
+      "An accident in Brighton",
+      "A meeting with a writer"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "D6B729",
+     "type": "choice",
+     "q": "Vanessa thinks that anybody can be a storyteller because …",
+     "options": [
+      "people are born with this gift",
+      "people know a lot of stories",
+      "everybody enjoys being one"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "6C54D5",
+     "type": "choice",
+     "q": "What books does Vanessa specifically advise beginner writers to read?",
+     "options": [
+      "Good books",
+      "Bad books",
+      "Both good and bad books"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "920A06",
+     "type": "choice",
+     "q": "How does Vanessa treat her characters?",
+     "options": [
+      "Like puppets",
+      "Like means to impress readers",
+      "Like people living their own lives in a story"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "11C319",
+     "type": "choice",
+     "q": "Which of the following does Vanessa say about editing?",
+     "options": [
+      "You should edit at least a third of the original text",
+      "It may considerably shorten your text",
+      "A raw text is more interesting than its edited version"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc13",
+   "cat": "mc",
+   "guid": "6613BE70287FA23541DDDA883CD0ED6D",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/6613BE70287FA23541DDDA883CD0ED6D/img1_1714743652.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "29732F",
+     "type": "choice",
+     "q": "What do we learn about Kelly Wright at the beginning of the interview?",
+     "options": [
+      "Most of her books are bestsellers",
+      "She writes entertaining stories",
+      "She is a journalist in New York"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "40DF28",
+     "type": "choice",
+     "q": "Having teenage children, Kelly has to …",
+     "options": [
+      "carefully choose the plots for her stories",
+      "devote more time to writing about teenagers",
+      "limit the amount of time she spends with her kids"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "15E59A",
+     "type": "choice",
+     "q": "It’s sometimes hard for Kelly to …",
+     "options": [
+      "make her children do their homework",
+      "have a hearty talk with her children",
+      "ask her children shallow questions"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "FD5657",
+     "type": "choice",
+     "q": "When Kelly was a teenager, she …",
+     "options": [
+      "cared about her mother’s opinion",
+      "was similar to her own children",
+      "had a very good advisor at school"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "90858A",
+     "type": "choice",
+     "q": "By saying “Just be a potted plant for your kid” Kelly means she should …",
+     "options": [
+      "be there when her kids need her",
+      "make their lives comfortable",
+      "have a lot of pot plants in the house"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "DD92D8",
+     "type": "choice",
+     "q": "Kelly wishes …",
+     "options": [
+      "her children didn’t develop so fast",
+      "she hadn’t worried so much",
+      "she knew how to break bad habits"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "3BA444",
+     "type": "choice",
+     "q": "Kelly thinks that children … the mistakes of their parents.",
+     "options": [
+      "avoid",
+      "forget",
+      "repeat"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc14",
+   "cat": "mc",
+   "guid": "88BF4475FDA384F84DFC8F17556E6A3A",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/88BF4475FDA384F84DFC8F17556E6A3A/img1_1562918917.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "512D3C",
+     "type": "choice",
+     "q": "What do we learn about Alex at the beginning of the interview?",
+     "options": [
+      "He has written more than 60 books for children",
+      "His most famous books are detective stories",
+      "All his books are fiction"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "D6388A",
+     "type": "choice",
+     "q": "Why does Alex write?",
+     "options": [
+      "He has to make a living",
+      "He simply can t help it",
+      "He is inspired by other writers"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "DF2411",
+     "type": "choice",
+     "q": "What do we learn out about Alex s reading preferences?",
+     "options": [
+      "He prefers classics only",
+      "He prefers humorous stories",
+      "His preferences are varied"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "195DC3",
+     "type": "choice",
+     "q": "What was Alex s first book?",
+     "options": [
+      "A children s book",
+      "A detective short story",
+      "A detective novel"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "586E06",
+     "type": "choice",
+     "q": "What does Alex say about literary agents?",
+     "options": [
+      "Every writer must have one",
+      "You should try to work with several agents",
+      "Good agents are invaluable helpers"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "462D31",
+     "type": "choice",
+     "q": "What does Alex say about promoting his books?",
+     "options": [
+      "It s very motivating for him",
+      "It s too hard physically",
+      "It s a stress for him having to meet readers"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "16CD85",
+     "type": "choice",
+     "q": "What is, in Alex s opinion, the typical mistake of starting novelists?",
+     "options": [
+      "They write too many stories at once",
+      "They spend too much time on their first text",
+      "They give up writing very quickly"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc15",
+   "cat": "mc",
+   "guid": "3334AD827A78B8E04A8D286B1445E230",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/3334AD827A78B8E04A8D286B1445E230/img1_1689774441.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "7CB677",
+     "type": "choice",
+     "q": "What do we learn about Ann Summer at the beginning of the interview?",
+     "options": [
+      "She’s an internationally famous writer",
+      "Many writers want to work with her",
+      "She rarely comes to radio programmes"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "16E9FB",
+     "type": "choice",
+     "q": "Ann believes writers should …",
+     "options": [
+      "not waste time on celebrations",
+      "make creative and clever choices",
+      "attend professional events"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "4334BE",
+     "type": "choice",
+     "q": "In Ann’s opinion, book launches are good mainly because you can meet …",
+     "options": [
+      "supportive colleagues",
+      "interested booksellers",
+      "fanatical readers"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "3C0787",
+     "type": "choice",
+     "q": "Ann thinks going to literary festivals may not be a good idea because they …",
+     "options": [
+      "don’t provide writers with individual taxis",
+      "prevent communicating with colleagues",
+      "always leave everybody disappointed"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "D80056",
+     "type": "choice",
+     "q": "When Ann was giving a talk at a primary school, she met …",
+     "options": [
+      "an old friend",
+      "a new writer",
+      "a literary critic"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "8E0FB6",
+     "type": "choice",
+     "q": "Which does Ann NOT mention as a useful function of social media for writers?",
+     "options": [
+      "Dealing with readers",
+      "Using hashtags",
+      "Giving classes"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "3A648B",
+     "type": "choice",
+     "q": "Sandy Campbell was Ann’s …",
+     "options": [
+      "teacher",
+      "publisher",
+      "best friend"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc16",
+   "cat": "mc",
+   "guid": "075103383DBC8D8D456E7C9284B7D707",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/075103383DBC8D8D456E7C9284B7D707/img1_1562941568.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "4440E1",
+     "type": "choice",
+     "q": "What do we learn about Harry at the beginning of the interview?",
+     "options": [
+      "He s still a very young person",
+      "He became famous a long time ago",
+      "He loves watching TV programmes about himself"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "FB38AA",
+     "type": "choice",
+     "q": "Why, according to Harry, was his first show successful?",
+     "options": [
+      "It was positive and optimistic",
+      "It appealed to various viewers",
+      "It revealed people’s secrets"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "80233C",
+     "type": "choice",
+     "q": "What does Harry have in common with the Steve character?",
+     "options": [
+      "They are faithful",
+      "They are trustworthy",
+      "They are rather skeptical"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "220F6A",
+     "type": "choice",
+     "q": "How did the show change Harry, in his opinion?",
+     "options": [
+      "He now has more questions than answers",
+      "He has become more open to new things",
+      "He now tends to accept any script offered to him"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "EBB5D8",
+     "type": "choice",
+     "q": "Which of the genres is NOT to Harry’s liking?",
+     "options": [
+      "Romantic comedy",
+      "Thriller",
+      "Period drama"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "7F0A13",
+     "type": "choice",
+     "q": "What kind of characters does Harry say he prefers to play?",
+     "options": [
+      "Good guys",
+      "Bad guys",
+      "Anybody"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "1DBF21",
+     "type": "choice",
+     "q": "How does Harry feel about getting older?",
+     "options": [
+      "It’s horrible",
+      "It’s natural",
+      "It’s important"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc17",
+   "cat": "mc",
+   "guid": "F942526F282F945846B5513F0784DD26",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/F942526F282F945846B5513F0784DD26/img1_1562918723.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "2D7D53",
+     "type": "choice",
+     "q": "The first question of the presenter is about …",
+     "options": [
+      "the effectiveness of horse therapy",
+      "Diane Smith’s experience with horse therapy",
+      "the reason horses are used in therapy"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "A6CB43",
+     "type": "choice",
+     "q": "According to Diane, hippotherapy is used for …",
+     "options": [
+      "teaching languages",
+      "treating neurological problems",
+      "treating blindness"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "227BB0",
+     "type": "choice",
+     "q": "According to Diane, hippotherapy is more effective than traditional therapy for …",
+     "options": [
+      "children",
+      "anybody",
+      "depressed people"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "3CA090",
+     "type": "choice",
+     "q": "Horse riding helps to improve speech by improving one’s …",
+     "options": [
+      "breathing",
+      "balance",
+      "motor skills"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "81B8E9",
+     "type": "choice",
+     "q": "Why is, according to Diane, horse therapy more than just a horse riding?",
+     "options": [
+      "It’s used on a regular basis",
+      "The therapist organizes it in a special way",
+      "It s aimed at improving complex skills"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "66529F",
+     "type": "choice",
+     "q": "What does the therapist do during the first session of horse therapy?",
+     "options": [
+      "Chooses the program of treatment",
+      "Trains the horse",
+      "Selects the right saddle for the patient"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "5DF7BC",
+     "type": "choice",
+     "q": "Which of the following groups is NOT mentioned by Diane as potential clients for hippotherapy?",
+     "options": [
+      "Disabled children",
+      "Depressed adults",
+      "Professional riders"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc18",
+   "cat": "mc",
+   "guid": "1C33006E364AA3F94797C151B93F56D0",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/1C33006E364AA3F94797C151B93F56D0/img1_1721126868.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "E474F7",
+     "type": "choice",
+     "q": "What do we learn about Carl Smith at the beginning of the interview?",
+     "options": [
+      "He is internationally famous",
+      "He has tried several careers",
+      "He is the best NFL player"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "F95D40",
+     "type": "choice",
+     "q": "According to Carl, Bridgeport is …",
+     "options": [
+      "a very beautiful town",
+      "not a very safe place",
+      "a city for celebrities"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "6B0905",
+     "type": "choice",
+     "q": "When Carl was a teenager, he … his studies.",
+     "options": [
+      "ignored",
+      "enjoyed",
+      "succeeded in"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "43EFFB",
+     "type": "choice",
+     "q": "Carl took up football because …",
+     "options": [
+      "it was a popular sport in his neighbourhood",
+      "his teacher was an enthusiastic football fan",
+      "it was the easiest way for him to get a scholarship"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "AB9D9E",
+     "type": "choice",
+     "q": "Carl gave up the National Football League because of …",
+     "options": [
+      "rivalry",
+      "a trauma",
+      "a model show"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "D6DD56",
+     "type": "choice",
+     "q": "How did his background in sport help Carl in America’s Next Top Model ?",
+     "options": [
+      "It taught him to deal with negative remarks",
+      "It helped him have a muscular body",
+      "It made his skin look really good"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "24317C",
+     "type": "choice",
+     "q": "Carl is happy that he can … his son.",
+     "options": [
+      "support",
+      "learn with",
+      "look up to"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc19",
+   "cat": "mc",
+   "guid": "4F4C43C0C87CB8FE4E79A68F717F4BF4",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/4F4C43C0C87CB8FE4E79A68F717F4BF4/img1_1679489348.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "8BE7BB",
+     "type": "choice",
+     "q": "What do we learn about Liza May at the beginning of the interview?",
+     "options": [
+      "She will advertise her first book",
+      "She has her own radio program",
+      "She is a well-known specialist in her area"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "26166D",
+     "type": "choice",
+     "q": "Liza thinks interpretation is harder than translation because interpreters have to …",
+     "options": [
+      "work while standing in one place",
+      "translate in two directions in real-time",
+      "express their emotions"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "B738EF",
+     "type": "choice",
+     "q": "What does Liza point out about becoming an interpreter?",
+     "options": [
+      "It’s too expensive",
+      "It takes too much time",
+      "It may require extra courses"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "B9FFCF",
+     "type": "choice",
+     "q": "What does Liza NOT list as a reason for a growing demand for interpreters in the USA?",
+     "options": [
+      "They get an exceptionally high salary",
+      "The immigration rate to the USA is high",
+      "The USA trades with many countries"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "B80C9A",
+     "type": "choice",
+     "q": "According to Liza, where can future interpreters get work experience?",
+     "options": [
+      "By working as tour guides",
+      "As unpaid volunteers",
+      "By starting an import business"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "31174E",
+     "type": "choice",
+     "q": "Liza thinks an interpreter must be …",
+     "options": [
+      "opinionated",
+      "emotional",
+      "accurate"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "CEFB45",
+     "type": "choice",
+     "q": "Liza advises future interpreters to …",
+     "options": [
+      "watch TV in a foreign language",
+      "ignore the cultural aspect of a language",
+      "use smartphone translation apps"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc20",
+   "cat": "mc",
+   "guid": "9634FA203D998B14424D5F1F900C8703",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/9634FA203D998B14424D5F1F900C8703/img1_1689774739.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "28BCA7",
+     "type": "choice",
+     "q": "Which of the following is NOT true about Eric James?",
+     "options": [
+      "He’s won numerous prizes",
+      "He’s covered various topics",
+      "He wants to start his own school"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "89A462",
+     "type": "choice",
+     "q": "The programme Eric runs is aimed at …",
+     "options": [
+      "rich schoolchildren",
+      "teens from poor families",
+      "professional journalists"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "7354AD",
+     "type": "choice",
+     "q": "What is the first thing Eric decides on when starting a story?",
+     "options": [
+      "The beginning",
+      "The conclusion",
+      "The location"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "5B50D0",
+     "type": "choice",
+     "q": "According to Eric, opposing characters create … in a story.",
+     "options": [
+      "a conflict",
+      "much fun",
+      "bad atmosphere"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "6AB5BA",
+     "type": "choice",
+     "q": "Eric dislikes … reactions of his readers to his writing.",
+     "options": [
+      "positive",
+      "negative",
+      "indifferent"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "79AA81",
+     "type": "choice",
+     "q": "Eric thinks writers need a lot of …",
+     "options": [
+      "privacy",
+      "medicines",
+      "friends"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "8FCD17",
+     "type": "choice",
+     "q": "How has becoming a father changed Eric’s work?",
+     "options": [
+      "He’s got more creative thoughts",
+      "He has to manage his time better",
+      "He works much less than he used to"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc21",
+   "cat": "mc",
+   "guid": "F6D01B7F084E8A884FE7BA46066D5444",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/F6D01B7F084E8A884FE7BA46066D5444/img1_1679489525.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "2F4986",
+     "type": "choice",
+     "q": "What do we learn about Brenda at the beginning of the interview?",
+     "options": [
+      "She is a famous TV producer",
+      "She never runs personal projects",
+      "She has several projects at the moment"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "E3A483",
+     "type": "choice",
+     "q": "Why did Brenda start working on The Secret Garden ?",
+     "options": [
+      "She likes stories of this kind",
+      "She has never read the story",
+      "She found the task very easy"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "2CE16C",
+     "type": "choice",
+     "q": "Brenda’ s first preference is …",
+     "options": [
+      "being a freelancer",
+      "running her own business",
+      "working for a company"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "FB65CD",
+     "type": "choice",
+     "q": "Which of the following does Brenda NOT list as a way to fight artist’s block?",
+     "options": [
+      "C hanging your routine",
+      "S pending time outdoors",
+      "C ooking tasty food"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "7A5334",
+     "type": "choice",
+     "q": "Brenda advises artists to be …",
+     "options": [
+      "open-minded",
+      "balanced",
+      "ambitious"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "B59499",
+     "type": "choice",
+     "q": "Brenda thinks young artists should try various techniques because …",
+     "options": [
+      "specializing is a bad idea",
+      "all of them are alike",
+      "it helps them find their own style"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "5E3B31",
+     "type": "choice",
+     "q": "According to Brenda, why can social media be bad for artists?",
+     "options": [
+      "They may develop a media addiction",
+      "They can be pressured to draw what the public wants to see",
+      "They lose their source of inspiration"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc22",
+   "cat": "mc",
+   "guid": "41E67F294742B2A14CBA555CB60FC41B",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/41E67F294742B2A14CBA555CB60FC41B/img1_1679489744.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "FD28B3",
+     "type": "choice",
+     "q": "Tom thinks he owes his current good shape to …",
+     "options": [
+      "eating lots of meat",
+      "avoiding gluten",
+      "relaxing on weekends"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "343338",
+     "type": "choice",
+     "q": "Tom has meals …",
+     "options": [
+      "once a day",
+      "2 or 3 times a day",
+      "5 or 6 times a day"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "58E0E6",
+     "type": "choice",
+     "q": "What does Tom say about fast food?",
+     "options": [
+      "He never tried it",
+      "He ate more of it when he was young",
+      "He thinks it’s okay"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "D189E3",
+     "type": "choice",
+     "q": "Bodybuilding makes Tom feel …",
+     "options": [
+      "happy",
+      "tired",
+      "strong"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "5D8311",
+     "type": "choice",
+     "q": "What is the main source of motivation for Tom?",
+     "options": [
+      "His childhood memories",
+      "Realizing his achievements",
+      "Seeing his photos in the media"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "2D3EA4",
+     "type": "choice",
+     "q": "Tom decided to take part in his first competition because he wanted to …",
+     "options": [
+      "win the first prize",
+      "become world-famous",
+      "get financial support"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "49688F",
+     "type": "choice",
+     "q": "What piece of advice does Tom give to the listeners?",
+     "options": [
+      "Try every training routine possible",
+      "Don’t constantly change your training routine",
+      "Allow yourself skip days when you feel lazy"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc23",
+   "cat": "mc",
+   "guid": "B6C87D6F1CB58C7347AD0114B6CA41CF",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/B6C87D6F1CB58C7347AD0114B6CA41CF/img1_1689774256.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "2D569E",
+     "type": "choice",
+     "q": "What do we learn about Mandy Forest at the beginning of the interview?",
+     "options": [
+      "She’s written many novels",
+      "She’s a famous writer",
+      "She’s written a picture book"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "B272E9",
+     "type": "choice",
+     "q": "Which of the following is TRUE about Mandy’s book Farm Tales ?",
+     "options": [
+      "She devoted it to her own horse",
+      "She used the characters from the first book",
+      "She got the idea for it from her friend"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "CD85FB",
+     "type": "choice",
+     "q": "Doing research for her stories enables Mandy to make them …",
+     "options": [
+      "better illustrated",
+      "more personal",
+      "commercially successful"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "F5A946",
+     "type": "choice",
+     "q": "Mandy loves animals because they are …",
+     "options": [
+      "frank",
+      "talkative",
+      "easy to draw"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "4BCF71",
+     "type": "choice",
+     "q": "When at school Mandy used to write more …",
+     "options": [
+      "fiction",
+      "non-fiction",
+      "encyclopedias"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "CAA065",
+     "type": "choice",
+     "q": "When Mandy illustrates somebody’s books, she feels she can …",
+     "options": [
+      "make the world of these books alive",
+      "enjoy reading an interesting fairy tale",
+      "get some ideas for her own books there"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "5C70F9",
+     "type": "choice",
+     "q": "For her own stories Mandy first thinks about …",
+     "options": [
+      "illustrations",
+      "words",
+      "boundaries"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc24",
+   "cat": "mc",
+   "guid": "05AD16E384B295334C1856AB93A2C68C",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/05AD16E384B295334C1856AB93A2C68C/img1_1562941696.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "5D55BE",
+     "type": "choice",
+     "q": "What do we learn about Anna’s birthplace?",
+     "options": [
+      "It’s bigger than Lillehammer",
+      "It s located on a lake shore",
+      "It has beautiful nature"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "33FECB",
+     "type": "choice",
+     "q": "What is wrong for Anna about living in her hometown?",
+     "options": [
+      "It’s not very comfortable",
+      "It’s not motivating enough",
+      "It’s too good to be true"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "EC060F",
+     "type": "choice",
+     "q": "Why does Anna like living in Oslo?",
+     "options": [
+      "It s very big",
+      "It’s a place full of culture",
+      "There are not many tourists there"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "A514FE",
+     "type": "choice",
+     "q": "Which of the following is TRUE about Anna’s debut album?",
+     "options": [
+      "She produced it in three weeks",
+      "Its release has been delayed",
+      "It’s top hit at June festivals"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "BF8B5E",
+     "type": "choice",
+     "q": "How does Anna feel about her debut album?",
+     "options": [
+      "She can’t believe she’s done it",
+      "She’s on top of the world",
+      "She doubts it ll be successful"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "554622",
+     "type": "choice",
+     "q": "How does Anna explain the title of her album?",
+     "options": [
+      "It has a double meaning",
+      "It unites her with her fans",
+      "It’s dedicated to happy couples"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "EE3687",
+     "type": "choice",
+     "q": "How does Anna stand out from other young singers?",
+     "options": [
+      "She wears unique clothes",
+      "She is not sophisticated",
+      "She is a fresher"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc25",
+   "cat": "mc",
+   "guid": "C790A09D9416B81B41E8BE3E46FA19DB",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/C790A09D9416B81B41E8BE3E46FA19DB/img1_1679489602.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "DC44EA",
+     "type": "choice",
+     "q": "What do we learn about Paul Brown at the beginning of the interview?",
+     "options": [
+      "He runs his own radio program",
+      "He sells his works on the internet",
+      "He has written a book about his life"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "826999",
+     "type": "choice",
+     "q": "Which of the following is TRUE about Paul’s childhood?",
+     "options": [
+      "He always liked drawing",
+      "His parents didn’t like his hobby",
+      "He was an only child"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "B06A6D",
+     "type": "choice",
+     "q": "What does Paul say about his creative method?",
+     "options": [
+      "He can easily break the deadlines",
+      "He fully devotes himself to his projects",
+      "He can offer his client several versions"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "3A510A",
+     "type": "choice",
+     "q": "Paul is best at using …",
+     "options": [
+      "gouache",
+      "pencils and markers",
+      "computer graphics"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "428541",
+     "type": "choice",
+     "q": "According to Paul, the animation industry today …",
+     "options": [
+      "can be an attractive career for artists",
+      "is becoming more and more universal",
+      "isn’t a good career choice anymore"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "9B1C9A",
+     "type": "choice",
+     "q": "Speaking about the artists of the 50s, Paul says that he …",
+     "options": [
+      "will never be as good as they were",
+      "doesn’t even remember their names",
+      "could be good friends with them"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "646B64",
+     "type": "choice",
+     "q": "Paul advises artists to …",
+     "options": [
+      "remain modest",
+      "ignore the criticism",
+      "be self-critical"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc26",
+   "cat": "mc",
+   "guid": "9E24929E991D8F184F33895688BF5C99",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/9E24929E991D8F184F33895688BF5C99/img1_1683034344.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "3AB0A0",
+     "type": "choice",
+     "q": "What do we learn about Chris Black at the beginning of the interview?",
+     "options": [
+      "He has won some literary awards",
+      "He combines writing and teaching",
+      "He dislikes living in California"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "75256B",
+     "type": "choice",
+     "q": "Second-person narration reminds Chris of playing …",
+     "options": [
+      "board games",
+      "video games",
+      "active games"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "3D3031",
+     "type": "choice",
+     "q": "Second-person fiction makes the reader feel as if they are …",
+     "options": [
+      "solving their problems",
+      "talking with a narrator",
+      "becoming part of the story"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "8B5952",
+     "type": "choice",
+     "q": "What does Chris love about flash fiction?",
+     "options": [
+      "He’s able to publish his books quickly",
+      "He can write an entire book in one day",
+      "He can give his readers food for thought"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "3F141A",
+     "type": "choice",
+     "q": "Chris sometimes wants to make his stories …",
+     "options": [
+      "longer",
+      "popular",
+      "profitable"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "5DB265",
+     "type": "choice",
+     "q": "According to Chris, what is special about fairy-tale-inspired fiction?",
+     "options": [
+      "It helps readers to understand themselves better",
+      "It can enable one to work as an adult psychologist",
+      "It focuses on some horrible things that always happen"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "ABD0CE",
+     "type": "choice",
+     "q": "What does Chris admire most about Angela Carter?",
+     "options": [
+      "She created a new literary genre",
+      "She taught him the basics of writing",
+      "Many of her characters are kind people"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc27",
+   "cat": "mc",
+   "guid": "D72D9EC2F06FA2F14E09BD995EDECCED",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/D72D9EC2F06FA2F14E09BD995EDECCED/img1_1721126802.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "DA6360",
+     "type": "choice",
+     "q": "What do we learn about James White at the beginning of the interview?",
+     "options": [
+      "He has been playing only in series for children",
+      "He’s loved by people from different countries",
+      "He’s got many international awards as an actor"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "B75F1B",
+     "type": "choice",
+     "q": "Why did James get into acting?",
+     "options": [
+      "He dreamed of it in his childhood",
+      "He hated playing basketball",
+      "He got into an amateur theatre by chance"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "D2DDAF",
+     "type": "choice",
+     "q": "Now James often plays in …",
+     "options": [
+      "family movies",
+      "films about pets",
+      "sports dramas"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "9D2F40",
+     "type": "choice",
+     "q": "It’s hard for James to play in The Magic because …",
+     "options": [
+      "he has many conflicts with his kids",
+      "his experience is different from the role",
+      "he hates playing the role of a father"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "CFF877",
+     "type": "choice",
+     "q": "Working in another country, James tries to …",
+     "options": [
+      "come home on a regular basis",
+      "communicate with his cousins a lot",
+      "find a proper job in Minneapolis"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "4F0B41",
+     "type": "choice",
+     "q": "Both children of James …",
+     "options": [
+      "have changed schools",
+      "can sing very well",
+      "will become actors"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "ADAB16",
+     "type": "choice",
+     "q": "As a parent, James never …",
+     "options": [
+      "disagrees with his wife in front of the kids",
+      "speaks to his kids in a quiet voice",
+      "copies his father’s behaviour"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc28",
+   "cat": "mc",
+   "guid": "A4436F8DC70FB9F044B1700821B593BF",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/A4436F8DC70FB9F044B1700821B593BF/img1_1679489456.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "B278CB",
+     "type": "choice",
+     "q": "What is the first step for James in his creative process?",
+     "options": [
+      "Drawing a sketch",
+      "Thinking up a story",
+      "Choosing the colo u rs"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "EE2DCE",
+     "type": "choice",
+     "q": "James s favo u rite artistic tool is",
+     "options": [
+      "pencils",
+      "gouache",
+      "Photoshop"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "BBDA5E",
+     "type": "choice",
+     "q": "Which stage does James consider the most creative one?",
+     "options": [
+      "The beginning stage",
+      "The middle stage",
+      "The final stage"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "5EEF0C",
+     "type": "choice",
+     "q": "James’s morning does NOT include …",
+     "options": [
+      "a sports session",
+      "commuting to work",
+      "a large breakfast"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "7B713E",
+     "type": "choice",
+     "q": "James s current job involves creating the for the story.",
+     "options": [
+      "characters",
+      "setting",
+      "plot"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "6C071E",
+     "type": "choice",
+     "q": "According to James, in TV animation it is important to be …",
+     "options": [
+      "modest",
+      "ambitious",
+      "selfish"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "E17600",
+     "type": "choice",
+     "q": "In the future James hopes to …",
+     "options": [
+      "draw cartoons his entire life",
+      "create a film of his own with a group of artists",
+      "make friends with production designers"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
+   "id": "mc29",
+   "cat": "mc",
+   "guid": "21AF0C0C080F8F6E46AC9953E295DE98",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/21AF0C0C080F8F6E46AC9953E295DE98/img1_1721126945.mp3",
+   "duration": 0,
+   "questions": [
+    {
+     "zid": "F48E0C",
+     "type": "choice",
+     "q": "Which of the following is TRUE about Amy Jones’s stories?",
+     "options": [
+      "They cover a wide range of topics",
+      "They are written only for teens",
+      "They are aimed at psychologists"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "79866C",
+     "type": "choice",
+     "q": "In Amy’s opinion, it’s now harder for teenagers to …",
+     "options": [
+      "talk with their parents",
+      "enter a university",
+      "express their feelings"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "5FD270",
+     "type": "choice",
+     "q": "Amy thinks pressure is mainly put on teenagers by …",
+     "options": [
+      "teachers",
+      "parents",
+      "themselves"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "70F230",
+     "type": "choice",
+     "q": "Amy’s books help teenagers by …",
+     "options": [
+      "revealing their hidden talents",
+      "showing them their true value",
+      "persuading them to lose some weight"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "DB748B",
+     "type": "choice",
+     "q": "Amy thinks teenagers with high self-esteem …",
+     "options": [
+      "have more friends",
+      "make fewer mistakes",
+      "avoid all bad decisions"
+     ],
+     "key": "2",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "BECDAA",
+     "type": "choice",
+     "q": "According to Amy, teenagers are most likely to trust …",
+     "options": [
+      "other teenagers",
+      "their parents",
+      "their teachers"
+     ],
+     "key": "1",
+     "ev": null,
+     "kes": "1.2.3"
+    },
+    {
+     "zid": "E8AE81",
+     "type": "choice",
+     "q": "Amy advises parents to …",
+     "options": [
+      "push their kids’ limits",
+      "select good clubs for kids",
+      "let their kids do what they’re keen on"
+     ],
+     "key": "3",
+     "ev": null,
+     "kes": "1.2.3"
+    }
+   ],
+   "transcript": []
+  },
+  {
    "id": "em1",
    "cat": "match",
    "guid": "423F45B31A9AB71D4D0B47200E53BA95",
