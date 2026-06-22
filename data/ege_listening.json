@@ -3,7 +3,8 @@
  "section": "listening",
  "groups": [
   {
-   "id": "g1",
+   "id": "mc1",
+   "cat": "mc",
    "guid": "231BF7AB2217A29642E8DDCE8195EBC3",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/231BF7AB2217A29642E8DDCE8195EBC3/img1_1562941616.mp3",
    "duration": 611.5,
@@ -18,10 +19,7 @@
       "She didn’t have a special music talent"
      ],
      "key": "3",
-     "ev": {
-      "s": 96.9,
-      "t": "Well, it's a long story and it's connected with my musical education."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -34,10 +32,7 @@
       "She wanted to overcome the stage fright"
      ],
      "key": "2",
-     "ev": {
-      "s": 152.9,
-      "t": "I found that being on stage I felt this is home."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -50,10 +45,7 @@
       "She thinks David Lynch is the best director"
      ],
      "key": "1",
-     "ev": {
-      "s": 184.9,
-      "t": "Well, speaking about working with good directors that has always been a certain kiss met with me."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -79,10 +71,7 @@
       "people like her in such roles"
      ],
      "key": "2",
-     "ev": {
-      "s": 82.9,
-      "t": "In this studio we have Maggie Smith, a famous actress. Hello Maggie."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -95,10 +84,7 @@
       "She thinks her looks don’t interfere with her job"
      ],
      "key": "3",
-     "ev": {
-      "s": 286.9,
-      "t": "I think that my looks through the years have served me well because I was never a great beauty and I was never cast as a great beauty."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -111,10 +97,7 @@
       "Being able to express complex characters"
      ],
      "key": "3",
-     "ev": {
-      "s": 87.9,
-      "t": "Hello. It's so nice being here. Thank you for inviting me."
-     },
+     "ev": null,
      "kes": "1.2.3"
     }
    ],
@@ -632,7 +615,8 @@
    ]
   },
   {
-   "id": "g2",
+   "id": "mc2",
+   "cat": "mc",
    "guid": "62A03D4D8C59B52E47C33451F68BFC3D",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/62A03D4D8C59B52E47C33451F68BFC3D/img1_1689774662.mp3",
    "duration": 605.0,
@@ -647,10 +631,7 @@
       "She keeps writing fiction"
      ],
      "key": "3",
-     "ev": {
-      "s": 79.5,
-      "t": "Today in our studio we have Leona Brown, a prize-winning short fiction writer."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -676,10 +657,7 @@
       "detective story"
      ],
      "key": "2",
-     "ev": {
-      "s": 120.5,
-      "t": "The scenes seem to focus instead on the interactions and moments that happen in the wake of that off-page drama."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -705,10 +683,7 @@
       "Her writing is often spontaneous"
      ],
      "key": "3",
-     "ev": {
-      "s": 284.5,
-      "t": "There is no pre-writing."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -734,10 +709,7 @@
       "the characters’ emotions"
      ],
      "key": "1",
-     "ev": {
-      "s": 314.5,
-      "t": "the more room readers have to feel their own emotions."
-     },
+     "ev": null,
      "kes": "1.2.3"
     }
    ],
@@ -1360,7 +1332,8 @@
    ]
   },
   {
-   "id": "g3",
+   "id": "mc3",
+   "cat": "mc",
    "guid": "8EF5B87B5E8AA0644E4DA9C34086B0A1",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/8EF5B87B5E8AA0644E4DA9C34086B0A1/img1_1562919214.mp3",
    "duration": 523.5,
@@ -1375,10 +1348,7 @@
       "She organizes events for writers"
      ],
      "key": "1",
-     "ev": {
-      "s": 76.7,
-      "t": "Hello everybody, welcome to our weekly program 5 minutes with a star. Today in our studio we have Julia Summer, a prolific writer, some of whose books are international bestsellers. Hello Julia."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -1391,10 +1361,7 @@
       "Julia is the only presenter there"
      ],
      "key": "2",
-     "ev": {
-      "s": 76.7,
-      "t": "Hello everybody, welcome to our weekly program 5 minutes with a star. Today in our studio we have Julia Summer, a prolific writer, some of whose books are international bestsellers. Hello Julia."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -1407,10 +1374,7 @@
       "Creating outlines before every draft"
      ],
      "key": "3",
-     "ev": {
-      "s": 252.7,
-      "t": "That it's easy, that anyone can write a book, that everyone has a story. Sorry, that's three. The top misconception is probably that it's quick. It's not. Even if you're lucky enough to write one book, get representation from an agent and a publishing deal, it could be years before that book hits the shelves."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -1423,10 +1387,7 @@
       "Possibility to speak there"
      ],
      "key": "1",
-     "ev": {
-      "s": 114.7,
-      "t": "My writing process typically involves a what if idea or scenario. I'll run it past my agent and editor to see if it gets their approval. Then I'll start to brainstorm it. I'll ask questions of my main character. Who is he or she? What happened in his or her past that shaped his or her personality? And, most importantly, what does he or she want more than anything else in the world?"
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -1452,10 +1413,7 @@
       "They never mention getting published"
      ],
      "key": "1",
-     "ev": {
-      "s": 218.7,
-      "t": "I think writers can offer a completely different perspective to editors and agents. Agents and editors can talk about the process, the mechanics of getting published. But only authors can talk about the emotions involved. We know how it feels to be rejected and to doubt ourselves, and we can share the joys too."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -1468,10 +1426,7 @@
       "Anybody has a story to tell"
      ],
      "key": "3",
-     "ev": {
-      "s": 252.7,
-      "t": "That it's easy, that anyone can write a book, that everyone has a story. Sorry, that's three. The top misconception is probably that it's quick. It's not. Even if you're lucky enough to write one book, get representation from an agent and a publishing deal, it could be years before that book hits the shelves."
-     },
+     "ev": null,
      "kes": "1.2.3"
     }
    ],
@@ -1669,7 +1624,8 @@
    ]
   },
   {
-   "id": "g4",
+   "id": "mc4",
+   "cat": "mc",
    "guid": "3D5D70C0DC5F89014E8960E39C88DA8F",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/3D5D70C0DC5F89014E8960E39C88DA8F/img1_1562919081.mp3",
    "duration": 515.1,
@@ -1684,10 +1640,7 @@
       "You can’t buy her books online"
      ],
      "key": "2",
-     "ev": {
-      "s": 74.5,
-      "t": "Good afternoon, dear listeners, and welcome to our program. We continue to interview writers for you, and today in our studio we have Alison Gray, a young writer, and we are going to discuss her debut novel and the way she started her literary career. Hello, Alison."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -1700,10 +1653,7 @@
       "She wants to buy it for herself"
      ],
      "key": "1",
-     "ev": {
-      "s": 103.7,
-      "t": "Honestly, it's sort of surreal. Everyone who wants to be a writer imagines the day they'll finally hold their finished book in their hands. Part of you believes it will never happen, so when that day finally arrives, it's a strange feeling."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -1716,10 +1666,7 @@
       "She attended specialized writing school"
      ],
      "key": "2",
-     "ev": {
-      "s": 137.7,
-      "t": "I think my literary aspirations began when I was about 10 years old. I had a teacher that year that used to give us an hour every week to write stories or poems."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -1732,10 +1679,7 @@
       "She kept on writing through them"
      ],
      "key": "3",
-     "ev": {
-      "s": 116.7,
-      "t": "My sister jokingly asked if I was sleeping with the book under my pillow every night. I'm not quite that bad, but I do still keep picking it up, flipping through the pages and marveling at it. I don't think the reality has completely sunk in yet."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -1748,10 +1692,7 @@
       "It made her feel like a writer"
      ],
      "key": "3",
-     "ev": {
-      "s": 103.7,
-      "t": "Honestly, it's sort of surreal. Everyone who wants to be a writer imagines the day they'll finally hold their finished book in their hands. Part of you believes it will never happen, so when that day finally arrives, it's a strange feeling."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -1764,10 +1705,7 @@
       "editors"
      ],
      "key": "2",
-     "ev": {
-      "s": 222.7,
-      "t": "Well, my major piece of advice is to learn how to steal yourself for criticism and rejection."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -1780,10 +1718,7 @@
       "Your work could be noticed anywhere"
      ],
      "key": "3",
-     "ev": {
-      "s": 147.7,
-      "t": "We were allowed to work on anything we wanted to, and I loved it. It was the highlight of my week."
-     },
+     "ev": null,
      "kes": "1.2.3"
     }
    ],
@@ -2156,7 +2091,8 @@
    ]
   },
   {
-   "id": "g5",
+   "id": "mc5",
+   "cat": "mc",
    "guid": "3B2A8FC06EE3AF404101DE39E10FEFCC",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/3B2A8FC06EE3AF404101DE39E10FEFCC/img1_1562940565.mp3",
    "duration": 523.2,
@@ -2184,10 +2120,7 @@
       "Unhappy"
      ],
      "key": "1",
-     "ev": {
-      "s": 125.7,
-      "t": "Would you consider yourself a self-critical person?"
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -2200,10 +2133,7 @@
       "She works on them in the studio"
      ],
      "key": "2",
-     "ev": {
-      "s": 120.7,
-      "t": "I just can't really remember them"
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -2229,10 +2159,7 @@
       "She prefers studio work to them"
      ],
      "key": "1",
-     "ev": {
-      "s": 120.7,
-      "t": "I just can't really remember them"
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -2258,10 +2185,7 @@
       "Support shows"
      ],
      "key": "3",
-     "ev": {
-      "s": 263.7,
-      "t": "But bad shows, it's always the support shows, isn't it?"
-     },
+     "ev": null,
      "kes": "1.2.3"
     }
    ],
@@ -3199,7 +3123,8 @@
    ]
   },
   {
-   "id": "g6",
+   "id": "mc6",
+   "cat": "mc",
    "guid": "049F4B8CBA85B1DC49C55F1BA076E8C0",
    "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/049F4B8CBA85B1DC49C55F1BA076E8C0/img1_1721126599.mp3",
    "duration": 604.0,
@@ -3214,10 +3139,7 @@
       "She is already an old lady"
      ],
      "key": "2",
-     "ev": {
-      "s": 126.1,
-      "t": "Well, I guess you have just listed all of my major roles. I have been exceptionally lucky to get them considering my age."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -3230,10 +3152,7 @@
       "managed to impress the producer"
      ],
      "key": "3",
-     "ev": {
-      "s": 170.1,
-      "t": "The producer of The Ghost noticed me in one of the shows and offered the main role in his musical To Me."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -3246,10 +3165,7 @@
       "She fights hard for her country’s independence"
      ],
      "key": "2",
-     "ev": {
-      "s": 188.1,
-      "t": "To me, however, she is extraordinary. When you think about her, a woman in the late 1800s, you get stunned at how she worked her way to independence."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -3275,10 +3191,7 @@
       "is a really great city"
      ],
      "key": "3",
-     "ev": {
-      "s": 180.1,
-      "t": "In my opinion, she is really a misunderstood woman and is often marked as the villain of this piece."
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -3291,10 +3204,7 @@
       "London has more prestigious roles than the USA"
      ],
      "key": "2",
-     "ev": {
-      "s": 277.1,
-      "t": "How long will you be performing in London and what comes next for you after the ghost?"
-     },
+     "ev": null,
      "kes": "1.2.3"
     },
     {
@@ -3746,6 +3656,2920 @@
      "s": 594.0,
      "e": 596.0,
      "t": "Thank you."
+    }
+   ]
+  },
+  {
+   "id": "em1",
+   "cat": "match",
+   "guid": "423F45B31A9AB71D4D0B47200E53BA95",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/423F45B31A9AB71D4D0B47200E53BA95/img1_1721126730.mp3",
+   "duration": 524.0,
+   "questions": [
+    {
+     "zid": "0B81B7",
+     "type": "match",
+     "task": "Сопоставь каждого говорящего (A–F) с утверждением. Одно лишнее.",
+     "rubrics": [
+      "Money is the worst present ever.",
+      "It’s very convenient to shop for gifts online.",
+      "Homemade gifts demonstrate your care.",
+      "It’s not worth buying presents for special occasions.",
+      "A good present doesn’t have to be useful.",
+      "A good present can be shared with friends.",
+      "A chance to get new impressions is a great present."
+     ],
+     "speakers": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+     ],
+     "key": "473625",
+     "kes": "1.2.1"
+    }
+   ],
+   "transcript": [
+    {
+     "s": 69.5,
+     "e": 75.5,
+     "t": "I must say, it is very hard now to choose a good present for your nearest and dearest."
+    },
+    {
+     "s": 75.5,
+     "e": 79.5,
+     "t": "If they want or need something, they just buy it themselves."
+    },
+    {
+     "s": 79.5,
+     "e": 82.5,
+     "t": "The real nightmare starts before Christmas."
+    },
+    {
+     "s": 82.5,
+     "e": 87.5,
+     "t": "Everybody is looking for presents and there are crowds in every store."
+    },
+    {
+     "s": 87.5,
+     "e": 90.5,
+     "t": "Why not just give up exchanging presents on holidays?"
+    },
+    {
+     "s": 90.5,
+     "e": 97.5,
+     "t": "There is no point buying tons of unnecessary rubbish simply because it is Christmas."
+    },
+    {
+     "s": 97.5,
+     "e": 101.5,
+     "t": "I think all those holidays are too commercialized now."
+    },
+    {
+     "s": 106.7,
+     "e": 110.7,
+     "t": "My parents used to give me some money for any special occasion"
+    },
+    {
+     "s": 110.7,
+     "e": 112.7,
+     "t": "like Christmas or my birthday."
+    },
+    {
+     "s": 112.7,
+     "e": 118.7,
+     "t": "I was okay about it at first but then I thought that money was the simplest option"
+    },
+    {
+     "s": 118.7,
+     "e": 121.7,
+     "t": "but certainly not the best one."
+    },
+    {
+     "s": 121.7,
+     "e": 123.7,
+     "t": "I told my parents about it."
+    },
+    {
+     "s": 123.7,
+     "e": 127.7,
+     "t": "What I wanted was their attention, not a generous check."
+    },
+    {
+     "s": 127.7,
+     "e": 129.7,
+     "t": "Now they give me certificates."
+    },
+    {
+     "s": 129.7,
+     "e": 133.7,
+     "t": "It can be a certificate for an art class or something like that."
+    },
+    {
+     "s": 133.7,
+     "e": 139.1,
+     "t": "These certificates leave long lasting memories which are better than money."
+    },
+    {
+     "s": 142.7,
+     "e": 146.7,
+     "t": "Big people now don't spend too much time on choosing a present."
+    },
+    {
+     "s": 146.7,
+     "e": 149.7,
+     "t": "They either know exactly what their friend or relative wants"
+    },
+    {
+     "s": 149.7,
+     "e": 153.7,
+     "t": "and order it online or buy a gift certificate."
+    },
+    {
+     "s": 153.7,
+     "e": 155.7,
+     "t": "That's it. The problem is solved."
+    },
+    {
+     "s": 155.7,
+     "e": 160.7,
+     "t": "However, I think there is one huge minus about this approach."
+    },
+    {
+     "s": 160.7,
+     "e": 163.7,
+     "t": "The main thing is to show how much you love this person."
+    },
+    {
+     "s": 163.7,
+     "e": 166.7,
+     "t": "The best way to show it is to make something yourself."
+    },
+    {
+     "s": 166.7,
+     "e": 169.7,
+     "t": "If you make jam or bake a cake,"
+    },
+    {
+     "s": 169.7,
+     "e": 173.7,
+     "t": "it will show you are ready to invest your time and not just money."
+    },
+    {
+     "s": 178.6,
+     "e": 180.6,
+     "t": "We spend too much time online these days"
+    },
+    {
+     "s": 180.6,
+     "e": 184.6,
+     "t": "and rarely communicate with our nearest and dearest face-to-face."
+    },
+    {
+     "s": 184.6,
+     "e": 189.6,
+     "t": "This is why my friends and I give board games as presents to one another."
+    },
+    {
+     "s": 189.6,
+     "e": 192.6,
+     "t": "These should be board games meant for at least four people."
+    },
+    {
+     "s": 192.6,
+     "e": 198.6,
+     "t": "The simple rule is a guarantee that to use the present our friend will have"
+    },
+    {
+     "s": 198.6,
+     "e": 201.6,
+     "t": "to invite some friends to their place"
+    },
+    {
+     "s": 201.6,
+     "e": 204.6,
+     "t": "to spend at least an hour or maybe more"
+    },
+    {
+     "s": 204.6,
+     "e": 210.2,
+     "t": "talking with one another, making jokes and having fun."
+    },
+    {
+     "s": 213.6,
+     "e": 216.6,
+     "t": "I think now nobody has a problem of getting a really good present"
+    },
+    {
+     "s": 216.6,
+     "e": 218.6,
+     "t": "for their family and friends."
+    },
+    {
+     "s": 218.6,
+     "e": 222.6,
+     "t": "You see, you can book literally everything on the internet."
+    },
+    {
+     "s": 222.6,
+     "e": 225.6,
+     "t": "You don't need to waste your time going to different shops"
+    },
+    {
+     "s": 225.6,
+     "e": 227.6,
+     "t": "looking for the thing you need."
+    },
+    {
+     "s": 227.6,
+     "e": 230.6,
+     "t": "It takes just a couple of clicks."
+    },
+    {
+     "s": 230.6,
+     "e": 234.6,
+     "t": "One more advantage is being able to compare the prices."
+    },
+    {
+     "s": 234.6,
+     "e": 237.6,
+     "t": "I can easily choose the cheapest option on offer."
+    },
+    {
+     "s": 237.6,
+     "e": 241.6,
+     "t": "So I don't understand those people who moan and groan"
+    },
+    {
+     "s": 241.6,
+     "e": 243.6,
+     "t": "about looking for presents."
+    },
+    {
+     "s": 248.5,
+     "e": 251.5,
+     "t": "If you ask me, well, I can't understand those people"
+    },
+    {
+     "s": 251.5,
+     "e": 255.5,
+     "t": "who give clothes, money, toys or perfume as a present."
+    },
+    {
+     "s": 255.5,
+     "e": 258.5,
+     "t": "They think that a good present is something practical."
+    },
+    {
+     "s": 258.5,
+     "e": 261.5,
+     "t": "But my opinion is just the opposite."
+    },
+    {
+     "s": 261.5,
+     "e": 264.5,
+     "t": "I think the best present is something that people"
+    },
+    {
+     "s": 264.5,
+     "e": 266.5,
+     "t": "would never buy themselves."
+    },
+    {
+     "s": 266.5,
+     "e": 269.5,
+     "t": "For instance, I would never buy a kit in myself,"
+    },
+    {
+     "s": 269.5,
+     "e": 273.5,
+     "t": "but I'd be delighted if someone presented one to me."
+    },
+    {
+     "s": 273.5,
+     "e": 277.5,
+     "t": "In my opinion, unexpected presents are the best ones"
+    },
+    {
+     "s": 277.5,
+     "e": 279.5,
+     "t": "as they make people happy."
+    },
+    {
+     "s": 304.7,
+     "e": 310.0,
+     "t": "I must say, it is very hard now to choose a good present"
+    },
+    {
+     "s": 310.0,
+     "e": 312.0,
+     "t": "for your nearest and dearest."
+    },
+    {
+     "s": 312.0,
+     "e": 314.0,
+     "t": "If they want or need something,"
+    },
+    {
+     "s": 314.0,
+     "e": 316.0,
+     "t": "they just buy it themselves."
+    },
+    {
+     "s": 316.0,
+     "e": 319.0,
+     "t": "The real nightmare starts before Christmas."
+    },
+    {
+     "s": 319.0,
+     "e": 321.0,
+     "t": "Everybody is looking for presents"
+    },
+    {
+     "s": 321.0,
+     "e": 324.0,
+     "t": "and there are crowds in every store."
+    },
+    {
+     "s": 324.0,
+     "e": 327.0,
+     "t": "Why not just give up exchanging presents on holidays?"
+    },
+    {
+     "s": 327.0,
+     "e": 332.0,
+     "t": "There is no point buying tons of unnecessary rubbish"
+    },
+    {
+     "s": 332.0,
+     "e": 334.0,
+     "t": "simply because it's Christmas."
+    },
+    {
+     "s": 334.0,
+     "e": 338.0,
+     "t": "I think all those holidays are too commercialized now."
+    },
+    {
+     "s": 343.0,
+     "e": 345.0,
+     "t": "My parents used to give me some money"
+    },
+    {
+     "s": 345.0,
+     "e": 347.0,
+     "t": "for any special occasion,"
+    },
+    {
+     "s": 347.0,
+     "e": 349.0,
+     "t": "like Christmas or my birthday."
+    },
+    {
+     "s": 349.0,
+     "e": 352.0,
+     "t": "I was okay about it at first,"
+    },
+    {
+     "s": 352.0,
+     "e": 355.0,
+     "t": "but then I thought that money was the simplest option,"
+    },
+    {
+     "s": 355.0,
+     "e": 358.0,
+     "t": "but certainly not the best one."
+    },
+    {
+     "s": 358.0,
+     "e": 360.0,
+     "t": "I told my parents about it."
+    },
+    {
+     "s": 360.0,
+     "e": 362.0,
+     "t": "What I wanted was their attention,"
+    },
+    {
+     "s": 362.0,
+     "e": 364.0,
+     "t": "not a generous check."
+    },
+    {
+     "s": 364.0,
+     "e": 366.0,
+     "t": "Now they give me certificates."
+    },
+    {
+     "s": 366.0,
+     "e": 368.0,
+     "t": "It can be a certificate for an art class"
+    },
+    {
+     "s": 368.0,
+     "e": 370.0,
+     "t": "or something like that."
+    },
+    {
+     "s": 370.0,
+     "e": 372.0,
+     "t": "These certificates leave long-lasting memories"
+    },
+    {
+     "s": 372.0,
+     "e": 374.0,
+     "t": "which are better than money."
+    },
+    {
+     "s": 379.1,
+     "e": 381.1,
+     "t": "I think people now don't spend too much time"
+    },
+    {
+     "s": 381.1,
+     "e": 383.1,
+     "t": "on choosing a present."
+    },
+    {
+     "s": 383.1,
+     "e": 385.1,
+     "t": "They either know exactly what their friend"
+    },
+    {
+     "s": 385.1,
+     "e": 388.1,
+     "t": "or relative wants and order it online"
+    },
+    {
+     "s": 388.1,
+     "e": 390.1,
+     "t": "or buy a gift certificate."
+    },
+    {
+     "s": 390.1,
+     "e": 392.1,
+     "t": "That's it. The problem is solved."
+    },
+    {
+     "s": 392.1,
+     "e": 395.1,
+     "t": "However, I think there is one huge minus"
+    },
+    {
+     "s": 395.1,
+     "e": 397.1,
+     "t": "about this approach."
+    },
+    {
+     "s": 397.1,
+     "e": 400.1,
+     "t": "The main thing is to show how much you love this person."
+    },
+    {
+     "s": 400.1,
+     "e": 403.1,
+     "t": "The best way to show it is to make something yourself."
+    },
+    {
+     "s": 403.1,
+     "e": 406.1,
+     "t": "If you make jam or bake a cake,"
+    },
+    {
+     "s": 406.1,
+     "e": 409.1,
+     "t": "it will show you are ready to invest your time"
+    },
+    {
+     "s": 409.1,
+     "e": 410.1,
+     "t": "and not just money."
+    },
+    {
+     "s": 415.1,
+     "e": 417.1,
+     "t": "We spend too much time online these days"
+    },
+    {
+     "s": 417.1,
+     "e": 419.1,
+     "t": "and rarely communicate with our nearest"
+    },
+    {
+     "s": 419.1,
+     "e": 421.1,
+     "t": "and dearest face-to-face."
+    },
+    {
+     "s": 421.1,
+     "e": 423.1,
+     "t": "This is why my friends and I"
+    },
+    {
+     "s": 423.1,
+     "e": 426.1,
+     "t": "give board games as presents to one another."
+    },
+    {
+     "s": 426.1,
+     "e": 429.1,
+     "t": "These should be board games meant for at least four people."
+    },
+    {
+     "s": 429.1,
+     "e": 432.1,
+     "t": "The simple rule is a guarantee"
+    },
+    {
+     "s": 432.1,
+     "e": 435.1,
+     "t": "that to use the present our friend will have"
+    },
+    {
+     "s": 435.1,
+     "e": 438.1,
+     "t": "to invite some friends to their place"
+    },
+    {
+     "s": 438.1,
+     "e": 440.1,
+     "t": "and they will spend at least an hour"
+    },
+    {
+     "s": 440.1,
+     "e": 442.1,
+     "t": "or maybe more talking with one another,"
+    },
+    {
+     "s": 442.1,
+     "e": 446.7,
+     "t": "making jokes and having fun."
+    },
+    {
+     "s": 450.1,
+     "e": 452.1,
+     "t": "I think now nobody has a problem"
+    },
+    {
+     "s": 452.1,
+     "e": 454.1,
+     "t": "of getting a really good present"
+    },
+    {
+     "s": 454.1,
+     "e": 456.1,
+     "t": "for their family and friends."
+    },
+    {
+     "s": 456.1,
+     "e": 458.1,
+     "t": "You see, you can book literally everything"
+    },
+    {
+     "s": 458.1,
+     "e": 460.1,
+     "t": "on the internet."
+    },
+    {
+     "s": 460.1,
+     "e": 462.1,
+     "t": "Waste your time going to different shops,"
+    },
+    {
+     "s": 462.1,
+     "e": 464.1,
+     "t": "looking for the thing you need."
+    },
+    {
+     "s": 464.1,
+     "e": 467.1,
+     "t": "It takes just a couple of clicks."
+    },
+    {
+     "s": 467.1,
+     "e": 469.1,
+     "t": "One more advantage is being able"
+    },
+    {
+     "s": 469.1,
+     "e": 471.1,
+     "t": "to compare the prices."
+    },
+    {
+     "s": 471.1,
+     "e": 473.1,
+     "t": "I can easily choose the cheapest option"
+    },
+    {
+     "s": 473.1,
+     "e": 476.1,
+     "t": "on offer, so I don't understand"
+    },
+    {
+     "s": 476.1,
+     "e": 478.1,
+     "t": "those people who moan and groan"
+    },
+    {
+     "s": 478.1,
+     "e": 480.1,
+     "t": "about looking for presents."
+    },
+    {
+     "s": 485.0,
+     "e": 488.0,
+     "t": "If you ask me, well, I can't understand"
+    },
+    {
+     "s": 488.0,
+     "e": 490.0,
+     "t": "those people who give clothes, money,"
+    },
+    {
+     "s": 490.0,
+     "e": 492.0,
+     "t": "toys or perfume as a present."
+    },
+    {
+     "s": 492.0,
+     "e": 494.0,
+     "t": "They think that a good present"
+    },
+    {
+     "s": 494.0,
+     "e": 496.0,
+     "t": "is something practical,"
+    },
+    {
+     "s": 496.0,
+     "e": 498.0,
+     "t": "but my opinion is just the opposite."
+    },
+    {
+     "s": 498.0,
+     "e": 500.0,
+     "t": "I think the best present"
+    },
+    {
+     "s": 500.0,
+     "e": 503.0,
+     "t": "is something that people would never buy themselves."
+    },
+    {
+     "s": 503.0,
+     "e": 506.0,
+     "t": "For instance, I would never buy a kit"
+    },
+    {
+     "s": 506.0,
+     "e": 508.0,
+     "t": "in myself, but I'd be delighted"
+    },
+    {
+     "s": 508.0,
+     "e": 510.0,
+     "t": "if someone presented one to me."
+    },
+    {
+     "s": 510.0,
+     "e": 512.0,
+     "t": "In my opinion,"
+    },
+    {
+     "s": 512.0,
+     "e": 514.0,
+     "t": "unexpected presents are the best ones,"
+    },
+    {
+     "s": 514.0,
+     "e": 516.0,
+     "t": "as they make people happy."
+    }
+   ]
+  },
+  {
+   "id": "em2",
+   "cat": "match",
+   "guid": "464121440B1490C84154F8883BB97B61",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/464121440B1490C84154F8883BB97B61/img1_1721126919.mp3",
+   "duration": 507.0,
+   "questions": [
+    {
+     "zid": "20FFBB",
+     "type": "match",
+     "task": "Сопоставь каждого говорящего (A–F) с утверждением. Одно лишнее.",
+     "rubrics": [
+      "Yoga should be done with a certain purpose.",
+      "One should create a special atmosphere for doing yoga.",
+      "One needs high quality equipment for doing yoga.",
+      "There is a big variety of yoga styles available.",
+      "When you do yoga, you shouldn’t have any ambitions.",
+      "Online yoga lessons have many advantages.",
+      "Yoga is the best way to lose a lot of weight."
+     ],
+     "speakers": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+     ],
+     "key": "512634",
+     "kes": "1.2.1"
+    }
+   ],
+   "transcript": [
+    {
+     "s": 67.9,
+     "e": 75.9,
+     "t": "If you ask me, I think yoga is the best way to keep your body healthy. I love yoga because"
+    },
+    {
+     "s": 75.9,
+     "e": 82.7,
+     "t": "it's not about achieving things. It won't allow you to lose weight quickly, but it will let your body"
+    },
+    {
+     "s": 82.7,
+     "e": 89.6,
+     "t": "get rid of many problems as long as you don't demand too much from yourself. Yoga is not about"
+    },
+    {
+     "s": 89.6,
+     "e": 94.4,
+     "t": "setting goals and achieving them, and that's what makes it so great in our modern world,"
+    },
+    {
+     "s": 94.4,
+     "e": 100.1,
+     "t": "where too much attention is paid to being successful and achieving good results."
+    },
+    {
+     "s": 102.4,
+     "e": 109.0,
+     "t": "Speaker B. I know many people think yoga is free of any pressure,"
+    },
+    {
+     "s": 109.0,
+     "e": 114.8,
+     "t": "and you don't have to set goals and achieve them while doing it. In my opinion, that's just wrong."
+    },
+    {
+     "s": 114.8,
+     "e": 120.1,
+     "t": "Whenever you start doing something, you should know exactly why you need it and why you are going to"
+    },
+    {
+     "s": 120.1,
+     "e": 125.8,
+     "t": "do it. Of course, yoga won't help you lose weight if you have a serious weight problem,"
+    },
+    {
+     "s": 125.8,
+     "e": 131.2,
+     "t": "but you should still be ambitious and plan to improve your flexibility with certain poses or"
+    },
+    {
+     "s": 131.2,
+     "e": 141.7,
+     "t": "postures. Speaker C. I think yoga is great for me because I have created a certain place in my house"
+    },
+    {
+     "s": 141.7,
+     "e": 148.3,
+     "t": "where I can do it and no one will disturb me there. It is very important because yoga demands full"
+    },
+    {
+     "s": 148.3,
+     "e": 154.6,
+     "t": "concentration of your body and mind. I have a lot of candles there, as well as a vase with some"
+    },
+    {
+     "s": 154.6,
+     "e": 161.2,
+     "t": "fresh flowers. I also put on beautiful music which helps me to meditate. You shouldn't just"
+    },
+    {
+     "s": 161.2,
+     "e": 168.6,
+     "t": "take a yoga mat and do it anywhere in the house. Give some proper time to it. Speaker D."
+    },
+    {
+     "s": 171.0,
+     "e": 176.6,
+     "t": "I've always been interested in yoga, but I live in a small town where there is no yoga studio"
+    },
+    {
+     "s": 176.6,
+     "e": 183.3,
+     "t": "to practice it. Still, I have found a way out. I have found a great school of yoga on the"
+    },
+    {
+     "s": 183.3,
+     "e": 188.8,
+     "t": "internet. The monthly fee is quite cheap, and if you get a subscription for several months,"
+    },
+    {
+     "s": 188.8,
+     "e": 194.3,
+     "t": "they give you a discount. I have access to hundreds of classes of different levels."
+    },
+    {
+     "s": 194.3,
+     "e": 199.9,
+     "t": "Some of them are short, while others can be up to an hour and a half. I can do yoga whenever I"
+    },
+    {
+     "s": 199.9,
+     "e": 209.5,
+     "t": "want without leaving home. Speaker E. Sometimes people think that all you need to do yoga"
+    },
+    {
+     "s": 209.5,
+     "e": 214.9,
+     "t": "is a yoga mat and any loose fitting clothes you can find in your wardrobe. That's nothing"
+    },
+    {
+     "s": 214.9,
+     "e": 220.0,
+     "t": "but a myth. The quality of your mat determines how much pleasure you'll be able to get from"
+    },
+    {
+     "s": 220.0,
+     "e": 225.6,
+     "t": "your training sessions. If your mat is bad and uncomfortable, your yoga practice will be a complete"
+    },
+    {
+     "s": 225.6,
+     "e": 230.7,
+     "t": "nightmare. The same is true about clothes. Besides, there are many other things to make"
+    },
+    {
+     "s": 230.7,
+     "e": 240.8,
+     "t": "your class better, like boosters and rubber bands. Speaker F. If you've tried yoga once"
+    },
+    {
+     "s": 240.8,
+     "e": 244.6,
+     "t": "and think it's not your cup of tea, you should probably give it a second chance."
+    },
+    {
+     "s": 245.2,
+     "e": 250.8,
+     "t": "You see, there are many different kinds of yoga, so you are simply bound to find something"
+    },
+    {
+     "s": 250.8,
+     "e": 258.0,
+     "t": "to your liking. There's power yoga, which is quite hard to do. But at the same time,"
+    },
+    {
+     "s": 258.0,
+     "e": 264.0,
+     "t": "there are very relaxing practices which can help you to get rid of stress after a hard"
+    },
+    {
+     "s": 264.0,
+     "e": 270.3,
+     "t": "working day. You may even try a yoga meditation class. That's what makes yoga so great,"
+    },
+    {
+     "s": 295.0,
+     "e": 302.3,
+     "t": "Speaker A. If you ask me, I think yoga is the best way to keep your body healthy."
+    },
+    {
+     "s": 302.3,
+     "e": 309.2,
+     "t": "I love yoga because it's not about achieving things. It won't allow you to lose weight quickly,"
+    },
+    {
+     "s": 309.2,
+     "e": 314.2,
+     "t": "but it will let your body get rid of many problems as long as you don't demand too"
+    },
+    {
+     "s": 314.2,
+     "e": 319.7,
+     "t": "much from yourself. Yoga is not about setting goals and achieving them,"
+    },
+    {
+     "s": 319.7,
+     "e": 325.6,
+     "t": "and that's what makes it so great in our modern world. Where too much attention is paid to being"
+    },
+    {
+     "s": 325.6,
+     "e": 336.1,
+     "t": "successful and achieving good results. Speaker B. I know many people think yoga is free of any"
+    },
+    {
+     "s": 336.1,
+     "e": 341.2,
+     "t": "pressure and you don't have to set goals and achieve them while doing it. In my opinion,"
+    },
+    {
+     "s": 341.2,
+     "e": 346.3,
+     "t": "that's just wrong. Whenever you start doing something, you should know exactly why you"
+    },
+    {
+     "s": 346.3,
+     "e": 351.5,
+     "t": "need it and why you are going to do it. Of course, yoga won't help you lose weight"
+    },
+    {
+     "s": 351.5,
+     "e": 356.6,
+     "t": "if you have a serious weight problem, but you should still be ambitious and plan to improve"
+    },
+    {
+     "s": 356.6,
+     "e": 367.2,
+     "t": "your flexibility with certain poses or postures. Speaker C. I think yoga is great for me because"
+    },
+    {
+     "s": 367.2,
+     "e": 372.2,
+     "t": "I have created a certain place in my house where I can do it and no one will disturb me there."
+    },
+    {
+     "s": 372.9,
+     "e": 378.5,
+     "t": "It is very important because yoga demands full concentration of your body and mind."
+    },
+    {
+     "s": 379.1,
+     "e": 383.3,
+     "t": "I have a lot of candles there as well as a vase with some fresh flowers."
+    },
+    {
+     "s": 384.0,
+     "e": 390.3,
+     "t": "I also put on beautiful music which helps me to meditate. You shouldn't just take a yoga mat and"
+    },
+    {
+     "s": 390.3,
+     "e": 400.2,
+     "t": "do it anywhere in the house. Give some proper time to it. Speaker D. I've always been interested"
+    },
+    {
+     "s": 400.2,
+     "e": 406.7,
+     "t": "in yoga, but I live in a small town where there is no yoga studio to practice it. Still,"
+    },
+    {
+     "s": 406.8,
+     "e": 411.7,
+     "t": "I have found a way out. I have found a great school of yoga on the internet."
+    },
+    {
+     "s": 412.3,
+     "e": 416.7,
+     "t": "The monthly fee is quite cheap and if you get a subscription for several months,"
+    },
+    {
+     "s": 416.7,
+     "e": 422.1,
+     "t": "they give you a discount. I have access to hundreds of classes of different levels."
+    },
+    {
+     "s": 422.1,
+     "e": 427.5,
+     "t": "Some of them are short while others can be up to an hour and a half. I can do yoga whenever"
+    },
+    {
+     "s": 427.5,
+     "e": 436.3,
+     "t": "I want without leaving home. Speaker E. Sometimes people think that all you need"
+    },
+    {
+     "s": 436.3,
+     "e": 442.1,
+     "t": "to do yoga is a yoga mat and any loose fitting clothes you can find in your wardrobe."
+    },
+    {
+     "s": 442.1,
+     "e": 447.3,
+     "t": "That's nothing but a myth. The quality of your mat determines how much pleasure you'll be able"
+    },
+    {
+     "s": 447.3,
+     "e": 452.8,
+     "t": "to get from your training sessions. If your mat is bad and uncomfortable, your yoga practice will"
+    },
+    {
+     "s": 452.8,
+     "e": 458.3,
+     "t": "be a complete nightmare. The same is true about clothes. Besides, there are many other things"
+    },
+    {
+     "s": 458.3,
+     "e": 467.9,
+     "t": "to make your class better like boosters and rubber bands. Speaker F. If you've tried"
+    },
+    {
+     "s": 467.9,
+     "e": 472.5,
+     "t": "yoga once and think it's not your cup of tea, you should probably give it a second chance."
+    },
+    {
+     "s": 473.1,
+     "e": 479.1,
+     "t": "You see, there are many different kinds of yoga, so you are simply bound to find something to your"
+    },
+    {
+     "s": 479.1,
+     "e": 486.3,
+     "t": "liking. There's power yoga, which is quite hard to do, but at the same time, there are"
+    },
+    {
+     "s": 486.3,
+     "e": 492.6,
+     "t": "very relaxing practices which can help you to get rid of stress after a hard working day."
+    },
+    {
+     "s": 493.1,
+     "e": 498.9,
+     "t": "You may even try a yoga meditation class. That's what makes yoga so great, in my opinion."
+    }
+   ]
+  },
+  {
+   "id": "em3",
+   "cat": "match",
+   "guid": "16E4641C908183934BD6CB7F67816A4D",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/16E4641C908183934BD6CB7F67816A4D/img1_1679489237.mp3",
+   "duration": 502.7,
+   "questions": [
+    {
+     "zid": "22BBF3",
+     "type": "match",
+     "task": "Сопоставь каждого говорящего (A–F) с утверждением. Одно лишнее.",
+     "rubrics": [
+      "Students should be able to have mobiles at school.",
+      "People shouldn’t talk on their phones too much.",
+      "You shouldn’t use your phone during meals with other people.",
+      "Talking on a mobile can be dangerous sometimes.",
+      "It’s better when students turn off their phones at school.",
+      "Mobiles should be used primarily for personal conversations.",
+      "Using a phone while on public transport is a bad idea."
+     ],
+     "speakers": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+     ],
+     "key": "371524",
+     "kes": "1.2.1"
+    }
+   ],
+   "transcript": [
+    {
+     "s": 6.3,
+     "e": 12.3,
+     "t": "2. Install the correspondence between the statements of each speaking AF"
+    },
+    {
+     "s": 12.3,
+     "e": 16.3,
+     "t": "and the statements given in the list 1-7."
+    },
+    {
+     "s": 16.3,
+     "e": 23.3,
+     "t": "3. Use each statement marked by the corresponding number only once."
+    },
+    {
+     "s": 23.3,
+     "e": 27.3,
+     "t": "4. There is one extra statement in the task."
+    },
+    {
+     "s": 30.3,
+     "e": 33.3,
+     "t": "6. Take your answers to the table."
+    },
+    {
+     "s": 62.3,
+     "e": 66.6,
+     "t": "I can't live without my smartphone."
+    },
+    {
+     "s": 66.6,
+     "e": 70.6,
+     "t": "But I know that there are cases where I definitely need to turn it off."
+    },
+    {
+     "s": 70.6,
+     "e": 76.6,
+     "t": "I find it horrible when people look at their smartphones while eating out with friends or during family dinners."
+    },
+    {
+     "s": 76.6,
+     "e": 81.6,
+     "t": "There is nothing that could be so urgent that would make you ignore your friends or relatives."
+    },
+    {
+     "s": 81.6,
+     "e": 86.6,
+     "t": "These moments are a great occasion to have a proper conversation with your nearest and dearest."
+    },
+    {
+     "s": 86.6,
+     "e": 90.6,
+     "t": "And I'm sure the updates in your social media can wait."
+    },
+    {
+     "s": 93.1,
+     "e": 99.4,
+     "t": "I think people today do not often pay attention to proper mobile etiquette."
+    },
+    {
+     "s": 99.4,
+     "e": 101.4,
+     "t": "And this upsets me."
+    },
+    {
+     "s": 101.4,
+     "e": 107.4,
+     "t": "Every time I'm on a bus, I hear many people talking on their phones with their friends or relatives."
+    },
+    {
+     "s": 107.4,
+     "e": 113.4,
+     "t": "And forgetting that there are many people around who can overhear their conversations."
+    },
+    {
+     "s": 113.4,
+     "e": 120.4,
+     "t": "First of all, that can be dangerous since some bad people can learn something personal about you."
+    },
+    {
+     "s": 120.4,
+     "e": 125.4,
+     "t": "Secondly, you may talk too loudly and that can irritate other passengers."
+    },
+    {
+     "s": 129.0,
+     "e": 135.5,
+     "t": "We are not allowed to use mobile phones at school and it drives me mad."
+    },
+    {
+     "s": 135.5,
+     "e": 139.5,
+     "t": "I want to keep in touch with my friends and parents at all times."
+    },
+    {
+     "s": 139.5,
+     "e": 144.5,
+     "t": "I don't want to miss any important calls, messages or news when I'm in school."
+    },
+    {
+     "s": 144.5,
+     "e": 149.5,
+     "t": "At the very least, students should be allowed to use their phones during breaks."
+    },
+    {
+     "s": 149.5,
+     "e": 153.5,
+     "t": "But no, they think it will distract us from our studies."
+    },
+    {
+     "s": 153.5,
+     "e": 158.5,
+     "t": "Mobile phones were invented so that people could have them on hand at all times."
+    },
+    {
+     "s": 158.5,
+     "e": 162.5,
+     "t": "So, why can't we have them and use them at school?"
+    },
+    {
+     "s": 167.3,
+     "e": 171.3,
+     "t": "Many of my classmates don't switch off their mobile phones before lessons."
+    },
+    {
+     "s": 171.3,
+     "e": 177.3,
+     "t": "It's so annoying, especially if we are writing a test and I need to concentrate on my tasks."
+    },
+    {
+     "s": 177.3,
+     "e": 180.3,
+     "t": "And then someone's phone starts ringing."
+    },
+    {
+     "s": 180.3,
+     "e": 185.3,
+     "t": "Besides, teachers can't be sure that such students are not using their mobiles for cheating,"
+    },
+    {
+     "s": 185.3,
+     "e": 188.3,
+     "t": "so it's simply not fair to others."
+    },
+    {
+     "s": 188.3,
+     "e": 191.3,
+     "t": "My parents are of the same opinion."
+    },
+    {
+     "s": 191.3,
+     "e": 197.7,
+     "t": "My father hates it when somebody's phone rings during an important business meeting."
+    },
+    {
+     "s": 201.1,
+     "e": 207.1,
+     "t": "Nowadays, everybody has a mobile phone and it's a great way to keep in touch with people."
+    },
+    {
+     "s": 207.1,
+     "e": 214.1,
+     "t": "But mobiles have created an impression that anybody can phone anybody anytime about anything."
+    },
+    {
+     "s": 214.1,
+     "e": 220.1,
+     "t": "I can't stand it when people phone me early in the morning or late in the evening just for a chat."
+    },
+    {
+     "s": 220.1,
+     "e": 227.1,
+     "t": "I think if someone needs to talk, they can just agree to meet and discuss things face to face."
+    },
+    {
+     "s": 227.1,
+     "e": 233.1,
+     "t": "How can we discuss serious matters without seeing the other person's eyes?"
+    },
+    {
+     "s": 235.1,
+     "e": 242.1,
+     "t": "I've read on the internet that many road accidents happen because of mobile phones."
+    },
+    {
+     "s": 242.1,
+     "e": 246.1,
+     "t": "Some people have a bad habit of talking on the phone while driving,"
+    },
+    {
+     "s": 246.1,
+     "e": 249.1,
+     "t": "and others do it while walking across the road."
+    },
+    {
+     "s": 249.1,
+     "e": 252.1,
+     "t": "And both habits can lead to a disaster."
+    },
+    {
+     "s": 252.1,
+     "e": 257.1,
+     "t": "And if you talk on your phone while paying for your shopping, you can make a costly mistake."
+    },
+    {
+     "s": 257.1,
+     "e": 261.1,
+     "t": "Besides, mobiles may be unsafe in terms of health,"
+    },
+    {
+     "s": 261.1,
+     "e": 265.1,
+     "t": "as there are studies which connect mobiles to some illnesses."
+    },
+    {
+     "s": 292.8,
+     "e": 294.8,
+     "t": "I can't live without my smartphone."
+    },
+    {
+     "s": 294.8,
+     "e": 298.8,
+     "t": "But I know that there are cases where I definitely need to turn it off."
+    },
+    {
+     "s": 298.8,
+     "e": 303.8,
+     "t": "I find it horrible when people look at their smartphones while eating out with friends"
+    },
+    {
+     "s": 303.8,
+     "e": 305.8,
+     "t": "or during family dinners."
+    },
+    {
+     "s": 305.8,
+     "e": 310.8,
+     "t": "There is nothing that could be so urgent that would make you ignore your friends or relatives."
+    },
+    {
+     "s": 310.8,
+     "e": 315.8,
+     "t": "These moments are a great occasion to have a proper conversation with your nearest and dearest."
+    },
+    {
+     "s": 315.8,
+     "e": 318.8,
+     "t": "And I'm sure the updates in your social media can wait."
+    },
+    {
+     "s": 322.2,
+     "e": 328.5,
+     "t": "I think people today do not often pay attention to proper mobile etiquette."
+    },
+    {
+     "s": 328.5,
+     "e": 330.5,
+     "t": "And this upsets me."
+    },
+    {
+     "s": 330.5,
+     "e": 332.5,
+     "t": "Every time I'm on a bus,"
+    },
+    {
+     "s": 332.5,
+     "e": 336.5,
+     "t": "I hear many people talking on their phones with their friends or relatives,"
+    },
+    {
+     "s": 336.5,
+     "e": 341.5,
+     "t": "and forgetting that there are many people around who can overhear their conversations."
+    },
+    {
+     "s": 341.5,
+     "e": 344.5,
+     "t": "First of all, that can be dangerous,"
+    },
+    {
+     "s": 344.5,
+     "e": 348.5,
+     "t": "since some bad people can learn something personal about you."
+    },
+    {
+     "s": 348.5,
+     "e": 353.5,
+     "t": "Secondly, you may talk too loudly, and that can irritate other passengers."
+    },
+    {
+     "s": 357.1,
+     "e": 363.6,
+     "t": "We are not allowed to use mobile phones at school, and it drives me mad."
+    },
+    {
+     "s": 363.6,
+     "e": 367.6,
+     "t": "I want to keep in touch with my friends and parents at all times."
+    },
+    {
+     "s": 367.6,
+     "e": 372.6,
+     "t": "I don't want to miss any important calls, messages or news when I'm in school."
+    },
+    {
+     "s": 372.6,
+     "e": 378.6,
+     "t": "At the very least, students should be allowed to use their phones during breaks."
+    },
+    {
+     "s": 378.6,
+     "e": 382.6,
+     "t": "But no, they think it will distract us from our studies."
+    },
+    {
+     "s": 382.6,
+     "e": 387.6,
+     "t": "Mobile phones were invented so that people could have them on hand at all times."
+    },
+    {
+     "s": 387.6,
+     "e": 390.6,
+     "t": "So, why can't we have them and use them at school?"
+    },
+    {
+     "s": 394.1,
+     "e": 400.6,
+     "t": "Many of my classmates don't switch off their mobile phones before lessons."
+    },
+    {
+     "s": 400.6,
+     "e": 406.6,
+     "t": "It's so annoying, especially if we are writing a test and I need to concentrate on my tasks."
+    },
+    {
+     "s": 406.6,
+     "e": 408.6,
+     "t": "And then someone's phone starts ringing."
+    },
+    {
+     "s": 408.6,
+     "e": 414.6,
+     "t": "Besides, teachers can't be sure that such students are not using their mobiles for cheating,"
+    },
+    {
+     "s": 414.6,
+     "e": 416.6,
+     "t": "so it's simply not fair to others."
+    },
+    {
+     "s": 416.6,
+     "e": 419.6,
+     "t": "My parents are of the same opinion."
+    },
+    {
+     "s": 419.6,
+     "e": 424.6,
+     "t": "My father hates it when somebody's phone rings during an important business meeting."
+    },
+    {
+     "s": 429.5,
+     "e": 435.5,
+     "t": "Nowadays, everybody has a mobile phone and it's a great way to keep in touch with people."
+    },
+    {
+     "s": 435.5,
+     "e": 442.5,
+     "t": "But mobiles have created an impression that anybody can phone anybody anytime about anything."
+    },
+    {
+     "s": 442.5,
+     "e": 448.5,
+     "t": "I can't stand it when people phone me early in the morning or late in the evening just for a chat."
+    },
+    {
+     "s": 448.5,
+     "e": 455.5,
+     "t": "I think if someone needs to talk, they can just agree to meet and discuss things face-to-face."
+    },
+    {
+     "s": 455.5,
+     "e": 461.5,
+     "t": "How can we discuss serious matters without seeing the other person's eyes?"
+    },
+    {
+     "s": 463.5,
+     "e": 470.3,
+     "t": "I've read on the internet that many road accidents happen because of mobile phones."
+    },
+    {
+     "s": 470.3,
+     "e": 474.3,
+     "t": "Some people have a bad habit of talking on the phone while driving,"
+    },
+    {
+     "s": 474.3,
+     "e": 477.3,
+     "t": "and others do it while walking across the road."
+    },
+    {
+     "s": 477.3,
+     "e": 480.3,
+     "t": "And both habits can lead to a disaster."
+    },
+    {
+     "s": 480.3,
+     "e": 486.3,
+     "t": "And if you talk on your phone while paying for your shopping, you can make a costly mistake."
+    },
+    {
+     "s": 486.3,
+     "e": 495.9,
+     "t": "Besides, mobiles may be unsafe in terms of health, as there are studies which connect mobiles to some illnesses."
+    }
+   ]
+  },
+  {
+   "id": "tf1",
+   "cat": "tf",
+   "guid": "A20B5D2BEFB480ED4647738131E7B67F",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/A20B5D2BEFB480ED4647738131E7B67F/img1_1562919243.mp3",
+   "duration": 418.3,
+   "questions": [
+    {
+     "zid": "0196C4",
+     "type": "tfns",
+     "task": "Определи по диалогу: Верно / Неверно / Не сказано.",
+     "statements": [
+      {
+       "letter": "A",
+       "text": "Amanda is a good student."
+      },
+      {
+       "letter": "B",
+       "text": "Bill has always had problems with Maths."
+      },
+      {
+       "letter": "C",
+       "text": "Bill spent a year as an exchange student in France."
+      },
+      {
+       "letter": "D",
+       "text": "Bill is not enthusiastic about studying in summer."
+      },
+      {
+       "letter": "E",
+       "text": "Morning classes are more expensive than evening ones in the centre."
+      },
+      {
+       "letter": "F",
+       "text": "Bill is going to study Maths in a mini group."
+      },
+      {
+       "letter": "G",
+       "text": "Bill hates getting up early in the morning."
+      }
+     ],
+     "key": "1231232",
+     "kes": "1.2.2"
+    }
+   ],
+   "transcript": [
+    {
+     "s": 0.0,
+     "e": 1.0,
+     "t": "2."
+    },
+    {
+     "s": 5.0,
+     "e": 12.0,
+     "t": "Determine what of the preceding statements AG corresponds to the content of the text."
+    },
+    {
+     "s": 12.0,
+     "e": 13.0,
+     "t": "1."
+    },
+    {
+     "s": 13.0,
+     "e": 14.0,
+     "t": "True."
+    },
+    {
+     "s": 14.0,
+     "e": 16.0,
+     "t": "What are the two false statements?"
+    },
+    {
+     "s": 16.0,
+     "e": 19.0,
+     "t": "And what is not mentioned in the text."
+    },
+    {
+     "s": 19.0,
+     "e": 24.0,
+     "t": "That is, on the basis of the text, you cannot give any positive or negative answers."
+    },
+    {
+     "s": 24.0,
+     "e": 25.0,
+     "t": "3."
+    },
+    {
+     "s": 25.0,
+     "e": 26.0,
+     "t": "Not stated."
+    },
+    {
+     "s": 26.0,
+     "e": 27.0,
+     "t": "4."
+    },
+    {
+     "s": 27.0,
+     "e": 31.0,
+     "t": "Take the number of the selected answer to the table."
+    },
+    {
+     "s": 58.4,
+     "e": 60.7,
+     "t": "Hi Bill."
+    },
+    {
+     "s": 60.7,
+     "e": 62.7,
+     "t": "I haven't seen you for ages."
+    },
+    {
+     "s": 62.7,
+     "e": 64.7,
+     "t": "How are you?"
+    },
+    {
+     "s": 64.7,
+     "e": 65.7,
+     "t": "Oh hi Amanda."
+    },
+    {
+     "s": 65.7,
+     "e": 67.7,
+     "t": "I'm really glad to see you."
+    },
+    {
+     "s": 67.7,
+     "e": 70.7,
+     "t": "Hey, you look down in the dumps."
+    },
+    {
+     "s": 70.7,
+     "e": 72.7,
+     "t": "What's the matter?"
+    },
+    {
+     "s": 72.7,
+     "e": 75.7,
+     "t": "Aren't you happy that the school year is finally over?"
+    },
+    {
+     "s": 75.7,
+     "e": 79.7,
+     "t": "Well, you have every reason to be happy."
+    },
+    {
+     "s": 79.7,
+     "e": 82.7,
+     "t": "You have passed all your exams with flying colors."
+    },
+    {
+     "s": 82.7,
+     "e": 84.7,
+     "t": "That's not my case."
+    },
+    {
+     "s": 84.7,
+     "e": 86.7,
+     "t": "I almost failed my math exam."
+    },
+    {
+     "s": 86.7,
+     "e": 87.7,
+     "t": "Really?"
+    },
+    {
+     "s": 87.7,
+     "e": 90.7,
+     "t": "Are you so bad at maths?"
+    },
+    {
+     "s": 90.7,
+     "e": 93.7,
+     "t": "Oh Amanda, this subject is torture."
+    },
+    {
+     "s": 93.7,
+     "e": 96.7,
+     "t": "I can't make out anything the teacher says."
+    },
+    {
+     "s": 96.7,
+     "e": 99.7,
+     "t": "It doesn't really matter how many times she explains it to me."
+    },
+    {
+     "s": 99.7,
+     "e": 102.7,
+     "t": "It's completely over my head."
+    },
+    {
+     "s": 102.7,
+     "e": 106.7,
+     "t": "Come on Bill, you can't be that bad."
+    },
+    {
+     "s": 106.7,
+     "e": 110.7,
+     "t": "I don't remember you having so many problems with maths before."
+    },
+    {
+     "s": 110.7,
+     "e": 112.7,
+     "t": "When did it all start?"
+    },
+    {
+     "s": 112.7,
+     "e": 116.7,
+     "t": "Well, in September I returned from that exchange programme in France"
+    },
+    {
+     "s": 116.7,
+     "e": 120.7,
+     "t": "and then I got ill after a couple weeks at school."
+    },
+    {
+     "s": 120.7,
+     "e": 123.7,
+     "t": "Oh yes, that nasty flu you had."
+    },
+    {
+     "s": 123.7,
+     "e": 127.7,
+     "t": "You missed like three weeks at school or so."
+    },
+    {
+     "s": 127.7,
+     "e": 128.7,
+     "t": "Exactly."
+    },
+    {
+     "s": 128.7,
+     "e": 130.7,
+     "t": "Then I came back to studies,"
+    },
+    {
+     "s": 130.7,
+     "e": 134.7,
+     "t": "but it seemed just impossible to catch up with the rest of the class."
+    },
+    {
+     "s": 134.7,
+     "e": 137.7,
+     "t": "I guess I should have returned to the parts of the student book"
+    },
+    {
+     "s": 137.7,
+     "e": 141.7,
+     "t": "that I missed, but I didn't do that."
+    },
+    {
+     "s": 141.7,
+     "e": 145.7,
+     "t": "Well Bill, it was certainly a mistake."
+    },
+    {
+     "s": 145.7,
+     "e": 148.7,
+     "t": "If you had returned to the material you missed,"
+    },
+    {
+     "s": 148.7,
+     "e": 151.7,
+     "t": "you would have understood everything."
+    },
+    {
+     "s": 151.7,
+     "e": 153.7,
+     "t": "I know Amanda, I know."
+    },
+    {
+     "s": 153.7,
+     "e": 156.7,
+     "t": "The question is, what should I do now?"
+    },
+    {
+     "s": 156.7,
+     "e": 158.7,
+     "t": "Find a whole summer ahead."
+    },
+    {
+     "s": 158.7,
+     "e": 163.7,
+     "t": "Find some maths courses or online lessons on the topic you don't understand."
+    },
+    {
+     "s": 163.7,
+     "e": 167.7,
+     "t": "Take the student book and pull your socks up."
+    },
+    {
+     "s": 167.7,
+     "e": 171.7,
+     "t": "Do you really think I'm happy to study in summer?"
+    },
+    {
+     "s": 171.7,
+     "e": 173.7,
+     "t": "Everybody will be having fun in the sun"
+    },
+    {
+     "s": 173.7,
+     "e": 177.7,
+     "t": "and I'll be reading books and solving math problems."
+    },
+    {
+     "s": 177.7,
+     "e": 180.7,
+     "t": "I understand it doesn't sound exciting,"
+    },
+    {
+     "s": 180.7,
+     "e": 184.7,
+     "t": "but at the same time, I believe you have no other way out."
+    },
+    {
+     "s": 184.7,
+     "e": 188.7,
+     "t": "You don't want to do even worse next semester, do you?"
+    },
+    {
+     "s": 188.7,
+     "e": 190.7,
+     "t": "I guess you're right."
+    },
+    {
+     "s": 190.7,
+     "e": 193.7,
+     "t": "I'll phone the educational centre on High Street."
+    },
+    {
+     "s": 193.7,
+     "e": 197.7,
+     "t": "They are said to have classes in mini groups as well as tutorials."
+    },
+    {
+     "s": 197.7,
+     "e": 201.7,
+     "t": "I've heard that they have morning classes with a discount,"
+    },
+    {
+     "s": 201.7,
+     "e": 204.7,
+     "t": "but that means you'll have to get up early."
+    },
+    {
+     "s": 204.7,
+     "e": 207.7,
+     "t": "Oh Amanda, you know that I don't mind it at all."
+    },
+    {
+     "s": 207.7,
+     "e": 211.7,
+     "t": "I'm an early bird, plus I'll be able to save some money this way."
+    },
+    {
+     "s": 211.7,
+     "e": 213.7,
+     "t": "So, what are you waiting for?"
+    },
+    {
+     "s": 213.7,
+     "e": 215.7,
+     "t": "Call them now."
+    },
+    {
+     "s": 238.5,
+     "e": 242.8,
+     "t": "Hi Bill, I haven't seen you for ages."
+    },
+    {
+     "s": 242.8,
+     "e": 243.8,
+     "t": "How are you?"
+    },
+    {
+     "s": 243.8,
+     "e": 246.8,
+     "t": "Oh hi Amanda, I'm really glad to see you."
+    },
+    {
+     "s": 246.8,
+     "e": 249.8,
+     "t": "Hey, you look down in the dumps."
+    },
+    {
+     "s": 249.8,
+     "e": 251.8,
+     "t": "What's the matter?"
+    },
+    {
+     "s": 251.8,
+     "e": 255.8,
+     "t": "Aren't you happy that the school year is finally over?"
+    },
+    {
+     "s": 255.8,
+     "e": 258.9,
+     "t": "Well, you have every reason to be happy."
+    },
+    {
+     "s": 258.9,
+     "e": 262.9,
+     "t": "You have passed all your exams with flying colours."
+    },
+    {
+     "s": 262.9,
+     "e": 266.9,
+     "t": "That's not my case. I almost failed my math exam."
+    },
+    {
+     "s": 266.9,
+     "e": 269.9,
+     "t": "Really? Are you so bad at maths?"
+    },
+    {
+     "s": 269.9,
+     "e": 273.9,
+     "t": "Oh Amanda, this subject is torture."
+    },
+    {
+     "s": 273.9,
+     "e": 276.9,
+     "t": "I can't make out anything the teacher says."
+    },
+    {
+     "s": 276.9,
+     "e": 279.9,
+     "t": "It doesn't really matter how many times she explains it to me."
+    },
+    {
+     "s": 279.9,
+     "e": 282.9,
+     "t": "It's completely over my head."
+    },
+    {
+     "s": 282.9,
+     "e": 285.9,
+     "t": "Come on Bill, you can't be that bad."
+    },
+    {
+     "s": 285.9,
+     "e": 289.9,
+     "t": "I don't remember you having so many problems with maths before."
+    },
+    {
+     "s": 289.9,
+     "e": 291.9,
+     "t": "When did it all start?"
+    },
+    {
+     "s": 291.9,
+     "e": 295.9,
+     "t": "Well, in September I returned from that exchange programme in France"
+    },
+    {
+     "s": 295.9,
+     "e": 299.9,
+     "t": "and then I got ill after a couple weeks at school."
+    },
+    {
+     "s": 299.9,
+     "e": 302.9,
+     "t": "Oh yes, that nasty flu you had."
+    },
+    {
+     "s": 302.9,
+     "e": 306.9,
+     "t": "You missed like three weeks at school or so."
+    },
+    {
+     "s": 306.9,
+     "e": 309.9,
+     "t": "Exactly. Then I came back to studies"
+    },
+    {
+     "s": 309.9,
+     "e": 313.9,
+     "t": "but it seemed just impossible to catch up with the rest of the class."
+    },
+    {
+     "s": 313.9,
+     "e": 316.9,
+     "t": "I guess I should have returned to the parts of the student book"
+    },
+    {
+     "s": 316.9,
+     "e": 320.9,
+     "t": "that I missed but I didn't do that."
+    },
+    {
+     "s": 320.9,
+     "e": 324.9,
+     "t": "Well Bill, it was certainly a mistake."
+    },
+    {
+     "s": 324.9,
+     "e": 327.9,
+     "t": "If you had returned to the material you missed"
+    },
+    {
+     "s": 327.9,
+     "e": 330.9,
+     "t": "you would have understood everything."
+    },
+    {
+     "s": 330.9,
+     "e": 334.9,
+     "t": "I know Amanda, I know. The question is what should I do now?"
+    },
+    {
+     "s": 334.9,
+     "e": 337.9,
+     "t": "You have the whole summer ahead."
+    },
+    {
+     "s": 337.9,
+     "e": 340.9,
+     "t": "Find some maths courses or online lessons"
+    },
+    {
+     "s": 340.9,
+     "e": 342.9,
+     "t": "on the topic you don't understand."
+    },
+    {
+     "s": 342.9,
+     "e": 346.9,
+     "t": "Take the student book and pull your socks up."
+    },
+    {
+     "s": 346.9,
+     "e": 350.9,
+     "t": "Do you really think I'm happy to study in summer?"
+    },
+    {
+     "s": 350.9,
+     "e": 353.9,
+     "t": "Everybody will be having fun in the sun"
+    },
+    {
+     "s": 353.9,
+     "e": 356.9,
+     "t": "and I'll be reading books and solving math problems."
+    },
+    {
+     "s": 356.9,
+     "e": 359.9,
+     "t": "I understand it doesn't sound exciting"
+    },
+    {
+     "s": 359.9,
+     "e": 363.9,
+     "t": "but at the same time I believe you have no other way out."
+    },
+    {
+     "s": 363.9,
+     "e": 367.9,
+     "t": "You don't want to do even worse next semester do you?"
+    },
+    {
+     "s": 367.9,
+     "e": 369.9,
+     "t": "I guess you're right."
+    },
+    {
+     "s": 369.9,
+     "e": 372.9,
+     "t": "I'll phone the educational centre on High Street."
+    },
+    {
+     "s": 372.9,
+     "e": 376.9,
+     "t": "They are said to have classes in mini groups as well as tutorials."
+    },
+    {
+     "s": 376.9,
+     "e": 380.9,
+     "t": "I've heard that they have morning classes with a discount"
+    },
+    {
+     "s": 380.9,
+     "e": 383.9,
+     "t": "but that means you'll have to get up early."
+    },
+    {
+     "s": 383.9,
+     "e": 387.9,
+     "t": "Oh Amanda, you know that I don't mind it at all."
+    },
+    {
+     "s": 387.9,
+     "e": 390.9,
+     "t": "I'm an early bird plus I'll be able to save some money this way."
+    },
+    {
+     "s": 390.9,
+     "e": 393.9,
+     "t": "So what are you waiting for?"
+    },
+    {
+     "s": 393.9,
+     "e": 398.1,
+     "t": "Call them now."
+    }
+   ]
+  },
+  {
+   "id": "tf2",
+   "cat": "tf",
+   "guid": "92293792CEFC884A45C8C0C6A04358E7",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/92293792CEFC884A45C8C0C6A04358E7/img1_1689774790.mp3",
+   "duration": 406.0,
+   "questions": [
+    {
+     "zid": "07ADA0",
+     "type": "tfns",
+     "task": "Определи по диалогу: Верно / Неверно / Не сказано.",
+     "statements": [
+      {
+       "letter": "A",
+       "text": "Jack has come back from a five-month trip."
+      },
+      {
+       "letter": "B",
+       "text": "Jack has visited several countries in Asia."
+      },
+      {
+       "letter": "C",
+       "text": "It was Jack’s first visit to Japan."
+      },
+      {
+       "letter": "D",
+       "text": "In Asia Jack stayed in expensive hotels."
+      },
+      {
+       "letter": "E",
+       "text": "Jack was satisfied with public transport in Asia."
+      },
+      {
+       "letter": "F",
+       "text": "Jack wants to go to Asia one more time."
+      },
+      {
+       "letter": "G",
+       "text": "Amanda and Jack are going to meet tomorrow."
+      }
+     ],
+     "key": "2132131",
+     "kes": "1.2.2"
+    }
+   ],
+   "transcript": [
+    {
+     "s": 5.2,
+     "e": 11.2,
+     "t": "Decide which of the preceding statements A, G correspond to the content of the text."
+    },
+    {
+     "s": 11.2,
+     "e": 13.2,
+     "t": "1. True."
+    },
+    {
+     "s": 13.2,
+     "e": 16.2,
+     "t": "2. False."
+    },
+    {
+     "s": 16.2,
+     "e": 18.2,
+     "t": "And what is not said in the text?"
+    },
+    {
+     "s": 18.2,
+     "e": 23.2,
+     "t": "That is, on the basis of the text, you cannot give a positive or negative answer."
+    },
+    {
+     "s": 23.2,
+     "e": 25.2,
+     "t": "3. Not stated."
+    },
+    {
+     "s": 25.2,
+     "e": 29.2,
+     "t": "Take the number chosen by you the answer option to the table."
+    },
+    {
+     "s": 80.4,
+     "e": 85.4,
+     "t": "I was there for two months only. I wish I had spent more time there, really."
+    },
+    {
+     "s": 85.4,
+     "e": 88.4,
+     "t": "Two months isn't enough to see everything there."
+    },
+    {
+     "s": 88.4,
+     "e": 95.4,
+     "t": "You need at least five months, I think, but I didn't have so much time and so much money, sorry to say."
+    },
+    {
+     "s": 95.4,
+     "e": 100.4,
+     "t": "Well, two months is better than nothing, right? Which places did you visit?"
+    },
+    {
+     "s": 100.4,
+     "e": 103.4,
+     "t": "I bet you've been everywhere."
+    },
+    {
+     "s": 103.4,
+     "e": 108.4,
+     "t": "Well, I started with Bangkok and then I went to Vietnam and Hong Kong."
+    },
+    {
+     "s": 108.4,
+     "e": 115.4,
+     "t": "I also visited royal palaces and national parks in South Korea and climbed to the summit of Mount Fuji in Japan."
+    },
+    {
+     "s": 115.4,
+     "e": 119.4,
+     "t": "You're so lucky. Where did you stay on your tour?"
+    },
+    {
+     "s": 119.4,
+     "e": 125.4,
+     "t": "I couldn't afford any expensive accommodation. After all, I'm only a student, remember?"
+    },
+    {
+     "s": 125.4,
+     "e": 130.4,
+     "t": "So I stayed mainly in cheap hostels along with a lot of other young people."
+    },
+    {
+     "s": 130.4,
+     "e": 133.4,
+     "t": "You must have made many friends then."
+    },
+    {
+     "s": 133.4,
+     "e": 139.4,
+     "t": "Kind of. We may never meet ever again, but we had a very good time together there and then."
+    },
+    {
+     "s": 139.4,
+     "e": 141.4,
+     "t": "How did you travel?"
+    },
+    {
+     "s": 141.4,
+     "e": 147.4,
+     "t": "When I arrived in a city, I mainly used public transport. It's quite good in most Asian countries."
+    },
+    {
+     "s": 147.4,
+     "e": 153.4,
+     "t": "At least it was in my experience. Of course, I took planes to go from one country to another."
+    },
+    {
+     "s": 153.4,
+     "e": 159.4,
+     "t": "Did you have any problems while travelling? There are lots of frightening stories in travel blogs, you know."
+    },
+    {
+     "s": 159.4,
+     "e": 164.4,
+     "t": "Well, I was afraid about the language barrier, but it wasn't a problem at all."
+    },
+    {
+     "s": 164.4,
+     "e": 169.4,
+     "t": "Most people seem to understand English and can speak it at least a little."
+    },
+    {
+     "s": 169.4,
+     "e": 173.4,
+     "t": "That was enough for me. Maybe my only big problem was the insects."
+    },
+    {
+     "s": 173.4,
+     "e": 177.4,
+     "t": "So how do you feel on coming back to London?"
+    },
+    {
+     "s": 177.4,
+     "e": 184.4,
+     "t": "You know, Amanda, once you've got the travel bug, it becomes very hard to stay in one place for too long."
+    },
+    {
+     "s": 184.4,
+     "e": 188.4,
+     "t": "I've got itchy feet now. I wish I could go travelling again."
+    },
+    {
+     "s": 188.4,
+     "e": 194.4,
+     "t": "Well, Jack, maybe next summer. The new academic year starts in two weeks."
+    },
+    {
+     "s": 194.4,
+     "e": 198.4,
+     "t": "Yeah, I know. Look, Amanda, I've got to go now."
+    },
+    {
+     "s": 198.4,
+     "e": 204.4,
+     "t": "But if you wish to learn more about my adventures, we can have dinner together. How about tomorrow evening?"
+    },
+    {
+     "s": 204.4,
+     "e": 208.4,
+     "t": "Sounds good to me. I'd love to learn more about your adventures."
+    },
+    {
+     "s": 208.4,
+     "e": 213.4,
+     "t": "Give me a ring so that we can agree about the restaurant and the exact time."
+    },
+    {
+     "s": 213.4,
+     "e": 215.4,
+     "t": "I will. Bye for now."
+    },
+    {
+     "s": 215.4,
+     "e": 217.4,
+     "t": "Bye."
+    },
+    {
+     "s": 240.8,
+     "e": 243.8,
+     "t": "Hi, Jack. Long time no see."
+    },
+    {
+     "s": 243.8,
+     "e": 248.8,
+     "t": "Oh, hi, Amanda. It's good to see you. You look great."
+    },
+    {
+     "s": 248.8,
+     "e": 251.8,
+     "t": "Thank you very much. How are you getting on?"
+    },
+    {
+     "s": 251.8,
+     "e": 256.8,
+     "t": "Not bad, thanks. I've just come back from my backpacking trip around Asia."
+    },
+    {
+     "s": 256.8,
+     "e": 261.8,
+     "t": "Really? It sounds exciting. How long were you there?"
+    },
+    {
+     "s": 261.8,
+     "e": 266.8,
+     "t": "I was there for two months only. I wish I had spent more time there, really."
+    },
+    {
+     "s": 266.8,
+     "e": 271.8,
+     "t": "Two months isn't enough to see everything there. You need at least five months, I think."
+    },
+    {
+     "s": 271.8,
+     "e": 276.8,
+     "t": "But I didn't have so much time and so much money, sorry to say."
+    },
+    {
+     "s": 276.8,
+     "e": 281.8,
+     "t": "Well, two months is better than nothing, right? Which places did you visit?"
+    },
+    {
+     "s": 281.8,
+     "e": 284.8,
+     "t": "I bet you've been everywhere."
+    },
+    {
+     "s": 284.8,
+     "e": 289.8,
+     "t": "Well, I started with Bangkok and then I went to Vietnam and Hong Kong."
+    },
+    {
+     "s": 289.8,
+     "e": 293.8,
+     "t": "I also visited royal palaces and national parks in South Korea"
+    },
+    {
+     "s": 293.8,
+     "e": 297.8,
+     "t": "and climbed to the summit of Mount Fuji in Japan."
+    },
+    {
+     "s": 297.8,
+     "e": 301.8,
+     "t": "You're so lucky. Where did you stay on your tour?"
+    },
+    {
+     "s": 301.8,
+     "e": 306.8,
+     "t": "I couldn't afford any expensive accommodation. After all, I'm only a student, remember?"
+    },
+    {
+     "s": 306.8,
+     "e": 312.8,
+     "t": "So I stayed mainly in cheap hostels, along with a lot of other young people."
+    },
+    {
+     "s": 312.8,
+     "e": 315.8,
+     "t": "You must have made many friends then."
+    },
+    {
+     "s": 315.8,
+     "e": 321.8,
+     "t": "Kind of. We may never meet ever again, but we had a very good time together there and then."
+    },
+    {
+     "s": 321.8,
+     "e": 323.8,
+     "t": "How did you travel?"
+    },
+    {
+     "s": 323.8,
+     "e": 327.8,
+     "t": "When I arrived in a city, I mainly used public transport."
+    },
+    {
+     "s": 327.8,
+     "e": 331.8,
+     "t": "It's quite good in most Asian countries. At least it was in my experience."
+    },
+    {
+     "s": 331.8,
+     "e": 335.8,
+     "t": "Of course, I took planes to go from one country to another."
+    },
+    {
+     "s": 335.8,
+     "e": 341.8,
+     "t": "Did you have any problems while travelling? There are lots of frightening stories in travel blogs, you know."
+    },
+    {
+     "s": 341.8,
+     "e": 346.8,
+     "t": "Well, I was afraid about the language barrier, but it wasn't a problem at all."
+    },
+    {
+     "s": 346.8,
+     "e": 350.8,
+     "t": "Most people seem to understand English and can speak it at least a little."
+    },
+    {
+     "s": 350.8,
+     "e": 355.8,
+     "t": "That was enough for me. Maybe my only big problem was the insects."
+    },
+    {
+     "s": 355.8,
+     "e": 358.8,
+     "t": "So, how do you feel on coming back to London?"
+    },
+    {
+     "s": 358.8,
+     "e": 365.8,
+     "t": "You know, Amanda, once you've got the travel bug, it becomes very hard to stay in one place for too long."
+    },
+    {
+     "s": 365.8,
+     "e": 370.8,
+     "t": "I've got itchy feet now. I wish I could go travelling again."
+    },
+    {
+     "s": 370.8,
+     "e": 376.8,
+     "t": "Well, Jack, maybe next summer. The new academic year starts in two weeks."
+    },
+    {
+     "s": 376.8,
+     "e": 380.8,
+     "t": "Yeah, I know. Look, Amanda, I've got to go now."
+    },
+    {
+     "s": 380.8,
+     "e": 386.8,
+     "t": "But if you wish to learn more about my adventures, we can have dinner together. How about tomorrow evening?"
+    },
+    {
+     "s": 386.8,
+     "e": 390.8,
+     "t": "Sounds good to me. I'd love to learn more about your adventures."
+    },
+    {
+     "s": 390.8,
+     "e": 395.8,
+     "t": "Give me a ring so that we can agree about the restaurant and the exact time."
+    },
+    {
+     "s": 395.8,
+     "e": 397.8,
+     "t": "I will. Bye for now."
+    },
+    {
+     "s": 397.8,
+     "e": 398.8,
+     "t": "Bye."
+    }
+   ]
+  },
+  {
+   "id": "tf3",
+   "cat": "tf",
+   "guid": "C5C75AB267FDA95E42A3319501534904",
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/C5C75AB267FDA95E42A3319501534904/img1_1507561070.mp3",
+   "duration": 355.8,
+   "questions": [
+    {
+     "zid": "11DCEE",
+     "type": "tfns",
+     "task": "Определи по диалогу: Верно / Неверно / Не сказано.",
+     "statements": [
+      {
+       "letter": "A",
+       "text": "Jake succeeded in his school-leaving exams."
+      },
+      {
+       "letter": "B",
+       "text": "Jake has an elder brother."
+      },
+      {
+       "letter": "C",
+       "text": "Jake wants to teach the subject Miss Clark teaches."
+      },
+      {
+       "letter": "D",
+       "text": "Miss Clark is surprised with Jake’s career choice."
+      },
+      {
+       "letter": "E",
+       "text": "Jake doesn’t believe in the abilities of every student."
+      },
+      {
+       "letter": "F",
+       "text": "Miss Clark thinks Jake’s made the right choice."
+      },
+      {
+       "letter": "G",
+       "text": "Miss Clark isn’t happy to hear Jake’s words."
+      }
+     ],
+     "key": "1331212",
+     "kes": "1.2.2"
+    }
+   ],
+   "transcript": [
+    {
+     "s": 6.7,
+     "e": 16.7,
+     "t": "3. Determine which of the preceding statements A, G correspond to the content of the text."
+    },
+    {
+     "s": 16.7,
+     "e": 18.7,
+     "t": "1. True"
+    },
+    {
+     "s": 18.7,
+     "e": 23.7,
+     "t": "4. Which do not correspond to false."
+    },
+    {
+     "s": 23.7,
+     "e": 69.4,
+     "t": "3. Not stated."
+    },
+    {
+     "s": 74.1,
+     "e": 76.1,
+     "t": "Hello Jake, you look great today."
+    },
+    {
+     "s": 76.1,
+     "e": 79.1,
+     "t": "Good evening Miss Clark, thank you for the compliment."
+    },
+    {
+     "s": 79.1,
+     "e": 85.1,
+     "t": "I hope you'll enjoy the party. After all, your classmates and you have certainly deserved it."
+    },
+    {
+     "s": 85.1,
+     "e": 91.1,
+     "t": "You worked so hard during the academic year, and you passed your exams with flying colours."
+    },
+    {
+     "s": 91.1,
+     "e": 94.1,
+     "t": "My colleagues and I are so proud of you all."
+    },
+    {
+     "s": 94.1,
+     "e": 98.1,
+     "t": "Oh Miss Clark, of course we did a good job, but we are very grateful to our teachers."
+    },
+    {
+     "s": 98.1,
+     "e": 101.1,
+     "t": "If not for you, our results wouldn't be so good."
+    },
+    {
+     "s": 101.1,
+     "e": 103.1,
+     "t": "It's good to know that, thank you."
+    },
+    {
+     "s": 103.1,
+     "e": 108.1,
+     "t": "So Jake, what are you going to do after the prom? Are you going to have a gap year?"
+    },
+    {
+     "s": 108.1,
+     "e": 113.1,
+     "t": "Most of my classmates are going to travel somewhere, but I won't be able to join them."
+    },
+    {
+     "s": 113.1,
+     "e": 115.1,
+     "t": "I'm going straight to college."
+    },
+    {
+     "s": 115.1,
+     "e": 117.1,
+     "t": "Why? Don't you like to travel?"
+    },
+    {
+     "s": 117.1,
+     "e": 120.1,
+     "t": "Of course I do. Everybody likes to travel, don't they?"
+    },
+    {
+     "s": 120.1,
+     "e": 124.1,
+     "t": "It's just that this summer isn't a good time to do it, because I'll have to help my brother."
+    },
+    {
+     "s": 124.1,
+     "e": 126.1,
+     "t": "He's just had surgery, you know."
+    },
+    {
+     "s": 126.1,
+     "e": 130.1,
+     "t": "I hope your brother is doing fine. How did the operation go?"
+    },
+    {
+     "s": 130.1,
+     "e": 136.1,
+     "t": "It all went fine, thank you. The full recovery will take some time, but he'll be absolutely fine in a couple of months."
+    },
+    {
+     "s": 136.1,
+     "e": 140.1,
+     "t": "Oh, that's excellent news. So which college did you choose?"
+    },
+    {
+     "s": 140.1,
+     "e": 144.1,
+     "t": "I'm going to Birmingham University. I want to be a teacher like you."
+    },
+    {
+     "s": 144.1,
+     "e": 148.1,
+     "t": "Really? I would never have thought you had chosen this career."
+    },
+    {
+     "s": 148.1,
+     "e": 151.1,
+     "t": "Well, I think it's the most rewarding job in the world, so..."
+    },
+    {
+     "s": 151.1,
+     "e": 155.1,
+     "t": "It is, but mind you, not every student will succeed in your class."
+    },
+    {
+     "s": 155.1,
+     "e": 159.1,
+     "t": "Sometimes, when one of your students fails, you blame yourself for it."
+    },
+    {
+     "s": 159.1,
+     "e": 162.1,
+     "t": "I think that's true about many jobs, like doctors, for instance."
+    },
+    {
+     "s": 162.1,
+     "e": 166.1,
+     "t": "I believe that every student has the potential for success, and it'll be so exciting"
+    },
+    {
+     "s": 166.1,
+     "e": 171.1,
+     "t": "because each new academic year will present new challenges and new potential successes."
+    },
+    {
+     "s": 171.1,
+     "e": 176.1,
+     "t": "Well, Jake, if you are able to look at it that way, teaching is definitely your cup of tea."
+    },
+    {
+     "s": 176.1,
+     "e": 180.1,
+     "t": "Thank you, Ms Clark. It's you and your colleagues who have inspired me."
+    },
+    {
+     "s": 180.1,
+     "e": 184.1,
+     "t": "Thank you. Now it's high time for you to join your friends,"
+    },
+    {
+     "s": 184.1,
+     "e": 188.1,
+     "t": "and it's time for me to wipe away the tears. Your words are so touching."
+    },
+    {
+     "s": 188.1,
+     "e": 190.1,
+     "t": "Sorry if I've upset you."
+    },
+    {
+     "s": 190.1,
+     "e": 195.1,
+     "t": "No, that's fine. It's always good to hear such things, you know. See you later, Jake."
+    },
+    {
+     "s": 195.1,
+     "e": 196.1,
+     "t": "See you."
+    },
+    {
+     "s": 220.2,
+     "e": 224.7,
+     "t": "Hello, Jake. You look great today."
+    },
+    {
+     "s": 224.7,
+     "e": 227.7,
+     "t": "Good evening, Ms Clark. Thank you for the compliment."
+    },
+    {
+     "s": 227.7,
+     "e": 233.7,
+     "t": "I hope you'll enjoy the party. After all, your classmates and you have certainly deserved it."
+    },
+    {
+     "s": 233.7,
+     "e": 239.7,
+     "t": "You worked so hard during the academic year, and you passed your exams with flying colours."
+    },
+    {
+     "s": 239.7,
+     "e": 242.7,
+     "t": "My colleagues and I are so proud of you all."
+    },
+    {
+     "s": 242.7,
+     "e": 246.7,
+     "t": "Oh, Ms Clark, of course we did a good job, but we are very grateful to our teachers."
+    },
+    {
+     "s": 246.7,
+     "e": 249.7,
+     "t": "If not for you, our results wouldn't be so good."
+    },
+    {
+     "s": 249.7,
+     "e": 252.7,
+     "t": "It's good to know that. Thank you."
+    },
+    {
+     "s": 252.7,
+     "e": 257.7,
+     "t": "So, Jake, what are you going to do after the prom? Are you going to have a gap year?"
+    },
+    {
+     "s": 257.7,
+     "e": 261.7,
+     "t": "Most of my classmates are going to travel somewhere, but I won't be able to join them."
+    },
+    {
+     "s": 261.7,
+     "e": 263.7,
+     "t": "I'm going straight to college."
+    },
+    {
+     "s": 263.7,
+     "e": 265.7,
+     "t": "Why? Don't you like to travel?"
+    },
+    {
+     "s": 265.7,
+     "e": 268.7,
+     "t": "Of course I do. Everybody likes to travel, don't they?"
+    },
+    {
+     "s": 268.7,
+     "e": 272.7,
+     "t": "It's just that this summer isn't a good time to do it, because I'll have to help my brother."
+    },
+    {
+     "s": 272.7,
+     "e": 274.7,
+     "t": "He's just had surgery, you know."
+    },
+    {
+     "s": 274.7,
+     "e": 278.7,
+     "t": "I hope your brother is doing fine. How did the operation go?"
+    },
+    {
+     "s": 278.7,
+     "e": 282.7,
+     "t": "It all went fine, thank you. The full recovery will take some time,"
+    },
+    {
+     "s": 282.7,
+     "e": 285.7,
+     "t": "but he'll be absolutely fine in a couple of months."
+    },
+    {
+     "s": 285.7,
+     "e": 288.7,
+     "t": "Oh, that's excellent news. So which college did you choose?"
+    },
+    {
+     "s": 289.7,
+     "e": 293.7,
+     "t": "I'm going to Birmingham University. I want to be a teacher like you."
+    },
+    {
+     "s": 293.7,
+     "e": 296.7,
+     "t": "Really? I would never have thought you had chosen this career."
+    },
+    {
+     "s": 296.7,
+     "e": 299.7,
+     "t": "Well, I think it's the most rewarding job in the world, so..."
+    },
+    {
+     "s": 299.7,
+     "e": 304.7,
+     "t": "It is, but mind you, not every student will succeed in your class."
+    },
+    {
+     "s": 304.7,
+     "e": 308.7,
+     "t": "Sometimes, when one of your students fails, you blame yourself for it."
+    },
+    {
+     "s": 308.7,
+     "e": 311.7,
+     "t": "I think that's true about many jobs, like doctors, for instance."
+    },
+    {
+     "s": 311.7,
+     "e": 314.7,
+     "t": "I believe that every student has the potential for success,"
+    },
+    {
+     "s": 314.7,
+     "e": 318.7,
+     "t": "and it will be so exciting because each new academic year will present new challenges"
+    },
+    {
+     "s": 318.7,
+     "e": 320.7,
+     "t": "and new potential successes."
+    },
+    {
+     "s": 320.7,
+     "e": 325.7,
+     "t": "Well, Jake, if you are able to look at it that way, teaching is definitely your cup of tea."
+    },
+    {
+     "s": 325.7,
+     "e": 329.7,
+     "t": "Thank you, Ms Clark. It's you and your colleagues who have inspired me."
+    },
+    {
+     "s": 329.7,
+     "e": 333.7,
+     "t": "Thank you. Now it's high time for you to join your friends,"
+    },
+    {
+     "s": 333.7,
+     "e": 337.7,
+     "t": "and it's time for me to wipe away the tears. Your words are so touching."
+    },
+    {
+     "s": 337.7,
+     "e": 339.7,
+     "t": "Sorry if I've upset you."
+    },
+    {
+     "s": 339.7,
+     "e": 342.7,
+     "t": "No, that's fine. It's always good to hear such things, you know."
+    },
+    {
+     "s": 342.7,
+     "e": 348.2,
+     "t": "See you later, Jake. See you."
     }
    ]
   }

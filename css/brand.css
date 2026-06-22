@@ -814,6 +814,17 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
   color:var(--p-text);font-style:italic;cursor:pointer;text-align:left}
 .ls-src-q:hover,.ls-src-q:active{background:var(--grad-listening);color:#fff;font-style:normal}
 .ls-foot{margin-top:18px}
+/* категории меню EGE */
+.ls-cat-h{font-size:12px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin:14px 2px 8px}
+/* EGE задание 2: True/False/Not stated */
+.ls-tfns .tfns-rows{display:flex;flex-direction:column;gap:12px}
+.tfns-row{border-top:1px solid var(--line);padding-top:10px}
+.tfns-row:first-child{border-top:none;padding-top:0}
+.tfns-head{display:flex;gap:8px;margin-bottom:7px}
+.tfns-letter{flex:none;width:22px;height:22px;border-radius:7px;background:var(--grad-listening);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-weight:800;font-size:12px}
+.tfns-st{font-size:14px;line-height:1.45;color:var(--ink)}
+.tfns-opts{display:flex;gap:6px}
 /* Скрипт записи (только на проверке) */
 .ls-script{margin-top:18px;background:var(--surf);border-radius:14px;padding:14px}
 .ls-script-toggle{display:flex;align-items:center;justify-content:space-between;width:100%;border:none;background:none;

@@ -16,9 +16,12 @@ const KES = '1.2';
 
 function pct(a, b) { return b ? Math.round((a / b) * 100) : 0; }
 function randInt(n) { return Math.floor(Math.random() * n); }
-// баллы за вариант = по 1 за вопрос, соответствие = по 1 за говорящего (как в ОГЭ: 15 баллов)
+// баллы = по 1 за вопрос; соответствие = по 1 за говорящего; TF/NS = по 1 за утверждение
 function variantPoints(g) {
-  return (g.questions || []).reduce((s, q) => s + (q.type === 'match' ? (q.speakers ? q.speakers.length : 1) : 1), 0);
+  return (g.questions || []).reduce((s, q) => s + (
+    q.type === 'match' ? (q.speakers ? q.speakers.length : 1)
+      : q.type === 'tfns' ? (q.statements ? q.statements.length : 1)
+        : 1), 0);
 }
 
 // Нормализация ввода «вписать слово»: как у ФИПИ — регистр не важен, артикль/лишние пробелы убираем.
@@ -66,23 +69,29 @@ export async function renderListening(container, cfg) {
     const sub = `${data.groups.length} ${plural(data.groups.length, t.varWord || ['вариант', 'варианта', 'вариантов'])}` +
       (stats.attempted ? ` · ${pct(stats.correct, stats.attempted)}%` : '');
     const done = getListeningDone();
-    const cards = data.groups.map((g, i) => {
+    const card = (g, label) => {
       const d = done[g.vid || g.id];
       return el('button', { class: 'all-topics listening' + (d ? ' ls-done' : ''), onclick: () => startVariant(g) }, [
         el('div', { class: 'at-ic' }, [iconImg('ic-listening', '🎧', 'at-img')]),
         el('div', { style: { flex: '1' } }, [
-          el('div', { class: 'at-t', text: L.variant(i + 1) }),
+          el('div', { class: 'at-t', text: label }),
           el('div', { class: 'at-s', text: d ? L.doneScore(d.correct, d.total) : L.tasksPts(g.questions.length, variantPoints(g)) }),
         ]),
         el('div', { class: 'at-arrow', text: d ? '✓' : '→' }),
       ]);
-    });
+    };
+    // группировка по категориям (ЕГЭ: match/tf/mc). ОГЭ — без cat → один плоский список.
+    const cats = {};
+    data.groups.forEach((g) => { const c = g.cat || '_'; (cats[c] = cats[c] || []).push(g); });
+    const body = [el('div', { class: 'topics-label', text: L.pickVariant })];
+    for (const c of ['match', 'tf', 'mc', '_']) {
+      const arr = cats[c]; if (!arr) continue;
+      if (c !== '_') body.push(el('div', { class: 'ls-cat-h', text: (L.cat && L.cat[c]) || c }));
+      arr.forEach((g, i) => body.push(card(g, (c === 'match' || c === 'tf') ? ('№ ' + (i + 1)) : L.variant((c === '_' ? data.groups.indexOf(g) : i) + 1))));
+    }
     mount(container, el('div', { class: 'view' }, [
       secBar(cfg.goHome, sub),
-      el('div', { class: 'topics-body' }, [
-        el('div', { class: 'topics-label', text: L.pickVariant }),
-        ...cards,
-      ]),
+      el('div', { class: 'topics-body' }, body),
     ]));
   }
 
@@ -109,6 +118,7 @@ export async function renderListening(container, cfg) {
       const n = i + 1;
       if (q.type === 'match') qWrap.appendChild(buildMatch(q, n));
       else if (q.type === 'choice') qWrap.appendChild(buildChoice(q, n));
+      else if (q.type === 'tfns') qWrap.appendChild(buildTFNS(q, n));
       else qWrap.appendChild(buildFill(q, n));
     });
 
@@ -145,7 +155,7 @@ export async function renderListening(container, cfg) {
         },
       });
       return el('div', { class: 'ls-task ls-match' }, [
-        el('div', { class: 'ls-q' }, [el('span', { class: 'ls-num', text: n + '. ' }), L.matchInstr]),
+        el('div', { class: 'ls-q' }, [el('span', { class: 'ls-num', text: n + '. ' }), q.task || L.matchInstr]),
         el('div', { class: 'ls-rub-title', text: L.rubricsLabel }),
         rubrics,
         el('div', { class: 'ls-mrows' }, rows.map((r) => r.row)),
@@ -215,6 +225,46 @@ export async function renderListening(container, cfg) {
       return el('div', { class: 'ls-task ls-fill' }, [
         el('div', { class: 'ls-q' }, [el('span', { class: 'ls-num', text: n + '. ' }), q.label]),
         input, verdict, srcWrap,
+      ]);
+    }
+
+    // EGE задание 2: 7 утверждений A–G, по каждому Верно/Неверно/Не сказано (ключ — 7 цифр 1/2/3)
+    function buildTFNS(q, n) {
+      const labels = L.tfns;
+      const rows = q.statements.map((st) => {
+        const state = { pick: null };
+        const btns = labels.map((lab, k) => {
+          const val = String(k + 1);
+          const b = el('button', { class: 'tf-opt', text: lab, onclick: () => {
+            if (checked) return;
+            state.pick = val; btns.forEach((o) => o.classList.remove('sel')); b.classList.add('sel');
+          } });
+          return b;
+        });
+        const verdict = el('div', { class: 'ls-cv block', style: { display: 'none' } });
+        const row = el('div', { class: 'tfns-row' }, [
+          el('div', { class: 'tfns-head' }, [el('span', { class: 'tfns-letter', text: st.letter }), el('span', { class: 'tfns-st', text: st.text })]),
+          el('div', { class: 'tfns-opts' }, btns),
+          verdict,
+        ]);
+        return { state, btns, verdict, row };
+      });
+      qNodes.push({
+        type: 'tfns', zid: q.zid, key: q.key, kes: q.kes,
+        result() { let c = 0; rows.forEach((r, i) => { if (r.state.pick === q.key[i]) c++; }); return { correct: c, total: rows.length, allOk: c === rows.length }; },
+        mark() {
+          rows.forEach((r, i) => {
+            const want = q.key[i]; const ok = r.state.pick === want;
+            r.btns.forEach((b, k) => { b.disabled = true; const v = String(k + 1); if (v === want) b.classList.add('right'); else if (v === r.state.pick) b.classList.add('wrong'); });
+            r.verdict.className = 'ls-cv block ' + (ok ? 'ok' : 'bad');
+            r.verdict.textContent = ok ? '✓' : ('✕ ' + labels[Number(want) - 1]);
+            r.verdict.style.display = 'block';
+          });
+        },
+      });
+      return el('div', { class: 'ls-task ls-tfns' }, [
+        el('div', { class: 'ls-q' }, [el('span', { class: 'ls-num', text: n + '. ' }), q.task || L.tfnsInstr]),
+        el('div', { class: 'tfns-rows' }, rows.map((r) => r.row)),
       ]);
     }
 
