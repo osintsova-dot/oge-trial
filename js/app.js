@@ -18,6 +18,7 @@ import { renderReading } from '../modules/reading.js';
 import { renderReadingEge } from '../modules/ege_reading.js';
 import { renderVocab } from '../modules/vocab.js';
 import { renderListening } from '../modules/listening.js';
+import { renderSpeaking } from '../modules/speaking.js';
 
 const view = document.getElementById('view');
 const goHome = () => { location.hash = '#/'; };
@@ -45,7 +46,7 @@ function route() {
   setActiveTab(hash);
   const sec = sectionById(hash);
   // В режиме решения (дрилл/письмо) нижнее меню прячем, чтобы не перекрывало кнопки
-  document.body.classList.toggle('in-flow', !!(sec && ['drill', 'writing', 'reading', 'vocab', 'listening', 'soon'].includes(sec.type)));
+  document.body.classList.toggle('in-flow', !!(sec && ['drill', 'writing', 'reading', 'vocab', 'listening', 'speaking', 'soon'].includes(sec.type)));
   if (hash === 'progress') return renderProgress();
   if (hash === 'rewards')  return renderRewards();
   if (hash === 'plan')     return renderPlan();
@@ -54,6 +55,7 @@ function route() {
   if (sec && sec.type === 'reading') return (EXAM.id === 'ege' ? renderReadingEge : renderReading)(view, { goHome, dataFile: sec.dataFile });
   if (sec && sec.type === 'vocab')   return renderVocab(view, { goHome, dataFile: sec.dataFile });
   if (sec && sec.type === 'listening') return renderListening(view, { goHome, dataFile: sec.dataFile });
+  if (sec && sec.type === 'speaking') return renderSpeaking(view, { goHome, dataFile: sec.dataFile });
   if (sec && sec.type === 'soon')    return renderSoon(sec);
   return renderHome();
 }
