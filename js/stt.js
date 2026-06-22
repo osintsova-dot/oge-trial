@@ -31,13 +31,17 @@ export async function recognize(blob, onProgress) {
   src.connect(off.destination);
   src.start();
   const rendered = await off.startRendering();
-  const data = rendered.getChannelData(0); // Float32 @16k моно
+  const full = rendered.getChannelData(0); // Float32 @16k моно
 
-  // режем на куски ≤28 сек
+  // обрезаем тишину по краям (иначе SpeechKit галлюцинирует фантомные фразы на тишине)
+  const data = trimSilence(full);
+
+  // режем на куски ≤28 сек, почти-беззвучные куски пропускаем
   const chunkLen = CHUNK_SEC * RATE;
   const chunks = [];
   for (let i = 0; i < data.length; i += chunkLen) {
-    chunks.push(data.subarray(i, Math.min(i + chunkLen, data.length)));
+    const ch = data.subarray(i, Math.min(i + chunkLen, data.length));
+    if (rms(ch, 0, ch.length) >= 0.006) chunks.push(ch); // тихий кусок → пропуск
   }
   if (!chunks.length) throw new Error('пустая запись');
 
@@ -54,6 +58,20 @@ export async function recognize(blob, onProgress) {
     if (onProgress) onProgress(i + 1, chunks.length);
   }
   return parts.join(' ').replace(/\s+/g, ' ').trim();
+}
+
+// RMS-громкость участка
+function rms(a, s, e) { let sum = 0; for (let i = s; i < e; i++) sum += a[i] * a[i]; return Math.sqrt(sum / Math.max(1, e - s)); }
+
+// Обрезка тишины по краям по окнам 20 мс (с запасом 0.1 c). Если порог «съел» всё — вернуть как есть.
+function trimSilence(data) {
+  const win = Math.floor(RATE * 0.02), TH = 0.012, pad = Math.floor(RATE * 0.1);
+  let s0 = 0, e0 = data.length;
+  for (let i = 0; i + win <= data.length; i += win) { if (rms(data, i, i + win) > TH) { s0 = i; break; } }
+  for (let i = data.length - win; i >= 0; i -= win) { if (rms(data, i, i + win) > TH) { e0 = i + win; break; } }
+  s0 = Math.max(0, s0 - pad); e0 = Math.min(data.length, e0 + pad);
+  const voice = data.subarray(s0, e0);
+  return voice.length >= RATE * 0.3 ? voice : data;
 }
 
 // Float32 [-1..1] → сырой LPCM 16-bit little-endian

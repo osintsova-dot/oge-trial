@@ -37,7 +37,7 @@ export async function evalSpeaking(kind, item, transcript) {
   const critJson = crit.map((c) => `{"code":"${c.code}","name":"${c.name}","score":<0-${c.max}>,"max":${c.max},"comment":"<кратко по-русски>"}`).join(',');
   const mx = crit.reduce((s, c) => s + c.max, 0);
   const sys = 'Ты опытный экзаменатор ОГЭ по английскому (устная часть). Оцениваешь по официальным критериям ФИПИ. Возвращаешь ТОЛЬКО валидный JSON, без markdown. Комментарии — по-русски, доброжелательно.';
-  const user = `${task}\n\nРаспознанная речь ученика (через автоматическое распознавание, возможны мелкие ошибки распознавания — будь снисходителен к ним):\n"""${transcript}"""\n\nВерни JSON строго так:\n{"totalScore":<0-${mx}>,"criteria":[${critJson}],"verdict":"<2-3 предложения: что хорошо и что улучшить>"}\ntotalScore = сумма по критериям.`;
+  const user = `${task}\n\nРаспознанная речь ученика (через автоматическое распознавание, возможны мелкие ошибки распознавания — будь снисходителен к ним). ВАЖНО: если самые первые слова не вяжутся с темой/заданием — это почти наверняка артефакт распознавания (фантомная фраза на тишине в начале), НЕ считай их частью ответа и не снижай за них балл:\n"""${transcript}"""\n\nВерни JSON строго так:\n{"totalScore":<0-${mx}>,"criteria":[${critJson}],"verdict":"<2-3 предложения: что хорошо и что улучшить>"}\ntotalScore = сумма по критериям.`;
   const r = await fetch(EVAL_WORKER, {
     method: 'POST', headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ model: 'deepseek-chat', max_tokens: 1200, messages: [{ role: 'system', content: sys }, { role: 'user', content: user }] }),
