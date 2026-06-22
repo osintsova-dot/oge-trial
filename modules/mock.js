@@ -8,6 +8,8 @@ import { el, mount, iconImg } from '../js/ui.js';
 import { loadJSON } from '../js/data.js';
 import { recordRound, getName, getMockResults, recordMock } from '../js/gamify.js';
 import { t, EXAM } from '../js/exam.js';
+import { recognize, canRecognize } from '../js/stt.js';
+import { evalSpeaking } from '../js/speakeval.js';
 
 const WORKER = 'https://purple-cake-2966.o-sintsova.workers.dev';
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G']; // EGE headings = 7 текстов A–G; ОГЭ matching/gaps (A–F) — лишние отфильтруются по texts[L]
@@ -153,6 +155,7 @@ export async function renderMock(container, cfg) {
   // ---- Рендер раздела без обратной связи ----
   function renderSection(sec, answers) {
     const out = [];
+    if (sec.id === 'speaking') return renderSpeakingSection(sec, answers);
     if (sec.id === 'listening') {
       out.push(el('div', { class: 'mock-hint', text: M.listenHint }));
       out.push(el('audio', { class: 'ls-audio', controls: '', preload: 'none', src: sec.audio }));
@@ -160,6 +163,61 @@ export async function renderMock(container, cfg) {
     (sec.items || []).forEach((it, i) => out.push(renderItem(sec, it, i, answers)));
     if (sec.id === 'writing') out.push(renderWritingItem(sec, answers));
     return out;
+  }
+
+  // Раздел «Говорение»: 3 задания, запись под таймер, БЕЗ эталонов (оценка ИИ в конце).
+  function renderSpeakingSection(sec, answers) {
+    const out = [el('div', { class: 'mock-hint', text: M.speakHint })];
+    sec.tasks.forEach((tk, ti) => {
+      const akey = 'spk:' + ti;
+      const heads = { read: M.spkRead, survey: M.spkSurvey, monologue: M.spkMono };
+      let promptEl;
+      if (tk.kind === 'read') promptEl = el('div', { class: 'sp-text', text: tk.text });
+      else if (tk.kind === 'survey') promptEl = el('audio', { class: 'ls-audio', controls: '', preload: 'none', src: tk.audio });
+      else promptEl = el('div', {}, [el('div', { class: 'mock-letter-q', text: tk.topic }), el('ol', { class: 'sp-plan' }, (tk.plan || []).map((p) => el('li', { text: p })))]);
+      const recd = el('div', { class: 'sp-rec-hint', text: answers[akey] ? M.spkRecorded : '' });
+      const rwrap = mockRecorder((blob) => { answers[akey] = blob; recd.textContent = M.spkRecorded; });
+      out.push(el('div', { class: 'mock-q' }, [
+        el('div', { class: 'mock-qt', text: (ti + 1) + '. ' + (heads[tk.kind] || '') }),
+        promptEl, rwrap, recd,
+      ]));
+    });
+    return out;
+  }
+
+  // Компактный диктофон (как в разделе говорения): запись/стоп/переслушать, отдаёт blob.
+  function mockRecorder(onBlob) {
+    const SP = t.speaking;
+    let mr = null, stream = null, url = null, chunks = [];
+    const player = el('audio', { class: 'sp-audio', controls: '', style: { display: 'none' } });
+    const timer = el('span', { class: 'sp-timer', text: '0:00' });
+    let t0 = 0, tick = null;
+    const fmt = (s) => Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+    const btn = el('button', { class: 'btn btn-rec btn-block', text: SP.recStart });
+    const hint = el('div', { class: 'sp-rec-hint', text: '' });
+    function stopTracks() { if (stream) stream.getTracks().forEach((tr) => tr.stop()); stream = null; }
+    async function start() {
+      try { stream = await navigator.mediaDevices.getUserMedia({ audio: true }); }
+      catch (e) { hint.textContent = SP.micErr; return; }
+      chunks = []; mr = new MediaRecorder(stream);
+      mr.ondataavailable = (e) => { if (e.data.size) chunks.push(e.data); };
+      mr.onstop = () => {
+        const blob = new Blob(chunks, { type: mr.mimeType || 'audio/webm' });
+        if (url) URL.revokeObjectURL(url);
+        url = URL.createObjectURL(blob); player.src = url; player.style.display = 'block';
+        stopTracks(); onBlob(blob);
+      };
+      mr.start(); t0 = 0; timer.textContent = '0:00';
+      tick = setInterval(() => { t0 += 1; timer.textContent = fmt(t0); }, 1000);
+      btn.className = 'btn btn-rec rec-on btn-block'; btn.textContent = SP.recStop; hint.textContent = SP.recOn;
+    }
+    function stop() {
+      if (mr && mr.state !== 'inactive') mr.stop();
+      clearInterval(tick);
+      btn.className = 'btn btn-rec done btn-block'; btn.textContent = SP.recAgain; hint.textContent = '';
+    }
+    btn.addEventListener('click', () => { if (!mr || mr.state === 'inactive') start(); else stop(); });
+    return el('div', { class: 'sp-recorder' }, [el('div', { class: 'sp-rec-row' }, [btn, timer]), hint, player]);
   }
 
   function qnum(sec, i) { return el('span', { class: 'mock-qn', text: '№ ' + (i + 1) }); }
@@ -313,14 +371,15 @@ export async function renderMock(container, cfg) {
   // ---- Подсчёт по завершении ----
   async function finishExam(v, answers, auto) {
     clearTimer();
-    mount(container, el('div', { class: 'view' }, [secBar(M.title), el('div', { class: 'loader', text: M.scoring })]));
+    const loader = el('div', { class: 'loader', text: M.scoring });
+    mount(container, el('div', { class: 'view' }, [secBar(M.title), loader]));
 
     const byKes = {};
     function add(kes, correct) { const b = byKes[kes] = byKes[kes] || { correct: 0, total: 0 }; b.total++; if (correct) b.correct++; }
     const secScores = [];
 
     for (const sec of v.sections) {
-      if (sec.id === 'writing') continue;
+      if (sec.id === 'writing' || sec.id === 'speaking') continue;
       let sc = 0, rawN = 0; // sc — верных «сырых» заданий, rawN — всего «сырых» заданий
       for (const it of sec.items) {
         if (it.kind === 'choice' || it.kind === 'fill' || it.kind === 'gap') {
@@ -364,6 +423,35 @@ export async function renderMock(container, cfg) {
       }
     }
 
+    // Говорение — распознавание (SpeechKit) + оценка (DeepSeek) по каждому заданию.
+    const spSec = v.sections.find((s) => s.id === 'speaking');
+    let speaking = null;
+    if (spSec) {
+      const tasks = spSec.tasks || [];
+      const perTask = [];
+      let spScore = 0, anyOk = false;
+      for (let ti = 0; ti < tasks.length; ti++) {
+        const tk = tasks[ti];
+        const blob = answers['spk:' + ti];
+        loader.textContent = M.scoringSpeaking(ti + 1, tasks.length);
+        if (!blob) { perTask.push({ kind: tk.kind, status: 'empty', score: 0, max: tk.maxPts }); continue; }
+        try {
+          const transcript = await recognize(blob);
+          const res = await evalSpeaking(tk.kind, tk, transcript);
+          const sc = res.totalScore || 0; spScore += sc; anyOk = true;
+          perTask.push({ kind: tk.kind, status: 'graded', score: sc, max: tk.maxPts, result: res, transcript });
+        } catch (e) {
+          perTask.push({ kind: tk.kind, status: 'error', score: 0, max: tk.maxPts });
+        }
+      }
+      if (anyOk) {
+        secScores.push({ id: 'speaking', title: spSec.title, score: spScore, max: spSec.maxPts });
+        speaking = { status: 'graded', perTask };
+      } else {
+        speaking = { status: 'pending', perTask }; // офлайн → устная не вошла в баллы
+      }
+    }
+
     const autoMax = secScores.reduce((s, x) => s + x.max, 0);
     const total = secScores.reduce((s, x) => s + (x.score || 0), 0);
     const result = {
@@ -371,16 +459,18 @@ export async function renderMock(container, cfg) {
       variantId: v.id, num: v.num, total, max: autoMax,
       sections: secScores, byKes,
       writing: writings.map((w) => ({ wkind: w.wkind, status: w.status, score: w.score, max: w.max })),
+      speaking: speaking ? { status: speaking.status } : null,
+      full: !!(spSec && speaking && speaking.status === 'graded'),
       auto,
     };
     recordMock(result);
     // немного XP за пройденный пробник (как тренировка)
     recordRound('mock', total > 0 ? 1 : 0, 1);
 
-    resultScreen(v, result, writings, auto);
+    resultScreen(v, result, writings, speaking, auto);
   }
 
-  function resultScreen(v, result, writings, auto) {
+  function resultScreen(v, result, writings, speaking, auto) {
     const pct = result.max ? Math.round(result.total / result.max * 100) : 0;
     const rows = result.sections.map((s) => el('div', { class: 'mock-res-row' }, [
       el('div', { class: 'mrr-t', text: s.title }),
@@ -410,32 +500,56 @@ export async function renderMock(container, cfg) {
         el('div', { class: 'mock-test-n', text: M.testProjNote }),
       ]);
     }
-    // ОГЭ: прогноз отметки 2–5. Проецируем % за письменную на полный балл (письменная+устная).
+    // ОГЭ: отметка 2–5. Если устная часть оценена (result.full) — отметка РЕАЛЬНАЯ по сумме;
+    // иначе проецируем % за письменную на полный балл (письменная+устная).
     if (gradeScale && gradeScale.length && result.max) {
       const fullMax = gradeScale[gradeScale.length - 1].max;
-      const projFull = Math.round(result.total / result.max * fullMax);
+      const projFull = result.full ? result.total : Math.round(result.total / result.max * fullMax);
       const g = gradeScale.find((x) => projFull >= x.min && projFull <= x.max) || gradeScale[0];
       testCard = el('div', { class: 'mock-test grade-' + g.grade }, [
-        el('div', { class: 'mock-test-v', text: M.gradeProj(g.grade) }),
-        el('div', { class: 'mock-test-n', text: M.gradeProjNote }),
+        el('div', { class: 'mock-test-v', text: (result.full ? M.gradeReal : M.gradeProj)(g.grade) }),
+        el('div', { class: 'mock-test-n', text: result.full ? M.gradeRealNote : M.gradeProjNote }),
       ]);
     }
+
+    // Говорение — обратная связь по заданиям / пометка, что не вошло
+    const spNote = (speaking && speaking.status === 'pending')
+      ? el('div', { class: 'mock-wnote', text: M.speakPending }) : null;
+    const spFb = (speaking && speaking.perTask || []).filter((p) => p.status === 'graded')
+      .map((p) => speakFeedback(p));
 
     mount(container, el('div', { class: 'result view' }, [
       el('div', { class: 'mock-result-hero' }, [
         auto ? el('div', { class: 'mock-auto', text: M.timeUp }) : null,
         el('div', { class: 'mock-big', text: result.total + ' / ' + result.max }),
-        el('div', { class: 'mock-big-sub', text: M.pointsScored(pct) }),
-        el('div', { class: 'mock-note', text: M.writtenPartNote }),
+        el('div', { class: 'mock-big-sub', text: (result.full ? M.pointsFull : M.pointsScored)(pct) }),
+        el('div', { class: 'mock-note', text: result.full ? M.fullPartNote : M.writtenPartNote }),
         testCard,
       ]),
       ...wNotes,
+      spNote,
       el('div', { class: 'mock-res-card' }, [el('div', { class: 'mock-res-h', text: M.bySection }), ...rows]),
       ...wFb,
+      ...spFb,
       kesRows.length ? el('div', { class: 'mock-res-card' }, [el('div', { class: 'mock-res-h', text: M.byKes }), el('div', { class: 'mock-kes', text: '' }), ...kesRows]) : null,
       el('button', { class: 'btn btn-primary btn-block', text: M.backToList, onclick: introScreen }),
       el('div', { class: 'row-actions' }, [el('button', { class: 'btn btn-ghost', text: t.toHome, onclick: cfg.goHome })]),
     ]));
+  }
+
+  function speakFeedback(p) {
+    const titles = { read: M.spkRead, survey: M.spkSurvey, monologue: M.spkMono };
+    const res = p.result || {};
+    const crit = (res.criteria || []).map((c) => el('div', { class: 'mock-crit' }, [
+      el('span', { class: 'mc-code', text: c.code }),
+      el('span', { class: 'mc-name', text: c.name + (c.comment ? ' — ' + c.comment : '') }),
+      el('span', { class: 'mc-sc', text: (c.score ?? '–') + '/' + c.max }),
+    ]));
+    return el('div', { class: 'mock-res-card' }, [
+      el('div', { class: 'mock-res-h', text: M.speakResult + ' · ' + (titles[p.kind] || '') + ' — ' + p.score + '/' + p.max }),
+      res.verdict ? el('div', { class: 'mock-verdict', text: res.verdict }) : null,
+      ...crit,
+    ]);
   }
 
   function writingFeedback(res, title) {

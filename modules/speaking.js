@@ -7,6 +7,7 @@ import { loadJSON } from '../js/data.js';
 import { recordRound, getName, getSpeakingDone, markSpeakingDone } from '../js/gamify.js';
 import { speak, canSpeak, pauseSpeak, resumeSpeak, stopSpeak } from '../js/speak.js';
 import { recognize, canRecognize } from '../js/stt.js';
+import { evalSpeaking } from '../js/speakeval.js';
 import { getActiveTheme } from '../js/vocab_srs.js';
 import { themeName, allThemeNames } from '../js/themes.js';
 import { t } from '../js/exam.js';
@@ -243,8 +244,6 @@ export async function renderSpeaking(container, cfg) {
   }
 
   // --- ИИ-проверка: запись → распознавание (SpeechKit) → оценка по критериям (DeepSeek) ---
-  const EVAL_WORKER = 'https://purple-cake-2966.o-sintsova.workers.dev';
-
   function aiCheck(kind, item, rec) {
     if (!canRecognize()) return null;
     const out = el('div', { class: 'sp-ai-out' });
@@ -286,39 +285,6 @@ export async function renderSpeaking(container, cfg) {
       el('div', { class: 'sp-ai-note', text: S.aiNote }),
       el('div', { class: 'sp-sample' }, [tHead, tBody]),
     ].filter(Boolean));
-  }
-
-  async function evalSpeaking(kind, item, transcript) {
-    let task, crit;
-    if (kind === 'survey') {
-      task = `ОГЭ говорение, задание 2 (телефонный опрос). Вопросы (ученик отвечает на каждый полным предложением, 1 балл за уместный полный ответ):\n${(item.questions || []).map((q, i) => (i + 1) + '. ' + q).join('\n')}`;
-      crit = (item.questions || []).map((q, i) => ({ code: 'В' + (i + 1), name: 'Ответ на вопрос ' + (i + 1), max: 1 }));
-    } else if (kind === 'monologue') {
-      task = `ОГЭ говорение, задание 3 (монолог) на тему "${item.topic}". План:\n${(item.plan || []).map((p, i) => (i + 1) + '. ' + p).join('\n')}`;
-      crit = [
-        { code: 'К1', name: 'Решение задачи (раскрыты все пункты плана)', max: 3 },
-        { code: 'К2', name: 'Организация (вступление, связки, вывод)', max: 2 },
-        { code: 'К3', name: 'Языковое оформление', max: 2 },
-      ];
-    } else {
-      task = `ОГЭ говорение, задание 1 — чтение текста ВСЛУХ. Исходный текст:\n"""${item.text}"""\n\n⚠️ ОЧЕНЬ ВАЖНО: ниже — результат АВТОМАТИЧЕСКОГО распознавания речи (ASR). Оно регулярно искажает слова: превращает числительные в цифры (first→«1st»), коверкает имена собственные (Moscow Zoo→«moskozu»), теряет артикли, склеивает/разбивает слова, путает начало фразы. Это ОШИБКИ РАСПОЗНАВАНИЯ, а НЕ ученика — за них балл НЕ снижай. Оценивай ТОЛЬКО полноту: прочитан ли практически весь текст по порядку. Ставь 2, если текст прочитан целиком (мелкие расхождения = шум ASR); 1, если явно пропущены большие куски; 0, если прочитана лишь малая часть. Произношение, беглость и интонацию по тексту оценить НЕВОЗМОЖНО — обязательно напиши это в вердикте и не занижай за них.`;
-      crit = [{ code: 'Чт', name: 'Полнота прочтения (произношение оценивает преподаватель)', max: 2 }];
-    }
-    const critJson = crit.map((c) => `{"code":"${c.code}","name":"${c.name}","score":<0-${c.max}>,"max":${c.max},"comment":"<кратко по-русски>"}`).join(',');
-    const mx = crit.reduce((s, c) => s + c.max, 0);
-    const sys = 'Ты опытный экзаменатор ОГЭ по английскому (устная часть). Оцениваешь по официальным критериям ФИПИ. Возвращаешь ТОЛЬКО валидный JSON, без markdown. Комментарии — по-русски, доброжелательно.';
-    const user = `${task}\n\nРаспознанная речь ученика (через автоматическое распознавание, возможны мелкие ошибки распознавания — будь снисходителен к ним):\n"""${transcript}"""\n\nВерни JSON строго так:\n{"totalScore":<0-${mx}>,"criteria":[${critJson}],"verdict":"<2-3 предложения: что хорошо и что улучшить>"}\ntotalScore = сумма по критериям.`;
-    const r = await fetch(EVAL_WORKER, {
-      method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ model: 'deepseek-chat', max_tokens: 1200, messages: [{ role: 'system', content: sys }, { role: 'user', content: user }] }),
-    });
-    if (!r.ok) throw new Error('HTTP ' + r.status);
-    const d = await r.json();
-    if (d.error) throw new Error(d.error.message || 'err');
-    if (!d.choices || !d.choices[0]) throw new Error('пустой ответ');
-    const res = JSON.parse(d.choices[0].message.content.replace(/```json|```/g, '').trim());
-    res.max = mx;
-    return res;
   }
 
   // --- Экран задания ---

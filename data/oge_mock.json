@@ -382,9 +382,49 @@
       "context": "Frankly, I don’t understand why some people like classical music. I adore rock and usually listen to it on my way home from school. If my favourite band comes to our town, I’ll definitely go to their concert",
       "questions": "What kind of music do you like? Do you think it is necessary to have music lessons at school, why? What musical instrument would you like to play?"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Говорение",
+     "timeMin": 15,
+     "maxPts": 15,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "1D1FF3",
+       "text": "People have always wanted to discover new things and new worlds. We have built spaceships to go to other planets and are planning to visit other galaxies one day. Meanwhile, we know very little about our own planet. The oceans, which cover 70 percent of the planet, are an unknown world to us. The Pacific Ocean is the largest one. The lowest point on the Earth is also there. It is called Challenger Deep and it was discovered in 1875. The Pacific Ocean stretches from the Arctic Ocean to the coast of Antarctica, but most of its water is in the warm tropics, which makes it warm. A lot of fish and animals live in the Pacific Ocean. The place is still waiting for researchers to discover its secrets for us.",
+       "maxPts": 2
+      },
+      {
+       "kind": "survey",
+       "zid": "075DF0",
+       "audio": "https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/122837638FFB89424179D39AB75E51F2/img1_1490011893.mp3",
+       "questions": [
+        "How many days a week do you go to school?",
+        "What subjects are you good at?",
+        "What sports facilities do you have in your school?",
+        "What after-school activities does your school offer?",
+        "What do you like most about your school?",
+        "What would you recommend to a student who wants to improve his or her school results?"
+       ],
+       "maxPts": 6
+      },
+      {
+       "kind": "monologue",
+       "zid": "9F1047",
+       "topic": "your school",
+       "plan": [
+        "what your typical school day is like",
+        "what your favourite subject is, and why",
+        "what you like most about your school",
+        "what your attitude to your school life is"
+       ],
+       "maxPts": 7
+      }
+     ]
     }
    ],
-   "maxPts": 53
+   "maxPts": 68
   },
   {
    "id": "M2",
@@ -767,9 +807,49 @@
       "context": "My parents say that I watch TV too much. And they are not always happy with the programmes I watch",
       "questions": "How much time do you watch TV? What do you prefer: watching TV or browsing the Internet, and why? What else do you do in your free time?"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Говорение",
+     "timeMin": 15,
+     "maxPts": 15,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "D5BFFE",
+       "text": "Without the energy from the Sun, the Earth would have no life at all. Nowadays everyone knows that the Sun is a star. Like all stars, the Sun is a great burning ball of gases. To us, it seems large and red. The other stars look white or light blue because they are much farther from us than the Sun. In the past, many people believed that the Earth was the centre of the universe. They thought that the Sun and the stars went round it. Only in 1543, a great Polish scientist published a book in which he tried to prove a different point of view. According to him, the Earth and the other planets moved round the Sun. Those people who supported the scientist were often imprisoned and even killed.",
+       "maxPts": 2
+      },
+      {
+       "kind": "survey",
+       "zid": "A4FBF0",
+       "audio": "https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/192104FE80EC822C4509EBBF19F71B4C/img1_1490012077.mp3",
+       "questions": [
+        "How old are you?",
+        "What is your favourite day of the week? Why do you like it?",
+        "When do you usually get up at weekends?",
+        "How do you usually spend your weekends?",
+        "What sport or hobby do you think you might like to try in the future?",
+        "What would you recommend to a student who wants to make his or her weekend more interesting?"
+       ],
+       "maxPts": 6
+      },
+      {
+       "kind": "monologue",
+       "zid": "31724F",
+       "topic": "conflicts with your friends",
+       "plan": [
+        "· why teenagers can have a conflict with their friends",
+        "· what you usually have conflicts with your friends about",
+        "· how you usually make up with your friends",
+        "· what your attitude to conflicts with your friends is"
+       ],
+       "maxPts": 7
+      }
+     ]
     }
    ],
-   "maxPts": 53
+   "maxPts": 68
   },
   {
    "id": "M3",
@@ -1152,9 +1232,49 @@
       "context": "It’s Mother’s Day next week, or Mothering Sunday. Dad and I are busy preparing a real surprise holiday for Mum",
       "questions": "How is Mother’s Day celebrated in Russia? What presents do you usually give to your Mum? What other family holidays do you celebrate?"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Говорение",
+     "timeMin": 15,
+     "maxPts": 15,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "2DD40C",
+       "text": "Since 2007 high-speed trains have become a common type of transport in Europe. They make it possible to cut travel times by hours. The trains travel at 350 kilometres an hour, and this is not the limit! The only problem for the engineers is the loud noise the trains produce. People living in the areas the trains travel through suffer from the noise greatly. For the passengers, the situation is different. For their comfort, all the carriages are made sound-proof from the inside. Travelling on high-speed trains is comfortable and pleasant. In the future, a high-speed railroad network could cover most of Europe. For example, a trip from Paris to Rome could take only 3 hours!",
+       "maxPts": 2
+      },
+      {
+       "kind": "survey",
+       "zid": "D563BF",
+       "audio": "https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/471D8E9C5B61B64C45109F0FDD7B12DE/img1_1490011879.mp3",
+       "questions": [
+        "How many days a week do you go to school?",
+        "When do you go to bed in the evening?",
+        "How do you spend your mornings?",
+        "What means of transport do you use to get to school?",
+        "What do you usually have for lunch?",
+        "What would you recommend to a teenager who wants to stay fit and healthy?"
+       ],
+       "maxPts": 6
+      },
+      {
+       "kind": "monologue",
+       "zid": "0BF608",
+       "topic": "your school holidays",
+       "plan": [
+        "when you have school holidays",
+        "what school holidays you would make longer, and why",
+        "what you enjoy doing during your school holidays",
+        "what your attitude to school holidays is "
+       ],
+       "maxPts": 7
+      }
+     ]
     }
    ],
-   "maxPts": 53
+   "maxPts": 68
   },
   {
    "id": "M4",
@@ -1537,9 +1657,49 @@
       "context": "My school is over. I have passed all my exams and am looking forward to my holidays",
       "questions": "How do you usually spend your holidays? What are your plans for this summer? Do you prefer to spend your holidays away from home, why yes or no?"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Говорение",
+     "timeMin": 15,
+     "maxPts": 15,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "DEEB74",
+       "text": "Studies of the atmosphere first received technical support in 1912. Equipment to measure temperature and pressure was invented in Germany. But the question was how to raise it high into the air. In 1921, Russian engineers suggested using planes. The special equipment was put on planes that made regular flights. Thanks to this, scientists got a lot of new information about the structure of the atmosphere. Nowadays scientists use modern flying laboratories to study the structure of clouds at different levels. Unlike the first planes, these laboratories can work in any weather and are able to predict climate changes.",
+       "maxPts": 2
+      },
+      {
+       "kind": "survey",
+       "zid": "8E731F",
+       "audio": "https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/5F13CEE94A338E7F444F862AC44E5602/img1_1490011850.mp3",
+       "questions": [
+        "How many physical education lessons a week do you have?",
+        "What sports facilities do you have at school?",
+        "What do you do in your physical education lessons?",
+        "What sports do you do regularly?",
+        "Do you think the winter is a good season for doing sports or not? Why?",
+        "What would you recommend to a teenager who wants to stay fit and healthy?"
+       ],
+       "maxPts": 6
+      },
+      {
+       "kind": "monologue",
+       "zid": "52060A",
+       "topic": "travelling",
+       "plan": [
+        "why people like travelling in Russia",
+        "what means of transport is the most popular for travelling in Russia, and why",
+        "what places in Russia you would like to visit",
+        "what your attitude to travelling is"
+       ],
+       "maxPts": 7
+      }
+     ]
     }
    ],
-   "maxPts": 53
+   "maxPts": 68
   },
   {
    "id": "M5",
@@ -1922,9 +2082,49 @@
       "context": "It’s the end of the year and exams are coming. Although I have good marks and I have time to revise everything, I feel nervous about my exams",
       "questions": "What exam do you find the most difficult this year? How do you get ready for it? What do you do not to be nervous before exams?"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Говорение",
+     "timeMin": 15,
+     "maxPts": 15,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "488EBF",
+       "text": "Most people enjoy watching the night sky. And the brightest object in the sky is the Moon. Every night the Moon rises in the East and sets in the West. It takes about 27 days to go around the Earth, and it’s an interesting fact that we always see the same side of the Moon. The Moon is the closest object to the Earth. It would take us only thirteen hours to get to the Moon by rocket. If we were able to travel at the speed of light, it would take a bit less than two seconds. There is a very thin atmosphere on the Moon. Life is not possible there. In spite of this, the Moon can be used as a base for space exploration and even for space tourism. Some space companies are planning to take tourists to the Moon in the future.",
+       "maxPts": 2
+      },
+      {
+       "kind": "survey",
+       "zid": "A26EA4",
+       "audio": "https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/990D6CD281D3B89F4AB410B0120120F0/img1_1616585844.mp3",
+       "questions": [
+        "How many lessons of PE, physical education, do you have a week?",
+        "What sports facilities do you have in your school?",
+        "What sport do you do regularly?",
+        "What winter sports are popular with you and your friends?",
+        "Would you like to do any extreme sports? Why? Or why not?",
+        "What would you recommend to a teenager who wants to be healthy and fit?"
+       ],
+       "maxPts": 6
+      },
+      {
+       "kind": "monologue",
+       "zid": "8B7C0D",
+       "topic": "hobbies",
+       "plan": [
+        "· why it is important for people to have a hobby",
+        "· what your hobby is and how long you have been doing it",
+        "· how much time a week you give to your hobby and why",
+        "· what your attitude to creative hobbies is"
+       ],
+       "maxPts": 7
+      }
+     ]
     }
    ],
-   "maxPts": 53
+   "maxPts": 68
   },
   {
    "id": "M6",
@@ -2307,9 +2507,49 @@
       "context": "We often travel. Dad enjoys seeing new places and Mum likes buying souvenirs",
       "questions": "Why do people buy souvenirs when they travel? What’s the best souvenir to bring back in your opinion? What place would you like to visit?"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Говорение",
+     "timeMin": 15,
+     "maxPts": 15,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "D4601D",
+       "text": "The mobile phone has become an important part of our everyday life. We can’t imagine our lives without it now. Thanks to the mobile phone we can keep in contact with our relatives and friends at any time. We use them to text and to send emails, to share photos and videos. We can use the Internet and listen to music and do lots of other things. However, according to surveys, mobile phone users mostly spend their time on games and social networking. Around 80 percent of the world’s population has a mobile phone. The mobile phone industry is the fastest growing industry in the world. From 1983 to 2016, worldwide mobile phone subscriptions grew to over seven billion.",
+       "maxPts": 2
+      },
+      {
+       "kind": "survey",
+       "zid": "FBF39F",
+       "audio": "https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/B1114EC16DECA27D4497AE187BFAABC4/img1_1490012046.mp3",
+       "questions": [
+        "What is your favorite season? Why do you like it?",
+        "There are a lot of different holidays during the year. What holidays are the most popular in Russia?",
+        "What is your favorite holiday? Why do you like it?",
+        "How do you usually celebrate your favorite holiday?",
+        "What season is the best for visiting the place where you live? Why?",
+        "What would you recommend to a person who has got a present he or she doesn't need?"
+       ],
+       "maxPts": 6
+      },
+      {
+       "kind": "monologue",
+       "zid": "262B27",
+       "topic": "reading books",
+       "plan": [
+        "whether reading is popular with teenagers, and why, or why not",
+        "what kind of books you like reading",
+        "why many people prefer e-books to paper books",
+        "what your attitude to reading is"
+       ],
+       "maxPts": 7
+      }
+     ]
     }
    ],
-   "maxPts": 53
+   "maxPts": 68
   },
   {
    "id": "M7",
@@ -2692,9 +2932,49 @@
       "context": "You’ve probably seen the photos which I took on my holiday. During the rainy days we are having now they bring back good memories!",
       "questions": "Where did you spend your last summer holidays? What did you do during your holidays? What school holidays do you like most of all and why?"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Говорение",
+     "timeMin": 15,
+     "maxPts": 15,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "6A111C",
+       "text": "Table tennis is the third most played sport in the world after football and cricket. It is considered to be an indoor version of Lawn Tennis. However, they have a lot of differences. Table tennis has a different scoring system, a smaller ball, smaller rackets, and a smaller playing area. Modern table tennis was invented at the end of the 19 th century in England . Very soon the new sport became popular all over the world. In 1901, competitions with over 300 participants were already being held. According to numerous studies, table tennis has great effects on human health. It keeps the brain sharp and improves the player’s coordination.",
+       "maxPts": 2
+      },
+      {
+       "kind": "survey",
+       "zid": "2F5192",
+       "audio": "https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/B66815A10FD286654C850F2C12638C6B/img1_1490012091.mp3",
+       "questions": [
+        "What is your favourite school subject?",
+        "What do you like to do in your free time?",
+        "What part-time job would you like to do during the school holidays, if any?",
+        "What career would you like to choose after finishing school? Why?",
+        "Do you think English will be useful for you in the future? In what way?",
+        "What would you recommend to a teenager who can't choose a career?"
+       ],
+       "maxPts": 6
+      },
+      {
+       "kind": "monologue",
+       "zid": "C39D2F",
+       "topic": "travelling",
+       "plan": [
+        "why most people enjoy travelling",
+        "what people like doing while travelling",
+        "what place you would like to go to, and why",
+        "what your attitude to travelling is"
+       ],
+       "maxPts": 7
+      }
+     ]
     }
    ],
-   "maxPts": 53
+   "maxPts": 68
   },
   {
    "id": "M8",
@@ -3077,9 +3357,49 @@
       "context": "I’ve just returned from our local museum. I was surprised that a visit to a museum could be so enjoyable",
       "questions": "Do you find visiting museums interesting and why? What museum would you like to set up, if any? What do you enjoy doing in your free time?"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Говорение",
+     "timeMin": 15,
+     "maxPts": 15,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "F62525",
+       "text": "A zoo, also known as a zoological park or a zoological garden, gives people the opportunity to watch animals from different continents. There are hundreds of zoos all over the world. However, most of them are located in major cities. The first zoo in Russia was opened in 1864, in Moscow. It was a small zoological garden. On the opening day, only 287 animals were on display. Nowadays, the Moscow Zoo is one of the largest in Europe. The unique collection of the Zoo includes over 10000 kinds of animals and birds. Scientists study the animals’ behaviour and reproduction. They also breed rare animals there to stop them dying out.",
+       "maxPts": 2
+      },
+      {
+       "kind": "survey",
+       "zid": "73FE66",
+       "audio": "https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/D3D1EC5E12938C864C72D57B2DE7ACE9/img1_1490011907.mp3",
+       "questions": [
+        "How many lessons do you usually have?",
+        "What do you usually do after lessons?",
+        "How much time do you need to do your homework?",
+        "Who helps you to do your homework?",
+        "Do you use the internet when you do your homework? What for?",
+        "What would you recommend to a student who wants to spend less time on his or her homework?"
+       ],
+       "maxPts": 6
+      },
+      {
+       "kind": "monologue",
+       "zid": "328D2A",
+       "topic": "keeping fit",
+       "plan": [
+        "why doing sport is very important for modern teenagers",
+        "what else besides sport young people do to keep fit",
+        "what you enjoy doing in your free time",
+        "what your attitude to doing sports activities is"
+       ],
+       "maxPts": 7
+      }
+     ]
     }
    ],
-   "maxPts": 53
+   "maxPts": 68
   },
   {
    "id": "M9",
@@ -3462,9 +3782,49 @@
       "context": "My family runs a family business. My dad wants me to go into the family business after I finish school. But I’m not sure what I want to do in the future",
       "questions": "What are your career plans? What career do your parents advise you to choose? Is there any job you wouldn’t agree to do, why yes or no?"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Говорение",
+     "timeMin": 15,
+     "maxPts": 15,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "F903D3",
+       "text": "The first vacuum cleaner was designed in 1869. Since then, vacuum cleaners have changed a lot. Nowadays the robot vacuum cleaner is getting more and more popular. This device cleans a house automatically. Following a programme, the robot drives slowly around the house and makes it cleaner. It operates with brushes and a tube. The robot is so flexible that it can get under a table or sofa or reach dust in corners. Some advanced models can also wash floors of all kinds. These functions are provided by a complicated electronic system and sensors inside. The vacuum cleaner looks like a plate and can be kept in the corner. It is friendly to children and animals and works on electricity.",
+       "maxPts": 2
+      },
+      {
+       "kind": "survey",
+       "zid": "586266",
+       "audio": "https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/D8DDF68BD2C9B97C47AA40099BAE9826/img1_1490012063.mp3",
+       "questions": [
+        "What grade are you in?",
+        "How many school holidays do you have?",
+        "What school holidays do you like best of all?",
+        "Why do most teenagers enjoy school holidays so much?",
+        "What do you usually do during your summer holidays?",
+        "Do you think it is a good idea for a teenager to take a part-time job during the summer holidays? Why?"
+       ],
+       "maxPts": 6
+      },
+      {
+       "kind": "monologue",
+       "zid": "BAB9DB",
+       "topic": "family",
+       "plan": [
+        "· why family plays an important role in every person’s life",
+        "· what a typical Russian family is like",
+        "· who you feel closest to in your family and why",
+        "· what your attitude to having a big family is"
+       ],
+       "maxPts": 7
+      }
+     ]
     }
    ],
-   "maxPts": 53
+   "maxPts": 68
   },
   {
    "id": "M10",
@@ -3847,9 +4207,49 @@
       "context": "Our teacher has announced that a Theatre Group is starting next month. I’m going to join the club and see if I enjoy being on stage",
       "questions": "What do you do after your classes? What club in your school is the most interesting, why do you think so? How long does it take you to do your homework?"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Говорение",
+     "timeMin": 15,
+     "maxPts": 15,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "0E12D1",
+       "text": "The Arctic Ocean is the smallest ocean of the world. It covers the northern polar region of the Earth. The Arctic region is a very cold place. The lowest recorded temperature there is minus 68 degrees. In spite of the cold, a lot of animals live on the Arctic ice. The polar bear is one of them. Now, due to global warming, the polar bear is in a serious trouble. The thing is that polar bears hunt seals and they need ice to do this. The bears wait for seals on the ice, hunt them in the water and go back to the shore. If the ice is too thin, it breaks under the bears’ heavy bodies and they may drown. The situation is getting worse and some researchers say the ocean may become ice-free as soon as 2050.",
+       "maxPts": 2
+      },
+      {
+       "kind": "survey",
+       "zid": "083E10",
+       "audio": "https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/522EFC9776CBA3BB4F6E6E0D357350B3/img1_1616585806.mp3",
+       "questions": [
+        "Who usually does the shopping in your family?",
+        "What can you buy in your nearest shopping centre?",
+        "How often do you usually go shopping?",
+        "Why are shopping centres so popular nowadays?",
+        "Why do some people hate shopping?",
+        "What time would you recommend that busy people should go shopping?"
+       ],
+       "maxPts": 6
+      },
+      {
+       "kind": "monologue",
+       "zid": "668AD5",
+       "topic": "animals",
+       "plan": [
+        "what wild animals live in your region",
+        "whether it is a good idea to keep a wild animal as a pet, and why",
+        "why people build zoos in cities and towns",
+        "what your attitude to zoos is"
+       ],
+       "maxPts": 7
+      }
+     ]
     }
    ],
-   "maxPts": 53
+   "maxPts": 68
   },
   {
    "id": "M11",
@@ -4232,9 +4632,49 @@
       "context": "My laptop is broken and will be at the repair centre for a week, ’cause it's holiday time now. This made me realise how dependent I am on my computer",
       "questions": "How many hours a week do you usually spend on your computer? What do you use it for? People of what professions need excellent computer skills, in your view?"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Говорение",
+     "timeMin": 15,
+     "maxPts": 15,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "0990DE",
+       "text": "It’s hard to find a more popular Russian symbol than the traditional Russian doll, or Matryoshka. It is well-known all over the world. The first set of dolls appeared in Moscow in 1890. It consisted of eight dolls. All of them were children: seven girls, one boy, and a baby. In those times, Matryoshkas were not meant as toys for children as their price was very high. Mostly, adults bought them as presents or home decorations. There was a belief that if you put a note with a wish into Matryoshka, it would come true. At the beginning of the 20 th century, Russia started to export their national dolls abroad.",
+       "maxPts": 2
+      },
+      {
+       "kind": "survey",
+       "zid": "E17D12",
+       "audio": "https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/5C63578BA205990D482DD375C50860CF/img1_1490011952.mp3",
+       "questions": [
+        "How old were you when you got your mobile phone?",
+        "What do you use your mobile phone for, apart from talking?",
+        "Who do you usually send SMSs to?",
+        "How can you use mobile phones to learn foreign languages?",
+        "Where do you usually switch off your mobile phone?",
+        "Why are most teachers against using mobile phones in schools?"
+       ],
+       "maxPts": 6
+      },
+      {
+       "kind": "monologue",
+       "zid": "7D3B5F",
+       "topic": "your school",
+       "plan": [
+        "· what your typical school day is like",
+        "· what subjects at school you find most useful for your future, and why",
+        "· what you are going to do when you leave school",
+        "what your attitude to school life is"
+       ],
+       "maxPts": 7
+      }
+     ]
     }
    ],
-   "maxPts": 53
+   "maxPts": 68
   },
   {
    "id": "M12",
@@ -4617,9 +5057,49 @@
       "context": "I’m just back home from the cinema, where I saw ‘Charlie and the Chocolate Factory’ for the third time. I can’t agree when people say it’s a film for kids",
       "questions": "Do you prefer watching films at home or at the cinema, and why? What kind of films do you like? Are cartoons still popular with you and your friends?"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Говорение",
+     "timeMin": 15,
+     "maxPts": 15,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "29DADB",
+       "text": "Great Britain is home to the world’s oldest school. The King’s School was established in 1567 and it is still open. It has a long history. Many famous people have been educated at this old school. Nowadays The King’s School is an independent secondary school for boys and girls. More than 800 pupils study at the school. Though The King’s School is located in old buildings, it has up-to-date technical equipment and provides a full modern education. The King’s School is also famous for its festival of music, drama and arts. It is held during the last week of the summer term and attracts a lot of people from different parts of the country.",
+       "maxPts": 2
+      },
+      {
+       "kind": "survey",
+       "zid": "2E3C29",
+       "audio": "https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/66BECA7E2A868550444D190094403C14/img1_1490011815.mp3",
+       "questions": [
+        "What colour of clothes do you prefer wearing?",
+        "What clothes do you usually wear?",
+        "How often do you go shopping for clothes?",
+        "Who do you usually go shopping with?",
+        "Do you have to wear a school uniform? If so, what is it like?",
+        "Does a career as a fashion designer attract you or not? Why?"
+       ],
+       "maxPts": 6
+      },
+      {
+       "kind": "monologue",
+       "zid": "F93EA0",
+       "topic": "school life",
+       "plan": [
+        "what your weekday is like",
+        "what you like about your school most of all",
+        "whether you prefer classroom learning or online learning, and why",
+        "what your attitude to your school life is"
+       ],
+       "maxPts": 7
+      }
+     ]
     }
    ],
-   "maxPts": 53
+   "maxPts": 68
   },
   {
    "id": "M13",
@@ -5002,9 +5482,49 @@
       "context": "What a journey! We went by car to Brighton and spent a couple of days at the seaside. I wish we could go there again!",
       "questions": "Why do you think travelling is so popular? Where would you like to go? How do you prefer to travel?"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Говорение",
+     "timeMin": 15,
+     "maxPts": 15,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "5CB7D0",
+       "text": "Bicycles or bikes are an important means of transportation in many parts of the world. The first bicycles turned up in Europe in the first half of the 19 th century but the word “ bicycle ” only appeared later, in 1868. There are more bicycles in the world than cars. A lot of people have realized that cycling is an easy way to get around and a great way to cut down on pollution. More and more cities have special places where people can borrow a bike and ride around the city. Over the past few years, a bicycle infrastructure has been created in Moscow. Cycling in the centre of Moscow in summer is one of the most pleasant and quickest ways of seeing the city.",
+       "maxPts": 2
+      },
+      {
+       "kind": "survey",
+       "zid": "C7682E",
+       "audio": "https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/6ACD3FB03F36A84E4C834310FC547375/img1_1490011785.mp3",
+       "questions": [
+        "How old were you when you learnt to read?",
+        "What do you like to read about?",
+        "Who is your favourite writer?",
+        "What do you usually do in literature lessons?",
+        "What do you like to do in your free time apart from reading?",
+        "What books do you prefer? Printed books or e-books? Why?"
+       ],
+       "maxPts": 6
+      },
+      {
+       "kind": "monologue",
+       "zid": "FAEEAB",
+       "topic": "shopping",
+       "plan": [
+        "· why many people enjoy shopping",
+        "· who you like shopping with and why",
+        "· what you like and dislike shopping for",
+        "· what your attitude to online shopping is"
+       ],
+       "maxPts": 7
+      }
+     ]
     }
    ],
-   "maxPts": 53
+   "maxPts": 68
   },
   {
    "id": "M14",
@@ -5387,9 +5907,49 @@
       "context": "One of my friends gets ill very often. The doctor says that it’s because he lives in a big city with a poor environment",
       "questions": "What ecological problems are the most serious in your country? What can teenagers do to make their hometown cleaner? Would you like to live in a big city or in the country and why?"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Говорение",
+     "timeMin": 15,
+     "maxPts": 15,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "5226D0",
+       "text": "English is the third most-spoken language in the world after Chinese and Spanish. Over 840 million people speak English as a first or second language. It is an official language of sixty-seven countries. 80 percent of information stored on all computers in the world is in English. The vocabulary of the English language is the biggest in the world. A new word is added into English almost every two hours. The English language is said to be one of the happiest languages in the world. The word happy is used more often than the word sad ! That’s a good reason to learn this language, isn’t it?",
+       "maxPts": 2
+      },
+      {
+       "kind": "survey",
+       "zid": "8C355A",
+       "audio": "https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/8F9EA85A4011B0F349EA818A884FA3A0/img1_1490011981.mp3",
+       "questions": [
+        "What is your best friend like?",
+        "Where did you and your friend meet for the first time?",
+        "How often do you see each other?",
+        "What do you like to do together?",
+        "What career is your best friend going to follow?",
+        "What would you recommend to a teenager who wants to be a good friend?"
+       ],
+       "maxPts": 6
+      },
+      {
+       "kind": "monologue",
+       "zid": "AE0AAD",
+       "topic": "sports",
+       "plan": [
+        "why a lot of young people do sports nowadays",
+        "what sports clubs and teams there are in your school",
+        "what you do to keep fit",
+        "what your attitude to doing sports activities is"
+       ],
+       "maxPts": 7
+      }
+     ]
     }
    ],
-   "maxPts": 53
+   "maxPts": 68
   },
   {
    "id": "M15",
@@ -5772,9 +6332,49 @@
       "context": "My friend has decided to become a model and has just gone on a diet. I told her that it could be dangerous but she wouldn’t listen. Besides, she is a vegetarian, so there are not many products she can let herself eat now",
       "questions": "Why do people become vegetarians? What do you do to keep fit? What food do you try to avoid?"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Говорение",
+     "timeMin": 15,
+     "maxPts": 15,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "6C9ADF",
+       "text": "Human activity creates waste. The problem isn’t new and space is no exception to the rule. Dead satellites, rocket stages and other things are littering our planet’s orbit. They are getting dangerously close to space stations and there is a great possibility of an accident. Space stations could be completely destroyed by the rubbish. In 1983, a tiny piece of paint from a satellite made a big hole in the side window of a spaceship. There is a great need to “clean up” space and to take away 3,000 tons of space rubbish. To solve the problem, scientists and engineers are designing special spaceships that will collect and recycle space rubbish.",
+       "maxPts": 2
+      },
+      {
+       "kind": "survey",
+       "zid": "00B5AE",
+       "audio": "https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/92C4287AE091B41E473FE446D4166F99/img1_1490011834.mp3",
+       "questions": [
+        "What is your favourite animal? Why do you like it?",
+        "What pets are the most popular in Russia in your view?",
+        "Is it right for people to keep exotic animals as pets? Why?",
+        "What can people do to help homeless animals?",
+        "Why do you think most children like visiting zoos?",
+        "Does a career as a vet attract you or not? Why?"
+       ],
+       "maxPts": 6
+      },
+      {
+       "kind": "monologue",
+       "zid": "AE51A8",
+       "topic": "environmental problems",
+       "plan": [
+        "· why people worry about environmental problems nowadays",
+        "· what the most serious environmental problem in the place where you live is",
+        "· what young people can do to improve the ecological situation",
+        "· what your attitude to environmental problems is"
+       ],
+       "maxPts": 7
+      }
+     ]
     }
    ],
-   "maxPts": 53
+   "maxPts": 68
   },
   {
    "id": "M16",
@@ -6157,9 +6757,49 @@
       "context": "We’ve moved house and now I have to go to a new school. It’s a pity because I liked my old school and I had a lot of friends there",
       "questions": "What do you like most about your school? Have you got a lot of friends at school? What do you usually do with your school friends in your free time?"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Говорение",
+     "timeMin": 15,
+     "maxPts": 15,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "19E954",
+       "text": "The construction of the longest and the deepest railroad tunnel was finished in Europe. The tunnel runs through the Alps and links the north and south of Europe. The length of the tunnel is 57 kilometres. It runs straight from beginning to end. It will allow passenger trains to travel more quickly through the mountains. Modern technologies ensure safety and security when the trains go through the tunnel. The great project started in 2009 and it took 7 years to complete. It is considered to be one of the most amazing engineering constructions in Europe.",
+       "maxPts": 2
+      },
+      {
+       "kind": "survey",
+       "zid": "A32EA9",
+       "audio": "https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/99B6EC8C21D3B4F2449F6EB46AABB05C/img1_1490011922.mp3",
+       "questions": [
+        "What is your favourite fruit?",
+        "What do you usually have for breakfast?",
+        "Where do you usually have lunch on weekdays?",
+        "Is there any food you do not like?",
+        "What dishes can you cook?",
+        "What food would you recommend to a teenager who wants to be healthy?"
+       ],
+       "maxPts": 6
+      },
+      {
+       "kind": "monologue",
+       "zid": "3BA5AF",
+       "topic": "travelling",
+       "plan": [
+        "why most people like travelling",
+        "which season is the best for travelling in your opinion",
+        "what means of transport is the best for travelling, and why",
+        "what your attitude to travelling is"
+       ],
+       "maxPts": 7
+      }
+     ]
     }
    ],
-   "maxPts": 53
+   "maxPts": 68
   },
   {
    "id": "M17",
@@ -6542,9 +7182,49 @@
       "context": "Tomorrow will be Wednesday, my favourite day at school. We don’t have too many lessons and I can attend my History Drama Club",
       "questions": "How many lessons do you usually have a day? What’s your favourite subject at school, and why? What after-class activities can students do in your school?"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Говорение",
+     "timeMin": 15,
+     "maxPts": 15,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "48BDAA",
+       "text": "The rainforest can be described as a thick and very tall jungle. The term rain comes from the great quantity of water that these forests get throughout the year. The rainforests are the world’s greatest natural resources. They are called the lungs of our planet. Half of all the kinds of plants and animals that exist on the planet live in the rainforests. Unfortunately, the area with rainforests is being reduced due to global warming. 100 years ago, the rainforests covered 14 percent of the earth’s surface. Now, it is only 6 percent. Scientists say that if the process continues at this rate, the rainforests will have disappeared in forty years.",
+       "maxPts": 2
+      },
+      {
+       "kind": "survey",
+       "zid": "DBBFC4",
+       "audio": "https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/A704411F08DAAAD0458AE5A8914B4890/img1_1490011997.mp3",
+       "questions": [
+        "How many TV sets are there in your house?",
+        "Who watches most TV in your family?",
+        "How much time a day do you spend watching TV?",
+        "What kind of TV programs do you like?",
+        "Would you like to take part in a TV show, for example in a quiz show? Why does a career on TV attract you or not?",
+        "Why?"
+       ],
+       "maxPts": 6
+      },
+      {
+       "kind": "monologue",
+       "zid": "37A3A9",
+       "topic": "your school",
+       "plan": [
+        "what you like about your school most of all",
+        "how many lessons a day you usually have",
+        "what school subjects you have chosen for your exams, and why",
+        "what your attitude to the number of subjects you have to learn is "
+       ],
+       "maxPts": 7
+      }
+     ]
     }
    ],
-   "maxPts": 53
+   "maxPts": 68
   },
   {
    "id": "M18",
@@ -6927,9 +7607,49 @@
       "context": "I have decided to take up collecting stamps as my new hobby. My uncle is a traveller and often brings me stamps from different countries",
       "questions": "What hobbies are popular with Russian teenagers? What hobby would you like to take up, and why? Do your friends share your interests?"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Говорение",
+     "timeMin": 15,
+     "maxPts": 15,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "7020AC",
+       "text": "Global warming is a result of human activity. In 1985 there was a big conference in Austria where 89 climate researchers from different countries took part. After long discussions the scientists declared that the climate of the planet had changed. Indeed, it is warmer now than it was years ago. It can be clearly seen in the north. In the Arctic some places are ice-free now and polar bears have lost the place where they lived. The sea level has risen as well. The situation is getting more and more serious. Global warming is a great problem which needs to be solved in the near future.",
+       "maxPts": 2
+      },
+      {
+       "kind": "survey",
+       "zid": "51F6CC",
+       "audio": "https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/A8A15DDC2F15B3644D6C46E0870B5A3A/img1_1490011768.mp3",
+       "questions": [
+        "How old were you when you started using the computer?",
+        "In what lessons at school do you use computers?",
+        "What do you use your computer for?",
+        "What do the members of your family use computers for?",
+        "Which jobs need good computer skills in your view?",
+        "In what way have computers made people's life easier?"
+       ],
+       "maxPts": 6
+      },
+      {
+       "kind": "monologue",
+       "zid": "86CCA2",
+       "topic": "your free time",
+       "plan": [
+        "whether you have a lot of free time, and why, or why not",
+        "what you enjoy doing in your free time",
+        "what your Sunday afternoons are like",
+        "what your attitude to planning your free time is"
+       ],
+       "maxPts": 7
+      }
+     ]
     }
    ],
-   "maxPts": 53
+   "maxPts": 68
   },
   {
    "id": "M19",
@@ -7312,9 +8032,49 @@
       "context": "Yesterday we had a class where we discussed different ecological problems. Our teacher suggested opening an eco-club, where we can do something useful for the environment",
       "questions": "What ecological problem do you consider the most serious? What can young people do to protect the environment? Do you think ecological problems should be discussed at school, and why?"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Говорение",
+     "timeMin": 15,
+     "maxPts": 15,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "8C87A0",
+       "text": "Snowdon is the highest mountain in Wales. It is located in a national park. It stands at 1085 metres above sea level, and it is often described as the busiest mountain in Great Britain. Snowdon is very popular with tourists. If you are strong and brave enough to get to the top, you can enjoy wonderful views from there. On a clear day, you can see as far as Ireland! During the summer months there is a café at the top. There, tourists can get a welcome cup of tea, or soup if the weather is cold. If you feel too tired to walk back, you can always take the train down the mountain. The mountain railway was built in 1896. It is safe, and there have never been any accidents on this route.",
+       "maxPts": 2
+      },
+      {
+       "kind": "survey",
+       "zid": "075DF0",
+       "audio": "https://oge.fipi.ru/docs/8BBD5C99F37898B6402964AB11955663/questions/122837638FFB89424179D39AB75E51F2/img1_1490011893.mp3",
+       "questions": [
+        "How many days a week do you go to school?",
+        "What subjects are you good at?",
+        "What sports facilities do you have in your school?",
+        "What after-school activities does your school offer?",
+        "What do you like most about your school?",
+        "What would you recommend to a student who wants to improve his or her school results?"
+       ],
+       "maxPts": 6
+      },
+      {
+       "kind": "monologue",
+       "zid": "49B7CE",
+       "topic": "films",
+       "plan": [
+        "· what kinds of films modern teenagers enjoy",
+        "· where you prefer watching films: on TV, on the Internet or in the cinema, and why",
+        "· what film you have seen recently, what it was about",
+        "· what your attitude to watching films as a way to spend your free time is"
+       ],
+       "maxPts": 7
+      }
+     ]
     }
    ],
-   "maxPts": 53
+   "maxPts": 68
   }
  ]
 }
