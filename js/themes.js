@@ -11,6 +11,12 @@ async function loadThemes() {
   return _themes;
 }
 
+// Русское название темы по ключу (для подписей). Пусто, если тема не найдена.
+export async function themeName(themeKey) {
+  const th = (await loadThemes())[themeKey];
+  return (th && th.ru) || '';
+}
+
 // zid-наборы заданий темы для текущего экзамена: { writing:Set, reading:Set, name }
 export async function themeZids(themeKey) {
   const th = (await loadThemes())[themeKey];

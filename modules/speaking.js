@@ -4,8 +4,10 @@
 
 import { el, mount, iconImg, celebrate } from '../js/ui.js';
 import { loadJSON } from '../js/data.js';
-import { recordRound, getName } from '../js/gamify.js';
+import { recordRound, getName, getSpeakingDone, markSpeakingDone } from '../js/gamify.js';
 import { speak, canSpeak, pauseSpeak, resumeSpeak, stopSpeak } from '../js/speak.js';
+import { getActiveTheme } from '../js/vocab_srs.js';
+import { themeName } from '../js/themes.js';
 import { t } from '../js/exam.js';
 import { tipButton, autoTipOnce } from '../js/tips.js';
 
@@ -20,6 +22,11 @@ export async function renderSpeaking(container, cfg) {
 
   const S = t.speaking;
   const title = t.sections.speaking;
+  const CATS = [
+    { key: 'read', label: S.catRead, arr: data.read, icon: '📖' },
+    { key: 'survey', label: S.catSurvey, arr: data.survey, icon: '📞' },
+    { key: 'monologue', label: S.catMono, arr: data.monologue, icon: '🗣' },
+  ].filter((c) => c.arr && c.arr.length);
   menuScreen();
   autoTipOnce('speaking');
 
@@ -34,26 +41,77 @@ export async function renderSpeaking(container, cfg) {
     ]);
   }
 
-  // --- Меню: 3 типа заданий ---
+  // подпись карточки задания в списке (для монолога — тема, иначе — фрагмент)
+  function cardLabel(kind, item) {
+    if (kind === 'monologue') return cap(item.topic || '');
+    if (kind === 'survey') return shorten(item.questions && item.questions[0] || '', 56);
+    return shorten(item.text || '', 56);
+  }
+  function cap(s) { return s ? s[0].toUpperCase() + s.slice(1) : s; }
+  function shorten(s, n) { s = (s || '').trim(); return s.length > n ? s.slice(0, n - 1).trim() + '…' : s; }
+
+  // --- Меню: 3 типа заданий → список заданий ---
   function menuScreen() {
     stopSpeak();
-    const cats = [
-      { key: 'read', label: S.catRead, arr: data.read, icon: '📖' },
-      { key: 'survey', label: S.catSurvey, arr: data.survey, icon: '📞' },
-      { key: 'monologue', label: S.catMono, arr: data.monologue, icon: '🗣' },
-    ].filter((c) => c.arr && c.arr.length);
-    const cards = cats.map((c) => el('button', { class: 'all-topics speaking', onclick: () => startTask(c.key, c.arr[randInt(c.arr.length)]) }, [
-      el('div', { class: 'at-ic' }, [el('div', { class: 'sp-emo', text: c.icon })]),
-      el('div', { style: { flex: '1' } }, [
-        el('div', { class: 'at-t', text: c.label }),
-        el('div', { class: 'at-s', text: S.taskCount(c.arr.length) }),
-      ]),
-      el('div', { class: 'at-arrow', text: '→' }),
-    ]));
+    const cards = CATS.map((c) => {
+      const done = countDone(c.key, c.arr);
+      return el('button', { class: 'all-topics speaking', onclick: () => listScreen(c.key) }, [
+        el('div', { class: 'at-ic' }, [el('div', { class: 'sp-emo', text: c.icon })]),
+        el('div', { style: { flex: '1' } }, [
+          el('div', { class: 'at-t', text: c.label }),
+          el('div', { class: 'at-s', text: S.taskCount(c.arr.length) + (done ? ' · ' + S.doneOf(done, c.arr.length) : '') }),
+        ]),
+        el('div', { class: 'at-arrow', text: '→' }),
+      ]);
+    });
     mount(container, el('div', { class: 'view' }, [
       secBar(cfg.goHome, S.pick),
       el('div', { class: 'topics-body' }, [el('div', { class: 'topics-label', text: S.pick }), ...cards]),
     ]));
+  }
+
+  function countDone(kind, arr) {
+    const d = getSpeakingDone();
+    return arr.reduce((n, it) => n + (d[kind + ':' + it.zid] ? 1 : 0), 0);
+  }
+
+  // --- Список заданий одного типа: случайное + тема недели сверху + остальные, с отметками ---
+  async function listScreen(kind) {
+    stopSpeak();
+    const cat = CATS.find((c) => c.key === kind);
+    const arr = cat.arr;
+    const doneMap = getSpeakingDone();
+    let active = '', activeName = '';
+    try { active = getActiveTheme(); activeName = active ? await themeName(active) : ''; } catch {}
+
+    const taskBtn = (it, i) => {
+      const isDone = !!doneMap[kind + ':' + it.zid];
+      return el('button', { class: 'sp-item' + (isDone ? ' done' : ''), onclick: () => startTask(kind, it) }, [
+        el('span', { class: 'sp-item-n', text: '№ ' + (i + 1) }),
+        el('span', { class: 'sp-item-t', text: cardLabel(kind, it) }),
+        el('span', { class: 'sp-item-chk', text: isDone ? '✓' : '' }),
+      ]);
+    };
+
+    const list = el('div', { class: 'sp-list' });
+    // случайное задание сверху
+    list.appendChild(el('button', { class: 'btn btn-primary btn-block sp-random', text: '🎲 ' + S.randomTask,
+      onclick: () => startTask(kind, arr[randInt(arr.length)]) }));
+    // тема недели — наверх
+    const themed = [], rest = [];
+    arr.forEach((it, i) => ((active && it.theme === active) ? themed : rest).push([it, i]));
+    if (themed.length) {
+      list.appendChild(el('div', { class: 'topics-label', text: t.vocab.themeWeekLabel(activeName || S.catLabel(kind)) }));
+      themed.forEach(([it, i]) => list.appendChild(taskBtn(it, i)));
+      if (rest.length) list.appendChild(el('div', { class: 'topics-label', text: t.wAllLetters }));
+    }
+    rest.forEach(([it, i]) => list.appendChild(taskBtn(it, i)));
+
+    mount(container, el('div', { class: 'view' }, [
+      secBar(menuScreen, cat.label),
+      el('div', { class: 'topics-body' }, [list]),
+    ]));
+    const v = container.querySelector('.view'); if (v) v.scrollTop = 0;
   }
 
   // --- Диктофон (MediaRecorder): запись / стоп / переслушать / перезаписать ---
@@ -213,17 +271,18 @@ export async function renderSpeaking(container, cfg) {
       ].filter(Boolean);
     }
     const done = el('button', { class: 'btn btn-primary btn-block', style: { marginTop: '18px' }, text: S.doneBtn,
-      onclick: () => finish() });
+      onclick: () => finish(kind, item) });
     mount(container, el('div', { class: 'view sp-screen' }, [
-      secBar(menuScreen, S['cat' + (kind === 'read' ? 'Read' : kind === 'survey' ? 'Survey' : 'Mono')]),
+      secBar(() => listScreen(kind), S['cat' + (kind === 'read' ? 'Read' : kind === 'survey' ? 'Survey' : 'Mono')]),
       el('div', { class: 'sp-body' }, [...body, done]),
     ]));
     const sc = container.querySelector('.sp-screen'); if (sc) sc.scrollTop = 0;
   }
 
-  // --- Завершение: тренировка засчитана (+XP), без объективного балла (AI — позже) ---
-  function finish() {
+  // --- Завершение: тренировка засчитана (+XP), отметка «выполнено» (без балла — AI позже) ---
+  function finish(kind, item) {
     stopSpeak();
+    if (kind && item) markSpeakingDone(kind, item.zid);
     const g = recordRound(SECTION, 1, 1);
     mount(container, el('div', { class: 'result view' }, [
       el('div', { class: 'voice-msg', text: S.donePraise(getName() || t.friend) }),
@@ -231,7 +290,7 @@ export async function renderSpeaking(container, cfg) {
       el('div', { class: 'reward' }, [
         el('div', { class: 'reward-line' }, [el('span', { class: 'rl-label' }, [iconImg('ic-xp', '⭐'), el('span', { text: ' ' + t.rXp })]), el('b', { class: 'v-xp', text: '+' + g.xpGained + ' XP' })]),
       ]),
-      el('button', { class: 'btn btn-primary btn-block', text: S.more, onclick: menuScreen }),
+      el('button', { class: 'btn btn-primary btn-block', text: S.more, onclick: () => (kind ? listScreen(kind) : menuScreen()) }),
       el('div', { class: 'row-actions' }, [el('button', { class: 'btn btn-ghost', text: t.toHome, onclick: cfg.goHome })]),
     ]));
   }

@@ -127,6 +127,13 @@ export function recordListeningVariant(vid, correct, total) {
   write(s);
 }
 
+// Пройденные задания говорения: множество ключей «kind:zid» (без балла — просто «потренировано»).
+export function getSpeakingDone() { return read().speakingDone || {}; }
+export function markSpeakingDone(kind, zid) {
+  const s = read(); s.speakingDone = s.speakingDone || {};
+  s.speakingDone[kind + ':' + zid] = true; write(s);
+}
+
 // Виден ли уже совет Спики по разделу (авто-показ только в первый раз)
 export function hasSeenTip(id) { return (read().tipsSeen || []).includes(id); }
 export function markTipSeen(id) { const s = read(); s.tipsSeen = s.tipsSeen || []; if (!s.tipsSeen.includes(id)) { s.tipsSeen.push(id); write(s); } }

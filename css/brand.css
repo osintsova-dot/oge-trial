@@ -308,6 +308,16 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .sp-instr{font-size:14px;line-height:1.5;color:var(--muted);margin:4px 0 12px}
 .sp-text{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 16px;
   font-size:16px;line-height:1.6;color:var(--ink)}
+/* список заданий говорения */
+.sp-list{display:flex;flex-direction:column;gap:8px}
+.sp-random{margin-bottom:6px;background:var(--grad-speaking);color:#fff;border:none;font-weight:800}
+.sp-item{display:flex;align-items:center;gap:12px;width:100%;text-align:left;
+  background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 14px;cursor:pointer}
+.sp-item-n{flex:none;min-width:40px;font-size:13px;font-weight:800;color:var(--muted)}
+.sp-item-t{flex:1;font-size:15px;line-height:1.35;color:var(--ink)}
+.sp-item-chk{flex:none;width:20px;text-align:center;font-weight:900;color:var(--ok)}
+.sp-item.done{border-color:var(--ok)}
+.sp-item.done .sp-item-t{color:var(--muted)}
 .sp-step{font-size:14px;font-weight:700;color:var(--ink);margin:16px 0 8px}
 .sp-tts{margin-top:0}
 .sp-tts-row{display:flex;gap:8px;margin-top:10px;align-items:stretch}
