@@ -7,7 +7,7 @@
 import { el, mount, iconImg } from '../js/ui.js';
 import { loadJSON } from '../js/data.js';
 import { recordRound, getName, getMockResults, recordMock } from '../js/gamify.js';
-import { t } from '../js/exam.js';
+import { t, EXAM } from '../js/exam.js';
 
 const WORKER = 'https://purple-cake-2966.o-sintsova.workers.dev';
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G']; // EGE headings = 7 текстов A–G; ОГЭ matching/gaps (A–F) — лишние отфильтруются по texts[L]
@@ -25,6 +25,9 @@ export async function renderMock(container, cfg) {
   try { data = await loadJSON(cfg.dataFile || 'oge_mock'); }
   catch (e) { mount(container, el('div', { class: 'err-msg', text: e.message })); return; }
   const variants = data.variants || [];
+  // таблица перевода первичного → тестового (только ЕГЭ; для прогноза экзаменационного балла)
+  let p2t = null;
+  if (EXAM.id === 'ege') { try { const sc = await loadJSON('scoring'); p2t = sc.ege && sc.ege.primary_to_test; } catch {} }
 
   let timerId = null;
   function clearTimer() { if (timerId) { clearInterval(timerId); timerId = null; } }
@@ -314,27 +317,27 @@ export async function renderMock(container, cfg) {
 
     for (const sec of v.sections) {
       if (sec.id === 'writing') continue;
-      let sc = 0;
+      let sc = 0, rawN = 0; // sc — верных «сырых» заданий, rawN — всего «сырых» заданий
       for (const it of sec.items) {
-        if (it.kind === 'choice' || it.kind === 'fill') {
-          const ok = keyOk(answers[it.zid], it.key); add(it.kes, ok); if (ok) sc++;
-        } else if (it.kind === 'gap') {
-          const ok = keyOk(answers[it.zid], it.key); add(it.kes, ok); if (ok) sc++;
+        if (it.kind === 'choice' || it.kind === 'fill' || it.kind === 'gap') {
+          const ok = keyOk(answers[it.zid], it.key); add(it.kes, ok); rawN++; if (ok) sc++;
         } else if (it.kind === 'match') {
           const a = answers[it.zid] || {};
-          it.speakers.forEach((sp, idx) => { const ok = (a[sp] || '') === it.key[idx]; add(it.kes, ok); if (ok) sc++; });
+          it.speakers.forEach((sp, idx) => { const ok = (a[sp] || '') === it.key[idx]; add(it.kes, ok); rawN++; if (ok) sc++; });
         } else if (it.kind === 'rmatch') {
           const a = answers[it.zid] || {};
-          LETTERS.filter((L) => it.texts[L] != null).forEach((L, idx) => { const ok = (a[L] || '') === it.answer[idx]; add(it.kes, ok); if (ok) sc++; });
+          LETTERS.filter((L) => it.texts[L] != null).forEach((L, idx) => { const ok = (a[L] || '') === it.answer[idx]; add(it.kes, ok); rawN++; if (ok) sc++; });
         } else if (it.kind === 'gaps') {
           const a = answers[it.zid] || {};
-          (it.gaps || LETTERS).forEach((L, idx) => { const ok = (a[L] || '') === it.answer[idx]; add(it.kes, ok); if (ok) sc++; });
+          (it.gaps || LETTERS).forEach((L, idx) => { const ok = (a[L] || '') === it.answer[idx]; add(it.kes, ok); rawN++; if (ok) sc++; });
         } else if (it.kind === 'tfns') {
           const a = answers['tf:' + it.group] || {};
-          it.statements.forEach((st) => { const ok = (a[st.num] || '') === st.answer; add(it.kes, ok); if (ok) sc++; });
+          it.statements.forEach((st) => { const ok = (a[st.num] || '') === st.answer; add(it.kes, ok); rawN++; if (ok) sc++; });
         }
       }
-      secScores.push({ id: sec.id, title: sec.title, score: sc, max: sec.maxPts });
+      // разделы с флагом scaled (ЕГЭ) → масштабируем «сырой» результат к официальному максимуму раздела
+      const score = (sec.scaled && rawN) ? Math.round(sc / rawN * sec.maxPts) : sc;
+      secScores.push({ id: sec.id, title: sec.title, score, max: sec.maxPts });
     }
 
     // Письмо — AI (если есть текст и сеть). Иначе — отложенная оценка. Может быть несколько (ЕГЭ: email+essay).
@@ -392,12 +395,25 @@ export async function renderMock(container, cfg) {
       .map((w) => el('div', { class: 'mock-wnote', text: (w.status === 'pending' ? M.writePending : M.writeEmpty) + (w.title ? ' (' + w.title + ')' : '') }));
     const wFb = (writings || []).filter((w) => w.status === 'graded').map((w) => writingFeedback(w.result, w.title));
 
+    // ЕГЭ: прогноз тестового балла (100-балльная). Считаем по % за письменную, проецируя тот же
+    // уровень на устную часть: первичный 0-82 → тестовый по таблице ФИПИ.
+    let testCard = null;
+    if (p2t && result.max) {
+      const projPrimary = Math.max(1, Math.min(82, Math.round(result.total / result.max * 82)));
+      const testScore = p2t[projPrimary] || p2t[String(projPrimary)] || 0;
+      testCard = el('div', { class: 'mock-test' }, [
+        el('div', { class: 'mock-test-v', text: M.testProj(testScore) }),
+        el('div', { class: 'mock-test-n', text: M.testProjNote }),
+      ]);
+    }
+
     mount(container, el('div', { class: 'result view' }, [
       el('div', { class: 'mock-result-hero' }, [
         auto ? el('div', { class: 'mock-auto', text: M.timeUp }) : null,
         el('div', { class: 'mock-big', text: result.total + ' / ' + result.max }),
         el('div', { class: 'mock-big-sub', text: M.pointsScored(pct) }),
         el('div', { class: 'mock-note', text: M.writtenPartNote }),
+        testCard,
       ]),
       ...wNotes,
       el('div', { class: 'mock-res-card' }, [el('div', { class: 'mock-res-h', text: M.bySection }), ...rows]),

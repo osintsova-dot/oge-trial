@@ -1056,3 +1056,6 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .mc-code{flex:none;font-weight:800;color:var(--p-text);min-width:30px}
 .mc-name{flex:1;font-size:13.5px;color:var(--ink)}
 .mc-sc{flex:none;font-weight:800}
+.mock-test{margin-top:14px;background:var(--grad-mock);border-radius:14px;padding:13px 16px;color:#fff}
+.mock-test-v{font-size:20px;font-weight:900}
+.mock-test-n{font-size:11.5px;opacity:.9;margin-top:3px;line-height:1.35}

@@ -163,7 +163,8 @@
        "key": "3"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -312,7 +313,8 @@
        "key": "2"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -437,7 +439,8 @@
        "key": "international"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -514,7 +517,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E2",
@@ -678,7 +681,8 @@
        "key": "1"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -827,7 +831,8 @@
        "key": "3"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -952,7 +957,8 @@
        "key": "creation"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -1029,7 +1035,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E3",
@@ -1193,7 +1199,8 @@
        "key": "3"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -1342,7 +1349,8 @@
        "key": "1"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -1467,7 +1475,8 @@
        "key": "governor"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -1544,7 +1553,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E4",
@@ -1708,7 +1717,8 @@
        "key": "3"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -1857,7 +1867,8 @@
        "key": "2"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -1982,7 +1993,8 @@
        "key": "really"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -2059,7 +2071,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E5",
@@ -2223,7 +2235,8 @@
        "key": "3"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -2372,7 +2385,8 @@
        "key": "4"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -2497,7 +2511,8 @@
        "key": "certainly"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -2574,7 +2589,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E6",
@@ -2738,7 +2753,8 @@
        "key": "1"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -2887,7 +2903,8 @@
        "key": "2"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -3012,7 +3029,8 @@
        "key": "championships"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -3089,7 +3107,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E7",
@@ -3253,7 +3271,8 @@
        "key": "3"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -3402,7 +3421,8 @@
        "key": "4"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -3527,7 +3547,8 @@
        "key": "Accommodation"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -3604,7 +3625,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E8",
@@ -3768,7 +3789,8 @@
        "key": "1"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -3917,7 +3939,8 @@
        "key": "2"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -4042,7 +4065,8 @@
        "key": "beautiful"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -4119,7 +4143,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E9",
@@ -4283,7 +4307,8 @@
        "key": "3"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -4432,7 +4457,8 @@
        "key": "3"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -4557,7 +4583,8 @@
        "key": "development"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -4634,7 +4661,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E10",
@@ -4798,7 +4825,8 @@
        "key": "3"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -4947,7 +4975,8 @@
        "key": "3"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -5072,7 +5101,8 @@
        "key": "performances"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -5149,7 +5179,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E11",
@@ -5313,7 +5343,8 @@
        "key": "1"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -5462,7 +5493,8 @@
        "key": "3"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -5587,7 +5619,8 @@
        "key": "regardless"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -5664,7 +5697,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E12",
@@ -5828,7 +5861,8 @@
        "key": "2"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -5977,7 +6011,8 @@
        "key": "3"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -6102,7 +6137,8 @@
        "key": "various"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -6179,7 +6215,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E13",
@@ -6343,7 +6379,8 @@
        "key": "3"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -6492,7 +6529,8 @@
        "key": "3"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -6617,7 +6655,8 @@
        "key": "fascinating"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -6694,7 +6733,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E14",
@@ -6858,7 +6897,8 @@
        "key": "2"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -7007,7 +7047,8 @@
        "key": "1"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -7132,7 +7173,8 @@
        "key": "joggers"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -7209,7 +7251,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E15",
@@ -7373,7 +7415,8 @@
        "key": "1"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -7522,7 +7565,8 @@
        "key": "2"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -7647,7 +7691,8 @@
        "key": "government"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -7724,7 +7769,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E16",
@@ -7888,7 +7933,8 @@
        "key": "2"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -8037,7 +8083,8 @@
        "key": "4"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -8162,7 +8209,8 @@
        "key": "greatly"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -8239,7 +8287,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E17",
@@ -8403,7 +8451,8 @@
        "key": "3"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -8552,7 +8601,8 @@
        "key": "2"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -8677,7 +8727,8 @@
        "key": "visitor"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -8754,7 +8805,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E18",
@@ -8918,7 +8969,8 @@
        "key": "1"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -9067,7 +9119,8 @@
        "key": "4"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -9192,7 +9245,8 @@
        "key": "impressive"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -9269,7 +9323,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E19",
@@ -9433,7 +9487,8 @@
        "key": "1"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -9582,7 +9637,8 @@
        "key": "3"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -9707,7 +9763,8 @@
        "key": "unforgettable"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -9784,7 +9841,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E20",
@@ -9948,7 +10005,8 @@
        "key": "2"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -10097,7 +10155,8 @@
        "key": "2"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -10222,7 +10281,8 @@
        "key": "naturally"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -10299,7 +10359,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E21",
@@ -10463,7 +10523,8 @@
        "key": "2"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -10612,7 +10673,8 @@
        "key": "2"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -10737,7 +10799,8 @@
        "key": "beautiful"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -10814,7 +10877,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E22",
@@ -10978,7 +11041,8 @@
        "key": "2"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -11127,7 +11191,8 @@
        "key": "2"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -11252,7 +11317,8 @@
        "key": "unforgettable"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -11329,7 +11395,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E23",
@@ -11493,7 +11559,8 @@
        "key": "1"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -11642,7 +11709,8 @@
        "key": "2"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -11767,7 +11835,8 @@
        "key": "buildings"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -11844,7 +11913,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E24",
@@ -12008,7 +12077,8 @@
        "key": "2"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -12157,7 +12227,8 @@
        "key": "3"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -12282,7 +12353,8 @@
        "key": "buildings"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -12359,7 +12431,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E25",
@@ -12523,7 +12595,8 @@
        "key": "3"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -12672,7 +12745,8 @@
        "key": "3"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -12797,7 +12871,8 @@
        "key": "retirement"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -12874,7 +12949,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E26",
@@ -13038,7 +13113,8 @@
        "key": "3"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -13187,7 +13263,8 @@
        "key": "1"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -13312,7 +13389,8 @@
        "key": "really"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -13389,7 +13467,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   },
   {
    "id": "E27",
@@ -13553,7 +13631,8 @@
        "key": "1"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "reading",
@@ -13702,7 +13781,8 @@
        "key": "2"
       }
      ],
-     "maxPts": 20
+     "maxPts": 12,
+     "scaled": true
     },
     {
      "id": "grammar",
@@ -13827,7 +13907,8 @@
        "key": "surroundings"
       }
      ],
-     "maxPts": 13
+     "maxPts": 18,
+     "scaled": true
     },
     {
      "id": "writing",
@@ -13904,7 +13985,7 @@
      }
     }
    ],
-   "maxPts": 73
+   "maxPts": 62
   }
  ]
 }
