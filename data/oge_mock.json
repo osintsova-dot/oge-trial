@@ -6490,9 +6490,18 @@
        "text": "Later Jane said: “I understood that __________________ meant a lot to a small boy but I would never have imagined that FRIEND",
        "base_word": "FRIEND",
        "key": "friendship"
+      },
+      {
+       "kind": "gap",
+       "sub": "wordform",
+       "zid": "41C26C",
+       "kes": "2.3.7.2",
+       "text": "On July 4, 1886 the United States received their __________________ gift – the Statue of Liberty! AMAZE",
+       "base_word": "AMAZE",
+       "key": "amazing"
       }
      ],
-     "maxPts": 14
+     "maxPts": 15
     },
     {
      "id": "writing",
@@ -6535,7 +6544,7 @@
      }
     }
    ],
-   "maxPts": 52
+   "maxPts": 53
   },
   {
    "id": "M18",
@@ -6825,15 +6834,6 @@
       {
        "kind": "gap",
        "sub": "wordform",
-       "zid": "41C26C",
-       "kes": "2.3.7.2",
-       "text": "On July 4, 1886 the United States received their __________________ gift – the Statue of Liberty! AMAZE",
-       "base_word": "AMAZE",
-       "key": "amazing"
-      },
-      {
-       "kind": "gap",
-       "sub": "wordform",
        "zid": "425D19",
        "kes": "2.3.7.2",
        "text": "The problem is that there will be people who may use the pill unwisely. For example, young girls who want to lose weight and get slim may take several pills at once. It will be very __________________ for their health. HARM",
@@ -6875,6 +6875,15 @@
        "text": "There is a popular opinion that all children are talented. It s true - children are curious and have a good __________________. IMAGINE",
        "base_word": "IMAGINE",
        "key": "imagination"
+      },
+      {
+       "kind": "gap",
+       "sub": "wordform",
+       "zid": "475DFC",
+       "kes": "2.3.7.2",
+       "text": "but above all, books are just __________________. INTEREST",
+       "base_word": "INTEREST",
+       "key": "interesting"
       }
      ],
      "maxPts": 15
@@ -7210,15 +7219,6 @@
       {
        "kind": "gap",
        "sub": "wordform",
-       "zid": "475DFC",
-       "kes": "2.3.7.2",
-       "text": "but above all, books are just __________________. INTEREST",
-       "base_word": "INTEREST",
-       "key": "interesting"
-      },
-      {
-       "kind": "gap",
-       "sub": "wordform",
        "zid": "477550",
        "kes": "2.3.7.6",
        "text": "Naturally enough, I wanted to choose the __________________ community of the hostel. NATIONAL",
@@ -7260,6 +7260,15 @@
        "text": "Unfortunately, we can t use this method too often. The positive effect does not last long. Meanwhile chocolate is not __________________ food. HARM",
        "base_word": "HARM",
        "key": "harmless"
+      },
+      {
+       "kind": "gap",
+       "sub": "wordform",
+       "zid": "49057A",
+       "kes": "2.3.7.1",
+       "text": "He was the __________________ of the race three times during the 1970s. WIN",
+       "base_word": "WIN",
+       "key": "winner"
       }
      ],
      "maxPts": 15
