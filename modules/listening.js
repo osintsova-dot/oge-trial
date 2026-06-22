@@ -66,8 +66,15 @@ export async function renderListening(container, cfg) {
   // --- Меню: список вариантов ---
   function menuScreen() {
     const stats = sectionStats(SECTION);
-    const sub = `${data.groups.length} ${plural(data.groups.length, t.varWord || ['вариант', 'варианта', 'вариантов'])}` +
-      (stats.attempted ? ` · ${pct(stats.correct, stats.attempted)}%` : '');
+    // группировка по категориям (ЕГЭ: match/tf/mc). ОГЭ — без cat → один плоский список.
+    const cats = {};
+    data.groups.forEach((g) => { const c = g.cat || '_'; (cats[c] = cats[c] || []).push(g); });
+    const acc = stats.attempted ? ` · ${pct(stats.correct, stats.attempted)}%` : '';
+    // подпись: для ЕГЭ — разбивка по категориям; для ОГЭ — N вариантов
+    const cshort = L.catShort || {};
+    const sub = (cats['_'])
+      ? `${data.groups.length} ${plural(data.groups.length, t.varWord || ['вариант', 'варианта', 'вариантов'])}${acc}`
+      : ['match', 'tf', 'mc'].filter((c) => cats[c]).map((c) => `${cshort[c] || c} ${cats[c].length}`).join(' · ') + acc;
     const done = getListeningDone();
     const card = (g, label) => {
       const d = done[g.vid || g.id];
@@ -80,14 +87,12 @@ export async function renderListening(container, cfg) {
         el('div', { class: 'at-arrow', text: d ? '✓' : '→' }),
       ]);
     };
-    // группировка по категориям (ЕГЭ: match/tf/mc). ОГЭ — без cat → один плоский список.
-    const cats = {};
-    data.groups.forEach((g) => { const c = g.cat || '_'; (cats[c] = cats[c] || []).push(g); });
     const body = [el('div', { class: 'topics-label', text: L.pickVariant })];
     for (const c of ['match', 'tf', 'mc', '_']) {
       const arr = cats[c]; if (!arr) continue;
-      if (c !== '_') body.push(el('div', { class: 'ls-cat-h', text: (L.cat && L.cat[c]) || c }));
-      arr.forEach((g, i) => body.push(card(g, (c === 'match' || c === 'tf') ? ('№ ' + (i + 1)) : L.variant((c === '_' ? data.groups.indexOf(g) : i) + 1))));
+      if (c !== '_') body.push(el('div', { class: 'ls-cat-h', text: ((L.cat && L.cat[c]) || c) + ' · ' + arr.length }));
+      // ОГЭ (без категорий) → «Вариант N» (полный вариант); ЕГЭ-категории → «№ N» (отдельные задания/блоки)
+      arr.forEach((g, i) => body.push(card(g, c === '_' ? L.variant(data.groups.indexOf(g) + 1) : ('№ ' + (i + 1)))));
     }
     mount(container, el('div', { class: 'view' }, [
       secBar(cfg.goHome, sub),
