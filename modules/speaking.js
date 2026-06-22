@@ -6,6 +6,7 @@ import { el, mount, iconImg, celebrate } from '../js/ui.js';
 import { loadJSON } from '../js/data.js';
 import { recordRound, getName, getSpeakingDone, markSpeakingDone } from '../js/gamify.js';
 import { speak, canSpeak, pauseSpeak, resumeSpeak, stopSpeak } from '../js/speak.js';
+import { recognize, canRecognize } from '../js/stt.js';
 import { getActiveTheme } from '../js/vocab_srs.js';
 import { themeName, allThemeNames } from '../js/themes.js';
 import { t } from '../js/exam.js';
@@ -118,8 +119,9 @@ export async function renderSpeaking(container, cfg) {
   }
 
   // --- Диктофон (MediaRecorder): запись / стоп / переслушать / перезаписать ---
+  // Возвращает { wrap, getBlob, onRecorded } — getBlob отдаёт последнюю запись (для ИИ-проверки).
   function recorder() {
-    let mr = null, stream = null, url = null, chunks = [];
+    let mr = null, stream = null, url = null, chunks = [], lastBlob = null, recordedCb = null;
     const player = el('audio', { class: 'sp-audio', controls: '', style: { display: 'none' } });
     const timer = el('span', { class: 'sp-timer', text: '0:00' });
     let t0 = 0, tick = null;
@@ -136,10 +138,12 @@ export async function renderSpeaking(container, cfg) {
       mr.ondataavailable = (e) => { if (e.data.size) chunks.push(e.data); };
       mr.onstop = () => {
         const blob = new Blob(chunks, { type: mr.mimeType || 'audio/webm' });
+        lastBlob = blob;
         if (url) URL.revokeObjectURL(url);
         url = URL.createObjectURL(blob);
         player.src = url; player.style.display = 'block';
         stopTracks();
+        if (recordedCb) recordedCb(blob);
       };
       mr.start();
       t0 = 0; timer.textContent = '0:00';
@@ -158,7 +162,7 @@ export async function renderSpeaking(container, cfg) {
       el('div', { class: 'sp-rec-row' }, [btn, timer]),
       hint, player,
     ]);
-    return wrap;
+    return { wrap, getBlob: () => lastBlob, onRecorded: (cb) => { recordedCb = cb; } };
   }
 
   // блок чеклиста критериев (само-оценка)
@@ -238,18 +242,99 @@ export async function renderSpeaking(container, cfg) {
     return el('div', { class: 'sp-native-wrap' }, [btn, au]);
   }
 
+  // --- ИИ-проверка: запись → распознавание (SpeechKit) → оценка по критериям (DeepSeek) ---
+  const EVAL_WORKER = 'https://purple-cake-2966.o-sintsova.workers.dev';
+
+  function aiCheck(kind, item, rec) {
+    if (!canRecognize()) return null;
+    const out = el('div', { class: 'sp-ai-out' });
+    const btn = el('button', { class: 'btn btn-ghost sp-ai-btn', text: '🤖 ' + S.aiCheck });
+    const hint = (txt, cls) => out.replaceChildren(el('div', { class: cls || 'sp-ai-hint', text: txt }));
+    btn.addEventListener('click', async () => {
+      const blob = rec.getBlob();
+      if (!blob) { hint(S.aiNoRec); return; }
+      btn.disabled = true;
+      hint(S.aiRecognizing);
+      let transcript;
+      try { transcript = await recognize(blob, (d, n) => hint(`${S.aiRecognizing} (${d}/${n})`)); }
+      catch (e) { hint(S.aiErr + ' ' + (e.message || ''), 'sp-ai-err'); btn.disabled = false; return; }
+      if (!transcript) { hint(S.aiEmpty, 'sp-ai-err'); btn.disabled = false; return; }
+      hint(S.aiEvaluating);
+      try { out.replaceChildren(aiResult(await evalSpeaking(kind, item, transcript), transcript)); }
+      catch (e) { hint(S.aiErr + ' ' + (e.message || ''), 'sp-ai-err'); }
+      btn.disabled = false;
+    });
+    return el('div', { class: 'sp-ai' }, [btn, out]);
+  }
+
+  function aiResult(res, transcript) {
+    const crit = (res.criteria || []).map((c) => el('div', { class: 'mock-crit' }, [
+      el('span', { class: 'mc-code', text: c.code }),
+      el('span', { class: 'mc-name', text: c.name + (c.comment ? ' — ' + c.comment : '') }),
+      el('span', { class: 'mc-sc', text: (c.score ?? '–') + '/' + c.max }),
+    ]));
+    let openT = false;
+    const tBody = el('div', { class: 'sp-sample-text', style: { display: 'none' }, text: transcript });
+    const tHead = el('button', { class: 'sp-sample-head' }, [
+      el('span', { text: '🗒 ' + S.aiTranscript }), el('span', { class: 'sp-sample-chev', text: '▾' }),
+    ]);
+    tHead.addEventListener('click', () => { openT = !openT; tBody.style.display = openT ? '' : 'none'; tHead.querySelector('.sp-sample-chev').textContent = openT ? '▴' : '▾'; });
+    return el('div', { class: 'sp-ai-card' }, [
+      el('div', { class: 'sp-ai-score', text: (res.totalScore ?? '–') + ' / ' + res.max }),
+      res.verdict ? el('div', { class: 'sp-ai-verdict', text: res.verdict }) : null,
+      ...crit,
+      el('div', { class: 'sp-ai-note', text: S.aiNote }),
+      el('div', { class: 'sp-sample' }, [tHead, tBody]),
+    ].filter(Boolean));
+  }
+
+  async function evalSpeaking(kind, item, transcript) {
+    let task, crit;
+    if (kind === 'survey') {
+      task = `ОГЭ говорение, задание 2 (телефонный опрос). Вопросы (ученик отвечает на каждый полным предложением, 1 балл за уместный полный ответ):\n${(item.questions || []).map((q, i) => (i + 1) + '. ' + q).join('\n')}`;
+      crit = (item.questions || []).map((q, i) => ({ code: 'В' + (i + 1), name: 'Ответ на вопрос ' + (i + 1), max: 1 }));
+    } else if (kind === 'monologue') {
+      task = `ОГЭ говорение, задание 3 (монолог) на тему "${item.topic}". План:\n${(item.plan || []).map((p, i) => (i + 1) + '. ' + p).join('\n')}`;
+      crit = [
+        { code: 'К1', name: 'Решение задачи (раскрыты все пункты плана)', max: 3 },
+        { code: 'К2', name: 'Организация (вступление, связки, вывод)', max: 2 },
+        { code: 'К3', name: 'Языковое оформление', max: 2 },
+      ];
+    } else {
+      task = `ОГЭ говорение, задание 1 (чтение текста вслух). Исходный текст:\n"""${item.text}"""\nОцени по распознанной речи, насколько полно и точно прочитан текст. Произношение/интонацию по тексту оценить нельзя — отметь это в комментарии.`;
+      crit = [{ code: 'Чт', name: 'Полнота и точность чтения (по распознаванию)', max: 2 }];
+    }
+    const critJson = crit.map((c) => `{"code":"${c.code}","name":"${c.name}","score":<0-${c.max}>,"max":${c.max},"comment":"<кратко по-русски>"}`).join(',');
+    const mx = crit.reduce((s, c) => s + c.max, 0);
+    const sys = 'Ты опытный экзаменатор ОГЭ по английскому (устная часть). Оцениваешь по официальным критериям ФИПИ. Возвращаешь ТОЛЬКО валидный JSON, без markdown. Комментарии — по-русски, доброжелательно.';
+    const user = `${task}\n\nРаспознанная речь ученика (через автоматическое распознавание, возможны мелкие ошибки распознавания — будь снисходителен к ним):\n"""${transcript}"""\n\nВерни JSON строго так:\n{"totalScore":<0-${mx}>,"criteria":[${critJson}],"verdict":"<2-3 предложения: что хорошо и что улучшить>"}\ntotalScore = сумма по критериям.`;
+    const r = await fetch(EVAL_WORKER, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ model: 'deepseek-chat', max_tokens: 1200, messages: [{ role: 'system', content: sys }, { role: 'user', content: user }] }),
+    });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const d = await r.json();
+    if (d.error) throw new Error(d.error.message || 'err');
+    if (!d.choices || !d.choices[0]) throw new Error('пустой ответ');
+    const res = JSON.parse(d.choices[0].message.content.replace(/```json|```/g, '').trim());
+    res.max = mx;
+    return res;
+  }
+
   // --- Экран задания ---
   function startTask(kind, item) {
     let body;
+    const rec = recorder();
     if (kind === 'read') {
       body = [
         el('div', { class: 'sp-instr', text: S.readInstr }),
         el('div', { class: 'sp-text', text: item.text }),
         spkBtn(item.text),
         el('div', { class: 'sp-step', text: S.yourTurn }),
-        recorder(),
+        rec.wrap,
+        aiCheck(kind, item, rec),
         checklist(S.critRead),
-      ];
+      ].filter(Boolean);
     } else if (kind === 'survey') {
       const au = el('audio', { class: 'ls-audio', controls: '', preload: 'none', src: item.audio });
       body = [
@@ -257,7 +342,8 @@ export async function renderSpeaking(container, cfg) {
         el('div', { class: 'sp-step', text: '🔊 ' + S.surveyPlay }),
         au,
         el('div', { class: 'sp-step', text: S.yourTurn }),
-        recorder(),
+        rec.wrap,
+        aiCheck(kind, item, rec),
         checklist(S.critSurvey),
         surveySampleBlock(item.questions, item.samples),
       ].filter(Boolean);
@@ -267,7 +353,8 @@ export async function renderSpeaking(container, cfg) {
         el('div', { class: 'sp-plan-h', text: S.planTitle }),
         el('ol', { class: 'sp-plan' }, item.plan.map((p) => el('li', { text: p }))),
         el('div', { class: 'sp-step', text: S.yourTurn }),
-        recorder(),
+        rec.wrap,
+        aiCheck(kind, item, rec),
         checklist(S.critMono),
         sampleBlock(item.sample),
         nativeBlock(item.native),

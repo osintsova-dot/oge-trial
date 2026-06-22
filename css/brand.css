@@ -1063,3 +1063,13 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .mock-test.grade-3{background:linear-gradient(150deg,#F2A03C,#E07A2C)}
 .mock-test.grade-4{background:linear-gradient(150deg,#3F8F7A,#2C6E63)}
 .mock-test.grade-5{background:linear-gradient(150deg,#4FAE6A,#2E8B57)}
+/* ИИ-проверка говорения */
+.sp-ai{margin-top:12px}
+.sp-ai-btn{width:100%;background:var(--grad-speaking);color:#fff;border:none;font-weight:800}
+.sp-ai-out:not(:empty){margin-top:10px}
+.sp-ai-hint{font-size:14px;color:var(--muted);text-align:center;padding:10px}
+.sp-ai-err{font-size:14px;color:var(--bad);padding:10px;background:rgba(220,80,80,.08);border-radius:10px}
+.sp-ai-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px}
+.sp-ai-score{font-size:30px;font-weight:900;color:var(--p-text);text-align:center}
+.sp-ai-verdict{font-size:14px;line-height:1.5;color:var(--ink);margin:8px 0 12px;font-style:italic}
+.sp-ai-note{font-size:11.5px;color:var(--muted);line-height:1.4;margin-top:10px}
