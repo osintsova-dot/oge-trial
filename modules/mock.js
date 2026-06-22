@@ -25,9 +25,13 @@ export async function renderMock(container, cfg) {
   try { data = await loadJSON(cfg.dataFile || 'oge_mock'); }
   catch (e) { mount(container, el('div', { class: 'err-msg', text: e.message })); return; }
   const variants = data.variants || [];
-  // таблица перевода первичного → тестового (только ЕГЭ; для прогноза экзаменационного балла)
-  let p2t = null;
-  if (EXAM.id === 'ege') { try { const sc = await loadJSON('scoring'); p2t = sc.ege && sc.ege.primary_to_test; } catch {} }
+  // прогноз итога: ЕГЭ — тестовый балл (таблица), ОГЭ — отметка 2–5 (шкала). Считаем от examDate-независимо.
+  let p2t = null, gradeScale = null;
+  try {
+    const sc = await loadJSON('scoring');
+    if (EXAM.id === 'ege') p2t = sc.ege && sc.ege.primary_to_test;
+    if (EXAM.id === 'oge') gradeScale = sc.oge && sc.oge.grade_scale;
+  } catch {}
 
   let timerId = null;
   function clearTimer() { if (timerId) { clearInterval(timerId); timerId = null; } }
@@ -404,6 +408,16 @@ export async function renderMock(container, cfg) {
       testCard = el('div', { class: 'mock-test' }, [
         el('div', { class: 'mock-test-v', text: M.testProj(testScore) }),
         el('div', { class: 'mock-test-n', text: M.testProjNote }),
+      ]);
+    }
+    // ОГЭ: прогноз отметки 2–5. Проецируем % за письменную на полный балл (письменная+устная).
+    if (gradeScale && gradeScale.length && result.max) {
+      const fullMax = gradeScale[gradeScale.length - 1].max;
+      const projFull = Math.round(result.total / result.max * fullMax);
+      const g = gradeScale.find((x) => projFull >= x.min && projFull <= x.max) || gradeScale[0];
+      testCard = el('div', { class: 'mock-test grade-' + g.grade }, [
+        el('div', { class: 'mock-test-v', text: M.gradeProj(g.grade) }),
+        el('div', { class: 'mock-test-n', text: M.gradeProjNote }),
       ]);
     }
 

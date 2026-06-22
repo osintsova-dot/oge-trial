@@ -1059,3 +1059,7 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .mock-test{margin-top:14px;background:var(--grad-mock);border-radius:14px;padding:13px 16px;color:#fff}
 .mock-test-v{font-size:20px;font-weight:900}
 .mock-test-n{font-size:11.5px;opacity:.9;margin-top:3px;line-height:1.35}
+.mock-test.grade-2{background:linear-gradient(150deg,#E0556B,#C0394F)}
+.mock-test.grade-3{background:linear-gradient(150deg,#F2A03C,#E07A2C)}
+.mock-test.grade-4{background:linear-gradient(150deg,#3F8F7A,#2C6E63)}
+.mock-test.grade-5{background:linear-gradient(150deg,#4FAE6A,#2E8B57)}
