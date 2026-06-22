@@ -221,9 +221,9 @@ function fillPackCard(node) {
   const pk = packStatus();
   const packItems = pk.sections.map((ps) => {
     const sec = EXAM.sections.find((s) => s.id === ps.id);
-    return el('div', { class: 'pk-cell' + (ps.done ? ' done' : '') }, [
+    // подписи убраны (длинные названия не влезали в узкие плашки) — иконка + счёт; имя в подсказке
+    return el('div', { class: 'pk-cell' + (ps.done ? ' done' : ''), title: t.sections[ps.id] || ps.id }, [
       el('div', { class: 'pk-ic' }, [iconImg(sec && sec.iconFile ? sec.iconFile : ('ic-' + (sec ? (sec.iconKey || sec.tile) : ps.id)), sec ? sec.icon : '•', 'pk-img')]),
-      el('div', { class: 'pk-name', text: t.sections[ps.id] || ps.id }),
       ps.done ? el('div', { class: 'pk-chk', text: '✓' })
         : (ps.target != null ? el('div', { class: 'pk-prog', text: ps.count + '/' + ps.target }) : null),
     ]);
