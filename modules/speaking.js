@@ -5,7 +5,7 @@
 import { el, mount, iconImg, celebrate } from '../js/ui.js';
 import { loadJSON } from '../js/data.js';
 import { recordRound, getName } from '../js/gamify.js';
-import { speak, canSpeak } from '../js/speak.js';
+import { speak, canSpeak, pauseSpeak, resumeSpeak, stopSpeak } from '../js/speak.js';
 import { t } from '../js/exam.js';
 import { tipButton, autoTipOnce } from '../js/tips.js';
 
@@ -36,6 +36,7 @@ export async function renderSpeaking(container, cfg) {
 
   // --- Меню: 3 типа заданий ---
   function menuScreen() {
+    stopSpeak();
     const cats = [
       { key: 'read', label: S.catRead, arr: data.read, icon: '📖' },
       { key: 'survey', label: S.catSurvey, arr: data.survey, icon: '📞' },
@@ -109,9 +110,52 @@ export async function renderSpeaking(container, cfg) {
     ]);
   }
 
+  // Кнопка эталона: плей → пауза/продолжить + стоп (остановить в любой момент).
   function spkBtn(text) {
     if (!canSpeak()) return null;
-    return el('button', { class: 'btn btn-ghost sp-tts', onclick: () => speak(text) }, ['🔊 ' + S.listenModel]);
+    let state = 'idle'; // idle | playing | paused
+    const play = el('button', { class: 'btn btn-ghost sp-tts', text: '🔊 ' + S.listenModel });
+    const stop = el('button', { class: 'btn btn-ghost sp-tts-stop', text: '⏹', title: S.ttsStop, style: { display: 'none' } });
+    function reset() { state = 'idle'; play.textContent = '🔊 ' + S.listenModel; stop.style.display = 'none'; }
+    play.addEventListener('click', () => {
+      if (state === 'idle') {
+        state = 'playing';
+        play.textContent = '⏸ ' + S.ttsPause;
+        stop.style.display = '';
+        speak(text, { onend: reset });
+      } else if (state === 'playing') {
+        state = 'paused'; pauseSpeak(); play.textContent = '▶️ ' + S.ttsResume;
+      } else {
+        state = 'playing'; resumeSpeak(); play.textContent = '⏸ ' + S.ttsPause;
+      }
+    });
+    stop.addEventListener('click', () => { stopSpeak(); reset(); });
+    return el('div', { class: 'sp-tts-row' }, [play, stop]);
+  }
+
+  // Свёрнутый «образец ответа» (эталон) с кнопкой проигрывания.
+  function sampleBlock(text) {
+    if (!text) return null;
+    const body = el('div', { class: 'sp-sample-body', style: { display: 'none' } }, [
+      spkBtn(text),
+      el('div', { class: 'sp-sample-text', text }),
+    ]);
+    let open = false;
+    const head = el('button', { class: 'sp-sample-head' }, [
+      el('span', { text: '📝 ' + S.sampleTitle }),
+      el('span', { class: 'sp-sample-chev', text: '▾' }),
+    ]);
+    head.addEventListener('click', () => { open = !open; body.style.display = open ? '' : 'none'; head.querySelector('.sp-sample-chev').textContent = open ? '▴' : '▾'; });
+    return el('div', { class: 'sp-sample' }, [head, body]);
+  }
+
+  // Кнопка «послушать носителя по теме» — фрагмент из аудирования (если подобран).
+  function nativeBlock(native) {
+    if (!native || !native.audio) return null;
+    const au = el('audio', { class: 'ls-audio', controls: '', preload: 'none', src: native.audio });
+    const btn = el('button', { class: 'btn btn-ghost sp-native', text: '🎧 ' + S.listenNative,
+      onclick: () => { try { au.currentTime = native.s || 0; au.play(); } catch {} } });
+    return el('div', { class: 'sp-native-wrap' }, [btn, au]);
   }
 
   // --- Экран задания ---
@@ -144,7 +188,9 @@ export async function renderSpeaking(container, cfg) {
         el('div', { class: 'sp-step', text: S.yourTurn }),
         recorder(),
         checklist(S.critMono),
-      ];
+        sampleBlock(item.sample),
+        nativeBlock(item.native),
+      ].filter(Boolean);
     }
     const done = el('button', { class: 'btn btn-primary btn-block', style: { marginTop: '18px' }, text: S.doneBtn,
       onclick: () => finish() });
@@ -157,6 +203,7 @@ export async function renderSpeaking(container, cfg) {
 
   // --- Завершение: тренировка засчитана (+XP), без объективного балла (AI — позже) ---
   function finish() {
+    stopSpeak();
     const g = recordRound(SECTION, 1, 1);
     mount(container, el('div', { class: 'result view' }, [
       el('div', { class: 'voice-msg', text: S.donePraise(getName() || t.friend) }),

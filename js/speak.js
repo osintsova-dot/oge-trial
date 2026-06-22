@@ -21,7 +21,8 @@ function pickVoice() {
 }
 
 // Произнести английский текст британским голосом.
-export function speak(text) {
+// opts.onend / opts.onstart — колбэки для управления кнопками (плей/пауза/стоп).
+export function speak(text, opts) {
   if (!canSpeak() || !text) return;
   try {
     const synth = window.speechSynthesis;
@@ -31,6 +32,15 @@ export function speak(text) {
     if (v) u.voice = v;
     u.lang = 'en-GB';
     u.rate = 0.9;
+    if (opts && opts.onstart) u.onstart = opts.onstart;
+    if (opts && opts.onend) { u.onend = opts.onend; u.onerror = opts.onend; }
     synth.speak(u);
   } catch {}
 }
+
+// Пауза / продолжить / стоп — управление воспроизведением эталона в любой момент.
+export function pauseSpeak() { try { window.speechSynthesis.pause(); } catch {} }
+export function resumeSpeak() { try { window.speechSynthesis.resume(); } catch {} }
+export function stopSpeak() { try { window.speechSynthesis.cancel(); } catch {} }
+export function isSpeaking() { try { return window.speechSynthesis.speaking; } catch { return false; } }
+export function isPaused() { try { return window.speechSynthesis.paused; } catch { return false; } }

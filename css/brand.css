@@ -309,7 +309,21 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .sp-text{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 16px;
   font-size:16px;line-height:1.6;color:var(--ink)}
 .sp-step{font-size:14px;font-weight:700;color:var(--ink);margin:16px 0 8px}
-.sp-tts{margin-top:10px}
+.sp-tts{margin-top:0}
+.sp-tts-row{display:flex;gap:8px;margin-top:10px;align-items:stretch}
+.sp-tts-row .sp-tts{flex:1}
+.sp-tts-stop{flex:none;min-width:48px;font-size:16px}
+/* образец ответа (эталон) — свёрнутая плашка */
+.sp-sample{margin-top:16px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card)}
+.sp-sample-head{width:100%;display:flex;align-items:center;justify-content:space-between;gap:8px;
+  padding:13px 15px;background:none;border:none;cursor:pointer;font-size:14px;font-weight:800;color:var(--p-text);text-align:left}
+.sp-sample-chev{color:var(--muted);font-size:13px}
+.sp-sample-body{padding:0 15px 15px}
+.sp-sample-text{margin-top:10px;font-size:15px;line-height:1.65;color:var(--ink)}
+/* послушать носителя по теме */
+.sp-native-wrap{margin-top:14px}
+.sp-native{width:100%;background:var(--grad-listening);color:#fff;border:none;font-weight:800}
+.sp-native-wrap .ls-audio{width:100%;height:40px;margin-top:10px}
 .sp-plan-h{font-size:13px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;margin:12px 2px 6px}
 .sp-plan{margin:0;padding-left:22px;font-size:15px;line-height:1.7;color:var(--ink)}
 .sp-recorder{background:var(--surf);border-radius:14px;padding:14px;margin-top:4px}
