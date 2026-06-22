@@ -18,6 +18,7 @@ const CONFIGS = {
       { id: 'listening', type: 'listening', dataFile: 'listening', tile: 'listening', iconKey: 'listening', icon: '🎧' },
       { id: 'writing',  type: 'writing', tile: 'writing', icon: '✉️' },
       { id: 'speaking', type: 'speaking', dataFile: 'oge_speaking', tile: 'speaking', iconKey: 'speaking', icon: '🎤' },
+      { id: 'mock', type: 'mock', dataFile: 'oge_mock', tile: 'mock', iconKey: 'mock', icon: '📋' },
     ],
     pack: ['grammar', 'wordform', 'reading', 'listening', 'writing', 'speaking'],
     soonTile: false,

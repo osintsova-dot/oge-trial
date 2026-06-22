@@ -134,6 +134,16 @@ export function markSpeakingDone(kind, zid) {
   s.speakingDone[kind + ':' + zid] = true; write(s);
 }
 
+// Результаты пробных экзаменов: [{date, variantId, num, total, max, sections, byKes, writing, auto}].
+export function getMockResults() { return read().mockResults || []; }
+export function recordMock(result) {
+  const s = read(); s.mockResults = s.mockResults || []; s.mockResults.push(result);
+  if (s.mockResults.length > 60) s.mockResults = s.mockResults.slice(-60);
+  write(s);
+}
+// Дата последнего пробника ('YYYY-MM-DD') или null.
+export function lastMockDate() { const a = read().mockResults || []; return a.length ? a[a.length - 1].date : null; }
+
 // Виден ли уже совет Спики по разделу (авто-показ только в первый раз)
 export function hasSeenTip(id) { return (read().tipsSeen || []).includes(id); }
 export function markTipSeen(id) { const s = read(); s.tipsSeen = s.tipsSeen || []; if (!s.tipsSeen.includes(id)) { s.tipsSeen.push(id); write(s); } }
