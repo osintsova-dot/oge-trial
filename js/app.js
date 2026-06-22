@@ -224,8 +224,9 @@ function fillPackCard(node) {
     // подписи убраны (длинные названия не влезали в узкие плашки) — иконка + счёт; имя в подсказке
     return el('div', { class: 'pk-cell' + (ps.done ? ' done' : ''), title: t.sections[ps.id] || ps.id }, [
       el('div', { class: 'pk-ic' }, [iconImg(sec && sec.iconFile ? sec.iconFile : ('ic-' + (sec ? (sec.iconKey || sec.tile) : ps.id)), sec ? sec.icon : '•', 'pk-img')]),
-      ps.done ? el('div', { class: 'pk-chk', text: '✓' })
-        : (ps.target != null ? el('div', { class: 'pk-prog', text: ps.count + '/' + ps.target }) : null),
+      // счётчик есть у всех; у пройденного — N/N зелёным + галочка сверху
+      ps.target != null ? el('div', { class: 'pk-prog' + (ps.done ? ' done' : ''), text: Math.min(ps.count, ps.target) + '/' + ps.target }) : null,
+      ps.done ? el('div', { class: 'pk-chk', text: '✓' }) : null,
     ]);
   });
   node.replaceChildren(el('div', { class: 'pack' }, [
