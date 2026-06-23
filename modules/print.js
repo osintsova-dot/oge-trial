@@ -53,7 +53,13 @@ function buildPaper(sections, P) {
       continue;
     }
     const items = [el('div', { class: 'pp-sec-h', text: sec.title })];
-    if (sec.id === 'listening' && sec.audio) items.push(el('div', { class: 'pp-audio', text: P.audioAt + ' ' + sec.audio }));
+    if (sec.id === 'listening' && sec.audio) {
+      const wrap = el('div', { class: 'pp-audio-wrap' });
+      const qr = qrEl(sec.audio);
+      if (qr) wrap.appendChild(qr);
+      wrap.appendChild(el('div', { class: 'pp-audio' }, [el('div', { class: 'pp-audio-l', text: P.audioScan }), el('div', { text: sec.audio })]));
+      items.push(wrap);
+    }
     let lastInstr = '';
     for (const it of (sec.items || [])) {
       // инструкция «что делать» — одна на группу одинаковых заданий подряд (как на экзамене)
@@ -66,6 +72,32 @@ function buildPaper(sections, P) {
     out.push(el('div', { class: 'pp-sec' }, items));
   }
   return out;
+}
+
+// QR-код ссылки на аудио (SVG, чётко печатается). Библиотека qrcode-generator (вшита локально).
+function qrEl(text) {
+  const gen = (typeof window !== 'undefined') && window.qrcode;
+  if (!gen) return null;
+  let qr = null;
+  for (const ecc of ['M', 'L']) {
+    try { qr = gen(0, ecc); qr.addData(text); qr.make(); break; } catch (e) { qr = null; }
+  }
+  if (!qr) return null;
+  const n = qr.getModuleCount(), cell = 3, size = n * cell, NS = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(NS, 'svg');
+  svg.setAttribute('width', size); svg.setAttribute('height', size);
+  svg.setAttribute('viewBox', '0 0 ' + size + ' ' + size); svg.setAttribute('class', 'pp-qr');
+  const bg = document.createElementNS(NS, 'rect');
+  bg.setAttribute('width', size); bg.setAttribute('height', size); bg.setAttribute('fill', '#fff');
+  svg.appendChild(bg);
+  for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) {
+    if (!qr.isDark(r, c)) continue;
+    const rc = document.createElementNS(NS, 'rect');
+    rc.setAttribute('x', c * cell); rc.setAttribute('y', r * cell);
+    rc.setAttribute('width', cell); rc.setAttribute('height', cell); rc.setAttribute('fill', '#000');
+    svg.appendChild(rc);
+  }
+  return svg;
 }
 
 // инструкция «что делать» по типу задания (match/rmatch несут свою — там null/title)
