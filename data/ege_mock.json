@@ -515,9 +515,55 @@
      "task": {
       "prompt": "Imagine that you are doing a project on why some Zetlanders refuse to attend music schools . You have found some data on the subject – the results of the opinion polls (see the table below) . Comment on the data in the table and give your opinion on the subject of the project . The opinion poll question: Why do you refuse to attend a music school? Reasons Number of respondents (%) No fast result 29 Time-consuming 2 3 Not interested in music 19 Far from home 15 No money for a quality instrument 14 Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that can arise with learning to play a musical instrument and suggest a way of solving it; – conclude by giving and explaining your opinion on whether one should be able to play a musical instrument . Imagine that you are doing a project called Zetland: riding a bicycle around the city . You have found some data on the subject – the results о f the opinion polls (see the pie chart below) . Comment on the data in the pie chart and give your opinion on the subject of the project . The opinion poll question: What is the key factor for you when deciding to ride a bicycle around the city? Write 200 – 250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1 – 2 comparisons where relevant and give your comments; – outline a problem that one can face when riding a bike around the city and suggest a way of solving it; – conclude by giving and explaining your opinion on whether a bicycle is a convenient means of transport."
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "051640",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/632C3B636538B8D3467579BF02FFEE8A(copy1)/xs3qstsrc632C3B636538B8D3467579BF02FFEE8A_1_1700574264.gif"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "0070A2",
+       "instruction": "Task 2. Study the advertisement. You are considering having a holiday and now you ’d like to get more information. In 1.5 minutes you are to ask five direct questions to find out about the following: Enjoy a quiet holiday by the lake! 1) location 2) accommodation 3) fishing 4) price for a week for one 5) group discounts You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/D549EC529A0BB4B4477BC75E1FE876BD(copy1)/xs3qstsrcD549EC529A0BB4B4477BC75E1FE876BD_3_1479379846.png",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/D549EC529A0BB4B4477BC75E1FE876BD(copy1)/xs3qstsrcD549EC529A0BB4B4477BC75E1FE876BD_2_1479379846.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "0CB213",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/52E4A6FBAB58BFA746F06377687B6D63/img1_1689774995.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "088D05",
+       "instruction": "Task 4. Imagine that you are doing a project “ Tastes differ ” together with your friend. You have found some illustrations and want to share the news. Leave a voice message to your friend. In 2.5 minutes be ready to: give a brief description of the photos, justifying the choice of the photos for the project ; say in what way the pictures are different, justifying the choice of the photos for the project ; mention the advantages and disadvantages (1 – 2) of the two hobbies; express your opinion on the subject of the project – which of these hobbies you would prefer and why. You will speak for not more than 3 minutes (12 – 15 sentences) . You have to talk continuously. Photo 1 Photo 2",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/37146D0A6D78801942C7C5019C22FDF1(copy1)/xs3qstsrc37146D0A6D78801942C7C5019C22FDF1_2_1646903540.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/37146D0A6D78801942C7C5019C22FDF1(copy1)/xs3qstsrc37146D0A6D78801942C7C5019C22FDF1_4_1646903540.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E2",
@@ -1033,9 +1079,55 @@
      "task": {
       "prompt": "Imagine that you are doing a project on why computer games are popular among teenagers in Zetland . You have found some data on the subject – the results of the opinion polls (see the table below) . Comment on the data in the table and give your opinion on the subject of the project . Reasons Number of respondents (%) Looking for entertainment 46 Making new friends 21 Improving mental skills 13 Developing hand-eye coordination 11 Seeking relaxation 9 Write 200 – 250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1 – 2 comparisons where relevant; – outline a problem that can arise with playing computer games and suggest a way of solving it; – conclude by giving your opinion on the role of computer games in teenagers life. Imagine that you are doing a project on why teenagers take a part-time job in Zetland . You have found some data on the subject – the results of the opinion polls (see the diagram below) . Comment on the data in the diagram and give your opinion on the subject of the project . Write 200 – 250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1 – 2 comparisons where relevant; – outline a problem that can arise with a part-time job and suggest a way of solving it; – conclude by giving your opinion on the role of a part-time job in teenagers life."
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "07A923",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/08618026CB9A986B486876E7DD4247B2(copy1)/xs3qstsrc08618026CB9A986B486876E7DD4247B2_1_1636707454.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "04E7DE",
+       "instruction": "Task 2. Study the advertisement. You are considering celebrating your birthday party in this café and now you ’d like to get more information. In 1.5 minutes you are to ask five direct questions to find out about the following: Birthday parties for all ages! 1) location 2) types of food served 3) vegetarian dishes 4) dancing floor 5) group discounts You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/A7589A7AE1D3964443752ECBEDA43A3E(copy1)/xs3qstsrcA7589A7AE1D3964443752ECBEDA43A3E_3_1479379128.png",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/A7589A7AE1D3964443752ECBEDA43A3E(copy1)/xs3qstsrcA7589A7AE1D3964443752ECBEDA43A3E_2_1479379128.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "13F252",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2– 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs//questions/8561E6E1CBBDAF7649F164ADCD57FE71/img1_1647616926.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "175951",
+       "instruction": "Task 4. Imagine that you and your friend are doing a school project “Hobbies”. You have found some illustrations and want to share the news. Leave a voice message to your friend. In 2.5 minutes be ready to : · explain the choice of the illustrations for the project by briefly describing them and noting the differences; · mention the advantages (1 – 2) of the two hobbies; · mention the disadvantages (1 – 2) of the two hobbies; · express your opinion on the subject of the project – which of the hobbies presented in the pictures you’d prefer and why. You will speak for not more than 3 minutes (12 – 15 sentences) . You have to talk continuously. Photo 1 Photo 2",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/57EB4A2E68869ABF4B392DE17967520A(copy1)/xs3qstsrc57EB4A2E68869ABF4B392DE17967520A_2_1668610713.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/57EB4A2E68869ABF4B392DE17967520A(copy1)/xs3qstsrc57EB4A2E68869ABF4B392DE17967520A_4_1668610713.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E3",
@@ -1551,9 +1643,54 @@
      "task": {
       "prompt": "Comment on the following statement. Sports help people to fight stress. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: − make an introduction (state the problem) − express your personal opinion and give 2 – 3 reasons for your opinion − express an opposing opinion and give 1 – 2 reasons for this opposing opinion − explain why you don t agree with the opposing opinion − make a conclusion restating your position"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "1276B6",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/B45F1D0C4913975A463650936D24FB6E(copy1)/xs3qstsrcB45F1D0C4913975A463650936D24FB6E_4_1639386734.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "05AB8C",
+       "instruction": "Task 2. Study the advertisement. Certified guitar teacher for you! You are considering taking some guitar lessons and now you’d like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following: 1) type of guitar used; 2) number of lessons a week; 3) tuition fee; 4) evening classes. You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/5DB5AF489E0CAA314FEC106AA3DA907E(copy1)/xs3qstsrc5DB5AF489E0CAA314FEC106AA3DA907E_2_1671454799.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "144962",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2– 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/D5600BB20980B529463347D14E46652D/img1_1721127127.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "17C388",
+       "instruction": "Task 4. Imagine that you are doing a project “ Keeping fit ” together with your friend. You have found some illustrations and want to share the news. Leave a voice message to your friend. In 2.5 minutes be ready to : give a brief description of the photos, justifying the choice of the photos for the project; say in what way the pictures are different, justifying the choice of the photos for the project; mention the advantages and disadvantages (1 – 2) of the two ways of keeping fit; express your opinion on the subject of the project – which way of keeping fit you prefer and why . You will speak for not more than 3 minutes (12 – 15 sentences) . You have to talk continuously. Photo 1 Photo 2",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/13E0339A8F65A89A4113272613AB703E(copy1)/xs3qstsrc13E0339A8F65A89A4113272613AB703E_2_1642604284.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/13E0339A8F65A89A4113272613AB703E(copy1)/xs3qstsrc13E0339A8F65A89A4113272613AB703E_4_1642604284.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E4",
@@ -2069,9 +2206,54 @@
      "task": {
       "prompt": "Comment on the following statement. One should read about historical sites before sightseeing. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: − make an introduction (state the problem) − express your personal opinion and give 2 – 3 reasons for your opinion − express an opposing opinion and give 1 – 2 reasons for this opposing opinion − explain why you do not agree with the opposing opinion − make a conclusion restating your position"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "12A7B1",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/B6CE9DA31A8C8436429E6F8D872E3333(copy1)/xs3qstsrcB6CE9DA31A8C8436429E6F8D872E3333_1_1703591209.gif"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "066823",
+       "instruction": "Task 2. Study the advertisement. You are considering going to the mountains and now you’d like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following: Join our journey to the mountains! 1) duration of the tour; 2) price for one; 3) student discounts; 4) special equipment needed. You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/B64B022B89FE99B4432BADC673F840DE(copy1)/xs3qstsrcB64B022B89FE99B4432BADC673F840DE_3_1673620529.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "1F217B",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2–3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/354615c197ff45efb79f04818452780b/img1_1759758980.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "1949AF",
+       "instruction": "Task 4. Imagine that you and your friend are doing a school project “Seasons”. You have found some photos to illustrate it but for technical reasons you cannot send them now. Leave a voice message to your friend explaining your choice of the photos and sharing some ideas about the project. In 2.5 minutes be ready to: · explain the choice of the illustrations for the project by briefly describing them and noting the differences; · mention the advantages (1 – 2) of the two seasons; · mention the disadvantages (1 – 2) of the two seasons; · express your opinion on the subject of the project – say which of the seasons presented in the pictures you preferred as a child and why . You will speak for not more than 3 minutes (12 – 15 sentences) . You have to talk continuously.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/B0883CD2D5F68A7B4E3F5060DC45A02C(copy1)/xs3qstsrcB0883CD2D5F68A7B4E3F5060DC45A02C_2_1762771066.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/B0883CD2D5F68A7B4E3F5060DC45A02C(copy1)/xs3qstsrcB0883CD2D5F68A7B4E3F5060DC45A02C_4_1762771066.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E5",
@@ -2587,9 +2769,56 @@
      "task": {
       "prompt": "Comment on one of the following statements. Nowadays natural sciences are more important than humanities. A computer cannot replace a teacher. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: – make an introduction (state the problem paraphrasing the given statement) – express your personal opinion and give 2 – 3 reasons for your opinion – express an opposing opinion and give 1 – 2 reasons for this opposing opinion – explain why you do not agree with the opposing opinion – make a conclusion restating your position"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "135FD4",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/4F31BC6354138F2946BF1F865BC64CE0(copy1)/xs3qstsrc4F31BC6354138F2946BF1F865BC64CE0_1_1541678946.png",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/4F31BC6354138F2946BF1F865BC64CE0(copy1)/xs3qstsrc4F31BC6354138F2946BF1F865BC64CE0_2_1541678946.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "08DE4D",
+       "instruction": "Task 2. Study the advertisement. You are considering ordering a cake from this company and now you’d like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following: Special order cakes for any occasion! 1) maximum size; 2) cake fillings; 3) delivery; 4) discounts. You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/616723AB2956B66448BB0D57E2B516CE(copy1)/xs3qstsrc616723AB2956B66448BB0D57E2B516CE_2_1700574207.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "2D90A4",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs//questions/960B72E44248BB2944DB1DB5112175D8/img1_1665759727.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "1F2F04",
+       "instruction": "Task 4. Study the two photographs. In 1.5 minutes be ready to compare and contrast the photographs: · give a brief description of the photos (action, location) · say what the pictures have in common · say in what way the pictures are different · say which of the ways of spending free time presented in the pictures you’d prefer · explain why You will speak for not more than 2 minutes (12 – 15 sentences) . You have to talk continuously. Photo 1. Photo 2.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/C8753A3C024489DC4506E61629E5C0FB(copy1)/xs3qstsrcC8753A3C024489DC4506E61629E5C0FB_5_1479380646.png",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/C8753A3C024489DC4506E61629E5C0FB(copy1)/xs3qstsrcC8753A3C024489DC4506E61629E5C0FB_2_1479380646.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/C8753A3C024489DC4506E61629E5C0FB(copy1)/xs3qstsrcC8753A3C024489DC4506E61629E5C0FB_4_1479380646.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E6",
@@ -3105,9 +3334,54 @@
      "task": {
       "prompt": "Imagine that you are doing a project on what literary genres are popular among teenagers in Zetland . You have found some data on the subject – the results of the opinion polls (see the table below) . Comment on the data in the table and give your opinion on the subject of the project . Literary g enre Number of readers (%) Fantasy 30 Science fiction 25 Detective/war/spy stories/thrillers 20 Other modern literature 15 Classical literature 10 Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant; – outline a problem that can arise with reading and suggest a way of solving it; – conclude by giving your opinion on the importance of reading for teenagers. Imagine that you are doing a project on why people in Zetland do sports . You have found some data on the subject – the results of the opinion polls (see the diagram below) . Comment on the data in the diagram and give your opinion on the subject of the project . Write 200 – 250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1 – 2 comparisons where relevant; – outline a problem that can arise with doing sports and suggest a way of solving it; – conclude by giving your opinion on the importance of doing sports."
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "15C1CC",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/6F0E5F3E3B25A97940199747BA97F9FF(copy1)/xs3qstsrc6F0E5F3E3B25A97940199747BA97F9FF_1_1703591352.gif"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "0EA1F7",
+       "instruction": "Task 2. Study the advertisement. You are considering getting some professional photos and now you’d like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following: A professional photographer for you! 1) location of the studio; 2) historical costumes; 3) professional make-up; 4) the cost of an hour’s work. You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/60A8E2BDB1C3B21E40DA0F193E23E0C5(copy1)/xs3qstsrc60A8E2BDB1C3B21E40DA0F193E23E0C5_2_1668608313.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "328DD2",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2–3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/7e6f67916e2b474ca4b0e17b7ada5353/img1_1777450439.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "28DDA8",
+       "instruction": "Task 4. Imagine that you and your friend are doing a school project “Doing homework ”. You have found some photos to illustrate it but for technical reasons you cannot send them now. Leave a voice message to your friend explaining your choice of the photos and sharing some ideas about the project. In 2.5 minutes be ready to: · explain the choice of the illustrations for the project by briefly describing them and noting the differences; · mention the advantages (1–2) of the two ways of doing homework; · mention the disadvantages (1–2) of the two ways of doing homework; · express your opinion on the subject of the project – which way of doing homework you preferred in primary school and why. You will speak for not more than 3 minutes (12–15 sentences) . You have to talk continuously.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/4CF0950490E387D2439DD77FAC627BB9(copy1)/xs3qstsrc96f7f7476c0048098f8a820678f82a65_2_1759410814.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/4CF0950490E387D2439DD77FAC627BB9(copy1)/xs3qstsrc96f7f7476c0048098f8a820678f82a65_3_1759410814.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E7",
@@ -3623,9 +3897,54 @@
      "task": {
       "prompt": "Comment on the following statement. Digital literacy is the key to success in any occupation. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: − make an introduction (state the problem) − express your personal opinion and give 2 – 3 reasons for your opinion − express an opposing opinion and give 1 – 2 reasons for this opposing opinion − explain why you do not agree with the opposing opinion − make a conclusion restating your position"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "1E987A",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/F69A7E6DD077B0CE4DFABB4BEB14C168(copy1)/xs3qstsrcF69A7E6DD077B0CE4DFABB4BEB14C168_1_1668608092.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "1690EA",
+       "instruction": "Task 2. Study the advertisement. You are considering going on a hike in the mountains and now you ’d like to get more information. In 1.5 minutes you are to ask five direct questions to find out about the following: Enjoy a wonderful hike in the mountains with our tour agency! 1) duration of the tour; 2) dates of the tour; 3) minimum age; 4) special equipment; 5) price for one. You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/75267542FC6D94B346A1D52327F24E27(copy2)/xs3qstsrc75267542FC6D94B346A1D52327F24E27_10_1611654562.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "3EA1EF",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2–3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs//questions/CE19C538BD89A516423565DA8E6EAF2F/img1_1665759685.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "29DB9B",
+       "instruction": "Task 4. Imagine that you and your friend are doing a school project “The best moments with grandparents” . You have found some photos to illustrate it but for technical reasons you cannot send them now. Leave a voice message to your friend explaining your choice of the photos and sharing some ideas about the project. In 2.5 minutes be ready to: · explain the choice of the illustrations for the project by briefly describing them and noting the differences; · mention the advantages (1–2) of the two types of spending time with grandparents; · mention the disadvantages (1–2) of the two types of spending time with grandparents; · express your opinion on the subject of the project – which of the two types of spending time with grandparents you’d prefer and why. You will speak for not more than 3 minutes (12–15 sentences) . You have to talk continuously.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/21ED215B17FF81F2432210E46567AD57(copy1)/xs3qstsrcb647b4f54a994a399212f5f1928bee3d_2_1759410942.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/21ED215B17FF81F2432210E46567AD57(copy1)/xs3qstsrcb647b4f54a994a399212f5f1928bee3d_3_1759410942.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E8",
@@ -4141,9 +4460,54 @@
      "task": {
       "prompt": "Imagine that you are doing a project on why many young Zetlanders choose to major in technical studies . You have found some data on the subject – the results of a survey (see the table below) . Comment on the survey data and give your opinion on the subject of the project . The survey question: Why have you chosen to major in technical studies? Reasons Number of respondents (%) Interest in technology 48 Public significance 20 High salary 18 Many job vacancies 9 Practical s kills d evelopment 5 Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that can arise for students of technology upon graduation and suggest a way of solving it; – conclude by giving and explaining your opinion on the importance of choosing the right profession. Imagine that you are doing a project on the young Zetlanders’ values . You have found some data on the subject – the results о f a survey (see the pie chart below) . Comment on the survey data and give your opinion on the subject of the project . The survey question: What is the most important thing in life for you? Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that can arise with prioritising values and suggest a way of solving it; – conclude by giving and explaining your opinion on what the most important thing in life is."
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "1F3EA7",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/F0FA8FCC7FF5A13C441F56BD35332D9B(copy2)/xs3qstsrcF0FA8FCC7FF5A13C441F56BD35332D9B_8_1612793349.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "171B2F",
+       "instruction": "Task 2. Study the advertisement. You are considering taking a part-time job and now you ’d like to get more information. In 1.5 minutes you are to ask five direct questions to find out about the following: С hoose a part-time job for you! 1) kinds of jobs; 2) skills needed; 3) minimum age; 4) payment; 5) working early in the morning. You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/B68942FFADC984A54DBAF754D187F721(copy2)/xs3qstsrcB68942FFADC984A54DBAF754D187F721_10_1605622822.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "441E9E",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2– 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/B0C50CFBF7C19DE648B9295D83F57923/img1_1721127327.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "3BAD03",
+       "instruction": "Task 4. Study the two photographs. In 1.5 minutes be ready to compare and contrast the photographs: · give a brief description of the photos (action, location); · say what the pictures have in common; · say in what way the pictures are different; · say which way of getting news presented in the pictures you prefer; · explain why. You will speak for not more than 2 minutes (12–15 sentences) . You have to talk continuously. Photo 1 Photo 2",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/7036222B2E238F414CB556F3402FB930(copy2)/xs3qstsrc7036222B2E238F414CB556F3402FB930_10_1605619900.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/7036222B2E238F414CB556F3402FB930(copy2)/xs3qstsrc7036222B2E238F414CB556F3402FB930_11_1605619900.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E9",
@@ -4659,9 +5023,54 @@
      "task": {
       "prompt": "Comment on one of the following statements. Information technology is the most important school subject. It is good to live in a big family. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: – make an introduction (state the problem paraphrasing the given statement) ; – express your personal opinion and give 2 – 3 reasons for your opinion; – express an opposing opinion and give 1 – 2 reasons for this opposing opinion; – explain why you do not agree with the opposing opinion; – make a conclusion restating your position."
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "2ECD53",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/B5B82170F906B85143DB7127C1F6A60C(copy1)/xs3qstsrcB5B82170F906B85143DB7127C1F6A60C_1_1703591792.gif"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "1E3990",
+       "instruction": "Task 2. Study the advertisement. You are considering going to the new theatre and now you ’d like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following: A new theatre now in your area! 1) location ; 2) ticket price ; 3) morning shows ; 4) group discounts. You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/6874E2B6F10480844A8202FC03AB2DAE(copy1)/xs3qstsrc6874E2B6F10480844A8202FC03AB2DAE_2_1636974639.png"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "52A9D6",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2– 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs//questions/78D96B2DB30E8FEA465AD53FABEFB08F/img1_1647617157.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "3F98F7",
+       "instruction": "Task 4. Imagine that you and your friend are doing a school project “Sports”. You have found some photos to illustrate it but for technical reasons you cannot send them now. Leave a voice message to your friend explaining your choice of the photos and sharing some ideas about the project. In 2.5 minutes be ready to: · explain the choice of the illustrations for the project by briefly describing them and noting the differences; · mention the advantages (1–2) of the two kinds of sports ; · mention the disadvantages (1–2) of the two kinds of sports ; · express your opinion on the subject of the project – which of these sports you’d prefer and why. You will speak for not more than 3 minutes (12–15 sentences) . You have to talk continuously. Photo 1 Photo 2",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/ACDE868D362F9D62441770EF1815A179(copy1)/xs3qstsrcACDE868D362F9D62441770EF1815A179_2_1703591833.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/ACDE868D362F9D62441770EF1815A179(copy1)/xs3qstsrcACDE868D362F9D62441770EF1815A179_3_1703591833.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E10",
@@ -5177,9 +5586,54 @@
      "task": {
       "prompt": "Comment on the following statement. Playing sports is better than watching others do it. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: − make an introduction (state the problem) − express your personal opinion and give 2 – 3 reasons for your opinion − express an opposing opinion and give 1 – 2 reasons for this opposing opinion − explain why you don t agree with the opposing opinion − make a conclusion restating your position"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "306CD5",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/808E3315BD26BA2348577648E8862178(copy1)/xs3qstsrc808E3315BD26BA2348577648E8862178_1_1703591442.gif"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "281E32",
+       "instruction": "Task 2. Study the advertisement. You are considering attending the driving school and now you ’d like to get more information. In 1.5 minutes you are to ask five direct questions to find out about the following: The best driving school in the city! 1) location; 2) morning classes; 3) minimum age for students; 4) tuition fee; 5) types of cars used. You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/576391FED7389C364AE1B590BD79CCE0(copy1)/xs3qstsrc576391FED7389C364AE1B590BD79CCE0_2_1575548794.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "58DCD2",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs//questions/7867FAB2BAF4AAA141B87E0D91526387/img1_1665759666.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "4044D9",
+       "instruction": "Task 4. Study the two photographs. In 1.5 minutes be ready to compare and contrast the photographs: · give a brief description of the photos (action, location) ; · say what the pictures have in common ; · say in what way the pictures are different ; · say which way of spending free time presented in the pictures you’d prefer ; · explain why . You will speak for not more than 2 minutes (12 – 15 sentences) . You have to talk continuously. Photo 1 Photo 2",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/8DACBBF9AC929B6C49FF997B1F6C5997(copy2)/xs3qstsrc8DACBBF9AC929B6C49FF997B1F6C5997_2_1574157506.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/8DACBBF9AC929B6C49FF997B1F6C5997(copy2)/xs3qstsrc8DACBBF9AC929B6C49FF997B1F6C5997_4_1574157506.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E11",
@@ -5695,9 +6149,56 @@
      "task": {
       "prompt": "Comment on the following statement. An early choice of a career path is the key to success. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: − make an introduction (state the problem) − express your personal opinion and give 2 – 3 reasons for your opinion − express an opposing opinion and give 1 – 2 reasons for this opposing opinion − explain why you do not agree with the opposing opinion − make a conclusion restating your position"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "350582",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/702EE7A83F908467439FDC7A1D468796(copy1)/xs3qstsrc702EE7A83F908467439FDC7A1D468796_1_1668607916.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "2A1F95",
+       "instruction": "Task 2. Study the advertisement. You are considering using the clinic and now you ’d like to get more information. In 1.5 minutes you are to ask five direct questions to find out about the following: Our vet clinic will take care of your pet! 1) location 2) opening hours 3) transportation 4) kinds of animals treated 5) if home visits are possible You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/1D2A03D32F2AA40E4F48B6DB815B8542(copy1)/xs3qstsrc1D2A03D32F2AA40E4F48B6DB815B8542_3_1482144144.png",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/1D2A03D32F2AA40E4F48B6DB815B8542(copy1)/xs3qstsrc1D2A03D32F2AA40E4F48B6DB815B8542_2_1482144144.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "66C899",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/BDBADF0B7404A8F346E252D15E06DC16/img1_1689774973.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "42E684",
+       "instruction": "Task 4. Study the two photographs. In 1.5 minutes be ready to compare and contrast the photographs: · give a brief description of the photos (action, location) · say what the pictures have in common · say in what way the pictures are different · say which way of preparing for classes presented in the pictures you prefer · explain why You will speak for not more than 2 minutes (12 – 15 sentences) . You have to talk continuously. Photo 1. Photo 2.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/2B2092DE77EF95DC432E5B97F969153C(copy1)/xs3qstsrc2B2092DE77EF95DC432E5B97F969153C_5_1549879469.png",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/2B2092DE77EF95DC432E5B97F969153C(copy1)/xs3qstsrc2B2092DE77EF95DC432E5B97F969153C_2_1549879469.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/2B2092DE77EF95DC432E5B97F969153C(copy1)/xs3qstsrc2B2092DE77EF95DC432E5B97F969153C_4_1549879469.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E12",
@@ -6213,9 +6714,54 @@
      "task": {
       "prompt": "Imagine that you are doing a project on how teenagers relax after a busy day in Zetland . You have found some data on the subject – the results of the opinion polls (see the table below) . Comment on the data in the table and give your opinion on the subject of the project . Ways Number of respondents (%) Having a hobby 38 Spending time with friends 31 Sleeping 15 Walking in the open air 10 Eating tasty food 6 Write 200 – 250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1 – 2 comparisons where relevant; – outline a problem that can arise with having a rest and suggest a way of solving it; – conclude by giving your opinion on the importance of relaxing well in our life. Imagine that you are doing a project on why people should study literature in Zetland . You have found some data on the subject – the results of the opinion polls (see the diagram below) . Comment on the data in the diagram and give your opinion on the subject of the project . Write 200 – 250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1 – 2 comparisons where relevant; – outline a problem that one can face studying literature and suggest a way of solving it; – conclude by giving your opinion on the importance of studying literature in human life."
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "38A04C",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/45DD073DF527B4A34C5FCECFC8ECD92E(copy1)/xs3qstsrc45DD073DF527B4A34C5FCECFC8ECD92E_7_1637933286.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "3C655D",
+       "instruction": "Task 2. Study the advertisement. You are considering join ing the motorcycle club and now you’d like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following: Welcome to our motorcycle club! 1) location; 2) special clothes; 3) coach; 4) competitions. You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/A01A4623CE4799494A8D11F34B3D3C24(copy1)/xs3qstsrcA01A4623CE4799494A8D11F34B3D3C24_2_1700575431.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "7A807A",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/339F92C355B7BF1E41EBFC3EB6EAF6A3/img1_1683035717.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "4319D2",
+       "instruction": "Task 4. Study the two photographs. In 1.5 minutes be ready to compare and contrast the photographs: · give a brief description of the photos (action, location); · say what the pictures have in common; · say in what way the pictures are different; · say which of the hobbies presented in the pictures you’d prefer; · explain why. You will speak for not more than 2 minutes (12–15 sentences) . You have to talk continuously. Photo 1 Photo 2",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/0A53B6BD91F3A7ED47A19BE33E85B508(copy2)/xs3qstsrc0A53B6BD91F3A7ED47A19BE33E85B508_2_1605622559.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/0A53B6BD91F3A7ED47A19BE33E85B508(copy2)/xs3qstsrc0A53B6BD91F3A7ED47A19BE33E85B508_3_1605622559.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E13",
@@ -6731,9 +7277,55 @@
      "task": {
       "prompt": "Imagine that you are doing a project on what career development activities are popular among Zetland young people . You have found some data on the subject – the results of the opinion polls (see the table below) . Comment on the data in the table and give your opinion on the subject of the project . Activities Number of respondents (%) Searching the Internet for vacancies 32 Doing an internship 2 6 Visiting a job fair 19 Speaking to a career advisor 15 Making a work-site visit 8 Write 200–250 words. Use the following plan: – make an opening statement on the subject of the project; – select and report 2–3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that can arise with choosing a career and suggest a way of solving it; – conclude by giving and explaining your opinion on how to find a good job. Imagine that you are doing a project on what holiday destinations are most popular in Zetland . You have found some data on the subject – the results о f the opinion polls (see the pie chart below) . Comment on the data in the pie chart and give your opinion on the subject of the project . Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2–3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that can arise with choosing a holiday destination and suggest a way of solving it; – conclude by giving and explaining your opinion on the best holiday destination."
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "395D7B",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/784D6ABB8D9F97994B5228FEFAEEBD07(copy2)/xs3qstsrc784D6ABB8D9F97994B5228FEFAEEBD07_16_1605619876.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "47CE91",
+       "instruction": "Task 2. Study the advertisement. You are considering finding a part-time job and now you ’d like to get more information. In 1.5 minutes you are to ask five direct questions to find out about the following: We’ll help you find a part-time job! 1) kinds of jobs; 2) salary; 3) skills needed; 4) minimum age; 5) whom to contact. You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/DBC5FC488383986C41B727F997874C79(copy2)/xs3qstsrcDBC5FC488383986C41B727F997874C79_2_1575549078.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "7FFA5A",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2– 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs//questions/839119239B51A96B4E8F3F21F99DED14/img1_1647617099.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "45F542",
+       "instruction": "Task 4. Study the two photographs. In 1.5 minutes be ready to compare and contrast the photographs: · give a brief description of the photos (action, location) · say what the pictures have in common · say in what way the pictures are different · say which of the ways of spending your free time pres ented in the pictures you’d prefer · explain why You will speak for not more than 2 minutes (12 – 15 sentences) . You have to talk continuously. Photo 1. Photo 2.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/663268CE660CA98F496174EC9CA322E4(copy1)/xs3qstsrc663268CE660CA98F496174EC9CA322E4_5_1479311364.png",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/663268CE660CA98F496174EC9CA322E4(copy1)/xs3qstsrc663268CE660CA98F496174EC9CA322E4_2_1479311364.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/663268CE660CA98F496174EC9CA322E4(copy1)/xs3qstsrc663268CE660CA98F496174EC9CA322E4_4_1479311364.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E14",
@@ -7249,9 +7841,56 @@
      "task": {
       "prompt": "Comment on the following statement. Exams motivate students to study harder. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: − make an introduction (state the problem) − express your personal opinion and give 2 – 3 reasons for your opinion − express an opposing opinion and give 1 – 2 reasons for this opposing opinion − explain why you don t agree with the opposing opinion − make a conclusion restating your position"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "3AED05",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/FF9EF36183718CA0477BA12FB891700B(copy1)/xs3qstsrcFF9EF36183718CA0477BA12FB891700B_1_1484228230.png",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/FF9EF36183718CA0477BA12FB891700B(copy1)/xs3qstsrcFF9EF36183718CA0477BA12FB891700B_2_1484228230.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "4ABDA0",
+       "instruction": "Task 2. Study the advertisement. You are considering having a seaside holiday and now you ’d like to get more information. In 1.5 minutes you are to ask five direct questions to find out about the following: Holiday by the sea for the whole family! 1) location 2) transportation 3) sports facilities 4) price for a week for one person 5) family discounts You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/C9DCA6FF209ABF234CBD1CC6B9F9506B(copy1)/xs3qstsrcC9DCA6FF209ABF234CBD1CC6B9F9506B_3_1482144096.png",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/C9DCA6FF209ABF234CBD1CC6B9F9506B(copy1)/xs3qstsrcC9DCA6FF209ABF234CBD1CC6B9F9506B_2_1482144096.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "81D15A",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/8F9755F36F51A3CE4A86BEF06AF5236D/img1_1689774925.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "47198C",
+       "instruction": "Task 4. Imagine that you and your friend are doing a school project “ Sports activities ”. You have found some illustrations and want to share the news. Leave a voice message to your friend. In 2.5 minutes be ready to : · explain the choice of the illustrations for the project by briefly describing them and noting the differences; · mention the advantages (1–2) of the two sports activities; · mention the disadva ntages (1–2) of the two sports activities ; · express your opinion on the subject of the project – which of the sports activities presented in the pictures you’d prefer and why . You will speak for not more than 3 minutes (12–15 sentences) . You have to talk continuously. Photo 1 Photo 2",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/68656923CA6DB4E04A56242331E4D2B8(copy1)/xs3qstsrc68656923CA6DB4E04A56242331E4D2B8_2_1674832328.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/68656923CA6DB4E04A56242331E4D2B8(copy1)/xs3qstsrc68656923CA6DB4E04A56242331E4D2B8_3_1674832328.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E15",
@@ -7767,9 +8406,55 @@
      "task": {
       "prompt": "Imagine that you are doing a project on why some students in Zetland work during the academic year . You have found some data on the subject – the results of the opinion polls (see the table below) . Comment on the data in the table and give your opinion on the subject of the project . Reasons Number of respondents (%) To improve their living conditions 55 To get work experience 15 To gain financial independence from parents 12 To earn money for travelling 10 To spend their free time in a useful way 8 Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that can arise with doing a part-time job during the academic year and suggest a way of solving it; – conclude by giving and explaining your opinion on the importance of doing a part-time job for students. Imagine that you are doing a project on why teenagers in Zetland stay up late . You have found some data on the subject – the results о f the opinion polls (see the pie chart below) . Comment on the data in the pie chart and give your opinion on the subject of the project . Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that one can face if a daily routine is not kept and suggest a way of solving it; – conclude by giving and explaining your opinion on the importance of a healthy lifestyle."
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "3C0FCF",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/6DE64152475DA4E945B4403038AFA0A8(copy1)/xs3qstsrc6DE64152475DA4E945B4403038AFA0A8_1_1541679067.png",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/6DE64152475DA4E945B4403038AFA0A8(copy1)/xs3qstsrc6DE64152475DA4E945B4403038AFA0A8_2_1541679067.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "4D2F68",
+       "instruction": "Task 2. Study the advertisement. You are considering going to the clothing store and now you’d like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following: Anything you want! 1) location; 2) opening hours; 3) kinds of shirts sold; 4) discounts. You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/D89794BF9281A84D41F9B93CF2D49444(copy1)/xs3qstsrcd0f6711b11c84fa7b5ad7f35e6ef3e1c_2_1759410901.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "862FF0",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2–3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/1f26d170e7774d61b6e6229a314e792f/img1_1759758941.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "476E11",
+       "instruction": "Task 4. Imagine that you are doing a project “ An ideal weekend ” together with your friend. You have found some illustrations and want to share the news. Leave a voice message to your friend. In 2.5 minutes be ready to : give a brief description of the photos, justifying the choice of the photos for the project; say in what way the pictures are different, justifying the choice of the photos for the project; mention the advantages and disadvantages (1 – 2) of the two types of weekends; express your opinion on the subject of the project – which kind of weekend you’d prefer and why. You will speak for not more than 3 minutes (12 – 15 sentences) . You have to talk continuously. Photo 1 Photo 2",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/27B53AE7D832A876414ADF420C06024D(copy1)/xs3qstsrc27B53AE7D832A876414ADF420C06024D_2_1642603432.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/27B53AE7D832A876414ADF420C06024D(copy1)/xs3qstsrc27B53AE7D832A876414ADF420C06024D_4_1642603432.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E16",
@@ -8285,9 +8970,55 @@
      "task": {
       "prompt": "Comment on one of the following statements. Summer is the best time for self-education. Parents play the most significant role in teenagers life. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: – make an introduction (state the problem paraphrasing the given statement) ; – express your personal opinion and give 2 – 3 reasons for your opinion; – express an opposing opinion and give 1 – 2 reasons for this opposing opinion; – explain why you do not agree with the opposing opinion; – make a conclusion restating your position."
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "3C2D75",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/671E99DCDDBC9DF44A852A8011CC0277(copy1)/xs3qstsrc671E99DCDDBC9DF44A852A8011CC0277_1_1636714830.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "530816",
+       "instruction": "Task 2. Study the advertisement. You are considering going to the new fast food restaurant and now you ’d like to get more information. In 1.5 minutes you are to ask five direct questions to find out about the following: A new fast food restaurant – now in your area! 1) location 2) opening hours 3) price of a standard lunch 4) vegetarian dishes 5) free Wi-Fi You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/03823395D8E5B8C64C689CDEFB77326D(copy1)/xs3qstsrc03823395D8E5B8C64C689CDEFB77326D_3_1541605795.png",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/03823395D8E5B8C64C689CDEFB77326D(copy1)/xs3qstsrc03823395D8E5B8C64C689CDEFB77326D_2_1541605795.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "891ADC",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs//questions/7FA5B9A8897699DA4E74094589CD617A/img1_1665759629.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "5046C3",
+       "instruction": "Task 4. Imagine that you are doing a project “Tastes differ” together with your friend. You have found some illustrations and want to share the news. Leave a voice message to your friend. In 2.5 minutes be ready to: give a brief description of the photos, justifying the choice of the photos for the project ; say in what way the pictures are different, justifying the choice of the photos for the project ; mention the advantages and disadvantages (1 – 2) of the two ways of getting around the city; express your opinion on the subject of the project – which of these ways of getting around the city you ’d prefer and why. You will speak for not more than 3 minutes (12 – 15 sentences) . You have to talk continuously. Photo 1 Photo 2",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/A32206342EB887B74B212A2207BA4F02(copy1)/xs3qstsrcA32206342EB887B74B212A2207BA4F02_2_1646299851.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/A32206342EB887B74B212A2207BA4F02(copy1)/xs3qstsrcA32206342EB887B74B212A2207BA4F02_4_1646299851.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E17",
@@ -8803,9 +9534,55 @@
      "task": {
       "prompt": "Comment on one of the following statements. To be happy one needs good friends. Hobbies distract from school. What is your opinion? Do you agree with this statement? Write 200–250 words . Use the following plan: - make an introduction (state the problem paraphrasing the given statement) ; - express your personal opinion and give 2–3 reasons for your opinion ; - express an opposing opinion and give 1–2 reasons for this opposing opinion ; - explain why you do not agree with the opposing opinion ; - write a conclusion restating your position."
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "3C5C21",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/47FD08D0D8C3AC6B486B7FB190DC3330(copy1)/xs3qstsrc47FD08D0D8C3AC6B486B7FB190DC3330_1_1484228479.png",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/47FD08D0D8C3AC6B486B7FB190DC3330(copy1)/xs3qstsrc47FD08D0D8C3AC6B486B7FB190DC3330_2_1484228479.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "568292",
+       "instruction": "Task 2. Study the advertisement. You are considering going to the new aqua park and now you ’d like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following: A new aqua park now in your area! 1) public transport ; 2) opening hours ; 3) types of water slides ; 4) minimum age. You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/51EDBA650C4DAD1E42BE641BBF7A4EBE(copy1)/xs3qstsrc51EDBA650C4DAD1E42BE641BBF7A4EBE_2_1636974792.png"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "8996FB",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/1F4BBDB62A73B66F4D37D7857F8B6176/img1_1683035763.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "517B57",
+       "instruction": "Task 4. Imagine that you and your friend are doing a school project “Ideal weekend ”. You have found some photos to illustrate it but for technical reasons you cannot send them now. Leave a voice message to your friend explaining your choice of the photos and sharing some ideas about the project. In 2.5 minutes be ready to: · explain the choice of the illustrations for the project by briefly describing them and noting the differences; · mention the advantages (1–2) of the two ways to spend the weekend; · mention the disadvantages (1–2) of the two ways to spend the weekend; · express your opinion on the subject of the project – which way of spending the weekend presented in the pictures you prefer and why. You will speak for not more than 3 minutes (12–15 sentences) . You have to talk continuously.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/203B18F8CD90920A48E926B8F0A31048(copy1)/xs3qstsrc8833548338b94d2a83de49f0d9474d1c_2_1759410653.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/203B18F8CD90920A48E926B8F0A31048(copy1)/xs3qstsrc8833548338b94d2a83de49f0d9474d1c_3_1759410653.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E18",
@@ -9321,9 +10098,56 @@
      "task": {
       "prompt": "Comment on one of the following statements. An interesting job is more valuable than a high salary. It is easy to live without the Internet. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: – make an introduction (state the problem paraphrasing the given statement) – express your personal opinion and give 2 – 3 reasons for your opinion – express an opposing opinion and give 1 – 2 reasons for this opposing opinion – explain why you do not agree with the opposing opinion – make a conclusion restating your position"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "4B52EB",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/1DB63E6B20D3877F4826FE4A63A81E8F(copy1)/xs3qstsrc1DB63E6B20D3877F4826FE4A63A81E8F_1_1541602212.png",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/1DB63E6B20D3877F4826FE4A63A81E8F(copy1)/xs3qstsrc1DB63E6B20D3877F4826FE4A63A81E8F_2_1541602212.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "5F3D71",
+       "instruction": "Task 2. Study the advertisement. You are considering taking some painting classes and now you ’d like to get more information. In 1.5 minutes you are to ask five direct questions to find out about the following: The best painting classes now in your area! 1) location; 2) number of classes a week; 3) styles of painting taught; 4) timetable; 5) tuition fee. You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/49F4DED1659E854A44656C852203E58D(copy2)/xs3qstsrc49F4DED1659E854A44656C852203E58D_10_1605620838.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "8E3CEC",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2– 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/CFAECAE1F1F0BAC0425EF2F50C881A39/img1_1721127396.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "51D810",
+       "instruction": "Task 4. Study the two photographs. In 1.5 minutes be ready to compare and contrast the photographs: · give a brief description of the photos (action, location) · say what the pictures have in common · say in what way the pictures are different · say which of the seasons presented in the pictures you’d prefer · explain why You will speak for not more than 2 minutes (12 – 15 sentences) . You have to talk continuously. Photo 1. Photo 2.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/2FD5DFE9B7A69753424BD0B0A805BCFB(copy1)/xs3qstsrc2FD5DFE9B7A69753424BD0B0A805BCFB_5_1479379855.png",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/2FD5DFE9B7A69753424BD0B0A805BCFB(copy1)/xs3qstsrc2FD5DFE9B7A69753424BD0B0A805BCFB_2_1479379855.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/2FD5DFE9B7A69753424BD0B0A805BCFB(copy1)/xs3qstsrc2FD5DFE9B7A69753424BD0B0A805BCFB_4_1479379855.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E19",
@@ -9839,9 +10663,55 @@
      "task": {
       "prompt": "Comment on one of the following statements. To be happy one needs an interesting job. Everyone can contribute to environmental protection. What is your opinion? Do you agree with this statement? Write 200–250 words . Use the following plan: - make an introduction (state the problem paraphrasing the given statement) ; - express your personal opinion and give 2–3 reasons for your opinion ; - express an opposing opinion and give 1–2 reasons for this opposing opinion ; - explain why you do not agree with the opposing opinion ; - write a conclusion restating your position."
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "4E940F",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/DCF14E825D49B7254AE02C622DC201CF(copy1)/xs3qstsrcDCF14E825D49B7254AE02C622DC201CF_1_1484228139.png",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/DCF14E825D49B7254AE02C622DC201CF(copy1)/xs3qstsrcDCF14E825D49B7254AE02C622DC201CF_2_1484228139.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "60A98F",
+       "instruction": "Task 2. Study the advertisement. You are considering join ing the basketball club and now you ’d like to get more information. In 1.5 minutes you are to ask five direct questions to find out about the following: A new basketball club in your area! 1) location; 2) number of members; 3) minimum age; 4) membership fee; 5) qualified coaches. You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/958B53A9AD1D884A46152CDDEBC756A4(copy2)/xs3qstsrc958B53A9AD1D884A46152CDDEBC756A4_10_1605618462.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "96601E",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2– 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/5BCDD274C40F8B7A4D4B7464E8820614/img1_1714743687.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "543D63",
+       "instruction": "Task 4. Imagine that you and your friend are doing a school project “School subjects”. You have found some photos to illustrate it but for technical reasons you cannot send them now. Leave a voice message to your friend explaining your choice of the photos and sharing some ideas about the project. In 2.5 minutes be ready to: · explain the choice of the illustrations for the project by briefly describing them and noting the differences; · mention the advantages (1–2) of the two school subjects; · mention the disadvantages (1–2) of the two school subjects; · express your opinion on the subject of the project – which of these school subjects you preferred as a school student and why. You will speak for not more than 3 minutes (12–15 sentences) . You have to talk continuously. Photo 1 Photo 2",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/B8B098154F3C819C4DE059C6546DA629(copy1)/xs3qstsrcB8B098154F3C819C4DE059C6546DA629_2_1703591261.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/B8B098154F3C819C4DE059C6546DA629(copy1)/xs3qstsrcB8B098154F3C819C4DE059C6546DA629_3_1703591261.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E20",
@@ -10357,9 +11227,54 @@
      "task": {
       "prompt": "Imagine that you are doing a project on why many young Zetlanders choose to major in the humanities . You have found some data on the subject – the results of a survey (see the table below) . Comment on the survey data and give your opinion on the subject of the project . The survey question: Why have you chosen to major in the humanities? Reasons Number of respondents (%) Love for creativity 3 7 Interesting subjects 28 Public significance 20 Variety of jobs upon graduation 9 Personal fulfilment 6 Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that can arise with studying the humanities and suggest a way of solving it; – conclude by giving and explaining your opinion on the importance of choosing the right profession. Imagine that you are doing a project on Zetlanders’ priorities in reading and discussing the news in social networks . You have found some data on the subject – the results of a survey (see the pie chart below) . Comment on the survey data and give your opinion on the subject of the project . The survey question: What is your priority in reading and discussing the news in social networks? Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that can arise with reading and discussing the news in social networks and suggest a way of solving it; – conclude by giving and explaining your opinion on whether one should trust the news from social media ."
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "515E88",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/CDDCA998AD75B2634BCA310223A35782(copy2)/xs3qstsrcCDDCA998AD75B2634BCA310223A35782_16_1611653244.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "642D51",
+       "instruction": "Task 2. Study the advertisement. You are considering going to the dance school and now you’d like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following: A new dance school now in your area! 1) location; 2) dances taught; 3) special cloth е s; 4) evening classes. You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/1B6CAFEBDB198D1B466C546F2807B626(copy1)/xs3qstsrc1B6CAFEBDB198D1B466C546F2807B626_2_1668699339.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "A5C6BA",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2– 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs//questions/499A8D1C141397C940624F14F6E75A85/img1_1647617068.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "5A8987",
+       "instruction": "Task 4. Imagine that you and your friend are doing a school project “Solo or in company”. You have found some illustrations and want to share the news. Leave a voice message to your friend. In 2.5 minutes be ready to : · explain the choice of the illustrations for the project by briefly describing them and noting the differences; · mention the advantages (1–2) of the two ways of having meals; · mention the disadvantages (1–2) of the two ways of having meals ; · express your opinion on the subject of the project – which way of having meals presented in the pictures you prefer and why. You will speak for not more than 3 minutes (12–15 sentences) . You have to talk continuously. Photo 1 Photo 2",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/C2302A46BAFA96A54C206AC82AD19DDD(copy1)/xs3qstsrcC2302A46BAFA96A54C206AC82AD19DDD_3_1668669962.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/C2302A46BAFA96A54C206AC82AD19DDD(copy1)/xs3qstsrcC2302A46BAFA96A54C206AC82AD19DDD_4_1668669962.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E21",
@@ -10875,9 +11790,54 @@
      "task": {
       "prompt": "Comment on one of the following statements. Studying online is more interesting than studying at school. Summer holidays in the countryside are best for teenagers. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: – make an introduction (state the problem paraphrasing the given statement) ; – express your personal opinion and give 2 – 3 reasons for your opinion; – express an opposing opinion and give 1 – 2 reasons for this opposing opinion; – explain why you do not agree with the opposing opinion; – make a conclusion restating your position."
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "54506D",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/36B298B83A409A184CA25EF774C9273A(copy2)/xs3qstsrc36B298B83A409A184CA25EF774C9273A_16_1605618455.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "6C6E5D",
+       "instruction": "Task 2. Study the advertisement. You are considering going on this sea trip and now you’d like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following: Enjoy an exciting sea trip! 1) duration of the trip; 2) type of sailboat ; 3) price for one; 4) special equipment needed. You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/8075E6021AAAA9C143E900266E0204FA(copy1)/xs3qstsrc8075E6021AAAA9C143E900266E0204FA_2_1700574021.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "AD0750",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs//questions/8922735838A99121481E4A008EF71AD9/img1_1665759704.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "5B7F3B",
+       "instruction": "Task 4. Imagine that you are doing a project “Tastes differ” together with your friend. You have found some illustrations and want to share the news. Leave a voice message to your friend. In 2.5 minutes be ready to: give a brief description of the photos, justifying the choice of the photos for the project ; say in what way the pictures are different, justifying the choice of the photos for the project ; mention the advantages and disadvantages (1–2) of the two ways of spending free time; express your opinion on the subject of the project – which of these ways of spending free time you would prefer and why. You will speak for not more than 3 minutes (12–15 sentences) . You have to talk continuously. Photo 1 Photo 2",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/459D978B3C20AD3D465387113BCD7DC3(copy1)/xs3qstsrc459D978B3C20AD3D465387113BCD7DC3_3_1646300244.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/459D978B3C20AD3D465387113BCD7DC3(copy1)/xs3qstsrc459D978B3C20AD3D465387113BCD7DC3_5_1646300244.png"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E22",
@@ -11393,9 +12353,54 @@
      "task": {
       "prompt": "Imagine that you are doing a project on why many young Zetlanders choose a military career . You have found some data on the subject – the results of a survey (see the table below) . Comment on the survey data and give your opinion on the subject of the project . The survey question: Why have you chosen a military career? Reasons Number of respondents (%) Patriotism 48 Public significance 20 Leadership opportunities 18 Family tradition 9 Adventure 5 Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that can arise for military academy students in the course of their studies and suggest a way of solving it; – conclude by giving and explaining your opinion on the importance of developing a strong feeling of national pride in young people. Imagine that you are doing a project on Zetlanders’ summer trips . You have found some data on the subject – the results о f a survey (see the pie chart below) . Comment on the survey data and give your opinion on the subject of the project . The survey question: What is the aim of your summer holiday this year? Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that can arise with a beach holiday and suggest a way of solving it; – conclude by giving and explaining your opinion on what the most exciting summer holiday is."
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "65B413",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/73BC4BCA56A185B54DC5C6A91A782B44(copy1)/xs3qstsrc73BC4BCA56A185B54DC5C6A91A782B44_6_1668596445.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "780E68",
+       "instruction": "Task 2. Study the advertisement. Our vet clinic will take care of your pet! You are considering going to the vet clinic and now you ’d like to get more information. In 1.5 minutes you are to ask five direct questions to find out about the following: 1) location; 2) operation hours; 3) kinds of animals treated; 4) if home visits are possible; 5) discounts. You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/7F598C22F15C9CEA46AD37D24356B347(copy2)/xs3qstsrc7F598C22F15C9CEA46AD37D24356B347_10_1605619883.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "C7264C",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2– 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/0AA63D68E4F6A0C24514F458F23A2A76/img1_1721379609.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "5BAA91",
+       "instruction": "Task 4. Imagine that you and your friend are doing a school project “Jobs”. You have found some photos to illustrate it but for technical reasons you cannot send them now. Leave a voice message to your friend explaining your choice of the photos and sharing some ideas about the project. In 2.5 minutes be ready to: · explain the choice of the illustrations for the project by briefly describing them and noting the differences; · mention the advantages (1–2) of the two kinds of jobs ; · mention the disadvantages (1–2) of the two kinds of jobs ; · express your opinion on the subject of the project – which of these jobs you’d prefer and why. You will speak for not more than 3 minutes (12–15 sentences) . You have to talk continuously. Photo 1 Photo 2",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/1FB3AAB7AB47856D417FA797441766F1(copy1)/xs3qstsrc1FB3AAB7AB47856D417FA797441766F1_1_1700576511.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/1FB3AAB7AB47856D417FA797441766F1(copy1)/xs3qstsrc1FB3AAB7AB47856D417FA797441766F1_2_1700576511.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E23",
@@ -11911,9 +12916,55 @@
      "task": {
       "prompt": "Comment on one of the following statements. To be happy one needs an interesting hobby. Online classes are more effective than traditional ones. What is your opinion? Do you agree with this statement? Write 200–250 words . Use the following plan: - make an introduction (state the problem paraphrasing the given statement) ; - express your personal opinion and give 2–3 reasons for your opinion ; - express an opposing opinion and give 1–2 reasons for this opposing opinion ; - explain why you do not agree with the opposing opinion ; - write a conclusion restating your position."
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "6CAB79",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/48DC8D8E3627AB5C4734C0041F2C5F85(copy2)/xs3qstsrc48DC8D8E3627AB5C4734C0041F2C5F85_16_1611654194.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "7D298A",
+       "instruction": "Task 2. Study the advertisement. You are considering visiting the clinic and now you’d like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following: The best clinic in town! 1) location; 2) public transport; 3) dentist; 4) family discounts. You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/EB180168FFED8817499FFAD86BDC2DCB(copy1)/xs3qstsrcf3967b1feeeb46049bb5057a3732a47a_2_1759410643.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "CB950A",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs//questions/2A9B48D45D5CABD64C98AC68D5338AA5/img1_1671724284.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "60512E",
+       "instruction": "Task 4. Study the two photographs. In 1.5 minutes be ready to compare and contrast the photographs: · give a brief description of the photos (action, location) · say what the pictures have in common · say in what way the pictures are different · say which of the foods presented in the pictures you’d prefer · explain why You will speak for not more than 2 minutes (12 – 15 sentences) . You have to talk continuously. Photo 1. Photo 2.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/F896FBE7F6DB80CB49E19080F494990E(copy1)/xs3qstsrcF896FBE7F6DB80CB49E19080F494990E_5_1479378513.png",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/F896FBE7F6DB80CB49E19080F494990E(copy1)/xs3qstsrcF896FBE7F6DB80CB49E19080F494990E_2_1479378513.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/F896FBE7F6DB80CB49E19080F494990E(copy1)/xs3qstsrcF896FBE7F6DB80CB49E19080F494990E_4_1479378513.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E24",
@@ -12429,9 +13480,54 @@
      "task": {
       "prompt": "Comment on one of the following statements. To be happy a teenager needs understanding parents. Books are still a better source of information than the Internet. What is your opinion? Do you agree with this statement? Write 200–250 words . Use the following plan: - make an introduction (state the problem paraphrasing the given statement) ; - express your personal opinion and give 2–3 reasons for your opinion ; - express an opposing opinion and give 1–2 reasons for this opposing opinion ; - explain why you do not agree with the opposing opinion ; - write a conclusion restating your position."
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "6FD033",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/94C78160F1719FA246959A776DCEBF9D(copy2)/xs3qstsrc94C78160F1719FA246959A776DCEBF9D_2_1692707290.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "7E3E84",
+       "instruction": "Task 2. Study the advertisement. You are considering going to a new ice rink and now you ’d like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following: A new ice rink in your area! 1) location ; 2) equipment rental ; 3) entrance fee ; 4) classes for beginners. You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/C219FD154B999A4545A87D52CE6E236D(copy1)/xs3qstsrcC219FD154B999A4545A87D52CE6E236D_2_1636974718.png"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "CD8E66",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/DADF7CC0276E9C0345A76ACB4FE2D1C7/img1_1689774951.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "60730E",
+       "instruction": "Task 4. Imagine that you are doing a project “Shopping” together with your friend. You have found some illustrations and want to share the news. Leave a voice message to your friend. In 2.5 minutes be ready to : give a brief description of the photos, justifying the choice of the photos for the project; say in what way the pictures are different, justifying the choice of the photos for the project; mention the advantages and disadvantages (1 – 2) of the two types of shopping; express your opinion on the subject of the project – w hich way of shopping you prefer and why. You will speak for not more than 3 minutes (12 – 15 sentences) . You have to talk continuously. Photo 1 Photo 2",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/2362FD49753CA6E548761FB1AF881F90(copy1)/xs3qstsrc2362FD49753CA6E548761FB1AF881F90_2_1642604082.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/2362FD49753CA6E548761FB1AF881F90(copy1)/xs3qstsrc2362FD49753CA6E548761FB1AF881F90_4_1642604082.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E25",
@@ -12947,9 +14043,56 @@
      "task": {
       "prompt": "Comment on one of the following statements. History is the most important school subject. Family traditions help to cross the generation gap. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: – make an introduction (state the problem paraphrasing the given statement) ; – express your personal opinion and give 2 – 3 reasons for your opinion; – express an opposing opinion and give 1 – 2 reasons for this opposing opinion; – explain why you do not agree with the opposing opinion; – make a conclusion restating your position."
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "727AE3",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/CC2B702CCEFDB3414BC9C70EBDE2E93D(copy1)/xs3qstsrcCC2B702CCEFDB3414BC9C70EBDE2E93D_1_1484230070.png",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/CC2B702CCEFDB3414BC9C70EBDE2E93D(copy1)/xs3qstsrcCC2B702CCEFDB3414BC9C70EBDE2E93D_2_1484230070.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "8316A8",
+       "instruction": "Task 2. Study the advertisement. You are considering going to the grocery store and now you’d like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following: Freshness you can taste! 1) location; 2) opening hours; 3) kind of fruits sold; 4) delivery service. You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/680AE161E879AE3A4DFE1D03A71D5AE3(copy1)/xs3qstsrc9ff5edb92c4644d0b633b4f610a80776_2_1759410931.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "CFE876",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2– 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/3ADC1F0777DFB9C042DB756CDC925984/img1_1721127350.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "62D64E",
+       "instruction": "Task 4. Study the two photographs. In 1.5 minutes be ready to compare and contrast the photographs: · give a brief description of the photos (action, location) · say what the pictures have in common · say in what way the pictures are different · say which of the ways of spending free time presented in the pictures you’d prefer · explain why You will speak for not more than 2 minutes (12 – 15 sentences) . You have to talk continuously. Photo 1. Photo 2.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/008427C15017B21345546AE1D8C027E2(copy1)/xs3qstsrc008427C15017B21345546AE1D8C027E2_5_1479379135.png",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/008427C15017B21345546AE1D8C027E2(copy1)/xs3qstsrc008427C15017B21345546AE1D8C027E2_2_1479379135.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/008427C15017B21345546AE1D8C027E2(copy1)/xs3qstsrc008427C15017B21345546AE1D8C027E2_4_1479379135.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E26",
@@ -13465,9 +14608,56 @@
      "task": {
       "prompt": "Comment on the following statement. Space exploration was the greatest achievement of the 20 th century. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: − make an introduction (state the problem) − express your personal opinion and give 2 – 3 reasons for your opinion − express an opposing opinion and give 1 – 2 reasons for this opposing opinion − explain why you don t agree with the opposing opinion − make a conclusion restating your position"
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "7AE3A3",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/32BC867CAB4486A74F37AE5AB912B687(copy1)/xs3qstsrc32BC867CAB4486A74F37AE5AB912B687_1_1541599897.png",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/32BC867CAB4486A74F37AE5AB912B687(copy1)/xs3qstsrc32BC867CAB4486A74F37AE5AB912B687_2_1541599897.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "836D27",
+       "instruction": "Task 2. Study the advertisement. You are considering taking some lessons and now you ’d like to get more information. In 1.5 minutes you are to ask five direct questions to find out about the following: Individual language classes with native speakers! 1) location 2) price for one lesson 3) duration of the lesson 4) languages available 5) evening classes You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/7B32A7B0A624902042E78C51F566FC80(copy1)/xs3qstsrc7B32A7B0A624902042E78C51F566FC80_3_1541599899.png",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/7B32A7B0A624902042E78C51F566FC80(copy1)/xs3qstsrc7B32A7B0A624902042E78C51F566FC80_2_1541599899.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "D5DB26",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/67D784BA1CDB8CE74D15586359A270C5/img1_1689775060.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "7367A7",
+       "instruction": "Task 4. Study the two photographs. In 1.5 minutes be ready to compare and contrast the photographs: · give a brief description of the photos (action, location); · say what the pictures have in common; · say in what way the pictures are different; · say which type of leisure activities presented in the pictures you preferred as a child; · explain why. You will speak for not more than 2 minutes (12–15 sentences) . You have to talk continuously. Photo 1 Photo 2",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/CB583C6F1615864642D84FFE968ED87E(copy2)/xs3qstsrcCB583C6F1615864642D84FFE968ED87E_10_1605618479.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/CB583C6F1615864642D84FFE968ED87E(copy2)/xs3qstsrcCB583C6F1615864642D84FFE968ED87E_11_1605618479.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   },
   {
    "id": "E27",
@@ -13983,9 +15173,54 @@
      "task": {
       "prompt": "Imagine that you are doing a project on where Zetlanders prefer to spend a Saturday evening . You have found some data on the subject – the results of the opinion polls (see the table below) . Comment on the data in the table and give your opinion on the subject of the project . Places Number of respondents (%) Restaurant or caf 37 Park 34 Sports centre 15 Hobby club 9 Theatre or museum 5 Write 200–250 words . Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that can arise with spending free time and suggest a way of solving it; – conclude by giving and explaining your opinion on the best way to spend a Saturday evening. Imagine that you are doing a project on what qualities Zetland employers appreciate most in their employees . You have found some data on the subject – the results of the opinion polls (see the pie chart below) . Comment on the data in the pie chart and give your opinion on the subject of the project . Write 200–250 words. Use the following plan: – make an opening statement on the subject of the project; – select and report 2 – 3 facts; – make 1–2 comparisons where relevant and give your comments; – outline a problem that can arise at work and suggest a way of solving it; – conclude by giving and explaining your opinion on the importance of choosing the right company to work for."
      }
+    },
+    {
+     "id": "speaking",
+     "title": "Speaking",
+     "timeMin": 15,
+     "maxPts": 20,
+     "egespeaking": true,
+     "tasks": [
+      {
+       "kind": "read",
+       "zid": "833121",
+       "instruction": "Task 1. Imagine that you are preparing a project with your friend. You have found some interesting material for the presentation and you want to read this text to your friend. You have 1.5 minutes to read the text silently, then be ready to read it out aloud. You will not have more than 1.5 minutes to read it.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/7E242C2F575D81BB45B8F812CD70EA5D(copy1)/xs3qstsrc6f5ee582624d4643a35726f25a871957_7_1759410637.png"
+       ],
+       "maxPts": 1
+      },
+      {
+       "kind": "ask",
+       "zid": "840AEC",
+       "instruction": "Task 2. Study the advertisement. You are considering going to the Christmas market and now you’d like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following: Welcome to the Christmas market! 1) location; 2) opening hours; 3) goods offered; 4) available snacks. You have 20 seconds to ask each question.",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/ECF3C6D0417C8D7D46EBC04259C9BCC6(copy1)/xs3qstsrcECF3C6D0417C8D7D46EBC04259C9BCC6_2_1700574806.jpg"
+       ],
+       "maxPts": 4
+      },
+      {
+       "kind": "interview",
+       "zid": "D5F55F",
+       "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2–3 sentences). Remember that you have 40 seconds to answer each question.",
+       "images": [],
+       "maxPts": 5,
+       "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/871188f41e064a55b180a51f8334c60b/img1_1754645991.mp3"
+      },
+      {
+       "kind": "compare",
+       "zid": "794B26",
+       "instruction": "Task 4. Study the two photographs. In 1.5 minutes be ready to compare and contrast the photographs: · give a brief description of the photos (action, location); · say what the pictures have in common; · say in what way the pictures are different; · say which type of household chores presented in the pictures you prefer; · explain why. You will speak for not more than 2 minutes (12–15 sentences) . You have to talk continuously. Photo 1 Photo 2",
+       "images": [
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/4431876FEB99B2C7403CFC3DF62ECBF8(copy2)/xs3qstsrc4431876FEB99B2C7403CFC3DF62ECBF8_10_1605621902.jpg",
+        "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/4431876FEB99B2C7403CFC3DF62ECBF8(copy2)/xs3qstsrc4431876FEB99B2C7403CFC3DF62ECBF8_11_1605621902.jpg"
+       ],
+       "maxPts": 10
+      }
+     ]
     }
    ],
-   "maxPts": 62
+   "maxPts": 82
   }
  ]
 }

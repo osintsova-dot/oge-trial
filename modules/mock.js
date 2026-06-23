@@ -9,7 +9,7 @@ import { loadJSON } from '../js/data.js';
 import { recordRound, getName, getMockResults, recordMock } from '../js/gamify.js';
 import { t, EXAM } from '../js/exam.js';
 import { recognize, canRecognize } from '../js/stt.js';
-import { evalSpeaking } from '../js/speakeval.js';
+import { evalSpeaking, evalEgeSpeaking } from '../js/speakeval.js';
 
 const WORKER = 'https://purple-cake-2966.o-sintsova.workers.dev';
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G']; // EGE headings = 7 текстов A–G; ОГЭ matching/gaps (A–F) — лишние отфильтруются по texts[L]
@@ -170,9 +170,14 @@ export async function renderMock(container, cfg) {
     const out = [el('div', { class: 'mock-hint', text: M.speakHint })];
     sec.tasks.forEach((tk, ti) => {
       const akey = 'spk:' + ti;
-      const heads = { read: M.spkRead, survey: M.spkSurvey, monologue: M.spkMono };
+      const heads = { read: M.spkRead, survey: M.spkSurvey, monologue: M.spkMono, ask: M.spkAsk, interview: M.spkInterview, compare: M.spkCompare };
       let promptEl;
-      if (tk.kind === 'read') promptEl = el('div', { class: 'sp-text', text: tk.text });
+      if (tk.instruction) { // ЕГЭ: инструкция + картинки + аудио (интервью)
+        const kids = [el('div', { class: 'sp-instr', text: tk.instruction })];
+        (tk.images || []).forEach((u) => kids.push(el('img', { class: 'sp-img', src: u, alt: '', loading: 'lazy', referrerpolicy: 'no-referrer' })));
+        if (tk.audio) kids.push(el('audio', { class: 'ls-audio', controls: '', preload: 'none', src: tk.audio }));
+        promptEl = el('div', {}, kids);
+      } else if (tk.kind === 'read') promptEl = el('div', { class: 'sp-text', text: tk.text });
       else if (tk.kind === 'survey') promptEl = el('audio', { class: 'ls-audio', controls: '', preload: 'none', src: tk.audio });
       else promptEl = el('div', {}, [el('div', { class: 'mock-letter-q', text: tk.topic }), el('ol', { class: 'sp-plan' }, (tk.plan || []).map((p) => el('li', { text: p })))]);
       const recd = el('div', { class: 'sp-rec-hint', text: answers[akey] ? M.spkRecorded : '' });
@@ -187,7 +192,7 @@ export async function renderMock(container, cfg) {
 
   // Компактный диктофон (как в разделе говорения): запись/стоп/переслушать, отдаёт blob.
   function mockRecorder(onBlob) {
-    const SP = t.speaking;
+    const SP = t.speaking || t.egeSpeaking || {}; // ОГЭ ru / ЕГЭ en строки диктофона
     let mr = null, stream = null, url = null, chunks = [];
     const player = el('audio', { class: 'sp-audio', controls: '', style: { display: 'none' } });
     const timer = el('span', { class: 'sp-timer', text: '0:00' });
@@ -427,6 +432,7 @@ export async function renderMock(container, cfg) {
     const spSec = v.sections.find((s) => s.id === 'speaking');
     let speaking = null;
     if (spSec) {
+      const evalFn = spSec.egespeaking ? evalEgeSpeaking : evalSpeaking; // ЕГЭ vs ОГЭ оценка устной
       const tasks = spSec.tasks || [];
       const perTask = [];
       let spScore = 0, anyOk = false;
@@ -437,7 +443,7 @@ export async function renderMock(container, cfg) {
         if (!blob) { perTask.push({ kind: tk.kind, status: 'empty', score: 0, max: tk.maxPts }); continue; }
         try {
           const transcript = await recognize(blob);
-          const res = await evalSpeaking(tk.kind, tk, transcript);
+          const res = await evalFn(tk.kind, tk, transcript);
           const sc = res.totalScore || 0; spScore += sc; anyOk = true;
           perTask.push({ kind: tk.kind, status: 'graded', score: sc, max: tk.maxPts, result: res, transcript });
         } catch (e) {
@@ -493,11 +499,12 @@ export async function renderMock(container, cfg) {
     // уровень на устную часть: первичный 0-82 → тестовый по таблице ФИПИ.
     let testCard = null;
     if (p2t && result.max) {
-      const projPrimary = Math.max(1, Math.min(82, Math.round(result.total / result.max * 82)));
+      // result.full (устная оценена, max=82) → реальный первичный = total; иначе проекция % на 82
+      const projPrimary = Math.max(1, Math.min(82, result.full ? result.total : Math.round(result.total / result.max * 82)));
       const testScore = p2t[projPrimary] || p2t[String(projPrimary)] || 0;
       testCard = el('div', { class: 'mock-test' }, [
         el('div', { class: 'mock-test-v', text: M.testProj(testScore) }),
-        el('div', { class: 'mock-test-n', text: M.testProjNote }),
+        el('div', { class: 'mock-test-n', text: result.full ? M.testProjReal : M.testProjNote }),
       ]);
     }
     // ОГЭ: отметка 2–5. Если устная часть оценена (result.full) — отметка РЕАЛЬНАЯ по сумме;
