@@ -55,6 +55,11 @@ export function sectionStats(section) {
   return { attempted, correct, byKes };
 }
 
+// Сырые записи по заданиям раздела: {zid: {ok, kes, tries}} — для аккуратной статистики по «умным» темам.
+export function sectionRecords(section) {
+  return read()[section] || {};
+}
+
 export function writingStats() {
   const w = read().writing || [];
   return { count: w.length, items: w };

@@ -55,7 +55,7 @@ function wordformTopic(it, ans) {
   return 'Другое словообразование';
 }
 
-function topicOf(secId, it, ans) {
+export function topicOf(secId, it, ans) {
   return secId === 'grammar' ? grammarTopic(it, ans) : wordformTopic(it, ans);
 }
 

@@ -4,7 +4,8 @@
 import { el, mount, confetti, celebrate, iconImg } from '../js/ui.js';
 import { loadJSON } from '../js/data.js';
 import { checkAnswer } from '../js/checker.js';
-import { recordDrill, sectionStats, mistakeZids, crownTier } from '../js/progress.js';
+import { recordDrill, sectionStats, sectionRecords, mistakeZids, crownTier } from '../js/progress.js';
+import { topicOf } from './teacher.js';
 import { recordRound, getName, checkNewAchievements, dailyRoundSize } from '../js/gamify.js';
 import { roundMessage, celeb } from '../js/voice.js';
 import { playCorrect, playWrong } from '../js/sound.js';
@@ -58,23 +59,32 @@ export async function renderDrill(container, cfg) {
     return;
   }
   const withKey = items.filter((it) => keys[it.zid]);
-  const themes = (topics[cfg.topicKey] || []).slice();
+  // «умные» темы по форме ответа (Present Perfect, Passive, Существительные…) вместо сырых КЭС
+  const byTopic = new Map();
+  for (const it of withKey) {
+    const lbl = topicOf(cfg.section, it, (keys[it.zid] || {}).answer);
+    if (!byTopic.has(lbl)) byTopic.set(lbl, []);
+    byTopic.get(lbl).push(it);
+  }
+  const themes = [...byTopic.entries()].sort((a, b) => b[1].length - a[1].length).map(([label, pool]) => ({ label, pool }));
   const meta = `${withKey.length} ${plural(withKey.length, t.tasksWord)} · ${themes.length} ${plural(themes.length, t.topicsWord)}`;
 
   themeScreen();
   autoTipOnce(cfg.section);
 
   function themeScreen() {
-    const stats = sectionStats(cfg.section);
+    const recs = sectionRecords(cfg.section);
     const crownEmoji = ['', '🥉', '🥈', '🥇'];
     const list = el('div', { class: 'topic-list' });
     for (const tp of themes) {
-      const pool = withKey.filter((it) => it.kes === tp.kes);
+      const pool = tp.pool;
       if (!pool.length) continue;
-      const s = stats.byKes[tp.kes];
-      const p = s && s.attempted ? pct(s.correct, s.attempted) : null;
+      // точность темы — по записям заданий именно этой темы (КЭС может делиться между темами)
+      let attempted = 0, correct = 0;
+      for (const it of pool) { const r = recs[it.zid]; if (r) { attempted++; if (r.ok) correct++; } }
+      const p = attempted ? pct(correct, attempted) : null;
       const c = p != null ? accColor(p) : 'var(--faint)';
-      const tier = s ? crownTier(s.attempted, s.correct) : 0;
+      const tier = attempted ? crownTier(attempted, correct) : 0;
       list.appendChild(el('button', { class: 'topic-item', onclick: () => startDrill(pool, tp.label) }, [
         el('div', { style: { flex: '1', minWidth: '0' } }, [
           el('div', { class: 'ti-name' }, [tier ? iconImg('crown-' + tier, crownEmoji[tier], 'ti-crown') : null, tier ? ' ' : '', tp.label]),
@@ -117,7 +127,7 @@ export async function renderDrill(container, cfg) {
           ]),
           el('div', { class: 'at-arrow', text: '→' }),
         ]),
-        el('div', { class: 'topics-label', text: t.byCodifier }),
+        el('div', { class: 'topics-label', text: t.byTopics }),
         list,
       ]),
     ]));
