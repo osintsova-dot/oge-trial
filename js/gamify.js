@@ -97,6 +97,11 @@ export function streakActiveToday() { return read().streak.lastDay === todayStr(
 export function getName() { return read().name || ''; }
 export function setName(name) { const s = read(); s.name = (name || '').trim().slice(0, 24); write(s); }
 
+// Роль (глобально на устройстве): 'student' (по умолчанию) | 'teacher'.
+// Учительская вкладка скрыта, пока роль не teacher; включается секретным входом #/teacher.
+export function getRole() { try { return localStorage.getItem('ss_role') || 'student'; } catch (e) { return 'student'; } }
+export function setRole(r) { try { localStorage.setItem('ss_role', r); } catch (e) {} }
+
 // Дата экзамена (гранулярность «месяц/год», строка 'YYYY-MM' или null)
 export function getExamDate() { return read().examDate || null; }
 export function setExamDate(ym) { const s = read(); s.examDate = ym || null; write(s); }

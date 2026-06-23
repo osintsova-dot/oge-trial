@@ -9,7 +9,8 @@ import { getState, levelInfo, levelTable, packStatus, streakActiveToday,
   dailyDigest, skinsStatus, setSkin, applySkin, achievementsStatus,
   getTokens, perksStatus, redeemPerk, recentRedeemed,
   getExamDate, setExamDate, isOnboarded, setOnboarded, examInfo, setPlanGoal, setWeekTargets,
-  getListeningDone, getSpeakingDone, mockPromptNow, markMockPromptShown } from './gamify.js';
+  getListeningDone, getSpeakingDone, mockPromptNow, markMockPromptShown,
+  getRole, setRole } from './gamify.js';
 import { EXAM, t, sectionById, plural } from './exam.js';
 import { dailyProgress, themeStats } from './vocab_srs.js';
 import { weeklyPlan } from './planner.js';
@@ -54,8 +55,8 @@ function route() {
   if (hash === 'progress') return renderProgress();
   if (hash === 'rewards')  return renderRewards();
   if (hash === 'plan')     return renderPlan();
-  if (hash === 'teacher')  { document.body.classList.add('in-flow'); return renderTeacher(view, { goHome }); }
-  if (hash === 'journal')  { document.body.classList.add('in-flow'); return renderJournal(view, { goHome }); }
+  if (hash === 'teacher')  { setRole('teacher'); updateRoleUI(); document.body.classList.add('in-flow'); return renderTeacher(view, { goHome }); }
+  if (hash === 'journal')  { setRole('teacher'); updateRoleUI(); document.body.classList.add('in-flow'); return renderJournal(view, { goHome }); }
   if (hash.split('?')[0] === 'hw') { document.body.classList.add('in-flow'); return renderHomework(view, { goHome, query: hash.slice(hash.indexOf('?') + 1) }); }
   if (hash.split('?')[0] === 'hwr') { document.body.classList.add('in-flow'); return renderHomeworkResult(view, { goHome, query: hash.slice(hash.indexOf('?') + 1) }); }
   if (sec && sec.type === 'drill')   return renderDrill(view, { ...DRILL[sec.id], goHome });
@@ -68,6 +69,11 @@ function route() {
   if (sec && sec.type === 'mock') return renderMock(view, { goHome, dataFile: sec.dataFile });
   if (sec && sec.type === 'soon')    return renderSoon(sec);
   return renderHome();
+}
+// показываем учительскую вкладку только в роли teacher (секретный вход #/teacher её включает)
+function updateRoleUI() {
+  const isT = getRole() === 'teacher';
+  document.querySelectorAll('#bottom-nav a[data-tab="teacher"]').forEach((a) => { a.style.display = isT ? '' : 'none'; });
 }
 function setActiveTab(hash) {
   const tab = (hash === 'progress' || hash === 'rewards' || hash === 'teacher') ? hash : 'home';
@@ -504,6 +510,7 @@ async function renderProgress() {
         onclick: () => { setSound(!getSound()); renderProgress(); } }),
       el('button', { class: 'act-name', text: t.changeName, onclick: () => renderWelcome(getName(), true) }),
       el('button', { class: 'act-name', text: '📅 ' + t.countdownSetTitle, onclick: () => renderExamDate(true) }),
+      getRole() === 'teacher' ? el('button', { class: 'act-name', text: '🧑‍🏫 ' + t.exitTeacher, onclick: () => { setRole('student'); updateRoleUI(); goHome(); } }) : null,
       el('button', { class: 'act-reset', text: t.reset, onclick: () => {
         if (confirm(t.resetConfirm)) { resetAll(); renderProgress(); }
       } }),
@@ -727,10 +734,11 @@ document.querySelectorAll('#bottom-nav a').forEach((a) => {
 // --- Инициализация ---
 applyTheme(getTheme());
 applySkin();
+updateRoleUI();
 window.addEventListener('hashchange', route);
-// ссылка-ДЗ открывается сразу (без онбординга — ученик может быть впервые)
-const isHwLink = ['hw', 'hwr'].includes(location.hash.replace(/^#\/?/, '').split('?')[0]);
-if (isHwLink) route();
+// ссылка-ДЗ и секретный вход учителя открываются сразу, минуя онбординг
+const directHash = ['hw', 'hwr', 'teacher', 'journal'].includes(location.hash.replace(/^#\/?/, '').split('?')[0]);
+if (directHash) route();
 else if (!getName()) renderWelcome();
 else if (!isOnboarded()) renderExamDate();   // имя есть, но онбординг не завершён → дата + интро
 else route();
