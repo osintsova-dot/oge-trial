@@ -233,7 +233,7 @@ export const STRINGS = {
       wsTitle: 'Worksheet · Speak & Smile', wsSub: (badge) => badge,
       linkBtn: 'Ссылка-ДЗ', linkCopied: 'Ссылка скопирована ✓', linkTitle: 'Ссылка на ДЗ',
       linkSub: (n) => 'Отправь ученику — он решит ' + n + ' заданий онлайн с автопроверкой',
-      linkCopyAgain: 'Копировать', linkClose: 'Готово',
+      linkCopyAgain: 'Копировать', linkClose: 'Готово', printNoReading: 'Чтение пока печатается только через «Ссылку-ДЗ». Печать листа чтения — следующим шагом.',
     },
     homework: {
       loading: 'Загружаю задания…', title: 'Домашнее задание', count: (n) => n + ' заданий',
@@ -245,6 +245,10 @@ export const STRINGS = {
       copy: 'Копировать', close: 'Готово', studentResult: (n) => 'Результат: ' + n,
       submit: 'Сдать учителю', confirmSubmit: 'Сдать работу учителю? Ответы зафиксируются, переделать будет нельзя.',
       sentNote: 'Результат отправлен учителю. Ниже — разбор для тебя.',
+      rTf: 'Прочитай текст. Для каждого утверждения: Верно / Неверно / Не сказано.',
+      rMatch: 'Установи соответствие: для каждого текста выбери номер.',
+      rGaps: 'Вставь части предложений в пропуски (одна лишняя).',
+      readScore: (c, n) => 'Чтение: ' + c + ' / ' + n,
     },
     // vocab (лексика — тема недели + флэшкарты/SRS)
     vocab: {
@@ -794,7 +798,7 @@ export const STRINGS = {
       wsTitle: 'Worksheet · Speak & Smile', wsSub: (badge) => badge,
       linkBtn: 'Ссылка-ДЗ', linkCopied: 'Ссылка скопирована ✓', linkTitle: 'Ссылка на ДЗ',
       linkSub: (n) => 'Отправь ученику — он решит ' + n + ' заданий онлайн с автопроверкой',
-      linkCopyAgain: 'Копировать', linkClose: 'Готово',
+      linkCopyAgain: 'Копировать', linkClose: 'Готово', printNoReading: 'Чтение пока печатается только через «Ссылку-ДЗ». Печать листа чтения — следующим шагом.',
     },
     homework: {
       loading: 'Loading tasks…', title: 'Homework', count: (n) => n + ' tasks',
@@ -806,6 +810,10 @@ export const STRINGS = {
       copy: 'Copy', close: 'Done', studentResult: (n) => 'Result: ' + n,
       submit: 'Submit to teacher', confirmSubmit: 'Submit to your teacher? Answers will be locked — no redo.',
       sentNote: 'Result sent to your teacher. Your review is below.',
+      rTf: 'Read the text. For each statement: True / False / Not stated.',
+      rMatch: 'Match: choose a number for each text.',
+      rGaps: 'Fill the gaps with the sentence parts (one is extra).',
+      readScore: (c, n) => 'Reading: ' + c + ' / ' + n,
     },
     sections: { vocab: 'Topic Vocabulary', grammar: 'Grammar', wordform: 'Word formation', reading: 'Reading', listening: 'Listening', writing: 'Writing', speaking: 'Speaking', mock: 'Mock exam', lexis: 'Vocabulary', email: 'Email', essay: 'Essay' },
     sectionMeta: { vocab: 'theme of the week · 15 words a day', grammar: '341 tasks · 9 topics', wordform: '275 tasks · word forms', reading: '469 tasks · 3 formats', listening: 'FIPI audio · multiple choice', writing: 'writing', speaking: '184 tasks · recorder + AI', mock: 'full timed paper', lexis: '275 tasks · 9 topics', email: 'task 37 · K1–K3', essay: 'task 38 · K1–K5' },

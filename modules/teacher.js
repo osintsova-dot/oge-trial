@@ -80,29 +80,46 @@ function parseSet(query) {
 
 async function gatherTasks(groups) {
   const keys = await loadJSON(EXAM.keysFile);
-  const tasks = [];
+  const units = []; // {kind:'gap', secId, it} | {kind:'read', block}
+  let readBlocks = null;
   for (const secId of Object.keys(groups)) {
+    if (secId === 'reading') {
+      readBlocks = readBlocks || await loadReadingBlocks();
+      const byId = {};
+      for (const b of readBlocks) byId[b.id] = b;
+      for (const id of groups[secId]) { const b = byId[id]; if (b) units.push({ kind: 'read', block: b }); }
+      continue;
+    }
     const cfg = EXAM.sections.find((s) => s.id === secId);
     if (!cfg) continue;
     let bank;
     try { bank = await loadJSON(cfg.dataFile); } catch (e) { continue; }
     const byZid = {};
     for (const it of bank) byZid[it.zid] = it;
-    for (const zid of groups[secId]) { const it = byZid[zid]; if (it) tasks.push({ secId, it }); }
+    for (const zid of groups[secId]) { const it = byZid[zid]; if (it) units.push({ kind: 'gap', secId, it }); }
   }
-  return { tasks, keys };
+  return { units, keys };
 }
 
-// разбор (строки + счёт верных) — общий для ученика и учителя
-function reviewRows(tasks, answers, keys, H) {
-  let correct = 0;
-  const rows = tasks.map((tk, i) => {
-    const key = (keys[tk.it.zid] || {}).answer || '';
-    const mine = answers[tk.it.zid] || '';
+// разбор + счёт по units (gap + read), общий для ученика и учителя
+function reviewRows(units, answers, keys, H) {
+  let correct = 0, total = 0;
+  const rows = units.map((u, i) => {
+    if (u.kind === 'read') {
+      const r = checkReadBlock(u.block, answers);
+      correct += r.correct; total += r.total;
+      return el('div', { class: 'hw-rev ' + (r.correct === r.total ? 'ok' : 'no') }, [
+        el('div', { class: 'hw-rev-t', text: (i + 1) + '. ' + H.readScore(r.correct, r.total) }),
+        renderReadBlock(u.block, answers, H, true),
+      ]);
+    }
+    const it = u.it;
+    const key = (keys[it.zid] || {}).answer || '';
+    const mine = answers[it.zid] || '';
     const ok = hwNorm(mine) === hwNorm(key) && mine.trim() !== '';
-    if (ok) correct += 1;
-    const bw = tk.it.base_word || '';
-    const clean = bw ? stripTrailingBase(tk.it.text || '', bw) : (tk.it.text || '');
+    if (ok) correct += 1; total += 1;
+    const bw = it.base_word || '';
+    const clean = bw ? stripTrailingBase(it.text || '', bw) : (it.text || '');
     const prev = clean.replace(GAP_RE, ' ___ ' + (bw ? '(' + bw + ') ' : ''));
     return el('div', { class: 'hw-rev ' + (ok ? 'ok' : 'no') }, [
       el('div', { class: 'hw-rev-t', text: (i + 1) + '. ' + prev }),
@@ -112,7 +129,7 @@ function reviewRows(tasks, answers, keys, H) {
       ]),
     ]);
   });
-  return { correct, rows };
+  return { correct, total, rows };
 }
 
 // модалка со ссылкой (копирование + подтверждение), общая
@@ -134,6 +151,108 @@ function copyLinkSheet(o) {
   setTimeout(() => { inp.focus(); inp.select(); }, 50);
 }
 
+// ---- Чтение: нормализация блоков + рендер/проверка (по образцу mock.js) ----
+const RLET = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+const TF_LBL = ['Верно', 'Неверно', 'Не сказано'];
+
+function firstText(texts) {
+  if (!texts) return '';
+  const k = Object.keys(texts)[0];
+  return (texts[k] || '').replace(/\s+/g, ' ').slice(0, 90);
+}
+
+// все блоки чтения текущего экзамена в едином виде: {id, kind, type, data, n, preview}
+async function loadReadingBlocks() {
+  const cfg = EXAM.sections.find((s) => s.type === 'reading');
+  if (!cfg) return [];
+  let r;
+  try { r = await loadJSON(cfg.dataFile); } catch (e) { return []; }
+  const out = [];
+  (r.tf || []).forEach((x) => out.push({ id: 'tf_' + x.group, kind: 'tfns', type: 'tf', data: x, n: x.statements.length, preview: (x.text || '').replace(/\s+/g, ' ').slice(0, 90) }));
+  (r.matching || []).forEach((x) => out.push({ id: 'mt_' + x.zid, kind: 'rmatch', type: 'match', data: x, n: (x.answer || '').length, preview: firstText(x.texts) }));
+  (r.headings || []).forEach((x) => out.push({ id: 'hd_' + x.zid, kind: 'rmatch', type: 'headings', data: x, n: (x.answer || '').length, preview: firstText(x.texts) }));
+  (r.gaps || []).forEach((x) => out.push({ id: 'gp_' + x.zid, kind: 'gaps', type: 'gaps', data: x, n: (x.answer || '').length, preview: (x.passage || '').replace(/\s+/g, ' ').slice(0, 90) }));
+  (r.mc || []).forEach((x) => out.push({ id: 'mc_' + x.group, kind: 'choicegroup', type: 'mc', data: x, n: x.questions.length, preview: (x.text || '').replace(/\s+/g, ' ').slice(0, 90) }));
+  return out;
+}
+
+// рендер блока чтения для решения (answers[block.id] = {}), readonly — для разбора
+function renderReadBlock(block, answers, H, readonly) {
+  const d = block.data;
+  const a = (answers[block.id] = answers[block.id] || {});
+  const wrap = el('div', { class: 'hw-rblock' });
+  if (block.kind === 'tfns') {
+    wrap.appendChild(el('div', { class: 'hw-rtext', text: d.text || '' }));
+    wrap.appendChild(el('div', { class: 'hw-rinstr', text: H.rTf }));
+    (d.statements || []).forEach((st) => {
+      const btns = ['1', '2', '3'].map((v, vi) => {
+        const b = el('button', { class: 'tf-btn' + (a[st.num] === v ? ' sel' : ''), text: TF_LBL[vi] });
+        if (!readonly) b.addEventListener('click', () => { a[st.num] = v; b.parentNode.querySelectorAll('.tf-btn').forEach((x) => x.classList.remove('sel')); b.classList.add('sel'); });
+        else if (a[st.num] !== v) b.disabled = true;
+        return b;
+      });
+      wrap.appendChild(el('div', { class: 'hw-tf' }, [el('div', { class: 'hw-tf-s', text: st.num + '. ' + st.statement }), el('div', { class: 'hw-tf-btns' }, btns)]));
+    });
+  } else if (block.kind === 'rmatch') {
+    const qs = d.questions || d.headings || [];
+    wrap.appendChild(el('div', { class: 'hw-rinstr', text: H.rMatch }));
+    wrap.appendChild(el('ol', { class: 'hw-rqs' }, qs.map((q) => el('li', { text: q }))));
+    RLET.filter((L) => d.texts && d.texts[L] != null).forEach((L) => {
+      const sel = el('select', { class: 'hw-sel' });
+      sel.appendChild(el('option', { value: '', text: '—' }));
+      qs.forEach((_, qi) => sel.appendChild(el('option', { value: String(qi + 1), text: String(qi + 1) })));
+      if (a[L]) sel.value = a[L];
+      if (readonly) sel.disabled = true; else sel.addEventListener('change', () => { a[L] = sel.value; });
+      wrap.appendChild(el('div', { class: 'hw-rtxt' }, [el('div', { class: 'hw-rtxt-h' }, [el('b', { text: L }), sel]), el('div', { text: d.texts[L] })]));
+    });
+  } else if (block.kind === 'gaps') {
+    wrap.appendChild(el('div', { class: 'hw-rinstr', text: H.rGaps }));
+    wrap.appendChild(el('ol', { class: 'hw-rqs' }, (d.parts || []).map((p) => el('li', { text: p }))));
+    const para = el('div', { class: 'hw-rtext' });
+    (d.passage || '').split(/\{([A-G])\}/).forEach((ch, idx) => {
+      if (idx % 2 === 0) { if (ch) para.appendChild(document.createTextNode(ch)); return; }
+      const L = ch;
+      const sel = el('select', { class: 'hw-sel hw-sel-in' });
+      sel.appendChild(el('option', { value: '', text: L }));
+      (d.parts || []).forEach((_, pi) => sel.appendChild(el('option', { value: String(pi + 1), text: String(pi + 1) })));
+      if (a[L]) sel.value = a[L];
+      if (readonly) sel.disabled = true; else sel.addEventListener('change', () => { a[L] = sel.value; });
+      para.appendChild(sel);
+    });
+    wrap.appendChild(para);
+  } else if (block.kind === 'choicegroup') {
+    wrap.appendChild(el('div', { class: 'hw-rtext', text: d.text || '' }));
+    (d.questions || []).forEach((q, qi) => {
+      const opts = (q.options || []).map((o, oi) => {
+        const id = 'r_' + block.id + '_' + qi + '_' + oi;
+        const inp = el('input', { type: 'radio', name: 'r_' + block.id + '_' + qi, id, value: String(oi + 1) });
+        if (a[qi] === String(oi + 1)) inp.checked = true;
+        if (readonly) inp.disabled = true; else inp.addEventListener('change', () => { a[qi] = String(oi + 1); });
+        return el('label', { class: 'mock-opt', for: id }, [inp, el('span', { text: o })]);
+      });
+      wrap.appendChild(el('div', { class: 'hw-mcq' }, [el('div', { class: 'hw-mcq-q', text: (qi + 1) + '. ' + (q.question || q.q || '') }), el('div', { class: 'mock-opts' }, opts)]));
+    });
+  }
+  return wrap;
+}
+
+// проверка блока чтения: {correct, total}
+function checkReadBlock(block, answers) {
+  const d = block.data;
+  const a = answers[block.id] || {};
+  let correct = 0, total = 0;
+  if (block.kind === 'tfns') {
+    (d.statements || []).forEach((st) => { total++; if ((a[st.num] || '') === st.answer) correct++; });
+  } else if (block.kind === 'rmatch') {
+    RLET.filter((L) => d.texts && d.texts[L] != null).forEach((L, idx) => { total++; if ((a[L] || '') === String((d.answer || '')[idx])) correct++; });
+  } else if (block.kind === 'gaps') {
+    (d.gaps || RLET).forEach((L, idx) => { total++; if ((a[L] || '') === String((d.answer || '')[idx])) correct++; });
+  } else if (block.kind === 'choicegroup') {
+    (d.questions || []).forEach((q, qi) => { total++; if ((a[qi] || '') === String(q.answer != null ? q.answer : q.key)) correct++; });
+  }
+  return { correct, total };
+}
+
 export async function renderTeacher(container, opts) {
   const T = t.teacher;
   mount(container, el('div', { class: 'view' }, [el('div', { class: 'loader', text: T.loading })]));
@@ -145,6 +264,10 @@ export async function renderTeacher(container, opts) {
   // банки по разделам: { secId: [items] }
   const banks = {};
   for (const s of drillSecs) banks[s.id] = await loadJSON(s.dataFile);
+  // блоки чтения (тексты + задания) — отдельная вкладка
+  const readBlocks = await loadReadingBlocks();
+  const hasReading = readBlocks.length > 0;
+  const READTYPE = { tf: 'Верно/неверно/не сказано', match: 'Соответствие', headings: 'Заголовки', gaps: 'Вставка частей', mc: 'Выбор ответа' };
 
   // выбранные задания: Set("secId:zid")
   const picked = new Set();
@@ -182,15 +305,18 @@ export async function renderTeacher(container, opts) {
       el('div', { class: 'tch-h' }, [el('div', { class: 'tch-t', text: T.title }), el('div', { class: 'tch-sub', text: T.sub })]),
     ]));
 
-    // вкладки разделов
-    view.appendChild(el('div', { class: 'tch-tabs' }, drillSecs.map((s) =>
-      el('button', { class: 'tch-tab' + (s.id === curSec ? ' on' : ''), text: SEC_TITLE[s.id] || s.id,
-        onclick: () => { curSec = s.id; curTopic = ''; draw(); } }))));
+    // вкладки разделов (+ «Чтение»)
+    const tabs = drillSecs.map((s) => ({ id: s.id, label: SEC_TITLE[s.id] || s.id }));
+    if (hasReading) tabs.push({ id: 'reading', label: 'Чтение' });
+    view.appendChild(el('div', { class: 'tch-tabs' }, tabs.map((tb) =>
+      el('button', { class: 'tch-tab' + (tb.id === curSec ? ' on' : ''), text: tb.label,
+        onclick: () => { curSec = tb.id; curTopic = ''; draw(); } }))));
 
-    // фильтр по ТЕМЕ (Present Perfect, Passive, …) с количеством
+    // фильтр: для дрилла — по теме; для чтения — по типу задания
     const sel = el('select', { class: 'tch-kes' });
-    sel.appendChild(el('option', { value: '', text: T.allTopics }));
-    for (const g of topicGroups(curSec)) sel.appendChild(el('option', { value: g.label, text: g.label + ' (' + g.n + ')' }));
+    sel.appendChild(el('option', { value: '', text: curSec === 'reading' ? 'Все типы' : T.allTopics }));
+    const groups = curSec === 'reading' ? readingTypeGroups() : topicGroups(curSec);
+    for (const g of groups) sel.appendChild(el('option', { value: g.value != null ? g.value : g.label, text: (g.label) + ' (' + g.n + ')' }));
     sel.value = curTopic;
     sel.addEventListener('change', () => { curTopic = sel.value; draw(); });
     const srch = el('input', { class: 'tch-search', type: 'search', placeholder: T.searchPh, value: search });
@@ -206,41 +332,55 @@ export async function renderTeacher(container, opts) {
     function redrawList() { drawList(listWrap); refreshBar(); }
   }
 
+  // типы заданий чтения с количеством (для фильтра вкладки «Чтение»)
+  function readingTypeGroups() {
+    const cnt = new Map();
+    for (const b of readBlocks) cnt.set(b.type, (cnt.get(b.type) || 0) + 1);
+    return [...cnt.entries()].map(([type, n]) => ({ value: type, label: READTYPE[type] || type, n }));
+  }
+  // унифицированные строки текущей вкладки: {pid, preview, meta}
+  function currentRows() {
+    if (curSec === 'reading') {
+      let arr = readBlocks;
+      if (curTopic) arr = arr.filter((b) => b.type === curTopic);
+      if (search) { const q = search.toLowerCase(); arr = arr.filter((b) => b.preview.toLowerCase().includes(q)); }
+      return arr.map((b) => ({ pid: 'reading:' + b.id, preview: b.preview, meta: (READTYPE[b.type] || b.type) + ' · ' + b.n + ' вопр.' }));
+    }
+    return filtered().map((it) => ({ pid: curSec + ':' + it.zid, preview: (it.text || '').replace(/_{3,}/, ' ___ '), meta: (it.base_word ? '[' + it.base_word + '] · ' : '') + itemTopic(curSec, it) }));
+  }
+
   function drawList(wrap) {
     wrap.replaceChildren();
-    const arr = filtered();
-    if (!arr.length) { wrap.appendChild(el('div', { class: 'tch-empty', text: T.nothing })); return; }
-    // шапка списка: количество + быстрый выбор (все / первые N / случайные N)
-    const allOn = arr.every((it) => picked.has(curSec + ':' + it.zid));
-    const add = (list) => { for (const it of list) picked.add(curSec + ':' + it.zid); drawList(wrap); refreshBar(); };
-    const rest = () => arr.filter((it) => !picked.has(curSec + ':' + it.zid)); // ещё не выбранные (по порядку)
+    const rows = currentRows();
+    if (!rows.length) { wrap.appendChild(el('div', { class: 'tch-empty', text: T.nothing })); return; }
+    const allOn = rows.every((r) => picked.has(r.pid));
+    const add = (list) => { for (const r of list) picked.add(r.pid); drawList(wrap); refreshBar(); };
+    const rest = () => rows.filter((r) => !picked.has(r.pid));
     const N = 10;
     wrap.appendChild(el('div', { class: 'tch-lhead' }, [
-      el('div', { class: 'tch-count', text: T.found(arr.length) }),
+      el('div', { class: 'tch-count', text: T.found(rows.length) }),
       el('div', { class: 'tch-quick' }, [
         el('button', { class: 'tch-selall', text: allOn ? T.deselectAll : T.selectAll, onclick: () => {
-          for (const it of arr) { const id = curSec + ':' + it.zid; if (allOn) picked.delete(id); else picked.add(id); }
+          for (const r of rows) { if (allOn) picked.delete(r.pid); else picked.add(r.pid); }
           drawList(wrap); refreshBar();
         } }),
         el('button', { class: 'tch-selall', text: T.addN(N), onclick: () => add(rest().slice(0, N)) }),
         el('button', { class: 'tch-selall', text: T.randomN(N), onclick: () => add(rest().sort(() => Math.random() - 0.5).slice(0, N)) }),
       ]),
     ]));
-    for (const it of arr) {
-      const id = curSec + ':' + it.zid;
-      const on = picked.has(id);
-      const prev = (it.text || '').replace(/_{3,}/, ' ___ ');
+    for (const r of rows) {
+      const on = picked.has(r.pid);
       const row = el('label', { class: 'tch-row' + (on ? ' on' : '') }, [
         el('input', { type: 'checkbox', class: 'tch-cb' }),
         el('div', { class: 'tch-row-b' }, [
-          el('div', { class: 'tch-row-t', text: prev }),
-          el('div', { class: 'tch-row-m', text: (it.base_word ? '[' + it.base_word + '] · ' : '') + itemTopic(curSec, it) }),
+          el('div', { class: 'tch-row-t', text: r.preview }),
+          el('div', { class: 'tch-row-m', text: r.meta }),
         ]),
       ]);
       const cb = row.querySelector('.tch-cb');
       cb.checked = on;
       cb.addEventListener('change', () => {
-        if (cb.checked) picked.add(id); else picked.delete(id);
+        if (cb.checked) picked.add(r.pid); else picked.delete(r.pid);
         row.classList.toggle('on', cb.checked);
         refreshBar();
       });
@@ -284,6 +424,7 @@ export async function renderTeacher(container, opts) {
   function openPrint(withKeys) {
     if (!picked.size) return;
     const sections = buildSections();
+    if (!sections.length) { alert(T.printNoReading); return; } // чтение печатается пока только через ДЗ
     renderPrintView(container, {
       title: T.wsTitle, sub: T.wsSub(EXAM.badge), exam: EXAM.id, sections,
       worksheet: true, withKeys,
@@ -298,6 +439,8 @@ export async function renderTeacher(container, opts) {
       const zids = secItems(s.id).filter((it) => picked.has(s.id + ':' + it.zid)).map((it) => it.zid);
       if (zids.length) parts.push(s.id + ':' + zids.join(','));
     }
+    const rids = readBlocks.filter((b) => picked.has('reading:' + b.id)).map((b) => b.id);
+    if (rids.length) parts.push('reading:' + rids.join(','));
     return parts.join(';');
   }
 
@@ -316,9 +459,9 @@ export async function renderHomework(container, opts) {
   mount(container, el('div', { class: 'view' }, [el('div', { class: 'loader', text: H.loading })]));
 
   const groups = parseSet(opts.query);
-  const { tasks, keys } = await gatherTasks(groups);
+  const { units, keys } = await gatherTasks(groups);
 
-  if (!tasks.length) {
+  if (!units.length) {
     mount(container, el('div', { class: 'view hw' }, [
       el('div', { class: 'hw-top' }, [el('button', { class: 'back', text: '←', onclick: opts.goHome }), el('div', { class: 'hw-t', text: H.title })]),
       el('div', { class: 'tch-empty', text: H.broken }),
@@ -334,17 +477,25 @@ export async function renderHomework(container, opts) {
     view.replaceChildren();
     view.appendChild(el('div', { class: 'hw-top' }, [
       el('button', { class: 'back', text: '←', onclick: opts.goHome }),
-      el('div', { class: 'hw-h' }, [el('div', { class: 'hw-t', text: H.title }), el('div', { class: 'hw-sub', text: H.count(tasks.length) })]),
+      el('div', { class: 'hw-h' }, [el('div', { class: 'hw-t', text: H.title }), el('div', { class: 'hw-sub', text: H.count(units.length) })]),
     ]));
     const list = el('div', { class: 'hw-list' });
-    tasks.forEach((tk, i) => {
-      const bw = tk.it.base_word || '';
-      const clean = bw ? stripTrailingBase(tk.it.text || '', bw) : (tk.it.text || '');
+    units.forEach((u, i) => {
+      if (u.kind === 'read') {
+        list.appendChild(el('div', { class: 'hw-q hw-q-read' }, [
+          el('span', { class: 'hw-n', text: (i + 1) + '.' }),
+          renderReadBlock(u.block, answers, H, false),
+        ]));
+        return;
+      }
+      const it = u.it;
+      const bw = it.base_word || '';
+      const clean = bw ? stripTrailingBase(it.text || '', bw) : (it.text || '');
       const m = clean.match(GAP_RE);
       const before = m ? clean.slice(0, m.index) : clean;
       const after = m ? clean.slice(m.index + m[0].length) : '';
-      const inp = el('input', { class: 'hw-input', type: 'text', value: answers[tk.it.zid] || '', placeholder: H.answerPh });
-      inp.addEventListener('input', () => { answers[tk.it.zid] = inp.value; });
+      const inp = el('input', { class: 'hw-input', type: 'text', value: answers[it.zid] || '', placeholder: H.answerPh });
+      inp.addEventListener('input', () => { answers[it.zid] = inp.value; });
       const cue = bw ? el('b', { class: 'hw-base', text: ' (' + bw + ') ' }) : document.createTextNode('');
       list.appendChild(el('div', { class: 'hw-q' }, [
         el('span', { class: 'hw-n', text: (i + 1) + '.' }),
@@ -370,13 +521,13 @@ export async function renderHomework(container, opts) {
 
   // разбор после сдачи — без «переделать»; повторно отправить улучшенный результат нельзя
   function showReview() {
-    const { correct, rows } = reviewRows(tasks, answers, keys, H);
-    const pc = Math.round(correct / tasks.length * 100);
+    const { correct, total, rows } = reviewRows(units, answers, keys, H);
+    const pc = Math.round(correct / total * 100);
     view.replaceChildren(
       el('div', { class: 'hw-top' }, [el('button', { class: 'back', text: '←', onclick: opts.goHome }), el('div', { class: 'hw-t', text: H.resultTitle })]),
       el('div', { class: 'hw-note', text: H.sentNote }),
       el('div', { class: 'hw-score' }, [
-        el('div', { class: 'hw-score-v', text: correct + ' / ' + tasks.length }),
+        el('div', { class: 'hw-score-v', text: correct + ' / ' + total }),
         el('div', { class: 'hw-score-p', text: pc + '%' }),
       ]),
       el('div', { class: 'hw-list' }, rows),
@@ -400,16 +551,16 @@ export async function renderHomeworkResult(container, opts) {
   ]));
   if (!payload || !payload.set) return fail();
 
-  const { tasks, keys } = await gatherTasks(payload.set);
-  if (!tasks.length) return fail();
+  const { units, keys } = await gatherTasks(payload.set);
+  if (!units.length) return fail();
   const answers = payload.a || {};
   const name = payload.n || H.anon;
-  const { correct, rows } = reviewRows(tasks, answers, keys, H);
-  const pc = Math.round(correct / tasks.length * 100);
+  const { correct, total, rows } = reviewRows(units, answers, keys, H);
+  const pc = Math.round(correct / total * 100);
   mount(container, el('div', { class: 'view hw' }, [
     el('div', { class: 'hw-top' }, [el('button', { class: 'back', text: '←', onclick: opts.goHome }), el('div', { class: 'hw-t', text: H.studentResult(name) })]),
     el('div', { class: 'hw-score' }, [
-      el('div', { class: 'hw-score-v', text: correct + ' / ' + tasks.length }),
+      el('div', { class: 'hw-score-v', text: correct + ' / ' + total }),
       el('div', { class: 'hw-score-p', text: pc + '%' }),
     ]),
     el('div', { class: 'hw-list' }, rows),
