@@ -138,6 +138,7 @@ export async function renderTeacher(container, opts) {
     // шапка списка: количество + быстрый выбор (все / первые N / случайные N)
     const allOn = arr.every((it) => picked.has(curSec + ':' + it.zid));
     const add = (list) => { for (const it of list) picked.add(curSec + ':' + it.zid); drawList(wrap); refreshBar(); };
+    const rest = () => arr.filter((it) => !picked.has(curSec + ':' + it.zid)); // ещё не выбранные (по порядку)
     const N = 10;
     wrap.appendChild(el('div', { class: 'tch-lhead' }, [
       el('div', { class: 'tch-count', text: T.found(arr.length) }),
@@ -146,8 +147,8 @@ export async function renderTeacher(container, opts) {
           for (const it of arr) { const id = curSec + ':' + it.zid; if (allOn) picked.delete(id); else picked.add(id); }
           drawList(wrap); refreshBar();
         } }),
-        el('button', { class: 'tch-selall', text: T.firstN(N), onclick: () => add(arr.slice(0, N)) }),
-        el('button', { class: 'tch-selall', text: T.randomN(N), onclick: () => add([...arr].sort(() => Math.random() - 0.5).slice(0, N)) }),
+        el('button', { class: 'tch-selall', text: T.addN(N), onclick: () => add(rest().slice(0, N)) }),
+        el('button', { class: 'tch-selall', text: T.randomN(N), onclick: () => add(rest().sort(() => Math.random() - 0.5).slice(0, N)) }),
       ]),
     ]));
     for (const it of arr) {
