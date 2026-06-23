@@ -242,7 +242,10 @@ export async function renderEgeSpeaking(container, cfg) {
     if (kind === 'interview' || kind === 'compare') {
       rows.push(el('div', { class: 'w-conn' }, [
         el('div', { class: 'w-frame-lbl', text: S.phraseBank }),
-        ...PHRASE_BANK.map(([s, list]) => el('div', { class: 'w-conn-row' }, [el('span', { class: 'w-conn-s', text: s }), el('span', { text: list })])),
+        ...PHRASE_BANK.map(([s, list]) => el('div', { class: 'w-pb-row' }, [
+          el('div', { class: 'w-pb-cat', text: s }),
+          el('div', { class: 'w-pb-list', text: list }),
+        ])),
       ]));
     }
     const titles = { read: S.frameRead, ask: S.frameAsk, interview: S.frameInterview, compare: S.frameCompare };

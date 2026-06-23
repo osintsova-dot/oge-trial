@@ -1092,3 +1092,6 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .mock-wide .g-text{opacity:.92}
 .mock-wide .ring{background:rgba(255,255,255,.22)!important}
 .mock-wide .ring i,.mock-wide .goal-img{color:#fff}
+.w-pb-row{margin-top:9px}
+.w-pb-cat{font-size:12px;font-weight:800;color:var(--p-text)}
+.w-pb-list{font-size:14px;line-height:1.5;color:var(--ink);margin-top:1px}
