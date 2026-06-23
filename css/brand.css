@@ -1137,7 +1137,7 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
   #view,.view,.print-view{max-width:none!important;width:auto!important;margin:0!important;padding:0!important;min-height:0!important}
   .print-paper{border:none!important;border-radius:0!important;margin:0!important;max-width:none!important;width:100%!important;padding:0!important;font-size:12pt}
   .answer-sheet{page-break-before:always}
-  .pp-sec,.pp-q,.as-row{page-break-inside:avoid}
+  .pp-q,.as-row,.as-writing,.as-header{page-break-inside:avoid}
   .pp-sec-h{background:#e8e8e8!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }
 /* шапка бланка ответов */

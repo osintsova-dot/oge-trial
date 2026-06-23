@@ -137,7 +137,7 @@ function buildAnswerSheet(sections, P) {
     }
   }
   const grid = el('div', { class: 'as-grid' }, cells);
-  const writingNote = sections.some((s) => s.id === 'writing') ? el('div', { class: 'as-writing' }, [el('div', { class: 'as-w-h', text: P.writingArea }), ...Array.from({ length: 12 }, () => el('div', { class: 'as-line' }))]) : null;
+  const writingNote = sections.some((s) => s.id === 'writing') ? el('div', { class: 'as-writing' }, [el('div', { class: 'as-w-h', text: P.writingArea }), ...Array.from({ length: 10 }, () => el('div', { class: 'as-line' }))]) : null;
   return [grid, writingNote].filter(Boolean);
 }
 
