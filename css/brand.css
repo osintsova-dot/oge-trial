@@ -1087,5 +1087,8 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .w-conn-s{flex:none;width:18px;text-align:center;font-weight:800;color:var(--p-text)}
 .w-ideas{margin:8px 0 0;padding-left:20px;font-size:14.5px;line-height:1.6;color:var(--ink)}
 .w-ideas li{margin-bottom:5px}
-.mock-wide{margin-top:12px}
-.mock-wide .ring i{color:#fff}
+.mock-wide{margin-top:12px;background:var(--grad-mock);border:none;box-shadow:0 6px 16px rgba(44,110,99,.3)}
+.mock-wide .g-title,.mock-wide .g-text,.mock-wide .at-arrow{color:#fff}
+.mock-wide .g-text{opacity:.92}
+.mock-wide .ring{background:rgba(255,255,255,.22)!important}
+.mock-wide .ring i,.mock-wide .goal-img{color:#fff}
