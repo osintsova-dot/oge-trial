@@ -1111,6 +1111,7 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .pp-sec{margin-top:16px}
 .pp-sec-h{font-size:15px;font-weight:800;background:#eee;padding:5px 8px;border-radius:4px;margin-bottom:8px}
 .pp-audio{font-size:12.5px;color:#333;word-break:break-all;margin-bottom:8px}
+.pp-instr{font-size:13px;font-weight:700;margin:10px 0 4px;font-style:italic}
 .pp-q{margin:9px 0}
 .pp-qt{font-size:14px;font-weight:600}
 .pp-opt{font-size:14px;margin:2px 0 2px 16px}

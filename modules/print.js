@@ -54,7 +54,11 @@ function buildPaper(sections, P) {
     }
     const items = [el('div', { class: 'pp-sec-h', text: sec.title })];
     if (sec.id === 'listening' && sec.audio) items.push(el('div', { class: 'pp-audio', text: P.audioAt + ' ' + sec.audio }));
+    let lastInstr = '';
     for (const it of (sec.items || [])) {
+      // инструкция «что делать» — одна на группу одинаковых заданий подряд (как на экзамене)
+      const instr = instrFor(it, P);
+      if (instr && instr !== lastInstr) { items.push(el('div', { class: 'pp-instr', text: instr })); lastInstr = instr; }
       const r = renderItem(it, n);
       items.push(r.node);
       n = r.n;
@@ -62,6 +66,17 @@ function buildPaper(sections, P) {
     out.push(el('div', { class: 'pp-sec' }, items));
   }
   return out;
+}
+
+// инструкция «что делать» по типу задания (match/rmatch несут свою — там null/title)
+function instrFor(it, P) {
+  if (it.kind === 'choice') return P.iChoice;
+  if (it.kind === 'fill') return P.iFill;
+  if (it.kind === 'gap') return P.iGap;
+  if (it.kind === 'tfns') return P.iTfns;
+  if (it.kind === 'gaps') return P.iGaps;
+  if (it.kind === 'rmatch') return it.title || P.iMatch;
+  return ''; // match — своя инструкция в it.task
 }
 
 function renderItem(it, n) {
