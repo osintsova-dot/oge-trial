@@ -216,6 +216,7 @@ export const STRINGS = {
       writeOnSheet: 'Пиши ответ на бланке ответов или на отдельном листе.',
       writingArea: 'Письменная часть:',
       audioAt: '🔊 Аудио:',
+      fSurname: 'Фамилия', fName: 'Имя', fPatr: 'Отчество', fSubject: 'Предмет: Английский язык', fClass: 'Класс:', asInstr: 'Ответы на задания с кратким ответом записывайте печатными буквами в клетки, начиная с первой.',
     },
     // vocab (лексика — тема недели + флэшкарты/SRS)
     vocab: {
@@ -749,6 +750,7 @@ export const STRINGS = {
       writeOnSheet: 'Write your answer on the answer sheet or a separate sheet.',
       writingArea: 'Written part:',
       audioAt: '🔊 Audio:',
+      fSurname: 'Surname', fName: 'First name', fPatr: 'Patronymic', fSubject: 'Subject: English', fClass: 'Class:', asInstr: 'Write short answers in BLOCK CAPITALS, one character per cell, starting from the first cell.',
     },
     sections: { vocab: 'Topic Vocabulary', grammar: 'Grammar', wordform: 'Word formation', reading: 'Reading', listening: 'Listening', writing: 'Writing', speaking: 'Speaking', mock: 'Mock exam', lexis: 'Vocabulary', email: 'Email', essay: 'Essay' },
     sectionMeta: { vocab: 'theme of the week · 15 words a day', grammar: '389 tasks · grammar', wordform: '728 tasks · word forms', reading: '469 tasks · 3 formats', listening: 'FIPI audio · multiple choice', writing: 'writing', speaking: '184 tasks · recorder + AI', mock: 'full timed paper', lexis: '728 tasks · vocabulary', email: 'task 37 · K1–K3', essay: 'task 38 · K1–K5' },

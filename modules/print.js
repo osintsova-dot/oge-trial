@@ -29,7 +29,7 @@ export function renderPrintView(container, opts) {
   ]);
 
   const sheet = el('div', { class: 'print-paper answer-sheet' }, [
-    el('div', { class: 'pp-head' }, [el('div', { class: 'pp-title', text: P.answerSheet }), el('div', { class: 'pp-sub', text: opts.title })]),
+    asHeader(P, opts.title),
     ...buildAnswerSheet(opts.sections, P),
   ]);
 
@@ -96,6 +96,27 @@ function renderItem(it, n) {
     return { node: el('div', { class: 'pp-q' }, [head, ...sts]), n };
   }
   return { node: el('div'), n };
+}
+
+// ---- Шапка бланка ответов (как на экзамене) ----
+function asHeader(P, title) {
+  const filled = (label, cells) => el('div', { class: 'as-field' }, [
+    el('div', { class: 'as-field-l', text: label }),
+    el('div', { class: 'as-boxes' }, Array.from({ length: cells }, () => el('span', { class: 'as-box' }))),
+  ]);
+  return el('div', { class: 'as-header' }, [
+    el('div', { class: 'as-title', text: P.answerSheet }),
+    el('div', { class: 'as-ex', text: title }),
+    filled(P.fSurname, 18),
+    filled(P.fName, 18),
+    filled(P.fPatr, 18),
+    el('div', { class: 'as-line2' }, [
+      el('span', { text: P.fSubject }), el('span', { class: 'pp-line' }),
+      el('span', { text: P.fClass }), el('span', { class: 'pp-line short' }),
+      el('span', { text: P.date }), el('span', { class: 'pp-line short' }),
+    ]),
+    el('div', { class: 'as-instr', text: P.asInstr }),
+  ]);
 }
 
 // ---- Бланк ответов: пронумерованные клетки ----

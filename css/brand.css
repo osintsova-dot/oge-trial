@@ -1129,10 +1129,22 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .as-writing{margin-top:14px}
 .as-w-h{font-weight:800;font-size:14px;margin-bottom:8px}
 .as-line{border-bottom:1px solid #999;height:22px}
+@page{ size:A4; margin:14mm 12mm; }
 @media print{
-  body{background:#fff!important}
-  .no-print,.tabbar,.nav,nav{display:none!important}
-  .print-paper{border:none;border-radius:0;margin:0;max-width:none;padding:0}
+  html,body{background:#fff!important;height:auto!important}
+  .no-print,.bottom-nav,.tabbar,.nav,nav{display:none!important}
+  .app{max-width:none!important;width:auto!important;margin:0!important;min-height:0!important;background:#fff!important}
+  #view,.view,.print-view{max-width:none!important;width:auto!important;margin:0!important;padding:0!important;min-height:0!important}
+  .print-paper{border:none!important;border-radius:0!important;margin:0!important;max-width:none!important;width:100%!important;padding:0!important;font-size:12pt}
   .answer-sheet{page-break-before:always}
-  .pp-sec{page-break-inside:avoid}
+  .pp-sec,.pp-q,.as-row{page-break-inside:avoid}
+  .pp-sec-h{background:#e8e8e8!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }
+/* шапка бланка ответов */
+.as-header{border:2px solid #111;padding:12px 14px;margin-bottom:14px}
+.as-title{font-size:17px;font-weight:800;text-align:center}
+.as-ex{font-size:12px;text-align:center;color:#333;margin:2px 0 10px}
+.as-field{display:flex;align-items:center;gap:8px;margin:5px 0}
+.as-field-l{width:90px;font-size:12px}
+.as-line2{display:flex;align-items:flex-end;gap:6px;font-size:12px;margin-top:8px}
+.as-instr{font-size:11px;color:#444;margin-top:8px;font-style:italic}
