@@ -135,14 +135,20 @@ export async function renderTeacher(container, opts) {
     wrap.replaceChildren();
     const arr = filtered();
     if (!arr.length) { wrap.appendChild(el('div', { class: 'tch-empty', text: T.nothing })); return; }
-    // шапка списка: количество + «выбрать все/снять все» для текущего фильтра
+    // шапка списка: количество + быстрый выбор (все / первые N / случайные N)
     const allOn = arr.every((it) => picked.has(curSec + ':' + it.zid));
+    const add = (list) => { for (const it of list) picked.add(curSec + ':' + it.zid); drawList(wrap); refreshBar(); };
+    const N = 10;
     wrap.appendChild(el('div', { class: 'tch-lhead' }, [
       el('div', { class: 'tch-count', text: T.found(arr.length) }),
-      el('button', { class: 'tch-selall', text: allOn ? T.deselectAll : T.selectAll, onclick: () => {
-        for (const it of arr) { const id = curSec + ':' + it.zid; if (allOn) picked.delete(id); else picked.add(id); }
-        drawList(wrap); refreshBar();
-      } }),
+      el('div', { class: 'tch-quick' }, [
+        el('button', { class: 'tch-selall', text: allOn ? T.deselectAll : T.selectAll, onclick: () => {
+          for (const it of arr) { const id = curSec + ':' + it.zid; if (allOn) picked.delete(id); else picked.add(id); }
+          drawList(wrap); refreshBar();
+        } }),
+        el('button', { class: 'tch-selall', text: T.firstN(N), onclick: () => add(arr.slice(0, N)) }),
+        el('button', { class: 'tch-selall', text: T.randomN(N), onclick: () => add([...arr].sort(() => Math.random() - 0.5).slice(0, N)) }),
+      ]),
     ]));
     for (const it of arr) {
       const id = curSec + ':' + it.zid;
