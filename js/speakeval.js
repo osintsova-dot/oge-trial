@@ -51,16 +51,19 @@ export async function evalSpeaking(kind, item, transcript) {
   return res;
 }
 
-// EGE speaking — критерии ОРИЕНТИРОВОЧНЫЕ (официальные максимумы ФИПИ не подтверждены).
-function egeCriteria(kind) {
-  if (kind === 'ask') return [{ code: 'Q1', name: 'Question 1', max: 1 }, { code: 'Q2', name: 'Question 2', max: 1 }, { code: 'Q3', name: 'Question 3', max: 1 }, { code: 'Q4', name: 'Question 4', max: 1 }, { code: 'Q5', name: 'Question 5', max: 1 }];
-  if (kind === 'interview') return [{ code: 'A1', name: 'Answer 1', max: 1 }, { code: 'A2', name: 'Answer 2', max: 1 }, { code: 'A3', name: 'Answer 3', max: 1 }, { code: 'A4', name: 'Answer 4', max: 1 }, { code: 'A5', name: 'Answer 5', max: 1 }];
-  if (kind === 'compare') return [{ code: 'K1', name: 'Task completion (all plan points)', max: 3 }, { code: 'K2', name: 'Organisation', max: 3 }, { code: 'K3', name: 'Language', max: 3 }];
-  return [{ code: 'R', name: 'Reading completeness (pronunciation: ask a teacher)', max: 1 }];
+// EGE speaking — официальные максимумы ФИПИ-2026: зад.1=1, зад.2=4, зад.3=5, зад.4=10 (4+3+3).
+function egeCriteria(kind, item) {
+  if (kind === 'ask') {
+    const n = (item && item.sampleQuestions && item.sampleQuestions.length) || 4;
+    return Array.from({ length: n }, (_, i) => ({ code: 'Q' + (i + 1), name: 'Question ' + (i + 1), max: 1 }));
+  }
+  if (kind === 'interview') return [1, 2, 3, 4, 5].map((i) => ({ code: 'A' + i, name: 'Answer ' + i, max: 1 }));
+  if (kind === 'compare') return [{ code: 'K1', name: 'Task completion / content (all plan points)', max: 4 }, { code: 'K2', name: 'Organisation', max: 3 }, { code: 'K3', name: 'Language', max: 3 }];
+  return [{ code: 'R', name: 'Reading (pronunciation: a teacher checks it best)', max: 1 }];
 }
 
 export async function evalEgeSpeaking(kind, item, transcript) {
-  const crit = egeCriteria(kind);
+  const crit = egeCriteria(kind, item);
   const mx = crit.reduce((s, c) => s + c.max, 0);
   const instr = item.instruction || '';
   let task;

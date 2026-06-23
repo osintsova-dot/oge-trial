@@ -639,7 +639,7 @@ export const STRINGS = {
       aiErr: 'Failed:',
       aiEmpty: 'No speech recognised — record again, closer to the mic.',
       aiTranscript: 'What the AI heard',
-      aiNote: 'Rough guide: the AI judges the recognised text (content, grammar, completeness). Official point limits to be confirmed; pronunciation is best checked with a teacher.',
+      aiNote: 'The AI judges the recognised text (content, grammar, completeness) by the official FIPI limits (1/4/5/10). Pronunciation is best checked with a teacher.',
       listenModel: 'Listen to the model',
       sampleQuestions: 'Model questions',
       sampleTitle: 'Model answers',
