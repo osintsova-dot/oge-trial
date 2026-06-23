@@ -808,6 +808,7 @@ export async function renderHomeworkResult(container, opts) {
       id: hashStr('w|' + name + '|' + (payload.topic || '') + '|' + score + '|' + (payload.ts || '')),
       exam: EXAM.id, name, ts: payload.ts || Date.now(), correct: score, total: max,
       byTopic: { 'Письмо': { c: score, t: max } }, summary: 'письмо' + (payload.topic ? ': ' + payload.topic : ''),
+      writings: [{ topic: payload.topic || '', score, max }],
     };
     const saved = addToJournal(entry);
     mount(container, el('div', { class: 'view hw' }, [
@@ -850,6 +851,7 @@ export async function renderHomeworkResult(container, opts) {
     id: hashStr(name + '|' + JSON.stringify(payload.set) + '|' + JSON.stringify(answers) + '|' + JSON.stringify(w.map((x) => x.score))),
     exam: EXAM.id, name, ts: payload.ts || Date.now(), correct, total,
     byTopic, summary: [...new Set(sumLabels)].join(', '),
+    writings: w.map((x) => ({ topic: x.topic, score: x.score, max: x.max })),
   };
   const saved = addToJournal(entry);
 
@@ -907,6 +909,7 @@ export function renderJournal(container, opts) {
       el('div', { style: { flex: '1', minWidth: '0' } }, [
         el('div', { class: 'jr-name', text: e.name }),
         el('div', { class: 'jr-meta', text: fmtDate(e.ts) + ' · ' + (e.summary || '') }),
+        ...((e.writings || []).filter((wr) => wr.topic).map((wr) => el('div', { class: 'jr-wrow', text: '✉️ ' + wr.topic + ' — ' + wr.score + '/' + wr.max }))),
       ]),
       el('div', { class: 'jr-score', style: { color: e.correct / e.total < 0.5 ? '#d64545' : (e.correct / e.total < 0.75 ? '#E0922F' : '#2f9e44') }, text: e.correct + '/' + e.total }),
     ]))),
