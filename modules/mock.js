@@ -108,6 +108,7 @@ export async function renderMock(container, cfg) {
     renderPrintView(container, {
       title: M.title + ' · ' + M.variant(v.num),
       sub: EXAM.badge,
+      exam: EXAM.id,
       sections: v.sections,
       onBack: introScreen,
     });
