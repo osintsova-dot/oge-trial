@@ -255,7 +255,7 @@ export const STRINGS = {
       rGaps: 'Вставь части предложений в пропуски (одна лишняя).',
       readScore: (c, n) => 'Чтение: ' + c + ' / ' + n, listenScore: (c, n) => 'Аудирование: ' + c + ' / ' + n,
       lPlay: 'Прослушай аудио и ответь на вопросы.', lScript: 'Показать транскрипт',
-      wTask: 'Письмо', wWrite: 'Написать письмо', wOnlyNote: 'Напиши письмо в редакторе и отправь результат учителю кнопкой в конце.',
+      wTask: 'Письмо', wWrite: 'Написать письмо', wEvaluating: 'Проверяю письмо…', wEmpty: 'Письмо не написано', wEvalFail: 'Не удалось проверить письмо (нет сети?)',
       savedJournal: 'Сохранено в журнал класса ✓', alreadyJournal: 'Эта работа уже есть в журнале',
     },
     // vocab (лексика — тема недели + флэшкарты/SRS)
@@ -828,7 +828,7 @@ export const STRINGS = {
       rGaps: 'Fill the gaps with the sentence parts (one is extra).',
       readScore: (c, n) => 'Reading: ' + c + ' / ' + n, listenScore: (c, n) => 'Listening: ' + c + ' / ' + n,
       lPlay: 'Listen to the audio and answer.', lScript: 'Show transcript',
-      wTask: 'Writing', wWrite: 'Write', wOnlyNote: 'Write in the editor and send the result to your teacher from there.',
+      wTask: 'Writing', wWrite: 'Write', wEvaluating: 'Checking your writing…', wEmpty: 'No writing submitted', wEvalFail: 'Could not check the writing',
       savedJournal: 'Сохранено в журнал класса ✓', alreadyJournal: 'Эта работа уже есть в журнале',
     },
     sections: { vocab: 'Topic Vocabulary', grammar: 'Grammar', wordform: 'Word formation', reading: 'Reading', listening: 'Listening', writing: 'Writing', speaking: 'Speaking', mock: 'Mock exam', lexis: 'Vocabulary', email: 'Email', essay: 'Essay' },

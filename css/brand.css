@@ -1240,6 +1240,9 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .hw-text{flex:1}
 .hw-input{display:inline-block;min-width:90px;width:auto;font-size:14px;padding:2px 8px;border:none;border-bottom:2px solid var(--p-text);background:var(--surf);border-radius:5px 5px 0 0;color:var(--ink)}
 .hw-base{color:var(--magenta);font-weight:800;text-transform:uppercase;font-size:13px;white-space:nowrap}
+.hw-wtext{width:100%;box-sizing:border-box;min-height:140px;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--surf);color:var(--ink);font-size:14px;line-height:1.5;resize:vertical}
+.hw-wc{font-size:12px;color:var(--muted);margin-top:4px;text-align:right}
+.hw-wc.ok{color:#2f9e44}.hw-wc.bad{color:#d64545}
 /* чтение в ДЗ */
 .hw-q-read{flex-direction:column;align-items:stretch;gap:6px}
 .hw-rblock{flex:1;display:flex;flex-direction:column;gap:10px}

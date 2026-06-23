@@ -7,6 +7,7 @@ import { el, mount } from '../js/ui.js';
 import { loadJSON } from '../js/data.js';
 import { EXAM, t } from '../js/exam.js';
 import { getName } from '../js/gamify.js';
+import { evalWriting } from '../js/writeeval.js';
 import { renderPrintView, stripTrailingBase } from './print.js';
 
 // человекочитаемые названия дрилл-разделов
@@ -190,6 +191,19 @@ function reviewRows(allUnits, answers, keys, H) {
   return { correct, total, rows };
 }
 
+// карточка результата письма (оценено ИИ) — для разбора ученика и экрана учителя
+function writingCard(w, H) {
+  return el('div', { class: 'hw-rev ' + (w.score >= w.max ? 'ok' : 'no') }, [
+    el('div', { class: 'hw-rev-t', text: '✉️ ' + (w.topic || H.wTask) + ' — ' + w.score + '/' + w.max }),
+    el('div', { class: 'jr-topics' }, (w.crit || []).map((c) => el('div', { class: 'jr-topic' }, [
+      el('div', { class: 'jr-topic-n', text: c.code }),
+      el('div', { class: 'jr-topic-bar' }, [el('i', { style: { width: (c.max ? c.score / c.max * 100 : 0) + '%', background: 'var(--p-text)' } })]),
+      el('div', { class: 'jr-topic-v', text: c.score + '/' + c.max }),
+    ]))),
+    w.verdict ? el('div', { class: 'hw-rev-a', text: w.verdict }) : null,
+  ].filter(Boolean));
+}
+
 // модалка со ссылкой (копирование + подтверждение), общая
 function copyLinkSheet(o) {
   const inp = el('input', { class: 'tch-link-in', type: 'text', value: o.url, readonly: true });
@@ -346,7 +360,8 @@ async function loadWritingBlocks() {
     (d || []).forEach((it) => {
       const prompt = (it.prompt || ((it.context || '') + ' ' + (it.questions || '')).trim() || it.subject || '').replace(/\s+/g, ' ');
       out.push({ id: tk.sectionId + '~' + it.zid, secId: tk.sectionId, zid: it.zid,
-        wlabel: WLABEL[tk.sectionId] || tk.id, title: it.name ? ('Письмо от ' + it.name) : (it.subject || prompt).slice(0, 60), prompt });
+        wlabel: WLABEL[tk.sectionId] || tk.id, title: it.name ? ('Письмо от ' + it.name) : (it.subject || prompt).slice(0, 60), prompt,
+        criteria: tk.criteria, max: tk.max, words: tk.words });
     });
   }
   return out;
@@ -679,13 +694,20 @@ export async function renderHomework(container, opts) {
     const list = el('div', { class: 'hw-list' });
     units.forEach((u, i) => {
       if (u.kind === 'write') {
-        // тема письма: ученик пишет в разделе «Письмо» и отправляет результат оттуда
+        // письмо прямо в ДЗ: задание + поле + счётчик слов; проверится ИИ при «Сдать»
+        const akey = 'w:' + u.block.id;
+        const ta = el('textarea', { class: 'hw-wtext', rows: '8', placeholder: H.answerPh, value: answers[akey] || '' });
+        const wc = el('div', { class: 'hw-wc' });
+        const [wmin, wmax] = u.block.words || [100, 140];
+        const upd = () => { const n = ta.value.trim().split(/\s+/).filter(Boolean).length; wc.textContent = n + ' / ' + wmin + '–' + wmax; wc.className = 'hw-wc ' + (n >= wmin && n <= wmax ? 'ok' : (n > wmax ? 'bad' : '')); };
+        ta.addEventListener('input', () => { answers[akey] = ta.value; upd(); });
+        upd();
         list.appendChild(el('div', { class: 'hw-q hw-q-read' }, [
           el('span', { class: 'hw-n', text: (i + 1) + '.' }),
           el('div', { class: 'hw-rblock' }, [
             el('div', { class: 'hw-rinstr', text: '✉️ ' + (u.block.wlabel || H.wTask) }),
             el('div', { class: 'hw-rtext', text: u.block.prompt }),
-            el('button', { class: 'btn btn-primary', text: '✍️ ' + H.wWrite, onclick: () => { location.hash = '#/' + u.block.secId + '?z=' + u.block.zid; } }),
+            ta, wc,
           ]),
         ]));
         return;
@@ -712,38 +734,52 @@ export async function renderHomework(container, opts) {
       ]));
     });
     view.appendChild(list);
-    // «Сдать» — только если есть автопроверяемые задания; чисто-письменное ДЗ сдаётся из раздела «Письмо»
-    const hasAuto = units.some((u) => u.kind !== 'write');
     view.appendChild(el('div', { class: 'hw-bar' }, [
-      hasAuto
-        ? el('button', { class: 'btn btn-primary btn-block', text: '📤 ' + H.submit, onclick: submitToTeacher })
-        : el('div', { class: 'hw-note', text: H.wOnlyNote }),
+      el('button', { class: 'btn btn-primary btn-block', text: '📤 ' + H.submit, onclick: submitToTeacher }),
     ]));
   }
 
-  // Сдать: фиксируем ответы → даём ссылку учителю → показываем разбор (переделать нельзя)
-  function submitToTeacher() {
+  // Сдать: фиксируем → ИИ-проверка письма (если есть) → ссылка учителю → разбор. Переделать нельзя.
+  async function submitToTeacher() {
     if (!confirm(H.confirmSubmit)) return;
     let name = getName();
     if (!name) name = (prompt(H.askName) || '').trim();
-    const payload = { n: name || H.anon, set: groups, a: { ...answers }, ts: Date.now() };
+    const writeUnits = units.filter((u) => u.kind === 'write');
+    let w = [];
+    if (writeUnits.length) {
+      view.replaceChildren(el('div', { class: 'loader', text: H.wEvaluating }));
+      for (const u of writeUnits) {
+        const b = u.block, text = (answers['w:' + b.id] || '').trim();
+        if (!text) { w.push({ id: b.id, wkind: b.wlabel, topic: b.title, score: 0, max: b.max, crit: [], verdict: H.wEmpty }); continue; }
+        try {
+          const res = await evalWriting(text, { lang: EXAM.lang, sectionId: b.secId, criteria: b.criteria, max: b.max, words: b.words, stim: b.prompt });
+          w.push({ id: b.id, wkind: b.wlabel, topic: b.title, score: res.totalScore || 0, max: b.max,
+            crit: (res.criteria || []).map((c) => ({ code: c.code, score: c.score, max: c.max })), verdict: res.verdict || '' });
+        } catch (e) {
+          w.push({ id: b.id, wkind: b.wlabel, topic: b.title, score: 0, max: b.max, crit: [], verdict: H.wEvalFail });
+        }
+      }
+    }
+    const payload = { n: name || H.anon, set: groups, a: { ...answers }, w, ts: Date.now() };
     const url = location.origin + location.pathname + '#/hwr?' + b64e(JSON.stringify(payload));
-    showReview();
+    showReview(w);
     copyLinkSheet({ url, title: H.sendTitle, sub: H.sendSub, copyLabel: H.copy, closeLabel: H.close });
   }
 
-  // разбор после сдачи — без «переделать»
-  function showReview() {
+  // разбор после сдачи (авто + письмо) — без «переделать»
+  function showReview(w) {
     const { correct, total, rows } = reviewRows(units, answers, keys, H);
-    const pc = Math.round(correct / total * 100);
+    let c = correct, tot = total;
+    for (const x of (w || [])) { c += x.score; tot += x.max; }
+    const pc = tot ? Math.round(c / tot * 100) : 0;
     view.replaceChildren(
       el('div', { class: 'hw-top' }, [el('button', { class: 'back', text: '←', onclick: opts.goHome }), el('div', { class: 'hw-t', text: H.resultTitle })]),
       el('div', { class: 'hw-note', text: H.sentNote }),
       el('div', { class: 'hw-score' }, [
-        el('div', { class: 'hw-score-v', text: correct + ' / ' + total }),
+        el('div', { class: 'hw-score-v', text: c + ' / ' + tot }),
         el('div', { class: 'hw-score-p', text: pc + '%' }),
       ]),
-      el('div', { class: 'hw-list' }, rows),
+      el('div', { class: 'hw-list' }, [...rows, ...(w || []).map((x) => writingCard(x, H))]),
       el('div', { class: 'hw-bar' }, [el('button', { class: 'btn btn-primary btn-block', text: H.done, onclick: opts.goHome })]),
     );
     view.scrollTop = 0;
@@ -797,18 +833,23 @@ export async function renderHomeworkResult(container, opts) {
 
   if (!payload.set) return fail();
   const { units, keys } = await gatherTasks(payload.set);
-  if (!units.length) return fail();
+  const w = payload.w || [];
+  if (!units.length && !w.length) return fail();
   const answers = payload.a || {};
   const name = payload.n || H.anon;
-  const { correct, total, rows } = reviewRows(units, answers, keys, H);
-  const pc = Math.round(correct / total * 100);
+  const auto = reviewRows(units, answers, keys, H);
+  let correct = auto.correct, total = auto.total;
+  for (const x of w) { correct += x.score; total += x.max; }
+  const pc = total ? Math.round(correct / total * 100) : 0;
 
   // сохраняем в журнал учителя (дедуп по содержимому)
-  const sumLabels = Object.keys(payload.set).map((s) => s === 'reading' ? 'чтение' : (SEC_TITLE[s] || s).toLowerCase());
+  const byTopic = unitsByTopic(units, answers, keys);
+  for (const x of w) { const b = byTopic['Письмо'] = byTopic['Письмо'] || { c: 0, t: 0 }; b.c += x.score; b.t += x.max; }
+  const sumLabels = Object.keys(payload.set).map((s) => s === 'reading' ? 'чтение' : s === 'listening' ? 'аудирование' : s === 'writing' ? 'письмо' : (SEC_TITLE[s] || s).toLowerCase());
   const entry = {
-    id: hashStr(name + '|' + JSON.stringify(payload.set) + '|' + JSON.stringify(answers)),
+    id: hashStr(name + '|' + JSON.stringify(payload.set) + '|' + JSON.stringify(answers) + '|' + JSON.stringify(w.map((x) => x.score))),
     exam: EXAM.id, name, ts: payload.ts || Date.now(), correct, total,
-    byTopic: unitsByTopic(units, answers, keys), summary: sumLabels.join(', '),
+    byTopic, summary: [...new Set(sumLabels)].join(', '),
   };
   const saved = addToJournal(entry);
 
@@ -819,7 +860,7 @@ export async function renderHomeworkResult(container, opts) {
       el('div', { class: 'hw-score-v', text: correct + ' / ' + total }),
       el('div', { class: 'hw-score-p', text: pc + '%' }),
     ]),
-    el('div', { class: 'hw-list' }, rows),
+    el('div', { class: 'hw-list' }, [...auto.rows, ...w.map((x) => writingCard(x, H))]),
     el('div', { class: 'hw-bar' }, [
       el('button', { class: 'btn', text: '📊 ' + t.teacher.journal, onclick: () => renderJournal(container, opts) }),
       el('button', { class: 'btn btn-primary', text: H.done, onclick: opts.goHome }),
