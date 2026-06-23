@@ -780,7 +780,7 @@ export const STRINGS = {
       wsTitle: 'Worksheet · Speak & Smile', wsSub: (badge) => badge,
     },
     sections: { vocab: 'Topic Vocabulary', grammar: 'Grammar', wordform: 'Word formation', reading: 'Reading', listening: 'Listening', writing: 'Writing', speaking: 'Speaking', mock: 'Mock exam', lexis: 'Vocabulary', email: 'Email', essay: 'Essay' },
-    sectionMeta: { vocab: 'theme of the week · 15 words a day', grammar: '389 tasks · grammar', wordform: '728 tasks · word forms', reading: '469 tasks · 3 formats', listening: 'FIPI audio · multiple choice', writing: 'writing', speaking: '184 tasks · recorder + AI', mock: 'full timed paper', lexis: '728 tasks · vocabulary', email: 'task 37 · K1–K3', essay: 'task 38 · K1–K5' },
+    sectionMeta: { vocab: 'theme of the week · 15 words a day', grammar: '340 tasks · 9 topics', wordform: '273 tasks · word forms', reading: '469 tasks · 3 formats', listening: 'FIPI audio · multiple choice', writing: 'writing', speaking: '184 tasks · recorder + AI', mock: 'full timed paper', lexis: '273 tasks · 9 topics', email: 'task 37 · K1–K3', essay: 'task 38 · K1–K5' },
     ranks: ['Rookie', 'Trainee', 'Skilled', 'Pro', 'Master', 'Legend'],
     skins: {
       aurora: { name: 'Aurora', desc: 'Purple → honey', need: 'available now', how: 'A skin is the colour of your XP bar at the top. "Aurora" (purple → honey) is available right away — equip it in one tap.' },
