@@ -220,6 +220,11 @@ function firstText(texts) {
   return (texts[k] || '').replace(/\s+/g, ' ').slice(0, 90);
 }
 
+// пометка в разборе: ✓ или ✗ с правильным ответом
+function markEl(ok, correct) {
+  return el('span', { class: 'hw-mk ' + (ok ? 'ok' : 'no'), text: ok ? ' ✓' : ' ✗ → ' + correct });
+}
+
 // все блоки чтения текущего экзамена в едином виде: {id, kind, type, data, n, preview}
 async function loadReadingBlocks() {
   const cfg = EXAM.sections.find((s) => s.type === 'reading');
@@ -250,24 +255,29 @@ function renderReadBlock(block, answers, H, readonly) {
         else if (a[st.num] !== v) b.disabled = true;
         return b;
       });
-      wrap.appendChild(el('div', { class: 'hw-tf' }, [el('div', { class: 'hw-tf-s', text: st.num + '. ' + st.statement }), el('div', { class: 'hw-tf-btns' }, btns)]));
+      const head = el('div', { class: 'hw-tf-s' }, [el('span', { text: st.num + '. ' + st.statement }), readonly ? markEl(a[st.num] === st.answer, TF_LBL[+st.answer - 1]) : null].filter(Boolean));
+      wrap.appendChild(el('div', { class: 'hw-tf' }, [head, el('div', { class: 'hw-tf-btns' }, btns)]));
     });
   } else if (block.kind === 'rmatch') {
     const qs = d.questions || d.headings || [];
     wrap.appendChild(el('div', { class: 'hw-rinstr', text: H.rMatch }));
     wrap.appendChild(el('ol', { class: 'hw-rqs' }, qs.map((q) => el('li', { text: q }))));
-    RLET.filter((L) => d.texts && d.texts[L] != null).forEach((L) => {
+    const ls = RLET.filter((L) => d.texts && d.texts[L] != null);
+    ls.forEach((L, idx) => {
       const sel = el('select', { class: 'hw-sel' });
       sel.appendChild(el('option', { value: '', text: '—' }));
       qs.forEach((_, qi) => sel.appendChild(el('option', { value: String(qi + 1), text: String(qi + 1) })));
       if (a[L]) sel.value = a[L];
       if (readonly) sel.disabled = true; else sel.addEventListener('change', () => { a[L] = sel.value; });
-      wrap.appendChild(el('div', { class: 'hw-rtxt' }, [el('div', { class: 'hw-rtxt-h' }, [el('b', { text: L }), sel]), el('div', { text: d.texts[L] })]));
+      const correct = String((d.answer || '')[idx]);
+      const hrow = el('div', { class: 'hw-rtxt-h' }, [el('b', { text: L }), sel, readonly ? markEl((a[L] || '') === correct, correct) : null].filter(Boolean));
+      wrap.appendChild(el('div', { class: 'hw-rtxt' }, [hrow, el('div', { text: d.texts[L] })]));
     });
   } else if (block.kind === 'gaps') {
     wrap.appendChild(el('div', { class: 'hw-rinstr', text: H.rGaps }));
     wrap.appendChild(el('ol', { class: 'hw-rqs' }, (d.parts || []).map((p) => el('li', { text: p }))));
     const para = el('div', { class: 'hw-rtext' });
+    const gl = d.gaps || [];
     (d.passage || '').split(/\{([A-G])\}/).forEach((ch, idx) => {
       if (idx % 2 === 0) { if (ch) para.appendChild(document.createTextNode(ch)); return; }
       const L = ch;
@@ -277,19 +287,23 @@ function renderReadBlock(block, answers, H, readonly) {
       if (a[L]) sel.value = a[L];
       if (readonly) sel.disabled = true; else sel.addEventListener('change', () => { a[L] = sel.value; });
       para.appendChild(sel);
+      if (readonly) { const correct = String((d.answer || '')[gl.indexOf(L)]); para.appendChild(markEl((a[L] || '') === correct, correct)); }
     });
     wrap.appendChild(para);
   } else if (block.kind === 'choicegroup') {
     wrap.appendChild(el('div', { class: 'hw-rtext', text: d.text || '' }));
     (d.questions || []).forEach((q, qi) => {
+      const key = String(q.answer != null ? q.answer : q.key);
       const opts = (q.options || []).map((o, oi) => {
         const id = 'r_' + block.id + '_' + qi + '_' + oi;
         const inp = el('input', { type: 'radio', name: 'r_' + block.id + '_' + qi, id, value: String(oi + 1) });
         if (a[qi] === String(oi + 1)) inp.checked = true;
         if (readonly) inp.disabled = true; else inp.addEventListener('change', () => { a[qi] = String(oi + 1); });
-        return el('label', { class: 'mock-opt', for: id }, [inp, el('span', { text: o })]);
+        const cls = 'mock-opt' + (readonly && String(oi + 1) === key ? ' hw-opt-correct' : '') + (readonly && a[qi] === String(oi + 1) && a[qi] !== key ? ' hw-opt-wrong' : '');
+        return el('label', { class: cls, for: id }, [inp, el('span', { text: o })]);
       });
-      wrap.appendChild(el('div', { class: 'hw-mcq' }, [el('div', { class: 'hw-mcq-q', text: (qi + 1) + '. ' + (q.question || q.q || '') }), el('div', { class: 'mock-opts' }, opts)]));
+      const qh = el('div', { class: 'hw-mcq-q' }, [el('span', { text: (qi + 1) + '. ' + (q.question || q.q || '') }), readonly ? markEl((a[qi] || '') === key, key) : null].filter(Boolean));
+      wrap.appendChild(el('div', { class: 'hw-mcq' }, [qh, el('div', { class: 'mock-opts' }, opts)]));
     });
   }
   return wrap;
@@ -334,29 +348,34 @@ function renderListenBlock(block, answers, H, readonly) {
   (block.questions || []).forEach((q, qi) => {
     const a = (answers[q.zid] = answers[q.zid] || (q.type === 'match' ? {} : ''));
     if (q.type === 'choice') {
+      const key = String(q.key);
       const opts = (q.options || []).map((o, oi) => {
         const id = 'l_' + q.zid + '_' + oi;
         const inp = el('input', { type: 'radio', name: 'l_' + q.zid, id, value: String(oi + 1) });
         if (answers[q.zid] === String(oi + 1)) inp.checked = true;
         if (readonly) inp.disabled = true; else inp.addEventListener('change', () => { answers[q.zid] = String(oi + 1); });
-        return el('label', { class: 'mock-opt', for: id }, [inp, el('span', { text: o })]);
+        const cls = 'mock-opt' + (readonly && String(oi + 1) === key ? ' hw-opt-correct' : '') + (readonly && answers[q.zid] === String(oi + 1) && answers[q.zid] !== key ? ' hw-opt-wrong' : '');
+        return el('label', { class: cls, for: id }, [inp, el('span', { text: o })]);
       });
-      wrap.appendChild(el('div', { class: 'hw-mcq' }, [el('div', { class: 'hw-mcq-q', text: (qi + 1) + '. ' + (q.q || '') }), el('div', { class: 'mock-opts' }, opts)]));
+      const qh = el('div', { class: 'hw-mcq-q' }, [el('span', { text: (qi + 1) + '. ' + (q.q || '') }), readonly ? markEl((answers[q.zid] || '') === key, key) : null].filter(Boolean));
+      wrap.appendChild(el('div', { class: 'hw-mcq' }, [qh, el('div', { class: 'mock-opts' }, opts)]));
     } else if (q.type === 'fill') {
       const inp = el('input', { class: 'hw-input', type: 'text', value: answers[q.zid] || '', placeholder: H.answerPh });
       if (readonly) inp.disabled = true; else inp.addEventListener('input', () => { answers[q.zid] = inp.value; });
-      wrap.appendChild(el('div', { class: 'hw-q' }, [el('span', { class: 'hw-n', text: (qi + 1) + '.' }), el('span', { class: 'hw-text' }, [document.createTextNode((q.label ? q.label + ': ' : '')), inp])]));
+      const ok = hwNorm(answers[q.zid] || '') === hwNorm(q.key || '') && (answers[q.zid] || '').trim() !== '';
+      wrap.appendChild(el('div', { class: 'hw-q' }, [el('span', { class: 'hw-n', text: (qi + 1) + '.' }), el('span', { class: 'hw-text' }, [document.createTextNode((q.label ? q.label + ': ' : '')), inp, readonly ? markEl(ok, q.key || '') : null].filter(Boolean))]));
     } else if (q.type === 'match') {
       const obj = answers[q.zid] = answers[q.zid] || {};
       wrap.appendChild(el('div', { class: 'hw-mcq-q', text: (qi + 1) + '. ' + (q.task || '') }));
       wrap.appendChild(el('ol', { class: 'hw-rqs' }, (q.rubrics || []).map((r) => el('li', { text: r }))));
-      (q.speakers || []).forEach((sp) => {
+      (q.speakers || []).forEach((sp, idx) => {
         const sel = el('select', { class: 'hw-sel' });
         sel.appendChild(el('option', { value: '', text: '—' }));
         (q.rubrics || []).forEach((_, ri) => sel.appendChild(el('option', { value: String(ri + 1), text: String(ri + 1) })));
         if (obj[sp]) sel.value = obj[sp];
         if (readonly) sel.disabled = true; else sel.addEventListener('change', () => { obj[sp] = sel.value; });
-        wrap.appendChild(el('div', { class: 'hw-rtxt-h' }, [el('b', { text: sp }), sel]));
+        const correct = String((q.key || '')[idx]);
+        wrap.appendChild(el('div', { class: 'hw-rtxt-h' }, [el('b', { text: sp }), sel, readonly ? markEl((obj[sp] || '') === correct, correct) : null].filter(Boolean)));
       });
     }
   });
@@ -650,18 +669,18 @@ export async function renderHomework(container, opts) {
     ]));
   }
 
-  // Сдать: фиксируем ответы → даём ссылку учителю → ПОТОМ показываем разбор (переделать нельзя)
+  // Сдать: фиксируем ответы → даём ссылку учителю → показываем разбор (переделать нельзя)
   function submitToTeacher() {
     if (!confirm(H.confirmSubmit)) return;
     let name = getName();
     if (!name) name = (prompt(H.askName) || '').trim();
-    const payload = { n: name || H.anon, set: groups, a: { ...answers }, ts: Date.now() }; // снимок ответов
+    const payload = { n: name || H.anon, set: groups, a: { ...answers }, ts: Date.now() };
     const url = location.origin + location.pathname + '#/hwr?' + b64e(JSON.stringify(payload));
     showReview();
     copyLinkSheet({ url, title: H.sendTitle, sub: H.sendSub, copyLabel: H.copy, closeLabel: H.close });
   }
 
-  // разбор после сдачи — без «переделать»; повторно отправить улучшенный результат нельзя
+  // разбор после сдачи — без «переделать»
   function showReview() {
     const { correct, total, rows } = reviewRows(units, answers, keys, H);
     const pc = Math.round(correct / total * 100);
