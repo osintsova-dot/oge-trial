@@ -240,6 +240,9 @@ export const STRINGS = {
       answerPh: 'ответ', check: 'Проверить', broken: 'Ссылка повреждена или задания не найдены',
       resultTitle: 'Результат', retry: 'Ещё раз', done: 'Готово',
       yourCorrect: (k) => 'Верно: ' + k, yourWrong: (m, k) => 'Твой ответ: ' + m + ' · Верно: ' + k,
+      send: 'Отправить учителю', askName: 'Как тебя зовут? (увидит учитель)', anon: 'Ученик',
+      sendTitle: 'Ссылка с результатом', sendSub: 'Скопируй и отправь учителю — он увидит твои ответы и оценку',
+      copy: 'Копировать', close: 'Готово', studentResult: (n) => 'Результат: ' + n,
     },
     // vocab (лексика — тема недели + флэшкарты/SRS)
     vocab: {
@@ -796,6 +799,9 @@ export const STRINGS = {
       answerPh: 'answer', check: 'Check', broken: 'The link is broken or tasks not found',
       resultTitle: 'Result', retry: 'Again', done: 'Done',
       yourCorrect: (k) => 'Correct: ' + k, yourWrong: (m, k) => 'Your answer: ' + m + ' · Correct: ' + k,
+      send: 'Send to teacher', askName: 'What is your name? (teacher will see it)', anon: 'Student',
+      sendTitle: 'Result link', sendSub: 'Copy and send it to your teacher — they will see your answers and score',
+      copy: 'Copy', close: 'Done', studentResult: (n) => 'Result: ' + n,
     },
     sections: { vocab: 'Topic Vocabulary', grammar: 'Grammar', wordform: 'Word formation', reading: 'Reading', listening: 'Listening', writing: 'Writing', speaking: 'Speaking', mock: 'Mock exam', lexis: 'Vocabulary', email: 'Email', essay: 'Essay' },
     sectionMeta: { vocab: 'theme of the week · 15 words a day', grammar: '341 tasks · 9 topics', wordform: '275 tasks · word forms', reading: '469 tasks · 3 formats', listening: 'FIPI audio · multiple choice', writing: 'writing', speaking: '184 tasks · recorder + AI', mock: 'full timed paper', lexis: '275 tasks · 9 topics', email: 'task 37 · K1–K3', essay: 'task 38 · K1–K5' },

@@ -192,7 +192,8 @@ function renderItem(it, n, exam) {
     // gap: базовое слово показываем ПРЯМО у пропуска [BASE]; убираем дубль базового слова с конца (формат ОГЭ)
     const bw = it.base_word || '';
     const body = bw ? stripTrailingBase(it.text || '', bw) : (it.text || '');
-    const gapTxt = body.replace(/_{3,}/, ' (' + n + ') ______ ' + (bw ? '[' + bw + '] ' : ''));
+    // пропуск может быть из нескольких прогонов подчёркиваний подряд — заменяем целиком один раз
+    const gapTxt = body.replace(/_{3,}(?:\s*_{3,})*/, ' (' + n + ') ______ ' + (bw ? '[' + bw + '] ' : ''));
     const txt = it.kind === 'gap' ? gapTxt : fillTxt;
     return { node: el('div', { class: 'pp-q' }, [el('div', { class: 'pp-qt', text: (it.kind === 'fill' ? n + '. ' : '') + txt })]), n };
   }

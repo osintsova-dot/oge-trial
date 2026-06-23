@@ -6,6 +6,7 @@
 import { el, mount } from '../js/ui.js';
 import { loadJSON } from '../js/data.js';
 import { EXAM, t } from '../js/exam.js';
+import { getName } from '../js/gamify.js';
 import { renderPrintView, stripTrailingBase } from './print.js';
 
 // человекочитаемые названия дрилл-разделов
@@ -57,6 +58,80 @@ function wordformTopic(it, ans) {
 
 export function topicOf(secId, it, ans) {
   return secId === 'grammar' ? grammarTopic(it, ans) : wordformTopic(it, ans);
+}
+
+// ---- общие хелперы ДЗ (ссылка/проверка/разбор) ----
+const b64e = (s) => btoa(unescape(encodeURIComponent(s)));   // UTF-8 безопасный base64
+const b64d = (s) => decodeURIComponent(escape(atob(s)));
+const hwNorm = (s) => (s || '').toLowerCase().trim().replace(/\s+/g, ' ').replace(/^(a|an|the)\s+/, '');
+// пропуск может быть из нескольких прогонов подчёркиваний подряд («____ ____») — считаем как один
+const GAP_RE = /_{3,}(?:\s*_{3,})*/;
+
+function parseSet(query) {
+  const groups = {};
+  for (const part of (query || '').split(';')) {
+    const i = part.indexOf(':');
+    if (i < 0) continue;
+    const sec = part.slice(0, i), csv = part.slice(i + 1);
+    if (sec && csv) groups[sec] = csv.split(',').filter(Boolean);
+  }
+  return groups;
+}
+
+async function gatherTasks(groups) {
+  const keys = await loadJSON(EXAM.keysFile);
+  const tasks = [];
+  for (const secId of Object.keys(groups)) {
+    const cfg = EXAM.sections.find((s) => s.id === secId);
+    if (!cfg) continue;
+    let bank;
+    try { bank = await loadJSON(cfg.dataFile); } catch (e) { continue; }
+    const byZid = {};
+    for (const it of bank) byZid[it.zid] = it;
+    for (const zid of groups[secId]) { const it = byZid[zid]; if (it) tasks.push({ secId, it }); }
+  }
+  return { tasks, keys };
+}
+
+// разбор (строки + счёт верных) — общий для ученика и учителя
+function reviewRows(tasks, answers, keys, H) {
+  let correct = 0;
+  const rows = tasks.map((tk, i) => {
+    const key = (keys[tk.it.zid] || {}).answer || '';
+    const mine = answers[tk.it.zid] || '';
+    const ok = hwNorm(mine) === hwNorm(key) && mine.trim() !== '';
+    if (ok) correct += 1;
+    const bw = tk.it.base_word || '';
+    const clean = bw ? stripTrailingBase(tk.it.text || '', bw) : (tk.it.text || '');
+    const prev = clean.replace(GAP_RE, ' ___ ' + (bw ? '(' + bw + ') ' : ''));
+    return el('div', { class: 'hw-rev ' + (ok ? 'ok' : 'no') }, [
+      el('div', { class: 'hw-rev-t', text: (i + 1) + '. ' + prev }),
+      el('div', { class: 'hw-rev-a' }, [
+        el('span', { class: 'hw-rev-mark', text: ok ? '✓' : '✗' }),
+        el('span', { text: ok ? H.yourCorrect(key) : H.yourWrong(mine || '—', key) }),
+      ]),
+    ]);
+  });
+  return { correct, rows };
+}
+
+// модалка со ссылкой (копирование + подтверждение), общая
+function copyLinkSheet(o) {
+  const inp = el('input', { class: 'tch-link-in', type: 'text', value: o.url, readonly: true });
+  const back = el('div', { class: 'modal-back', onclick: (e) => { if (e.target === back) back.remove(); } }, [
+    el('div', { class: 'modal tch-link-modal' }, [
+      el('div', { class: 'tch-link-h', text: o.title }),
+      o.sub ? el('div', { class: 'tch-link-sub', text: o.sub }) : null,
+      inp,
+      el('div', { class: 'tch-link-btns' }, [
+        el('button', { class: 'btn', text: o.copyLabel, onclick: () => { inp.select(); if (navigator.clipboard) navigator.clipboard.writeText(o.url); } }),
+        el('button', { class: 'btn btn-primary', text: o.closeLabel, onclick: () => back.remove() }),
+      ]),
+    ].filter(Boolean)),
+  ]);
+  document.body.appendChild(back);
+  if (navigator.clipboard) navigator.clipboard.writeText(o.url).catch(() => {});
+  setTimeout(() => { inp.focus(); inp.select(); }, 50);
 }
 
 export async function renderTeacher(container, opts) {
@@ -229,27 +304,7 @@ export async function renderTeacher(container, opts) {
   function copyLink() {
     if (!picked.size) return;
     const url = location.origin + location.pathname + '#/hw?' + encodeSet();
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(url).then(() => linkModal(url, true), () => linkModal(url, false));
-    } else linkModal(url, false);
-  }
-
-  // модалка со ссылкой (для копирования вручную / подтверждения)
-  function linkModal(url, copied) {
-    const inp = el('input', { class: 'tch-link-in', type: 'text', value: url, readonly: true });
-    const back = el('div', { class: 'modal-back', onclick: (e) => { if (e.target === back) back.remove(); } }, [
-      el('div', { class: 'modal tch-link-modal' }, [
-        el('div', { class: 'tch-link-h', text: copied ? T.linkCopied : T.linkTitle }),
-        el('div', { class: 'tch-link-sub', text: T.linkSub(picked.size) }),
-        inp,
-        el('div', { class: 'tch-link-btns' }, [
-          el('button', { class: 'btn', text: T.linkCopyAgain, onclick: () => { inp.select(); navigator.clipboard && navigator.clipboard.writeText(url); } }),
-          el('button', { class: 'btn btn-primary', text: T.linkClose, onclick: () => back.remove() }),
-        ]),
-      ]),
-    ]);
-    document.body.appendChild(back);
-    setTimeout(() => { inp.focus(); inp.select(); }, 50);
+    copyLinkSheet({ url, title: T.linkTitle, sub: T.linkSub(picked.size), copyLabel: T.linkCopyAgain, closeLabel: T.linkClose });
   }
 
   draw();
@@ -260,25 +315,8 @@ export async function renderHomework(container, opts) {
   const H = t.homework;
   mount(container, el('div', { class: 'view' }, [el('div', { class: 'loader', text: H.loading })]));
 
-  // парсим набор
-  const groups = {};
-  for (const part of (opts.query || '').split(';')) {
-    const i = part.indexOf(':');
-    if (i < 0) continue;
-    const sec = part.slice(0, i), csv = part.slice(i + 1);
-    if (sec && csv) groups[sec] = csv.split(',').filter(Boolean);
-  }
-  const keys = await loadJSON(EXAM.keysFile);
-  const tasks = []; // {secId, it}
-  for (const secId of Object.keys(groups)) {
-    const cfg = EXAM.sections.find((s) => s.id === secId);
-    if (!cfg) continue;
-    let bank;
-    try { bank = await loadJSON(cfg.dataFile); } catch (e) { continue; }
-    const byZid = {};
-    for (const it of bank) byZid[it.zid] = it;
-    for (const zid of groups[secId]) { const it = byZid[zid]; if (it) tasks.push({ secId, it }); }
-  }
+  const groups = parseSet(opts.query);
+  const { tasks, keys } = await gatherTasks(groups);
 
   if (!tasks.length) {
     mount(container, el('div', { class: 'view hw' }, [
@@ -289,9 +327,6 @@ export async function renderHomework(container, opts) {
   }
 
   const answers = {}; // zid -> ввод
-  // нормализация для проверки: нижний регистр, без артикля, схлоп пробелов
-  const norm = (s) => (s || '').toLowerCase().trim().replace(/\s+/g, ' ').replace(/^(a|an|the)\s+/, '');
-
   const view = el('div', { class: 'view hw' });
   mount(container, view);
 
@@ -305,13 +340,15 @@ export async function renderHomework(container, opts) {
     tasks.forEach((tk, i) => {
       const bw = tk.it.base_word || '';
       const clean = bw ? stripTrailingBase(tk.it.text || '', bw) : (tk.it.text || '');
-      const parts = clean.split(/_{3,}/);
+      const m = clean.match(GAP_RE);
+      const before = m ? clean.slice(0, m.index) : clean;
+      const after = m ? clean.slice(m.index + m[0].length) : '';
       const inp = el('input', { class: 'hw-input', type: 'text', value: answers[tk.it.zid] || '', placeholder: H.answerPh });
       inp.addEventListener('input', () => { answers[tk.it.zid] = inp.value; });
       const cue = bw ? el('b', { class: 'hw-base', text: ' (' + bw + ') ' }) : document.createTextNode('');
       list.appendChild(el('div', { class: 'hw-q' }, [
         el('span', { class: 'hw-n', text: (i + 1) + '.' }),
-        el('span', { class: 'hw-text' }, [document.createTextNode(parts[0] || ''), inp, cue, document.createTextNode(parts[1] || ' ')]),
+        el('span', { class: 'hw-text' }, [document.createTextNode(before), inp, cue, document.createTextNode(after)]),
       ]));
     });
     view.appendChild(list);
@@ -321,23 +358,7 @@ export async function renderHomework(container, opts) {
   }
 
   function showResult() {
-    let correct = 0;
-    const rows = tasks.map((tk, i) => {
-      const key = (keys[tk.it.zid] || {}).answer || '';
-      const mine = answers[tk.it.zid] || '';
-      const ok = norm(mine) === norm(key) && mine.trim() !== '';
-      if (ok) correct += 1;
-      const bw = tk.it.base_word || '';
-      const clean = bw ? stripTrailingBase(tk.it.text || '', bw) : (tk.it.text || '');
-      const prev = clean.replace(/_{3,}/, ' ___ ' + (bw ? '(' + bw + ') ' : ''));
-      return el('div', { class: 'hw-rev ' + (ok ? 'ok' : 'no') }, [
-        el('div', { class: 'hw-rev-t', text: (i + 1) + '. ' + prev }),
-        el('div', { class: 'hw-rev-a' }, [
-          el('span', { class: 'hw-rev-mark', text: ok ? '✓' : '✗' }),
-          el('span', { text: ok ? H.yourCorrect(key) : H.yourWrong(mine || '—', key) }),
-        ]),
-      ]);
-    });
+    const { correct, rows } = reviewRows(tasks, answers, keys, H);
     const pc = Math.round(correct / tasks.length * 100);
     view.replaceChildren(
       el('div', { class: 'hw-top' }, [el('button', { class: 'back', text: '←', onclick: opts.goHome }), el('div', { class: 'hw-t', text: H.resultTitle })]),
@@ -348,11 +369,48 @@ export async function renderHomework(container, opts) {
       el('div', { class: 'hw-list' }, rows),
       el('div', { class: 'hw-bar' }, [
         el('button', { class: 'btn', text: H.retry, onclick: () => { for (const k in answers) delete answers[k]; drawTasks(); } }),
-        el('button', { class: 'btn btn-primary', text: H.done, onclick: opts.goHome }),
+        el('button', { class: 'btn btn-primary', text: '📤 ' + H.send, onclick: sendToTeacher }),
       ]),
     );
     view.scrollTop = 0;
   }
 
+  function sendToTeacher() {
+    let name = getName();
+    if (!name) name = (prompt(H.askName) || '').trim();
+    const payload = { n: name || H.anon, set: groups, a: answers };
+    const url = location.origin + location.pathname + '#/hwr?' + b64e(JSON.stringify(payload));
+    copyLinkSheet({ url, title: H.sendTitle, sub: H.sendSub, copyLabel: H.copy, closeLabel: H.close });
+  }
+
   drawTasks();
+}
+
+// ===== Учитель видит результат ученика по ссылке (#/hwr?<base64>) =====
+export async function renderHomeworkResult(container, opts) {
+  const H = t.homework;
+  mount(container, el('div', { class: 'view' }, [el('div', { class: 'loader', text: H.loading })]));
+  let payload = null;
+  try { payload = JSON.parse(b64d(opts.query)); } catch (e) { payload = null; }
+  const fail = () => mount(container, el('div', { class: 'view hw' }, [
+    el('div', { class: 'hw-top' }, [el('button', { class: 'back', text: '←', onclick: opts.goHome }), el('div', { class: 'hw-t', text: H.resultTitle })]),
+    el('div', { class: 'tch-empty', text: H.broken }),
+  ]));
+  if (!payload || !payload.set) return fail();
+
+  const { tasks, keys } = await gatherTasks(payload.set);
+  if (!tasks.length) return fail();
+  const answers = payload.a || {};
+  const name = payload.n || H.anon;
+  const { correct, rows } = reviewRows(tasks, answers, keys, H);
+  const pc = Math.round(correct / tasks.length * 100);
+  mount(container, el('div', { class: 'view hw' }, [
+    el('div', { class: 'hw-top' }, [el('button', { class: 'back', text: '←', onclick: opts.goHome }), el('div', { class: 'hw-t', text: H.studentResult(name) })]),
+    el('div', { class: 'hw-score' }, [
+      el('div', { class: 'hw-score-v', text: correct + ' / ' + tasks.length }),
+      el('div', { class: 'hw-score-p', text: pc + '%' }),
+    ]),
+    el('div', { class: 'hw-list' }, rows),
+    el('div', { class: 'hw-bar' }, [el('button', { class: 'btn btn-primary btn-block', text: H.done, onclick: opts.goHome })]),
+  ]));
 }
