@@ -42,6 +42,7 @@ const P = {
   asReplaceBand: 'Замена ошибочных ответов на задания с КРАТКИМ ОТВЕТОМ',
   asInfoBand: 'СВЕДЕНИЯ ОБ УЧАСТНИКЕ', asDoc: 'Документ', asSeria: 'Серия', asNomer: 'Номер',
   as2Note: 'Развёрнутые ответы (письменная часть). Пишите аккуратно, не выходя за границы поля.',
+  keysTitle: 'КЛЮЧИ (для учителя)',
 };
 
 // Главное: показать печатный вид набора заданий.
@@ -64,13 +65,18 @@ export function renderPrintView(container, opts) {
     ...buildPaper(opts.sections, P, opts.exam),
   ]);
 
-  const sheet1 = el('div', { class: 'print-paper answer-sheet as1-sheet' }, [
-    asHeader(P, opts.title, opts.exam),
-    ...buildAnswerSheet(opts.sections, P, opts.exam),
-  ]);
-  const sheet2 = buildSheet2(P, opts.sections, opts.exam);
+  // worksheet учителя: без официального бланка (ответы вписываются в пропуски); опц. страница ключей
+  let sheets = [];
+  if (opts.worksheet) {
+    if (opts.withKeys) sheets = [buildKeysPage(opts.sections, P, opts.exam)];
+  } else {
+    sheets = [
+      el('div', { class: 'print-paper answer-sheet as1-sheet' }, [asHeader(P, opts.title, opts.exam), ...buildAnswerSheet(opts.sections, P, opts.exam)]),
+      buildSheet2(P, opts.sections, opts.exam),
+    ];
+  }
 
-  mount(container, el('div', { class: 'view print-view' }, [toolbar, el('div', { class: 'print-hint no-print', text: P.hint }), paper, sheet1, sheet2].filter(Boolean)));
+  mount(container, el('div', { class: 'view print-view' }, [toolbar, el('div', { class: 'print-hint no-print', text: P.hint }), paper, ...sheets].filter(Boolean)));
 }
 
 // Сколько ЗАДАНИЙ (номеров) занимает элемент и длина ответа каждого (для бланка) — строго по ФИПИ.
@@ -303,6 +309,41 @@ function answerRow(num) {
   return el('div', { class: 'as1-row' }, [
     el('span', { class: 'as1-num', text: String(num) }),
     el('span', { class: 'as1-cells' }, Array.from({ length: AS_CELLS }, () => el('span', { class: 'as1-box' }))),
+  ]);
+}
+
+// ответ задания для страницы ключей (worksheet учителя)
+function answerOf(it) {
+  if (it.kind === 'gap' || it.kind === 'fill') return it.key || '';
+  if (it.kind === 'choice') return it.key ? String(it.key) : '';
+  if (it.kind === 'textgaps') return (it.gaps || []).map((g) => g.key).join(', ');
+  if (it.kind === 'lexgaps') return (it.gaps || []).map((g) => g.key).join(', ');
+  if (it.kind === 'match') return (it.key || []).join('');
+  if (it.kind === 'rmatch') return (it.answer || []).join('');
+  if (it.kind === 'gaps') return (it.answer || []).join('');
+  if (it.kind === 'tfns') return (it.statements || []).map((s) => s.answer).join('');
+  return '';
+}
+
+// ---- Страница КЛЮЧЕЙ для учителя (нумерация совпадает с листом заданий) ----
+function buildKeysPage(sections, P, exam) {
+  let n = 0;
+  const rows = [];
+  for (const sec of sections) {
+    if (sec.id === 'writing' || sec.id === 'speaking') continue;
+    for (const it of (sec.items || [])) {
+      const slots = itemSlots(it, exam);
+      const first = n + 1; n += slots.length;
+      const label = slots.length > 1 ? first + '–' + n : String(first);
+      rows.push({ label, ans: answerOf(it) });
+    }
+  }
+  const mid = Math.ceil(rows.length / 2);
+  const col = (arr) => el('div', { class: 'pk-col' }, arr.map((r) =>
+    el('div', { class: 'pk-row' }, [el('b', { text: r.label + '. ' }), el('span', { text: r.ans })])));
+  return el('div', { class: 'print-paper answer-sheet pk-sheet' }, [
+    el('div', { class: 'pk-h', text: P.keysTitle }),
+    el('div', { class: 'pk-cols' }, [col(rows.slice(0, mid)), col(rows.slice(mid))]),
   ]);
 }
 

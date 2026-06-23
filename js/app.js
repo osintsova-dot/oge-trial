@@ -22,6 +22,7 @@ import { renderListening } from '../modules/listening.js';
 import { renderSpeaking } from '../modules/speaking.js';
 import { renderEgeSpeaking } from '../modules/ege_speaking.js';
 import { renderMock } from '../modules/mock.js';
+import { renderTeacher } from '../modules/teacher.js';
 
 const view = document.getElementById('view');
 const goHome = () => { location.hash = '#/'; };
@@ -53,6 +54,7 @@ function route() {
   if (hash === 'progress') return renderProgress();
   if (hash === 'rewards')  return renderRewards();
   if (hash === 'plan')     return renderPlan();
+  if (hash === 'teacher')  { document.body.classList.add('in-flow'); return renderTeacher(view, { goHome }); }
   if (sec && sec.type === 'drill')   return renderDrill(view, { ...DRILL[sec.id], goHome });
   if (sec && sec.type === 'writing') return renderWriting(view, { goHome, sectionId: sec.id });
   if (sec && sec.type === 'reading') return (EXAM.id === 'ege' ? renderReadingEge : renderReading)(view, { goHome, dataFile: sec.dataFile });
@@ -499,6 +501,7 @@ async function renderProgress() {
         onclick: () => { setSound(!getSound()); renderProgress(); } }),
       el('button', { class: 'act-name', text: t.changeName, onclick: () => renderWelcome(getName(), true) }),
       el('button', { class: 'act-name', text: '📅 ' + t.countdownSetTitle, onclick: () => renderExamDate(true) }),
+      el('button', { class: 'act-name', text: '🧑‍🏫 ' + t.teacher.entry, onclick: () => { location.hash = '#/teacher'; } }),
       el('button', { class: 'act-reset', text: t.reset, onclick: () => {
         if (confirm(t.resetConfirm)) { resetAll(); renderProgress(); }
       } }),

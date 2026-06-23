@@ -220,6 +220,18 @@ export const STRINGS = {
       fSurname: 'Фамилия', fName: 'Имя', fPatr: 'Отчество', fSubject: 'Предмет: Английский язык', fClass: 'Класс:', asInstr: 'Ответы на задания с кратким ответом записывайте печатными буквами в клетки, начиная с первой.',
       iChoice: 'Выберите верный вариант ответа.', iFill: 'Впишите пропущенное слово.', iMatch: 'Установите соответствие и впишите номер ответа.', iTfns: 'Для каждого утверждения определите: 1 — Верно, 2 — Неверно, 3 — Не сказано.', iGaps: 'Заполните пропуски частями предложений (одна лишняя).', iGap: 'Раскройте скобки / образуйте однокоренное слово и впишите ответ.', tgGrammar: 'Прочитайте текст. Раскройте скобки и поставьте слово в нужную форму (задания 19–24).', tgWordform: 'Прочитайте текст. Образуйте однокоренное слово (задания 25–29).', tgLexis: 'Прочитайте текст. Выберите слово, подходящее по смыслу, и запишите цифру (задания 30–36).',
     },
+    // teacher — конструктор worksheet/ДЗ (по-русски для обоих экзаменов)
+    teacher: {
+      entry: 'Конструктор ДЗ',
+      loading: 'Загружаю банк заданий…',
+      title: 'Конструктор worksheet / ДЗ',
+      sub: 'Выберите задания → печать или ключи',
+      allKes: 'Все КЭС', searchPh: 'Поиск по тексту…', nothing: 'Ничего не найдено',
+      found: (n) => n + ' заданий', clear: 'Сбросить',
+      printKeys: 'С ключами', printWs: 'Worksheet',
+      picked: (n) => 'Выбрано: ' + n,
+      wsTitle: 'Worksheet · Speak & Smile', wsSub: (badge) => badge,
+    },
     // vocab (лексика — тема недели + флэшкарты/SRS)
     vocab: {
       sub: 'Тема недели · 15 слов в день',
@@ -755,6 +767,17 @@ export const STRINGS = {
       audioAt: '🔊 Audio:', audioScan: '🔊 Scan the QR to play the audio:',
       fSurname: 'Surname', fName: 'First name', fPatr: 'Patronymic', fSubject: 'Subject: English', fClass: 'Class:', asInstr: 'Write short answers in BLOCK CAPITALS, one character per cell, starting from the first cell.',
       iChoice: 'Choose the correct answer.', iFill: 'Write the missing word.', iMatch: 'Match and write the number.', iTfns: 'For each statement decide: 1 — True, 2 — False, 3 — Not stated.', iGaps: 'Fill the gaps with the sentence parts (one is extra).', iGap: 'Open the brackets / form the right word and write the answer.', tgGrammar: 'Read the text. Open the brackets and use the correct form (tasks 19–24).', tgWordform: 'Read the text. Form a derived word (tasks 25–29).', tgLexis: 'Прочитайте текст. Выберите слово, подходящее по смыслу, и запишите цифру (задания 30–36).',
+    },
+    teacher: {
+      entry: 'Конструктор ДЗ',
+      loading: 'Загружаю банк заданий…',
+      title: 'Конструктор worksheet / ДЗ',
+      sub: 'Выберите задания → печать или ключи',
+      allKes: 'Все КЭС', searchPh: 'Поиск по тексту…', nothing: 'Ничего не найдено',
+      found: (n) => n + ' заданий', clear: 'Сбросить',
+      printKeys: 'С ключами', printWs: 'Worksheet',
+      picked: (n) => 'Выбрано: ' + n,
+      wsTitle: 'Worksheet · Speak & Smile', wsSub: (badge) => badge,
     },
     sections: { vocab: 'Topic Vocabulary', grammar: 'Grammar', wordform: 'Word formation', reading: 'Reading', listening: 'Listening', writing: 'Writing', speaking: 'Speaking', mock: 'Mock exam', lexis: 'Vocabulary', email: 'Email', essay: 'Essay' },
     sectionMeta: { vocab: 'theme of the week · 15 words a day', grammar: '389 tasks · grammar', wordform: '728 tasks · word forms', reading: '469 tasks · 3 formats', listening: 'FIPI audio · multiple choice', writing: 'writing', speaking: '184 tasks · recorder + AI', mock: 'full timed paper', lexis: '728 tasks · vocabulary', email: 'task 37 · K1–K3', essay: 'task 38 · K1–K5' },
