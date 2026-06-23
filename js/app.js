@@ -67,7 +67,7 @@ function route() {
   return renderHome();
 }
 function setActiveTab(hash) {
-  const tab = (hash === 'progress' || hash === 'rewards') ? hash : 'home';
+  const tab = (hash === 'progress' || hash === 'rewards' || hash === 'teacher') ? hash : 'home';
   document.querySelectorAll('#bottom-nav a').forEach((a) => {
     a.classList.toggle('active', a.getAttribute('data-tab') === tab);
   });
@@ -501,7 +501,6 @@ async function renderProgress() {
         onclick: () => { setSound(!getSound()); renderProgress(); } }),
       el('button', { class: 'act-name', text: t.changeName, onclick: () => renderWelcome(getName(), true) }),
       el('button', { class: 'act-name', text: '📅 ' + t.countdownSetTitle, onclick: () => renderExamDate(true) }),
-      el('button', { class: 'act-name', text: '🧑‍🏫 ' + t.teacher.entry, onclick: () => { location.hash = '#/teacher'; } }),
       el('button', { class: 'act-reset', text: t.reset, onclick: () => {
         if (confirm(t.resetConfirm)) { resetAll(); renderProgress(); }
       } }),
@@ -716,7 +715,7 @@ function renderExamIntro() {
 }
 
 // --- Иконки нижнего меню (картинки с откатом на эмодзи) ---
-const NAV_IC = { home: ['ic-home', '🏠'], progress: ['ic-progress', '📊'], rewards: ['ic-rewards', '🎖'] };
+const NAV_IC = { home: ['ic-home', '🏠'], progress: ['ic-progress', '📊'], rewards: ['ic-rewards', '🎖'], teacher: ['ic-teacher', '🧑‍🏫'] };
 document.querySelectorAll('#bottom-nav a').forEach((a) => {
   const tab = a.getAttribute('data-tab'), ic = a.querySelector('.bn-ic');
   if (ic && NAV_IC[tab]) ic.replaceWith(iconImg(NAV_IC[tab][0], NAV_IC[tab][1], 'bn-ic'));
