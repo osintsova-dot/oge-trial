@@ -53,7 +53,7 @@ const CONFIGS = {
       { id: 'mock',    type: 'mock', dataFile: 'ege_mock', tile: 'mock', iconKey: 'mock', icon: '📋' },
     ],
     pack: ['grammar', 'lexis', 'reading', 'listening', 'email', 'essay'],
-    soonTile: true,
+    soonTile: false,
     // Письмо ЕГЭ — ДВА задания: e-mail (зад.37, К1–К3, макс 6) и эссе (зад.38, К1–К5, макс 14)
     writing: {
       kind: 'ege',
