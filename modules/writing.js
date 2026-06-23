@@ -88,13 +88,8 @@ export async function renderWriting(container, cfg) {
   let themeW = new Set(), themeName = '';
   try { const z = await themeZids(getActiveTheme()); themeW = z.writing; themeName = z.name; } catch {}
 
-  // ДЗ от учителя: открыть сразу конкретную тему (deep-link #/<section>?z=ZID)
-  if (cfg.promptZid) {
-    const di = items.findIndex((it) => it.zid === cfg.promptZid);
-    if (di >= 0) { taskScreen(di); autoTipOnce(cfg.sectionId); return; }
-  }
-  pickScreen();
-  autoTipOnce(cfg.sectionId);
+  // первый экран рисуем В КОНЦЕ renderWriting — после инициализации FRAMES/CONNECTORS,
+  // которые нужны редактору (taskScreen → frameBlock). См. firstScreen() в конце функции.
 
   function secBar(onBack, sub) {
     return el('div', { class: 'sec-bar writing' }, [
@@ -427,4 +422,13 @@ Score every criterion within its max. totalScore = sum of criteria scores. Give 
     }
     mount(box, el('div', {}, nodes));
   }
+
+  // первый экран: ДЗ-тема (deep-link #/<section>?z=ZID) → сразу редактор; иначе — список тем
+  if (cfg.promptZid) {
+    const di = items.findIndex((it) => it.zid === cfg.promptZid);
+    if (di >= 0) taskScreen(di); else pickScreen();
+  } else {
+    pickScreen();
+  }
+  autoTipOnce(cfg.sectionId);
 }
