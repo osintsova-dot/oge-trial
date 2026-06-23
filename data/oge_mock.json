@@ -86,6 +86,7 @@
        "zid": "B5ED73",
        "kes": "1.2.2",
        "q": "",
+       "label": "Current job",
        "key": "librarian"
       },
       {
@@ -93,6 +94,7 @@
        "zid": "516C81",
        "kes": "1.2.2",
        "q": "",
+       "label": "Number of jobs he/she has done",
        "key": "twelve"
       },
       {
@@ -100,6 +102,7 @@
        "zid": "81655A",
        "kes": "1.2.2",
        "q": "",
+       "label": "The foreign language he/she speaks",
        "key": "Chinese"
       },
       {
@@ -107,6 +110,7 @@
        "zid": "BA3459",
        "kes": "1.2.2",
        "q": "",
+       "label": "Hobby",
        "key": "travelling"
       },
       {
@@ -114,6 +118,7 @@
        "zid": "9F82AF",
        "kes": "1.2.2",
        "q": "",
+       "label": "The musical instrument he/she plays",
        "key": "piano"
       },
       {
@@ -121,6 +126,7 @@
        "zid": "07CA19",
        "kes": "1.2.2",
        "q": "",
+       "label": "Regular sports activity",
        "key": "jogging"
       }
      ],
@@ -512,6 +518,7 @@
        "zid": "F06083",
        "kes": "1.2.2",
        "q": "",
+       "label": "Hobby",
        "key": "painting"
       },
       {
@@ -519,6 +526,7 @@
        "zid": "41D484",
        "kes": "1.2.2",
        "q": "",
+       "label": "The country he/she wants to visit",
        "key": "Italy"
       },
       {
@@ -526,6 +534,7 @@
        "zid": "B4EE70",
        "kes": "1.2.2",
        "q": "",
+       "label": "Current job",
        "key": "scientist"
       },
       {
@@ -533,6 +542,7 @@
        "zid": "0D5C25",
        "kes": "1.2.2",
        "q": "",
+       "label": "Age of the respondent",
        "key": "forty"
       },
       {
@@ -540,6 +550,7 @@
        "zid": "CD3C89",
        "kes": "1.2.2",
        "q": "",
+       "label": "Favourite dish",
        "key": "pasta"
       },
       {
@@ -547,6 +558,7 @@
        "zid": "E9381A",
        "kes": "1.2.2",
        "q": "",
+       "label": "Regular sports activity",
        "key": "basketball"
       }
      ],
@@ -938,6 +950,7 @@
        "zid": "8F68E4",
        "kes": "1.2.2",
        "q": "",
+       "label": "Age of the respondent",
        "key": "sixty"
       },
       {
@@ -945,6 +958,7 @@
        "zid": "775E26",
        "kes": "1.2.2",
        "q": "",
+       "label": "Regular sports activity",
        "key": "tennis"
       },
       {
@@ -952,6 +966,7 @@
        "zid": "43DFAD",
        "kes": "1.2.2",
        "q": "",
+       "label": "Favourite food",
        "key": "vegetables"
       },
       {
@@ -959,6 +974,7 @@
        "zid": "3CB55E",
        "kes": "1.2.2",
        "q": "",
+       "label": "Country of birth",
        "key": "India"
       },
       {
@@ -966,6 +982,7 @@
        "zid": "64F0AC",
        "kes": "1.2.2",
        "q": "",
+       "label": "Current job",
        "key": "engineer"
       },
       {
@@ -973,6 +990,7 @@
        "zid": "EA08E4",
        "kes": "1.2.2",
        "q": "",
+       "label": "Hobby",
        "key": "fishing"
       }
      ],
@@ -1364,6 +1382,7 @@
        "zid": "FA5983",
        "kes": "1.2.2",
        "q": "",
+       "label": "Current job",
        "key": "driver"
       },
       {
@@ -1371,6 +1390,7 @@
        "zid": "068A3F",
        "kes": "1.2.2",
        "q": "",
+       "label": "Number of countries he/she visited",
        "key": "thirty"
       },
       {
@@ -1378,6 +1398,7 @@
        "zid": "DAEA35",
        "kes": "1.2.2",
        "q": "",
+       "label": "The foreign language he/she speaks",
        "key": "French"
       },
       {
@@ -1385,6 +1406,7 @@
        "zid": "12B99A",
        "kes": "1.2.2",
        "q": "",
+       "label": "City of birth",
        "key": "Oxford"
       },
       {
@@ -1392,6 +1414,7 @@
        "zid": "51DAE4",
        "kes": "1.2.2",
        "q": "",
+       "label": "Favourite drink",
        "key": "juice"
       },
       {
@@ -1399,6 +1422,7 @@
        "zid": "4530B1",
        "kes": "1.2.2",
        "q": "",
+       "label": "Regular sports activity",
        "key": "swimming"
       }
      ],
@@ -1790,6 +1814,7 @@
        "zid": "485324",
        "kes": "1.2.2",
        "q": "",
+       "label": "Current job",
        "key": "policeman"
       },
       {
@@ -1797,6 +1822,7 @@
        "zid": "E7364E",
        "kes": "1.2.2",
        "q": "",
+       "label": "Favourite food",
        "key": "chicken"
       },
       {
@@ -1804,6 +1830,7 @@
        "zid": "1BFA96",
        "kes": "1.2.2",
        "q": "",
+       "label": "Regular sports activity",
        "key": "athletics"
       },
       {
@@ -1811,6 +1838,7 @@
        "zid": "578A81",
        "kes": "1.2.2",
        "q": "",
+       "label": "Age of the respondent",
        "key": "fifty"
       },
       {
@@ -1818,6 +1846,7 @@
        "zid": "FD8064",
        "kes": "1.2.2",
        "q": "",
+       "label": "Country of birth",
        "key": "Ireland"
       },
       {
@@ -1825,6 +1854,7 @@
        "zid": "1C2493",
        "kes": "1.2.2",
        "q": "",
+       "label": "Hobby",
        "key": "gardening"
       }
      ],
@@ -2216,6 +2246,7 @@
        "zid": "6E88F6",
        "kes": "1.2.2",
        "q": "",
+       "label": "The number of the academic year he/she is in",
        "key": "eleven"
       },
       {
@@ -2223,6 +2254,7 @@
        "zid": "082E0A",
        "kes": "1.2.2",
        "q": "",
+       "label": "The most difficult school subject",
        "key": "science"
       },
       {
@@ -2230,6 +2262,7 @@
        "zid": "5181C6",
        "kes": "1.2.2",
        "q": "",
+       "label": "Regular sports activity",
        "key": "basketball"
       },
       {
@@ -2237,6 +2270,7 @@
        "zid": "F80FF3",
        "kes": "1.2.2",
        "q": "",
+       "label": "Day off",
        "key": "Wednesday"
       },
       {
@@ -2244,6 +2278,7 @@
        "zid": "4EE58B",
        "kes": "1.2.2",
        "q": "",
+       "label": "The foreign language he/she speaks",
        "key": "German"
       },
       {
@@ -2251,6 +2286,7 @@
        "zid": "AA5DA6",
        "kes": "1.2.2",
        "q": "",
+       "label": "Favourite holiday activity",
        "key": "fishing"
       }
      ],
@@ -2642,6 +2678,7 @@
        "zid": "259BDB",
        "kes": "1.2.2",
        "q": "",
+       "label": "Regular sports activity",
        "key": "cycling"
       },
       {
@@ -2649,6 +2686,7 @@
        "zid": "2444B3",
        "kes": "1.2.2",
        "q": "",
+       "label": "The means of transport he/she prefers",
        "key": "plane"
       },
       {
@@ -2656,6 +2694,7 @@
        "zid": "4631FD",
        "kes": "1.2.2",
        "q": "",
+       "label": "Favourite school subject",
        "key": "history"
       },
       {
@@ -2663,6 +2702,7 @@
        "zid": "F8EA58",
        "kes": "1.2.2",
        "q": "",
+       "label": "Country of birth",
        "key": "Scotland"
       },
       {
@@ -2670,6 +2710,7 @@
        "zid": "3DE8E2",
        "kes": "1.2.2",
        "q": "",
+       "label": "Hobby",
        "key": "blogging"
       },
       {
@@ -2677,6 +2718,7 @@
        "zid": "604DB1",
        "kes": "1.2.2",
        "q": "",
+       "label": "Number of the Internet followers",
        "key": "ninety"
       }
      ],
@@ -3068,6 +3110,7 @@
        "zid": "374951",
        "kes": "1.2.2",
        "q": "",
+       "label": "Pet",
        "key": "dog"
       },
       {
@@ -3075,6 +3118,7 @@
        "zid": "C972FE",
        "kes": "1.2.2",
        "q": "",
+       "label": "Dream job",
        "key": "pilot"
       },
       {
@@ -3082,6 +3126,7 @@
        "zid": "F5E14F",
        "kes": "1.2.2",
        "q": "",
+       "label": "Number of hours spent online per week",
        "key": "fifteen"
       },
       {
@@ -3089,6 +3134,7 @@
        "zid": "7F18C4",
        "kes": "1.2.2",
        "q": "",
+       "label": "The foreign language he/she speaks",
        "key": "Russian"
       },
       {
@@ -3096,6 +3142,7 @@
        "zid": "5BFB75",
        "kes": "1.2.2",
        "q": "",
+       "label": "Favourite food",
        "key": "fish"
       },
       {
@@ -3103,6 +3150,7 @@
        "zid": "6CC961",
        "kes": "1.2.2",
        "q": "",
+       "label": "Regular sports activity",
        "key": "skateboarding"
       }
      ],
@@ -3494,6 +3542,7 @@
        "zid": "A5F271",
        "kes": "1.2.2",
        "q": "",
+       "label": "Number of the countries he/she has visited",
        "key": "twenty"
       },
       {
@@ -3501,6 +3550,7 @@
        "zid": "3BF1E4",
        "kes": "1.2.2",
        "q": "",
+       "label": "Country of birth",
        "key": "Canada"
       },
       {
@@ -3508,6 +3558,7 @@
        "zid": "BAB8C3",
        "kes": "1.2.2",
        "q": "",
+       "label": "Favourite dish",
        "key": "pizza"
       },
       {
@@ -3515,6 +3566,7 @@
        "zid": "644490",
        "kes": "1.2.2",
        "q": "",
+       "label": "Current job",
        "key": "dentist"
       },
       {
@@ -3522,6 +3574,7 @@
        "zid": "2F0B27",
        "kes": "1.2.2",
        "q": "",
+       "label": "Hobby",
        "key": "cooking"
       },
       {
@@ -3529,6 +3582,7 @@
        "zid": "2840C1",
        "kes": "1.2.2",
        "q": "",
+       "label": "Favourite means of transport",
        "key": "train"
       }
      ],
@@ -3920,6 +3974,7 @@
        "zid": "43C34E",
        "kes": "1.2.2",
        "q": "",
+       "label": "The most difficult school subject",
        "key": "geography"
       },
       {
@@ -3927,6 +3982,7 @@
        "zid": "82AF79",
        "kes": "1.2.2",
        "q": "",
+       "label": "Hobby",
        "key": "photography"
       },
       {
@@ -3934,6 +3990,7 @@
        "zid": "DDBAB7",
        "kes": "1.2.2",
        "q": "",
+       "label": "Number of books read in the summer",
        "key": "eighteen"
       },
       {
@@ -3941,6 +3998,7 @@
        "zid": "278EF7",
        "kes": "1.2.2",
        "q": "",
+       "label": "The foreign language he/she speaks",
        "key": "Spanish"
       },
       {
@@ -3948,6 +4006,7 @@
        "zid": "06C656",
        "kes": "1.2.2",
        "q": "",
+       "label": "Regular sports activity",
        "key": "volleyball"
       },
       {
@@ -3955,6 +4014,7 @@
        "zid": "E06DB3",
        "kes": "1.2.2",
        "q": "",
+       "label": "The pet he/she would like to have",
        "key": "horse"
       }
      ],
@@ -4346,6 +4406,7 @@
        "zid": "192F7D",
        "kes": "1.2.2",
        "q": "",
+       "label": "Age of the respondent",
        "key": "forty"
       },
       {
@@ -4353,6 +4414,7 @@
        "zid": "8DFEAB",
        "kes": "1.2.2",
        "q": "",
+       "label": "Current job",
        "key": "nurse"
       },
       {
@@ -4360,6 +4422,7 @@
        "zid": "FDBBC8",
        "kes": "1.2.2",
        "q": "",
+       "label": "Favourite dessert",
        "key": "chocolate"
       },
       {
@@ -4367,6 +4430,7 @@
        "zid": "99C669",
        "kes": "1.2.2",
        "q": "",
+       "label": "Country of birth",
        "key": "Australia"
       },
       {
@@ -4374,6 +4438,7 @@
        "zid": "683AC4",
        "kes": "1.2.2",
        "q": "",
+       "label": "Favourite holiday activity",
        "key": "camping"
       },
       {
@@ -4381,6 +4446,7 @@
        "zid": "F5BA46",
        "kes": "1.2.2",
        "q": "",
+       "label": "Hobby",
        "key": "painting"
       }
      ],
@@ -4772,6 +4838,7 @@
        "zid": "051C7C",
        "kes": "1.2.2",
        "q": "",
+       "label": "Current job",
        "key": "designer"
       },
       {
@@ -4779,6 +4846,7 @@
        "zid": "75080E",
        "kes": "1.2.2",
        "q": "",
+       "label": "Number of hours spent online per week",
        "key": "thirty"
       },
       {
@@ -4786,6 +4854,7 @@
        "zid": "E9F5C0",
        "kes": "1.2.2",
        "q": "",
+       "label": "Regular sports activity",
        "key": "badminton"
       },
       {
@@ -4793,6 +4862,7 @@
        "zid": "1DD2A0",
        "kes": "1.2.2",
        "q": "",
+       "label": "Country of birth",
        "key": "Greece"
       },
       {
@@ -4800,6 +4870,7 @@
        "zid": "4632EC",
        "kes": "1.2.2",
        "q": "",
+       "label": "Favourite type of music",
        "key": "classical"
       },
       {
@@ -4807,6 +4878,7 @@
        "zid": "217AA8",
        "kes": "1.2.2",
        "q": "",
+       "label": "Pet",
        "key": "rabbit"
       }
      ],
@@ -5198,6 +5270,7 @@
        "zid": "442B84",
        "kes": "1.2.2",
        "q": "",
+       "label": "City of birth",
        "key": "Rome"
       },
       {
@@ -5205,6 +5278,7 @@
        "zid": "F48045",
        "kes": "1.2.2",
        "q": "",
+       "label": "Age of the respondent",
        "key": "thirty"
       },
       {
@@ -5212,6 +5286,7 @@
        "zid": "48B427",
        "kes": "1.2.2",
        "q": "",
+       "label": "Favourite music style",
        "key": "jazz"
       },
       {
@@ -5219,6 +5294,7 @@
        "zid": "96C6FD",
        "kes": "1.2.2",
        "q": "",
+       "label": "Current job",
        "key": "manager"
       },
       {
@@ -5226,6 +5302,7 @@
        "zid": "F96828",
        "kes": "1.2.2",
        "q": "",
+       "label": "Regular sports activity",
        "key": "swimming"
       },
       {
@@ -5233,6 +5310,7 @@
        "zid": "4DDA09",
        "kes": "1.2.2",
        "q": "",
+       "label": "Favourite food",
        "key": "rice"
       }
      ],
@@ -5624,6 +5702,7 @@
        "zid": "386EA1",
        "kes": "1.2.2",
        "q": "",
+       "label": "The foreign language he/she speaks",
        "key": "French"
       },
       {
@@ -5631,6 +5710,7 @@
        "zid": "121F01",
        "kes": "1.2.2",
        "q": "",
+       "label": "Age of the respondent",
        "key": "eighteen"
       },
       {
@@ -5638,6 +5718,7 @@
        "zid": "55EDB9",
        "kes": "1.2.2",
        "q": "",
+       "label": "Favourite school subject",
        "key": "science"
       },
       {
@@ -5645,6 +5726,7 @@
        "zid": "6C8DB7",
        "kes": "1.2.2",
        "q": "",
+       "label": "Dream job",
        "key": "actress"
       },
       {
@@ -5652,6 +5734,7 @@
        "zid": "2616CF",
        "kes": "1.2.2",
        "q": "",
+       "label": "Hobby",
        "key": "singing"
       },
       {
@@ -5659,6 +5742,7 @@
        "zid": "5399C7",
        "kes": "1.2.2",
        "q": "",
+       "label": "Regular sports activity",
        "key": "aerobics"
       }
      ],
@@ -6050,6 +6134,7 @@
        "zid": "658C53",
        "kes": "1.2.2",
        "q": "",
+       "label": "Age of the respondent",
        "key": "thirteen"
       },
       {
@@ -6057,6 +6142,7 @@
        "zid": "7E25EC",
        "kes": "1.2.2",
        "q": "",
+       "label": "Regular sports activity",
        "key": "cycling"
       },
       {
@@ -6064,6 +6150,7 @@
        "zid": "B47070",
        "kes": "1.2.2",
        "q": "",
+       "label": "Favourite food",
        "key": "hamburgers"
       },
       {
@@ -6071,6 +6158,7 @@
        "zid": "18158F",
        "kes": "1.2.2",
        "q": "",
+       "label": "Country of birth",
        "key": "France"
       },
       {
@@ -6078,6 +6166,7 @@
        "zid": "601ED1",
        "kes": "1.2.2",
        "q": "",
+       "label": "The job he/she would like to do in the future",
        "key": "coach"
       },
       {
@@ -6085,6 +6174,7 @@
        "zid": "DC0D67",
        "kes": "1.2.2",
        "q": "",
+       "label": "Pet",
        "key": "goldfish"
       }
      ],
@@ -6476,6 +6566,7 @@
        "zid": "7DDC92",
        "kes": "1.2.2",
        "q": "",
+       "label": "Age of the respondent",
        "key": "fourteen"
       },
       {
@@ -6483,6 +6574,7 @@
        "zid": "84DE77",
        "kes": "1.2.2",
        "q": "",
+       "label": "City of birth",
        "key": "London"
       },
       {
@@ -6490,6 +6582,7 @@
        "zid": "D4F488",
        "kes": "1.2.2",
        "q": "",
+       "label": "Favourite school subject",
        "key": "literature"
       },
       {
@@ -6497,6 +6590,7 @@
        "zid": "C990F5",
        "kes": "1.2.2",
        "q": "",
+       "label": "Dish for breakfast",
        "key": "sandwich"
       },
       {
@@ -6504,6 +6598,7 @@
        "zid": "AFD5D3",
        "kes": "1.2.2",
        "q": "",
+       "label": "The job he/she would like to do in the future",
        "key": "journalist"
       },
       {
@@ -6511,6 +6606,7 @@
        "zid": "98C7E7",
        "kes": "1.2.2",
        "q": "",
+       "label": "Hobby",
        "key": "painting"
       }
      ],
@@ -6902,6 +6998,7 @@
        "zid": "9587C7",
        "kes": "1.2.2",
        "q": "",
+       "label": "Age of the respondent",
        "key": "thirty"
       },
       {
@@ -6909,6 +7006,7 @@
        "zid": "FCA2F3",
        "kes": "1.2.2",
        "q": "",
+       "label": "Current job",
        "key": "firefighter"
       },
       {
@@ -6916,6 +7014,7 @@
        "zid": "F17443",
        "kes": "1.2.2",
        "q": "",
+       "label": "Regular sports activity",
        "key": "skiing"
       },
       {
@@ -6923,6 +7022,7 @@
        "zid": "23AB85",
        "kes": "1.2.2",
        "q": "",
+       "label": "Country of birth",
        "key": "Canada"
       },
       {
@@ -6930,6 +7030,7 @@
        "zid": "643385",
        "kes": "1.2.2",
        "q": "",
+       "label": "Favourite style of music",
        "key": "rock"
       },
       {
@@ -6937,6 +7038,7 @@
        "zid": "DD857F",
        "kes": "1.2.2",
        "q": "",
+       "label": "Hobby",
        "key": "reading"
       }
      ],
@@ -7328,6 +7430,7 @@
        "zid": "3BA761",
        "kes": "1.2.2",
        "q": "",
+       "label": "Current job",
        "key": "waitress"
       },
       {
@@ -7335,6 +7438,7 @@
        "zid": "6844D1",
        "kes": "1.2.2",
        "q": "",
+       "label": "Age of the respondent",
        "key": "nineteen"
       },
       {
@@ -7342,6 +7446,7 @@
        "zid": "F847ED",
        "kes": "1.2.2",
        "q": "",
+       "label": "Favourite school subject",
        "key": "literature"
       },
       {
@@ -7349,6 +7454,7 @@
        "zid": "BB2DB6",
        "kes": "1.2.2",
        "q": "",
+       "label": "The foreign language he/she speaks",
        "key": "Italian"
       },
       {
@@ -7356,6 +7462,7 @@
        "zid": "8984E3",
        "kes": "1.2.2",
        "q": "",
+       "label": "The musical instrument he/she plays",
        "key": "violin"
       },
       {
@@ -7363,6 +7470,7 @@
        "zid": "C37FC8",
        "kes": "1.2.2",
        "q": "",
+       "label": "Pet",
        "key": "parrot"
       }
      ],
@@ -7754,6 +7862,7 @@
        "zid": "0A1036",
        "kes": "1.2.2",
        "q": "",
+       "label": "Favourite school subject",
        "key": "science"
       },
       {
@@ -7761,6 +7870,7 @@
        "zid": "67AD44",
        "kes": "1.2.2",
        "q": "",
+       "label": "Dream tourist destination",
        "key": "Moscow"
       },
       {
@@ -7768,6 +7878,7 @@
        "zid": "C9EC89",
        "kes": "1.2.2",
        "q": "",
+       "label": "Favourite food",
        "key": "vegetables"
       },
       {
@@ -7775,6 +7886,7 @@
        "zid": "E6363E",
        "kes": "1.2.2",
        "q": "",
+       "label": "Regular sports activity",
        "key": "volleyball"
       },
       {
@@ -7782,6 +7894,7 @@
        "zid": "D86663",
        "kes": "1.2.2",
        "q": "",
+       "label": "The job he/she would like to do in the future",
        "key": "artist"
       },
       {
@@ -7789,6 +7902,7 @@
        "zid": "09812E",
        "kes": "1.2.2",
        "q": "",
+       "label": "Number of the Internet followers",
        "key": "eighty"
       }
      ],

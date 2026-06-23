@@ -266,7 +266,8 @@ export async function renderMock(container, cfg) {
   function fillItem(it, i, answers) {
     const inp = el('input', { class: 'mock-input', type: 'text', value: answers[it.zid] || '', placeholder: M.answerPh });
     inp.addEventListener('input', () => { answers[it.zid] = inp.value; });
-    return el('div', { class: 'mock-q' }, [el('div', { class: 'mock-qt' }, [qnum(null, i), el('span', { text: ' ' + it.q })]), inp]);
+    const prompt = it.label ? it.label + ': ' : (it.q ? it.q + ' ' : '');
+    return el('div', { class: 'mock-q' }, [el('div', { class: 'mock-qt' }, [qnum(null, i), el('span', { text: ' ' + prompt })]), inp]);
   }
 
   function lmatchItem(it, i, answers) {

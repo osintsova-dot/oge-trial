@@ -154,7 +154,9 @@ function renderItem(it, n, exam) {
   }
   if (it.kind === 'fill' || it.kind === 'gap') {
     n += 1;
-    const txt = it.kind === 'gap' ? (it.text || '').replace(/_{3,}/, ' (' + n + ') ______ ') + (it.base_word ? '  [' + it.base_word + ']' : '') : (it.q || '');
+    // fill: формулировка-заметка (label, напр. «Current job») + место под слово; gap: предложение с пропуском
+    const fillTxt = (it.label || it.q || '') + ': ______';
+    const txt = it.kind === 'gap' ? (it.text || '').replace(/_{3,}/, ' (' + n + ') ______ ') + (it.base_word ? '  [' + it.base_word + ']' : '') : fillTxt;
     return { node: el('div', { class: 'pp-q' }, [el('div', { class: 'pp-qt', text: (it.kind === 'fill' ? n + '. ' : '') + txt })]), n };
   }
   if (it.kind === 'match') {
