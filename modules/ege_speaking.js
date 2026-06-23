@@ -145,10 +145,7 @@ export async function renderEgeSpeaking(container, cfg) {
       ].filter(Boolean)));
       return sampleBlock(S.sampleTitle, rows);
     }
-    if (kind === 'compare') {
-      // универсальный шаблон (структура + фразы); точный по картинкам — позже через Vision
-      return sampleBlock(S.sampleTemplate, [el('div', { class: 'sp-sample-text', text: S.compareTemplate }), spk(S.compareTemplate)].filter(Boolean));
-    }
+    // зад.4 (compare): эталон-ответ заменён полноценным каркасом frameBlock (точный по фото — позже через Vision)
     return null;
   }
 
@@ -194,6 +191,68 @@ export async function renderEgeSpeaking(container, cfg) {
     ].filter(Boolean));
   }
 
+  // Speaking frames + phrase banks (по образцу пособия): каркас по частям с началами фраз.
+  const SPK_FRAMES = {
+    read: [['How to read aloud', [
+      'Pause at commas and full stops.',
+      'Raise your tone in questions; fall at the end of statements.',
+      "Don't swallow word endings (-s, -ed, -ing).",
+      'Keep a calm, steady pace — read the whole text.',
+    ]]],
+    ask: [['Direct question stems', [
+      'Where is … located? / How do I get to …?',
+      'How much does … cost? / What is the price of …?',
+      'Is there …? / Are there …? / Do you have …?',
+      'What time …? / How long …? / How often …?',
+      'Can I …? / Do you offer …?',
+    ]]],
+    interview: [
+      ['Personal info', ["I'm … years old. I'm in the … grade.", "I'm interested in … . I'm good at … ."]],
+      ['Habits', ['I usually / often / sometimes / rarely … .', 'I … every day / at the weekend / once a week.']],
+      ['Likes & dislikes', ["I enjoy / love / prefer …ing … .", 'I prefer … to … .']],
+      ['Opinions', ['In my opinion, … . / To my mind, … .', "Personally, I think … is important / useful."]],
+      ['Reasons', ["… because … . / That's why … .", 'The main reason is that … .']],
+    ],
+    compare: [
+      ['1. Start the voice message', ["Hi (name)! How's everything going? By the way, I've got two photos that could help with our project '…'. Let's talk about them."]],
+      ['2. Describe both photos', ['The first photo shows … .', 'The second photo shows … .', 'Both images illustrate two types of … .']],
+      ['3. Similarities & differences', ['Both pictures have … in common.', 'In the first photo there is/are … , while the second one shows … .', "What's more, the first photo … , whereas the second … ."]],
+      ['4. Advantages / disadvantages', ['A clear advantage of … is that … .', 'However, a disadvantage of … is that … .']],
+      ['5. Preference / conclusion', ['Personally, I would prefer … because … .', 'All in all, both photos suit our project well.']],
+    ],
+  };
+  // общий банк связок (для зад.3 и зад.4)
+  const PHRASE_BANK = [
+    ['Adding', 'Moreover, … / What’s more, … / In addition, …'],
+    ['Contrast', 'However, … / On the other hand, … / Although … , …'],
+    ['Examples', 'For example, … / For instance, … / such as …'],
+    ['Opinion', 'In my view, … / I believe (that) … / As far as I’m concerned, …'],
+    ['Result', 'As a result, … / That’s why … / Therefore, …'],
+    ['Conclusion', 'All in all, … / To sum up, … / In conclusion, …'],
+  ];
+
+  function frameBlock(kind) {
+    const parts = SPK_FRAMES[kind];
+    if (!parts) return null;
+    const rows = parts.map(([label, lines]) => el('div', { class: 'w-frame-row' }, [
+      el('div', { class: 'w-frame-lbl', text: label }),
+      ...lines.map((l) => el('div', { class: 'w-frame-txt', text: l })),
+    ]));
+    // банк фраз — для устных монологов/ответов
+    if (kind === 'interview' || kind === 'compare') {
+      rows.push(el('div', { class: 'w-conn' }, [
+        el('div', { class: 'w-frame-lbl', text: S.phraseBank }),
+        ...PHRASE_BANK.map(([s, list]) => el('div', { class: 'w-conn-row' }, [el('span', { class: 'w-conn-s', text: s }), el('span', { text: list })])),
+      ]));
+    }
+    const titles = { read: S.frameRead, ask: S.frameAsk, interview: S.frameInterview, compare: S.frameCompare };
+    const body = el('div', { class: 'w-coll-body', style: { display: 'none' } }, rows);
+    let open = false;
+    const head = el('button', { class: 'w-coll-head' }, [el('span', { text: '🧩 ' + (titles[kind] || S.frameCompare) }), el('span', { class: 'w-coll-chev', text: '▾' })]);
+    head.addEventListener('click', () => { open = !open; body.style.display = open ? '' : 'none'; head.querySelector('.w-coll-chev').textContent = open ? '▴' : '▾'; });
+    return el('div', { class: 'w-coll' }, [head, body]);
+  }
+
   function startTask(kind, item) {
     const rec = recorder();
     const body = [el('div', { class: 'sp-instr', text: item.instruction || '' })];
@@ -202,6 +261,7 @@ export async function renderEgeSpeaking(container, cfg) {
       body.push(el('audio', { class: 'ls-audio', controls: '', preload: 'none', src: item.audio }));
     }
     imgs(item).forEach((im) => body.push(im));
+    const fr = frameBlock(kind); if (fr) body.push(fr);
     body.push(el('div', { class: 'sp-step', text: S.yourTurn }));
     body.push(rec.wrap);
     const ac = aiCheck(kind, item, rec); if (ac) body.push(ac);

@@ -643,6 +643,8 @@ export const STRINGS = {
       aiTranscript: 'What the AI heard',
       aiNote: 'The AI judges the recognised text (content, grammar, completeness) by the official FIPI limits (1/4/5/10). Pronunciation is best checked with a teacher.',
       listenModel: 'Listen to the model',
+      frameRead: 'Reading tips', frameAsk: 'Question frame', frameInterview: 'Useful phrases', frameCompare: 'Speaking frame',
+      phraseBank: 'Phrase bank',
       sampleQuestions: 'Model questions',
       sampleTitle: 'Model answers',
       sampleTemplate: 'Model answer (template)',
