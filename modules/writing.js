@@ -88,6 +88,11 @@ export async function renderWriting(container, cfg) {
   let themeW = new Set(), themeName = '';
   try { const z = await themeZids(getActiveTheme()); themeW = z.writing; themeName = z.name; } catch {}
 
+  // ДЗ от учителя: открыть сразу конкретную тему (deep-link #/<section>?z=ZID)
+  if (cfg.promptZid) {
+    const di = items.findIndex((it) => it.zid === cfg.promptZid);
+    if (di >= 0) { taskScreen(di); autoTipOnce(cfg.sectionId); return; }
+  }
   pickScreen();
   autoTipOnce(cfg.sectionId);
 

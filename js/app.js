@@ -49,7 +49,9 @@ function themeBtn(cls) {
 function route() {
   const hash = location.hash.replace(/^#\/?/, '');
   setActiveTab(hash);
-  const sec = sectionById(hash);
+  const base = hash.split('?')[0];                 // раздел без query
+  const query = hash.includes('?') ? hash.slice(hash.indexOf('?') + 1) : '';
+  const sec = sectionById(base);
   // В режиме решения (дрилл/письмо) нижнее меню прячем, чтобы не перекрывало кнопки
   document.body.classList.toggle('in-flow', !!(sec && ['drill', 'writing', 'reading', 'vocab', 'listening', 'speaking', 'egespeaking', 'mock', 'soon'].includes(sec.type)));
   if (hash === 'progress') return renderProgress();
@@ -60,7 +62,7 @@ function route() {
   if (hash.split('?')[0] === 'hw') { document.body.classList.add('in-flow'); return renderHomework(view, { goHome, query: hash.slice(hash.indexOf('?') + 1) }); }
   if (hash.split('?')[0] === 'hwr') { document.body.classList.add('in-flow'); return renderHomeworkResult(view, { goHome, query: hash.slice(hash.indexOf('?') + 1) }); }
   if (sec && sec.type === 'drill')   return renderDrill(view, { ...DRILL[sec.id], goHome });
-  if (sec && sec.type === 'writing') return renderWriting(view, { goHome, sectionId: sec.id });
+  if (sec && sec.type === 'writing') return renderWriting(view, { goHome, sectionId: sec.id, promptZid: new URLSearchParams(query).get('z') || undefined });
   if (sec && sec.type === 'reading') return (EXAM.id === 'ege' ? renderReadingEge : renderReading)(view, { goHome, dataFile: sec.dataFile });
   if (sec && sec.type === 'vocab')   return renderVocab(view, { goHome, dataFile: sec.dataFile });
   if (sec && sec.type === 'listening') return renderListening(view, { goHome, dataFile: sec.dataFile });

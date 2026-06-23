@@ -90,6 +90,8 @@ function unitsByTopic(units, answers, keys) {
     } else if (u.kind === 'listen') {
       const r = checkListenBlock(u.block, answers);
       bump('Аудирование', r.correct, r.total);
+    } else if (u.kind === 'write') {
+      continue; // письмо оценивается отдельно (ИИ + отправка из раздела «Письмо»)
     } else {
       const it = u.it;
       const key = (keys[it.zid] || {}).answer || '';
@@ -113,8 +115,8 @@ function parseSet(query) {
 
 async function gatherTasks(groups) {
   const keys = await loadJSON(EXAM.keysFile);
-  const units = []; // {kind:'gap', secId, it} | {kind:'read', block} | {kind:'listen', block}
-  let readBlocks = null, listenBlocks = null;
+  const units = []; // {kind:'gap'|'read'|'listen'|'write', ...}
+  let readBlocks = null, listenBlocks = null, writingBlocks = null;
   for (const secId of Object.keys(groups)) {
     if (secId === 'reading') {
       readBlocks = readBlocks || await loadReadingBlocks();
@@ -130,6 +132,13 @@ async function gatherTasks(groups) {
       for (const id of groups[secId]) { const b = byId[id]; if (b) units.push({ kind: 'listen', block: b }); }
       continue;
     }
+    if (secId === 'writing') {
+      writingBlocks = writingBlocks || await loadWritingBlocks();
+      const byId = {};
+      for (const b of writingBlocks) byId[b.id] = b;
+      for (const id of groups[secId]) { const b = byId[id]; if (b) units.push({ kind: 'write', block: b }); }
+      continue;
+    }
     const cfg = EXAM.sections.find((s) => s.id === secId);
     if (!cfg) continue;
     let bank;
@@ -142,7 +151,8 @@ async function gatherTasks(groups) {
 }
 
 // разбор + счёт по units (gap + read), общий для ученика и учителя
-function reviewRows(units, answers, keys, H) {
+function reviewRows(allUnits, answers, keys, H) {
+  const units = allUnits.filter((u) => u.kind !== 'write'); // письмо проверяется и отправляется отдельно
   let correct = 0, total = 0;
   const rows = units.map((u, i) => {
     if (u.kind === 'read') {
@@ -326,6 +336,22 @@ function checkReadBlock(block, answers) {
   return { correct, total };
 }
 
+// ---- Письмо: темы для ДЗ (ученик пишет в разделе «Письмо», результат шлёт сам) ----
+const WLABEL = { writing: 'Письмо', email: 'Email', essay: 'Эссе' };
+async function loadWritingBlocks() {
+  const out = [];
+  for (const tk of ((EXAM.writing && EXAM.writing.tasks) || [])) {
+    let d;
+    try { d = await loadJSON(tk.dataFile); } catch (e) { continue; }
+    (d || []).forEach((it) => {
+      const prompt = (it.prompt || ((it.context || '') + ' ' + (it.questions || '')).trim() || it.subject || '').replace(/\s+/g, ' ');
+      out.push({ id: tk.sectionId + '~' + it.zid, secId: tk.sectionId, zid: it.zid,
+        wlabel: WLABEL[tk.sectionId] || tk.id, title: it.name ? ('Письмо от ' + it.name) : (it.subject || prompt).slice(0, 60), prompt });
+    });
+  }
+  return out;
+}
+
 // ---- Аудирование: блоки (аудио + вопросы) + рендер/проверка ----
 async function loadListeningBlocks() {
   const cfg = EXAM.sections.find((s) => s.type === 'listening');
@@ -418,6 +444,8 @@ export async function renderTeacher(container, opts) {
   const hasReading = readBlocks.length > 0;
   const listenBlocks = await loadListeningBlocks();
   const hasListening = listenBlocks.length > 0;
+  const writingBlocks = await loadWritingBlocks();
+  const hasWriting = writingBlocks.length > 0;
   const READTYPE = READ_LABEL;
 
   // выбранные задания: Set("secId:zid")
@@ -461,6 +489,7 @@ export async function renderTeacher(container, opts) {
     const tabs = drillSecs.map((s) => ({ id: s.id, label: SEC_TITLE[s.id] || s.id }));
     if (hasReading) tabs.push({ id: 'reading', label: 'Чтение' });
     if (hasListening) tabs.push({ id: 'listening', label: 'Аудирование' });
+    if (hasWriting) tabs.push({ id: 'writing', label: 'Письмо' });
     view.appendChild(el('div', { class: 'tch-tabs' }, tabs.map((tb) =>
       el('button', { class: 'tch-tab' + (tb.id === curSec ? ' on' : ''), text: tb.label,
         onclick: () => { curSec = tb.id; curTopic = ''; draw(); } }))));
@@ -504,6 +533,11 @@ export async function renderTeacher(container, opts) {
       let arr = listenBlocks;
       if (search) { const q = search.toLowerCase(); arr = arr.filter((b) => b.preview.toLowerCase().includes(q)); }
       return arr.map((b) => ({ pid: 'listening:' + b.id, preview: 'Аудио ' + b.idx + ': ' + b.preview, meta: 'Аудирование · ' + b.n + ' заданий' }));
+    }
+    if (curSec === 'writing') {
+      let arr = writingBlocks;
+      if (search) { const q = search.toLowerCase(); arr = arr.filter((b) => (b.title + ' ' + b.prompt).toLowerCase().includes(q)); }
+      return arr.map((b) => ({ pid: 'writing:' + b.id, preview: b.title, meta: b.wlabel }));
     }
     return filtered().map((it) => ({ pid: curSec + ':' + it.zid, preview: (it.text || '').replace(/_{3,}/, ' ___ '), meta: (it.base_word ? '[' + it.base_word + '] · ' : '') + itemTopic(curSec, it) }));
   }
@@ -602,6 +636,8 @@ export async function renderTeacher(container, opts) {
     if (rids.length) parts.push('reading:' + rids.join(','));
     const lids = listenBlocks.filter((b) => picked.has('listening:' + b.id)).map((b) => b.id);
     if (lids.length) parts.push('listening:' + lids.join(','));
+    const wids = writingBlocks.filter((b) => picked.has('writing:' + b.id)).map((b) => b.id);
+    if (wids.length) parts.push('writing:' + wids.join(','));
     return parts.join(';');
   }
 
@@ -642,6 +678,18 @@ export async function renderHomework(container, opts) {
     ]));
     const list = el('div', { class: 'hw-list' });
     units.forEach((u, i) => {
+      if (u.kind === 'write') {
+        // тема письма: ученик пишет в разделе «Письмо» и отправляет результат оттуда
+        list.appendChild(el('div', { class: 'hw-q hw-q-read' }, [
+          el('span', { class: 'hw-n', text: (i + 1) + '.' }),
+          el('div', { class: 'hw-rblock' }, [
+            el('div', { class: 'hw-rinstr', text: '✉️ ' + (u.block.wlabel || H.wTask) }),
+            el('div', { class: 'hw-rtext', text: u.block.prompt }),
+            el('button', { class: 'btn btn-primary', text: '✍️ ' + H.wWrite, onclick: () => { location.hash = '#/' + u.block.secId + '?z=' + u.block.zid; } }),
+          ]),
+        ]));
+        return;
+      }
       if (u.kind === 'read' || u.kind === 'listen') {
         list.appendChild(el('div', { class: 'hw-q hw-q-read' }, [
           el('span', { class: 'hw-n', text: (i + 1) + '.' }),
@@ -664,8 +712,12 @@ export async function renderHomework(container, opts) {
       ]));
     });
     view.appendChild(list);
+    // «Сдать» — только если есть автопроверяемые задания; чисто-письменное ДЗ сдаётся из раздела «Письмо»
+    const hasAuto = units.some((u) => u.kind !== 'write');
     view.appendChild(el('div', { class: 'hw-bar' }, [
-      el('button', { class: 'btn btn-primary btn-block', text: '📤 ' + H.submit, onclick: submitToTeacher }),
+      hasAuto
+        ? el('button', { class: 'btn btn-primary btn-block', text: '📤 ' + H.submit, onclick: submitToTeacher })
+        : el('div', { class: 'hw-note', text: H.wOnlyNote }),
     ]));
   }
 
