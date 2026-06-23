@@ -313,7 +313,7 @@ export const STRINGS = {
     // writing (ОГЭ — одно письмо)
     wLoading: 'Загружаю темы писем…', wPickSub: 'Выбери письмо друга — ответь 100–120 слов', wAllLetters: 'Остальные',
     wLetterFrom: (n) => 'Письмо от друга — ' + n, wFrom: (n) => 'Письмо от ' + n,
-    wCheck: 'Проверить письмо', wRecheck: 'Проверить заново',
+    wCheck: 'Проверить письмо', wRecheck: 'Проверить заново', wSendTeacher: 'Отправить результат учителю',
     wFrame: 'Каркас (опора)', wIdeas: 'Идеи: о чём писать', wConnectors: 'Связки',
     wVerdictDefault: 'Проверено по критериям К1–К4.',
     wErrorsTitle: 'Ошибки: было → стало', wCorrectedTitle: 'Исправленный вариант',
@@ -581,7 +581,7 @@ export const STRINGS = {
     // writing (ЕГЭ — два задания, тексты общие)
     wLoading: 'Loading writing tasks…', wPickSub: 'Pick a task and write your answer', wAllLetters: 'Others',
     wLetterFrom: (n) => 'Email from ' + n, wFrom: (n) => 'From ' + n,
-    wCheck: 'Check my writing', wRecheck: 'Check again',
+    wCheck: 'Check my writing', wRecheck: 'Check again', wSendTeacher: 'Send result to teacher',
     wFrame: 'Writing frame', wIdeas: 'Ideas: what to write about', wConnectors: 'Linkers',
     wVerdictDefault: 'Checked against the official criteria.',
     wErrorsTitle: 'Fixes: before → after', wCorrectedTitle: 'Corrected version',

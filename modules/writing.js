@@ -12,6 +12,7 @@ import { EXAM, t, plural } from '../js/exam.js';
 import { tipButton, autoTipOnce } from '../js/tips.js';
 import { getActiveTheme } from '../js/vocab_srs.js';
 import { themeZids } from '../js/themes.js';
+import { shareWritingResult } from './teacher.js';
 
 const WORKER = 'https://purple-cake-2966.o-sintsova.workers.dev'; // прокси DeepSeek
 
@@ -289,6 +290,12 @@ export async function renderWriting(container, cfg) {
           rl('ic-streak', '🔥', t.rStreak, 'v-streak', String(g.streak)),
           rl('ic-xp', '⭐', t.rXp, 'v-xp', '+' + g.xpGained + ' XP'),
           rl('ic-hero', '🦸', t.rPack, 'v-pack', t.packOf(g.pack.done.length, g.pack.total)),
+        ]));
+        resultBox.appendChild(el('div', { style: { marginTop: '12px' } }, [
+          el('button', { class: 'btn w-share-teacher', text: '📤 ' + t.wSendTeacher, onclick: () => shareWritingResult({
+            name: getName(), wkind: cfg.sectionId, topic: itemTitle(it, i),
+            score: res.totalScore, max: task.max, criteria: res.criteria, verdict: res.verdict,
+          }) }),
         ]));
         btn.textContent = t.wRecheck;
         celebrate(buildMoments(g, name), () => resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' }));
