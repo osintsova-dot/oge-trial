@@ -1,0 +1,5604 @@
+{
+ "exam": "ege",
+ "grammar": [
+  {
+   "variant": "00D9A5",
+   "kes": "2.4.24",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "2E492F",
+     "base_word": "BE",
+     "key": "has been",
+     "text": "Fishing in Kamchatka Kamchatka region is famous for being a true paradise for fishing enthusiasts. This area __________________ one of the best fishing spots in Russia for many years.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "31E3A2",
+     "base_word": "THIS",
+     "key": "These",
+     "text": "You can get a license and go fishing on your own or you can take a fishing tour. __________________ tours include a guide and all the necessary equipment.",
+     "kes": "2.4.36"
+    },
+    {
+     "pos": 3,
+     "zid": "210B03",
+     "base_word": "BEAUTIFUL",
+     "key": "most beautiful",
+     "text": "Kamchatka is a great place to enjoy fishing in clean waters of the local lakes and some of the __________________ locations in the world.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 4,
+     "zid": "3E12F4",
+     "base_word": "SEE",
+     "key": "saw",
+     "text": "The Olympics in Sydney The Olympic Games of 2000 were very special as Sydney, the host city, did a great job meeting the spectators’ numerous expectations. Anticipation was certainly high for the first Games of the new millennium. The year 2000 also __________________ new additions to the sporting line-up – triathlon and taekwondo.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "EED8A2",
+     "base_word": "WOMAN",
+     "key": "women",
+     "text": "Furthermore, it was the first time when __________________ could compete in weightlifting and modern pentathlon.",
+     "kes": "2.4.29"
+    },
+    {
+     "pos": 6,
+     "zid": "2B37A0",
+     "base_word": "TWO",
+     "key": "second",
+     "text": "Russia took the __________________ place in Sydney 2000, which was a great result.",
+     "kes": "2.4.37"
+    }
+   ]
+  },
+  {
+   "variant": "09574D",
+   "kes": "2.4.33",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "761E06",
+     "base_word": "COLD",
+     "key": "coldest",
+     "text": "Yakutia Yakutia is right in the middle of Russia s far eastern region. Probably Yakutia is one of the __________________ parts of Russia . Still, it s a beautiful place.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 2,
+     "zid": "D8DC77",
+     "base_word": "VISIT",
+     "key": "visiting",
+     "text": "Tourists love __________________ Yakutia because it is a perfect place for photography tours and spending quality time outdoors.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 3,
+     "zid": "4F7857",
+     "base_word": "BE",
+     "key": "isn't",
+     "text": "You only have to remember that winter __________________ a good time to visit the area as winters here are very cold there. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "87FCB7",
+     "base_word": "DEMONSTRATE",
+     "key": "was demonstrated",
+     "text": "The print brush As its name suggests, the print brush is a printer that acts like a paint brush. The print brush __________________ to public in 2011.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "D9F71C",
+     "base_word": "CATCH",
+     "key": "caught",
+     "text": "It immediately __________________ the attention of designers.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "69AC68",
+     "base_word": "INSTALL",
+     "key": "installed",
+     "text": "If you want to use it, you just swipe it over any flat surface and in less than 10 seconds it prints over it. It is very small and has a digital camera __________________.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 7,
+     "zid": "4672A0",
+     "base_word": "BUY",
+     "key": "have bought",
+     "text": "You can connect it to your laptop and literally print any image from it. Isn’t it amazing? Since 2011 a lot of people __________________ the print brush and are happy with it.",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "0C1C73",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "B61BFA",
+     "base_word": "HELP",
+     "key": "does not help",
+     "text": "A solution for drivers It s a problem for any driver to drive in sunny weather. Wearing sunglasses __________________ much &#x2013; it s still very hard to see anything in front of you. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "142511",
+     "base_word": "INVENT",
+     "key": "were invented",
+     "text": "Now there is a solution to this problem. In 2011 LCD sunglasses __________________.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 3,
+     "zid": "6588BC",
+     "base_word": "USE",
+     "key": "will use",
+     "text": "They dynamically block direct sunlight. There’s no doubt that in the future more drivers __________________ them.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "808A08",
+     "base_word": "SITUATE",
+     "key": "is situated",
+     "text": "Meteora Meteora is an area that attracts thousands of tourists from all over the world. Meteora __________________ in Greece .",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "ABA2F1",
+     "base_word": "BUILD",
+     "key": "built",
+     "text": "It is famous for the ancient monasteries __________________ right on the eroded rocks.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 6,
+     "zid": "951410",
+     "base_word": "VISIT",
+     "key": "visiting",
+     "text": "Now tourists enjoy __________________ them and they take numerous pictures.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 7,
+     "zid": "B88721",
+     "base_word": "GOOD",
+     "key": "best",
+     "text": "The __________________ way to reach this amazing place is to take a bus from Athens.",
+     "kes": "2.4.33"
+    }
+   ]
+  },
+  {
+   "variant": "14BC95",
+   "kes": "2.4.29",
+   "n": 4,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "9D8FDD",
+     "base_word": "MOUSE",
+     "key": "mice",
+     "text": "About fables A fable is a fictional story. It often features animals like __________________ and lions, mythical creatures or forces of nature.",
+     "kes": "2.4.29"
+    },
+    {
+     "pos": 2,
+     "zid": "E8E0AF",
+     "base_word": "GIVE",
+     "key": "are given",
+     "text": "These creatures __________________ human qualities as they can talk, think and act like humans.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 3,
+     "zid": "69F35C",
+     "base_word": "ILLUSTRATE",
+     "key": "illustrating",
+     "text": "The creatures are often stereotypes of human characteristics, __________________ some important idea or message.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 4,
+     "zid": "36BABC",
+     "base_word": "ADAPT",
+     "key": "have adapted",
+     "text": "Writers __________________ many fables into fairy-tales for small kids so that the moral of the story is interesting and attractive for them.",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "14C880",
+   "kes": "2.4.27",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "3B229E",
+     "base_word": "RECYCLE",
+     "key": "recycling",
+     "text": "Live green! The Oriental Development Company is an enterprise in Japan . It specializes in green inventions. One of their newest inventions is connected with __________________ paper.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 2,
+     "zid": "88CF1D",
+     "base_word": "INTRODUCE",
+     "key": "was introduced",
+     "text": "The machine can recycle waste paper. It __________________ to the public several months ago.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 3,
+     "zid": "624035",
+     "base_word": "PRODUCE",
+     "key": "doesn't produce",
+     "text": "A big advantage is that this machine __________________ any harmful emissions. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "6E5FCE",
+     "base_word": "WALK",
+     "key": "was walking",
+     "text": "Where s our teacher? One school had a very strict head teacher. Once he __________________ around the school when he heard a terrible noise coming from one of the classrooms.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "45499C",
+     "base_word": "SEE",
+     "key": "saw",
+     "text": "Opening the door, the teacher __________________ a noisy young man in the centre of the classroom.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "236772",
+     "base_word": "TALL",
+     "key": "taller",
+     "text": "He was __________________ than the others and he was making the most noise. The head teacher ordered him to leave the classroom immediately.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 7,
+     "zid": "AB3984",
+     "base_word": "CHILD",
+     "key": "children",
+     "text": "Any more questions? he asked the students. Yes, sir, the __________________ replied. Can we have our teacher back?",
+     "kes": "2.4.29"
+    }
+   ]
+  },
+  {
+   "variant": "172FA5",
+   "kes": "2.4.36",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "3DBF13",
+     "base_word": "WE",
+     "key": "us",
+     "text": "The Thorn Birds The Thorn Birds is a 1977 bestselling novel by the Australian author Colin McCullough. The story gives __________________ information about life on Australian sheep stations, but it also includes a dramatic love story.",
+     "kes": "2.4.36"
+    },
+    {
+     "pos": 2,
+     "zid": "32AB9A",
+     "base_word": "BRING",
+     "key": "brought",
+     "text": "The book __________________ the writer international fame as soon as it was published.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 3,
+     "zid": "783C64",
+     "base_word": "STAR",
+     "key": "starring",
+     "text": "In 1983 it was adapted into a TV miniseries __________________ Richard Chamberlain and Rachel Ward.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 4,
+     "zid": "A96334",
+     "base_word": "LATE",
+     "key": "latest",
+     "text": "GPS functions Car GPS Tracking appears a lot in new vehicles, offering drivers tracking and navigation. Yet, the __________________ inventions are even more modern and sophisticated, offering extra opportunities to people.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 5,
+     "zid": "5A7A16",
+     "base_word": "USE",
+     "key": "are used",
+     "text": "Smart box technology is one example of how car GPS tracking systems __________________ to lower car insurance.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "5240CA",
+     "base_word": "BREAK",
+     "key": "does not break",
+     "text": "If the driver __________________ the rules, he gets a discount or an insurance premium. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 7,
+     "zid": "6BFDF7",
+     "base_word": "BECOME",
+     "key": "will become",
+     "text": "Without doubt, this new technology __________________ popular among drivers very soon.",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "22F544",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "B548C7",
+     "base_word": "GO",
+     "key": "went",
+     "text": "A school photo My son and I were checking out a house he was interested in buying. When the owner came to the door, she looked at me and said, “Larry? I know you. We __________________ to school together. I’m Elaine. Don’t you recognize me?”",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "9DF08E",
+     "base_word": "YOU",
+     "key": "your",
+     "text": "I failed to remember her. She took out our old yearbook and showed me her graduation picture – still nothing. “Let’s look at __________________ picture,” she said.",
+     "kes": "2.4.36"
+    },
+    {
+     "pos": 3,
+     "zid": "14F8D1",
+     "base_word": "FORGET",
+     "key": "won't forget",
+     "text": "She flipped the pages until she came to me. Under my photo I read, “Elaine, I __________________ you. Never!” NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "8768E6",
+     "base_word": "CHILD",
+     "key": "children",
+     "text": "The most famous book for kids Have you read Mary Poppins? It is a series of eight books for __________________ written by P.L.Travers and published over the period from 1934 to 1988.",
+     "kes": "2.4.29"
+    },
+    {
+     "pos": 5,
+     "zid": "A46887",
+     "base_word": "BRING",
+     "key": "is brought",
+     "text": "The books centre on magical English nanny Mary Poppins . She ____________ ______ by the East wind to Number 17 Cherry Tree Lane, London, and into the Banks’s household to care for their children.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "040A60",
+     "base_word": "ONE",
+     "key": "first",
+     "text": "Various adventures follow until Mary Poppins abruptly leaves. Only the ____________ ______ three of the eight books feature Mary Poppins arriving and leaving.",
+     "kes": "2.4.37"
+    },
+    {
+     "pos": 7,
+     "zid": "A3914A",
+     "base_word": "LATE",
+     "key": "last",
+     "text": "The ____________ ______ five books recount previously unrecorded adventures from her original three visits.",
+     "kes": "2.4.33"
+    }
+   ]
+  },
+  {
+   "variant": "231CF6",
+   "kes": "2.4.27",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "E4366B",
+     "base_word": "PLAY",
+     "key": "playing",
+     "text": "Animal friends Few people know that dolphins and whales can make good friends. They really enjoy __________________ with each other.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 2,
+     "zid": "537BF6",
+     "base_word": "FUNNY",
+     "key": "funniest",
+     "text": "It is one of the __________________ things to see in the animal world. Scientists believe that whales think that dolphins are their babies.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 3,
+     "zid": "71670A",
+     "base_word": "FIND",
+     "key": "found",
+     "text": "In 2011 people even __________________ a dolphin brought up by whales. Isn’t it amazing?",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "1EA484",
+     "base_word": "THIS",
+     "key": "These",
+     "text": "Magical metals Do you know why people use silver and copper in medicine? __________________ metals can kill dangerous bacteria and viruses.",
+     "kes": "2.4.36"
+    },
+    {
+     "pos": 5,
+     "zid": "E035E5",
+     "base_word": "KNOW",
+     "key": "have known",
+     "text": "People __________________ about it for a long time.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "2F50C5",
+     "base_word": "MAKE",
+     "key": "made",
+     "text": "The door handles __________________ of copper can even clean themselves.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 7,
+     "zid": "DC1626",
+     "base_word": "FIND",
+     "key": "will find",
+     "text": "Maybe in the future we __________________ more useful qualities of silver and copper.",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "33A17F",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "7BF345",
+     "base_word": "BE",
+     "key": "has not been",
+     "text": "Winston Churchill Winston Churchill was a great political leader and a very clever man. Many British people think since then there __________________ a prime minister better than him. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "08FBDD",
+     "base_word": "WIN",
+     "key": "won",
+     "text": "He even __________________ the Nobel Prize in Literature in 1953.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 3,
+     "zid": "6009CE",
+     "base_word": "FAMOUS",
+     "key": "most famous",
+     "text": "His __________________ work was a six-volume memoir about WW2, but he wrote some science fiction books as well.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 4,
+     "zid": "7654A7",
+     "base_word": "DO",
+     "key": "doing",
+     "text": "Clouds Do you like to watch clouds? Many people all over the world enjoy __________________ it.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 5,
+     "zid": "88F283",
+     "base_word": "BE",
+     "key": "are not",
+     "text": "There are a lot of different kinds of clouds but they all look white as they reflect the Sun’s light – just like the Moon. It is interesting to know that clouds __________________ unique to our planet. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "092587",
+     "base_word": "THEY",
+     "key": "them",
+     "text": "In fact, any planet with an atmosphere has __________________.",
+     "kes": "2.4.36"
+    },
+    {
+     "pos": 7,
+     "zid": "F8E6E5",
+     "base_word": "LITTLE",
+     "key": "less",
+     "text": "It takes an hour or __________________ to form a cloud. That is why the weather can change so quickly.",
+     "kes": "2.4.33"
+    }
+   ]
+  },
+  {
+   "variant": "367902",
+   "kes": "2.4.36",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "FB0617",
+     "base_word": "IT",
+     "key": "its",
+     "text": "Archeology What is archeology? It is the study of human activity, primarily through the study of __________________ material remains.",
+     "kes": "2.4.36"
+    },
+    {
+     "pos": 2,
+     "zid": "A5B2E5",
+     "base_word": "WRITE",
+     "key": "written",
+     "text": "Most human activity is in the past, and most past human activity occurred before any __________________ record.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 3,
+     "zid": "9E4D23",
+     "base_word": "IMPORTANT",
+     "key": "most important",
+     "text": "That is why archaeology is the __________________ method for the study of human pre-history.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 4,
+     "zid": "532827",
+     "base_word": "ONE",
+     "key": "first",
+     "text": "Sports in Victorian times Sports became extremely popular in Victorian times. Traditional sports like football, cricket and boxing had been played for centuries but now they were given proper rules for the__________________ time.",
+     "kes": "2.4.37"
+    },
+    {
+     "pos": 5,
+     "zid": "079087",
+     "base_word": "MEAN",
+     "key": "was meant",
+     "text": "This was the time when many football clubs were set up. Football __________________ to keep people healthy and to encourage a sense of fair play.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "7F6F52",
+     "base_word": "BE",
+     "key": "was not",
+     "text": "It __________________ that successful and free kicks and penalty kicks had to be brought in to stop foul play. International matches started in 1880s. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 7,
+     "zid": "9AC75D",
+     "base_word": "BECOME",
+     "key": "became",
+     "text": "The organized matches drew large crowds and watching sport __________________ a hobby.",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "38FA4E",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "FCD1A2",
+     "base_word": "GIVE",
+     "key": "gave",
+     "text": "The lost speech Abraham Lincoln was famous as a great public speaker. In 1865 he __________________ a very emotional speech at the Bloomington Convention.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "0B87D6",
+     "base_word": "ONE",
+     "key": "first",
+     "text": "The speech was so captivating that for the __________________ time in their lives the reporters forgot to take notes.",
+     "kes": "2.4.37"
+    },
+    {
+     "pos": 3,
+     "zid": "C05C0B",
+     "base_word": "BAD",
+     "key": "worst",
+     "text": "The __________________ thing about it is that it was a very important speech – the one that led to the founding of the Republican Party in the USA.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 4,
+     "zid": "B286E4",
+     "base_word": "KNOW",
+     "key": "do not know",
+     "text": "Bread Bread is always on our table like many other products. However, we __________________ who invented it. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "CFE5ED",
+     "base_word": "CHANGE",
+     "key": "has changed",
+     "text": "Since that time bread __________________ in many ways.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "801567",
+     "base_word": "INTRODUCE",
+     "key": "was introduced",
+     "text": "For example, sliced bread __________________ in 1930. New varieties of bread appear every day.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 7,
+     "zid": "311BA4",
+     "base_word": "CONTINUE",
+     "key": "will continue",
+     "text": "There is no doubt that people __________________ to experiment with flavours and tastes of bread in the future.",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "3AA595",
+   "kes": "2.4.33",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "275BBA",
+     "base_word": "MANY",
+     "key": "more",
+     "text": "The land of ice and fire People often call Iceland ‘the land of ice and fire’. That is so because this country has __________________ volcanoes than most other countries in the world.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 2,
+     "zid": "34FA80",
+     "base_word": "THIS",
+     "key": "these",
+     "text": "Some of __________________ volcanoes are still active while others can wake up any time.",
+     "kes": "2.4.36"
+    },
+    {
+     "pos": 3,
+     "zid": "C8904B",
+     "base_word": "COVER",
+     "key": "is covered",
+     "text": "Much of Iceland __________________ in lava as eruptions happen about every four years.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "8DDD9F",
+     "base_word": "LARGE",
+     "key": "largest",
+     "text": "The Louvre The Louvre is a famous museum in Paris. It is the __________________ art museum in the world.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 5,
+     "zid": "4CED35",
+     "base_word": "TAKE",
+     "key": "would take",
+     "text": "If you wanted to spend 30 seconds looking at each piece of art there, it __________________ you 100 days to see the entire museum. Originally the Louvre was a fortress and then it became a royal palace.",
+     "kes": "2.4.12"
+    },
+    {
+     "pos": 6,
+     "zid": "F60C37",
+     "base_word": "TURN",
+     "key": "was turned",
+     "text": "After the French Revolution the building __________________ into a museum which is a must-see for any tourist who goes to Paris.",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "404FE0",
+   "kes": "2.4.24",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "ED0E4B",
+     "base_word": "GIVE",
+     "key": "gave",
+     "text": "How the Nobel Prize started Everybody knows about Alfred Nobel. He was the man who __________________ the world a great invention &#x2013; dynamite.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "130911",
+     "base_word": "USE",
+     "key": "using",
+     "text": "However, Nobel saw that people started __________________ it for military purposes.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 3,
+     "zid": "3228F4",
+     "base_word": "HE",
+     "key": "him",
+     "text": "That is why the scientist changed his will and introduced the Nobel Prize. The scientist s wish was that people would remember something good about __________________.",
+     "kes": "2.4.36"
+    },
+    {
+     "pos": 4,
+     "zid": "332B04",
+     "base_word": "COLD",
+     "key": "coldest",
+     "text": "Antarctica Many people think that Antarctica is just a block of thin ice. It is, indeed, the __________________ place on Earth.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 5,
+     "zid": "A77EEB",
+     "base_word": "SET",
+     "key": "does not set",
+     "text": "However, during the summer the sun __________________ in Antarctica . NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 7,
+     "zid": "04C5E0",
+     "base_word": "CONCENTRATE",
+     "key": "is concentrated",
+     "text": "Another interesting fact about Antarctica is that 90% of the world’s fresh water __________________ there. Isn’t it amazing?",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "405CBD",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "4BAEA7",
+     "base_word": "HAVE",
+     "key": "do not have",
+     "text": "Scandinavian walking It is necessary to go in for sports. If you __________________ enough time to go to the gym, you might take up Scandinavian walking. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "7D3787",
+     "base_word": "DO",
+     "key": "doing",
+     "text": "Many people enjoy __________________ this kind of sport.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 3,
+     "zid": "4A3F0A",
+     "base_word": "GOOD",
+     "key": "best",
+     "text": "It is a very cheap hobby – all you need is a pair of walking sticks and comfortable shoes. Still, the __________________ thing is to take several lessons of Scandinavian walking to avoid traumas.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 4,
+     "zid": "BFAEC4",
+     "base_word": "CAN",
+     "key": "could",
+     "text": "Maria Callas Maria Callas was the world-famous opera singer. She __________________ sing anything – from operas by Rossini to Wagner’s music dramas.",
+     "kes": "2.4.26"
+    },
+    {
+     "pos": 5,
+     "zid": "049BA5",
+     "base_word": "EDUCATE",
+     "key": "was educated",
+     "text": "Maria __________________ in Greece.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "6B8F85",
+     "base_word": "LATE",
+     "key": "Later",
+     "text": "__________________ she moved to Italy and started her musical career there. She sang in the most prestigious opera houses and theatres and people adored her.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 7,
+     "zid": "A1EA15",
+     "base_word": "BE",
+     "key": "has been",
+     "text": "In fact, her voice was so unique that it __________________ the golden standard ever since she started to perform.",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "460532",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "1F83D4",
+     "base_word": "INVENT",
+     "key": "were invented",
+     "text": "From the history of skirts Skirts are a popular item of clothing. They __________________ around 3900 BC.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "4BCEBE",
+     "base_word": "WOMAN",
+     "key": "women",
+     "text": "Now mostly __________________ wear skirts of different colours, styles and length.",
+     "kes": "2.4.29"
+    },
+    {
+     "pos": 3,
+     "zid": "C1E1E0",
+     "base_word": "WEAR",
+     "key": "wore",
+     "text": "However, you may be surprised to learn that in ancient Greece only men __________________ skirts. In some cultures, skirts are still a part of male outfits. Isn t that amazing?",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "A05C8B",
+     "base_word": "BE",
+     "key": "has been",
+     "text": "The English language You are lucky to know English! It __________________ one of the most popular languages in the world for many years.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "DEB97E",
+     "base_word": "BAD",
+     "key": "worst",
+     "text": "However, learning English can be hard because some linguists say it has the __________________ grammar of all European languages.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 6,
+     "zid": "771662",
+     "base_word": "THEY",
+     "key": "them",
+     "text": "There are many grammar rules and even more exceptions to __________________.",
+     "kes": "2.4.36"
+    },
+    {
+     "pos": 7,
+     "zid": "BF4718",
+     "base_word": "BE",
+     "key": "is not",
+     "text": "Spelling __________________ easy either. So, if you have mastered English, you are a highly intelligent person! NOT",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "4F8747",
+   "kes": "2.4.24",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "8258BC",
+     "base_word": "FOUND",
+     "key": "was founded",
+     "text": "From the history of Smolensk Smolensk is one of the oldest cities in Russia. No one knows exactly when Smolensk __________________. The first mentioning of it refers to the middle of the 9 th century.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "40CFB0",
+     "base_word": "DEFEND",
+     "key": "defended",
+     "text": "Smolensk is often called the shield of Russia because in the past it __________________ the western borders of our country.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 3,
+     "zid": "C0C877",
+     "base_word": "VISIT",
+     "key": "visiting",
+     "text": "Despite this, there are a lot of historical buildings preserved in Smolensk, and tourists can enjoy __________________ the beautiful Kremlin made of red brick and ancient churches there.",
+     "kes": "2.4.18"
+    },
+    {
+     "pos": 4,
+     "zid": "755E29",
+     "base_word": "HAVE",
+     "key": "does not have",
+     "text": "Norway Norway , officially the Kingdom of Norway, is a country in Northern Europe. Despite the fact that the country is a monarchy, the king there plays only a ceremonial role and __________________ any real power. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "EA338C",
+     "base_word": "IT",
+     "key": "its",
+     "text": "The country’s capital and largest city is Oslo, and __________________ official language is Norwegian.",
+     "kes": "2.4.36"
+    },
+    {
+     "pos": 6,
+     "zid": "DB0563",
+     "base_word": "CONSIDER",
+     "key": "is considered",
+     "text": "Norway __________________ to be a highly developed country. It is important to mention that now Norway is ranked number one in prosperity index though it stood lower in 2016.",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "525332",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "EA03BE",
+     "base_word": "SITUATE",
+     "key": "is situated",
+     "text": "The driest place in the world Many people think that the Sahara Desert is the driest place in the world. However, this place __________________ in Antarctica.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "7C995B",
+     "base_word": "LIE",
+     "key": "do not lie",
+     "text": "Snow and ice __________________ there because the winds are too strong. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 3,
+     "zid": "771240",
+     "base_word": "BE",
+     "key": "has been",
+     "text": "There __________________ no rain here for two million years. Can you imagine that?",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "60A6FD",
+     "base_word": "SPEND",
+     "key": "spending",
+     "text": "New Year postcards People love New Year. They enjoy __________________ this time with their family and friends.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 5,
+     "zid": "9C32FC",
+     "base_word": "GOOD",
+     "key": "best",
+     "text": "It is also one of the __________________ occasions to give somebody a present or send a card.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 6,
+     "zid": "A785D8",
+     "base_word": "BEGIN",
+     "key": "began",
+     "text": "In fact, the tradition to send New Year cards __________________ only in the 19th century in England.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 7,
+     "zid": "14C26D",
+     "base_word": "CHILD",
+     "key": "Children",
+     "text": "Now everybody sends New Year cards. __________________ love making New Year cards and giving them to their parents.",
+     "kes": "2.4.29"
+    }
+   ]
+  },
+  {
+   "variant": "53DC7A",
+   "kes": "2.4.33",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "3D1346",
+     "base_word": "MANY",
+     "key": "more",
+     "text": "Altai Altai is a truly unique place in Russia. There one can find everything from picturesque mountain ranges to valleys. It also has __________________ than 400 caves of various shapes. Some of these caves have labyrinths which can be quite dangerous for an inexperienced tourist.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 2,
+     "zid": "500270",
+     "base_word": "VISIT",
+     "key": "visiting",
+     "text": "Still, Altai caves are worth __________________ as they allow people to understand how beautiful the underground world can be.",
+     "kes": "2.4.18"
+    },
+    {
+     "pos": 3,
+     "zid": "5017D6",
+     "base_word": "BE",
+     "key": "have been",
+     "text": "Millions of tourists __________________ to Altai so far, and a lot of them want to come back to Altai again.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "4D0BDA",
+     "base_word": "PROTECT",
+     "key": "will protect",
+     "text": "Mayflower People all over the world love mayflowers because when they appear, it means that spring is coming. According to English legends, if you once plant mayflowers near your house, they __________________ you from evil spirits forever.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "9F4D17",
+     "base_word": "CONSIDER",
+     "key": "are considered",
+     "text": "Sorry to say, not all people remember that mayflowers __________________ to be endangered, so you may look at them, but you shouldn’t pick them.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "2EFD9D",
+     "base_word": "CHILD",
+     "key": "children",
+     "text": "We must take care of them so that our __________________ can see these beautiful flowers.",
+     "kes": "2.4.29"
+    }
+   ]
+  },
+  {
+   "variant": "56CD4F",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "A09042",
+     "base_word": "INVITE",
+     "key": "was invited",
+     "text": "An honest answer George Bernard Shaw was an outstanding British literary figure and a man with a good sense of humour. When he was still a young critic, he __________________ as a guest to a family party.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "2ADACC",
+     "base_word": "PLAY",
+     "key": "was playing",
+     "text": "When he entered the room, the daughter of the host __________________ the piano and her performance was no good. She said, People say you are fond of music. Are you?",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 3,
+     "zid": "636FDB",
+     "base_word": "BE",
+     "key": "have been",
+     "text": "I __________________ fond of music for a long time, but never mind, go on playing, was Shaw s answer.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "0F2042",
+     "base_word": "UNDERSTAND",
+     "key": "understood",
+     "text": "E-books People of the 21 st century have to think about living green. A long time ago we __________________ that we should protect our forests.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "933E84",
+     "base_word": "THEY",
+     "key": "them",
+     "text": "That is why today people try to avoid printing photos and keep __________________ all on computers. E-books are another example of people wishing not to waste paper.",
+     "kes": "2.4.36"
+    },
+    {
+     "pos": 6,
+     "zid": "6D759B",
+     "base_word": "ONE",
+     "key": "first",
+     "text": "The __________________ e-book appeared in 1998 and attracted everybody s attention immediately.",
+     "kes": "2.4.37"
+    },
+    {
+     "pos": 7,
+     "zid": "02CE00",
+     "base_word": "SAFE",
+     "key": "safer",
+     "text": "Modern e-books are much __________________ for your eyes than they used to be in the past and are very affordable now.",
+     "kes": "2.4.33"
+    }
+   ]
+  },
+  {
+   "variant": "57849C",
+   "kes": "2.4.37",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "A0C16B",
+     "base_word": "ONE",
+     "key": "first",
+     "text": "An important discovery Crimea is not only a popular holiday destination for tourists, it is also a place where history comes alive. There is much for archeologists to do there. Scientists used to think that the __________________ men came to the Crimean lands about 100,000 years ago.",
+     "kes": "2.4.37"
+    },
+    {
+     "pos": 2,
+     "zid": "417BED",
+     "base_word": "MAKE",
+     "key": "made",
+     "text": "However, some months ago they __________________ a surprising discovery which baffled many archeologists worldwide.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 3,
+     "zid": "433445",
+     "base_word": "FIND",
+     "key": "were found",
+     "text": "There __________________ some tools that were approximately 800,000 years old and could belong to Neanderthals.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "7CF889",
+     "base_word": "GOOD",
+     "key": "best",
+     "text": "The Flam railway If you like to look at picturesque landscapes but are not too keen on hiking, a beautiful railway journey may be just what you need. One of such scenic routes can be found in Norway – it’s the Flam railway. It is thought to be one of the __________________ in the world.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 5,
+     "zid": "617922",
+     "base_word": "LOOK",
+     "key": "looking",
+     "text": "The journey lasts 1 hour. The train passes through 20 tunnels and enables the passengers to enjoy __________________ at the idyllic mountain scenery.",
+     "kes": "2.4.18"
+    },
+    {
+     "pos": 6,
+     "zid": "5CB640",
+     "base_word": "TRY",
+     "key": "have tried",
+     "text": "Thousands of tourists __________________ this exciting route so far.",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "57D754",
+   "kes": "2.4.33",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "51CC78",
+     "base_word": "BIG",
+     "key": "biggest",
+     "text": "Animal sleep Sleep is as important for animals as for human beings. Ferrets, for instance, can sleep the __________________ part of the day – about 20 hours.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 2,
+     "zid": "38B446",
+     "base_word": "WAKE",
+     "key": "waking",
+     "text": "% Snakes may sleep for three years without __________________ up to get some food.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 3,
+     "zid": "383288",
+     "base_word": "STOP",
+     "key": "do not stop",
+     "text": "%end_page % Dolphins always sleep with one eye open whereas sharks __________________ moving during their sleep as they breathe only while moving. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "5A3E32",
+     "base_word": "CAN",
+     "key": "could not",
+     "text": "Vincent van Gogh Vincent van Gogh was a Dutch Post-Impressionist painter. In his lifetime he __________________ sell any pictures. NOT",
+     "kes": "2.4.26"
+    },
+    {
+     "pos": 5,
+     "zid": "B5F223",
+     "base_word": "BECOME",
+     "key": "would not become",
+     "text": "%end_page % People often made fun of him and his works. They used to tell him that he __________________ a real painter. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "5FEEAC",
+     "base_word": "CONSIDER",
+     "key": "are considered",
+     "text": "%end_page % However, van Gogh never stopped painting. He preferred to listen to his heart and follow his dream. Now his pictures __________________ masterpieces and cost a lot of money.",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "5AE1D2",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "7025AB",
+     "base_word": "SPEAK",
+     "key": "are spoken",
+     "text": "What do you know about Australia ? Here are some interesting facts about Australia. Over 200 different languages and dialects __________________ in Australia including 45 indigenous languages.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "0D2A4D",
+     "base_word": "HIGH",
+     "key": "highest",
+     "text": "Australia has the world’s __________________ proportion of migrant settlers in a developed nation with over 25% of Australians born in another country.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 3,
+     "zid": "5BF17B",
+     "base_word": "ONE",
+     "key": "first",
+     "text": "The __________________ Australian Friendly Society with the motto of “Advance Australia” was formed in Victoria in 1871.",
+     "kes": "2.4.37"
+    },
+    {
+     "pos": 4,
+     "zid": "CBC387",
+     "base_word": "SEE",
+     "key": "had seen",
+     "text": "The cat, the rooster, and the young mouse A very young mouse made his first trip out of the hole and into the world. He returned to tell his mother of the wonderful creatures he __________________.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "952E81",
+     "base_word": "TALK",
+     "key": "talking",
+     "text": "“Oh, Mother,” said the mouse, “I met some curious animals. There was one beautiful animal with fluffy fur, a long winding tail and a tender voice. I met another animal, a terrible looking monster. He had raw meat on his head and on his chin that wiggled and shook as he walked. He gave such a powerful and frightening cry, that I ran away in fear, without __________________ to the kind beautiful animal.”",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 6,
+     "zid": "0E2556",
+     "base_word": "MOUSE",
+     "key": "mice",
+     "text": "Mother Mouse smiled, “My dear, that horrible creature was a harmless bird, but that beautiful animal with the fluffy fur was a cat who eats __________________.",
+     "kes": "2.4.29"
+    },
+    {
+     "pos": 7,
+     "zid": "B6D5FF",
+     "base_word": "HAVE",
+     "key": "did not have",
+     "text": "You are lucky she __________________ you for dinner.” NOT",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "6EC77E",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "76DA98",
+     "base_word": "COME",
+     "key": "came",
+     "text": "A strange story Boris Kustodiev was a famous Soviet painter. One day two young scientists __________________ to see him.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "2BED5F",
+     "base_word": "ONE",
+     "key": "first",
+     "text": "They wanted to have their portraits painted. Kustodiev painted portraits of famous people only and his __________________ wish was to refuse them.",
+     "kes": "2.4.37"
+    },
+    {
+     "pos": 3,
+     "zid": "FC7863",
+     "base_word": "BE",
+     "key": "would be",
+     "text": "Still, the scientists insisted they __________________ famous in the near future. They were P. Kapitsa and N. Semenov, who both later got the Nobel Prizes.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "D659FC",
+     "base_word": "GOOD",
+     "key": "best",
+     "text": "A tasty cup Can you imagine a person who drinks his cup of coffee, then has his empty cup for dessert and leaves the caf ? A lot of Italian restaurants now serve the __________________ coffee in the country in the cups which one can eat.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 5,
+     "zid": "508F93",
+     "base_word": "COVER",
+     "key": "is covered",
+     "text": "The cup __________________ with a substance which keeps the liquid inside.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "CAE804",
+     "base_word": "NEED",
+     "key": "do not need",
+     "text": "You __________________ to put extra sugar in your coffee in such a cup because it is sweet. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 7,
+     "zid": "756656",
+     "base_word": "BECOME",
+     "key": "will become",
+     "text": "There is no doubt that soon such cups __________________ popular all over the world.",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "6FD9CB",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "A34A41",
+     "base_word": "LEARN",
+     "key": "have learnt",
+     "text": "Clever plants The flora of our planet is simply amazing. There are a lot of things plants __________________ to do since they appeared on our planet.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "EDD745",
+     "base_word": "THEY",
+     "key": "them",
+     "text": "Some of them produce dangerous chemicals so that herbivores cannot eat __________________.",
+     "kes": "2.4.36"
+    },
+    {
+     "pos": 3,
+     "zid": "F55E41",
+     "base_word": "GOOD",
+     "key": "best",
+     "text": "There are even plants which attract predators. This is one of the __________________ survival mechanisms developed by plants in the process of evolution.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 4,
+     "zid": "13BA41",
+     "base_word": "ONE",
+     "key": "first",
+     "text": "Yuri Lysyansky July 22 is a special day in Russian history. In 1806 on this day the __________________ Russian round-the-world trip ended.",
+     "kes": "2.4.37"
+    },
+    {
+     "pos": 5,
+     "zid": "73060E",
+     "base_word": "MAKE",
+     "key": "made",
+     "text": "The trip led by the Russian navy officer Yuri Lysyansky __________________ a great contribution to the study of the oceans.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 6,
+     "zid": "C216F9",
+     "base_word": "CALL",
+     "key": "was called",
+     "text": "His ship __________________ The Neva .",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 7,
+     "zid": "465289",
+     "base_word": "LATE",
+     "key": "Later",
+     "text": "__________________, Lysyansky wrote his memoirs about the journey around the world. Russian people are certainly proud of this outstanding man.",
+     "kes": "2.4.33"
+    }
+   ]
+  },
+  {
+   "variant": "7ABD71",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "D2D6EB",
+     "base_word": "SELL",
+     "key": "is sold",
+     "text": "Wallpaper Many people prefer to decorate their rooms with wallpaper. It __________________ in rolls and is relatively inexpensive.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "0E9DED",
+     "base_word": "GOOD",
+     "key": "better",
+     "text": "Wallpaper is __________________ than paint because it comes in all sorts of patterns and colours.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 3,
+     "zid": "E9556E",
+     "base_word": "LOOK",
+     "key": "looking",
+     "text": "You can even buy wallpaper with a photo of a landscape and enjoy __________________ at beautiful views every day.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 4,
+     "zid": "A29543",
+     "base_word": "FIND",
+     "key": "would find",
+     "text": "I saw it in a dream! When scientists think about something very hard, their minds work all the time. Many scientists didn’t expect that they __________________ a solution to their problem in their sleep.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "6A238A",
+     "base_word": "HAVE",
+     "key": "had",
+     "text": "For instance, Niels Bohr __________________ an idea about the atomic structure while sleeping.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "D953F9",
+     "base_word": "HEAR",
+     "key": "were heard",
+     "text": "Some great musical pieces of Richard Wagner __________________ by him in his dreams.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 7,
+     "zid": "2FBFD1",
+     "base_word": "MANY",
+     "key": "more",
+     "text": "There are __________________ examples of it than you can imagine, so next time you have a hard problem to solve, just have a good night’s sleep!",
+     "kes": "2.4.33"
+    }
+   ]
+  },
+  {
+   "variant": "7BAE7D",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "959F79",
+     "base_word": "WALK",
+     "key": "walk",
+     "text": "The two crabs One fine day two crabs came out of their home to take a stroll on the sand. Child, said the mother, you __________________ very ungracefully. You should get yourself used to walking straight forward without twisting from side to side.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "A7E976",
+     "base_word": "CAN",
+     "key": "could",
+     "text": "The young crab asked his mother to show how to do it so that he __________________ copy it.",
+     "kes": "2.4.26"
+    },
+    {
+     "pos": 3,
+     "zid": "0047FC",
+     "base_word": "GOOD",
+     "key": "best",
+     "text": "You see, setting an example is the __________________ way of teaching.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 4,
+     "zid": "625039",
+     "base_word": "THIS",
+     "key": "these",
+     "text": "Emoji Emoji is a Japanese word to denote ideograms and smileys. People often put __________________ emoticons in their electronic messages and Web pages.",
+     "kes": "2.4.36"
+    },
+    {
+     "pos": 5,
+     "zid": "433A95",
+     "base_word": "INTRODUCE",
+     "key": "were introduced",
+     "text": "They __________________ in the 1990s.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "62521C",
+     "base_word": "BECOME",
+     "key": "have become",
+     "text": "Since that time they __________________ immensely popular worldwide, much thanks to their international inclusion in smartphones.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 7,
+     "zid": "69AEED",
+     "base_word": "CONTINUE",
+     "key": "will continue",
+     "text": "There is no doubt that people __________________ using Emoji in the future.",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "7DD607",
+   "kes": "2.4.36",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "8A2F3D",
+     "base_word": "HE",
+     "key": "him",
+     "text": "Kenneth Graham Kenneth Graham (1859–1932) was a Scottish writer. Life was very hard on __________________ but he remained an optimistic person.",
+     "kes": "2.4.36"
+    },
+    {
+     "pos": 2,
+     "zid": "D8BBF4",
+     "base_word": "CHILD",
+     "key": "children",
+     "text": "His books are classics of literature for __________________.",
+     "kes": "2.4.29"
+    },
+    {
+     "pos": 3,
+     "zid": "C03A76",
+     "base_word": "MAKE",
+     "key": "has made",
+     "text": "Recently the Disney studio __________________ some films based on his books, for example, The Reluctant Dragon . These films are certainly worth watching.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "9572EA",
+     "base_word": "INTRODUCE",
+     "key": "was introduced",
+     "text": "A Walking House Can you imagine a house that can walk? An innovative prototype of a walking house __________________ last year in England.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "3AC6BA",
+     "base_word": "GOOD",
+     "key": "best",
+     "text": "The __________________ thing about it is that this eco-friendly house has everything necessary – a kitchen, a composting toilet, a method to collect rain water, and so on.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 6,
+     "zid": "82E060",
+     "base_word": "ATTRACT",
+     "key": "will attract",
+     "text": "Without a doubt, such houses __________________ enthusiastic travellers in the near future.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 7,
+     "zid": "5E6914",
+     "base_word": "ONE",
+     "key": "first",
+     "text": "The __________________ samples are already on sale.",
+     "kes": "2.4.37"
+    }
+   ]
+  },
+  {
+   "variant": "83DF00",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "85F724",
+     "base_word": "INTRODUCE",
+     "key": "was introduced",
+     "text": "Antiseptics We cannot imagine our life without antiseptics. This invention __________________ in 1850 by a Hungarian physician.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "1207AA",
+     "base_word": "ONE",
+     "key": "first",
+     "text": "He was the __________________ prominent doctor to make a strong link between the use of antiseptics and improving survival rates of wounded people.",
+     "kes": "2.4.37"
+    },
+    {
+     "pos": 3,
+     "zid": "B07E02",
+     "base_word": "BECOME",
+     "key": "became",
+     "text": "His work was taken up by others, such as Joseph Lister, who __________________ a pioneer of antiseptic surgery.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "BC9375",
+     "base_word": "BE",
+     "key": "have been",
+     "text": "Living octopus In countries which are located near sea coasts, sea food is an important part of national cuisine. Since ancient times, different kinds of fish and seafood __________________ staple diets near the coast or near certain rivers and lakes.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "0F5CF4",
+     "base_word": "USE",
+     "key": "is used",
+     "text": "From Indonesia to India, seafood __________________ throughout the region both as foodstuffs and as seasonings.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "572E1E",
+     "base_word": "WANT",
+     "key": "do not want",
+     "text": "It s important to eat seafood fresh as people __________________ to risk food poisoning. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 7,
+     "zid": "7F5939",
+     "base_word": "GOOD",
+     "key": "best",
+     "text": "Many people think that exotic seafood dishes are the __________________ .",
+     "kes": "2.4.33"
+    }
+   ]
+  },
+  {
+   "variant": "877781",
+   "kes": "2.4.27",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "2A35B9",
+     "base_word": "EAT",
+     "key": "eating",
+     "text": "Tasty furniture Everybody likes sweets. Children are the ones who enjoy __________________ all kinds of sweets.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 2,
+     "zid": "33AAB0",
+     "base_word": "MANY",
+     "key": "more",
+     "text": "Now they have even __________________ reasons to be happy because they can have party furniture made of sweets.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 3,
+     "zid": "1FE556",
+     "base_word": "BECOME",
+     "key": "will become",
+     "text": "Such furniture looks bright and attractive. The producers hope that soon such furniture __________________ popular all over the world.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "53183F",
+     "base_word": "SHORT",
+     "key": "shortest",
+     "text": "A street with a record Have you ever been to Scotland ? There are a lot of wonderful attractions there, including the __________________ street in the world.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 5,
+     "zid": "BE3FAD",
+     "base_word": "CALL",
+     "key": "is called",
+     "text": "It __________________ Ebenezer Place in the town of Wick . It is only 2.06 metres long.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "24B7DC",
+     "base_word": "BUILD",
+     "key": "was built",
+     "text": "It appeared when the Mackeys Hotel __________________ there in 1883 and has only this building.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 7,
+     "zid": "63EA7A",
+     "base_word": "ONE",
+     "key": "first",
+     "text": "So, if you come to Wick, the __________________ thing on your must-do list should be to visit this place.",
+     "kes": "2.4.37"
+    }
+   ]
+  },
+  {
+   "variant": "8D8877",
+   "kes": "2.4.33",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "98B6DF",
+     "base_word": "GOOD",
+     "key": "best",
+     "text": "Oleg Protopopov Have you heard about Oleg Protopopov? He was born in 1932 and he was one of the __________________ figure skaters of his time.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 2,
+     "zid": "D354C0",
+     "base_word": "WIN",
+     "key": "won",
+     "text": "He __________________ two Olympic gold medals.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 3,
+     "zid": "7AED85",
+     "base_word": "ONE",
+     "key": "first",
+     "text": "He was also the __________________ sportsman to show a lyrical programme in figure skating. Russian people are certainly proud of this outstanding sportsman.",
+     "kes": "2.4.37"
+    },
+    {
+     "pos": 4,
+     "zid": "F55467",
+     "base_word": "FIND",
+     "key": "was found",
+     "text": "The Rosetta Stone We learn about our past thanks to the findings of archaeologists. The Rosetta stone is one of them. It __________________ in 1799.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "17FAF0",
+     "base_word": "STUDY",
+     "key": "studying",
+     "text": "Thanks to this finding , scientists could start __________________ the language of ancient Egyptians.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 6,
+     "zid": "2449D1",
+     "base_word": "THIS",
+     "key": "These",
+     "text": "This happened so because there were texts on the stone. __________________ texts were both in Greek and the ancient Egyptian language.",
+     "kes": "2.4.36"
+    },
+    {
+     "pos": 7,
+     "zid": "E40797",
+     "base_word": "SEE",
+     "key": "have seen",
+     "text": "Now the Rosetta stone is in the British museum. Millions of visitors to the museum __________________ it so far.",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "8FBA64",
+   "kes": "2.4.37",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "7CF3BA",
+     "base_word": "ONE",
+     "key": "first",
+     "text": "A cleaning wand A cleaning wand is a totally new invention. It features the advanced UV-C technology that helps to kill bacteria and germs. It’s the __________________ ever cleaning device you can literally take anywhere.",
+     "kes": "2.4.37"
+    },
+    {
+     "pos": 2,
+     "zid": "CB8C16",
+     "base_word": "GOOD",
+     "key": "best",
+     "text": "The __________________ thing about it is that it can clean anything.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 3,
+     "zid": "3B924A",
+     "base_word": "WOMAN",
+     "key": "women",
+     "text": "There’s no doubt that __________________ are going to like this invention very much.",
+     "kes": "2.4.29"
+    },
+    {
+     "pos": 4,
+     "zid": "AC9429",
+     "base_word": "THINK",
+     "key": "thought",
+     "text": "Robert Heinlein Robert A. Heinlein was a US science fiction author. He was among those writers who emphasized scientific accuracy in their fiction. He also __________________ it was necessary to challenge the readers.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "29421E",
+     "base_word": "THEY",
+     "key": "their",
+     "text": "He pointed out it was necessary to develop __________________ critical thinking.",
+     "kes": "2.4.36"
+    },
+    {
+     "pos": 6,
+     "zid": "97229C",
+     "base_word": "BE",
+     "key": "would be",
+     "text": "He pointed out that any science fiction book __________________ a success if the author followed these two important principles.",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "A46FD1",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "B50EF6",
+     "base_word": "CHOOSE",
+     "key": "was chosen",
+     "text": "Did you know? Here are some interesting facts about Australia . Canberra __________________ as the capital because Sydney and Melbourne could not stop arguing which city should be the capital of Australia .",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "BC540C",
+     "base_word": "IT",
+     "key": "its",
+     "text": "The sports capital of the world has 70 percent of __________________ total population participating at least once a week in a particular recreational activity or sport.",
+     "kes": "2.4.36"
+    },
+    {
+     "pos": 3,
+     "zid": "0A353E",
+     "base_word": "ORGANISE",
+     "key": "organised",
+     "text": "80 % of Australians believe Australia has a strong culture and identity characterised by honesty, sports and multiculturalism based on research __________________ by the Australia Day Council of NSW in 2008.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 4,
+     "zid": "744D64",
+     "base_word": "SEE",
+     "key": "saw",
+     "text": "The wolf and the goat A hungry wolf was out searching for a meal. He __________________ a goat feeding on grass on top of a high cliff. The wolf wished to get the goat to climb down from the rock and into his grasp and he called out to her.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "ABED09",
+     "base_word": "GREEN",
+     "key": "greener",
+     "text": "“Excuse me, dear Goat,” he said in a friendly voice, “It is very dangerous for you to be at such a height. Do come down before you injure yourself. Besides, the grass is much __________________ down here. Take my advice, and please come down from that high cliff.”",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 6,
+     "zid": "1DDE26",
+     "base_word": "CARE",
+     "key": "don't care",
+     "text": "But the goat knew too well of the wolf’s intent. “You __________________ if I eat good grass or bad. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 7,
+     "zid": "D196FB",
+     "base_word": "EAT",
+     "key": "eating",
+     "text": "What you care about is __________________ me.”",
+     "kes": "2.4.27"
+    }
+   ]
+  },
+  {
+   "variant": "AB73D1",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "0FEFD5",
+     "base_word": "FIND",
+     "key": "have found",
+     "text": "Lies, lies People usually want to know the truth. However, it can be hard to understand if a person is telling the truth or a lie. So far scientists __________________ some ways to do it.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "A9E1E5",
+     "base_word": "WOMAN",
+     "key": "women",
+     "text": "One way is to use special devices. Still, __________________ can see a lie without any gadgets.",
+     "kes": "2.4.29"
+    },
+    {
+     "pos": 3,
+     "zid": "22CBC1",
+     "base_word": "LONG",
+     "key": "longer",
+     "text": "They notice if the answer takes a person __________________ than usual. It is a sign of a lie.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 4,
+     "zid": "D81738",
+     "base_word": "DO",
+     "key": "doing",
+     "text": "Horoscopes Do you read your horoscope online or in newspapers and magazines? Many people enjoy __________________ so.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 5,
+     "zid": "DE9CE7",
+     "base_word": "ONE",
+     "key": "first",
+     "text": "The __________________ horoscopes appeared around 2000 BC in ancient Babylon.",
+     "kes": "2.4.37"
+    },
+    {
+     "pos": 6,
+     "zid": "CCD35C",
+     "base_word": "BECOME",
+     "key": "became",
+     "text": "Still, people __________________ seriously interested in horoscopes only in the 17 th century.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 7,
+     "zid": "CFD7A7",
+     "base_word": "IT",
+     "key": "its",
+     "text": "Every country had __________________ own special system and used either star signs or animal or plant horoscopes. Astronomy as a science developed from astrology.",
+     "kes": "2.4.36"
+    }
+   ]
+  },
+  {
+   "variant": "AB9903",
+   "kes": "2.4.27",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "3625DE",
+     "base_word": "READ",
+     "key": "reading",
+     "text": "Detective stories Do you like detective stories? Many people enjoy __________________ them.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 2,
+     "zid": "A684CC",
+     "base_word": "LOVE",
+     "key": "are loved",
+     "text": "We all have our favourite detective writers. Books by A.C. Doyle, E.A. Poe and J.H. Chase __________________ by numerous readers all over the world.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 3,
+     "zid": "69265B",
+     "base_word": "GOOD",
+     "key": "best",
+     "text": "Still, Agatha Christie is the __________________ detective writer of all times – at least by the number of books published.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 4,
+     "zid": "691847",
+     "base_word": "UNDERSTAND",
+     "key": "understood",
+     "text": "Pot plants You can find a pot plant in almost every house. A long time ago people __________________ that it was useful to have them at home.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "4C9184",
+     "base_word": "BRING",
+     "key": "would bring",
+     "text": "They hoped a pot plant __________________ them good luck.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "2B9146",
+     "base_word": "WOMAN",
+     "key": "women",
+     "text": "It is usually __________________ who take care of pot plants. They water them and set them out so that they can get some sunshine.",
+     "kes": "2.4.29"
+    },
+    {
+     "pos": 7,
+     "zid": "CD5119",
+     "base_word": "GET",
+     "key": "will not get",
+     "text": "People believe that if you have certain pot plants at home, you __________________ many illnesses. NOT",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "ACF9C7",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "5FF8F6",
+     "base_word": "KNOW",
+     "key": "knew",
+     "text": "A tasty doctor Food can help you to stay healthy. Even in ancient times people __________________ how important it was to eat the right food.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "581227",
+     "base_word": "TOOTH",
+     "key": "teeth",
+     "text": "For example, one should eat apples and carrots to keep their __________________ healthy.",
+     "kes": "2.4.29"
+    },
+    {
+     "pos": 3,
+     "zid": "77C9FB",
+     "base_word": "EAT",
+     "key": "eating",
+     "text": "If you often feel tired, you should give up __________________ junk food and eat more fruit and nuts because wrong food can damage your health.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 4,
+     "zid": "29709C",
+     "base_word": "BE",
+     "key": "is not",
+     "text": "The Dead Sea Do you know anything about the Dead Sea? In fact, it __________________ a sea, it is a lake. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "7BFB55",
+     "base_word": "CALL",
+     "key": "is called",
+     "text": "It __________________ a sea because it has a lot of salt in it.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "447958",
+     "base_word": "MUCH",
+     "key": "more",
+     "text": "It actually has nine times __________________ salt than any other natural body of water, and nothing can live in it.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 7,
+     "zid": "FF22B8",
+     "base_word": "KNOW",
+     "key": "have known",
+     "text": "People __________________ about it since the 2 nd century BC. Now this place is in danger because of tourism and mining.",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "BE6148",
+   "kes": "2.4.27",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "4DBC17",
+     "base_word": "DO",
+     "key": "doing",
+     "text": "Strange but true Do you like walking along snowy streets? Many people enjoy __________________ it.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 2,
+     "zid": "97EB8A",
+     "base_word": "FOOT",
+     "key": "feet",
+     "text": "It is because they love the sound of the snow creaking under their __________________.",
+     "kes": "2.4.29"
+    },
+    {
+     "pos": 3,
+     "zid": "41DD85",
+     "base_word": "CAN",
+     "key": "cannot",
+     "text": "It is interesting that you can hear this sound only if it is around -5 because of the snow structure. If it is warmer or colder, you __________________ hear it. NOT",
+     "kes": "2.4.26"
+    },
+    {
+     "pos": 4,
+     "zid": "F6E79E",
+     "base_word": "GOOD",
+     "key": "best",
+     "text": "A great joke On April 1 British media always play jokes on their audience. One of the __________________ media jokes is definitely the one of the BBC.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 5,
+     "zid": "F1D1C9",
+     "base_word": "SHOW",
+     "key": "were shown",
+     "text": "On April 1, 1957 British people __________________ a fake film about growing spaghetti in Switzerland.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "7D809D",
+     "base_word": "TELL",
+     "key": "told",
+     "text": "The presenter __________________ the surprised viewers that Swiss farmers gathered spaghetti right from spaghetti trees.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 7,
+     "zid": "37C23E",
+     "base_word": "BE",
+     "key": "would be",
+     "text": "The BBC received many phone calls from people who hoped they __________________ able to grow spaghetti in the UK and asked for spaghetti seeds.",
+     "kes": "2.4.26"
+    }
+   ]
+  },
+  {
+   "variant": "C0626A",
+   "kes": "2.4.24",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "B4829A",
+     "base_word": "LOCATE",
+     "key": "is located",
+     "text": "Yaroslavl Yaroslavl is one of the most beautiful and ancient cities of Russia, the capital of the Russian Golden Ring. It __________________ on the Volga River and has a lot of old churches, cathedrals and monasteries as well as museums and historical monuments.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "1D302E",
+     "base_word": "WALK",
+     "key": "walking",
+     "text": "Tourists also enjoy __________________ along its wonderful embankment which offers its visitors picturesque views of the Volga.",
+     "kes": "2.4.18"
+    },
+    {
+     "pos": 3,
+     "zid": "D8790C",
+     "base_word": "VISIT",
+     "key": "have visited",
+     "text": "Millions of tourists __________________ Yaroslavl so far, and a lot of them want to come to this city again.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "9B3A66",
+     "base_word": "CHILD",
+     "key": "children",
+     "text": "From the history of sweaters Probably every person in the world has at least one sweater. It is a very popular item of clothing now, especially for __________________, who don’t like buttons and zips.",
+     "kes": "2.4.29"
+    },
+    {
+     "pos": 5,
+     "zid": "9596C4",
+     "base_word": "CREATE",
+     "key": "was created",
+     "text": "It is interesting to know why a sweater is called so. In fact, a knitted woolen sweater as we know it today __________________ in Europe in the 19 th century.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "9DB8C1",
+     "base_word": "WEAR",
+     "key": "wore",
+     "text": "Overweight people __________________ sweaters in order to lose some weight. They sweated profusely in warm sweaters, that is why this item of clothing got such a name.",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "C1F541",
+   "kes": "2.4.37",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "97B77C",
+     "base_word": "ONE",
+     "key": "first",
+     "text": "Beginnings of Russian railways In the middle of the 19 th century, the Russian Empire was so big that the necessity of creating a railway system to connect the central regions with the eastern territories became obvious. The __________________ public railway in Russia connected Saint Petersburg with the Emperor’s residence in Tsarskoe Selo.",
+     "kes": "2.4.37"
+    },
+    {
+     "pos": 2,
+     "zid": "52D369",
+     "base_word": "TAKE",
+     "key": "took",
+     "text": "It was 27 kilometers long and it __________________ about two years to build it.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 3,
+     "zid": "4C1F8E",
+     "base_word": "HAVE",
+     "key": "would have",
+     "text": "At that time nobody knew that in the future Russia __________________ one of the longest and best railway systems in the world.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "0BAF4B",
+     "base_word": "SET",
+     "key": "does not set",
+     "text": "White nights in Norway Daylight in Norway varies greatly. Though winters are quite dark and gloomy, summers make up for it by the season of white nights. From May to July the sun __________________ below the horizon. Thus, there is only twilight instead of complete darkness. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "4AEBE9",
+     "base_word": "CALL",
+     "key": "is called",
+     "text": "This phenomenon __________________ white nights.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "AF9A92",
+     "base_word": "HAVE",
+     "key": "having",
+     "text": "It is interesting that in summers many Norwegians enjoy __________________ a four-week holiday which gives them plenty of time to hunt, fish or simply walk.",
+     "kes": "2.4.18"
+    }
+   ]
+  },
+  {
+   "variant": "C57300",
+   "kes": "2.4.24",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "7B0A4E",
+     "base_word": "GIVE",
+     "key": "gave",
+     "text": "The secret of success Thomas A. Edison was a famous American inventor. He __________________ the world a lot of useful inventions.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "268A04",
+     "base_word": "CONSIDER",
+     "key": "was considered",
+     "text": "He __________________ to be a genius by his contemporaries, However, Edison himself didn’t think so.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 3,
+     "zid": "05CCDC",
+     "base_word": "ACHIEVE",
+     "key": "would not achieve",
+     "text": "He knew that if he didn’t work hard, he__________________ any further success. NOT",
+     "kes": "2.4.12"
+    },
+    {
+     "pos": 4,
+     "zid": "A9F9F5",
+     "base_word": "CHILD",
+     "key": "Children",
+     "text": "Ladybirds Ladybirds are beautiful creatures. Farmers love them as they help the crops to stay healthy. __________________ look for them because they believe if you catch a ladybird and let it go free, it will bring good luck and happiness.",
+     "kes": "2.4.29"
+    },
+    {
+     "pos": 5,
+     "zid": "2497DC",
+     "base_word": "BE",
+     "key": "is not",
+     "text": "They also love counting spots on ladybirds. They think that the number of spots defines the age of ladybirds. However, it __________________ true. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "0B99E0",
+     "base_word": "THIS",
+     "key": "these",
+     "text": "Ladybirds need __________________ spots to scare predators away.",
+     "kes": "2.4.36"
+    }
+   ]
+  },
+  {
+   "variant": "C9DDBD",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "7194B9",
+     "base_word": "SPEAK",
+     "key": "are spoken",
+     "text": "Languages in the USA The most commonly used language in the United States is English, which is the de facto national language. Nonetheless, many other languages __________________ in the United States.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "B33AF6",
+     "base_word": "THIS",
+     "key": "These",
+     "text": "__________________ include indigenous languages, languages brought to the country by colonists, enslaved people and immigrants from Europe, Africa and Asia.",
+     "kes": "2.4.36"
+    },
+    {
+     "pos": 3,
+     "zid": "E3DE21",
+     "base_word": "TWO",
+     "key": "second",
+     "text": "Spanish, of course, is the __________________ most commonly spoken language in the United States. However, few people realise that after English and Spanish Chinese is spoken regularly in more American homes than any other language.",
+     "kes": "2.4.37"
+    },
+    {
+     "pos": 4,
+     "zid": "D2EBCE",
+     "base_word": "WRITE",
+     "key": "wrote",
+     "text": "The Brownings On January 10, 1845, Robert Browning, a little-known poet and playwright, sent a letter to Elizabeth Barrett, an internationally renowned poet, an invalid, after reading her volume of poetry. Over the course of the next 20 months, they __________________ each other close to 600 letters.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "6AF58D",
+     "base_word": "GREAT",
+     "key": "greatest",
+     "text": "It is one of the __________________ literary correspondences of all time.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 6,
+     "zid": "8D9287",
+     "base_word": "LEAVE",
+     "key": "left",
+     "text": "The couple s last letter was exchanged on September 18, 1846, the night before the two __________________ for a trip to Italy and two weeks after their secret marriage.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 7,
+     "zid": "E6BF4B",
+     "base_word": "THEY",
+     "key": "Their",
+     "text": "__________________ romance, which Elizabeth credited with saving her life, lasted for 15 years and spawned some of the world s most beautiful poetry.",
+     "kes": "2.4.36"
+    }
+   ]
+  },
+  {
+   "variant": "CB7A8D",
+   "kes": "2.4.27",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "6372B9",
+     "base_word": "CALL",
+     "key": "called",
+     "text": "Elephants Elephants form deep family bonds and live in tight family groups. The herd is led by the oldest and often largest female in the herd, __________________ a matriarch.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 2,
+     "zid": "EE5DD5",
+     "base_word": "RAISE",
+     "key": "is raised",
+     "text": "When a calf is born, it __________________ and protected by the whole matriarchal herd.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 3,
+     "zid": "E5CBBB",
+     "base_word": "LIFE",
+     "key": "lives",
+     "text": "Males leave the family unit between the ages of 12-15 and may lead solitary __________________ or live temporarily with other males.",
+     "kes": "2.4.29"
+    },
+    {
+     "pos": 4,
+     "zid": "DFF01A",
+     "base_word": "TWO",
+     "key": "second",
+     "text": "The role of art Massachusetts Institute of Technology (MIT) is one of the most famous in the world. This year, MIT jumped from the fourth to the __________________ highest globally ranked university in art and design.",
+     "kes": "2.4.37"
+    },
+    {
+     "pos": 5,
+     "zid": "E20835",
+     "base_word": "NAME",
+     "key": "was named",
+     "text": "It __________________ the top university in the world for architecture some years ago.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "9E953E",
+     "base_word": "LEAD",
+     "key": "led",
+     "text": "The hard work of the faculty, staff, and students __________________ to that recognition.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 7,
+     "zid": "22D13B",
+     "base_word": "GOOD",
+     "key": "better",
+     "text": "Though it is called the Institute of Technology, the arts are essential to MIT’s mission to build a __________________ society and meet the challenges of the 21st century.",
+     "kes": "2.4.33"
+    }
+   ]
+  },
+  {
+   "variant": "CEEBB5",
+   "kes": "2.4.27",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "0C60C3",
+     "base_word": "LISTEN",
+     "key": "listening",
+     "text": "Snakes Snakes are beautiful but dangerous animals. That is why there are a lot of myths about them and their behaviour. Many people think snakes enjoy __________________ to music.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 2,
+     "zid": "2D5B58",
+     "base_word": "BELIEVE",
+     "key": "have believed",
+     "text": "People __________________ this myth for a long time.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 3,
+     "zid": "1D81E0",
+     "base_word": "HEAR",
+     "key": "do not hear",
+     "text": "In fact, snakes __________________ music or sounds and react only to your movements. Isn’t it amazing? NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "9F5E7F",
+     "base_word": "ONE",
+     "key": "first",
+     "text": "A lucky chance Everybody knows Sofia Kovalevskaya. She was the __________________ woman to become the professor of mathematics.",
+     "kes": "2.4.37"
+    },
+    {
+     "pos": 5,
+     "zid": "0998D7",
+     "base_word": "GET",
+     "key": "got",
+     "text": "However, few people know that Sofia __________________ interested in mathematics at a very early age.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "2FB230",
+     "base_word": "BE",
+     "key": "was not",
+     "text": "There __________________ enough wallpaper for her room and her parents put some sheets of paper instead. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 7,
+     "zid": "DC6526",
+     "base_word": "THIS",
+     "key": "These",
+     "text": "__________________ sheets turned out to be notes of lectures of a famous Russian mathematician.",
+     "kes": "2.4.36"
+    }
+   ]
+  },
+  {
+   "variant": "D47F86",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "4F11F8",
+     "base_word": "HEAR",
+     "key": "hears",
+     "text": "A smart cat My Snowball is a wonderful cat. I don’t know of any other cat that loves to watch Sesame Street . He will also come running up to the TV if he __________________ a baby crying or little kids playing. He can’t stand TV commercials!",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "C6F0BC",
+     "base_word": "HAVE",
+     "key": "does not have",
+     "text": "Anytime a commercial comes on he turns his head to the side and so he ____________________ to watch the commercial. When the show is back on the air, he will start watching the show again. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 3,
+     "zid": "04252C",
+     "base_word": "FIND",
+     "key": "found",
+     "text": "It was then that I __________________ out that when a commercial is on, the volume goes up a bit, and this is his signal to turn away. When the volume goes down then the commercial is over. Smart cat, I started to do the same thing.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "84CD1F",
+     "base_word": "WORK",
+     "key": "was working",
+     "text": "Creative thinking Percy Spencer was an American physicist and inventor . H e was the chief of the power tube division of the Raytheon Company. Once he noticed that microwaves from the radar set he __________________ on had melted the candy bar in his pocket.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "D90B2B",
+     "base_word": "ONE",
+     "key": "first",
+     "text": "It had been known that microwaves generate heat. But he was the __________________ one to think of using this heat to cook food.",
+     "kes": "2.4.37"
+    },
+    {
+     "pos": 6,
+     "zid": "141AC4",
+     "base_word": "FAR",
+     "key": "further",
+     "text": "He received a patent in 1950, and Raytheon developed the idea __________________ for commercial and industrial use.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 7,
+     "zid": "C950CF",
+     "base_word": "HE",
+     "key": "his",
+     "text": "In a sign of things to come, popcorn was what Spencer and __________________ colleagues cooked with microwaves. Spencer’s creative thinking turned a routine observation into a technological breakthrough.",
+     "kes": "2.4.36"
+    }
+   ]
+  },
+  {
+   "variant": "DA648C",
+   "kes": "2.4.29",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "CD32E6",
+     "base_word": "WOLF",
+     "key": "wolves",
+     "text": "Apollo Apollo was one of the ancient Greek gods. He was the god of music, the god of healing, and is also seen as a pastoral god, protecting flocks of sheep from __________________.",
+     "kes": "2.4.29"
+    },
+    {
+     "pos": 2,
+     "zid": "A4B361",
+     "base_word": "HE",
+     "key": "his",
+     "text": "One of Apollo’s most important daily tasks was to harness __________________ four-horse chariot, in order to move the Sun across the sky.",
+     "kes": "2.4.36"
+    },
+    {
+     "pos": 3,
+     "zid": "4565D5",
+     "base_word": "HOLD",
+     "key": "held",
+     "text": "Apollo was an oracle and people from all over the world travelled there to learn what the future __________________ for them.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "DEF8C8",
+     "base_word": "MANY",
+     "key": "more",
+     "text": "Guinness record for gadgets A dedicated Batman fan created the most impressive costume and earned a Guinness World Record for it. His costume had __________________ gadgets on it than anyone could imagine.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 5,
+     "zid": "9F1EA0",
+     "base_word": "INSPIRE",
+     "key": "was inspired",
+     "text": "Julian Checkley, a lifelong player, said his suit __________________ by a character in a video game. He tricked out the batsuit with 23 functioning gadgets.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "B8BAB4",
+     "base_word": "SPEND",
+     "key": "spent",
+     "text": "“I __________________ many long hours finding ways to store gadgets on the suit. They are classic gadgets but also some are specific to Batman.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 7,
+     "zid": "AB510C",
+     "base_word": "GOOD",
+     "key": "best",
+     "text": "I think I’ve found the __________________ way to place the gadgets on the suit. I am immensely proud of my Guinness World Records title,” Checkley said.",
+     "kes": "2.4.33"
+    }
+   ]
+  },
+  {
+   "variant": "E89E33",
+   "kes": "2.4.33",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "64C439",
+     "base_word": "MANY",
+     "key": "more",
+     "text": "Cats Cats are amazing creatures. They have __________________ bones than a human.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 2,
+     "zid": "670036",
+     "base_word": "HAVE",
+     "key": "do not have",
+     "text": "However, they __________________ collar bones, so they are incredibly flexible and can get through really small holes. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 3,
+     "zid": "F38830",
+     "base_word": "USE",
+     "key": "are used",
+     "text": "They are also able to produce a lot of sounds, which __________________ by them to express a huge variety of feelings and emotions.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "391847",
+     "base_word": "BECOME",
+     "key": "became",
+     "text": "Omar Khayyam Omar Khayyam was a famous Persian philosopher and poet. Many people all over the world enjoy reading his works. His poetry __________________ known to Europeans only in the 19 th century.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "C7C039",
+     "base_word": "GOOD",
+     "key": "best",
+     "text": "His __________________ works are quatrains where one can find words of wisdom suitable practically for any occasion.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 6,
+     "zid": "6B5779",
+     "base_word": "HELP",
+     "key": "would help",
+     "text": "Omar Khayyam hoped his poems __________________ people to get happy and not to concentrate on their problems too much.",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "EA7FC7",
+   "kes": "2.4.24",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "6A796A",
+     "base_word": "BE",
+     "key": "has been",
+     "text": "Forest therapy The Japanese are a very wise nation. Many Japanese people lead a very busy life and they need effective means to fight stress. Forest therapy __________________ one of them for a long time.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "8BFB80",
+     "base_word": "GO",
+     "key": "going",
+     "text": "The Japanese enjoy __________________ to local forests at the weekend.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 3,
+     "zid": "7DDDA5",
+     "base_word": "LITTLE",
+     "key": "less",
+     "text": "They spend there no __________________ than three hours walking and listening to birds singing. Scientists consider this kind of therapy very good.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 4,
+     "zid": "31F91B",
+     "base_word": "CHILD",
+     "key": "children",
+     "text": "Snow Snow is beautiful. People all over the world, especially __________________, love looking at it or even playing with it.",
+     "kes": "2.4.29"
+    },
+    {
+     "pos": 5,
+     "zid": "5141B6",
+     "base_word": "LEARN",
+     "key": "learnt",
+     "text": "%end_page % There are many interesting facts about snow. For instance, snow is colourless – it just looks white to us. A long time ago people __________________ to make artificial snow.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "ED205F",
+     "base_word": "ONE",
+     "key": "first",
+     "text": "The __________________ snow maker was patented in 1961 by Alden Hanson.",
+     "kes": "2.4.37"
+    }
+   ]
+  },
+  {
+   "variant": "EDE901",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "78C4E2",
+     "base_word": "SHAKE",
+     "key": "were shaking",
+     "text": "Strange but true When President Lincoln was ready to sign the Emancipation Proclamation, his hands __________________ because he was very nervous.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "79A2D5",
+     "base_word": "PUT",
+     "key": "put",
+     "text": "So he __________________ the pen down. He decided to wait to sign the document until he could do this with a steady hand.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 3,
+     "zid": "E78432",
+     "base_word": "HE",
+     "key": "him",
+     "text": "He was afraid that his critics would accuse __________________ of hesitating if they saw a shaky signature.",
+     "kes": "2.4.36"
+    },
+    {
+     "pos": 4,
+     "zid": "05F065",
+     "base_word": "CONSIDER",
+     "key": "is considered",
+     "text": "The camera The camera is a miraculous invention. Some people treat it as a time machine. It helps people capture any moment in history and in the present. Alexander Walcott __________________ to have invented it.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "695600",
+     "base_word": "ONE",
+     "key": "first",
+     "text": "The __________________ camera appeared in 1840.",
+     "kes": "2.4.37"
+    },
+    {
+     "pos": 6,
+     "zid": "8BF33B",
+     "base_word": "GOOD",
+     "key": "best",
+     "text": "The improvement in the camera technology has helped bring motion pictures. Today, we enjoy our __________________ images and get time to interact with our own past.",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 7,
+     "zid": "873DE1",
+     "base_word": "STAY",
+     "key": "will stay",
+     "text": "It __________________ with us forever in our photos and home videos.",
+     "kes": "2.4.24"
+    }
+   ]
+  },
+  {
+   "variant": "F7DAC7",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "FF8C6C",
+     "base_word": "SPEAK",
+     "key": "is spoken",
+     "text": "Languages of the world What do you think is the most difficult language to learn? Chinese? Japanese? No, it is Basque, the language which __________________ in northwestern Spain and southwestern France .",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "BFEEB0",
+     "base_word": "RELATE",
+     "key": "is not related",
+     "text": "It __________________ to any other language in the world. In Basque, the name of the language is officially Euskara . NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 3,
+     "zid": "C76C34",
+     "base_word": "GREAT",
+     "key": "greater",
+     "text": "In French, the language is normally called basque , though in recent times euskara has become common. Spanish has a __________________ variety of names for the language than French. Today, it is most commonly referred to as el vasco , la lengua vasca or el euskera .",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 4,
+     "zid": "9BB14E",
+     "base_word": "BUY",
+     "key": "were bought",
+     "text": "Slavery in North America August 13, 1619 is the date when two and a half centuries of slavery in North America began. On this day the first Africans kidnapped by the Portuguese arrived in the British colony of Virginia and __________________ by English colonists.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "FA937F",
+     "base_word": "FOUND",
+     "key": "Founded",
+     "text": "__________________ at Jamestown in 1607, the Virginia Colony was home to about 700 people by 1619.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 6,
+     "zid": "AD42DC",
+     "base_word": "KNOW",
+     "key": "is known",
+     "text": "The first enslaved Africans to arrive there disembarked at Point Comfort, in what __________________ today as Hampton Roads.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 7,
+     "zid": "5EA0E2",
+     "base_word": "THEY",
+     "key": "their",
+     "text": "Most of __________________ names, as well as the exact number of those who remained at Point Comfort, have been lost to history, but much is known about their journey.",
+     "kes": "2.4.36"
+    }
+   ]
+  },
+  {
+   "variant": "FB2D77",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "6F64DC",
+     "base_word": "CELEBRATE",
+     "key": "is celebrated",
+     "text": "New Year around the world Everybody loves New Year. It is a holiday which __________________ all over the world.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "7EDFD9",
+     "base_word": "WOMAN",
+     "key": "women",
+     "text": "In Scandinavia __________________ cook rice with nuts and not turkey for New Year.",
+     "kes": "2.4.29"
+    },
+    {
+     "pos": 3,
+     "zid": "F5433F",
+     "base_word": "THROW",
+     "key": "throwing",
+     "text": "Italian people enjoy __________________ old things out of the windows on New Year’s Day. It is interesting to learn about these traditions.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 4,
+     "zid": "510922",
+     "base_word": "BUY",
+     "key": "bought",
+     "text": "A treasure in a chair The Browns from Manchester, the UK, are a very lucky family. Some years ago, Mr Brown __________________ a chair on sale.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "68A342",
+     "base_word": "LIKE",
+     "key": "did not like",
+     "text": "However, Mrs Brown __________________ it. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 6,
+     "zid": "4D634C",
+     "base_word": "SELL",
+     "key": "would sell",
+     "text": "Mr Brown took it to the attic thinking he __________________ it later.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 7,
+     "zid": "262181",
+     "base_word": "GOOD",
+     "key": "best",
+     "text": "While cleaning it before a spring garage sale, he broke it by accident and found expensive jewellery inside. Mrs Brown says it’s the __________________ surprise in her life!",
+     "kes": "2.4.33"
+    }
+   ]
+  },
+  {
+   "variant": "FE4F79",
+   "kes": "2.4.24",
+   "n": 7,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "F425F0",
+     "base_word": "TELL",
+     "key": "told",
+     "text": "A hungry wolf An old nurse was putting a baby to bed. She __________________ the boy to be quiet otherwise she would give him to a wolf.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 2,
+     "zid": "0ED3B0",
+     "base_word": "SCREAM",
+     "key": "screamed",
+     "text": "But the child __________________ even more and more loudly.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 3,
+     "zid": "81803A",
+     "base_word": "HAVE",
+     "key": "have not had",
+     "text": "The wolf heard the screams and thought to himself, I __________________ any lunch yet. This boy is just what I need. But the old nurse shut the door and all the windows, and the wolf had to go away. Never trust enemies promises. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "409E0F",
+     "base_word": "INVENT",
+     "key": "was invented",
+     "text": "The invention of the light bulb Every person in the world knows about Thomas Edison. The electric light bulb __________________ by this famous scientist.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "B81E05",
+     "base_word": "ILLUMINATE",
+     "key": "illuminating",
+     "text": "The electrification of the modern world profoundly changed human life, __________________ the night.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 6,
+     "zid": "3D236D",
+     "base_word": "ONE",
+     "key": "first",
+     "text": "The __________________ electric bulb made it possible for people to continue their usual day activities after dark.",
+     "kes": "2.4.37"
+    },
+    {
+     "pos": 7,
+     "zid": "B0EE1A",
+     "base_word": "LIFE",
+     "key": "lives",
+     "text": "Edison started with a 40-hour life light bulb and finally made a bulb that lasted for 1500 hours. This certainly revolutionized human __________________ at that time.",
+     "kes": "2.4.29"
+    }
+   ]
+  },
+  {
+   "variant": "FE773B",
+   "kes": "2.4.33",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "0EE9B8",
+     "base_word": "GOOD",
+     "key": "better",
+     "text": "No more selfies! Modern social media is full of people’s selfies. People use various filters to look __________________ than they really are, but is it worth it?",
+     "kes": "2.4.33"
+    },
+    {
+     "pos": 2,
+     "zid": "21A373",
+     "base_word": "TAKE",
+     "key": "taking",
+     "text": "Psychologists point out that dealing too much with selfies can ruin a person’s self-esteem. We should all stop __________________ so many selfies.",
+     "kes": "2.4.27"
+    },
+    {
+     "pos": 3,
+     "zid": "0B6A99",
+     "base_word": "NEED",
+     "key": "do not need",
+     "text": "We __________________ to create a false image of ourselves to be loved by others. NOT",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 4,
+     "zid": "A2FC8A",
+     "base_word": "COME",
+     "key": "came",
+     "text": "Oranges Do you like oranges? This bright fruit is very popular all over the world. Oranges __________________ to the West from Asian countries only in the 15 th century.",
+     "kes": "2.4.24"
+    },
+    {
+     "pos": 5,
+     "zid": "4CC102",
+     "base_word": "THAT",
+     "key": "those",
+     "text": "You may be surprised to know that __________________ oranges were not in fact orange – they were green.",
+     "kes": "2.4.36"
+    },
+    {
+     "pos": 6,
+     "zid": "F361E2",
+     "base_word": "LEARN",
+     "key": "have learnt",
+     "text": "Since that time people __________________ to make many things from oranges – from orange juice to tasty marmalade.",
+     "kes": "2.4.24"
+    }
+   ]
+  }
+ ],
+ "wordform": [
+  {
+   "variant": "015407",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "E3CC63",
+     "base_word": "BEAUTY",
+     "key": "beautiful",
+     "text": "Carnival of Venice Have you ever been to Venice? It’s a __________________ Italian city with a lot of historical buildings.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "7E4E46",
+     "base_word": "ATTRACT",
+     "key": "attraction",
+     "text": "Still, the main __________________ of Venice is not its architecture or canals, but its Carnival. This festival was started in 1162, but in the 17 th century this festival declined in popularity under the rule of the King of Austria and reappeared only in the 19 th century.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "2C0078",
+     "base_word": "VISIT",
+     "key": "visitors",
+     "text": "Now the Carnival of Venice is one the biggest festivals in Italy and attracts huge crowds of __________________.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "EDDBF4",
+     "base_word": "COLOUR",
+     "key": "colourful",
+     "text": "This event is well-known for its __________________ and elaborate masks.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "DE8A22",
+     "base_word": "ACTUAL",
+     "key": "actually",
+     "text": "Masking is an important carnival tradition and can __________________ be considered the main feature of the event. The Venetian mask makers also have a special position in the community.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "3ABF7B",
+     "base_word": "PERFORM",
+     "key": "performances",
+     "text": "Other activities of the Carnival of Venice include various concerts, different types of street __________________ and even an unforgettable candle-lit boat parade.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "071AF5",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "A28077",
+     "base_word": "AMAZE",
+     "key": "amazing",
+     "text": "Stanley Park Stanley Park is a 1,001-acre public park that borders the downtown of Vancouver , Canada . This __________________ place is almost entirely surrounded by the waters of the Pacific Ocean .",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "DA0F10",
+     "base_word": "TOUR",
+     "key": "tourists",
+     "text": "It is one of the main sights of Vancouver to be explored by __________________.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "625B88",
+     "base_word": "ORIGINAL",
+     "key": "originally",
+     "text": "The park has a long history. The land was __________________ used by indigenous peoples for thousands of years.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "0AA15C",
+     "base_word": "COLONY",
+     "key": "colonise",
+     "text": "Then the British decided to __________________ this place during the 1858 Fraser Canyon Gold Rush.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "0E8B58",
+     "base_word": "GOVERN",
+     "key": "governor",
+     "text": "The land was later turned into Vancouver s first park. It was named after Lord Stanley, a British politician who had recently been appointed __________________ general.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "09636C",
+     "base_word": "CREATE",
+     "key": "creation",
+     "text": "Unlike other large urban parks, Stanley Park is not the __________________ of a landscape architect, but rather the evolution of a forest and urban space over many years.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "1989CB",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "D93645",
+     "base_word": "TYPICAL",
+     "key": "typically",
+     "text": "Natural sights of Queensland Apart from cultural experiences, Queensland makes it possible for you to enjoy the beauty of nature to the full. For instance, tourists are __________________ very interested in the Daintree Rainforest which is the oldest rainforest in the world.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "C777EC",
+     "base_word": "VISIT",
+     "key": "visitors",
+     "text": "It offers __________________ spectacular beauty and extraordinary diversity of flora and fauna.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "E20EA8",
+     "base_word": "COMFORT",
+     "key": "comfortable",
+     "text": "An hour’s drive north of Cairns, it can be explored on expert guided tours, and you can even have a __________________ one-night stay in tree-house style eco-lodges.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "9CCBFF",
+     "base_word": "DIVE",
+     "key": "diving",
+     "text": "One more must-see is the Great Barrier Reef. To see it go all the way up to the very northern tip of Queensland. There are many ways underwater life can be experienced there, for example, scuba __________________ .",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "77881D",
+     "base_word": "FORGET",
+     "key": "unforgettable",
+     "text": "The Great Barrier Reef will give you __________________ and breathtaking insights into the beauty and magic of this incredible biosphere.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "C9722D",
+     "base_word": "NATURE",
+     "key": "natural",
+     "text": "One should also mention that it’s the only __________________ wonder visible from space.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "1ADABB",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "2FD161",
+     "base_word": "BEAUTY",
+     "key": "beautiful",
+     "text": "Millennium Park Rising by the lakefront, Millennium Park is a great place to spend a day. It is a complex of __________________ examples of modern architecture.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "5FEECE",
+     "base_word": "VISIT",
+     "key": "visitors",
+     "text": "One can say it is an outdoor modern design gallery. Most elements of this outstanding park are free for __________________.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "AFC651",
+     "base_word": "FAME",
+     "key": "famous",
+     "text": "The park is especially __________________ for its connection with music.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "9C4D51",
+     "base_word": "OFFICIAL",
+     "key": "officially",
+     "text": "In summer, Millennium Park __________________ hosts free concerts at lunchtime and at 6.30 pm.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "FD6562",
+     "base_word": "DAY",
+     "key": "daily",
+     "text": "For the latter, bring a picnic basket and enjoy new music on Mondays, jazz and world music on Thursdays, and classical music on a __________________ basis.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "1E3783",
+     "base_word": "ACTIVE",
+     "key": "activities",
+     "text": "Each Saturday free exercise classes (yoga at 8 am, Pilates at 9 am and dance at 10 am) take place in the park as well. The Family Fun Tent provides free __________________ for kids on Sundays between 10 am and 3 pm. Free walking tours take place on Sundays, or you may do it yourself with a downloadable tour from the website.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "279FA2",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "D6B946",
+     "base_word": "MEDAL",
+     "key": "medallist",
+     "text": "Evgenia Medvedeva Evgeniya Medvedeva is an outstanding Russian figure skater. She is a two-time European and World champion and a two-time Olympic silver __________________ (2018 ladies’ singles and 2018 team event).",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "DCAC7F",
+     "base_word": "CHAMPION",
+     "key": "championships",
+     "text": "She has many more prizes in important __________________ and competitions.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "C4BB46",
+     "base_word": "SUCCESS",
+     "key": "successful",
+     "text": "Medvedeva is famous for having set the world record score 13 times. She spent her most __________________ seasons with her coach Eteri Tutberidze.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "961204",
+     "base_word": "REAL",
+     "key": "really",
+     "text": "After taking only the second place in the 2018 Olympics Medvedeva was __________________ u pset and decided to change the coach. She moved to Canada to train in Toronto Cricket Club with Brian Orser. In March 2021 she returned to Eteri Tutberidze.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "052FFF",
+     "base_word": "FORTUNATELY",
+     "key": "Unfortunately",
+     "text": "__________________ , she hasn t competed for a year but the world still remembers her as one of the most prominent female figure skaters in the world.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "D2FC3B",
+     "base_word": "RETIRE",
+     "key": "retirement",
+     "text": "Evgenia Medvedeva plans to coach young skaters after __________________.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "2E3E38",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "6C880F",
+     "base_word": "VISIT",
+     "key": "visitor",
+     "text": "The Blue Mountains National Park When people come to Australia , they typically wish to enjoy the outstanding nature of the continent. If you are a __________________ to Australia with this very goal on your mind, try The Blue Mountains National Park.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "98D37D",
+     "base_word": "AMAZE",
+     "key": "amazing",
+     "text": "It is located in New South Wales , approximately 80 km west of Sydney . Its proximity to the biggest city in Australia has made this __________________ park a popular day trip for both tourists and locals alike.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "E74522",
+     "base_word": "PROBABLE",
+     "key": "probably",
+     "text": "The park is __________________ best known for the Three Sisters, a rock formation that towers 900 m above the Jamison Valley .",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "1BE2D6",
+     "base_word": "NATURE",
+     "key": "natural",
+     "text": "The Blue Mountains National Park features miles of trails for hikers and mountain bikers, and it is also a popular __________________ playground for adventurers who enjoy adrenaline sports.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "386D40",
+     "base_word": "CLIMB",
+     "key": "climbing",
+     "text": "Among such sports the top one is rock __________________.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "4E6F34",
+     "base_word": "FORGET",
+     "key": "unforgettable",
+     "text": "Your day in The Blue Mountains National Park will certainly be __________________ .",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "36E01C",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "CED261",
+     "base_word": "CERTAIN",
+     "key": "certainly",
+     "text": "Capilano Suspension Bridge Canada can boast of many sights. Capilano Suspension Bridge is __________________ one of them.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "800989",
+     "base_word": "BEAUTY",
+     "key": "beautiful",
+     "text": "It is a __________________ bridge in Canada, located near Vancouver. It is located at an altitude of 70 meters above the Capilano River.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "2FC90F",
+     "base_word": "TOUR",
+     "key": "tourists",
+     "text": "It was originally built as a shorter path to the local mill to make life easier for employees. Going over this bridge is quite an adventure for __________________ .",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "4D8A02",
+     "base_word": "WIND",
+     "key": "windy",
+     "text": "If the weather is __________________ , the bridge sways from side to side. Despite this, it is always crowded.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "388A2B",
+     "base_word": "VARY",
+     "key": "various",
+     "text": "People come here for the fresh and clean air, the scent of pine needles and __________________ attractions on the other side of the bridge.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "F8A5D0",
+     "base_word": "SHOP",
+     "key": "shoppers",
+     "text": "There is a park there with all sorts of entertainment and great boutiques for enthusiastic __________________ .",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "3778D7",
+   "kes": "2.3.11",
+   "n": 5,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "298AE5",
+     "base_word": "COMPOSE",
+     "key": "composer",
+     "text": "Denis Matsuev Denis Matsuev is a Russian classical pianist. Born in Irkutsk in 1975, Matsuev is the only child of two musicians. His mother is a piano teacher and his father is a pianist and a __________________.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "3FAE77",
+     "base_word": "PRODUCE",
+     "key": "reproduce",
+     "text": "Matsuev’s talent became obvious in his early childhood. He was only three years old when he managed to __________________ on his piano at home a melody which he had heard on television.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "B8169D",
+     "base_word": "COMPETE",
+     "key": "competition",
+     "text": "In 1990 young Denis won a prize at the New Names Charitable Foundation __________________ in Irkutsk and got a scholarship from the foundation to study music in Moscow.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "CFCFE9",
+     "base_word": "NATIONAL",
+     "key": "international",
+     "text": "% Matsuev toured the world with other young gifted musicians from Russia discovered by the foundation. In 1994 he took part in his first __________________ piano contest in Johannesburg, South Africa, where he was awarded the Grand Prix.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "465144",
+     "base_word": "VARY",
+     "key": "various",
+     "text": "His musical career quickly progressed. He is now a world-famous pianist with __________________ awards and a massive fan base.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "37CF1A",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "7E37B4",
+     "base_word": "BEAUTY",
+     "key": "beautiful",
+     "text": "Signal Hill Do you know about Signal Hill? This __________________ place is located in Canada, at the entrance to St. John’s harbour.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "C26995",
+     "base_word": "ATTRACT",
+     "key": "attraction",
+     "text": "This is an important historical __________________ of Canada.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "FEA481",
+     "base_word": "EXACT",
+     "key": "exactly",
+     "text": "It was __________________ here, in 1901, that the first wireless transatlantic signal was received.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "8A08B2",
+     "base_word": "BUILD",
+     "key": "buildings",
+     "text": "The Cabot Tower is one of the key __________________ of Signal Hill.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "8F1F60",
+     "base_word": "SYMBOL",
+     "key": "symbolize",
+     "text": "It was constructed in 1897 to __________________ the 400 th anniversary of the discovery of Newfoundland . It also commemorates now G. Marconi s reception of the first transatlantic radio telegraphy signal, transmitted over a distance of 2,700 kilometres from England .",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "E9FB28",
+     "base_word": "TOUR",
+     "key": "Tourists",
+     "text": "__________________ can enjoy exhibitions on the history of Signal Hill and the history of communications (with a special section on Marconi).",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "3968B2",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "022A47",
+     "base_word": "CHILD",
+     "key": "childhood",
+     "text": "Mikhail Vrubel Mikhail Vrubel is a renowned Russian painter who worked in almost all genres of art, including graphics and sculpture. He was born in Omsk to an ordinary family. In his early __________________ Vrubel was very weak because of the harsh Siberian climate.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "93D526",
+     "base_word": "FORTUNATE",
+     "key": "Fortunately",
+     "text": "__________________ , his family moved to warmer regions, where Vrubel quickly got better.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "11F18B",
+     "base_word": "ARTIST",
+     "key": "artistic",
+     "text": "Mikhail Vrubel showed his __________________ talent at the age of 10.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "8F8A1C",
+     "base_word": "TEACH",
+     "key": "teacher",
+     "text": "That is why his father hired a private __________________ so that he could learn the advanced painting techniques.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "E22C56",
+     "base_word": "ILLUSTRATE",
+     "key": "illustrations",
+     "text": "Still, after finishing school Vrubel decided to study law. While studying at university, Vrubel practised art only through making __________________ for books.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "923520",
+     "base_word": "USUAL",
+     "key": "unusual",
+     "text": "He didn’t finish university and entered the Imperial Academy of Arts and made friends with Serov. His most famous works are the __________________ pictures The Swan Princess and Demon Downcast .",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "3BC024",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "120E06",
+     "base_word": "SCIENCE",
+     "key": "Scientists",
+     "text": "Sakhalin The island of Sakhalin is situated in the Far East of Russia in the North Pacific, between the Sea of Okhotsk and the Sea of Japan . __________________ say that it is the largest island in Russia with a length of 948 km , and a width of 25 to 170 km , and a total area of about 78,000 square kilometers.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "534EB2",
+     "base_word": "BEAUTY",
+     "key": "beautiful",
+     "text": "Nearly two-thirds of Sakhalin is mountainous. Two parallel ranges of __________________ mountains separate the island from north to south.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "BA93B4",
+     "base_word": "GOVERN",
+     "key": "government",
+     "text": "The __________________ of Sakhalin region is in Yuzhno-Sakhalinsk, which was founded in 1882.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "C4DDBE",
+     "base_word": "POPULATE",
+     "key": "population",
+     "text": "It is located in the southern part of the island and the __________________ of the modern city comes to about 180 thousand people.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "B5D7CB",
+     "base_word": "VISIT",
+     "key": "Visitors",
+     "text": "__________________ to the area can enjoy watching gorgeous nature as well as go fishing and rock climbing.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "7509BC",
+     "base_word": "CERTAIN",
+     "key": "certainly",
+     "text": "It may take you long to get there, but this will __________________ be an unforgettable experience.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "3D6BD9",
+   "kes": "2.3.11.4",
+   "n": 5,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "CBFA9B",
+     "base_word": "DEFINITE",
+     "key": "definitely",
+     "text": "Sketching Hobbies are a great way to relax and unwind after a busy day at school or at work. One of the most popular hobbies nowadays is sketching. It is __________________ a good hobby for you if you want to start thinking in a different way.",
+     "kes": "2.3.11.4"
+    },
+    {
+     "pos": 2,
+     "zid": "CD6FCA",
+     "base_word": "CREATE",
+     "key": "creativity",
+     "text": "Sketching develops your __________________.",
+     "kes": "2.3.11.3"
+    },
+    {
+     "pos": 3,
+     "zid": "34BDB5",
+     "base_word": "DEVELOP",
+     "key": "development",
+     "text": "It can be very helpful for your personal __________________.",
+     "kes": "2.3.11.2"
+    },
+    {
+     "pos": 4,
+     "zid": "29974D",
+     "base_word": "ILLUSTRATE",
+     "key": "illustrator",
+     "text": "Besides, you can apply the skills you learn through sketching in a number ways in your life. To begin with, you may become interested in a career of an __________________.",
+     "kes": "2.3.11.2"
+    },
+    {
+     "pos": 5,
+     "zid": "77D40E",
+     "base_word": "COMMUNICATE",
+     "key": "communication",
+     "text": "Moreover, you will never need a camera when you are on holiday because your drawings will be the best memories about your trip. Finally, while sketching you learn to notice your feelings and emotions and thus improve your __________________ skills.",
+     "kes": "2.3.11.2"
+    }
+   ]
+  },
+  {
+   "variant": "483637",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "8527DF",
+     "base_word": "CREATE",
+     "key": "creator",
+     "text": "Alexey Savrasov Alexey Savrasov is an outstanding Russian painter. He is considered to be the __________________ of the lyrical landscape style. Savrasov was born into the family of a merchant.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "D2FC1A",
+     "base_word": "VARY",
+     "key": "various",
+     "text": "He became interested in painting very early and tried _ _________________ styles and techniques.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "7DCCA3",
+     "base_word": "SPECIAL",
+     "key": "specialize",
+     "text": "He graduated from the Moscow School of Painting, Sculpture and Architecture (MSPSA) in 1850 and began to __________________ in landscape painting.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "17BE29",
+     "base_word": "INTEREST",
+     "key": "interesting",
+     "text": "In 1857 Savrasov became a teacher in the MSPSA, and his best students there were Isaac Levitan and Konstantin Korovin. After his marriage his home became one of the most __________________ places for artists and collectors.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "1AB0F8",
+     "base_word": "FORTUNATELY",
+     "key": "Unfortunately",
+     "text": "__________________, Savrasov sank into depression after some tragic events in his personal life.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "327934",
+     "base_word": "DRAMATIC",
+     "key": "dramatically",
+     "text": "His work suffered __________________ and he spent the last years of his life in poverty. Still, we admire his works and will never forget him.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "51E4FB",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "6F7B4C",
+     "base_word": "COMPETE",
+     "key": "competition",
+     "text": "Texas Rodeo The rodeo is a really exciting event. It is a thrilling __________________ between cowboys from all over the country.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "8AB176",
+     "base_word": "PROFESSION",
+     "key": "professional",
+     "text": "It has a long tradition and even today there are rodeo schools which keep it alive and __________________.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "E2B6EE",
+     "base_word": "VISIT",
+     "key": "visitor",
+     "text": "The rodeo is a spectacular sight. If a __________________ has a place in the first row of the arena, he or she may even be sprinkled with sand by the passing horses.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "43B0E8",
+     "base_word": "PERFORM",
+     "key": "performance",
+     "text": "The __________________ usually starts with an opening ceremony by horsemen dressed in bright colours and carrying flags.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "4701AB",
+     "base_word": "CONSTANT",
+     "key": "constantly",
+     "text": "All through the show the master of the ceremony __________________ jokes with special clowns.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "3482F8",
+     "base_word": "POSSIBLE",
+     "key": "impossible",
+     "text": "A rodeo in Texas is certainly an exciting experience which is practically __________________ for a tourist to forget.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "5456DB",
+   "kes": "2.3.11.3",
+   "n": 5,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "C55CA4",
+     "base_word": "VARY",
+     "key": "various",
+     "text": "Candles If you have an active profile in any social media, you may have noticed how often candles feature in people’s posts and stories. In fact, there are __________________ reasons why people use candles at home.",
+     "kes": "2.3.11.3"
+    },
+    {
+     "pos": 2,
+     "zid": "EF9C4D",
+     "base_word": "HEAVY",
+     "key": "heavily",
+     "text": "To begin with, candles create a cozy atmosphere. It is so nice to burn a candle when it is raining __________________ outdoors.",
+     "kes": "2.3.11.4"
+    },
+    {
+     "pos": 3,
+     "zid": "6B21B4",
+     "base_word": "STRESS",
+     "key": "stressful",
+     "text": "It gives soft and pleasant light which is especially good for people after a __________________ day at school or at work.",
+     "kes": "2.3.11.3"
+    },
+    {
+     "pos": 4,
+     "zid": "71F8E8",
+     "base_word": "CELEBRATE",
+     "key": "celebration",
+     "text": "You may light a candle at your evening mealtime and have a quiet conversation with your nearest and dearest. Moreover, we burn candles when we have an important __________________ like a birthday or on seasonal holidays. It creates a festive feeling in us.",
+     "kes": "2.3.11.2"
+    },
+    {
+     "pos": 5,
+     "zid": "144262",
+     "base_word": "AMAZE",
+     "key": "amazing",
+     "text": "Finally, candles simply look __________________ and are a great decoration.",
+     "kes": "2.3.11.3"
+    }
+   ]
+  },
+  {
+   "variant": "556030",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "8412C8",
+     "base_word": "POPULATE",
+     "key": "population",
+     "text": "Murmansk The city of Murmansk was founded in 1916. At present Murmansk is the largest city situated above the Polar circle but its __________________ is still quite small.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "B13312",
+     "base_word": "TOUR",
+     "key": "tourists",
+     "text": "Murmansk has severe climatic conditions. Summers are short and cold there. The polar night lasts from December 2 to January 11. Still, many __________________ come to visit Murmansk .",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "2B1F2D",
+     "base_word": "ATTRACT",
+     "key": "attractions",
+     "text": "The city can boast of several major __________________ .",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "C9C319",
+     "base_word": "EXCITE",
+     "key": "exciting",
+     "text": "Among them you will find Lenin nuclear icebreaker , which is the first of its kind in the world. Now it is an __________________ museum which demonstrates the history of the exploration of the Arctic . There are some other really important museums in Murmansk &#x2013; the Museum of Regional Studies , the Navy Museum of the Northern Fleet and so on.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "151184",
+     "base_word": "REAL",
+     "key": "really",
+     "text": "If you are lucky to see the Northern lights, you will be __________________ impressed.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "B5A00D",
+     "base_word": "POSSIBLE",
+     "key": "impossible",
+     "text": "It s __________________ to forget this splendid view.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "5783CA",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "7A6530",
+     "base_word": "POPULATE",
+     "key": "population",
+     "text": "Auckland Auckland is the largest and most populous city in New Zealand. The __________________ of Auckland is getting close to 1.4 million residents.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "9A83B2",
+     "base_word": "CONVENIENT",
+     "key": "conveniently",
+     "text": "It is __________________ situated in the North Island of the country, between the Waitakere Ranges and the Hauraki Gulf.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "8D8C7A",
+     "base_word": "COMPARE",
+     "key": "comparable",
+     "text": "The city enjoys an oceanic climate, which is __________________ to the climate in most of Europe.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "C551AE",
+     "base_word": "APPOINT",
+     "key": "disappoint",
+     "text": "Nothing can __________________ you about Auckland, which is why it is a popular destination for numerous immigrants to New Zealand.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "19DEA7",
+     "base_word": "FRIEND",
+     "key": "friendly",
+     "text": "Expats have an overall good experience when staying in Auckland. Most expats find it very easy to communicate with the locals, who are very __________________.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "5F9DBD",
+     "base_word": "LOCATE",
+     "key": "locations",
+     "text": "Another positive thing about Auckland is the amount of nature and free space, which is appreciated a lot, especially by those coming from more densely inhabited __________________.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "5F2D1E",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "2E20CF",
+     "base_word": "BEAUTY",
+     "key": "beautiful",
+     "text": "Washington National Cathedral Washington National Cathedral is a dramatic Gothic building. It is so __________________ that it is considered to be one of the greatest architectural treasures of the world.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "00B06C",
+     "base_word": "SPECIAL",
+     "key": "specialise",
+     "text": "There are various excursions to the cathedral. The best idea is to go online to check the guides’ schedules as they ____________ ______ in different aspects of the building’s history.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "BED056",
+     "base_word": "CONSTRUCT",
+     "key": "construction",
+     "text": "It took 82 years to build the cathedral – Theodore Roosevelt laid the cornerstone in 1908, and the cathedral’s __________________ didn’t technically stop until 1990.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "7DCB56",
+     "base_word": "ARGUE",
+     "key": "arguments",
+     "text": "The cathedral provoked strong opposition early on, but later the numerous ____________ ______ calmed down.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "6A1A54",
+     "base_word": "PEACE",
+     "key": "peaceful",
+     "text": "It is great to have a walk around the cathedral through the ____________ ______ paths in the garden.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "EA84C3",
+     "base_word": "VISIT",
+     "key": "visitors",
+     "text": "The 2011 earthquake caused an estimated $26 million in damages to the cathedral. Repairs are underway, but nevertheless, __________________ still have full access to the key areas of interest inside the cathedral.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "646587",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "1C8948",
+     "base_word": "CERTAIN",
+     "key": "certainly",
+     "text": "Ottawa s Parliament Hill Have you ever been to Ottawa ? It s __________________ a very beautiful city.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "EA1D47",
+     "base_word": "ATTRACT",
+     "key": "attractions",
+     "text": "One of its main __________________ is Parliament Hill standing high above the Ottawa River .",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "8D5BE1",
+     "base_word": "BUILD",
+     "key": "buildings",
+     "text": "There you can see the Neo-Gothic-style Parliament __________________ of the last half of the 19th century.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "AAB453",
+     "base_word": "IMPRESS",
+     "key": "impressive",
+     "text": "The most __________________ construction is the Peace Tower , which divides the House of Commons and the Senate on either side.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "98AEF8",
+     "base_word": "TOUR",
+     "key": "tourists",
+     "text": "There __________________ can also see the Centennial Flame.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "CAC48B",
+     "base_word": "SYMBOL",
+     "key": "symbolize",
+     "text": "It was lit in 1966 to __________________ the centenary of the Canadian Confederation. There is also a sculpture garden. Below Parliament Hill, a lovely walk runs alongside the Ottawa River .",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "6E2843",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "A4A693",
+     "base_word": "ACTUAL",
+     "key": "Actually",
+     "text": "Auckland University The University of Auckland is New Zealand s leading university. __________________, it s among the top 200 universities of the world.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "10FE8E",
+     "base_word": "BUSY",
+     "key": "business",
+     "text": "The University of Auckland has a strong focus on legal and __________________ programmes welcoming students from all parts of the world.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "414796",
+     "base_word": "POPULATE",
+     "key": "population",
+     "text": "The student __________________ of the University of Auckland is 40,000, about 4,000 of whom have come to study from abroad.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "A3AAA4",
+     "base_word": "EMPLOY",
+     "key": "employment",
+     "text": "The University of Auckland also offers postgraduate studies, which will certainly broaden your academic and __________________ horizons.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "49D36F",
+     "base_word": "VALUE",
+     "key": "valuable",
+     "text": "It will be __________________ for your CV with specialist skills and knowledge provided.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "C4E647",
+     "base_word": "LAW",
+     "key": "lawyers",
+     "text": "Whether you plan to join the next generation of leading __________________ in New Zealand or in your native country, the University of Auckland will help you to make your mark on the world.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "700D3D",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "47CC20",
+     "base_word": "BEAUTY",
+     "key": "beautiful",
+     "text": "The Altai Mountains The Altai Mountains are located in Russia on the border with Mongolia , Kazakhstan and China . They are considered one of the most __________________ mountain ranges in Russia .",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "99B4B9",
+     "base_word": "POSSIBLE",
+     "key": "impossible",
+     "text": "The panoramic views from the mountain tops are __________________ to forget.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "61B7FE",
+     "base_word": "GREAT",
+     "key": "greatly",
+     "text": "The colour pallet of the landscape changes __________________ with each season so you will never get tired of it.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "E874B3",
+     "base_word": "ATTRACT",
+     "key": "attractive",
+     "text": "What makes the Altai Mountains even more __________________ is that they are not easy to get to.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "0021A3",
+     "base_word": "VISIT",
+     "key": "Visitors",
+     "text": "__________________ feel like they are the first to see this wild landscape.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "8BF36B",
+     "base_word": "NATURE",
+     "key": "natural",
+     "text": "The __________________ parks around the mountains are quite different; some areas are very cold and covered with snow year-round, while other areas are located near the low-lying Russian Taiga where the climate is mild.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "72782D",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "EB957B",
+     "base_word": "VISIT",
+     "key": "Visitors",
+     "text": "Boston Public Library Dating from 1852, Boston Public Library contributes much to Boston ’s reputation as the “Athens of America”. The old building is notable for its magnificent facade and interior art. __________________ can pick up a free brochure.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "A8EBB6",
+     "base_word": "HELP",
+     "key": "helpful",
+     "text": "The brochure will be __________________ to visitors.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "08A09F",
+     "base_word": "ALTERNATIVE",
+     "key": "Alternatively",
+     "text": "__________________, free guided tours depart from the entrance hall at various times.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "774DC0",
+     "base_word": "ORIGIN",
+     "key": "original",
+     "text": "This __________________ building, inspired by Italian Renaissance, can boast of enormous bronze doorways, iron gates and lanterns. From there a marble staircase leads the guests inside.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "900243",
+     "base_word": "AMAZE",
+     "key": "amazing",
+     "text": "Besides this __________________ artistry, the library holds untold treasures in its special collections, including John Adams’ personal library.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "D92B10",
+     "base_word": "POSSIBLE",
+     "key": "impossible",
+     "text": "If you visit this place once, it will be __________________ for you to forget it.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "73265C",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "7A27B2",
+     "base_word": "VARY",
+     "key": "variety",
+     "text": "WOMAD Have you heard about WOMAD? It is one of the most famous musical festivals which is held in late July. The abbreviation WOMAD stands for the World of Music, Arts and Dance. It was founded in 1980, and since then it has been focusing on embracing the world’s __________________ of cultures.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "B2C279",
+     "base_word": "NATIONAL",
+     "key": "international",
+     "text": "The festival encourages __________________ friendship and breaking down the boundaries through art, music, and movement.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "E644DD",
+     "base_word": "CREATE",
+     "key": "creative",
+     "text": "Besides musical performances, WOMAD offers __________________ workshops for children, including circus skills, painting and storytelling.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "1A01A2",
+     "base_word": "VISIT",
+     "key": "visitors",
+     "text": "For adult __________________ there are workshops on dancing and playing exotic musical instruments.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "94573F",
+     "base_word": "COUNT",
+     "key": "countless",
+     "text": "There are __________________ other activities like lessons of exotic cuisines conducted by musicians themselves or discussions of global concerns.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "A7279F",
+     "base_word": "CERTAIN",
+     "key": "certainly",
+     "text": "Going to this festival will __________________ be an unforgettable experience for anyone.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "7414EF",
+   "kes": "2.3.11.3",
+   "n": 5,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "39975E",
+     "base_word": "AMAZE",
+     "key": "amazing",
+     "text": "The Galapagos Islands The world-renowned Galapagos archipelago is located in the Pacific Ocean, approximately 1,000 km off the coast of Ecuador. The remote islands are one of the world’s most __________________ wildlife viewing destinations.",
+     "kes": "2.3.11.3"
+    },
+    {
+     "pos": 2,
+     "zid": "31B00B",
+     "base_word": "ADVENTURE",
+     "key": "adventurers",
+     "text": "Thus, they feature on the bucket lists of many __________________.",
+     "kes": "2.3.11.2"
+    },
+    {
+     "pos": 3,
+     "zid": "3EFAAA",
+     "base_word": "COLLECT",
+     "key": "collection",
+     "text": "The waters around the islands are home to a vast __________________ of marine life, which makes scuba diving in the area one of the highlights of any visit.",
+     "kes": "2.3.11.2"
+    },
+    {
+     "pos": 4,
+     "zid": "0CD60A",
+     "base_word": "INHABITED",
+     "key": "uninhabited",
+     "text": "You can either explore the islands on a boat or go on day trips to the more remote __________________ islands where no one lives.",
+     "kes": "2.3.11.3"
+    },
+    {
+     "pos": 5,
+     "zid": "59409E",
+     "base_word": "CAREFUL",
+     "key": "carefully",
+     "text": "As the islands are home to such an exceptional diversity of wildlife, much of which is found nowhere else on Earth, tourism is very __________________ controlled to protect the fragile environment.",
+     "kes": "2.3.11.4"
+    }
+   ]
+  },
+  {
+   "variant": "7B8D1E",
+   "kes": "2.3.11",
+   "n": 5,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "5A9B01",
+     "base_word": "PLAY",
+     "key": "players",
+     "text": "Anatoly Karpov Anatoly Karpov is a Russian chess grandmaster. He is considered to be one of the greatest __________________ of all time.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "B61E31",
+     "base_word": "EXCITE",
+     "key": "exciting",
+     "text": "Karpov started playing chess when he was only four. Recognizing his talent, Karpov’s parents did everything possible to help him master this __________________ game.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "5CD8F5",
+     "base_word": "POSSIBLE",
+     "key": "impossible",
+     "text": "Karpov quickly became the national master and went on to receive the title of a grandmaster at the age of 19. It may sound __________________ but Karpov successfully combined playing chess with being an excellent student.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "99BC4E",
+     "base_word": "NATIONAL",
+     "key": "international",
+     "text": "He proceeded to win a series of __________________ tournaments, becoming the official world champion in 1975. His reign as the world champion came to an end only when he was defeated by Garry Kasparov in 1985.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "2573C3",
+     "base_word": "CHAMPION",
+     "key": "championships",
+     "text": "The two men then had many more matches at various __________________, proving to be equally good chess masters. Karpov is now actively involved in humanitarian activities.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "7E46A2",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "266CC5",
+     "base_word": "BEAUTY",
+     "key": "beautiful",
+     "text": "Ferapontov Monastery in Vologda Ferapontov monastery was founded in 1398. This was when Ferapont the Reverend established a new settlement on a lake not far from Vologda . There were many villages around this __________________ place and soon people started to come to him for advice.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "719075",
+     "base_word": "ACTUAL",
+     "key": "actually",
+     "text": "Then some people decided to stay with him as monks. That s __________________ how the monastery was started.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "AD7FA0",
+     "base_word": "CONSTRUCT",
+     "key": "constructions",
+     "text": "Later Ferapont built a wooden church and other __________________. He left the monastery to build another one but never returned.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "2E0FC1",
+     "base_word": "FAME",
+     "key": "famous",
+     "text": "However, the monastery remained both a __________________ and popular place even without him.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "C45B7B",
+     "base_word": "AMAZE",
+     "key": "amazing",
+     "text": "Now tourists can enjoy its __________________ frescoes, created in 1502.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "360C2C",
+     "base_word": "POSSIBLE",
+     "key": "impossible",
+     "text": "It may seem __________________, but these frescoes have remained safe without restoration till the present day. Now the monastery is a museum. In 2000 the Ensemble of the Ferapontov Monastery was included in UNESCO s World Heritage List.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "837DC0",
+   "kes": "2.3.11",
+   "n": 5,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "EE31F8",
+     "base_word": "HIGH",
+     "key": "highly",
+     "text": "Alexander Blok Alexander Blok was a Russian lyrical poet, writer, publicist, playwright, translator and literary critic. He was born in 1880 in Saint Petersburg in a __________________ educated family.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "3F4224",
+     "base_word": "BOTANY",
+     "key": "botanist",
+     "text": "His father was a professor of law, and his grandfather was a famous __________________ and the rector of Saint Petersburg State University.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "C513DB",
+     "base_word": "AMAZE",
+     "key": "amazing",
+     "text": "The __________________ images of his early poetry established him as a major figure of the Russian Symbolism style.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "5F0821",
+     "base_word": "INSPIRE",
+     "key": "inspiration",
+     "text": "Poetic __________________ came naturally to him.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "9A6AF2",
+     "base_word": "SURROUND",
+     "key": "surroundings",
+     "text": "Blok often produced unforgettable and otherworldly images out of the most banal __________________ and trivial events, though his most beautiful poems were still devoted to his wife. Blok greeted the 1905 Russian Revolution enthusiastically, but later became disillusioned with it and couldn’t write any more, although he still gave lectures on literature.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "83FB67",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "7D7571",
+     "base_word": "NATURAL",
+     "key": "naturally",
+     "text": "Central Park One of the world’s most well-known green spaces, Central Park in New York occupies 843 acres of land with European-style gardens, a lake and a reservoir. __________________, among Central Park sights one should also mention an outdoor theater, a memorial to John Lennon and a very famous statue of Alice in Wonderland.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "0728D4",
+     "base_word": "BEAUTY",
+     "key": "beautiful",
+     "text": "Many tourists consider Central Park to be a truly __________________ place.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "405B18",
+     "base_word": "REGARD",
+     "key": "regardless",
+     "text": "It is important to say that this huge park was designed as a leisure space for all New Yorkers, __________________ of color or class.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "2F4CE0",
+     "base_word": "ATTRACT",
+     "key": "attractions",
+     "text": "Today, this “people’s park” is still one of the city’s most popular __________________.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "5304A7",
+     "base_word": "JOG",
+     "key": "joggers",
+     "text": "It is also a very popular place for numerous __________________.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "DD1725",
+     "base_word": "SKI",
+     "key": "skiing",
+     "text": "Even in winter with its snowstorms there is something to do there, like cross-country __________________. If you plan to visit New York , Central Park is an absolute must for you.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "870CA8",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "97D0D2",
+     "base_word": "COLOUR",
+     "key": "colourful",
+     "text": "The Lantern Festival The Lantern Festival is one of the most popular events in Taiwan. It has no fixed date but must be held on the first full moon of a lunar year. This __________________ celebration is definitely a spectacular sight.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "FB057A",
+     "base_word": "VISIT",
+     "key": "visitors",
+     "text": "It’s not surprising that it attracts crowds of __________________ from all over the world.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "44710C",
+     "base_word": "COUNT",
+     "key": "countless",
+     "text": "During the festival people can enjoy looking at __________________ lanterns in the dark sky.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "93A84D",
+     "base_word": "VARY",
+     "key": "various",
+     "text": "The big lanterns come in shapes of __________________ animals and birds.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "D7FEC0",
+     "base_word": "CERTAIN",
+     "key": "Certainly",
+     "text": "__________________, the main lantern at the festival has the Chinese zodiac sign of the respective year. The smaller lanterns represent some most important historical events.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "7530D6",
+     "base_word": "CREATE",
+     "key": "creative",
+     "text": "The festival includes fireworks displays and __________________ activities like lantern making and lantern riddle games. You can also try delicious food right from the street stalls. This festival is an unforgettable experience for anyone.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "8E033D",
+   "kes": "2.3.11",
+   "n": 5,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "01614F",
+     "base_word": "NATURE",
+     "key": "natural",
+     "text": "Vladislav Tretyak Vladislav Tretyak is an outstanding Russian hockey player. He is considered to be one of the best goaltenders in the history of ice hockey. He was born in 1952 in a family of a military pilot and a PE teacher. So, it was only __________________that Tretyak did much sport in his early childhood.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "868B91",
+     "base_word": "VARY",
+     "key": "various",
+     "text": "He tried __________________ sports and wanted to excel in all of them, but fell in love with ice hockey at the age of 11.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "AE4993",
+     "base_word": "ACTUAL",
+     "key": "actually",
+     "text": "He entered the Children and Youth Sports School of the CSKA, where he began playing goaltender when he saw that, __________________, no one else had the desire or courage to play the position.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "044997",
+     "base_word": "NATIONAL",
+     "key": "international",
+     "text": "By the age of 19, Tretyak was already famous not only in Russia, but also on the __________________ level.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "BFBC70",
+     "base_word": "PERFORM",
+     "key": "performance",
+     "text": "ge % His great __________________ in the Summit Series in 1972 earned him a massive fan base all over the world. Tretyak retired at the age of 32 to spend more time with his family. He is the current president of the Ice Hockey Federation in Russia.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "8E83E1",
+   "kes": "2.3.11",
+   "n": 5,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "24E2DE",
+     "base_word": "INVENT",
+     "key": "inventor",
+     "text": "Pavel Yablochkov Pavel Yablochkov was a Russian electrical engineer and businessman. He was also the __________________ of the Yablochkov candle – a type of electric carbon arc lamp – and the transformer. A Yablochkov candle was much easier to use than other kinds of lamps.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "EF7456",
+     "base_word": "DEMONSTRATE",
+     "key": "demonstration",
+     "text": "The first public use of a Yablochkov candle took place in Paris in 1877. The Paris Exposition of 1878 gave Yablochkov a great opportunity to make a spectacular __________________ of his candle to the world audience.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "EA4C1D",
+     "base_word": "SUCCESS",
+     "key": "successful",
+     "text": "It was so __________________ that many contemporary businessmen got interested in Yablochkov candles.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "BBD9A6",
+     "base_word": "QUICK",
+     "key": "quickly",
+     "text": "They __________________ set up companies licensing Yablochkov’s patents. From the mid-1880s, Yablochkov started to devote more of his time to the problems of generating electrical energy.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "E3DA37",
+     "base_word": "SCIENCE",
+     "key": "scientists",
+     "text": "Many of Yablochkov’s further inventions were much ahead of his time. Modern __________________ still use his ideas in their work.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "95637D",
+   "kes": "2.3.11",
+   "n": 5,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "2AF46C",
+     "base_word": "CONVENIENT",
+     "key": "conveniently",
+     "text": "The Vancouver Aquarium The Vancouver Aquarium is a public aquarium. It is __________________ located in Stanley Park, a popular area.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "B81E7C",
+     "base_word": "SCIENCE",
+     "key": "scientists",
+     "text": "It was one of the first facilities to invite __________________ into the galleries to interpret animal behaviour.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "8300BA",
+     "base_word": "EDUCATION",
+     "key": "educational",
+     "text": "So a visit to the aquarium is not only pleasant, but also __________________.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "80EE45",
+     "base_word": "OWN",
+     "key": "owner",
+     "text": "The aquarium remains a nonprofit organisation. Its __________________ is the City of Vancouver .",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "8CCCCD",
+     "base_word": "TOUR",
+     "key": "tourists",
+     "text": "The aquarium has been rented for $40,000 a year since 1991. This money and the entrance fees paid by __________________ support the aquarium financially.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "A57005",
+   "kes": "2.3.11.3",
+   "n": 5,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "DD5368",
+     "base_word": "IMPRESS",
+     "key": "impressive",
+     "text": "Arenal Volcano Costa Rica is a country that has a lot of volcanoes. Even so, Arenal Volcano is one of the greatest natural wonders of this country. It is one of the most __________________ volcanoes in the world. It is a stratovolcano whose height is 5,437 feet.",
+     "kes": "2.3.11.3"
+    },
+    {
+     "pos": 2,
+     "zid": "3D69F7",
+     "base_word": "VIOLENT",
+     "key": "violently",
+     "text": "After a long dormant period, Arenal erupted __________________ in 1968, covering a vast area of over 15 km in lava, rocks and ash.",
+     "kes": "2.3.11.4"
+    },
+    {
+     "pos": 3,
+     "zid": "FE337F",
+     "base_word": "ERUPT",
+     "key": "eruptions",
+     "text": "Several minor __________________ followed. Since that time Arenal Volcano has been a popular tourist attraction.",
+     "kes": "2.3.11.2"
+    },
+    {
+     "pos": 4,
+     "zid": "946924",
+     "base_word": "HIKE",
+     "key": "hikers",
+     "text": "The volcano is located in a beautiful national park which is a perfect place for both amateur and professional __________________.",
+     "kes": "2.3.11.2"
+    },
+    {
+     "pos": 5,
+     "zid": "8A3466",
+     "base_word": "ACTIVE",
+     "key": "activities",
+     "text": "Among numerous outdoor __________________, visitors to the Arenal Volcano National Park can enjoy adventure tours to the rainforest there or just relax in a natural geothermal hot spring.",
+     "kes": "2.3.11.2"
+    }
+   ]
+  },
+  {
+   "variant": "ABDDCC",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "39E095",
+     "base_word": "VARY",
+     "key": "various",
+     "text": "Anton Shipulin Anton Shipulin is an outstanding retired Russian biathlete. In his long career he won __________________ international competitions and was considered to be among the strongest biathletes of his time.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "9B547A",
+     "base_word": "CERTAIN",
+     "key": "certainly",
+     "text": "In 2010 he was even awarded an order by the Russian President. Among his best achievements is __________________ the gold medal in the men’s relay at the 2014 Winter Olympics in Sochi.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "5BC388",
+     "base_word": "SUCCESS",
+     "key": "successful",
+     "text": "His sister Anastasia Kuzmina is also a __________________ biathlete. She lives in Slovakia.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "806EE2",
+     "base_word": "MEDAL",
+     "key": "medalist",
+     "text": "She is also an Olympic gold __________________.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "91A785",
+     "base_word": "RETIRE",
+     "key": "retirement",
+     "text": "In December 2018 Shipulin announced his __________________ from sports after the World Team Challenge, which is also called the Christmas Race.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "6B247E",
+     "base_word": "POLITICS",
+     "key": "politician",
+     "text": "He is now a __________________ serving in the State Duma. He has been serving there since 2019. Russia is really proud of Anton Shipulin and his victories and hopes that there will be many more sportsmen like him in the future.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "AEC7DA",
+   "kes": "2.3.11.3",
+   "n": 5,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "2406CA",
+     "base_word": "POSSIBLE",
+     "key": "impossible",
+     "text": "Rovos Rail If you dislike travelling by train, you will probably change your mind after trying one of the scenic rides the world has to offer. One of such rides which are __________________ to forget is the Rovos Rail in South Africa.",
+     "kes": "2.3.11.3"
+    },
+    {
+     "pos": 2,
+     "zid": "E50DCB",
+     "base_word": "DIVERSE",
+     "key": "diversity",
+     "text": "The train has several routes. You will pass through a number of African countries and admire the __________________ of their landscapes.",
+     "kes": "2.3.11.2"
+    },
+    {
+     "pos": 3,
+     "zid": "4C2100",
+     "base_word": "FASCINATE",
+     "key": "fascinating",
+     "text": "You will see wildlife national parks, historical battle fields and __________________ cities.",
+     "kes": "2.3.11.3"
+    },
+    {
+     "pos": 4,
+     "zid": "D0168F",
+     "base_word": "ENTERTAIN",
+     "key": "entertainments",
+     "text": "Onboard, the passengers can use various facilities like a dining car, luxury sleeping cabins and themed __________________.",
+     "kes": "2.3.11.2"
+    },
+    {
+     "pos": 5,
+     "zid": "0D4EE3",
+     "base_word": "EXCEPTION",
+     "key": "exceptional",
+     "text": "All types of cabins have ensuite showers, sinks and restrooms, and some of them even have bathtubs. With its __________________ service, Rovos Rail is truly one of the greatest train journeys in the world.",
+     "kes": "2.3.11.3"
+    }
+   ]
+  },
+  {
+   "variant": "B7979F",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "E5FE19",
+     "base_word": "CERTAIN",
+     "key": "certainly",
+     "text": "New England Aquarium The New England Aquarium has sea creatures of all sizes, shapes and colors. This place is __________________ the centerpiece of downtown Boston ’s waterfront.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "D900EE",
+     "base_word": "ATTRACT",
+     "key": "attraction",
+     "text": "Its main __________________ is the newly renovated, three-story Giant Ocean Tank. It literally swirls with thousands of creatures, including turtles and sharks.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "BA610F",
+     "base_word": "COUNT",
+     "key": "Countless",
+     "text": "__________________ side exhibits explore the lives and habitats of other underwater species, as well as penguins and marine mammals.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "C139D6",
+     "base_word": "VISIT",
+     "key": "Visitors",
+     "text": "__________________ to the aquarium can watch training sessions.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "870E60",
+     "base_word": "INTELLIGENT",
+     "key": "intelligence",
+     "text": "There animals show off their __________________ and athleticism. Note that some animal rights groups make a strong case that marine mammals should not be kept in captivity, so from time to time the aquarium has to face these protests.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "840A0A",
+     "base_word": "FORGETTABLE",
+     "key": "unforgettable",
+     "text": "The New England Aquarium is really a beautiful place and an __________________ experience for anybody.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "BBFF63",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "E640A7",
+     "base_word": "CURRENT",
+     "key": "currently",
+     "text": "Daniil Medvedev Daniil Medvedev is a Russian professional tennis player. He is __________________ ranked by the Association of Tennis Professionals (ATP) as world No 2.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "53B65D",
+     "base_word": "CHILD",
+     "key": "childhood",
+     "text": "He was born in Moscow. In his early __________________ he was interested in music.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "F36582",
+     "base_word": "ADVERTISE",
+     "key": "advertisement",
+     "text": "However, when he was 9 years old, his mother saw an __________________ for group tennis lessons, and Daniil decided to try them. His first tennis coach was Ekaterina Kryuchkova, a former coach of the famous professional tennis player Vera Zvonareva.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "73898E",
+     "base_word": "IMPRESS",
+     "key": "impressive",
+     "text": "When he was 18, his results were so __________________ that Medvedev even had to drop out of college to focus on tennis.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "7F0112",
+     "base_word": "PREDICTABLE",
+     "key": "unpredictable",
+     "text": "Medvedev is known for mirroring his opponent’s play. His playstyle incorporates strong returns with as few mistakes as possible and making games __________________ .",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "9FEF63",
+     "base_word": "REAL",
+     "key": "really",
+     "text": "He has won many tournaments, and Russia __________________ hopes for his new victories.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "C292F9",
+   "kes": "2.3.11.4",
+   "n": 5,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "E746F9",
+     "base_word": "CERTAIN",
+     "key": "certainly",
+     "text": "GeoSure Global GeoSure Global is a great mobile app for travellers. It is __________________ a revolutionary safety service aimed at ensuring that your trips involve fewer risks.",
+     "kes": "2.3.11.4"
+    },
+    {
+     "pos": 2,
+     "zid": "A665AA",
+     "base_word": "COUNT",
+     "key": "countless",
+     "text": "GeoSure Global provides safety ratings for __________________ neighborhoods all over the world.",
+     "kes": "2.3.11.3"
+    },
+    {
+     "pos": 3,
+     "zid": "B84C43",
+     "base_word": "TOUR",
+     "key": "tourist",
+     "text": "These ratings offer a general view of how safe an area is and are broken down into lots of smaller categories, each with their own scores. Examples include health and medical care, theft and so on. If you’re travelling to a foreign country as a __________________, you may be at greater risk of crimes like pickpocketing.",
+     "kes": "2.3.11.2"
+    },
+    {
+     "pos": 4,
+     "zid": "D69972",
+     "base_word": "AMAZE",
+     "key": "amazing",
+     "text": "The __________________ app updates as you move around, letting you explore a city.",
+     "kes": "2.3.11.3"
+    },
+    {
+     "pos": 5,
+     "zid": "9A75B9",
+     "base_word": "LOCATE",
+     "key": "locations",
+     "text": "Thus, you will have constant up-to-date readings on the security and safety of the area around you and the neighbouring __________________. It’s a great tool for any traveller to have.",
+     "kes": "2.3.11.2"
+    }
+   ]
+  },
+  {
+   "variant": "C35A53",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "DBCB86",
+     "base_word": "ACTUAL",
+     "key": "actually",
+     "text": "The Crown Even those people who are not fans of the royal family enjoy the series The Crown . This is __________________ a palace drama based on a true story. In fact, one of the show s great strengths is that the viewers understand that this story is real.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "11B6E4",
+     "base_word": "RELATION",
+     "key": "relationships",
+     "text": "The first season caught everybody’s attention, but The Crown ’s second season went even deeper into its characters and their __________________ .",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "79E71A",
+     "base_word": "INTEREST",
+     "key": "interesting",
+     "text": "The most __________________ episodes are undoubtedly the ones devoted to Elizabeth II as a monarch.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "5CBF4C",
+     "base_word": "GOVERN",
+     "key": "government",
+     "text": "She has to deal with her prime ministers and the __________________ , with the press, and with the Kennedys.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "6E790B",
+     "base_word": "BEAUTY",
+     "key": "beautiful",
+     "text": "You can also enjoy the __________________ settings and the costumes created for the show.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "AF023B",
+     "base_word": "POSSIBLE",
+     "key": "impossible",
+     "text": "And it s __________________ to forget some of the scenes from the Second World War history &#x2013; you won t believe some of the facts presented in the film.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "CA7173",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "039748",
+     "base_word": "FAME",
+     "key": "famous",
+     "text": "Whistler Have you ever been to Whistler? It’s just a two-hour drive from Vancouver and is a __________________ ski resort.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "417BAC",
+     "base_word": "REAL",
+     "key": "really",
+     "text": "Whistler has always been a __________________ important winter sports area.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "FAC3ED",
+     "base_word": "POPULAR",
+     "key": "popularity",
+     "text": "Recently it has also gained __________________ as a summer destination for golf and mountain biking.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "F19FC4",
+     "base_word": "TOUR",
+     "key": "tourists",
+     "text": "So in Whistler __________________ can enjoy a lively town atmosphere throughout the year.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "80F33A",
+     "base_word": "NATIONAL",
+     "key": "international",
+     "text": "The village gained __________________ attention in 2010 when it became one of the locations for the 2010 Winter Olympic Games.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "EA96FD",
+     "base_word": "VARY",
+     "key": "variety",
+     "text": "The area offers world class skiing, hotels, and dining, as well as a __________________ of outdoor recreational opportunities and beautiful mountain scenery.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "CAE889",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "FEFC2F",
+     "base_word": "TOUR",
+     "key": "tourist",
+     "text": "Visiting Tasmania Are you planning a trip to Tasmania? Without a doubt, any __________________ will find some things to do there.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "07CB52",
+     "base_word": "MEMORY",
+     "key": "memorable",
+     "text": "To begin with, driving up the east coast of Tasmania is one of the most __________________ things you can do there.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "9D4F8E",
+     "base_word": "REAL",
+     "key": "really",
+     "text": "Tasmania’s east coast is __________________ spectacular and along the way you’ll be able to stop for walks along cliff tops and swim in gorgeous beaches.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "BC6A80",
+     "base_word": "NATION",
+     "key": "national",
+     "text": "One more opportunity is to camp out at __________________ parks and do other cool activities.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "A5E5F3",
+     "base_word": "ATTRACT",
+     "key": "attractions",
+     "text": "One of the biggest __________________ along the east coast of Tasmania is Freycinet Park, renowned for the stunning Wineglass Bay and many routes for day walks, bird watching and mountaineering.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "B845E3",
+     "base_word": "FORGET",
+     "key": "unforgettable",
+     "text": "Besides climbing and hiking, there you can also eat a fresh oyster lunch at the Freycinet Marine Farm . It will certainly be an __________________ experience for you, so don t miss a chance to visit Tasmania .",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "CCB63F",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "4FC09D",
+     "base_word": "USUAL",
+     "key": "usually",
+     "text": "The Ice and Snow Sculpture Festival China is famous all over the world for its exotic festivals, and the Ice and Snow Sculpture Festival is one of them. It is celebrated in Harbin. Located in the northeast of China, Harbin has very cold winter winds blowing from Siberia. The average daily temperature in Harbin in winter is __________________ around 1.8 F.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "F90B3C",
+     "base_word": "VISIT",
+     "key": "visitors",
+     "text": "Still, despite the cold weather, __________________ come to the festival to look at the largest ice sculptures in the world.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "CBBC3D",
+     "base_word": "DARK",
+     "key": "darkness",
+     "text": "The event starts on January 5 at night. In the __________________ you can still see the huge ice sculptures very well.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "071CFC",
+     "base_word": "COLOUR",
+     "key": "colourful",
+     "text": "It is so because they are illuminated with numerous __________________ lights.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "313DF8",
+     "base_word": "COUNT",
+     "key": "countless",
+     "text": "The __________________ sculptures produce a lasting impression on viewers.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "482E86",
+     "base_word": "ACTIVE",
+     "key": "activities",
+     "text": "Other __________________ in the area during the festival include alpine skiing, touring ice lantern exhibitions in various local parks, and even swimming in the river’s icy waters.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "D3D4C1",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "765910",
+     "base_word": "VISIT",
+     "key": "visitors",
+     "text": "Visiting Uluru If you are thinking of making the journey to witness the incredible red rock Uluru in person, here are some facts you should know before you leave. Thousands of __________________ to Australia go to see Uluru.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "CD8267",
+     "base_word": "ACTUAL",
+     "key": "actually",
+     "text": "Uluru is located west of the Simpson Desert 335 km southwest of Alice Springs. While some people believe it to be the largest monolith in the world, this title is __________________ held by Mount Augustus in Western Australia.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "1D9EA7",
+     "base_word": "DIFFER",
+     "key": "differences",
+     "text": "Uluru is known to undergo a series of colour changes. These can be just subtle __________________ when it rains.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "EB35E6",
+     "base_word": "TRANSFORM",
+     "key": "transformations",
+     "text": "However, the view undergoes amazing __________________ when caught by the spectacular sunset rays.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "462DFA",
+     "base_word": "USUAL",
+     "key": "unusual",
+     "text": "This is so partially because the surface of Uluru is full of __________________ caves and holes due to millions of years of erosion.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "82435D",
+     "base_word": "COURAGE",
+     "key": "discourage",
+     "text": "Uluru is a sacred site to the indigenous people of the area, and guides __________________ tourists from climbing the rock.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "DB7CF5",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "0D0AA3",
+     "base_word": "VISIT",
+     "key": "Visitors",
+     "text": "Uluru Uluru (often called Ayers Rock) is located deep in the outback in central Australia. It’s considered a sacred site by the Aborigines. __________________ can reach the area by a 200 km car trip after flying into Alice Springs, Darwin or Adelaide.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "A24B47",
+     "base_word": "NATURE",
+     "key": "natural",
+     "text": "The area includes many breathtaking __________________ wonders and reveals much about the legends and mysteries of Aboriginal people.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "47F6CA",
+     "base_word": "FORGET",
+     "key": "unforgettable",
+     "text": "Located in the Red Centre, Uluru is one the most __________________ sights in Australia .",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "CD8120",
+     "base_word": "SIGNIFICANT",
+     "key": "significance",
+     "text": "Here you can learn more about the cultural __________________ of the area, you can do a base walk and meet some of the local wildlife (get ready for the Australian face fly), and you can take more photos than you thought possible.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "2BECB7",
+     "base_word": "ACCOMMODATE",
+     "key": "Accommodation",
+     "text": "__________________ ranges from budget to luxury.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "AC0A1D",
+     "base_word": "CAMP",
+     "key": "camping",
+     "text": "There are even __________________ opportunities if you’re brave enough for that!",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "E5BC56",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "85FAC1",
+     "base_word": "COLLECT",
+     "key": "collections",
+     "text": "The Met The Met is an encyclopedic museum, founded in 1870. It has one of the biggest art __________________ in the world with more than two million individual objects.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "0B3111",
+     "base_word": "PAINT",
+     "key": "paintings",
+     "text": "Among them you can find anything from Egyptian temples to American __________________.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "EAC8C7",
+     "base_word": "VISIT",
+     "key": "visitors",
+     "text": "The museum attracts over six million __________________ a year to its 17 acres of galleries making it the largest single-site attraction in New York City. In other words, plan on spending some time here.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "4E0F60",
+     "base_word": "WONDER",
+     "key": "wonderful",
+     "text": "The museum has __________________ examples of ancient Egyptian art, some of which date back to the Paleolithic era. The 27 galleries devoted to classical antiquity are illuminated by natural daylight.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "6AB026",
+     "base_word": "VARY",
+     "key": "variety",
+     "text": "In the northwest corner, the American galleries demonstrate a wide __________________ of decorative and fine art from throughout US history.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "B7A0AC",
+     "base_word": "REAL",
+     "key": "really",
+     "text": "The Met is __________________ worth visiting. If you go to New York, do not miss a chance of going there.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "EE16CD",
+   "kes": "2.3.11",
+   "n": 4,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "ABF9CC",
+     "base_word": "VARY",
+     "key": "various",
+     "text": "Ivan Sechenov Ivan Sechenov was an outstanding Russian scientist. He was born in 1829 in a noble family. His parents inspired young Ivan to continue his education throughout his entire life, and the boy followed their advice. At the age of 14 he chose to become a military engineer and studied __________________ technical subjects.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "79CC7D",
+     "base_word": "AWARE",
+     "key": "awareness",
+     "text": "However, his heart was not really in it. In 1850 Sechenov entered Moscow Medical University with a full __________________ of the goals of his life.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "B3AFE6",
+     "base_word": "WILL",
+     "key": "willing",
+     "text": "Sechenov was a __________________ student, which enabled him to graduate among top students.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "733113",
+     "base_word": "PERFECT",
+     "key": "perfection",
+     "text": "He mastered biology, anatomy, surgery and physiology to __________________.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "F17321",
+   "kes": "2.3.11",
+   "n": 5,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "4DBB15",
+     "base_word": "ARTIST",
+     "key": "artistic",
+     "text": "Sergey Bezrukov Sergey Bezrukov is a Russian screen and stage actor and singer. He was born in an __________________ family as his father was an actor at the Moscow Satire Theatre.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "F5D487",
+     "base_word": "QUICK",
+     "key": "quickly",
+     "text": "%end_page % On graduating from the Moscow Art Theatre School Sergey was immediately accepted into the troupe of the Moscow Theatre Studio under Oleg Tabakov. At that time, he also started to do voice-over for TV programmes and __________________ got noticed by TV producers.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "311EC7",
+     "base_word": "VARY",
+     "key": "various",
+     "text": "Due to his excellent acting in __________________ films, Sergey soon became a household name in Russia.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "1E635E",
+     "base_word": "IMPRESS",
+     "key": "impressive",
+     "text": "%end_page % The range of his roles is truly __________________. He seems to be able to play anybody – from Russian poets Pushkin and Yesenin to comical figures in funny remakes of old Soviet comedies.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "5ED2B9",
+     "base_word": "EXCITE",
+     "key": "exciting",
+     "text": "Bezrukov is a prolific actor and director, and his fans are waiting for new __________________ films and plays starring him.",
+     "kes": "2.3.11"
+    }
+   ]
+  },
+  {
+   "variant": "FA4EBC",
+   "kes": "2.3.11",
+   "n": 6,
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "3DE89C",
+     "base_word": "GREAT",
+     "key": "greatly",
+     "text": "St. Isaac s Cathedral St. Isaac s Cathedral is one of the biggest Orthodox churches in Russia. The Cathedral was named in honour of St. Isaac of Dalmatia, who was __________________ respected by Peter I as he was born on St. Isaac s day.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 2,
+     "zid": "EC5C22",
+     "base_word": "CONSTRUCT",
+     "key": "construction",
+     "text": "The first wooden church was built in 1710. Later the __________________ of a new cathedral began.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 3,
+     "zid": "8B171C",
+     "base_word": "FAME",
+     "key": "famous",
+     "text": "A lot of __________________ architects took part in creating the cathedral which was opened to public in 1858.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 4,
+     "zid": "74C2F8",
+     "base_word": "TOUR",
+     "key": "Tourists",
+     "text": "__________________ from all over the world come to see the cathedral every day.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 5,
+     "zid": "E84A87",
+     "base_word": "AMAZE",
+     "key": "amazing",
+     "text": "They can go inside and enjoy the __________________ interiors of the building. Little do they know how much the cathedral suffered during the bomb attacks of the Second World War.",
+     "kes": "2.3.11"
+    },
+    {
+     "pos": 6,
+     "zid": "8EF86C",
+     "base_word": "RELIGION",
+     "key": "religious",
+     "text": "The services were revived in the cathedral in 1990 and take place regularly on big __________________ holidays and Sundays.",
+     "kes": "2.3.11"
+    }
+   ]
+  }
+ ]
+}

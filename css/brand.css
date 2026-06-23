@@ -1152,3 +1152,10 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .as-field-l{width:90px;font-size:12px}
 .as-line2{display:flex;align-items:flex-end;gap:6px;font-size:12px;margin-top:8px}
 .as-instr{font-size:11px;color:#444;margin-top:8px;font-style:italic}
+/* связный текст с пропусками (грам/словообр) в пробнике */
+.mock-tg-h{font-size:13px;font-weight:800;color:var(--p-text);margin:4px 0 8px}
+.mock-tg-text{font-size:15px;line-height:2.1;color:var(--ink)}
+.mock-gapinput{display:inline-block;width:110px;font-size:14px;padding:2px 6px;border:none;border-bottom:2px solid var(--p-text);background:var(--surf);border-radius:4px 4px 0 0}
+.mock-tg-base{font-weight:800;text-transform:uppercase;color:var(--magenta);font-size:12px}
+.pp-textgaps{line-height:2.0}
+.pp-tg-gap{white-space:nowrap;font-weight:600}

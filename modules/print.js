@@ -142,6 +142,19 @@ function renderItem(it, n) {
     const sts = (it.statements || []).map((st) => { n += 1; return el('div', { class: 'pp-mrow', text: n + '. ' + st.statement + '  ____' }); });
     return { node: el('div', { class: 'pp-q' }, [head, ...sts]), n };
   }
+  if (it.kind === 'textgaps') {
+    const head = el('div', { class: 'pp-instr', text: it.sub === 'wordform' ? t.print.tgWordform : t.print.tgGrammar });
+    const para = el('div', { class: 'pp-text pp-textgaps' });
+    (it.gaps || []).forEach((gp) => {
+      n += 1;
+      const parts = (gp.text || '').split(/_{3,}/);
+      para.appendChild(document.createTextNode(parts[0] || ''));
+      para.appendChild(el('span', { class: 'pp-tg-gap', text: ' (' + n + ') ________ ' }));
+      if (gp.base_word) para.appendChild(el('b', { text: '[' + gp.base_word + '] ' }));
+      para.appendChild(document.createTextNode(parts[1] || ' '));
+    });
+    return { node: el('div', { class: 'pp-q' }, [head, para]), n };
+  }
   return { node: el('div'), n };
 }
 
@@ -176,6 +189,7 @@ function buildAnswerSheet(sections, P) {
     for (const it of (sec.items || [])) {
       let cnt = 0;
       if (it.kind === 'choice' || it.kind === 'fill' || it.kind === 'gap') cnt = 1;
+      else if (it.kind === 'textgaps') cnt = (it.gaps || []).length;
       else if (it.kind === 'match') cnt = (it.speakers || []).length;
       else if (it.kind === 'rmatch') cnt = LETTERS.filter((L) => it.texts && it.texts[L] != null).length;
       else if (it.kind === 'gaps') cnt = (it.gaps || []).length;

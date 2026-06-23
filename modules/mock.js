@@ -245,6 +245,7 @@ export async function renderMock(container, cfg) {
     if (it.kind === 'match') return lmatchItem(it, i, answers);
     if (it.kind === 'rmatch') return rmatchItem(it, answers);
     if (it.kind === 'gaps') return gapsItem(it, answers);
+    if (it.kind === 'textgaps') return textgapsItem(it, answers);
     if (it.kind === 'tfns') return tfnsItem(it, answers);
     if (it.kind === 'gap') return gapItem(it, i, answers);
     return el('div');
@@ -328,6 +329,22 @@ export async function renderMock(container, cfg) {
     ]);
   }
 
+  // связный текст с пропусками (ЕГЭ грам.19-24 / словообр.25-29): абзац с инлайн-полями + база
+  function textgapsItem(it, answers) {
+    const head = el('div', { class: 'mock-tg-h', text: it.sub === 'wordform' ? M.tgWordform : M.tgGrammar });
+    const para = el('div', { class: 'mock-tg-text' });
+    (it.gaps || []).forEach((gp) => {
+      const parts = (gp.text || '').split(/_{3,}/);
+      para.appendChild(document.createTextNode(parts[0] || ''));
+      const inp = el('input', { class: 'mock-gapinput', type: 'text', value: answers[gp.zid] || '' });
+      inp.addEventListener('input', () => { answers[gp.zid] = inp.value; });
+      para.appendChild(inp);
+      if (gp.base_word) para.appendChild(el('span', { class: 'mock-tg-base', text: ' [' + gp.base_word + '] ' }));
+      para.appendChild(document.createTextNode(parts[1] || ' '));
+    });
+    return el('div', { class: 'mock-q' }, [head, para]);
+  }
+
   function tfnsItem(it, answers) {
     const key = 'tf:' + it.group;
     answers[key] = answers[key] || {};
@@ -401,6 +418,8 @@ export async function renderMock(container, cfg) {
       for (const it of sec.items) {
         if (it.kind === 'choice' || it.kind === 'fill' || it.kind === 'gap') {
           const ok = keyOk(answers[it.zid], it.key); add(it.kes, ok); rawN++; if (ok) sc++;
+        } else if (it.kind === 'textgaps') {
+          (it.gaps || []).forEach((gp) => { const ok = keyOk(answers[gp.zid], gp.key); add(gp.kes || it.kes, ok); rawN++; if (ok) sc++; });
         } else if (it.kind === 'match') {
           const a = answers[it.zid] || {};
           it.speakers.forEach((sp, idx) => { const ok = (a[sp] || '') === it.key[idx]; add(it.kes, ok); rawN++; if (ok) sc++; });
