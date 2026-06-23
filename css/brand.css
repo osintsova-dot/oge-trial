@@ -1095,3 +1095,44 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .w-pb-row{margin-top:9px}
 .w-pb-cat{font-size:12px;font-weight:800;color:var(--p-text)}
 .w-pb-list{font-size:14px;line-height:1.5;color:var(--ink);margin-top:1px}
+
+/* ===== Печать (print.js) ===== */
+.print-bar{position:sticky;top:0;z-index:6;display:flex;align-items:center;gap:12px;padding:12px 16px;background:var(--grad-mock);color:#fff}
+.print-bar-t{flex:1;font-size:17px;font-weight:800}
+.print-go{flex:none;background:#fff;color:var(--p-text);border:none;font-weight:800;padding:8px 14px}
+.print-hint{font-size:13px;color:var(--muted);padding:10px 16px;line-height:1.4}
+.print-paper{background:#fff;color:#111;max-width:760px;margin:14px auto;padding:26px 30px;border:1px solid var(--line);border-radius:8px;font-family:Georgia,'Times New Roman',serif;line-height:1.5}
+.pp-head{border-bottom:2px solid #111;padding-bottom:10px;margin-bottom:14px}
+.pp-title{font-size:19px;font-weight:800}
+.pp-sub{font-size:13px;color:#444;margin-top:2px}
+.pp-meta{display:flex;align-items:flex-end;gap:6px;margin-top:10px;font-size:13px}
+.pp-line{flex:1;border-bottom:1px solid #111;height:14px}
+.pp-line.short{flex:.4}
+.pp-sec{margin-top:16px}
+.pp-sec-h{font-size:15px;font-weight:800;background:#eee;padding:5px 8px;border-radius:4px;margin-bottom:8px}
+.pp-audio{font-size:12.5px;color:#333;word-break:break-all;margin-bottom:8px}
+.pp-q{margin:9px 0}
+.pp-qt{font-size:14px;font-weight:600}
+.pp-opt{font-size:14px;margin:2px 0 2px 16px}
+.pp-rubrics{font-size:13.5px;margin:6px 0 6px 20px}
+.pp-text{font-size:13px;margin:6px 0;text-align:justify}
+.pp-mrow{font-size:14px;margin:4px 0;display:flex;flex-wrap:wrap;gap:10px}
+.pp-mcell{white-space:nowrap}
+.pp-stim{font-size:14px;margin:6px 0;font-style:italic}
+.pp-note{font-size:12.5px;color:#555;margin-top:6px}
+/* бланк ответов */
+.answer-sheet .as-grid{display:flex;flex-direction:column;gap:6px}
+.as-row{display:flex;align-items:center;gap:8px}
+.as-n{width:26px;text-align:right;font-weight:700;font-size:13px}
+.as-boxes{display:flex;gap:2px}
+.as-box{width:20px;height:24px;border:1px solid #111}
+.as-writing{margin-top:14px}
+.as-w-h{font-weight:800;font-size:14px;margin-bottom:8px}
+.as-line{border-bottom:1px solid #999;height:22px}
+@media print{
+  body{background:#fff!important}
+  .no-print,.tabbar,.nav,nav{display:none!important}
+  .print-paper{border:none;border-radius:0;margin:0;max-width:none;padding:0}
+  .answer-sheet{page-break-before:always}
+  .pp-sec{page-break-inside:avoid}
+}

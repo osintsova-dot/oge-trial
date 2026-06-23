@@ -10,6 +10,7 @@ import { recordRound, getName, getMockResults, recordMock } from '../js/gamify.j
 import { t, EXAM } from '../js/exam.js';
 import { recognize, canRecognize } from '../js/stt.js';
 import { evalSpeaking, evalEgeSpeaking } from '../js/speakeval.js';
+import { renderPrintView } from './print.js';
 
 const WORKER = 'https://purple-cake-2966.o-sintsova.workers.dev';
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G']; // EGE headings = 7 текстов A–G; ОГЭ matching/gaps (A–F) — лишние отфильтруются по texts[L]
@@ -96,9 +97,20 @@ export async function renderMock(container, cfg) {
       el('div', { class: 'modal-title', text: M.startTitle(v.num) }),
       el('div', { class: 'modal-text', text: M.startWarn(totalMinutes(v)) }),
       el('button', { class: 'btn btn-primary btn-block', text: M.startBtn, onclick: () => { close(); runExam(v); } }),
+      el('button', { class: 'btn btn-ghost btn-block', text: '🖨 ' + M.printBtn, onclick: () => { close(); openPrint(v); } }),
       el('button', { class: 'btn btn-ghost btn-block', text: t.modalClose, onclick: close }),
     ]));
     document.body.appendChild(back);
+  }
+
+  function openPrint(v) {
+    clearTimer();
+    renderPrintView(container, {
+      title: M.title + ' · ' + M.variant(v.num),
+      sub: EXAM.badge,
+      sections: v.sections,
+      onBack: introScreen,
+    });
   }
 
   // ---- Прохождение: общий таймер + разделы по очереди ----
