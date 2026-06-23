@@ -886,8 +886,9 @@ export function renderJournal(container, opts) {
   const avg = Math.round(all.reduce((s, e) => s + (e.total ? e.correct / e.total : 0), 0) / all.length * 100);
   const byTopic = {};
   for (const e of all) for (const tp in (e.byTopic || {})) { const b = byTopic[tp] = byTopic[tp] || { c: 0, t: 0 }; b.c += e.byTopic[tp].c; b.t += e.byTopic[tp].t; }
+  // все темы (в т.ч. «Письмо»), сложные сверху — ничего не прячем
   const hard = Object.entries(byTopic).map(([tp, b]) => ({ tp, pc: Math.round(b.c / b.t * 100), c: b.c, t: b.t }))
-    .filter((x) => x.t >= 1).sort((a, b) => a.pc - b.pc).slice(0, 8);
+    .filter((x) => x.t >= 1).sort((a, b) => a.pc - b.pc);
 
   const stat = (v, l) => el('div', { class: 'mini-stat' }, [el('div', { class: 'ms-v', text: String(v) }), el('div', { class: 'ms-l', text: l })]);
   const fmtDate = (ts) => { try { return new Date(ts).toLocaleString('ru-RU', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }); } catch (e) { return ''; } };
