@@ -192,6 +192,68 @@ export async function renderWriting(container, cfg) {
     const sc = container.querySelector('.w-screen'); if (sc) sc.scrollTop = 0;
   }
 
+  // Writing frames (каркасы) по типу задания — английский скелет с началами фраз.
+  const FRAMES = {
+    letter: [
+      ['Greeting', 'Dear (name),'],
+      ['Opening', "Thanks for your letter! It was great to hear from you."],
+      ['Bridge', "Sorry I haven't written for so long — I've been busy with …"],
+      ['Answer 1', "You asked me about … . Well, …"],
+      ['Answer 2', "As for … , …"],
+      ['Answer 3', "Speaking about … , …"],
+      ['Ending', "Anyway, I've got to go now — … . Write back soon!"],
+      ['Sign-off', "Best wishes,\n(your name)"],
+    ],
+    email: [
+      ['Greeting', 'Dear (name),'],
+      ['Opening', "Thanks for your email. I'm really glad (to hear) …"],
+      ['Answers', "As for your questions, … / Regarding … , …"],
+      ['Ask 3 questions', "By the way, I'd like to ask you a few things. First, …? Secondly, …? And finally, …?"],
+      ['Ending', "That's all my news for now. Hope to hear from you soon."],
+      ['Sign-off', "Best wishes,\n(your name)"],
+    ],
+    essay: [
+      ['Intro', "Nowadays the issue of … attracts a lot of attention. People hold different views on it."],
+      ['The data', "According to the chart/table, … . The figure for … is … , while …"],
+      ['Comment', "It is worth noting that … . This can be explained by …"],
+      ['Problem & solution', "However, there is a problem: … . One possible solution is …"],
+      ['Conclusion / opinion', "In my opinion, … . All in all, …"],
+    ],
+  };
+  const CONNECTORS = [
+    ['+', 'Moreover, Furthermore, In addition'],
+    ['≠', 'However, On the other hand, Nevertheless'],
+    ['☺', 'In my view, I believe, As far as I am concerned'],
+    ['→', 'Therefore, That is why, As a result'],
+    ['✓', 'All in all, To sum up, In conclusion'],
+  ];
+
+  function collapsible(title, kids) {
+    const body = el('div', { class: 'w-coll-body', style: { display: 'none' } }, kids);
+    let open = false;
+    const head = el('button', { class: 'w-coll-head' }, [el('span', { text: title }), el('span', { class: 'w-coll-chev', text: '▾' })]);
+    head.addEventListener('click', () => { open = !open; body.style.display = open ? '' : 'none'; head.querySelector('.w-coll-chev').textContent = open ? '▴' : '▾'; });
+    return el('div', { class: 'w-coll' }, [head, body]);
+  }
+
+  function frameBlock() {
+    const parts = FRAMES[task.id] || FRAMES.letter;
+    const rows = parts.map(([label, starter]) => el('div', { class: 'w-frame-row' }, [
+      el('div', { class: 'w-frame-lbl', text: label }),
+      el('div', { class: 'w-frame-txt', text: starter }),
+    ]));
+    const conn = el('div', { class: 'w-conn' }, [
+      el('div', { class: 'w-frame-lbl', text: t.wConnectors }),
+      ...CONNECTORS.map(([s, list]) => el('div', { class: 'w-conn-row' }, [el('span', { class: 'w-conn-s', text: s }), el('span', { text: list })])),
+    ]);
+    return collapsible('🧩 ' + t.wFrame, [...rows, conn]);
+  }
+
+  function ideasBlock(it) {
+    if (!it.ideas || !it.ideas.length) return null;
+    return collapsible('💡 ' + t.wIdeas, [el('ul', { class: 'w-ideas' }, it.ideas.map((x) => el('li', { text: x })))]);
+  }
+
   function taskScreen(i) {
     const it = items[i];
     const area = el('textarea', { class: 'letter-area', placeholder: it.name ? 'Dear ' + it.name + ',\n…' : '' });
@@ -253,6 +315,8 @@ export async function renderWriting(container, cfg) {
       secBar(pickScreen, headSub),
       el('div', { class: 'writing-body' }, [
         stimulus,
+        frameBlock(),
+        ideasBlock(it),
         resultBox,
         el('div', { style: { position: 'relative' } }, [area, wc]),
         el('div', { style: { marginTop: '14px' } }, [btn]),
