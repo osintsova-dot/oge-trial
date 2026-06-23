@@ -1231,7 +1231,21 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/52E4A6FBAB58BFA746F06377687B6D63/img1_1689774995.mp3"
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/52E4A6FBAB58BFA746F06377687B6D63/img1_1689774995.mp3",
+   "questions": [
+    "How do you usually celebrate your birthday?",
+    "What birthday traditions do you have in your family?",
+    "What's the best birthday present you've received?",
+    "Do you prefer your birthday presents to be a surprise? Or do you tell people what you want to get? Why?",
+    "What is your best birthday memory? Why?"
+   ],
+   "sampleAnswers": [
+    "I usually celebrate my birthday with my closest friends and family. We often go out to a cafe or have a small party at home with a cake, and in the evening I like to relax and watch a film with the people I love.",
+    "In my family we have a tradition of starting the day with a special breakfast that my mum prepares. Then everyone gives me their presents one by one, and in the evening we all sit down for a big dinner together.",
+    "The best birthday present I've ever received was a laptop from my parents two years ago. I had wanted one for a long time, and it completely changed the way I study and create things, so it really meant a lot to me.",
+    "I actually prefer my presents to be a surprise because the moment of unwrapping something unexpected is really exciting. However, for expensive things I sometimes drop a few hints, since I don't want people to waste money on something I won't use.",
+    "My best birthday memory is when my friends organised a surprise party for my fourteenth birthday. I had no idea about it, so when I walked in and saw everyone, I was almost in tears, and it showed me how much my friends actually care about me."
+   ]
   },
   {
    "zid": "13F252",
@@ -1239,7 +1253,19 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2– 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs//questions/8561E6E1CBBDAF7649F164ADCD57FE71/img1_1647616926.mp3"
+   "audio": "https://ege.fipi.ru/docs//questions/8561E6E1CBBDAF7649F164ADCD57FE71/img1_1647616926.mp3",
+   "questions": [
+    "What do you think of environmental problems? Are these important personally for you? What",
+    "do you think is the most dangerous environmental problem of our time? Why? Are there any ecological",
+    "problems in the place where you live? What can you tell us about them? Are there any ecological",
+    "activists groups in your region? What do they do? Do you agree that all of us should contribute"
+   ],
+   "sampleAnswers": [
+    "I think environmental problems are some of the most serious issues we face today, and they definitely matter to me personally. I try to do small things like recycling and saving water, because I believe our generation will have to deal with the consequences.",
+    "In my opinion, climate change is the most dangerous environmental problem of our time. It causes extreme weather, melting ice and rising sea levels, and unlike many other issues it affects the entire planet at the same time.",
+    "Yes, there are some ecological problems where I live, mainly air pollution from cars and rubbish that people leave in parks. The city is trying to add more green spaces, but I think much more still needs to be done.",
+    "Yes, there are a few volunteer groups in my region that organise clean-up days and plant trees in the city. They also run campaigns in schools to teach younger children about recycling, and I completely agree that all of us should contribute, because no single person can solve these problems alone."
+   ]
   },
   {
    "zid": "144962",
@@ -1247,7 +1273,21 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2– 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/D5600BB20980B529463347D14E46652D/img1_1721127127.mp3"
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/D5600BB20980B529463347D14E46652D/img1_1721127127.mp3",
+   "questions": [
+    "What style of clothes do you prefer? Where do you buy most of your clothes?",
+    "How often do you buy clothes for yourself?",
+    "Why do you think teenagers often experiment with their clothes?",
+    "Is fashion important for you? Why or why not?",
+    "Has your tasting clothes changed over time?"
+   ],
+   "sampleAnswers": [
+    "I prefer a casual and comfortable style, mostly jeans, hoodies and trainers, because they let me move freely during the day. I buy most of my clothes in shopping centres, though recently I've started ordering more things online.",
+    "I don't buy clothes very often, maybe once every couple of months. I usually wait until I really need something or until the seasons change, because I'd rather have a few good items than a wardrobe full of things I never wear.",
+    "I think teenagers experiment with clothes because they are trying to find their own identity and stand out from the crowd. Fashion is a way of expressing your personality without saying a word, and at our age we are still figuring out who we are.",
+    "Fashion is fairly important to me, but I wouldn't say I'm obsessed with it. I like to look neat and feel confident in what I wear, but I don't follow every trend, because comfort and being myself matter more than fitting in.",
+    "Yes, my taste in clothes has changed quite a lot over time. When I was younger I wore whatever my parents bought me, but now I have my own style and I prefer simpler, more classic pieces rather than bright, flashy ones."
+   ]
   },
   {
    "zid": "1F217B",
@@ -1255,7 +1295,19 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2–3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/354615c197ff45efb79f04818452780b/img1_1759758980.mp3"
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/354615c197ff45efb79f04818452780b/img1_1759758980.mp3",
+   "questions": [
+    "How do you usually spend your weekend?",
+    "What are some popular weekend activities among your friends?",
+    "What are your plans for the coming weekend?",
+    "How do you feel when the weekend is over? What would you like to change about your typical weekend?"
+   ],
+   "sampleAnswers": [
+    "I usually spend my weekend catching up on sleep and doing things I don't have time for during the week. I like to meet my friends, go for a walk, and in the evening I relax by watching series or playing video games.",
+    "Among my friends, the most popular weekend activities are going to the cinema, hanging out in cafes and playing sports. A lot of them also enjoy gaming together online, especially when the weather is bad outside.",
+    "This coming weekend I'm planning to go to the cinema with my friends to see a new film we've been waiting for. On Sunday I'll probably stay at home, finish some homework and spend time with my family.",
+    "When the weekend is over I usually feel a bit sad because it always seems to pass too quickly. If I could change something about my typical weekend, I would make it longer and try to spend less time on my phone and more time outdoors."
+   ]
   },
   {
    "zid": "2D90A4",
@@ -1263,7 +1315,15 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs//questions/960B72E44248BB2944DB1DB5112175D8/img1_1665759727.mp3"
+   "audio": "https://ege.fipi.ru/docs//questions/960B72E44248BB2944DB1DB5112175D8/img1_1665759727.mp3",
+   "questions": [
+    "your free time? What do you like to do on Sundays? Do you prefer to spend your free time with your",
+    "friends or your family? Why? How do your friends spend their free time? Where do they go and what"
+   ],
+   "sampleAnswers": [
+    "In my free time I love reading, drawing and listening to music, and on Sundays I usually take it slow and relax at home. I might go for a walk in the park or meet a friend for coffee, but mostly I use Sundays to recharge before the new week. As for company, it really depends on my mood, but most of the time I prefer spending my free time with my friends, because we share the same interests and always have fun together.",
+    "I'd say I enjoy time with both my friends and my family, but I lean towards my friends because we understand each other and laugh a lot. My friends spend their free time in different ways: most of them like going to the shopping mall, the cinema or sports clubs, and when the weather is nice they meet outside to play football or just walk around the city centre and chat."
+   ]
   },
   {
    "zid": "328DD2",
@@ -1271,7 +1331,21 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2–3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/7e6f67916e2b474ca4b0e17b7ada5353/img1_1777450439.mp3"
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/7e6f67916e2b474ca4b0e17b7ada5353/img1_1777450439.mp3",
+   "questions": [
+    "What is your favourite food? Why do you like it?",
+    "Is there any food you dislike? If yes, what is it?",
+    "Where do you usually shop for food?",
+    "Do you prefer to eat in or to eat out? Why?",
+    "What Russian dishes would you recommend to a foreigner?"
+   ],
+   "sampleAnswers": [
+    "My favourite food is definitely pizza, especially with cheese and mushrooms. I love it because it's tasty, you can share it with friends, and there are so many different toppings that you never really get tired of it.",
+    "Yes, there is one food I really dislike, and that's seafood, especially oysters and mussels. I don't like the texture at all, and the smell puts me off, so I always avoid it when I'm eating out.",
+    "I usually shop for food in a big supermarket near my house because it has everything in one place. Sometimes my family also buys fresh fruit and vegetables at the local market, since they taste better there.",
+    "I prefer to eat in most of the time because home-cooked food is healthier and cheaper. However, I do enjoy eating out occasionally as a treat, especially when I want to celebrate something with my friends or family.",
+    "I would definitely recommend a foreigner to try borscht, which is a delicious beetroot soup served with sour cream. I'd also suggest blini with different fillings, because they are a real symbol of Russian cuisine and most people love them."
+   ]
   },
   {
    "zid": "3EA1EF",
@@ -1279,7 +1353,15 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2–3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs//questions/CE19C538BD89A516423565DA8E6EAF2F/img1_1665759685.mp3"
+   "audio": "https://ege.fipi.ru/docs//questions/CE19C538BD89A516423565DA8E6EAF2F/img1_1665759685.mp3",
+   "questions": [
+    "Do Russian teens often use the internet? Can they use the internet only when they are at home? What do they use the internet for? What are the main advantages and disadvantages of the internet",
+    "in your opinion? When did you start using the internet? Have you ever been a member of any online"
+   ],
+   "sampleAnswers": [
+    "Yes, Russian teens use the internet a lot, and these days they can access it almost anywhere, not just at home, thanks to mobile data on their phones. We use it mainly for studying, chatting with friends, watching videos and listening to music. The main advantage, in my opinion, is instant access to information and communication, while the biggest disadvantage is that it can be very addictive and waste a lot of time.",
+    "I started using the internet when I was about seven years old, mostly for educational games and cartoons. Yes, I've been a member of several online communities, especially ones about my hobbies like music and gaming, where I can talk to people who share my interests."
+   ]
   },
   {
    "zid": "441E9E",
@@ -1287,7 +1369,19 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2– 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/B0C50CFBF7C19DE648B9295D83F57923/img1_1721127327.mp3"
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/B0C50CFBF7C19DE648B9295D83F57923/img1_1721127327.mp3",
+   "questions": [
+    "Do you like shopping? Is shopping a popular activity in Russia?",
+    "Who do you love shopping with? Why?",
+    "What do you like more? Shopping for clothes or shopping for food? Why? Why do you think online shopping is so popular these days?",
+    "How do you think people's shopping habits will change in the future?"
+   ],
+   "sampleAnswers": [
+    "I quite like shopping, especially when I'm looking for something specific like clothes or gifts. I think shopping is a popular activity in Russia too, because large shopping malls are everywhere and many people enjoy spending their weekends there.",
+    "I love shopping with my best friend because she has great taste and gives me honest advice. Shopping together turns it into a fun activity rather than a boring chore, and we always end up laughing and grabbing a coffee afterwards.",
+    "I definitely prefer shopping for clothes because it feels more personal and creative than buying groceries. As for online shopping, I think it's so popular these days because it's convenient, you can compare prices easily, and you can order almost anything without leaving your home.",
+    "I think people's shopping habits will become even more digital in the future, with most purchases made online. We'll probably see more delivery drones and virtual fitting rooms, although I believe some people will always enjoy going to physical shops for the experience."
+   ]
   },
   {
    "zid": "52A9D6",
@@ -1295,7 +1389,15 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2– 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs//questions/78D96B2DB30E8FEA465AD53FABEFB08F/img1_1647617157.mp3"
+   "audio": "https://ege.fipi.ru/docs//questions/78D96B2DB30E8FEA465AD53FABEFB08F/img1_1647617157.mp3",
+   "questions": [
+    "to visit? What are the functions of zoos in your opinion? Do you think zoos can protect the future",
+    "of many animal species? Are the advantages and disadvantages of keeping animals in zoos?"
+   ],
+   "sampleAnswers": [
+    "I really enjoy visiting zoos, especially good modern ones with spacious enclosures. In my opinion, zoos serve several important functions: they educate the public about wildlife, they help endangered species breed safely, and they fund conservation research. As for protecting the future, I do believe well-run zoos can play a real part in saving species from extinction.",
+    "Yes, I think zoos can help protect many animal species, because they run breeding programmes that keep populations alive when their natural habitats are disappearing. The main advantages are protection from poachers, medical care, and education for visitors. However, the disadvantages are that some animals suffer from stress and boredom in small cages, and they may lose the instincts they would need to survive in the wild."
+   ]
   },
   {
    "zid": "58DCD2",
@@ -1303,7 +1405,19 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs//questions/7867FAB2BAF4AAA141B87E0D91526387/img1_1665759666.mp3"
+   "audio": "https://ege.fipi.ru/docs//questions/7867FAB2BAF4AAA141B87E0D91526387/img1_1665759666.mp3",
+   "questions": [
+    "What's your favourite school subject? When did you get interested in it? Is your future profession connected with this subject?",
+    "In what way? When did you start learning English?",
+    "What tasks did you like doing at your English classes? Did you do anything outside English classes to master the language?",
+    "In what way can your knowledge of English help you in the future?"
+   ],
+   "sampleAnswers": [
+    "My favourite school subject is biology, because I find the human body and living organisms absolutely fascinating. I got interested in it around the eighth grade, when we started studying genetics and how cells work. Yes, my future profession is closely connected with it, since I would love to become a doctor or a medical researcher one day.",
+    "It is connected in a very direct way, because medicine relies entirely on understanding biology and chemistry. I started learning English quite early, when I was about seven years old in primary school.",
+    "At my English classes I really liked doing role-plays and watching short videos, because they felt more like fun than studying. I also enjoyed group discussions where we could share our opinions. Outside class I did a lot to master the language, such as watching films with subtitles, listening to English podcasts, and chatting with foreign friends online.",
+    "My knowledge of English can help me enormously in the future, especially because most modern medical research is published in English. It will allow me to read the latest studies, attend international conferences, and communicate with colleagues from all over the world. On top of that, it simply opens up far more career opportunities."
+   ]
   },
   {
    "zid": "66C899",
@@ -1311,7 +1425,17 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/BDBADF0B7404A8F346E252D15E06DC16/img1_1689774973.mp3"
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/BDBADF0B7404A8F346E252D15E06DC16/img1_1689774973.mp3",
+   "questions": [
+    "What science subjects have you studied? Which of them did you enjoy? Are there any inventions or discoveries which had negative effects? What would you like scientists to discover or invent in the future?",
+    "Why? Which scientist of the past or the present do you admire?",
+    "Why? What discovery or invention can you not live without?"
+   ],
+   "sampleAnswers": [
+    "I have studied several science subjects, including physics, chemistry, biology and astronomy. Out of all of them I enjoyed physics the most, because I love understanding how the world actually works. Sadly, some discoveries have had very negative effects, such as nuclear weapons and certain chemicals that pollute the environment. In the future, I would really like scientists to invent a cheap and clean source of energy.",
+    "I want that because our planet is suffering badly from climate change, and clean energy could solve so many of our problems at once. The scientist I admire most is probably Marie Curie, since she was a true pioneer in a time when science was dominated by men.",
+    "I admire her because she worked incredibly hard, won two Nobel Prizes, and her research on radioactivity later helped save countless lives through medical treatment. The invention I honestly cannot live without is the smartphone, because it keeps me connected to my friends, my studies, and almost all the information I need every single day."
+   ]
   },
   {
    "zid": "7A807A",
@@ -1319,7 +1443,15 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/339F92C355B7BF1E41EBFC3EB6EAF6A3/img1_1683035717.mp3"
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/339F92C355B7BF1E41EBFC3EB6EAF6A3/img1_1683035717.mp3",
+   "questions": [
+    "Do you know any outstanding Russian sportsmen? What are they famous for? How are children encouraged to do sports in Russian schools? What sports event have you participated in? What are your impressions about it? Do you prefer to watch sports events on TV or live?",
+    "Why? What sport would you like to take up in the future?"
+   ],
+   "sampleAnswers": [
+    "Yes, I know quite a few outstanding Russian sportsmen, such as the figure skater Evgenia Medvedeva and the tennis player Daniil Medvedev. They are famous for winning major international titles and for representing our country with real pride. In Russian schools, children are encouraged to do sports through regular PE lessons, school competitions and free sports clubs. I once took part in a school athletics event, and my impression was great because the atmosphere was so supportive and exciting. Personally, I prefer to watch sports events live rather than on TV.",
+    "I prefer live events because the energy of the crowd is amazing and you can feel the emotions in a way that the television never quite captures. In the future, I would really like to take up rock climbing, since it looks both challenging and adventurous, and it would help me become much fitter and braver."
+   ]
   },
   {
    "zid": "7FFA5A",
@@ -1327,7 +1459,19 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2– 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs//questions/839119239B51A96B4E8F3F21F99DED14/img1_1647617099.mp3"
+   "audio": "https://ege.fipi.ru/docs//questions/839119239B51A96B4E8F3F21F99DED14/img1_1647617099.mp3",
+   "questions": [
+    "Are there any programs for children on Russian TV? What kind of programs?",
+    "What kind of TV programs did you use to watch when you were a kid?",
+    "Are there any negative effects of television for children? Or can the TV programs be changed so that children can get more benefits from watching TV?",
+    "You think it is good to learn foreign languages through a TV language program? Why or why not?"
+   ],
+   "sampleAnswers": [
+    "Yes, there are quite a lot of programmes for children on Russian TV. There are educational cartoons, fun quiz shows, and channels like Karusel that are made specially for younger viewers. Most of them try to combine entertainment with learning, which I think is a good thing.",
+    "When I was a kid, I used to watch cartoons almost every day, especially Russian ones like Masha and the Bear and Smeshariki. I also loved nature documentaries about wild animals. Those programmes were both entertaining and educational, so my parents never minded me watching them.",
+    "Yes, there can be some negative effects, because too much television can make children passive, hurt their eyesight, and reduce the time they spend playing outside. However, I do think TV programmes can be improved so children benefit more. Broadcasters could show more educational and creative content and limit violent or pointless shows.",
+    "Yes, I think it is a great idea to learn foreign languages through a TV language programme. It makes learning enjoyable, and you hear real native pronunciation and natural everyday phrases. Of course, it works best when it is combined with speaking practice, because watching alone is not quite enough."
+   ]
   },
   {
    "zid": "81D15A",
@@ -1335,7 +1479,15 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/8F9755F36F51A3CE4A86BEF06AF5236D/img1_1689774925.mp3"
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/8F9755F36F51A3CE4A86BEF06AF5236D/img1_1689774925.mp3",
+   "questions": [
+    "What is the best way of travelling around Russia? What is your most memorable trip? Why has it made such a big impression on you? What places in Russia do you think are worth visiting?",
+    "Why? What problems can people have when they travel?"
+   ],
+   "sampleAnswers": [
+    "In my opinion, the best way of travelling around Russia is by train, because our country is huge and the railway connects almost every region. My most memorable trip was a journey to Lake Baikal with my family. It made such a big impression on me because the lake was breathtakingly beautiful and incredibly pure, and I had never seen nature on that scale before. I think places like Saint Petersburg, the Golden Ring towns and Kamchatka are definitely worth visiting.",
+    "These places are worth visiting because they show the amazing variety of Russia, from stunning historic architecture to wild volcanic landscapes. When people travel, they can face all sorts of problems, such as flight delays, lost luggage, language barriers, or simply running out of money before the trip ends."
+   ]
   },
   {
    "zid": "862FF0",
@@ -1343,7 +1495,21 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2–3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/1f26d170e7774d61b6e6229a314e792f/img1_1759758941.mp3"
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/1f26d170e7774d61b6e6229a314e792f/img1_1759758941.mp3",
+   "questions": [
+    "In what region do you live? Do you live in a big city, a town or in a village?",
+    "Do you live in a flat or in a house? What is it like?",
+    "What would you like to change about your flat or house? Why?",
+    "What do you like and dislike about your neighborhood?",
+    "What kind of housing would you like to have in the future?"
+   ],
+   "sampleAnswers": [
+    "I live in the Moscow region, in the central part of Russia. I would describe my home town as a fairly big city, although it is not as enormous as Moscow itself. I really like it because it has everything I need, yet it still feels comfortable and not too crowded.",
+    "I live in a flat in a modern apartment block on the fifth floor. It is quite cosy and has three rooms, a kitchen and a balcony with a nice view of the park. I especially love my own bedroom, because it is the place where I can relax and study in peace.",
+    "If I could change something about my flat, I would make it a bit bigger and add a separate study room. The reason is that my family is quite large, so sometimes it gets noisy and it is hard to concentrate on my homework. A little more space would make everyday life much more comfortable.",
+    "What I like about my neighbourhood is that it is green and safe, with a park and plenty of shops within walking distance. The thing I dislike, though, is that there is often a lot of traffic and the parking situation can be a real headache. Apart from that, it is a pleasant place to live.",
+    "In the future, I would love to have my own house with a garden somewhere just outside the city. I imagine a bright, spacious place with big windows and a quiet area where I could work from home. For me, the perfect home would combine the calm of nature with easy access to the city."
+   ]
   },
   {
    "zid": "891ADC",
@@ -1351,7 +1517,21 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs//questions/7FA5B9A8897699DA4E74094589CD617A/img1_1665759629.mp3"
+   "audio": "https://ege.fipi.ru/docs//questions/7FA5B9A8897699DA4E74094589CD617A/img1_1665759629.mp3",
+   "questions": [
+    "Why yes or no? What foreign languages did you study at school?",
+    "For how many years? Did you enjoy studying a foreign language at school?",
+    "What was the most difficult aspect for you? What do you think is the best way to",
+    "master a foreign language? How do you study English outside school?",
+    "What foreign languages would you like to learn in the future?"
+   ],
+   "sampleAnswers": [
+    "Yes, I definitely think it is worth it, because knowing foreign languages opens doors to new cultures and better careers. At school I studied two foreign languages, English and German.",
+    "I studied English for about nine years and German for around four years. On the whole, yes, I really enjoyed studying foreign languages at school, especially when the lessons were interactive and we could actually speak.",
+    "The most difficult aspect for me was definitely grammar, particularly all the irregular verbs and complicated tenses. In my opinion, the best way to",
+    "master a foreign language is to use it as much as possible in real situations, not just memorise rules. Outside school I study English by watching films and series in the original, listening to music, and texting with friends from other countries.",
+    "In the future, I would love to learn Spanish, because it is spoken in so many countries and sounds really beautiful. I might also try Japanese one day, since I am fascinated by the culture and would love to travel there."
+   ]
   },
   {
    "zid": "8996FB",
@@ -1359,7 +1539,19 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/1F4BBDB62A73B66F4D37D7857F8B6176/img1_1683035763.mp3"
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/1F4BBDB62A73B66F4D37D7857F8B6176/img1_1683035763.mp3",
+   "questions": [
+    "Do you agree that nowadays people read less than they used to in the past?",
+    "What is better, to read a book or to watch its screened version? Why?",
+    "How can good reading skills help teenagers in their future career? Who or what can help children shape their reading habits?",
+    "What are your current reading preferences? Have they changed since you were a child?"
+   ],
+   "sampleAnswers": [
+    "Yes, I completely agree with that. With smartphones and social media, most people, including my friends, spend their free time scrolling through short videos instead of picking up a book. Reading a long novel requires patience and concentration, which fewer people seem to have these days.",
+    "I think it really depends on the situation, but I usually prefer reading the book first. A book lets you imagine the characters and use your own creativity, while a film often cuts out important details to fit into two hours. That said, a good screen version can bring the story to life in a way that words alone cannot.",
+    "Good reading skills help teenagers process information quickly and think critically, which is essential in almost any profession. Whether you become a lawyer, an engineer or a doctor, you constantly have to read complex documents and reports. As for habits, I believe parents play the biggest role, but inspiring teachers and even friends who recommend books can make a huge difference too.",
+    "At the moment I really enjoy science fiction and detective stories because they keep me hooked until the very end. My preferences have definitely changed since childhood, when I only read short fairy tales and picture books. Now I look for novels that make me think and explore deeper themes."
+   ]
   },
   {
    "zid": "8E3CEC",
@@ -1367,7 +1559,21 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2– 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/CFAECAE1F1F0BAC0425EF2F50C881A39/img1_1721127396.mp3"
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/CFAECAE1F1F0BAC0425EF2F50C881A39/img1_1721127396.mp3",
+   "questions": [
+    "How long have you had your mobile phone?",
+    "What do you usually use your mobile phone for?",
+    "How do you feel if you forget your mobile phone? At home.",
+    "Where should you switch off your mobile phone?",
+    "Why is it difficult to live without a mobile phone now?"
+   ],
+   "sampleAnswers": [
+    "I have had my current mobile phone for about two years now. My parents gave it to me as a birthday present, and honestly it still works perfectly well, so I don't plan to replace it soon.",
+    "I mainly use my phone for chatting with friends and staying in touch with my family throughout the day. I also use it for studying, looking up information, listening to music, and of course scrolling through social media when I have free time.",
+    "If I forget my phone at home, I feel really anxious and kind of disconnected from everyone. I keep reaching into my pocket out of habit, and I worry that I might miss an important message. By the end of the day, though, I sometimes realise it was actually quite relaxing.",
+    "I think you should switch off your mobile phone in places where it could disturb other people. For example, it's only polite to turn it off in a cinema, a theatre, or during a lesson at school. Hospitals are another place where phones should definitely be silenced.",
+    "It's difficult to live without a mobile phone now because our whole lives are connected to it. We use it for communication, navigation, payments, and even studying, so without it we would feel completely lost. Society has become so dependent on these devices that doing simple daily tasks would suddenly become much harder."
+   ]
   },
   {
    "zid": "96601E",
@@ -1383,7 +1589,17 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2– 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs//questions/499A8D1C141397C940624F14F6E75A85/img1_1647617068.mp3"
+   "audio": "https://ege.fipi.ru/docs//questions/499A8D1C141397C940624F14F6E75A85/img1_1647617068.mp3",
+   "questions": [
+    "What do you think are the main advantages of studying online? Do you see any disadvantages of online education?",
+    "What subjects can be studied online with good results?",
+    "Would you prefer to study at university online?"
+   ],
+   "sampleAnswers": [
+    "The main advantages of studying online are flexibility and convenience, because you can learn from anywhere without wasting time on travelling. However, I do see some disadvantages too, such as the lack of live communication with classmates and the constant temptation to get distracted at home.",
+    "I think subjects like programming, languages, history and mathematics can be studied online with really good results. These subjects mostly rely on theory, videos and practice exercises, which work perfectly through a screen. On the other hand, subjects that need a laboratory or physical equipment are much harder to learn remotely.",
+    "Honestly, I would prefer to study at university in person rather than online. The social side of university life, like meeting new people and joining clubs, is just as important to me as the lectures themselves. Still, I would happily take a few online courses to make my schedule more flexible."
+   ]
   },
   {
    "zid": "AD0750",
@@ -1391,7 +1607,19 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs//questions/8922735838A99121481E4A008EF71AD9/img1_1665759704.mp3"
+   "audio": "https://ege.fipi.ru/docs//questions/8922735838A99121481E4A008EF71AD9/img1_1665759704.mp3",
+   "questions": [
+    "What is your favorite food? Why do you like it so much? Can you cook it? Have your food preferences changed over time?",
+    "Why or why not? Do you think your favorite food is healthy?",
+    "Is there any unhealthy food that you like? How often do you eat your favorite food?",
+    "Would you like to eat it more often? Is there any food you dislike?"
+   ],
+   "sampleAnswers": [
+    "My favourite food is definitely homemade pizza, and I like it so much because you can put absolutely any topping you want on it. I can actually cook it myself, since my mum taught me how to make the dough from scratch. My preferences have changed over time, because as a child I only liked plain cheese, but now I enjoy spicy and unusual combinations.",
+    "I wouldn't say my favourite food is particularly healthy, to be honest. Pizza usually has a lot of cheese and refined flour, which aren't the best for you. However, when I make it at home with fresh vegetables, it becomes a bit healthier than the fast-food version.",
+    "Yes, I have to admit that I really love chocolate, even though I know it's not good for me. I try to eat my favourite food, pizza, only about once a week so that it stays a treat rather than a habit. Eating it too often would probably make me feel sluggish and unhealthy.",
+    "I would love to eat pizza more often, but I know that wouldn't be good for my health or my energy levels. As for food I dislike, I really can't stand mushrooms because of their slimy texture. No matter how they are cooked, I always end up picking them out of my plate."
+   ]
   },
   {
    "zid": "C7264C",
@@ -1399,7 +1627,21 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2– 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/0AA63D68E4F6A0C24514F458F23A2A76/img1_1721379609.mp3"
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/0AA63D68E4F6A0C24514F458F23A2A76/img1_1721379609.mp3",
+   "questions": [
+    "Why do you think so many people have pets?",
+    "What pets are popular in Russia?",
+    "Do you have a pet? If yes, what is it? If no, would you like to have it?",
+    "How can children benefit from having a pet?",
+    "What are some of the disadvantages of having a pet?"
+   ],
+   "sampleAnswers": [
+    "I think so many people have pets because animals give them companionship and unconditional love. After a stressful day at school or work, coming home to a happy pet can instantly lift your mood. For people who live alone, a pet can also be a real cure for loneliness.",
+    "In Russia the most popular pets are definitely cats and dogs, just like in most countries. A lot of families also keep smaller animals such as hamsters, parrots and goldfish, especially in city flats where space is limited. I'd say cats are slightly more common because they are easier to look after.",
+    "Yes, I have a cat called Marsik, and he is honestly the funniest member of our family. He has a huge personality and always demands attention exactly when I'm trying to study. I can't imagine my life without him now.",
+    "Children can benefit from having a pet in many ways, especially by learning responsibility. When a child has to feed and walk an animal every day, they understand that another living being depends on them. It also teaches them kindness, patience and how to care for someone other than themselves.",
+    "The main disadvantages of having a pet are the cost and the amount of time they require. Vet bills, food and toys can become quite expensive, and you can't just leave for a holiday without arranging care. Pets can also create mess at home, like fur on the furniture or chewed shoes."
+   ]
   },
   {
    "zid": "CB950A",
@@ -1407,7 +1649,17 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs//questions/2A9B48D45D5CABD64C98AC68D5338AA5/img1_1671724284.mp3"
+   "audio": "https://ege.fipi.ru/docs//questions/2A9B48D45D5CABD64C98AC68D5338AA5/img1_1671724284.mp3",
+   "questions": [
+    "Why or why not? Why do you think so many people enjoy the sales?",
+    "What are the main advantages and disadvantages of shopping online?",
+    "Who do you love shopping with? Why? What are your favorite shops?"
+   ],
+   "sampleAnswers": [
+    "I think people enjoy the sales mainly because of the thrill of getting a good bargain. There's something really satisfying about buying something you wanted at a much lower price than usual. However, I sometimes worry that sales make people buy things they don't actually need just because they seem cheap.",
+    "The main advantages of shopping online are convenience and variety, since you can compare hundreds of products without leaving your home. On the other hand, the biggest disadvantage is that you can't try things on or check the quality before buying. Delivery can also take a long time, and returning items is often a real hassle.",
+    "I love shopping with my best friend because she always gives me honest advice about what suits me. We turn it into a fun day out with coffee and lots of laughing in the fitting rooms. My favourite shops are clothing stores and bookshops, where I could easily spend the whole afternoon."
+   ]
   },
   {
    "zid": "CD8E66",
@@ -1415,7 +1667,15 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/DADF7CC0276E9C0345A76ACB4FE2D1C7/img1_1689774951.mp3"
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/DADF7CC0276E9C0345A76ACB4FE2D1C7/img1_1689774951.mp3",
+   "questions": [
+    "Why do you think people like taking photographs? Do you like having your photo taken? Why or why not? How often do you take photos? What of? What is your favorite photo?",
+    "Describe it. Why do you think so many people enjoy taking selfies?"
+   ],
+   "sampleAnswers": [
+    "I think people like taking photographs because it allows them to capture special moments and keep their memories forever. Personally, I don't really enjoy having my photo taken because I always feel a bit awkward in front of the camera. I take photos quite often, mostly of landscapes, my pets and time spent with friends, and my favourite one is a sunset I caught during a summer trip to the seaside.",
+    "It's a simple photo of the sky glowing orange and pink over the water, with my friends laughing in silhouette, and it instantly reminds me of that perfect evening. I think so many people enjoy taking selfies because it gives them an easy way to express themselves and share their lives instantly. A selfie lets you control exactly how you look and show your mood, which makes it really popular among teenagers."
+   ]
   },
   {
    "zid": "CFE876",
@@ -1423,7 +1683,21 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2– 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/3ADC1F0777DFB9C042DB756CDC925984/img1_1721127350.mp3"
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/3ADC1F0777DFB9C042DB756CDC925984/img1_1721127350.mp3",
+   "questions": [
+    "Do you use public transport on a regular basis?",
+    "What public transport is available in the place where you live? Does this place need more public transport?",
+    "What are the main advantages and disadvantages of public transport?",
+    "What do you usually do when you get stuck in a traffic jam?",
+    "Do you agree that people should try to use public transport more often? Why or why not?"
+   ],
+   "sampleAnswers": [
+    "Yes, I use public transport on a regular basis, mostly to get to school every morning. I usually take the bus, and sometimes the metro when I need to travel across the city. It's much cheaper and more convenient than asking my parents to drive me everywhere.",
+    "In the place where I live, we have buses, trolleybuses and a metro system, which covers most of the city. I think the network is quite good, but our area could definitely use more buses during rush hour, because they get extremely crowded. A few more routes to the newer neighbourhoods would also really help.",
+    "The main advantages of public transport are that it's affordable and environmentally friendly, since one bus replaces many cars on the road. The disadvantages, however, are the crowds during peak hours and the fact that timetables aren't always reliable. Sometimes you end up waiting in the cold for a bus that's running late.",
+    "When I get stuck in a traffic jam, I usually try to make the most of the time instead of getting frustrated. I put on my headphones and listen to music or a podcast, and sometimes I review my notes before a test. If a friend is with me, we just chat and the time passes much faster.",
+    "Yes, I strongly agree that people should use public transport more often, mainly for environmental reasons. If more people left their cars at home, our cities would have less traffic and much cleaner air. It would also be cheaper for individuals and reduce the stress of finding parking everywhere."
+   ]
   },
   {
    "zid": "D5DB26",
@@ -1431,7 +1705,15 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/67D784BA1CDB8CE74D15586359A270C5/img1_1689775060.mp3"
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/67D784BA1CDB8CE74D15586359A270C5/img1_1689775060.mp3",
+   "questions": [
+    "What are some of the places of interest in your region? Why should a tourist see them? Is it important to preserve historical places? Why or why not? What is your favourite place in your hometown? Why do you like it? What sort of places will be interesting for people in the future?",
+    "Why do you think so? How can we make teenagers be more interested in local culture?"
+   ],
+   "sampleAnswers": [
+    "There are quite a few interesting places in my region, including an old kremlin, a couple of museums and a beautiful riverside park. Tourists should definitely see them because they show the real history and character of the area, not just what you find on postcards. Walking around these spots gives you a much deeper sense of how people used to live here.",
+    "I think so because our history shapes who we are, and once an old building is demolished it is gone forever. To make teenagers more interested in local culture, schools could organise interactive quests instead of boring tours, and we could create social media accounts where young people share photos and short videos of hidden gems in their town."
+   ]
   },
   {
    "zid": "D5F55F",
@@ -1439,7 +1721,17 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2–3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/871188f41e064a55b180a51f8334c60b/img1_1754645991.mp3"
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/871188f41e064a55b180a51f8334c60b/img1_1754645991.mp3",
+   "questions": [
+    "If yes, what was it like? Do you think",
+    "a visit to a zoo can be useful for a child? Why or why not? What animals can people see in zoos?",
+    "What role do zoos play in protecting endangered species?"
+   ],
+   "sampleAnswers": [
+    "Yes, I went to a zoo last summer, and it was a really memorable experience. The enclosures were spacious and green, and I spent ages watching the tigers and penguins. Honestly, it felt more like a nature park than a typical zoo.",
+    "Yes, I believe a visit to a zoo can be very useful for a child because it lets them see real animals instead of just pictures on a screen. In zoos people can usually see lions, elephants, monkeys, giraffes and all kinds of exotic birds. Seeing these creatures up close teaches kids to respect and care about wildlife.",
+    "Zoos play an important role in protecting endangered species because they run breeding programmes that help increase the numbers of rare animals. They also fund research and educate the public about why these species are disappearing. Without zoos, some animals might have gone extinct completely."
+   ]
   },
   {
    "zid": "D9A0ED",
@@ -1447,7 +1739,21 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2– 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/C779B2BF8EDC83324403EE3865773FD8/img1_1721127372.mp3"
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/C779B2BF8EDC83324403EE3865773FD8/img1_1721127372.mp3",
+   "questions": [
+    "Why is it important for people to help others?",
+    "Is it easy for you to ask for help from your family and friends? Why or why not?",
+    "Do you enjoy helping others? How often do you do it?",
+    "How can teenagers help elderly people?",
+    "How can students help one another?"
+   ],
+   "sampleAnswers": [
+    "I think it is important to help others because we all face difficult moments when we cannot cope alone. When you support someone, you make their life easier and you also build a kinder, more connected society. Besides, helping others usually comes back to you when you need it most.",
+    "To be honest, it is quite easy for me to ask my family for help because I know they will never judge me. With friends it is a little harder, especially with personal problems, because I do not want to seem weak. Still, I am slowly learning that asking for help is completely normal.",
+    "Yes, I really enjoy helping others because it gives me a warm feeling of being useful. I do it fairly often, maybe a few times a week, whether it is explaining homework to a classmate or carrying bags for my grandmother. Even small acts of help can make someone's day better.",
+    "Teenagers can help elderly people in many simple ways, like doing their shopping or teaching them how to use smartphones and apps. They can also just spend time with them, talking and listening, because many older people feel lonely. These small gestures really mean a lot to them.",
+    "Students can help one another by sharing notes and explaining topics that someone has missed or found difficult. They can also support classmates emotionally when exams get stressful and everyone is anxious. Working together makes studying less overwhelming and a lot more enjoyable."
+   ]
   },
   {
    "zid": "F057C7",
@@ -1455,7 +1761,17 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs//questions/A13823033525BF814E60DDE4AAFBD0FA/img1_1665759565.mp3"
+   "audio": "https://ege.fipi.ru/docs//questions/A13823033525BF814E60DDE4AAFBD0FA/img1_1665759565.mp3",
+   "questions": [
+    "What part of Russia do you live in? What's the climate like in your region? Have you observed any changes in the climate of your region lately? What are they, if any? Do weather forecasts usually turn out to be right for your region?",
+    "What is your favorite season?",
+    "Why? What kind of climate would you prefer to live in?"
+   ],
+   "sampleAnswers": [
+    "I live in the central part of Russia, not far from Moscow. The climate here is moderate, with warm summers and quite cold, snowy winters. Lately I have noticed that the winters are becoming milder and there is much less snow than there used to be, which I think is linked to climate change. As for weather forecasts, they are usually fairly accurate for a day or two ahead, but the longer predictions often turn out to be wrong.",
+    "My favourite season is definitely summer.",
+    "I love summer because the days are long, the weather is warm and I have a long holiday from school to relax and travel. If I could choose, I would prefer to live in a mild, sunny climate without freezing winters, somewhere near the sea. I think I would feel happier and more energetic in a place like that."
+   ]
   },
   {
    "zid": "F2B719",
@@ -1463,7 +1779,15 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/51B46390D2E6BD1941519B7CDBFF68DC/img1_1689775040.mp3"
+   "audio": "https://ege.fipi.ru/docs/4B53A6CB75B0B5E1427E596EB4931A2A/questions/51B46390D2E6BD1941519B7CDBFF68DC/img1_1689775040.mp3",
+   "questions": [
+    "Do you prefer to play team or individual sports? Why? How can we encourage young people to do more sports?",
+    "Which sports do you and your friends particularly enjoy? Why? Why do you think so many people are fond of extreme sports these days?"
+   ],
+   "sampleAnswers": [
+    "I usually prefer team sports because I love the feeling of working together towards a common goal and celebrating victories with others. Playing in a team also pushes me to try harder so I do not let my teammates down. To encourage young people to do more sports, we could organise fun school tournaments and make sports clubs free or much cheaper.",
+    "My friends and I particularly enjoy basketball and volleyball because they are fast, exciting and easy to play almost anywhere. They also keep us fit and give us a great way to spend time together after lessons. I think so many people are fond of extreme sports these days because everyday life feels quite safe and predictable, so they are looking for a rush of adrenaline and a sense of real adventure."
+   ]
   },
   {
    "zid": "F2C561",
@@ -1471,7 +1795,19 @@
    "task": 3,
    "instruction": "Task 3. You are going to give an interview. You have to answer five questions. Give full answers to the questions (2 – 3 sentences). Remember that you have 40 seconds to answer each question.",
    "images": [],
-   "audio": "https://ege.fipi.ru/docs//questions/D15A68BE55C88B9F417BC6BB9424915F/img1_1651245736.mp3"
+   "audio": "https://ege.fipi.ru/docs//questions/D15A68BE55C88B9F417BC6BB9424915F/img1_1651245736.mp3",
+   "questions": [
+    "have in Russia? Do you think that girls and boys have",
+    "the same chores? Do you have brothers or sisters?",
+    "Do you and your siblings have household chores? What are they? What household chores do you dislike? Why?",
+    "What is your general attitude to household chores?"
+   ],
+   "sampleAnswers": [
+    "Most families in Russia have a range of typical household chores, such as cooking, cleaning, washing the dishes and doing the laundry. As for whether girls and boys should have different chores, I personally do not think so, because housework is not connected to gender at all and everyone should learn to look after themselves.",
+    "I believe boys and girls can do exactly the same chores, like cooking, vacuuming or taking out the rubbish, equally well. Sharing tasks fairly teaches everyone to be independent and responsible. And yes, I do have a younger brother whom I share these duties with.",
+    "Yes, my brother and I both have regular household chores to do. I am usually responsible for washing the dishes and tidying my room, while he takes out the rubbish and walks the dog. The chore I dislike most is definitely washing the dishes, because it feels endless and the plates pile up again so quickly.",
+    "My general attitude to household chores is fairly positive, even though I do not always enjoy them. I see them as a necessary part of life that teaches responsibility and helps the whole family. After all, when everyone contributes, the home stays comfortable and nobody feels overloaded."
+   ]
   },
   {
    "zid": "F3C670",
