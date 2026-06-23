@@ -1208,6 +1208,34 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .tch-bar-btns{display:flex;gap:8px;flex:1;justify-content:flex-end;flex-wrap:wrap}
 .tch-bar .btn{padding:9px 12px;font-size:13px}
 .tch-clear{background:transparent;color:var(--muted)}
+/* модалка ссылки-ДЗ */
+.tch-link-modal{max-width:420px}
+.tch-link-h{font-size:17px;font-weight:800;margin-bottom:4px}
+.tch-link-sub{font-size:13px;color:var(--muted);margin-bottom:12px;line-height:1.4}
+.tch-link-in{width:100%;box-sizing:border-box;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--surf);color:var(--ink);font-size:12px}
+.tch-link-btns{display:flex;gap:8px;justify-content:flex-end;margin-top:12px}
+/* поток ученика: решение ДЗ */
+.hw{padding-bottom:90px}
+.hw-top{display:flex;align-items:center;gap:10px;padding:10px 14px}
+.hw-t{font-size:18px;font-weight:800}
+.hw-sub{font-size:12.5px;color:var(--muted)}
+.hw-list{padding:6px 14px;display:flex;flex-direction:column;gap:12px}
+.hw-q{display:flex;gap:8px;align-items:baseline;font-size:15px;line-height:1.6}
+.hw-n{font-weight:800;color:var(--p-text);flex:none}
+.hw-text{flex:1}
+.hw-input{display:inline-block;min-width:90px;width:auto;font-size:14px;padding:2px 8px;border:none;border-bottom:2px solid var(--p-text);background:var(--surf);border-radius:5px 5px 0 0;color:var(--ink)}
+.hw-bar{position:fixed;left:0;right:0;bottom:0;z-index:8;display:flex;gap:10px;padding:12px 14px;background:var(--card);border-top:1px solid var(--line)}
+.hw-score{display:flex;align-items:center;justify-content:center;gap:16px;padding:16px}
+.hw-score-v{font-size:30px;font-weight:800;color:var(--p-text)}
+.hw-score-p{font-size:20px;font-weight:700;color:var(--muted)}
+.hw-rev{padding:10px 12px;border-radius:12px;border:1px solid var(--line)}
+.hw-rev.ok{background:rgba(60,180,90,.08);border-color:rgba(60,180,90,.4)}
+.hw-rev.no{background:rgba(220,70,70,.07);border-color:rgba(220,70,70,.4)}
+.hw-rev-t{font-size:14px;line-height:1.4}
+.hw-rev-a{font-size:13px;margin-top:5px;display:flex;gap:6px;align-items:baseline}
+.hw-rev-mark{font-weight:800}
+.hw-rev.ok .hw-rev-mark{color:#2f9e44}
+.hw-rev.no .hw-rev-mark{color:#d64545}
 /* связный текст с пропусками (грам/словообр) в пробнике */
 .mock-tg-h{font-size:13px;font-weight:800;color:var(--p-text);margin:4px 0 8px}
 .mock-tg-text{font-size:15px;line-height:2.1;color:var(--ink)}

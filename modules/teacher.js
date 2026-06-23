@@ -180,6 +180,7 @@ export async function renderTeacher(container, opts) {
       barCount,
       el('div', { class: 'tch-bar-btns' }, [
         el('button', { class: 'btn tch-clear', text: T.clear, onclick: () => { picked.clear(); draw(); } }),
+        el('button', { class: 'btn', text: '🔗 ' + T.linkBtn, onclick: copyLink }),
         el('button', { class: 'btn', text: '🗝 ' + T.printKeys, onclick: () => openPrint(true) }),
         el('button', { class: 'btn btn-primary', text: '🖨 ' + T.printWs, onclick: () => openPrint(false) }),
       ]),
@@ -215,5 +216,138 @@ export async function renderTeacher(container, opts) {
     });
   }
 
+  // кодируем выбранное в компактную строку: "secId:zid,zid;secId:zid"
+  function encodeSet() {
+    const parts = [];
+    for (const s of drillSecs) {
+      const zids = secItems(s.id).filter((it) => picked.has(s.id + ':' + it.zid)).map((it) => it.zid);
+      if (zids.length) parts.push(s.id + ':' + zids.join(','));
+    }
+    return parts.join(';');
+  }
+
+  function copyLink() {
+    if (!picked.size) return;
+    const url = location.origin + location.pathname + '#/hw?' + encodeSet();
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(() => linkModal(url, true), () => linkModal(url, false));
+    } else linkModal(url, false);
+  }
+
+  // модалка со ссылкой (для копирования вручную / подтверждения)
+  function linkModal(url, copied) {
+    const inp = el('input', { class: 'tch-link-in', type: 'text', value: url, readonly: true });
+    const back = el('div', { class: 'modal-back', onclick: (e) => { if (e.target === back) back.remove(); } }, [
+      el('div', { class: 'modal tch-link-modal' }, [
+        el('div', { class: 'tch-link-h', text: copied ? T.linkCopied : T.linkTitle }),
+        el('div', { class: 'tch-link-sub', text: T.linkSub(picked.size) }),
+        inp,
+        el('div', { class: 'tch-link-btns' }, [
+          el('button', { class: 'btn', text: T.linkCopyAgain, onclick: () => { inp.select(); navigator.clipboard && navigator.clipboard.writeText(url); } }),
+          el('button', { class: 'btn btn-primary', text: T.linkClose, onclick: () => back.remove() }),
+        ]),
+      ]),
+    ]);
+    document.body.appendChild(back);
+    setTimeout(() => { inp.focus(); inp.select(); }, 50);
+  }
+
   draw();
+}
+
+// ===== Поток ученика: решение ДЗ по ссылке (#/hw?secId:zid,zid;…) =====
+export async function renderHomework(container, opts) {
+  const H = t.homework;
+  mount(container, el('div', { class: 'view' }, [el('div', { class: 'loader', text: H.loading })]));
+
+  // парсим набор
+  const groups = {};
+  for (const part of (opts.query || '').split(';')) {
+    const i = part.indexOf(':');
+    if (i < 0) continue;
+    const sec = part.slice(0, i), csv = part.slice(i + 1);
+    if (sec && csv) groups[sec] = csv.split(',').filter(Boolean);
+  }
+  const keys = await loadJSON(EXAM.keysFile);
+  const tasks = []; // {secId, it}
+  for (const secId of Object.keys(groups)) {
+    const cfg = EXAM.sections.find((s) => s.id === secId);
+    if (!cfg) continue;
+    let bank;
+    try { bank = await loadJSON(cfg.dataFile); } catch (e) { continue; }
+    const byZid = {};
+    for (const it of bank) byZid[it.zid] = it;
+    for (const zid of groups[secId]) { const it = byZid[zid]; if (it) tasks.push({ secId, it }); }
+  }
+
+  if (!tasks.length) {
+    mount(container, el('div', { class: 'view hw' }, [
+      el('div', { class: 'hw-top' }, [el('button', { class: 'back', text: '←', onclick: opts.goHome }), el('div', { class: 'hw-t', text: H.title })]),
+      el('div', { class: 'tch-empty', text: H.broken }),
+    ]));
+    return;
+  }
+
+  const answers = {}; // zid -> ввод
+  // нормализация для проверки: нижний регистр, без артикля, схлоп пробелов
+  const norm = (s) => (s || '').toLowerCase().trim().replace(/\s+/g, ' ').replace(/^(a|an|the)\s+/, '');
+
+  const view = el('div', { class: 'view hw' });
+  mount(container, view);
+
+  function drawTasks() {
+    view.replaceChildren();
+    view.appendChild(el('div', { class: 'hw-top' }, [
+      el('button', { class: 'back', text: '←', onclick: opts.goHome }),
+      el('div', { class: 'hw-h' }, [el('div', { class: 'hw-t', text: H.title }), el('div', { class: 'hw-sub', text: H.count(tasks.length) })]),
+    ]));
+    const list = el('div', { class: 'hw-list' });
+    tasks.forEach((tk, i) => {
+      const parts = (tk.it.text || '').split(/_{3,}/);
+      const inp = el('input', { class: 'hw-input', type: 'text', value: answers[tk.it.zid] || '', placeholder: H.answerPh });
+      inp.addEventListener('input', () => { answers[tk.it.zid] = inp.value; });
+      list.appendChild(el('div', { class: 'hw-q' }, [
+        el('span', { class: 'hw-n', text: (i + 1) + '.' }),
+        el('span', { class: 'hw-text' }, [document.createTextNode(parts[0] || ''), inp, document.createTextNode(parts[1] || ' ')]),
+      ]));
+    });
+    view.appendChild(list);
+    view.appendChild(el('div', { class: 'hw-bar' }, [
+      el('button', { class: 'btn btn-primary btn-block', text: H.check, onclick: showResult }),
+    ]));
+  }
+
+  function showResult() {
+    let correct = 0;
+    const rows = tasks.map((tk, i) => {
+      const key = (keys[tk.it.zid] || {}).answer || '';
+      const mine = answers[tk.it.zid] || '';
+      const ok = norm(mine) === norm(key) && mine.trim() !== '';
+      if (ok) correct += 1;
+      const prev = (tk.it.text || '').replace(/_{3,}/, ' ___ ');
+      return el('div', { class: 'hw-rev ' + (ok ? 'ok' : 'no') }, [
+        el('div', { class: 'hw-rev-t', text: (i + 1) + '. ' + prev }),
+        el('div', { class: 'hw-rev-a' }, [
+          el('span', { class: 'hw-rev-mark', text: ok ? '✓' : '✗' }),
+          el('span', { text: ok ? H.yourCorrect(key) : H.yourWrong(mine || '—', key) }),
+        ]),
+      ]);
+    });
+    const pc = Math.round(correct / tasks.length * 100);
+    view.replaceChildren(
+      el('div', { class: 'hw-top' }, [el('button', { class: 'back', text: '←', onclick: opts.goHome }), el('div', { class: 'hw-t', text: H.resultTitle })]),
+      el('div', { class: 'hw-score' }, [
+        el('div', { class: 'hw-score-v', text: correct + ' / ' + tasks.length }),
+        el('div', { class: 'hw-score-p', text: pc + '%' }),
+      ]),
+      el('div', { class: 'hw-list' }, rows),
+      el('div', { class: 'hw-bar' }, [
+        el('button', { class: 'btn', text: H.retry, onclick: () => { for (const k in answers) delete answers[k]; drawTasks(); } }),
+        el('button', { class: 'btn btn-primary', text: H.done, onclick: opts.goHome }),
+      ]),
+    );
+    view.scrollTop = 0;
+  }
+
+  drawTasks();
 }

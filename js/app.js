@@ -22,7 +22,7 @@ import { renderListening } from '../modules/listening.js';
 import { renderSpeaking } from '../modules/speaking.js';
 import { renderEgeSpeaking } from '../modules/ege_speaking.js';
 import { renderMock } from '../modules/mock.js';
-import { renderTeacher } from '../modules/teacher.js';
+import { renderTeacher, renderHomework } from '../modules/teacher.js';
 
 const view = document.getElementById('view');
 const goHome = () => { location.hash = '#/'; };
@@ -55,6 +55,7 @@ function route() {
   if (hash === 'rewards')  return renderRewards();
   if (hash === 'plan')     return renderPlan();
   if (hash === 'teacher')  { document.body.classList.add('in-flow'); return renderTeacher(view, { goHome }); }
+  if (hash.split('?')[0] === 'hw') { document.body.classList.add('in-flow'); return renderHomework(view, { goHome, query: hash.slice(hash.indexOf('?') + 1) }); }
   if (sec && sec.type === 'drill')   return renderDrill(view, { ...DRILL[sec.id], goHome });
   if (sec && sec.type === 'writing') return renderWriting(view, { goHome, sectionId: sec.id });
   if (sec && sec.type === 'reading') return (EXAM.id === 'ege' ? renderReadingEge : renderReading)(view, { goHome, dataFile: sec.dataFile });
@@ -725,6 +726,9 @@ document.querySelectorAll('#bottom-nav a').forEach((a) => {
 applyTheme(getTheme());
 applySkin();
 window.addEventListener('hashchange', route);
-if (!getName()) renderWelcome();
+// ссылка-ДЗ открывается сразу (без онбординга — ученик может быть впервые)
+const isHwLink = location.hash.replace(/^#\/?/, '').split('?')[0] === 'hw';
+if (isHwLink) route();
+else if (!getName()) renderWelcome();
 else if (!isOnboarded()) renderExamDate();   // имя есть, но онбординг не завершён → дата + интро
 else route();

@@ -231,6 +231,15 @@ export const STRINGS = {
       printKeys: 'С ключами', printWs: 'Worksheet',
       picked: (n) => 'Выбрано: ' + n,
       wsTitle: 'Worksheet · Speak & Smile', wsSub: (badge) => badge,
+      linkBtn: 'Ссылка-ДЗ', linkCopied: 'Ссылка скопирована ✓', linkTitle: 'Ссылка на ДЗ',
+      linkSub: (n) => 'Отправь ученику — он решит ' + n + ' заданий онлайн с автопроверкой',
+      linkCopyAgain: 'Копировать', linkClose: 'Готово',
+    },
+    homework: {
+      loading: 'Загружаю задания…', title: 'Домашнее задание', count: (n) => n + ' заданий',
+      answerPh: 'ответ', check: 'Проверить', broken: 'Ссылка повреждена или задания не найдены',
+      resultTitle: 'Результат', retry: 'Ещё раз', done: 'Готово',
+      yourCorrect: (k) => 'Верно: ' + k, yourWrong: (m, k) => 'Твой ответ: ' + m + ' · Верно: ' + k,
     },
     // vocab (лексика — тема недели + флэшкарты/SRS)
     vocab: {
@@ -778,6 +787,15 @@ export const STRINGS = {
       printKeys: 'С ключами', printWs: 'Worksheet',
       picked: (n) => 'Выбрано: ' + n,
       wsTitle: 'Worksheet · Speak & Smile', wsSub: (badge) => badge,
+      linkBtn: 'Ссылка-ДЗ', linkCopied: 'Ссылка скопирована ✓', linkTitle: 'Ссылка на ДЗ',
+      linkSub: (n) => 'Отправь ученику — он решит ' + n + ' заданий онлайн с автопроверкой',
+      linkCopyAgain: 'Копировать', linkClose: 'Готово',
+    },
+    homework: {
+      loading: 'Loading tasks…', title: 'Homework', count: (n) => n + ' tasks',
+      answerPh: 'answer', check: 'Check', broken: 'The link is broken or tasks not found',
+      resultTitle: 'Result', retry: 'Again', done: 'Done',
+      yourCorrect: (k) => 'Correct: ' + k, yourWrong: (m, k) => 'Your answer: ' + m + ' · Correct: ' + k,
     },
     sections: { vocab: 'Topic Vocabulary', grammar: 'Grammar', wordform: 'Word formation', reading: 'Reading', listening: 'Listening', writing: 'Writing', speaking: 'Speaking', mock: 'Mock exam', lexis: 'Vocabulary', email: 'Email', essay: 'Essay' },
     sectionMeta: { vocab: 'theme of the week · 15 words a day', grammar: '341 tasks · 9 topics', wordform: '275 tasks · word forms', reading: '469 tasks · 3 formats', listening: 'FIPI audio · multiple choice', writing: 'writing', speaking: '184 tasks · recorder + AI', mock: 'full timed paper', lexis: '275 tasks · 9 topics', email: 'task 37 · K1–K3', essay: 'task 38 · K1–K5' },
