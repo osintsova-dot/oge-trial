@@ -353,34 +353,36 @@ export async function renderHomework(container, opts) {
     });
     view.appendChild(list);
     view.appendChild(el('div', { class: 'hw-bar' }, [
-      el('button', { class: 'btn btn-primary btn-block', text: H.check, onclick: showResult }),
+      el('button', { class: 'btn btn-primary btn-block', text: '📤 ' + H.submit, onclick: submitToTeacher }),
     ]));
   }
 
-  function showResult() {
+  // Сдать: фиксируем ответы → даём ссылку учителю → ПОТОМ показываем разбор (переделать нельзя)
+  function submitToTeacher() {
+    if (!confirm(H.confirmSubmit)) return;
+    let name = getName();
+    if (!name) name = (prompt(H.askName) || '').trim();
+    const payload = { n: name || H.anon, set: groups, a: { ...answers } }; // снимок ответов
+    const url = location.origin + location.pathname + '#/hwr?' + b64e(JSON.stringify(payload));
+    showReview();
+    copyLinkSheet({ url, title: H.sendTitle, sub: H.sendSub, copyLabel: H.copy, closeLabel: H.close });
+  }
+
+  // разбор после сдачи — без «переделать»; повторно отправить улучшенный результат нельзя
+  function showReview() {
     const { correct, rows } = reviewRows(tasks, answers, keys, H);
     const pc = Math.round(correct / tasks.length * 100);
     view.replaceChildren(
       el('div', { class: 'hw-top' }, [el('button', { class: 'back', text: '←', onclick: opts.goHome }), el('div', { class: 'hw-t', text: H.resultTitle })]),
+      el('div', { class: 'hw-note', text: H.sentNote }),
       el('div', { class: 'hw-score' }, [
         el('div', { class: 'hw-score-v', text: correct + ' / ' + tasks.length }),
         el('div', { class: 'hw-score-p', text: pc + '%' }),
       ]),
       el('div', { class: 'hw-list' }, rows),
-      el('div', { class: 'hw-bar' }, [
-        el('button', { class: 'btn', text: H.retry, onclick: () => { for (const k in answers) delete answers[k]; drawTasks(); } }),
-        el('button', { class: 'btn btn-primary', text: '📤 ' + H.send, onclick: sendToTeacher }),
-      ]),
+      el('div', { class: 'hw-bar' }, [el('button', { class: 'btn btn-primary btn-block', text: H.done, onclick: opts.goHome })]),
     );
     view.scrollTop = 0;
-  }
-
-  function sendToTeacher() {
-    let name = getName();
-    if (!name) name = (prompt(H.askName) || '').trim();
-    const payload = { n: name || H.anon, set: groups, a: answers };
-    const url = location.origin + location.pathname + '#/hwr?' + b64e(JSON.stringify(payload));
-    copyLinkSheet({ url, title: H.sendTitle, sub: H.sendSub, copyLabel: H.copy, closeLabel: H.close });
   }
 
   drawTasks();

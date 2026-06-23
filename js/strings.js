@@ -243,6 +243,8 @@ export const STRINGS = {
       send: 'Отправить учителю', askName: 'Как тебя зовут? (увидит учитель)', anon: 'Ученик',
       sendTitle: 'Ссылка с результатом', sendSub: 'Скопируй и отправь учителю — он увидит твои ответы и оценку',
       copy: 'Копировать', close: 'Готово', studentResult: (n) => 'Результат: ' + n,
+      submit: 'Сдать учителю', confirmSubmit: 'Сдать работу учителю? Ответы зафиксируются, переделать будет нельзя.',
+      sentNote: 'Результат отправлен учителю. Ниже — разбор для тебя.',
     },
     // vocab (лексика — тема недели + флэшкарты/SRS)
     vocab: {
@@ -802,6 +804,8 @@ export const STRINGS = {
       send: 'Send to teacher', askName: 'What is your name? (teacher will see it)', anon: 'Student',
       sendTitle: 'Result link', sendSub: 'Copy and send it to your teacher — they will see your answers and score',
       copy: 'Copy', close: 'Done', studentResult: (n) => 'Result: ' + n,
+      submit: 'Submit to teacher', confirmSubmit: 'Submit to your teacher? Answers will be locked — no redo.',
+      sentNote: 'Result sent to your teacher. Your review is below.',
     },
     sections: { vocab: 'Topic Vocabulary', grammar: 'Grammar', wordform: 'Word formation', reading: 'Reading', listening: 'Listening', writing: 'Writing', speaking: 'Speaking', mock: 'Mock exam', lexis: 'Vocabulary', email: 'Email', essay: 'Essay' },
     sectionMeta: { vocab: 'theme of the week · 15 words a day', grammar: '341 tasks · 9 topics', wordform: '275 tasks · word forms', reading: '469 tasks · 3 formats', listening: 'FIPI audio · multiple choice', writing: 'writing', speaking: '184 tasks · recorder + AI', mock: 'full timed paper', lexis: '275 tasks · 9 topics', email: 'task 37 · K1–K3', essay: 'task 38 · K1–K5' },
