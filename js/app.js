@@ -163,7 +163,7 @@ function renderHome() {
       el('div', { class: 't-meta', text: t.sectionMeta[sec.id] || '' }),
     ]);
   };
-  const tileEls = EXAM.sections.map(tile);
+  const tileEls = EXAM.sections.filter((s) => s.type !== 'mock').map(tile);
   // «Скоро» (Аудирование) — обычной плашкой в той же сетке, последней
   if (EXAM.soonTile) tileEls.push(el('div', { class: 'tile locked' }, [
     el('div', { class: 't-top' }, [el('div', { class: 't-icon' }, [iconImg('ic-locked', '🔒', 'tile-img')]), el('div', { class: 't-soon', text: t.soon })]),
@@ -171,6 +171,17 @@ function renderHome() {
     el('div', { class: 't-meta', text: t.soonMeta }),
   ]));
   const tiles = el('div', { class: 'tiles' }, tileEls);
+
+  // Пробный экзамен — широкой плашкой во всю ширину (как карточка «Норма дня»), не плиткой
+  const mockSec = EXAM.sections.find((s) => s.type === 'mock');
+  const mockCard = mockSec ? el('button', { class: 'goal goal-btn mock-wide', onclick: () => { location.hash = '#/' + mockSec.id; } }, [
+    el('div', { class: 'ring', style: { background: 'var(--grad-mock)' } }, [el('i', {}, [iconImg('ic-' + (mockSec.iconKey || mockSec.tile), mockSec.icon, 'goal-img')])]),
+    el('div', { style: { flex: '1' } }, [
+      el('div', { class: 'g-title', text: t.sections[mockSec.id] }),
+      el('div', { class: 'g-text', text: t.sectionMeta[mockSec.id] || '' }),
+    ]),
+    el('div', { class: 'at-arrow', text: '→' }),
+  ]) : null;
 
   const shortcuts = el('div', { class: 'shortcuts' }, [
     el('button', { class: 'shortcut', onclick: () => { location.hash = '#/progress'; } },
@@ -216,6 +227,7 @@ function renderHome() {
       twRow, goal, pack,
       el('div', { class: 'sec-title', text: t.sectionsTitle }),
       tiles,
+      mockCard,
       el('div', { style: { height: '11px' } }),
       shortcuts,
     ]),

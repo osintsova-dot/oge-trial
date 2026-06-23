@@ -18,7 +18,6 @@
    "Games dominate teen leisure; entertainment leads at 46%",
    "Almost half play just for fun, far above other reasons",
    "Compare entertainment (46%) with relaxation (only 9%)",
-   "Few cite mental skills (13%) - games seen as pure escape",
    "Problem: addiction and screen time; solution - daily time limits",
    "Opinion: games are fine in moderation, can build teamwork",
    "Part-time job angle: pocket money, experience, independence"
@@ -53,8 +52,7 @@
   "prompt": "Comment on one of the following statements. Nowadays natural sciences are more important than humanities. A computer cannot replace a teacher. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: – make an introduction (state the problem paraphrasing the given statement) – express your personal opinion and give 2 – 3 reasons for your opinion – express an opposing opinion and give 1 – 2 reasons for this opposing opinion – explain why you do not agree with the opposing opinion – make a conclusion restating your position",
   "ideas": [
    "Pick one statement and paraphrase it clearly",
-   "Sciences view: drive technology, medicine and the economy",
-   "Humanities view: shape ethics, culture and critical thinking",
+   "Sciences/humanities: tech and economy vs ethics and culture",
    "Computer/teacher: AI lacks empathy and live motivation",
    "Opposing: computers give endless resources and patience",
    "Counter: software cannot inspire or read a child's mood",
@@ -103,7 +101,6 @@
   "ideas": [
    "Choose one statement and rephrase it in the intro",
    "IT view: coding and data skills shape every modern job",
-   "Opposing: maths and languages build core thinking too",
    "Big family view: support, sharing, never feeling lonely",
    "Opposing: less privacy, money and personal space",
    "Counter: love and teamwork outweigh small inconveniences",
@@ -187,8 +184,7 @@
   "prompt": "Comment on one of the following statements. Summer is the best time for self-education. Parents play the most significant role in teenagers life. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: – make an introduction (state the problem paraphrasing the given statement) ; – express your personal opinion and give 2 – 3 reasons for your opinion; – express an opposing opinion and give 1 – 2 reasons for this opposing opinion; – explain why you do not agree with the opposing opinion; – make a conclusion restating your position.",
   "ideas": [
    "Pick one statement and paraphrase it to open",
-   "Summer view: free time, no exams, learn at own pace",
-   "Opposing: holidays are for rest, not extra study",
+   "Summer view: free time and no exams aid self-study",
    "Parents view: they shape values, support and habits",
    "Opposing: friends and teachers also strongly influence teens",
    "Counter: parents still give the deepest lifelong guidance",
@@ -201,7 +197,6 @@
   "ideas": [
    "Choose one statement and rephrase it clearly",
    "Friends view: support, fun and sharing bring happiness",
-   "Opposing: family or hobbies can matter even more",
    "Hobbies view: actually relieve stress and boost focus",
    "Opposing: too much time on hobbies hurts grades",
    "Counter: good planning lets hobbies and study coexist",
@@ -213,8 +208,7 @@
   "prompt": "Comment on one of the following statements. An interesting job is more valuable than a high salary. It is easy to live without the Internet. What is your opinion? Do you agree with this statement? Write 200 – 250 words . Use the following plan: – make an introduction (state the problem paraphrasing the given statement) – express your personal opinion and give 2 – 3 reasons for your opinion – express an opposing opinion and give 1 – 2 reasons for this opposing opinion – explain why you do not agree with the opposing opinion – make a conclusion restating your position",
   "ideas": [
    "Pick one statement and paraphrase it in the intro",
-   "Interesting job: passion brings daily satisfaction",
-   "Opposing: money provides security and comfort",
+   "Interesting job vs salary: passion or security each day",
    "Without Internet: less distraction, more real life",
    "Opposing: study, work and contact now need it badly",
    "Counter: people lived happily before the Internet existed",
@@ -226,8 +220,7 @@
   "prompt": "Comment on one of the following statements. To be happy one needs an interesting job. Everyone can contribute to environmental protection. What is your opinion? Do you agree with this statement? Write 200–250 words . Use the following plan: - make an introduction (state the problem paraphrasing the given statement) ; - express your personal opinion and give 2–3 reasons for your opinion ; - express an opposing opinion and give 1–2 reasons for this opposing opinion ; - explain why you do not agree with the opposing opinion ; - write a conclusion restating your position.",
   "ideas": [
    "Choose one statement and paraphrase it to begin",
-   "Interesting job: motivation and meaning each day",
-   "Opposing: hobbies or relationships matter more for joy",
+   "Interesting job: it gives daily motivation and meaning",
    "Environment: small acts like recycling truly add up",
    "Opposing: big firms cause most pollution, not people",
    "Counter: collective small efforts pressure firms to change",
@@ -252,7 +245,6 @@
   "ideas": [
    "Pick one statement and rephrase it clearly",
    "Online view: interactive, varied, learn at own pace",
-   "Opposing: classrooms give live contact and discipline",
    "Countryside view: fresh air, nature, real rest for teens",
    "Opposing: cities offer courses, friends and entertainment",
    "Counter: nature still restores health better than screens",
@@ -277,7 +269,6 @@
   "ideas": [
    "Choose one statement and paraphrase it to open",
    "Hobby view: passion gives joy, purpose and balance",
-   "Opposing: friends or family bring deeper happiness",
    "Online classes: flexible, recorded, no commuting",
    "Opposing: classrooms keep focus and live feedback",
    "Counter: self-discipline online often fails for teens",
@@ -290,7 +281,6 @@
   "ideas": [
    "Pick one statement and rephrase it clearly",
    "Understanding parents: support, trust and emotional safety",
-   "Opposing: friends and independence also bring happiness",
    "Books view: edited, reliable, deeper than quick web posts",
    "Opposing: Internet is faster and always up to date",
    "Counter: online info is often unchecked and biased",
@@ -303,7 +293,6 @@
   "ideas": [
    "Choose one statement and paraphrase it in the intro",
    "History view: teaches lessons, identity and critical thinking",
-   "Opposing: maths and languages have wider daily use",
    "Traditions view: shared rituals connect old and young",
    "Opposing: modern life and tech widen the generation gap",
    "Counter: traditions create common ground despite change",
