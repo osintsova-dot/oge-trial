@@ -265,43 +265,78 @@
     {
      "pos": 1,
      "zid": "F6B774",
-     "options": [],
+     "options": [
+      "to",
+      "on",
+      "in",
+      "at"
+     ],
      "key": 2
     },
     {
      "pos": 2,
      "zid": "A803A3",
-     "options": [],
+     "options": [
+      "affection",
+      "connection",
+      "attention",
+      "relation"
+     ],
      "key": 3
     },
     {
      "pos": 3,
      "zid": "59DFE1",
-     "options": [],
+     "options": [
+      "considerably",
+      "completely",
+      "perfectly",
+      "definitely"
+     ],
      "key": 4
     },
     {
      "pos": 4,
      "zid": "1B552F",
-     "options": [],
+     "options": [
+      "bother",
+      "demand",
+      "escape",
+      "concern"
+     ],
      "key": 1
     },
     {
      "pos": 5,
      "zid": "1AC8B7",
-     "options": [],
+     "options": [
+      "turns",
+      "gives",
+      "makes",
+      "takes"
+     ],
      "key": 3
     },
     {
      "pos": 6,
      "zid": "23BFC5",
-     "options": [],
+     "options": [
+      "Although",
+      "Nevertheless",
+      "Moreover",
+      "Otherwise"
+     ],
      "key": 2
     },
     {
      "pos": 7,
      "zid": "449453",
-     "options": [],
+     "options": [
+      "talked",
+      "told",
+      "spoke",
+      "said"
+     ],
      "key": 2
     }
    ]
@@ -315,43 +350,78 @@
     {
      "pos": 1,
      "zid": "47C65A",
-     "options": [],
+     "options": [
+      "stared",
+      "watched",
+      "saw",
+      "looked"
+     ],
      "key": 4
     },
     {
      "pos": 2,
      "zid": "A26528",
-     "options": [],
+     "options": [
+      "nearly",
+      "rarely",
+      "hardly",
+      "merely"
+     ],
      "key": 3
     },
     {
      "pos": 3,
      "zid": "F15371",
-     "options": [],
+     "options": [
+      "at",
+      "on",
+      "of",
+      "in"
+     ],
      "key": 2
     },
     {
      "pos": 4,
      "zid": "A97913",
-     "options": [],
+     "options": [
+      "cheer",
+      "grow",
+      "bring",
+      "clear"
+     ],
      "key": 1
     },
     {
      "pos": 5,
      "zid": "080239",
-     "options": [],
+     "options": [
+      "revised",
+      "reminded",
+      "recalled",
+      "remembered"
+     ],
      "key": 2
     },
     {
      "pos": 6,
      "zid": "F7E310",
-     "options": [],
+     "options": [
+      "arrangement",
+      "argument",
+      "agreement",
+      "achievement"
+     ],
      "key": 3
     },
     {
      "pos": 7,
      "zid": "1C3F0D",
-     "options": [],
+     "options": [
+      "Nevertheless",
+      "Although",
+      "However",
+      "Moreover"
+     ],
      "key": 4
     }
    ]
@@ -535,25 +605,45 @@
     {
      "pos": 1,
      "zid": "9C1787",
-     "options": [],
+     "options": [
+      "achieved",
+      "managed",
+      "succeeded",
+      "completed"
+     ],
      "key": 2
     },
     {
      "pos": 2,
      "zid": "9102FF",
-     "options": [],
+     "options": [
+      "reflecting",
+      "reciting",
+      "recovering",
+      "restoring"
+     ],
      "key": 2
     },
     {
      "pos": 3,
      "zid": "720473",
-     "options": [],
+     "options": [
+      "amused",
+      "confused",
+      "attractive",
+      "enthusiastic"
+     ],
      "key": 4
     },
     {
      "pos": 4,
      "zid": "1129C3",
-     "options": [],
+     "options": [
+      "spoke",
+      "told",
+      "said",
+      "talked"
+     ],
      "key": 3
     },
     {
@@ -565,13 +655,23 @@
     {
      "pos": 6,
      "zid": "BC301F",
-     "options": [],
+     "options": [
+      "came",
+      "got",
+      "went",
+      "held"
+     ],
      "key": 1
     },
     {
      "pos": 7,
      "zid": "AF95BF",
-     "options": [],
+     "options": [
+      "Although",
+      "Therefore",
+      "Nevertheless",
+      "Moreover"
+     ],
      "key": 3
     }
    ]
@@ -666,43 +766,78 @@
     {
      "pos": 1,
      "zid": "6262B0",
-     "options": [],
+     "options": [
+      "look",
+      "sight",
+      "view",
+      "glimpse"
+     ],
      "key": 2
     },
     {
      "pos": 2,
      "zid": "C910D2",
-     "options": [],
+     "options": [
+      "offered",
+      "proposed",
+      "assumed",
+      "suggested"
+     ],
      "key": 4
     },
     {
      "pos": 3,
      "zid": "5DD63B",
-     "options": [],
+     "options": [
+      "speak",
+      "tell",
+      "mention",
+      "chat"
+     ],
      "key": 1
     },
     {
      "pos": 4,
      "zid": "B4547C",
-     "options": [],
+     "options": [
+      "after",
+      "into",
+      "down",
+      "over"
+     ],
      "key": 3
     },
     {
      "pos": 5,
      "zid": "6D2E23",
-     "options": [],
+     "options": [
+      "dwelt",
+      "dealt",
+      "talked",
+      "touched"
+     ],
      "key": 4
     },
     {
      "pos": 6,
      "zid": "A06380",
-     "options": [],
+     "options": [
+      "remembered",
+      "reminded",
+      "recollected",
+      "revised"
+     ],
      "key": 2
     },
     {
      "pos": 7,
      "zid": "AABEDE",
-     "options": [],
+     "options": [
+      "trip",
+      "travel",
+      "tour",
+      "journey"
+     ],
      "key": 3
     }
    ]
@@ -801,43 +936,78 @@
     {
      "pos": 1,
      "zid": "76AB90",
-     "options": [],
+     "options": [
+      "sort",
+      "find",
+      "turn",
+      "look"
+     ],
      "key": 2
     },
     {
      "pos": 2,
      "zid": "04B3DF",
-     "options": [],
+     "options": [
+      "in",
+      "of",
+      "on",
+      "at"
+     ],
      "key": 1
     },
     {
      "pos": 3,
      "zid": "71D52E",
-     "options": [],
+     "options": [
+      "nearly",
+      "merely",
+      "hardly",
+      "rarely"
+     ],
      "key": 3
     },
     {
      "pos": 4,
      "zid": "C34E09",
-     "options": [],
+     "options": [
+      "remained",
+      "recovered",
+      "reacted",
+      "reclined"
+     ],
      "key": 1
     },
     {
      "pos": 5,
      "zid": "E903A0",
-     "options": [],
+     "options": [
+      "stared",
+      "watched",
+      "looked",
+      "saw"
+     ],
      "key": 3
     },
     {
      "pos": 6,
      "zid": "6E17AB",
-     "options": [],
+     "options": [
+      "Therefore",
+      "Nevertheless",
+      "However",
+      "Although"
+     ],
      "key": 4
     },
     {
      "pos": 7,
      "zid": "9B3BE6",
-     "options": [],
+     "options": [
+      "argument",
+      "agreement",
+      "achievement",
+      "arrangement"
+     ],
      "key": 2
     }
    ]
@@ -936,43 +1106,78 @@
     {
      "pos": 1,
      "zid": "375E12",
-     "options": [],
+     "options": [
+      "expecting",
+      "waiting",
+      "demanding",
+      "requiring"
+     ],
      "key": 2
     },
     {
      "pos": 2,
      "zid": "153B2F",
-     "options": [],
+     "options": [
+      "say",
+      "speak",
+      "talk",
+      "tell"
+     ],
      "key": 4
     },
     {
      "pos": 3,
      "zid": "12E0C3",
-     "options": [],
+     "options": [
+      "However",
+      "Although",
+      "Therefore",
+      "Moreover"
+     ],
      "key": 1
     },
     {
      "pos": 4,
      "zid": "01ED52",
-     "options": [],
+     "options": [
+      "bothered",
+      "annoyed",
+      "worried",
+      "troubled"
+     ],
      "key": 3
     },
     {
      "pos": 5,
      "zid": "EA5BE7",
-     "options": [],
+     "options": [
+      "destruction",
+      "demonstration",
+      "departure",
+      "determination"
+     ],
      "key": 3
     },
     {
      "pos": 6,
      "zid": "D30604",
-     "options": [],
+     "options": [
+      "recognized",
+      "respected",
+      "regarded",
+      "remained"
+     ],
      "key": 2
     },
     {
      "pos": 7,
      "zid": "905D08",
-     "options": [],
+     "options": [
+      "admire",
+      "accept",
+      "appreciate",
+      "approve"
+     ],
      "key": 4
     }
    ]
@@ -986,37 +1191,67 @@
     {
      "pos": 1,
      "zid": "6B040c",
-     "options": [],
+     "options": [
+      "recognize",
+      "remind",
+      "receive",
+      "remember"
+     ],
      "key": null
     },
     {
      "pos": 2,
      "zid": "B6B7ee",
-     "options": [],
+     "options": [
+      "pick",
+      "seize",
+      "grab",
+      "catch"
+     ],
      "key": null
     },
     {
      "pos": 3,
      "zid": "93586e",
-     "options": [],
+     "options": [
+      "up",
+      "out",
+      "of",
+      "off"
+     ],
      "key": null
     },
     {
      "pos": 4,
      "zid": "A89512",
-     "options": [],
+     "options": [
+      "repeated",
+      "realized",
+      "regarded",
+      "remained"
+     ],
      "key": null
     },
     {
      "pos": 5,
      "zid": "BA9BDA",
-     "options": [],
+     "options": [
+      "accepted",
+      "approved",
+      "allowed",
+      "afforded"
+     ],
      "key": null
     },
     {
      "pos": 6,
      "zid": "79F5B8",
-     "options": [],
+     "options": [
+      "demanded",
+      "decided",
+      "directed",
+      "depended"
+     ],
      "key": null
     },
     {
@@ -1042,7 +1277,12 @@
     {
      "pos": 2,
      "zid": "D83AF3",
-     "options": [],
+     "options": [
+      "said",
+      "told",
+      "talked",
+      "spoke"
+     ],
      "key": 2
     },
     {
@@ -1054,25 +1294,45 @@
     {
      "pos": 4,
      "zid": "1DE790",
-     "options": [],
+     "options": [
+      "resemblance",
+      "reproduction",
+      "recollection",
+      "responsibility"
+     ],
      "key": 1
     },
     {
      "pos": 5,
      "zid": "A3AC11",
-     "options": [],
+     "options": [
+      "however",
+      "moreover",
+      "although",
+      "therefore"
+     ],
      "key": 4
     },
     {
      "pos": 6,
      "zid": "2C3851",
-     "options": [],
+     "options": [
+      "raised",
+      "grown",
+      "brought",
+      "risen"
+     ],
      "key": 3
     },
     {
      "pos": 7,
      "zid": "E8D235",
-     "options": [],
+     "options": [
+      "regretted",
+      "revealed",
+      "remained",
+      "registered"
+     ],
      "key": 1
     }
    ]
@@ -1086,43 +1346,78 @@
     {
      "pos": 1,
      "zid": "Ac2c8B",
-     "options": [],
+     "options": [
+      "admit",
+      "agree",
+      "assume",
+      "approve"
+     ],
      "key": null
     },
     {
      "pos": 2,
      "zid": "4D3cF1",
-     "options": [],
+     "options": [
+      "apologized",
+      "approached",
+      "appeared",
+      "applied"
+     ],
      "key": null
     },
     {
      "pos": 3,
      "zid": "237B42",
-     "options": [],
+     "options": [
+      "kept",
+      "held",
+      "took",
+      "used"
+     ],
      "key": null
     },
     {
      "pos": 4,
      "zid": "86BA5D",
-     "options": [],
+     "options": [
+      "still",
+      "yet",
+      "just",
+      "only"
+     ],
      "key": null
     },
     {
      "pos": 5,
      "zid": "FcAD26",
-     "options": [],
+     "options": [
+      "reminded",
+      "remembered",
+      "recognized",
+      "regarded"
+     ],
      "key": null
     },
     {
      "pos": 6,
      "zid": "Fe76eD",
-     "options": [],
+     "options": [
+      "nearly",
+      "hardly",
+      "really",
+      "rarely"
+     ],
      "key": null
     },
     {
      "pos": 7,
      "zid": "Ac6F6D",
-     "options": [],
+     "options": [
+      "moreover",
+      "although",
+      "nevertheless",
+      "therefore"
+     ],
      "key": null
     }
    ]
@@ -1476,43 +1771,78 @@
     {
      "pos": 1,
      "zid": "267C26",
-     "options": [],
+     "options": [
+      "admire",
+      "enjoy",
+      "adore",
+      "envy"
+     ],
      "key": 2
     },
     {
      "pos": 2,
      "zid": "61644E",
-     "options": [],
+     "options": [
+      "suspected",
+      "succeeded",
+      "supported",
+      "supposed"
+     ],
      "key": 4
     },
     {
      "pos": 3,
      "zid": "D4942A",
-     "options": [],
+     "options": [
+      "refund",
+      "revenge",
+      "relief",
+      "regret"
+     ],
      "key": 3
     },
     {
      "pos": 4,
      "zid": "5096B9",
-     "options": [],
+     "options": [
+      "telling",
+      "talking",
+      "saying",
+      "speaking"
+     ],
      "key": 4
     },
     {
      "pos": 5,
      "zid": "26E002",
-     "options": [],
+     "options": [
+      "looked",
+      "watched",
+      "glanced",
+      "saw"
+     ],
      "key": 1
     },
     {
      "pos": 6,
      "zid": "D99B66",
-     "options": [],
+     "options": [
+      "wherever",
+      "whenever",
+      "whatever",
+      "whoever"
+     ],
      "key": 3
     },
     {
      "pos": 7,
      "zid": "25B2E2",
-     "options": [],
+     "options": [
+      "round",
+      "off",
+      "over",
+      "down"
+     ],
      "key": 2
     }
    ]
@@ -1526,37 +1856,67 @@
     {
      "pos": 1,
      "zid": "7554D2",
-     "options": [],
+     "options": [
+      "resulted",
+      "achieved",
+      "managed",
+      "succeeded"
+     ],
      "key": 3
     },
     {
      "pos": 2,
      "zid": "D9F4E9",
-     "options": [],
+     "options": [
+      "case",
+      "view",
+      "way",
+      "sense"
+     ],
      "key": 1
     },
     {
      "pos": 3,
      "zid": "C676DB",
-     "options": [],
+     "options": [
+      "departed",
+      "digressed",
+      "distracted",
+      "disappeared"
+     ],
      "key": 4
     },
     {
      "pos": 4,
      "zid": "975C56",
-     "options": [],
+     "options": [
+      "review",
+      "remind",
+      "revise",
+      "remember"
+     ],
      "key": 2
     },
     {
      "pos": 5,
      "zid": "D1C071",
-     "options": [],
+     "options": [
+      "took",
+      "made",
+      "kept",
+      "held"
+     ],
      "key": 1
     },
     {
      "pos": 6,
      "zid": "C66053",
-     "options": [],
+     "options": [
+      "add",
+      "link",
+      "fit",
+      "join"
+     ],
      "key": 4
     },
     {
@@ -1576,43 +1936,78 @@
     {
      "pos": 1,
      "zid": "6AFDA9",
-     "options": [],
+     "options": [
+      "afford",
+      "allow",
+      "access",
+      "attend"
+     ],
      "key": 2
     },
     {
      "pos": 2,
      "zid": "8A477F",
-     "options": [],
+     "options": [
+      "remarked",
+      "mentioned",
+      "noticed",
+      "reflected"
+     ],
      "key": 3
     },
     {
      "pos": 3,
      "zid": "9CCB6C",
-     "options": [],
+     "options": [
+      "about",
+      "over",
+      "down",
+      "out"
+     ],
      "key": 4
     },
     {
      "pos": 4,
      "zid": "974C19",
-     "options": [],
+     "options": [
+      "reached",
+      "arrived",
+      "achieved",
+      "emerged"
+     ],
      "key": 1
     },
     {
      "pos": 5,
      "zid": "E41D55",
-     "options": [],
+     "options": [
+      "Hopefully",
+      "Obviously",
+      "Essentially",
+      "Absolutely"
+     ],
      "key": 2
     },
     {
      "pos": 6,
      "zid": "86D810",
-     "options": [],
+     "options": [
+      "spoke",
+      "said",
+      "told",
+      "talked"
+     ],
      "key": 3
     },
     {
      "pos": 7,
      "zid": "9801FA",
-     "options": [],
+     "options": [
+      "Nevertheless",
+      "Moreover",
+      "However",
+      "Although"
+     ],
      "key": 4
     }
    ]
@@ -2049,43 +2444,78 @@
     {
      "pos": 1,
      "zid": "CA997E",
-     "options": [],
+     "options": [
+      "to",
+      "on",
+      "in",
+      "at"
+     ],
      "key": 2
     },
     {
      "pos": 2,
      "zid": "FA56A5",
-     "options": [],
+     "options": [
+      "glance",
+      "look",
+      "watch",
+      "see"
+     ],
      "key": 4
     },
     {
      "pos": 3,
      "zid": "9E577C",
-     "options": [],
+     "options": [
+      "affected",
+      "satisfied",
+      "interested",
+      "convinced"
+     ],
      "key": 2
     },
     {
      "pos": 4,
      "zid": "0E66C3",
-     "options": [],
+     "options": [
+      "presented",
+      "preserved",
+      "pretended",
+      "previewed"
+     ],
      "key": 3
     },
     {
      "pos": 5,
      "zid": "0826DA",
-     "options": [],
+     "options": [
+      "However",
+      "Moreover",
+      "Although",
+      "Therefore"
+     ],
      "key": 1
     },
     {
      "pos": 6,
      "zid": "7F09AC",
-     "options": [],
+     "options": [
+      "affection",
+      "connection",
+      "attention",
+      "relation"
+     ],
      "key": 3
     },
     {
      "pos": 7,
      "zid": "794BD8",
-     "options": [],
+     "options": [
+      "turning",
+      "keeping",
+      "giving",
+      "making"
+     ],
      "key": 4
     }
    ]
@@ -2099,43 +2529,78 @@
     {
      "pos": 1,
      "zid": "0FEB98",
-     "options": [],
+     "options": [
+      "showed",
+      "held",
+      "turned",
+      "seemed"
+     ],
      "key": 4
     },
     {
      "pos": 2,
      "zid": "EFE85C",
-     "options": [],
+     "options": [
+      "attractive",
+      "confused",
+      "enthusiastic",
+      "amused"
+     ],
      "key": 3
     },
     {
      "pos": 3,
      "zid": "5FB947",
-     "options": [],
+     "options": [
+      "noticed",
+      "observed",
+      "looked",
+      "watched"
+     ],
      "key": 3
     },
     {
      "pos": 4,
      "zid": "E05997",
-     "options": [],
+     "options": [
+      "for",
+      "on",
+      "from",
+      "of"
+     ],
      "key": 2
     },
     {
      "pos": 5,
      "zid": "386948",
-     "options": [],
+     "options": [
+      "Therefore",
+      "However",
+      "Moreover",
+      "Otherwise"
+     ],
      "key": 3
     },
     {
      "pos": 6,
      "zid": "71DB86",
-     "options": [],
+     "options": [
+      "succeeded",
+      "suspected",
+      "supported",
+      "supposed"
+     ],
      "key": 4
     },
     {
      "pos": 7,
      "zid": "07A56F",
-     "options": [],
+     "options": [
+      "got",
+      "did",
+      "gave",
+      "made"
+     ],
      "key": 2
     }
    ]
@@ -2234,43 +2699,78 @@
     {
      "pos": 1,
      "zid": "B4C1BE",
-     "options": [],
+     "options": [
+      "accepted",
+      "agreed",
+      "assumed",
+      "achieved"
+     ],
      "key": 2
     },
     {
      "pos": 2,
      "zid": "5933C0",
-     "options": [],
+     "options": [
+      "manner",
+      "state",
+      "tone",
+      "mood"
+     ],
      "key": 4
     },
     {
      "pos": 3,
      "zid": "098C72",
-     "options": [],
+     "options": [
+      "Otherwise",
+      "Moreover",
+      "Although",
+      "However"
+     ],
      "key": 3
     },
     {
      "pos": 4,
      "zid": "59B854",
-     "options": [],
+     "options": [
+      "spoke",
+      "said",
+      "told",
+      "talked"
+     ],
      "key": 2
     },
     {
      "pos": 5,
      "zid": "4E216C",
-     "options": [],
+     "options": [
+      "reviewed",
+      "regretted",
+      "recalled",
+      "realized"
+     ],
      "key": 4
     },
     {
      "pos": 6,
      "zid": "F97950",
-     "options": [],
+     "options": [
+      "concern",
+      "worry",
+      "bother",
+      "trouble"
+     ],
      "key": 3
     },
     {
      "pos": 7,
      "zid": "716118",
-     "options": [],
+     "options": [
+      "forward",
+      "away",
+      "before",
+      "after"
+     ],
      "key": 1
     }
    ]
@@ -2369,13 +2869,23 @@
     {
      "pos": 1,
      "zid": "383291",
-     "options": [],
+     "options": [
+      "saw",
+      "noticed",
+      "looked",
+      "watched"
+     ],
      "key": 3
     },
     {
      "pos": 2,
      "zid": "D3B8B7",
-     "options": [],
+     "options": [
+      "on",
+      "for",
+      "at",
+      "to"
+     ],
      "key": 2
     },
     {
