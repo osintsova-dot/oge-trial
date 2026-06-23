@@ -87,6 +87,9 @@ function unitsByTopic(units, answers, keys) {
     if (u.kind === 'read') {
       const r = checkReadBlock(u.block, answers);
       bump('Чтение: ' + (READ_LABEL[u.block.type] || u.block.type), r.correct, r.total);
+    } else if (u.kind === 'listen') {
+      const r = checkListenBlock(u.block, answers);
+      bump('Аудирование', r.correct, r.total);
     } else {
       const it = u.it;
       const key = (keys[it.zid] || {}).answer || '';
@@ -110,14 +113,21 @@ function parseSet(query) {
 
 async function gatherTasks(groups) {
   const keys = await loadJSON(EXAM.keysFile);
-  const units = []; // {kind:'gap', secId, it} | {kind:'read', block}
-  let readBlocks = null;
+  const units = []; // {kind:'gap', secId, it} | {kind:'read', block} | {kind:'listen', block}
+  let readBlocks = null, listenBlocks = null;
   for (const secId of Object.keys(groups)) {
     if (secId === 'reading') {
       readBlocks = readBlocks || await loadReadingBlocks();
       const byId = {};
       for (const b of readBlocks) byId[b.id] = b;
       for (const id of groups[secId]) { const b = byId[id]; if (b) units.push({ kind: 'read', block: b }); }
+      continue;
+    }
+    if (secId === 'listening') {
+      listenBlocks = listenBlocks || await loadListeningBlocks();
+      const byId = {};
+      for (const b of listenBlocks) byId[b.id] = b;
+      for (const id of groups[secId]) { const b = byId[id]; if (b) units.push({ kind: 'listen', block: b }); }
       continue;
     }
     const cfg = EXAM.sections.find((s) => s.id === secId);
@@ -141,6 +151,14 @@ function reviewRows(units, answers, keys, H) {
       return el('div', { class: 'hw-rev ' + (r.correct === r.total ? 'ok' : 'no') }, [
         el('div', { class: 'hw-rev-t', text: (i + 1) + '. ' + H.readScore(r.correct, r.total) }),
         renderReadBlock(u.block, answers, H, true),
+      ]);
+    }
+    if (u.kind === 'listen') {
+      const r = checkListenBlock(u.block, answers);
+      correct += r.correct; total += r.total;
+      return el('div', { class: 'hw-rev ' + (r.correct === r.total ? 'ok' : 'no') }, [
+        el('div', { class: 'hw-rev-t', text: (i + 1) + '. ' + H.listenScore(r.correct, r.total) }),
+        renderListenBlock(u.block, answers, H, true),
       ]);
     }
     const it = u.it;
@@ -283,6 +301,77 @@ function checkReadBlock(block, answers) {
   return { correct, total };
 }
 
+// ---- Аудирование: блоки (аудио + вопросы) + рендер/проверка ----
+async function loadListeningBlocks() {
+  const cfg = EXAM.sections.find((s) => s.type === 'listening');
+  if (!cfg) return [];
+  let d;
+  try { d = await loadJSON(cfg.dataFile); } catch (e) { return []; }
+  return (d.groups || []).map((g, i) => ({
+    id: g.id, audio: g.audio, questions: g.questions || [], transcript: g.transcript || [],
+    n: (g.questions || []).length, idx: i + 1,
+    preview: (g.transcript && g.transcript.find((s) => (s.t || '').length > 15) || {}).t || ('Аудио ' + (i + 1)),
+  }));
+}
+
+function renderListenBlock(block, answers, H, readonly) {
+  const wrap = el('div', { class: 'hw-rblock' });
+  if (!readonly) {
+    wrap.appendChild(el('div', { class: 'hw-rinstr', text: H.lPlay }));
+    wrap.appendChild(el('audio', { class: 'hw-audio', controls: true, preload: 'none', src: block.audio }));
+  }
+  (block.questions || []).forEach((q, qi) => {
+    const a = (answers[q.zid] = answers[q.zid] || (q.type === 'match' ? {} : ''));
+    if (q.type === 'choice') {
+      const opts = (q.options || []).map((o, oi) => {
+        const id = 'l_' + q.zid + '_' + oi;
+        const inp = el('input', { type: 'radio', name: 'l_' + q.zid, id, value: String(oi + 1) });
+        if (answers[q.zid] === String(oi + 1)) inp.checked = true;
+        if (readonly) inp.disabled = true; else inp.addEventListener('change', () => { answers[q.zid] = String(oi + 1); });
+        return el('label', { class: 'mock-opt', for: id }, [inp, el('span', { text: o })]);
+      });
+      wrap.appendChild(el('div', { class: 'hw-mcq' }, [el('div', { class: 'hw-mcq-q', text: (qi + 1) + '. ' + (q.q || '') }), el('div', { class: 'mock-opts' }, opts)]));
+    } else if (q.type === 'fill') {
+      const inp = el('input', { class: 'hw-input', type: 'text', value: answers[q.zid] || '', placeholder: H.answerPh });
+      if (readonly) inp.disabled = true; else inp.addEventListener('input', () => { answers[q.zid] = inp.value; });
+      wrap.appendChild(el('div', { class: 'hw-q' }, [el('span', { class: 'hw-n', text: (qi + 1) + '.' }), el('span', { class: 'hw-text' }, [document.createTextNode((q.label ? q.label + ': ' : '')), inp])]));
+    } else if (q.type === 'match') {
+      const obj = answers[q.zid] = answers[q.zid] || {};
+      wrap.appendChild(el('div', { class: 'hw-mcq-q', text: (qi + 1) + '. ' + (q.task || '') }));
+      wrap.appendChild(el('ol', { class: 'hw-rqs' }, (q.rubrics || []).map((r) => el('li', { text: r }))));
+      (q.speakers || []).forEach((sp) => {
+        const sel = el('select', { class: 'hw-sel' });
+        sel.appendChild(el('option', { value: '', text: '—' }));
+        (q.rubrics || []).forEach((_, ri) => sel.appendChild(el('option', { value: String(ri + 1), text: String(ri + 1) })));
+        if (obj[sp]) sel.value = obj[sp];
+        if (readonly) sel.disabled = true; else sel.addEventListener('change', () => { obj[sp] = sel.value; });
+        wrap.appendChild(el('div', { class: 'hw-rtxt-h' }, [el('b', { text: sp }), sel]));
+      });
+    }
+  });
+  if (readonly && block.transcript && block.transcript.length) {
+    wrap.appendChild(el('details', { class: 'hw-script' }, [
+      el('summary', { text: H.lScript }),
+      el('div', { class: 'hw-rtext', text: block.transcript.map((s) => s.t).join(' ') }),
+    ]));
+  }
+  return wrap;
+}
+
+function checkListenBlock(block, answers) {
+  let correct = 0, total = 0;
+  (block.questions || []).forEach((q) => {
+    if (q.type === 'match') {
+      (q.speakers || []).forEach((sp, idx) => { total++; if (((answers[q.zid] || {})[sp] || '') === String((q.key || '')[idx])) correct++; });
+    } else if (q.type === 'fill') {
+      total++; if (hwNorm(answers[q.zid] || '') === hwNorm(q.key || '') && (answers[q.zid] || '').trim() !== '') correct++;
+    } else {
+      total++; if ((answers[q.zid] || '') === String(q.key)) correct++;
+    }
+  });
+  return { correct, total };
+}
+
 export async function renderTeacher(container, opts) {
   const T = t.teacher;
   mount(container, el('div', { class: 'view' }, [el('div', { class: 'loader', text: T.loading })]));
@@ -294,9 +383,11 @@ export async function renderTeacher(container, opts) {
   // банки по разделам: { secId: [items] }
   const banks = {};
   for (const s of drillSecs) banks[s.id] = await loadJSON(s.dataFile);
-  // блоки чтения (тексты + задания) — отдельная вкладка
+  // блоки чтения / аудирования — отдельные вкладки
   const readBlocks = await loadReadingBlocks();
   const hasReading = readBlocks.length > 0;
+  const listenBlocks = await loadListeningBlocks();
+  const hasListening = listenBlocks.length > 0;
   const READTYPE = READ_LABEL;
 
   // выбранные задания: Set("secId:zid")
@@ -339,14 +430,16 @@ export async function renderTeacher(container, opts) {
     // вкладки разделов (+ «Чтение»)
     const tabs = drillSecs.map((s) => ({ id: s.id, label: SEC_TITLE[s.id] || s.id }));
     if (hasReading) tabs.push({ id: 'reading', label: 'Чтение' });
+    if (hasListening) tabs.push({ id: 'listening', label: 'Аудирование' });
     view.appendChild(el('div', { class: 'tch-tabs' }, tabs.map((tb) =>
       el('button', { class: 'tch-tab' + (tb.id === curSec ? ' on' : ''), text: tb.label,
         onclick: () => { curSec = tb.id; curTopic = ''; draw(); } }))));
 
     // фильтр: для дрилла — по теме; для чтения — по типу задания
     const sel = el('select', { class: 'tch-kes' });
-    sel.appendChild(el('option', { value: '', text: curSec === 'reading' ? 'Все типы' : T.allTopics }));
-    const groups = curSec === 'reading' ? readingTypeGroups() : topicGroups(curSec);
+    const isRead = curSec === 'reading', isListen = curSec === 'listening';
+    sel.appendChild(el('option', { value: '', text: isListen ? 'Все варианты' : isRead ? 'Все типы' : T.allTopics }));
+    const groups = isRead ? readingTypeGroups() : isListen ? [] : topicGroups(curSec);
     for (const g of groups) sel.appendChild(el('option', { value: g.value != null ? g.value : g.label, text: (g.label) + ' (' + g.n + ')' }));
     sel.value = curTopic;
     sel.addEventListener('change', () => { curTopic = sel.value; draw(); });
@@ -376,6 +469,11 @@ export async function renderTeacher(container, opts) {
       if (curTopic) arr = arr.filter((b) => b.type === curTopic);
       if (search) { const q = search.toLowerCase(); arr = arr.filter((b) => b.preview.toLowerCase().includes(q)); }
       return arr.map((b) => ({ pid: 'reading:' + b.id, preview: b.preview, meta: (READTYPE[b.type] || b.type) + ' · ' + b.n + ' вопр.' }));
+    }
+    if (curSec === 'listening') {
+      let arr = listenBlocks;
+      if (search) { const q = search.toLowerCase(); arr = arr.filter((b) => b.preview.toLowerCase().includes(q)); }
+      return arr.map((b) => ({ pid: 'listening:' + b.id, preview: 'Аудио ' + b.idx + ': ' + b.preview, meta: 'Аудирование · ' + b.n + ' заданий' }));
     }
     return filtered().map((it) => ({ pid: curSec + ':' + it.zid, preview: (it.text || '').replace(/_{3,}/, ' ___ '), meta: (it.base_word ? '[' + it.base_word + '] · ' : '') + itemTopic(curSec, it) }));
   }
@@ -472,6 +570,8 @@ export async function renderTeacher(container, opts) {
     }
     const rids = readBlocks.filter((b) => picked.has('reading:' + b.id)).map((b) => b.id);
     if (rids.length) parts.push('reading:' + rids.join(','));
+    const lids = listenBlocks.filter((b) => picked.has('listening:' + b.id)).map((b) => b.id);
+    if (lids.length) parts.push('listening:' + lids.join(','));
     return parts.join(';');
   }
 
@@ -512,10 +612,10 @@ export async function renderHomework(container, opts) {
     ]));
     const list = el('div', { class: 'hw-list' });
     units.forEach((u, i) => {
-      if (u.kind === 'read') {
+      if (u.kind === 'read' || u.kind === 'listen') {
         list.appendChild(el('div', { class: 'hw-q hw-q-read' }, [
           el('span', { class: 'hw-n', text: (i + 1) + '.' }),
-          renderReadBlock(u.block, answers, H, false),
+          u.kind === 'read' ? renderReadBlock(u.block, answers, H, false) : renderListenBlock(u.block, answers, H, false),
         ]));
         return;
       }
