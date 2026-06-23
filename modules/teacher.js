@@ -66,6 +66,36 @@ const b64d = (s) => decodeURIComponent(escape(atob(s)));
 const hwNorm = (s) => (s || '').toLowerCase().trim().replace(/\s+/g, ' ').replace(/^(a|an|the)\s+/, '');
 // пропуск может быть из нескольких прогонов подчёркиваний подряд («____ ____») — считаем как один
 const GAP_RE = /_{3,}(?:\s*_{3,})*/;
+const READ_LABEL = { tf: 'Верно/неверно/не сказано', match: 'Соответствие', headings: 'Заголовки', gaps: 'Вставка частей', mc: 'Выбор ответа' };
+
+// ---- Журнал класса (localStorage, на устройстве учителя) ----
+const JOURNAL_KEY = 'ss_teacher_journal';
+function loadJournal() { try { return JSON.parse(localStorage.getItem(JOURNAL_KEY)) || []; } catch (e) { return []; } }
+function saveJournal(arr) { try { localStorage.setItem(JOURNAL_KEY, JSON.stringify(arr)); } catch (e) {} }
+function hashStr(s) { let h = 5381; for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0; return (h >>> 0).toString(36); }
+function addToJournal(entry) {
+  const arr = loadJournal();
+  if (arr.some((e) => e.id === entry.id)) return false; // дедуп по содержимому
+  arr.push(entry); saveJournal(arr); return true;
+}
+
+// разбивка результата по темам (для агрегата журнала): {topic: {c, t}}
+function unitsByTopic(units, answers, keys) {
+  const by = {};
+  const bump = (topic, c, tot) => { const b = by[topic] = by[topic] || { c: 0, t: 0 }; b.c += c; b.t += tot; };
+  for (const u of units) {
+    if (u.kind === 'read') {
+      const r = checkReadBlock(u.block, answers);
+      bump('Чтение: ' + (READ_LABEL[u.block.type] || u.block.type), r.correct, r.total);
+    } else {
+      const it = u.it;
+      const key = (keys[it.zid] || {}).answer || '';
+      const ok = hwNorm(answers[it.zid] || '') === hwNorm(key) && (answers[it.zid] || '').trim() !== '';
+      bump(topicOf(u.secId, it, key), ok ? 1 : 0, 1);
+    }
+  }
+  return by;
+}
 
 function parseSet(query) {
   const groups = {};
@@ -267,7 +297,7 @@ export async function renderTeacher(container, opts) {
   // блоки чтения (тексты + задания) — отдельная вкладка
   const readBlocks = await loadReadingBlocks();
   const hasReading = readBlocks.length > 0;
-  const READTYPE = { tf: 'Верно/неверно/не сказано', match: 'Соответствие', headings: 'Заголовки', gaps: 'Вставка частей', mc: 'Выбор ответа' };
+  const READTYPE = READ_LABEL;
 
   // выбранные задания: Set("secId:zid")
   const picked = new Set();
@@ -303,6 +333,7 @@ export async function renderTeacher(container, opts) {
     view.appendChild(el('div', { class: 'tch-top' }, [
       el('button', { class: 'back', text: '←', onclick: opts.goHome }),
       el('div', { class: 'tch-h' }, [el('div', { class: 'tch-t', text: T.title }), el('div', { class: 'tch-sub', text: T.sub })]),
+      el('button', { class: 'btn tch-journal-btn', text: '📊 ' + T.journal, onclick: () => renderJournal(container, opts) }),
     ]));
 
     // вкладки разделов (+ «Чтение»)
@@ -513,7 +544,7 @@ export async function renderHomework(container, opts) {
     if (!confirm(H.confirmSubmit)) return;
     let name = getName();
     if (!name) name = (prompt(H.askName) || '').trim();
-    const payload = { n: name || H.anon, set: groups, a: { ...answers } }; // снимок ответов
+    const payload = { n: name || H.anon, set: groups, a: { ...answers }, ts: Date.now() }; // снимок ответов
     const url = location.origin + location.pathname + '#/hwr?' + b64e(JSON.stringify(payload));
     showReview();
     copyLinkSheet({ url, title: H.sendTitle, sub: H.sendSub, copyLabel: H.copy, closeLabel: H.close });
@@ -557,13 +588,74 @@ export async function renderHomeworkResult(container, opts) {
   const name = payload.n || H.anon;
   const { correct, total, rows } = reviewRows(units, answers, keys, H);
   const pc = Math.round(correct / total * 100);
+
+  // сохраняем в журнал учителя (дедуп по содержимому)
+  const sumLabels = Object.keys(payload.set).map((s) => s === 'reading' ? 'чтение' : (SEC_TITLE[s] || s).toLowerCase());
+  const entry = {
+    id: hashStr(name + '|' + JSON.stringify(payload.set) + '|' + JSON.stringify(answers)),
+    exam: EXAM.id, name, ts: payload.ts || Date.now(), correct, total,
+    byTopic: unitsByTopic(units, answers, keys), summary: sumLabels.join(', '),
+  };
+  const saved = addToJournal(entry);
+
   mount(container, el('div', { class: 'view hw' }, [
     el('div', { class: 'hw-top' }, [el('button', { class: 'back', text: '←', onclick: opts.goHome }), el('div', { class: 'hw-t', text: H.studentResult(name) })]),
+    el('div', { class: 'hw-note', text: saved ? H.savedJournal : H.alreadyJournal }),
     el('div', { class: 'hw-score' }, [
       el('div', { class: 'hw-score-v', text: correct + ' / ' + total }),
       el('div', { class: 'hw-score-p', text: pc + '%' }),
     ]),
     el('div', { class: 'hw-list' }, rows),
-    el('div', { class: 'hw-bar' }, [el('button', { class: 'btn btn-primary btn-block', text: H.done, onclick: opts.goHome })]),
+    el('div', { class: 'hw-bar' }, [
+      el('button', { class: 'btn', text: '📊 ' + t.teacher.journal, onclick: () => renderJournal(container, opts) }),
+      el('button', { class: 'btn btn-primary', text: H.done, onclick: opts.goHome }),
+    ]),
+  ]));
+}
+
+// ===== Журнал класса (агрегат сохранённых результатов) =====
+export function renderJournal(container, opts) {
+  const T = t.teacher;
+  const all = loadJournal().filter((e) => e.exam === EXAM.id).sort((a, b) => b.ts - a.ts);
+  const view = el('div', { class: 'view tch' });
+
+  const top = el('div', { class: 'tch-top' }, [
+    el('button', { class: 'back', text: '←', onclick: () => renderTeacher(container, opts) }),
+    el('div', { class: 'tch-h' }, [el('div', { class: 'tch-t', text: T.journalTitle }), el('div', { class: 'tch-sub', text: T.journalSub })]),
+  ]);
+
+  if (!all.length) { mount(container, el('div', { class: 'view tch' }, [top, el('div', { class: 'tch-empty', text: T.journalEmpty })])); return; }
+
+  // агрегат
+  const students = new Set(all.map((e) => e.name)).size;
+  const avg = Math.round(all.reduce((s, e) => s + (e.total ? e.correct / e.total : 0), 0) / all.length * 100);
+  const byTopic = {};
+  for (const e of all) for (const tp in (e.byTopic || {})) { const b = byTopic[tp] = byTopic[tp] || { c: 0, t: 0 }; b.c += e.byTopic[tp].c; b.t += e.byTopic[tp].t; }
+  const hard = Object.entries(byTopic).map(([tp, b]) => ({ tp, pc: Math.round(b.c / b.t * 100), c: b.c, t: b.t }))
+    .filter((x) => x.t >= 1).sort((a, b) => a.pc - b.pc).slice(0, 8);
+
+  const stat = (v, l) => el('div', { class: 'mini-stat' }, [el('div', { class: 'ms-v', text: String(v) }), el('div', { class: 'ms-l', text: l })]);
+  const fmtDate = (ts) => { try { return new Date(ts).toLocaleString('ru-RU', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }); } catch (e) { return ''; } };
+
+  mount(container, el('div', { class: 'view tch jr' }, [
+    top,
+    el('div', { class: 'mini-stats' }, [stat(all.length, T.jrSubmissions), stat(students, T.jrStudents), stat(avg + '%', T.jrAvg)]),
+    el('div', { class: 'jr-sect', text: T.jrHard }),
+    el('div', { class: 'jr-topics' }, hard.map((x) => el('div', { class: 'jr-topic' }, [
+      el('div', { class: 'jr-topic-n', text: x.tp }),
+      el('div', { class: 'jr-topic-bar' }, [el('i', { style: { width: x.pc + '%', background: x.pc < 50 ? '#d64545' : (x.pc < 75 ? '#E0922F' : '#2f9e44') } })]),
+      el('div', { class: 'jr-topic-v', text: x.pc + '% (' + x.c + '/' + x.t + ')' }),
+    ]))),
+    el('div', { class: 'jr-sect', text: T.jrSubs }),
+    el('div', { class: 'jr-list' }, all.map((e) => el('div', { class: 'jr-row' }, [
+      el('div', { style: { flex: '1', minWidth: '0' } }, [
+        el('div', { class: 'jr-name', text: e.name }),
+        el('div', { class: 'jr-meta', text: fmtDate(e.ts) + ' · ' + (e.summary || '') }),
+      ]),
+      el('div', { class: 'jr-score', style: { color: e.correct / e.total < 0.5 ? '#d64545' : (e.correct / e.total < 0.75 ? '#E0922F' : '#2f9e44') }, text: e.correct + '/' + e.total }),
+    ]))),
+    el('div', { class: 'prog-actions' }, [
+      el('button', { class: 'act-reset', text: T.jrClear, onclick: () => { if (confirm(T.jrClearConfirm)) { saveJournal(loadJournal().filter((e) => e.exam !== EXAM.id)); renderJournal(container, opts); } } }),
+    ]),
   ]));
 }

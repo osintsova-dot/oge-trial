@@ -22,7 +22,7 @@ import { renderListening } from '../modules/listening.js';
 import { renderSpeaking } from '../modules/speaking.js';
 import { renderEgeSpeaking } from '../modules/ege_speaking.js';
 import { renderMock } from '../modules/mock.js';
-import { renderTeacher, renderHomework, renderHomeworkResult } from '../modules/teacher.js';
+import { renderTeacher, renderHomework, renderHomeworkResult, renderJournal } from '../modules/teacher.js';
 
 const view = document.getElementById('view');
 const goHome = () => { location.hash = '#/'; };
@@ -55,6 +55,7 @@ function route() {
   if (hash === 'rewards')  return renderRewards();
   if (hash === 'plan')     return renderPlan();
   if (hash === 'teacher')  { document.body.classList.add('in-flow'); return renderTeacher(view, { goHome }); }
+  if (hash === 'journal')  { document.body.classList.add('in-flow'); return renderJournal(view, { goHome }); }
   if (hash.split('?')[0] === 'hw') { document.body.classList.add('in-flow'); return renderHomework(view, { goHome, query: hash.slice(hash.indexOf('?') + 1) }); }
   if (hash.split('?')[0] === 'hwr') { document.body.classList.add('in-flow'); return renderHomeworkResult(view, { goHome, query: hash.slice(hash.indexOf('?') + 1) }); }
   if (sec && sec.type === 'drill')   return renderDrill(view, { ...DRILL[sec.id], goHome });

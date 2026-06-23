@@ -234,6 +234,11 @@ export const STRINGS = {
       linkBtn: 'Ссылка-ДЗ', linkCopied: 'Ссылка скопирована ✓', linkTitle: 'Ссылка на ДЗ',
       linkSub: (n) => 'Отправь ученику — он решит ' + n + ' заданий онлайн с автопроверкой',
       linkCopyAgain: 'Копировать', linkClose: 'Готово', printNoReading: 'Чтение пока печатается только через «Ссылку-ДЗ». Печать листа чтения — следующим шагом.',
+      journal: 'Журнал', journalTitle: 'Журнал класса', journalSub: 'Сданные результаты на этом устройстве',
+      journalEmpty: 'Пока нет сданных работ. Открой ссылку-результат от ученика — она попадёт сюда.',
+      jrSubmissions: 'сдач', jrStudents: 'учеников', jrAvg: 'средний',
+      jrHard: 'Самые сложные темы класса', jrSubs: 'Сданные работы',
+      jrClear: 'Очистить журнал', jrClearConfirm: 'Удалить все записи журнала на этом устройстве?',
     },
     homework: {
       loading: 'Загружаю задания…', title: 'Домашнее задание', count: (n) => n + ' заданий',
@@ -249,6 +254,7 @@ export const STRINGS = {
       rMatch: 'Установи соответствие: для каждого текста выбери номер.',
       rGaps: 'Вставь части предложений в пропуски (одна лишняя).',
       readScore: (c, n) => 'Чтение: ' + c + ' / ' + n,
+      savedJournal: 'Сохранено в журнал класса ✓', alreadyJournal: 'Эта работа уже есть в журнале',
     },
     // vocab (лексика — тема недели + флэшкарты/SRS)
     vocab: {
@@ -799,6 +805,11 @@ export const STRINGS = {
       linkBtn: 'Ссылка-ДЗ', linkCopied: 'Ссылка скопирована ✓', linkTitle: 'Ссылка на ДЗ',
       linkSub: (n) => 'Отправь ученику — он решит ' + n + ' заданий онлайн с автопроверкой',
       linkCopyAgain: 'Копировать', linkClose: 'Готово', printNoReading: 'Чтение пока печатается только через «Ссылку-ДЗ». Печать листа чтения — следующим шагом.',
+      journal: 'Журнал', journalTitle: 'Журнал класса', journalSub: 'Сданные результаты на этом устройстве',
+      journalEmpty: 'Пока нет сданных работ. Открой ссылку-результат от ученика — она попадёт сюда.',
+      jrSubmissions: 'сдач', jrStudents: 'учеников', jrAvg: 'средний',
+      jrHard: 'Самые сложные темы класса', jrSubs: 'Сданные работы',
+      jrClear: 'Очистить журнал', jrClearConfirm: 'Удалить все записи журнала на этом устройстве?',
     },
     homework: {
       loading: 'Loading tasks…', title: 'Homework', count: (n) => n + ' tasks',
@@ -814,6 +825,7 @@ export const STRINGS = {
       rMatch: 'Match: choose a number for each text.',
       rGaps: 'Fill the gaps with the sentence parts (one is extra).',
       readScore: (c, n) => 'Reading: ' + c + ' / ' + n,
+      savedJournal: 'Сохранено в журнал класса ✓', alreadyJournal: 'Эта работа уже есть в журнале',
     },
     sections: { vocab: 'Topic Vocabulary', grammar: 'Grammar', wordform: 'Word formation', reading: 'Reading', listening: 'Listening', writing: 'Writing', speaking: 'Speaking', mock: 'Mock exam', lexis: 'Vocabulary', email: 'Email', essay: 'Essay' },
     sectionMeta: { vocab: 'theme of the week · 15 words a day', grammar: '341 tasks · 9 topics', wordform: '275 tasks · word forms', reading: '469 tasks · 3 formats', listening: 'FIPI audio · multiple choice', writing: 'writing', speaking: '184 tasks · recorder + AI', mock: 'full timed paper', lexis: '275 tasks · 9 topics', email: 'task 37 · K1–K3', essay: 'task 38 · K1–K5' },
