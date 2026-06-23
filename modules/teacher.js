@@ -6,7 +6,7 @@
 import { el, mount } from '../js/ui.js';
 import { loadJSON } from '../js/data.js';
 import { EXAM, t } from '../js/exam.js';
-import { renderPrintView } from './print.js';
+import { renderPrintView, stripTrailingBase } from './print.js';
 
 // человекочитаемые названия дрилл-разделов
 const SEC_TITLE = { grammar: 'Грамматика', wordform: 'Словообразование', lexis: 'Лексика и словообразование' };
@@ -197,9 +197,9 @@ export async function renderTeacher(container, opts) {
       const items = [];
       for (const it of secItems(s.id)) {
         if (!picked.has(s.id + ':' + it.zid)) continue;
-        // base_word уже есть в конце text (формат ФИПИ) — не дублируем в скобках
+        // base_word передаём — print покажет его у пропуска [BASE] и уберёт дубль с конца
         items.push({ kind: 'gap', sub: s.id, zid: it.zid, kes: it.kes,
-          text: it.text, key: (keys[it.zid] || {}).answer });
+          text: it.text, base_word: it.base_word, key: (keys[it.zid] || {}).answer });
       }
       if (items.length) out.push({ id: 'grammar', title: SEC_TITLE[s.id] || s.id, items });
     }
@@ -303,12 +303,15 @@ export async function renderHomework(container, opts) {
     ]));
     const list = el('div', { class: 'hw-list' });
     tasks.forEach((tk, i) => {
-      const parts = (tk.it.text || '').split(/_{3,}/);
+      const bw = tk.it.base_word || '';
+      const clean = bw ? stripTrailingBase(tk.it.text || '', bw) : (tk.it.text || '');
+      const parts = clean.split(/_{3,}/);
       const inp = el('input', { class: 'hw-input', type: 'text', value: answers[tk.it.zid] || '', placeholder: H.answerPh });
       inp.addEventListener('input', () => { answers[tk.it.zid] = inp.value; });
+      const cue = bw ? el('b', { class: 'hw-base', text: ' (' + bw + ') ' }) : document.createTextNode('');
       list.appendChild(el('div', { class: 'hw-q' }, [
         el('span', { class: 'hw-n', text: (i + 1) + '.' }),
-        el('span', { class: 'hw-text' }, [document.createTextNode(parts[0] || ''), inp, document.createTextNode(parts[1] || ' ')]),
+        el('span', { class: 'hw-text' }, [document.createTextNode(parts[0] || ''), inp, cue, document.createTextNode(parts[1] || ' ')]),
       ]));
     });
     view.appendChild(list);
@@ -324,7 +327,9 @@ export async function renderHomework(container, opts) {
       const mine = answers[tk.it.zid] || '';
       const ok = norm(mine) === norm(key) && mine.trim() !== '';
       if (ok) correct += 1;
-      const prev = (tk.it.text || '').replace(/_{3,}/, ' ___ ');
+      const bw = tk.it.base_word || '';
+      const clean = bw ? stripTrailingBase(tk.it.text || '', bw) : (tk.it.text || '');
+      const prev = clean.replace(/_{3,}/, ' ___ ' + (bw ? '(' + bw + ') ' : ''));
       return el('div', { class: 'hw-rev ' + (ok ? 'ok' : 'no') }, [
         el('div', { class: 'hw-rev-t', text: (i + 1) + '. ' + prev }),
         el('div', { class: 'hw-rev-a' }, [

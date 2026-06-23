@@ -8,6 +8,15 @@ import { el, mount } from '../js/ui.js';
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
 const ABC = ['A', 'B', 'C', 'D'];
 
+// убрать базовое слово, дублированное в конце предложения (формат ФИПИ ОГЭ: «…spring. COME»)
+export function stripTrailingBase(text, baseWord) {
+  if (!baseWord) return text;
+  const esc = baseWord.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const out = text.replace(new RegExp('\\s*' + esc + '\\s*$', 'i'), '').trimEnd();
+  if (out === text.trimEnd()) return text; // базового слова в конце не было (формат ЕГЭ)
+  return /[.!?]$/.test(out) ? out : out + '.';
+}
+
 // Печатный лист = как на ФИПИ: инструкции и бланк ПО-РУССКИ для обоих экзаменов (реальный
 // вариант ФИПИ всегда на русском, даже ЕГЭ). Формулировки — из демоверсии ФИПИ-2026.
 const P = {
@@ -180,7 +189,11 @@ function renderItem(it, n, exam) {
     n += 1;
     // fill: формулировка-заметка (label, напр. «Current job») + место под слово; gap: предложение с пропуском
     const fillTxt = (it.label || it.q || '') + ': ______';
-    const txt = it.kind === 'gap' ? (it.text || '').replace(/_{3,}/, ' (' + n + ') ______ ') + (it.base_word ? '  [' + it.base_word + ']' : '') : fillTxt;
+    // gap: базовое слово показываем ПРЯМО у пропуска [BASE]; убираем дубль базового слова с конца (формат ОГЭ)
+    const bw = it.base_word || '';
+    const body = bw ? stripTrailingBase(it.text || '', bw) : (it.text || '');
+    const gapTxt = body.replace(/_{3,}/, ' (' + n + ') ______ ' + (bw ? '[' + bw + '] ' : ''));
+    const txt = it.kind === 'gap' ? gapTxt : fillTxt;
     return { node: el('div', { class: 'pp-q' }, [el('div', { class: 'pp-qt', text: (it.kind === 'fill' ? n + '. ' : '') + txt })]), n };
   }
   if (it.kind === 'match') {
