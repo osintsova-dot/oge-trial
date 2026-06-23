@@ -9,6 +9,7 @@ import { loadJSON } from '../js/data.js';
 import { recordRound, getName, getSpeakingDone, markSpeakingDone } from '../js/gamify.js';
 import { recognize, canRecognize } from '../js/stt.js';
 import { evalEgeSpeaking } from '../js/speakeval.js';
+import { speak, canSpeak, stopSpeak } from '../js/speak.js';
 import { t } from '../js/exam.js';
 import { tipButton } from '../js/tips.js';
 
@@ -63,6 +64,7 @@ export async function renderEgeSpeaking(container, cfg) {
   }
 
   function listScreen(kind) {
+    stopSpeak();
     const cat = CATS.find((c) => c.key === kind);
     const arr = cat.arr;
     const doneMap = getSpeakingDone();
@@ -111,6 +113,43 @@ export async function renderEgeSpeaking(container, cfg) {
 
   function imgs(item) {
     return (item.images || []).map((u) => el('img', { class: 'sp-img', src: u, alt: '', loading: 'lazy', referrerpolicy: 'no-referrer' }));
+  }
+
+  // кнопка озвучки эталона (TTS)
+  function spk(text) {
+    if (!canSpeak() || !text) return null;
+    return el('button', { class: 'btn btn-ghost sp-tts', text: '🔊 ' + S.listenModel, onclick: () => speak(text) });
+  }
+
+  // свёрнутый эталон (Model answer). content — массив узлов.
+  function sampleBlock(title, content) {
+    if (!content || !content.length) return null;
+    const body = el('div', { class: 'sp-sample-body', style: { display: 'none' } }, content);
+    let open = false;
+    const head = el('button', { class: 'sp-sample-head' }, [
+      el('span', { text: '📝 ' + title }), el('span', { class: 'sp-sample-chev', text: '▾' }),
+    ]);
+    head.addEventListener('click', () => { open = !open; body.style.display = open ? '' : 'none'; head.querySelector('.sp-sample-chev').textContent = open ? '▴' : '▾'; });
+    return el('div', { class: 'sp-sample' }, [head, body]);
+  }
+
+  // эталон под тип задания (показывается, если данные есть)
+  function sampleFor(kind, item) {
+    if (kind === 'ask' && item.sampleQuestions && item.sampleQuestions.length) {
+      return sampleBlock(S.sampleQuestions, item.sampleQuestions.map((q) => el('div', { class: 'sp-qa' }, [el('div', { class: 'sp-qa-a', text: q }), spk(q)].filter(Boolean))));
+    }
+    if (kind === 'interview' && item.sampleAnswers && item.sampleAnswers.length) {
+      const rows = item.sampleAnswers.map((a, i) => el('div', { class: 'sp-qa' }, [
+        item.questions && item.questions[i] ? el('div', { class: 'sp-qa-q', text: (i + 1) + '. ' + item.questions[i] }) : null,
+        el('div', { class: 'sp-qa-a', text: a }), spk(a),
+      ].filter(Boolean)));
+      return sampleBlock(S.sampleTitle, rows);
+    }
+    if (kind === 'compare') {
+      // универсальный шаблон (структура + фразы); точный по картинкам — позже через Vision
+      return sampleBlock(S.sampleTemplate, [el('div', { class: 'sp-sample-text', text: S.compareTemplate }), spk(S.compareTemplate)].filter(Boolean));
+    }
+    return null;
   }
 
   function aiCheck(kind, item, rec) {
@@ -166,6 +205,7 @@ export async function renderEgeSpeaking(container, cfg) {
     body.push(el('div', { class: 'sp-step', text: S.yourTurn }));
     body.push(rec.wrap);
     const ac = aiCheck(kind, item, rec); if (ac) body.push(ac);
+    const sample = sampleFor(kind, item); if (sample) body.push(sample);
     const done = el('button', { class: 'btn btn-primary btn-block', style: { marginTop: '18px' }, text: S.doneBtn, onclick: () => finish(kind, item) });
     const cat = CATS.find((c) => c.key === kind);
     mount(container, el('div', { class: 'view sp-screen' }, [
