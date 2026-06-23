@@ -247,6 +247,7 @@ export async function renderMock(container, cfg) {
     if (it.kind === 'rmatch') return rmatchItem(it, answers);
     if (it.kind === 'gaps') return gapsItem(it, answers);
     if (it.kind === 'textgaps') return textgapsItem(it, answers);
+    if (it.kind === 'lexgaps') return lexgapsItem(it, answers);
     if (it.kind === 'tfns') return tfnsItem(it, answers);
     if (it.kind === 'gap') return gapItem(it, i, answers);
     return el('div');
@@ -347,6 +348,27 @@ export async function renderMock(container, cfg) {
     return el('div', { class: 'mock-q' }, [head, para]);
   }
 
+  // лексика-MC (ЕГЭ зад.30-36): связный текст с пропусками {1}..{7} + 4 варианта слова на каждый
+  function lexgapsItem(it, answers) {
+    const head = el('div', { class: 'mock-tg-h', text: M.tgLexis });
+    const para = el('div', { class: 'mock-tg-text' });
+    (it.passage || '').split(/\{(\d+)\}/).forEach((ch, idx) => {
+      if (idx % 2 === 0) { if (ch) para.appendChild(document.createTextNode(ch)); return; }
+      para.appendChild(el('span', { class: 'mock-lex-gapn', text: ' (' + ch + ') ______ ' }));
+    });
+    const list = (it.gaps || []).map((gp) => {
+      const row = el('div', { class: 'mock-lex-opts' }, (gp.options || []).map((w, oi) => {
+        const id = 'l_' + gp.zid + '_' + oi;
+        const inp = el('input', { type: 'radio', name: 'l_' + gp.zid, id, value: String(oi + 1) });
+        if (answers[gp.zid] === String(oi + 1)) inp.checked = true;
+        inp.addEventListener('change', () => { answers[gp.zid] = String(oi + 1); });
+        return el('label', { class: 'mock-opt', for: id }, [inp, el('span', { text: (oi + 1) + ') ' + w })]);
+      }));
+      return el('div', { class: 'mock-lex-q' }, [el('div', { class: 'mock-lex-n', text: gp.pos + '.' }), row]);
+    });
+    return el('div', { class: 'mock-q' }, [head, para, el('div', { class: 'mock-lex-list' }, list)]);
+  }
+
   function tfnsItem(it, answers) {
     const key = 'tf:' + it.group;
     answers[key] = answers[key] || {};
@@ -422,6 +444,8 @@ export async function renderMock(container, cfg) {
           const ok = keyOk(answers[it.zid], it.key); add(it.kes, ok); rawN++; if (ok) sc++;
         } else if (it.kind === 'textgaps') {
           (it.gaps || []).forEach((gp) => { const ok = keyOk(answers[gp.zid], gp.key); add(gp.kes || it.kes, ok); rawN++; if (ok) sc++; });
+        } else if (it.kind === 'lexgaps') {
+          (it.gaps || []).forEach((gp) => { const ok = (answers[gp.zid] || '') === String(gp.key); add(gp.kes || it.kes, ok); rawN++; if (ok) sc++; });
         } else if (it.kind === 'match') {
           const a = answers[it.zid] || {};
           it.speakers.forEach((sp, idx) => { const ok = (a[sp] || '') === it.key[idx]; add(it.kes, ok); rawN++; if (ok) sc++; });

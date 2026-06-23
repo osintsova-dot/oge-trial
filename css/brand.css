@@ -1100,6 +1100,7 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .print-bar{position:sticky;top:0;z-index:6;display:flex;align-items:center;gap:12px;padding:12px 16px;background:var(--grad-mock);color:#fff}
 .print-bar-t{flex:1;font-size:17px;font-weight:800}
 .print-go{flex:none;background:#fff;color:var(--p-text);border:none;font-weight:800;padding:8px 14px}
+.print-official{flex:none;background:rgba(255,255,255,.18);color:#fff;border:1px solid rgba(255,255,255,.6);font-weight:700;padding:8px 12px;text-decoration:none;font-size:13px}
 .print-hint{font-size:13px;color:var(--muted);padding:10px 16px;line-height:1.4}
 .print-paper{background:#fff;color:#111;max-width:760px;margin:14px auto;padding:26px 30px;border:1px solid var(--line);border-radius:8px;font-family:Georgia,'Times New Roman',serif;line-height:1.5}
 .pp-head{border-bottom:2px solid #111;padding-bottom:10px;margin-bottom:14px}
@@ -1124,15 +1125,15 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .pp-mcell{white-space:nowrap}
 .pp-stim{font-size:14px;margin:6px 0;font-style:italic}
 .pp-note{font-size:12.5px;color:#555;margin-top:6px}
-/* бланк ответов */
-.answer-sheet .as-grid{display:flex;flex-direction:column;gap:6px}
-.as-row{display:flex;align-items:center;gap:8px}
-.as-n{width:26px;text-align:right;font-weight:700;font-size:13px}
-.as-boxes{display:flex;gap:2px}
-.as-box{width:20px;height:24px;border:1px solid #111}
-.as-writing{margin-top:14px}
-.as-w-h{font-weight:800;font-size:14px;margin-bottom:8px}
-.as-line{border-bottom:1px solid #999;height:22px}
+/* БЛАНК ОТВЕТОВ № 1 — по образцу ФИПИ-2026 */
+.as1-secband{background:#111;color:#fff;text-align:center;font-weight:800;font-size:12px;padding:4px 0;margin:10px 0 8px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.as1-cols{display:flex;gap:14px}
+.as1-col{flex:1;display:flex;flex-direction:column;gap:4px}
+.as1-row{display:flex;align-items:center;gap:5px}
+.as1-num{width:20px;text-align:right;font-weight:800;font-size:12px;border-right:2px solid #111;padding-right:4px;flex:none}
+.as1-cells{display:flex;gap:0}
+.as1-box{width:13px;height:17px;border:1px solid #111;border-left:none;flex:none}
+.as1-box:first-child{border-left:1px solid #111}
 @page{ size:A4; margin:14mm 12mm; }
 @media print{
   html,body{background:#fff!important;height:auto!important}
@@ -1141,17 +1142,40 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
   #view,.view,.print-view{max-width:none!important;width:auto!important;margin:0!important;padding:0!important;min-height:0!important}
   .print-paper{border:none!important;border-radius:0!important;margin:0!important;max-width:none!important;width:100%!important;padding:0!important;font-size:12pt}
   .answer-sheet{page-break-before:always}
-  .as-row,.as-writing,.as-header,.pp-opt{page-break-inside:avoid}
+  .as1-row,.as1-head,.as1-codes,.pp-opt{page-break-inside:avoid}
+  .as1-secband{background:#111!important}
   .pp-sec-h{background:#e8e8e8!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }
-/* шапка бланка ответов */
-.as-header{border:2px solid #111;padding:12px 14px;margin-bottom:14px}
-.as-title{font-size:17px;font-weight:800;text-align:center}
-.as-ex{font-size:12px;text-align:center;color:#333;margin:2px 0 10px}
-.as-field{display:flex;align-items:center;gap:8px;margin:5px 0}
-.as-field-l{width:90px;font-size:12px}
-.as-line2{display:flex;align-items:flex-end;gap:6px;font-size:12px;margin-top:8px}
-.as-instr{font-size:11px;color:#444;margin-top:8px;font-style:italic}
+/* шапка БЛАНКА ОТВЕТОВ № 1 / № 2 */
+.as1-head{border:2px solid #111;padding:0 0 8px}
+.as1-band{display:flex;flex-direction:column;align-items:center;border-bottom:2px solid #111;padding:6px 0}
+.as1-exam{font-size:11px;font-weight:700;letter-spacing:.3px}
+.as1-blank{font-size:19px;font-weight:800;letter-spacing:.5px}
+.as1-codes{display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap;padding:8px 12px 0}
+.as1-cg{display:flex;flex-direction:column;gap:3px}
+.as1-cg-l{font-size:9.5px;color:#333}
+.as1-cg-b{display:flex}
+.as1-cg-b .as1-box{width:15px;height:19px;border:1px solid #111;border-left:none}
+.as1-cg-b .as1-box:first-child{border-left:1px solid #111}
+.as1-subjval{font-size:12px;font-weight:700;border-bottom:1px solid #111;min-width:110px;padding-bottom:1px}
+.as1-sign{display:flex;flex-direction:column;align-items:center;gap:2px;margin:8px 12px 0;width:230px}
+.as1-sign .pp-line{flex:none;width:100%;border-bottom:1px solid #111;height:14px}
+.as1-sign-l{font-size:9px;color:#555}
+.as1-rule{font-size:9.5px;color:#222;padding:8px 12px 4px;line-height:1.35}
+.as1-samples{padding:0 12px 4px;display:flex;flex-direction:column;gap:3px}
+.as1-sample{display:flex;gap:1px}
+.as1-sch{display:inline-flex;align-items:center;justify-content:center;width:13px;height:16px;border:1px solid #999;font-size:10px;font-weight:700}
+/* ОГЭ: сведения об участнике на бланке № 1 */
+.as1-info{border-top:1px solid #111;margin-top:6px}
+.as1-infoband{background:#111;color:#fff;text-align:center;font-weight:800;font-size:11px;padding:3px 0;margin:0 0 6px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.as1-namerow,.as1-docrow{display:flex;align-items:center;gap:8px;margin:4px 12px}
+.as1-name-l{width:74px;font-size:11px}
+.as1-doc-s{font-size:10px;color:#333}
+/* БЛАНК ОТВЕТОВ № 2 — поле для письма (клетка как на экзамене) */
+.as2-note{font-size:10px;color:#444;margin:8px 0 6px}
+.as2-grid{border:2px solid #111;height:235mm;background-size:5mm 5mm;
+  background-image:linear-gradient(#cfd4e0 .5px,transparent .5px),linear-gradient(90deg,#cfd4e0 .5px,transparent .5px);
+  -webkit-print-color-adjust:exact;print-color-adjust:exact}
 /* связный текст с пропусками (грам/словообр) в пробнике */
 .mock-tg-h{font-size:13px;font-weight:800;color:var(--p-text);margin:4px 0 8px}
 .mock-tg-text{font-size:15px;line-height:2.1;color:var(--ink)}
@@ -1159,3 +1183,13 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .mock-tg-base{font-weight:800;text-transform:uppercase;color:var(--magenta);font-size:12px}
 .pp-textgaps{line-height:2.0}
 .pp-tg-gap{white-space:nowrap;font-weight:600}
+/* лексика-MC (зад.30-36): экранный пробник */
+.mock-lex-gapn{white-space:nowrap;font-weight:700;color:var(--p-text)}
+.mock-lex-list{margin-top:12px;display:flex;flex-direction:column;gap:10px}
+.mock-lex-q{display:flex;gap:8px;align-items:flex-start}
+.mock-lex-n{font-weight:800;min-width:22px;color:var(--p-text)}
+.mock-lex-opts{display:flex;flex-wrap:wrap;gap:6px 16px}
+/* лексика-MC: печать */
+.pp-lex-list{margin-top:8px;display:flex;flex-direction:column;gap:4px}
+.pp-lex-q{font-size:13px}
+.pp-lex-opt{white-space:nowrap;margin-right:6px}

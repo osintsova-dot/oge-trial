@@ -1,0 +1,2753 @@
+{
+ "exam": "ege",
+ "section": "lexis_mc",
+ "variants": [
+  {
+   "variant": "09B13D",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "Going on a hike Simon and I were in a school football team. Occasionally, the team took field trips to places outside of our neighbourhood on the weekends. Last week, our coach Mr Brown {1} we were going on a hike through a forest in a state park. Simon is my best friend, and the two of us had both liked the trips to the museums, plays, and basketball games. We weren’t all that {2} in the outdoors. {3}, Mr Brown claimed that we’d really enjoy discovering how amazing nature can be—especially for the big city kids. Simon and I were sure we’d rather be back home playing video games. Now we were in a state park, marching through woods as {4}as a grizzly bear’s fur. Our group of 12 kids had been hiking for a good 30 minutes when Simon and I grew bored and stepped away from the group to take some pictures. I looked around, shouting, “Check out that tree — it’s kinda cool. Doesn’t its shape {5} you of an elephant?” “Ha! It does,” Simon replied. “And look at how those rocks are formed over there. You don’t see stuff like that in the city, now do you?” For the next few minutes, we got caught up in {6} flowers, leaves, animals, and little caves we hadn’t seen before. The more we opened up to the forest, the more it opened up to us. We were beginning to see the amazing things around us. Out here, away from the city, I was starting to get what Mr Brown had {7} us about how wonderful nature could be.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "D565F8",
+     "options": [
+      "promoted",
+      "announced",
+      "extended",
+      "presented"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 2,
+     "zid": "AAA7F9",
+     "options": [
+      "delighted",
+      "inspired",
+      "excited",
+      "interested"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 3,
+     "zid": "E0D6F9",
+     "options": [
+      "Moreover",
+      "Although",
+      "However",
+      "Otherwise"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 4,
+     "zid": "6E3AE8",
+     "options": [
+      "heavy",
+      "strong",
+      "thick",
+      "rich"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 5,
+     "zid": "B700F1",
+     "options": [
+      "review",
+      "remember",
+      "reflect",
+      "remind"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 6,
+     "zid": "094FCF",
+     "options": [
+      "obtaining",
+      "observing",
+      "offending",
+      "objecting"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 7,
+     "zid": "8CD545",
+     "options": [
+      "talked",
+      "spoke",
+      "told",
+      "said"
+     ],
+     "key": 3
+    }
+   ]
+  },
+  {
+   "variant": "0EAA8F",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "Olivia I never took Olivia to the theatre, but it was there I met her. I {1} the habit now of going every Saturday night, usually alone, sometimes with George. It was George who {2} me to Olivia Nelson. She was an only child whose father, a cotton merchant, had died and left her all he had. She was not very beautiful but she was tall, very graceful, smartly dressed and {3} me at once. Olivia got interested when George said that I was a novelist. Novelists were not too common in Cornwell then, though I believe they are now as numerous as knights. Olivia adored famous people. She was delighted to meet me. It turned {4} that Olivia had read my books, at least some of them and she liked them. She could {5} intelligently about them. She praised them and criticized them with a good deal of common sense. She discussed new plays and new books with me. She developed a habit of being wherever I was to be found. We had a few meals together at restaurants, and I {6} that I was dressing with unusual care. She was so excited and happy, so full of good conversation, that I was charmed and captivated by her company. But I couldn’t help thinking that something was wrong. There was no {7} to think the worst. However, I couldn’t make myself propose to her.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "135992",
+     "options": [
+      "kept",
+      "held",
+      "used"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 2,
+     "zid": "9EF04E",
+     "options": [
+      "called",
+      "greeted",
+      "introduced",
+      "met"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 3,
+     "zid": "F7E42E",
+     "options": [
+      "involved",
+      "attracted",
+      "appealed",
+      "engaged"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 4,
+     "zid": "44C0EA",
+     "options": [
+      "up",
+      "down",
+      "on",
+      "out"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 5,
+     "zid": "D3E358",
+     "options": [
+      "talk",
+      "tell",
+      "discuss",
+      "say"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 6,
+     "zid": "42CF38",
+     "options": [
+      "determined",
+      "discovered",
+      "revealed",
+      "disclosed"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 7,
+     "zid": "C37DFE",
+     "options": [
+      "matter",
+      "account",
+      "reason",
+      "cause"
+     ],
+     "key": 3
+    }
+   ]
+  },
+  {
+   "variant": "1B7697",
+   "kes": "2.3.1",
+   "n": 7,
+   "passage": "My second visit It was my second visit to Dr Boxer. He answered the door exactly as he had done the first time, by opening only a crack and looking through it warily, as if there were something that he was {1} not everyone should see. He {2} me of a gatekeeper in a fairy story: ageless and watchful. It was a feeling I would come to know well in the next months. Even now, years later and far away, sometimes in my dreams, I find myself standing before that white door, {3} for him to open it. When he {4} it was me, he opened the door slightly wider than he had done the first time. He let me in. It was a beautiful room, not an office at all, and much bigger than it looked from outside – airy and white, with a high ceiling and two windows. In the corner, near a low bookshelf, was a big round table with teapots and Greek books, and there were flowers everywhere. I was surprised and {5} at the same time. Everywhere I looked, there was something beautiful – Oriental carpets, tiny paintings and white vases with flowers. He sat in an armchair by the window and said, “I {6} you’ve come about the Greek class.” “Yes.” “It’s rather late in the term,” he said. “Young people often find Greek a bore, which is not to say that it isn’t good for them.” “I’d like to study it again. It seems a shame to {7} it after two years”. After a moment Dr Boxer said slowly, “If you’d like, I’d be happy to take you as a pupil, Mr Brown.”",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "AACA23",
+     "options": [
+      "cheerful",
+      "forgetful",
+      "careful",
+      "doubtful"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 2,
+     "zid": "AB8997",
+     "options": [
+      "recovered",
+      "reviewed",
+      "reminded",
+      "remembered"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 3,
+     "zid": "C0C81F",
+     "options": [
+      "waiting",
+      "expecting",
+      "delaying",
+      "pausing"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 4,
+     "zid": "2AF6D5",
+     "options": [
+      "viewed",
+      "saw",
+      "watched",
+      "looked"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 5,
+     "zid": "3BC5E0",
+     "options": [
+      "inclined",
+      "influenced",
+      "inspired",
+      "impressed"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 6,
+     "zid": "E78483",
+     "options": [
+      "suggest",
+      "suppose",
+      "submit",
+      "supervise"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 7,
+     "zid": "24B831",
+     "options": [
+      "end",
+      "drop",
+      "fall",
+      "sink"
+     ],
+     "key": 2
+    }
+   ]
+  },
+  {
+   "variant": "204265",
+   "kes": "2.3.1",
+   "n": 7,
+   "passage": "Michael’s holidays Michael was very happy. He was {1} holidays with his family, making the most of his time by Emerald Lake. Early in the morning, as soon as dawn broke, he was on its shore – building fantastic sand castles from the gritty sand. He imitated the birds, trying to get their {2}. He chased the lizards, hoping they would want to play. He threw rocks into the water doing everything he could to entertain the fish. Michael loved nature — even if the hundreds of mosquito bites that covered his arms and legs were proof that nature didn’t love him back. Camping in the nature was {3} the best way to spend your summer holidays. Michael saw his sister Barbara sitting on the sand. At first, he didn’t want to {4} her, but he had a great idea to share. So he came up to her and stated, “I bet the other side of the lake is even better than this side!” Trying to act interested, Barbara asked, “What {5} you think so?” “It’s tough to believe, I know, because this side is so unbelievably perfect. There are birds and lizards and mosquitoes and fish. {6}, something in my gut tells me that it’s even better over there.” The summer before, Barbara and her mother had driven to the other side of the lake to buy shampoo at the drugstore. The other side of the lake was nothing very exciting: strip malls and gas stations, with a shopping mall in the middle. But before she {7} the truth, she wanted to know what he was imagining. “Describe it to me,” she asked. “Describe everything that’s on the other side of the lake.”",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "F6B774",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 2,
+     "zid": "A803A3",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 3,
+     "zid": "59DFE1",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 4,
+     "zid": "1B552F",
+     "options": [],
+     "key": 1
+    },
+    {
+     "pos": 5,
+     "zid": "1AC8B7",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 6,
+     "zid": "23BFC5",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 7,
+     "zid": "449453",
+     "options": [],
+     "key": 2
+    }
+   ]
+  },
+  {
+   "variant": "2437E5",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "Memories Jessica was having dinner with her family. They were listening to jazz music and discussing the history of jazz. Jessica {1} quickly at her mom and asked if she had listened to jazz while growing up. “Oh, all the time! I can {2} think of an evening without jazz music at home,” she exclaimed. “My dad was really keen {3} jazz and swing music. He was a pianist himself. He learned how to play from his father – my grandfather – who was around when swing music was just becoming popular,” she explained. “When was that?” Jessica asked. “Well, swing music – a type of jazz style with a strong beat that really makes you want to dance – had been played for a long time by the African-American community before it really became popular. My grandfather and his father had been playing swing long before it was heard on the radio. When the Great Depression hit in the 1930s, many Americans were out of jobs and money. So of course they needed something to {4} them up. When people heard swing music, they forgot about their problems. The music was just so uplifting; it {5} them of all the good times they had had. So big bands, like the one led by Duke Ellington, started to play at famous ballrooms and theaters all across the United States and even Europe,” her mom explained. “And so that’s when your grandpa was around?” Jessica asked. She was so excited to learn that she had a connection to this music. “Yes,” her mother nodded her head in {6}. “He loved to go dancing and never missed a music party. {7}, he saw the famous Duke Ellington and his band play live once!” she replied.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "47C65A",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 2,
+     "zid": "A26528",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 3,
+     "zid": "F15371",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 4,
+     "zid": "A97913",
+     "options": [],
+     "key": 1
+    },
+    {
+     "pos": 5,
+     "zid": "080239",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 6,
+     "zid": "F7E310",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 7,
+     "zid": "1C3F0D",
+     "options": [],
+     "key": 4
+    }
+   ]
+  },
+  {
+   "variant": "33C6D7",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "A new coat At the weekend Dotty went to Anna for tea and Anna’s mother Miranda gasped when she saw Dotty. She had changed a lot. Anna had {1} Dotty to the hairdresser’s and now she had a very beautiful hairstyle with a fringe. {2} , Miranda knew that the girls had bought a new suit for Dotty. “You look completely different with your hair like that,” Miranda said approvingly, then, “Did you bring your suit with you? Anna told me how nice it was.” Dotty waved a bag at her. “Yes, I did. Anna is going to let me borrow one of her coats which would match my suit. She says I'm not {3} to wear this one now.” “Well, I certainly agree with her on that point but I think you may take my woollen coat {4} of Anna’s. I never wear it any more so if you like it you’re more than welcome to keep it.” Miranda disappeared to return minutes later with a very smart swing coat in navy blue folded across her arm. “Here, try this on,” she encouraged and Dotty slipped it on. “It’s just perfect,” Miranda told her. “And I have to say it looks so much better on you than it ever did on me. Take it and wear it in good health.” “But I couldn’t,” Dotty spluttered. “It must have cost a {5} and I really can’t take it.” “Of course you can,” Miranda said. What good is it to me, hanging in the wardrobe and never {6} the light of day? You’ll be {7} me a favour taking it out of the way.” Dotty was really pleased with Miranda’s present.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "AA70AC",
+     "options": [
+      "proceeded",
+      "accompanied",
+      "followed",
+      "addressed"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 2,
+     "zid": "B7A03B",
+     "options": [
+      "Therefore",
+      "Otherwise",
+      "Moreover",
+      "Although"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 3,
+     "zid": "CCF488",
+     "options": [
+      "agreed",
+      "accepted",
+      "afforded",
+      "allowed"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 4,
+     "zid": "08AB1C",
+     "options": [
+      "instead",
+      "besides",
+      "against",
+      "outside"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 5,
+     "zid": "CDE13C",
+     "options": [
+      "price",
+      "thing",
+      "fortune",
+      "wealth"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 6,
+     "zid": "1F3B6E",
+     "options": [
+      "looking",
+      "seeing",
+      "watching",
+      "glancing"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 7,
+     "zid": "F80118",
+     "options": [
+      "making",
+      "getting",
+      "doing",
+      "giving"
+     ],
+     "key": 3
+    }
+   ]
+  },
+  {
+   "variant": "3AA36E",
+   "kes": "2.3.1",
+   "n": 7,
+   "passage": "The effect of the temperature Many people believe that office conditions can influence our work. For a {1} time achieving a comfortable room temperature in hot climates was a constant struggle. R esearch discovered an obvious fact: finding an office temperature to {2} everyone all the time is basically impossible. “Part of the problem is trying to work out the “correct” temperature. It depends {3} what you’re measuring,” said researcher David House. One study {4} at the impact of the room temperature on worker productivity, by tracking the activity of managers in an office. {5} it measured the activity of just nine women, the results were impressive. At 25°C they were typing non-stop with an error rate of just 10%. When the temperature dropped to 20°C , they were half as productive, more than doubling the number of mistakes. But it’s not quite that simple. When students in the other study were asked to solve a math problem in either a cool or a warm room, the group in the cooler room {6} in this task twice as often. It means that complex decisions are more difficult when we’re warm. When the temperature is above 27°C, we’re not so good at mathematics. In fact, the room temperature can do more than influence your productivity – it can change the way you think. Warm environments are better for creative thinking, while cooler workplaces are thought to {7} people active during repetitive or monotonous tasks.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "058E7F",
+     "options": [
+      "huge",
+      "high",
+      "big",
+      "long"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 2,
+     "zid": "E00C22",
+     "options": [
+      "please",
+      "amuse",
+      "enjoy",
+      "prefer"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 3,
+     "zid": "BD335B",
+     "options": [
+      "in",
+      "from",
+      "on",
+      "for"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 4,
+     "zid": "934AF8",
+     "options": [
+      "observed",
+      "looked",
+      "watched",
+      "glanced"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 5,
+     "zid": "CEFE75",
+     "options": [
+      "Although",
+      "Moreover",
+      "Therefore",
+      "However"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 6,
+     "zid": "C8DC6D",
+     "options": [
+      "fulfilled",
+      "managed",
+      "achieved",
+      "succeeded"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 7,
+     "zid": "34C279",
+     "options": [
+      "stay",
+      "gain",
+      "keep",
+      "hold"
+     ],
+     "key": 3
+    }
+   ]
+  },
+  {
+   "variant": "42247C",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "A day in Chicago Lily and her best friend Zoe were driving home from their vacation in California . That was a great adventure which they were enjoying a lot. They {1} to visit so many interesting places. As they were driving closer to Chicago , the ladies were {2} facts from the guidebook about this city, which was their little road ritual. They had planned to stop first at Millennium Park , one of the city’s public parks made famous by its unique art displays. Lily had seen pictures of her friends posing with “The Bean,” a three-storey steel sculpture shaped like a giant legume, and she was {3} to have one of her own. The piece was completely reflective, so those standing around it could look at their reflections as if they were looking into a mirror. Everybody {4} it made spectacular photographs. The two travellers spent the day walking around Chicago . They listened to music in Millennium Park , lying on their backs in the grass, peering up at the modern sculptures across the lawn. They took an overwhelming {5} of photographs at The Bean, much to Lily’s satisfaction. Finally, her dream to post this photo {6} true. They met some friends with whom they had gone to university to eat deep-dish pizza for dinner – a Chicago staple. Even before the sun set, Zoe and Lily were exhausted. {7}, they still had one more thing to do.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "9C1787",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 2,
+     "zid": "9102FF",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 3,
+     "zid": "720473",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 4,
+     "zid": "1129C3",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 5,
+     "zid": "8E7AE2",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 6,
+     "zid": "BC301F",
+     "options": [],
+     "key": 1
+    },
+    {
+     "pos": 7,
+     "zid": "AF95BF",
+     "options": [],
+     "key": 3
+    }
+   ]
+  },
+  {
+   "variant": "4ACD28",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "Shirley It was Friday, the thirty-first of May, and it was Shirley’s birthday, her twentieth birthday. Shirley could {1} believe it, but it was true. And she suddenly, and wonderfully, felt quite grown up, very grown up, in fact. Last night her father had {2} her a lovely young lady, and she had beamed at him, hugged him, and told him she was so happy to have him and Alice, have them as her parents. There was no one luckier than she was; Shirley believed that with all her {3}. Last night, over dinner, Alice and Victor praised her and were talking much about how proud they were of her and what she had become, and she had experienced an enormous rush of love and gratitude toward them. Her father had added that she had a wonderful life ahead of her, and she believed him. He always {4} her the truth. Her dream of going to Cambridge had come true and for the past year she had been living her childhood dream, {5} lectures. She {6} every moment of living in that ancient city of shining spires, gracious quadrangles, and beautiful architecture. It was an extraordinary experience to be in that place of great learning, and she would {7} it with love long after she had left. She was reading English and French history, her favourite subjects, and one day she hoped to be a historian and give lectures herself and write books.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "0BDE92",
+     "options": [
+      "really",
+      "rarely",
+      "nearly",
+      "hardly"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 2,
+     "zid": "8C676F",
+     "options": [
+      "named",
+      "called",
+      "referred",
+      "described"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 3,
+     "zid": "315E36",
+     "options": [
+      "brain",
+      "heart",
+      "mind"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 4,
+     "zid": "8038F0",
+     "options": [
+      "spoke",
+      "talked"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 5,
+     "zid": "381F22",
+     "options": [
+      "approving",
+      "attending",
+      "participating",
+      "visiting"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 6,
+     "zid": "6C4CAF",
+     "options": [
+      "admired",
+      "pleased",
+      "enjoyed"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 7,
+     "zid": "BB09CA",
+     "options": [
+      "remind",
+      "remember",
+      "review",
+      "repeat"
+     ],
+     "key": 2
+    }
+   ]
+  },
+  {
+   "variant": "53CB68",
+   "kes": "2.3.1",
+   "n": 7,
+   "passage": "Becky Becky met Professor Alan Dobson at the lecture. His lecture was devoted to the British role after the war. Becky had fallen in love with Alan even before he started to speak. It was love at first {1}. He was very handsome with a head of thick grey hair and large blue eyes. His athletic build belied his age, and {2} that he must spend almost as many hours in the gym as in the library. The second he began to {3}, Becky was captivated by Dobson’s energy, and within moments he had everyone in the auditorium sitting on the edge of their seats. Students began furiously writing {4} his every word. Speaking without notes, the professor nimbly switched from subject to subject, the role of Downing Street after the war, the dollar as the new world currency, oil becoming the commodity that would dominate the second half of the century and the future role of the British monarchy. When his lecture came to an end, Becky’s only regret was that he’d scarcely {5} on transport, with just a passing mention of how the airplane would change the new world order, both for business and tourism. She wanted him to expand his views on the future of the British shipping industry. But like a seasoned pro, he {6} his audience that he had written a book on the subject. Becky wouldn’t be waiting for Christmas to get hold of a copy. It made her think about Ben, and hope his book {7} was going as well in France.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "6262B0",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 2,
+     "zid": "C910D2",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 3,
+     "zid": "5DD63B",
+     "options": [],
+     "key": 1
+    },
+    {
+     "pos": 4,
+     "zid": "B4547C",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 5,
+     "zid": "6D2E23",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 6,
+     "zid": "A06380",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 7,
+     "zid": "AABEDE",
+     "options": [],
+     "key": 3
+    }
+   ]
+  },
+  {
+   "variant": "546EB0",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "The man on the trail It was a cold grey day when the man walked into the main Yukon trail. He climbed the snow-covered river bank where a trail went through the pine forest. It was a high bank, and the man paused to breathe at the top and {1} at the sky. It was nine o’clock in the morning. There was no sun or even the promise of sunshine, {2} there was not a cloud in the sky. It was a clear day, but the sun was absent from the sky. This fact did not worry the man because he could hardly {3} a day when he had seen the sun. The man had come a long way alone, and he was really proud {4} himself. The old man from the village warned him how cold it sometimes got in this country. He said that no man should travel alone in this season. Despite all the problems on the way, the man {5} to save himself. The Yukon River was hidden under three feet of ice with as many feet of snow on top. It was all pure white. North and south, as far as the eye could see, it was white. There was only a thin dark line that curved to the south. This dark line was the trail – the main trail. It led south 500 miles to the Chilcoot Pass. It led north 75 miles to Dawson and still farther on to the north a thousand miles more. However, all this – the distant trail, no sun in the sky, and the great cold – had no {6} on the man. It was not because he was long {7} with it. On the contrary, he was a newcomer in the land, and this was his first winter.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "CFE184",
+     "options": [
+      "watched",
+      "looked",
+      "noticed",
+      "observed"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 2,
+     "zid": "E956AF",
+     "options": [
+      "although",
+      "therefore",
+      "otherwise",
+      "however"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 3,
+     "zid": "78AA57",
+     "options": [
+      "revise",
+      "review",
+      "remind",
+      "remember"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 4,
+     "zid": "D63A76",
+     "options": [
+      "of",
+      "at",
+      "by",
+      "on"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 5,
+     "zid": "919EDC",
+     "options": [
+      "achieved",
+      "completed",
+      "managed",
+      "succeeded"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 6,
+     "zid": "C0F270",
+     "options": [
+      "mark",
+      "effect",
+      "change",
+      "result"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 7,
+     "zid": "46EC99",
+     "options": [
+      "certain",
+      "general",
+      "common",
+      "familiar"
+     ],
+     "key": 4
+    }
+   ]
+  },
+  {
+   "variant": "566EC1",
+   "kes": "2.3.1",
+   "n": 7,
+   "passage": "A jazz evening Jessica was talking about jazz music with her mother. Her mom was telling her about one song that was a revolutionary piece of music in the last century. Jessica was surprised to {1} out that it was still listened to by jazz audiences all around the world. She loved how music could be passed down through generations. “Well, it sounds like you’re interested {2} jazz history all of a sudden. What’s making you ask all these questions?” Jessica’s mom asked. The girl explained that she wanted to learn something new. She had learned enough classical music and wanted to move on to something else. “Then start improvising!” Jessica’s mom told her. “Jazz is all about improvising. So many solos are just musicians playing what their heart feels.” Jessica thought about improvising. She could {3} imagine just sitting down at the piano and playing anything that came to her mind, just piecing together notes in a way that would captivate her listeners. She {4} silent for a while, concentrating on what she could possibly play off the top of her head. Her mom noticed Jessica’s hesitation. “The only way you’re going to learn how to improvise is if you try,” she told her daughter. She {5} quickly at Jessica, walked over to the piano and pulled out the bench. She patted it and looked at Jessica. “Let’s start now!” she said with excitement in her eyes. {6} Jessica had never done it before, she decided to give it a try. She was full of inspiration. The girl didn’t say anything; she just nodded her head in {7} and sat down at the piano.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "76AB90",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 2,
+     "zid": "04B3DF",
+     "options": [],
+     "key": 1
+    },
+    {
+     "pos": 3,
+     "zid": "71D52E",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 4,
+     "zid": "C34E09",
+     "options": [],
+     "key": 1
+    },
+    {
+     "pos": 5,
+     "zid": "E903A0",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 6,
+     "zid": "6E17AB",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 7,
+     "zid": "9B3BE6",
+     "options": [],
+     "key": 2
+    }
+   ]
+  },
+  {
+   "variant": "5BB43D",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "Solo travelling I like travelling alone. I have visited many places, such as Thailand, Europe, South America and the USA on my own, which was a great challenge. Every time I travel solo I {1} myself of how strong I am. Travelling with others, you tend to rely on different people for different things. For example, Joe handles the map because he’s good {2} navigation, while Jennifer deals with the arguments because she’s an excellent problem solver. When you’re travelling by yourself, only you’re {3} for it all: reading the map, navigating local transportation, communicating through language barriers to order food or a bus ticket, and any other travel situation. Solo travelling also developed my communication skills. I think I truly reached my full socializing potential when I was travelling alone in Europe. I can {4} that European culture is extremely social in itself. Suddenly, people were coming up and starting conversations with me in money exchanges, train stations, parks, buses, piazzas, hostels. As I got used to the European culture, I began initiating conversations myself. I still {5} in touch with most of the friends I made on that trip. They are very kind and helpful people. {6} , I realized how easy it was to make friends once you came out of your shell. These communication skills have helped me to {7} in work, friendship and relationships.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "CFB9CF",
+     "options": [
+      "revise",
+      "review",
+      "remind",
+      "recall"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 2,
+     "zid": "F7D2D1",
+     "options": [
+      "in",
+      "at",
+      "on",
+      "of"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 3,
+     "zid": "EE9EB9",
+     "options": [
+      "dependable",
+      "consistent",
+      "reliable",
+      "responsible"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 4,
+     "zid": "3FA475",
+     "options": [
+      "say",
+      "speak",
+      "talk",
+      "tell"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 5,
+     "zid": "9FF70C",
+     "options": [
+      "take",
+      "hold",
+      "keep",
+      "make"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 6,
+     "zid": "8C6F30",
+     "options": [
+      "Therefore",
+      "Otherwise",
+      "However",
+      "Moreover"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 7,
+     "zid": "042743",
+     "options": [
+      "succeed",
+      "fulfil",
+      "achieve",
+      "manage"
+     ],
+     "key": 1
+    }
+   ]
+  },
+  {
+   "variant": "5D7BE0",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "At the office Max White tapped on Paul’s office door at 15.00. He walked in without {1} for a response. Paul looked up from the papers on his desk and said, “Sit down, Max. Please {2} me everything you know.” It was Tuesday, the eighth of July; the day before, the rumors had been rampant throughout the company that more of the top executives were going to be sacked on the explicit orders of Brent Horn. {3} , nobody knew who would be terminated. So most of the people were {4} about losing their jobs. An atmosphere of fear reigned in the company for the first time in over thirty years, and there was gloom on every floor of the building. Max had all the information, as he had just told Paul on the phone; now he leaned closer and confided, “I understand George Sanford was given his walking orders late on Friday afternoon. And this week we’ll see the {5} of Jim Cooper and John Turner, two good men.” It was terrible news. They had been with the company about as long as Paul had. They were among Brent Horn’s big supporters when he was trying to get the company back from the DeWitts. They were much {6} by everyone. Paul couldn’t {7} of their dismissal. He was truly shocked, and it showed. The company had changed the moment Brent Horn had taken control, and it genially concerned him.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "375E12",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 2,
+     "zid": "153B2F",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 3,
+     "zid": "12E0C3",
+     "options": [],
+     "key": 1
+    },
+    {
+     "pos": 4,
+     "zid": "01ED52",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 5,
+     "zid": "EA5BE7",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 6,
+     "zid": "D30604",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 7,
+     "zid": "905D08",
+     "options": [],
+     "key": 4
+    }
+   ]
+  },
+  {
+   "variant": "5FA4FA",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "Henry It was impossible for Henry to get to his office in half an hour. The wind was howling, and the cars were stuck in snowdrifts. Не couldn’t {1} a day like that. The buses had been somewhere around Park Avenue, where they sat huddled like frozen dinosaurs, as one left the flock only very rarely to {2} up a few brave travellers. The travellers rushed from doorways frantically waving their arms, sliding wildly to the curb. They mounted the buses with damp eyes and red faces, and in Henry’s case, icicles on his beard. It had been absolutely impossible to get a taxi. He had given {3} after fifteen minutes of waiting and started walking south from his street. Henry often walked to work. It was only eighteen blocks from door to door. Today he soon {4} that the biting wind was brutal, and he had only gone four more blocks when he had already been out of breath. A friendly doorman {5} him to wait in the lobby. Henry thought that the other, more sensible souls when they caught their first glimpse of the blizzard that morning had {6} not to go to work at all. Henry was sure that the store would be half empty. But he wasn’t the type to sit at home twiddling his thumbs or watching serials. And it wasn’t that he went to work because he was too compulsive. The truth was that Henry went to work six days a week simply because he loved the store very much, {7} often, like today, he didn’t have to come.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "6B040c",
+     "options": [],
+     "key": null
+    },
+    {
+     "pos": 2,
+     "zid": "B6B7ee",
+     "options": [],
+     "key": null
+    },
+    {
+     "pos": 3,
+     "zid": "93586e",
+     "options": [],
+     "key": null
+    },
+    {
+     "pos": 4,
+     "zid": "A89512",
+     "options": [],
+     "key": null
+    },
+    {
+     "pos": 5,
+     "zid": "BA9BDA",
+     "options": [],
+     "key": null
+    },
+    {
+     "pos": 6,
+     "zid": "79F5B8",
+     "options": [],
+     "key": null
+    },
+    {
+     "pos": 7,
+     "zid": "2B8c8B",
+     "options": [],
+     "key": null
+    }
+   ]
+  },
+  {
+   "variant": "6F4601",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "At the library It was early morning. Jason stood in the library at Norwood House, {1} up at the painting above the fireplace. What an extraordinary portrait it was, of a handsome man in the prime of his life. The great Horace Winton. His grandfather. His mother, Horace’s eldest daughter, Laura, had always {2} him that he would grow up to look like her father. She had been proved right. This painting had been finished just a short time before Horace’s fortieth birthday, and in a few days’ time, he himself would be forty years old. And he was the spitting {3} of his grandfather; six foot four, broad of chest, with red-gold hair and blue eyes. He knew that if Horas Winton could step out of the portrait, come to stand next to him, they would look like twins, so close was their {4}. Jason Casey finally turned away and walked out onto the terrace, headed through the hanging gardens, making for the ruined stronghold. His mother had constantly taken him there as a child, explaining that it had been her father’s favourite spot at Norwood, and {5} hers. She had {6} him up on Winton lore, and most of it had been about his grandfather. Jason knew so much about his grandfather and {7} never meeting him in person.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "64455E",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 2,
+     "zid": "D83AF3",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 3,
+     "zid": "FC94B4",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 4,
+     "zid": "1DE790",
+     "options": [],
+     "key": 1
+    },
+    {
+     "pos": 5,
+     "zid": "A3AC11",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 6,
+     "zid": "2C3851",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 7,
+     "zid": "E8D235",
+     "options": [],
+     "key": 1
+    }
+   ]
+  },
+  {
+   "variant": "75D243",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "Sandy Sandy called Dan Atkins the following week, to give Berta Canning, her literary agent, plenty of time to get in touch with him and send him the manuscript he could read. She hoped he would {1} to help her to edit her first book. And when Dan Atkins answered, he seemed as though she’d woken him out of a sound sleep. She {2} profusely, and he didn’t sound happy to hear from her. There was a long silence and then he told Sandy to come on Saturday. He explained that he lived near the university campus where he {3} to teach. She wasn’t looking forward to meeting him, but she didn’t want Berta to be angry with her either. So, she bicycled over to his address on Saturday. When Sandy got there, he took forever to answer the bell. She was {4} about to leave when he opened the door. She followed him upstairs to a large living room that would have been lovely if he tidied it once in a while. There were stacks of books everywhere, a pile of papers, a mountain of manuscripts on the desk and half eaten food on the coffee table. He obviously lived alone and needed a housekeeper desperately. He was as untidy as his living room. He had a long, unkempt beard, a mane of wild white hair that {5} Sally of Albert Einstein. He was wearing jeans, a sweater with holes in it, and tennis shoes. Sandy could {6} figure out his age. He seemed to be about seventy, {7} Berta told her later that he was only sixty. He said that he liked her book.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "Ac2c8B",
+     "options": [],
+     "key": null
+    },
+    {
+     "pos": 2,
+     "zid": "4D3cF1",
+     "options": [],
+     "key": null
+    },
+    {
+     "pos": 3,
+     "zid": "237B42",
+     "options": [],
+     "key": null
+    },
+    {
+     "pos": 4,
+     "zid": "86BA5D",
+     "options": [],
+     "key": null
+    },
+    {
+     "pos": 5,
+     "zid": "FcAD26",
+     "options": [],
+     "key": null
+    },
+    {
+     "pos": 6,
+     "zid": "Fe76eD",
+     "options": [],
+     "key": null
+    },
+    {
+     "pos": 7,
+     "zid": "Ac6F6D",
+     "options": [],
+     "key": null
+    }
+   ]
+  },
+  {
+   "variant": "89FE4A",
+   "kes": "2.3.1",
+   "n": 7,
+   "passage": "Maggie Maggie was happy. She had been given the task of entertaining Mrs King while her parents and Uncle William had some sort of business meeting in the library. She was glad they had asked her to {1} Mary King’s company because she really liked her. In fact, she {2} the woman. There was something about Mary that was intriguing and special. Maggie knew that Mary liked her in return, and there was an ease between them. That this woman was truly lovely to look {3} was a given; that she was charming, kind and extremely intelligent was a bonus, Maggie thought. She was {4} by the older woman’s knowledge of art and sculpture. Mary knew a great deal about certain artists and their work, especially French Impressionists and Post-Impressionists, and she was happy to share. The two of them were seated in a yellow drawing room chatting. At one moment, Maggie couldn’t help thinking that Mary King {5} perfect in this amazing room tonight. She was {6} a most elegant and fashionable sapphire blue velvet dress and sapphire earrings, which exactly echoed the blue in some of the fabrics her mother had chosen for the room. She ought to be painted in here, Maggie thought, and it should be called Portrait in Blue . After a brief discussion about a recent art exhibition at a well-known gallery in Chelsea , with Mary {7} most of the talking, they fell silent. But it was a friendly silence.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "2B6BA2",
+     "options": [
+      "hold",
+      "fix",
+      "keep",
+      "bring"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 2,
+     "zid": "AC2D5A",
+     "options": [
+      "admired",
+      "admitted",
+      "approved",
+      "attracted"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 3,
+     "zid": "511DC7",
+     "options": [
+      "at",
+      "for",
+      "on",
+      "in"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 4,
+     "zid": "4DBABC",
+     "options": [
+      "expressed",
+      "impressed",
+      "indicated",
+      "involved"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 5,
+     "zid": "4855C1",
+     "options": [
+      "looked",
+      "watched",
+      "saw",
+      "glanced"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 6,
+     "zid": "A6C1E2",
+     "options": [
+      "bearing",
+      "dressing",
+      "clothing",
+      "wearing"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 7,
+     "zid": "43751C",
+     "options": [
+      "making",
+      "doing",
+      "causing",
+      "having"
+     ],
+     "key": 2
+    }
+   ]
+  },
+  {
+   "variant": "943703",
+   "kes": "2.3.1",
+   "n": 7,
+   "passage": "A night in the Eifel Tower Seven million people visit the Eiffel Tower every year. But have you ever dreamed {1} sleeping in this iconic structure? Holiday rental company Viva constructed a temporary VIP apartment on the first level of the tower, open only for the duration of the Euro football tournament from 10 June to 10 July 2016. The two-bedroom apartment, with the best Paris views was furnished with a big screen television for {2} the game. The space also included a seating area filled with hanging plants. A lot of people were attracted by the {3} to sleep in the apartment. To determine who got this chance, Viva {4} a contest asking entrants to describe how they would spend their night in the tower. “My two young sons are autistic and are both obsessed with lights and the tower itself so I’d spend the night {5} their excitement!” was the winning response from Michelle, in the UK. Scott, from the United States, {6} to win a night’s stay with his response about reuniting five generations in Paris: his mother who first visited the city in 1953, his daughter and granddaughter who visited at 13 and 14 respectively, and a brand new granddaughter who joined the trip. The four winners began their one-night stays from the 23 rd of June. {7} there were no other nights to win, all the visitors to the Eiffel Tower had the chance to tour the apartment and join a match viewing party.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "830E7A",
+     "options": [
+      "at",
+      "over",
+      "of",
+      "for"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 2,
+     "zid": "3FB987",
+     "options": [
+      "staring",
+      "watching",
+      "seeing",
+      "looking"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 3,
+     "zid": "4375A1",
+     "options": [
+      "probability",
+      "ability",
+      "availability",
+      "opportunity"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 4,
+     "zid": "335799",
+     "options": [
+      "held",
+      "kept",
+      "took",
+      "gave"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 5,
+     "zid": "F1BEA7",
+     "options": [
+      "amusing",
+      "preferring",
+      "enjoying",
+      "pleasing"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 6,
+     "zid": "E6ED5D",
+     "options": [
+      "handled",
+      "achieved",
+      "maintained",
+      "managed"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 7,
+     "zid": "14FAD5",
+     "options": [
+      "Although",
+      "Moreover",
+      "Therefore",
+      "However"
+     ],
+     "key": 1
+    }
+   ]
+  },
+  {
+   "variant": "9ADFF3",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "A busy day The January sales started and when the girls arrived at Browns department store, where they worked, there were a lot of people queuing along the street. {1} the time before Christmas had been very busy for shop assistants, they were shocked by such a big crowd outside the shop. “I’ve never {2} such a queue! Do they think we’re going to be giving the stuff away or something?” Anna asked her friend Lucy. “Well, you know what they say – the early bird catches the worm, and {3} to the radio, some people have been queuing all night in London to get the best bargains,” Lucy said. “Let’s think positively – if we are busy, the time will go quicker.” On her {4} to the cosmetics department Anna was wondering if they would even have time for their breaks or lunch-hours. And she was quite right as there was no chance of a morning break but at last the girls were given {5} to go for a shortened lunch break and they met up in the staff dining room. “My God,” Lucy said as they stood at the counter. “I’ve actually had two ladies almost come to fight over a dress. I could {6} calm them down.” “It hasn’t been much better in the perfume and cosmetics department,” Anna remarked. “I ran out of Chanel perfume within an hour and the customers got angry with me, as if it was my {7}! I’ll tell you, at one point I was ready to walk out!” That was really busy time for them. After all, the worst of the sales rush should be over soon.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "409454",
+     "options": [
+      "Therefore",
+      "Although",
+      "However",
+      "Moreover"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 2,
+     "zid": "BCE773",
+     "options": [
+      "glanced",
+      "watched",
+      "seen",
+      "looked"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 3,
+     "zid": "B919A0",
+     "options": [
+      "concerning",
+      "regarding",
+      "including",
+      "according"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 4,
+     "zid": "6C1035",
+     "options": [
+      "way",
+      "track",
+      "path",
+      "road"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 5,
+     "zid": "EF3331",
+     "options": [
+      "promise",
+      "proposal",
+      "permission",
+      "possibility"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 6,
+     "zid": "51E95E",
+     "options": [
+      "sharply",
+      "hardly",
+      "roughly",
+      "nearly"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 7,
+     "zid": "501B60",
+     "options": [
+      "harm",
+      "shame",
+      "blame",
+      "fault"
+     ],
+     "key": 4
+    }
+   ]
+  },
+  {
+   "variant": "9D5FC2",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "How to become a good leader Being a good leader takes work. It is not hard at all to {1} the difference between a good and a bad boss. Exceptional leaders – those who are respected and {2} by their team – have a lot of secret skills that they put to use every day. Firstly, building relationships – both with your team and your partners – is crucial in leading a team. That means your success depends greatly {3} interpersonal skills and emotional intelligence. Emotional intelligence is the ability to recognize, understand, and manage our emotions, as well as understand the emotions of others. It’s a part of how we navigate social situations and then make decisions to {4} goals. Several studies have found that a strong emotional intelligence is a top factor for a leader’s success. {5} to the research, managers with the strongest emotional intelligence were much more likely to succeed. Exceptional leaders are ones who regularly {6} employees of the main goal. A team needs to know what they’re marching toward. With a larger vision in mind, their day-to-day work has more purpose. Great leaders {7} sure their daily behavior is a model for their team. They’re reliable (meaning they always follow through on what they’ve promised), they respect people’s time (meaning they don’t make others wait unnecessarily), and they retain a thoughtful, objective approach to problems or issues.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "69413C",
+     "options": [
+      "talk",
+      "speak",
+      "say",
+      "tell"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 2,
+     "zid": "341E07",
+     "options": [
+      "amazed",
+      "admired",
+      "impressed",
+      "enjoyed"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 3,
+     "zid": "AFF96D",
+     "options": [
+      "in",
+      "from",
+      "on",
+      "for"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 4,
+     "zid": "8A9B45",
+     "options": [
+      "complete",
+      "master",
+      "manage",
+      "achieve"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 5,
+     "zid": "47DA0D",
+     "options": [
+      "According",
+      "Including",
+      "Concerning",
+      "Regarding"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 6,
+     "zid": "A9E6BE",
+     "options": [
+      "revise",
+      "remind",
+      "review",
+      "recall"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 7,
+     "zid": "C278C9",
+     "options": [
+      "keep",
+      "make",
+      "hold",
+      "take"
+     ],
+     "key": 2
+    }
+   ]
+  },
+  {
+   "variant": "A57B61",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "A hard task I barely made the 8:30 a.m. Saturday train to Huntington, a town on the north shore of Long Island . The railroad stopped service because of the snowfall the night before; sleepy commuters wearing smart suits crowded in the train. They seemed really tired and eager to get home and finally {1} the rest of the weekend with their families. I had planned on using this one-hour train ride to get a good start on a short story I was {2} to submit to a magazine on Monday morning. But standing there, sandwiched between a stroller and an exhausted businessman, I couldn’t even get my journal out of my backpack. It was absolutely impossible to compose my thoughts on its pages. Of course, it was a {3} for me as I was forced to relax instead of struggling with my blank journal pages. Frankly {4}, I’d been struggling to come up with an idea for the story for days, my thoughts circling aimlessly in the warehouse of my mind. The harder I {5} for the idea, the emptier my head seemed. And then, unexpectedly, as I was trying hard to maintain my balance, pressed against the bathroom door and a crowd of commuters, I finally got an idea – or rather, an idea for how to get an idea. I decided that by the end of {6} adventure I have this weekend, I will write a short story about it. I told my friend Bennett about my decision when I was getting inside his car at the station. And the two of us set {7} on our adventure.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "267C26",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 2,
+     "zid": "61644E",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 3,
+     "zid": "D4942A",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 4,
+     "zid": "5096B9",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 5,
+     "zid": "26E002",
+     "options": [],
+     "key": 1
+    },
+    {
+     "pos": 6,
+     "zid": "D99B66",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 7,
+     "zid": "25B2E2",
+     "options": [],
+     "key": 2
+    }
+   ]
+  },
+  {
+   "variant": "A5C497",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "My uncle I didn’t like my uncle Conrad. When he rose in the morning, he somehow {1} to wake the entire household. No one complained, as he was the breadwinner in the family, and in any {2} , he was cheaper and more reliable than an alarm clock. The first noise I would hear was the bedroom door slamming. This would be followed by my uncle tramping along the creaky wooden landing and down the stairs. Then another door would slam as he {3} into the bathroom. If anyone was still asleep, the rush of water, followed by two more slammed doors before he returned to the bedroom, served to {4} them that my uncle expected his breakfast to be on the table by the time he walked into the kitchen. He only had a wash and a shave on Saturday evenings before going to the cinema. He {5} a bath four times a year on quarter-day. No one was going to accuse him of wasting his hard-earned cash on soap. My mum would be next up, leaping out of bed moments after the first slammed door. There would be a bowl of porridge on the stove by the time my uncle came out of the bathroom. Grandma followed shortly afterwards, and would {6} her daughter in the kitchen before my uncle had taken his place at the head of the table. I had to be down within 5 minutes of the first slammed door if I hoped to get any breakfast. This daily {7} in the household never varied.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "7554D2",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 2,
+     "zid": "D9F4E9",
+     "options": [],
+     "key": 1
+    },
+    {
+     "pos": 3,
+     "zid": "C676DB",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 4,
+     "zid": "975C56",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 5,
+     "zid": "D1C071",
+     "options": [],
+     "key": 1
+    },
+    {
+     "pos": 6,
+     "zid": "C66053",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 7,
+     "zid": "651806",
+     "options": [],
+     "key": 3
+    }
+   ]
+  },
+  {
+   "variant": "AA9C71",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "In Willis Tower Victoria and Mary were going up one of the tallest towers in America , called Willis Tower . First, they had to stand in a long line to enter the building. When the ladies came up to the lift, it was full of people who had to adjust themselves to {1} the two extra passengers in. As they rode up, Mary {2} the change in air pressure as they were getting higher. She looked at the screen flashing interesting facts about the height of the building – she found {3} that at 455 feet , they were at the height of the Great Pyramid of Giza; at 1,250 feet , they were at the height of the Empire State Building . Then, they finally {4} the top. The elevator doors opened to a large room with walls made entirely of glass. Mary and Victoria looked at each other with jaws dropped. They could see the entire city, lit up with tiny lights. {5}, it was one of the best views of Chicago ! Then a man in uniform guided them toward another line that wound around the room. “If you’d like to go out on the Ledge, please join the line here,” he {6} the group. Mary and Victoria had heard about the Ledge when they first bought their tickets to visit the tower – a glass box suspended 1,353 feet in the air, 4.3 feet out from the building. Visitors could step into the box and feel as though they were walking on air. “Oh man, another line?” Victoria whispered to Mary. {7} they could hardly wait, they joined the back of the line.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "6AFDA9",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 2,
+     "zid": "8A477F",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 3,
+     "zid": "9CCB6C",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 4,
+     "zid": "974C19",
+     "options": [],
+     "key": 1
+    },
+    {
+     "pos": 5,
+     "zid": "E41D55",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 6,
+     "zid": "86D810",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 7,
+     "zid": "9801FA",
+     "options": [],
+     "key": 4
+    }
+   ]
+  },
+  {
+   "variant": "ABF852",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "Lincoln Lincoln stood in the library of William’s house in Russell Square , staring at the Renoir painting of the two red-headed young women. It hung above the fireplace, and Lincoln understood why it took pride of place in this room. It was a masterpiece, and he could see that it {1} William of Lily and Emily. Lincoln had told William he needed to speak to him privately, and they had {2} to meet here. Lily was still in Brighton with the children. The house was empty and very quiet this afternoon. John came in and, clearing his throat, asked, “Would you like something, sir? Perhaps, a cup of tea?” “No, thank you, John,” Lincoln answered. Lincoln continued to study the marvelous Renoir. Suddenly William entered the room and apologized for {3} him waiting. “What’s this all about, Lincoln ? You {4} rather serious, even sad,” William said. Lincoln was silent. He went and sat on a chair near the fireplace. William took the other chair, staring at him attentively. “Brad Winston telephoned me just as I was leaving for lunch. He had apparently attempted to get hold of you here, but the line was busy. In {5} , he tried several times with no success. That’s why he finally got {6} touch with me. He said that there was a terrible car {7} sometime last night. Your brother George is in hospital now,” Lincoln said.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "248204",
+     "options": [
+      "remembered",
+      "reviewed",
+      "recorded",
+      "reminded"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 2,
+     "zid": "94726B",
+     "options": [
+      "managed",
+      "arranged",
+      "established",
+      "coordinated"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 3,
+     "zid": "1A3CFF",
+     "options": [
+      "keeping",
+      "holding",
+      "fixing",
+      "carrying"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 4,
+     "zid": "75EA03",
+     "options": [
+      "look",
+      "glance"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 5,
+     "zid": "B81468",
+     "options": [
+      "time",
+      "fact",
+      "place",
+      "point"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 6,
+     "zid": "0DD6D1",
+     "options": [
+      "on",
+      "at",
+      "by",
+      "in"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 7,
+     "zid": "4D383E",
+     "options": [
+      "incident",
+      "accident",
+      "occasion",
+      "event"
+     ],
+     "key": 2
+    }
+   ]
+  },
+  {
+   "variant": "AE7042",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "A nice surprise Dotty called her friend’s mother Miranda, who was really pleased to hear her voice when she picked up the phone. {1} , Miranda was surprised to find out that Dotty wanted to talk to her, not her daughter. Somebody had sent Dotty’s stories to the magazine and the editors sent her a letter offering to publish her work. They asked her to telephone them and {2} a meeting in London . Dotty was curious if that was Miranda who had sent her story to the magazine. She quickly explained to the woman what had happened. When the girl had finished, there was a silence for a moment before Miranda asked, “Are you very annoyed with me, Dotty? I know I shouldn’t have done that without your {3} , but you have such a talent for writing and I thought you should be recognised. I’m not {4} all surprised that the magazine wants to publish you.” “No, I’m not annoyed. More shocked, I think,” Dotty admitted. “I’m not too sure about the trip to London though. To {5} the truth, I’ve never ventured that far away on my own before.” “Oh, you’ll be absolutely fine,” Miranda said confidently. “But I could always come with you if you liked. I’m certainly not going to let you miss this opportunity. Look, why don’t you come here for tea after work tomorrow with Anna and we’ll discuss it then. But meantime {6} sure you ring them first thing in the morning.” Dotty promised her that she would and went to bed {7} by this surprise.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "3421B2",
+     "options": [
+      "Otherwise",
+      "However",
+      "Therefore",
+      "Although"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 2,
+     "zid": "1F5B70",
+     "options": [
+      "propose",
+      "suggest",
+      "consent",
+      "arrange"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 3,
+     "zid": "700ACA",
+     "options": [
+      "permission",
+      "promise",
+      "proposal",
+      "possibility"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 4,
+     "zid": "FB507F",
+     "options": [
+      "on",
+      "in",
+      "at",
+      "by"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 5,
+     "zid": "427CBC",
+     "options": [
+      "speak",
+      "say",
+      "tell",
+      "talk"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 6,
+     "zid": "D2373A",
+     "options": [
+      "gain",
+      "make",
+      "keep",
+      "take"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 7,
+     "zid": "28338D",
+     "options": [
+      "included",
+      "inspired",
+      "inclined",
+      "involved"
+     ],
+     "key": 2
+    }
+   ]
+  },
+  {
+   "variant": "AFEA4C",
+   "kes": "2.3.1",
+   "n": 7,
+   "passage": "An unforgettable trip When I decided to go travelling, I wanted to get away from everything for a while. I could suddenly feel the freedom and the adventure, and I really wanted it for a {1} time. So I sold all my furniture, gave notice on my flat, quit my job, and then bought a backpack and a ticket halfway around the world. During my first stopover in Singapore , on my way to Australia , I felt nervous. I sat tired and hungry in my hotel room, {2} with my wish to take a flight straight back home. Because if I felt lonely after {3} 14 hours, could I honestly do this for another 12 months? Fortunately, something inside encouraged me not to {4} up and to see the night through, and I carried on. One of my worries setting out had been meeting rude people, but I didn’t come across a single unkind person on my travels. In fact, the people I met were everything I tried to be: kind, considerate, creative, down to earth, passionate, warm and friendly. {5} I travelled on my own, I was never alone – all the people I met became my friends. For example, one Italian girl gave me her jumper when I was cold, a Japanese girl helped me cook a meal, and another girl helped me with my bags on a train. Once I met a group on a tour bus who persuaded me to {6} them on a boat trip, which ended up being one of the best trips of my life. And the guy I met {7} chance walking down a mountain on Christmas Day is now one of my closest friends.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "FC8F8E",
+     "options": [
+      "high",
+      "big",
+      "long",
+      "huge"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 2,
+     "zid": "0DCB2B",
+     "options": [
+      "striking",
+      "struggling",
+      "striving",
+      "straining"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 3,
+     "zid": "2F9AF0",
+     "options": [
+      "else",
+      "still",
+      "yet",
+      "just"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 4,
+     "zid": "9C4C38",
+     "options": [
+      "give",
+      "make",
+      "take",
+      "keep"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 5,
+     "zid": "C309FF",
+     "options": [
+      "However",
+      "Therefore",
+      "Although",
+      "Moreover"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 6,
+     "zid": "E0152F",
+     "options": [
+      "connect",
+      "link",
+      "unite",
+      "join"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 7,
+     "zid": "37B89F",
+     "options": [
+      "by",
+      "on",
+      "to",
+      "at"
+     ],
+     "key": 1
+    }
+   ]
+  },
+  {
+   "variant": "B30363",
+   "kes": "2.3.1",
+   "n": 7,
+   "passage": "My day Classes started today, on Thursday, but my first class with Professor Hunt wasn’t until the forthcoming Monday. After a light breakfast I went back to my room and began working. Not until almost four in the afternoon did I finally close my books. When I {1} out of my window, it was as if I’d just woken up, sleepy and disoriented, to find it was getting dark. It was high time for dinner. It was the big back-to-school dinner that night – roast beef, green beans and cheese soufflé. I ate dinner alone at the same table where I’d had my breakfast. I {2} the food and the atmosphere. The halls were packed, everyone was smoking, laughing. People were walking from group to group saying “Hello”. Suddenly I saw Victor Porter and Peter Wilson {3} their way to my table. One was the son of a movie producer, the other was the son of a famous racket boss. They were, {4} , president and vice-president of the Student Council. Both {5} their fathers a lot. Victor held out a box full of change and crumpled bills. “Hi, guy,” he said. “We’re {6} a party in the sculpture studio tonight. Want to give something?” I put down my coffee and fished in my jacket pocket and found a quarter and some pennies. I didn’t say a word. “Oh, come on, man,” Peter said. His voice {7} , there was a threat in it. “You can do better than that.” “Sorry,” I said, pushed back from the table, got my coat and left.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "8C2304",
+     "options": [
+      "watched",
+      "saw",
+      "looked",
+      "glimpsed"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 2,
+     "zid": "D28C4A",
+     "options": [
+      "satisfied",
+      "preferred",
+      "enjoyed",
+      "approved"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 3,
+     "zid": "7063BE",
+     "options": [
+      "making",
+      "doing",
+      "going",
+      "passing"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 4,
+     "zid": "991725",
+     "options": [
+      "individually",
+      "respectively",
+      "independently",
+      "separately"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 5,
+     "zid": "1FC5AE",
+     "options": [
+      "reminded",
+      "recollected",
+      "repeated",
+      "resembled"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 6,
+     "zid": "EF5EA3",
+     "options": [
+      "keeping",
+      "holding",
+      "taking",
+      "putting"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 7,
+     "zid": "7752E7",
+     "options": [
+      "raised",
+      "rose",
+      "grew",
+      "lifted"
+     ],
+     "key": 2
+    }
+   ]
+  },
+  {
+   "variant": "B50490",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "A special lunch Dotty came to meet the editor Jerry Green in his London office. He praised her work and {1} to publish her stories in his magazine. After discussing the contract Jerry invited Dotty for lunch. It was her first visit to a big city, so the young lady was really excited. A shiny black cab stopped next to the beautiful building and Jerry took Dotty into the restaurant. A smart waiter in a black suit took their coats and escorted them to a table by the window. “Please order {2} you like,” Jerry told her as the waiter handed her a menu, and Dotty got lost. She had been {3} up on very plain food and everything on the menu looked so fancy and expensive. Jerry saw her discomfort . {4}, he asked after a while if he could order for her. Dotty gratefully agreed. The meal was like nothing she had ever eaten before, and as one delicious course followed another she began to relax a little as she found that Jerry was good company and very easy to talk to. He {5} Dotty of her elder brother. “Thank you so much for a lovely day and a lovely meal,” Dotty said when the lunch was over. She was so full that she was sure she wouldn't be able to eat another thing for at least a month. “It was my pleasure,” he assured her. “I’ve really enjoyed today. And I hope this will be the start of a long working relationship. I’ll be {6} touch soon.” Then she {7} goodbye and caught a cab to the railway station. It had been a truly unforgettable day.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "79F1B7",
+     "options": [
+      "suggested",
+      "provided",
+      "proposed",
+      "offered"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 2,
+     "zid": "D62C53",
+     "options": [
+      "whenever",
+      "wherever",
+      "whoever",
+      "whatever"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 3,
+     "zid": "3A95A3",
+     "options": [
+      "grown",
+      "raised",
+      "brought",
+      "risen"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 4,
+     "zid": "18C947",
+     "options": [
+      "However",
+      "Therefore",
+      "Although",
+      "Otherwise"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 5,
+     "zid": "764CEE",
+     "options": [
+      "reminded",
+      "remembered",
+      "revised",
+      "reviewed"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 6,
+     "zid": "F5194A",
+     "options": [
+      "at",
+      "in",
+      "on",
+      "by"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 7,
+     "zid": "9317F3",
+     "options": [
+      "spoke",
+      "told",
+      "said",
+      "talked"
+     ],
+     "key": 3
+    }
+   ]
+  },
+  {
+   "variant": "B5BBD4",
+   "kes": "2.3.1",
+   "n": 7,
+   "passage": "A summer by the lake Barbara and Michael were sister and brother – twelve and eight years old. They were {1} vacation, but Barbara was bored out of her mind. Ever since Michael was born, their family had been coming to Emerald Lake, a crystal blue lake which stretched as far as the eye could {2}. They had stayed in the same cabin, an old wooden house just several steps from where the water met the sandy beach. And ever since Barbara was ten, she had hated coming here. The mosquitoes got bigger every year. By now they were larger, it seemed, than her fist. The humidity got worse, and the rain became more constant. If this is what people meant by climate change, she thought, she was not {3} with it. Everybody in the family knew about it as Barbara never {4} to love this place. She spent most of the day reading in bed, stretched out on the woollen blanket on top of the rock-hard mattress, wishing she was at home with her friends doing normal summer stuff: going to the mall, watching movies, eating popsicles in the park. She wished she was anywhere but Emerald Lake. {5}, there was nowhere else Michael wanted to be. He didn’t mind the humidity, he found the constant rain soothing, and thought the giant mosquitoes were the most amazing animals he had ever seen. Michael paid {6} to every little animal and plant around him. He didn’t have time for reading on a woollen blanket because he was in love with the lake. The boy was {7} the most of his summertime by the lake.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "CA997E",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 2,
+     "zid": "FA56A5",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 3,
+     "zid": "9E577C",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 4,
+     "zid": "0E66C3",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 5,
+     "zid": "0826DA",
+     "options": [],
+     "key": 1
+    },
+    {
+     "pos": 6,
+     "zid": "7F09AC",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 7,
+     "zid": "794BD8",
+     "options": [],
+     "key": 4
+    }
+   ]
+  },
+  {
+   "variant": "C30B47",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "Going on a conference Megan was preparing for her presentation at a very important conference in Texas . In fact, it {1} like every March the entire San Francisco Bay Area migrated to Austin for the conference. It was where big deals were made. It was a time when you could walk into a restaurant and find yourself between one of the top guys at Google and a rock star. For an ambitious person {2} to make their mark in the technology world, it was a good place to be. That’s why Megan was there. She met up with the rest of her team at the hotel. They were already communicating in the lobby. She {3} at the group – they were a small company, only ten people. She was the only woman, and the awareness of that fact made her work twice as hard. But she knew the company needed her, and the company results depended {4} her work. Everyone else in the team was an engineer or a designer, while Megan came from a business background. She was the one who had the vision to decide how and where their product would be attractive. {5}, she had the management skills to make sure everything got done. “How are you feeling?” asked Alex, the designer. “Ready for the big presentation?” Megan was {6} to do the presentation on stage, alone. She would be presenting their product in front of some of the most influential companies and investors in the world . Undoubtedly, she {7} her best to prepare for it.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "0FEB98",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 2,
+     "zid": "EFE85C",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 3,
+     "zid": "5FB947",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 4,
+     "zid": "E05997",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 5,
+     "zid": "386948",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 6,
+     "zid": "71DB86",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 7,
+     "zid": "07A56F",
+     "options": [],
+     "key": 2
+    }
+   ]
+  },
+  {
+   "variant": "CC8BBB",
+   "kes": "2.3.1",
+   "n": 7,
+   "passage": "What is wayfinding? Traditional Polynesian navigation – also called wayfinding – means finding your way without any of the tools modern navigators {1} for granted. You use no GPS, no compass, no radio or satellite reports to help you navigate. Besides your brain, the only “tool” you might {2} on in traditional navigation is an outstretched hand, which helps for measuring angles in the sky. Instead, your clues about position, direction, and distance come from the stars, sun, and moon, from clouds, and even from wildlife. Navigators must pay close {3} to characteristic patterns of winds, currents, and weather. Hawaiians in the voyaging community joke that the best way to spot the navigator on a voyaging canoe is to {4} for the person with red eyes. Navigators get little sleep while voyaging because traditional navigation {5} non-stop analysis of the natural world. Reading these clues involves all the senses, coupled with deep knowledge of sea and sky. However, traditional navigation without computers and satellite can be more precise. For instance, in 1985 when master navigator {6} that the ship was within a few miles of land, nobody believed him because their satellite navigation system reported no land for over a hundred miles. Yet the island {7} by the traditional method appeared shortly after, as promised – a triumph of no-tech over high-tech.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "6FB867",
+     "options": [
+      "make",
+      "keep",
+      "take",
+      "hold"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 2,
+     "zid": "A27FB4",
+     "options": [
+      "rely",
+      "recall",
+      "refer",
+      "reply"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 3,
+     "zid": "472CFF",
+     "options": [
+      "attraction",
+      "application",
+      "addition",
+      "attention"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 4,
+     "zid": "ED1FDC",
+     "options": [
+      "watch",
+      "look",
+      "glance",
+      "see"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 5,
+     "zid": "DC6087",
+     "options": [
+      "reserves",
+      "requests",
+      "requires",
+      "reckons"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 6,
+     "zid": "385E3A",
+     "options": [
+      "extended",
+      "announced",
+      "promoted",
+      "presented"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 7,
+     "zid": "515BA3",
+     "options": [
+      "pretended",
+      "prevented",
+      "prepared",
+      "predicted"
+     ],
+     "key": 4
+    }
+   ]
+  },
+  {
+   "variant": "CDBA0D",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "At the party Nick and Nelly Wilson were delighted to see Zara when she got there, and welcomed her warmly. There was a group of people standing around the fireplace, trying to get warm. And as they did every year, the women were wearing long gowns or dressy cocktail dresses, and the men were wearing black-tie. It was the one night of the year when all the Wilsons’ friends {1} to dress up. Zara tried to get in the {2} but in vain. It was the coldest night so far that winter, breaking some kind of record for miserable weather, which made Zara long for her bed again. {3} she only saw them once a year, she recognized nearly everyone there that night, but there was one unfamiliar face in the crowd. His name was Patrick Edison. Nick {4} they had been college roommates. Patrick was a TV producer from Hollywood, Nelly whispered, and she told Zara that he produced several award-winning series, and coincidentally was single. She {5} then why they had insisted that she join them. She was the only single woman in the room and she was being offered some kind of blind date. This thought made the evening seem even more difficult and tiring before it began. Zara didn’t {6} trying to make conversation with him since she had noticed on the seating chart that they would be next to each other at dinner. She wasn’t looking {7} to it, no matter how successful his shows were.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "B4C1BE",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 2,
+     "zid": "5933C0",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 3,
+     "zid": "098C72",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 4,
+     "zid": "59B854",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 5,
+     "zid": "4E216C",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 6,
+     "zid": "F97950",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 7,
+     "zid": "716118",
+     "options": [],
+     "key": 1
+    }
+   ]
+  },
+  {
+   "variant": "E16DCF",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "My children Miss Davidon’s school was half-way between Harry’s house and mine. My elder daughter Sophia had been going there for some years, and now my younger daughter began to go, too. It was not hard to {1} the difference between my daughters. My elder daughter {2} after me. She had black hair, green eyes and a large forehead. She was very impulsive and often lost her temper. She was lazy but studied well. Her teachers always praised her. My younger daughter didn't {3} me. She was the picture of my wife’s mother. She had blond hair and blue eyes. She was very obedient and never made noise but she was not very good {4} studies. I thought she was always shy and that prevented her from having good marks. Liza, our nursemaid, would set off in the morning with two of my children and Ned, Harry’s son. She usually took a mail-cart with her. This was for Ned to ride in when he was tired but it was not often that Ned would {5} that he was tired. The maid left the girls at Miss Davidson’s and then brought Ned on to the Beeches. She would take him back in time to {6} the girls when school was over. I often watched them play with Ned in the backyard or tell him fairy-tales. My daughters adored Ned but he didn’t {7} attention to them.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "314F35",
+     "options": [
+      "speak",
+      "talk",
+      "tell",
+      "say"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 2,
+     "zid": "D3917D",
+     "options": [
+      "took",
+      "looked",
+      "seemed",
+      "felt"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 3,
+     "zid": "1FA8B1",
+     "options": [
+      "review",
+      "remind",
+      "resemble",
+      "remember"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 4,
+     "zid": "7C5E50",
+     "options": [
+      "in",
+      "for",
+      "on",
+      "at"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 5,
+     "zid": "F4A8A1",
+     "options": [
+      "accept",
+      "admit",
+      "allow",
+      "adopt"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 6,
+     "zid": "F0158C",
+     "options": [
+      "pull",
+      "pick",
+      "gather",
+      "collect"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 7,
+     "zid": "5086D9",
+     "options": [
+      "pay",
+      "give",
+      "take",
+      "hold"
+     ],
+     "key": 1
+    }
+   ]
+  },
+  {
+   "variant": "E878E5",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "Good news Barbara was doing a course in the traditional Hawaiian dancing, which is called hula. She and her groupmates were sitting at the meeting in their dance school when their teacher announced the final preparations for the graduation ceremony. The girls and boys {1} at one another in excitement – they had been training hard in order to graduate and become professional hula dancers. They were all waiting {2} this moment. “That means that you all must stay in the school unless you have a very good reason to leave. I don’t want you to {3} out of energy now, so we’ll only practice once a day in order to give your bodies rest,” the dance teacher told her students. Barbara and her friends all let out a sigh of relief. They expected to practice more than usual before their big graduation performance. {4}, their teacher had a different plan. After the meeting the girls and boys got up to eat breakfast. They walked to the kitchen where fresh fruit was already scattered across the table. Barbara picked up a mango and a knife and began to cut. As she passed around juicy mango slices to her friends, they {5} their excitement for graduation with each other. “I can’t wait to see my family!” a boy named Keanu said. Everyone nodded their heads in {6}. It had been a month since everyone had seen their family and friends. Although they loved living in the dance school, it was sort of a boarding school and they could not go home {7} they wanted to. They couldn’t wait to celebrate graduation with their friends.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "383291",
+     "options": [],
+     "key": 3
+    },
+    {
+     "pos": 2,
+     "zid": "D3B8B7",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 3,
+     "zid": "B89A13",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 4,
+     "zid": "50C21D",
+     "options": [],
+     "key": 1
+    },
+    {
+     "pos": 5,
+     "zid": "7B5917",
+     "options": [],
+     "key": 4
+    },
+    {
+     "pos": 6,
+     "zid": "2AD174",
+     "options": [],
+     "key": 2
+    },
+    {
+     "pos": 7,
+     "zid": "A26D22",
+     "options": [],
+     "key": 3
+    }
+   ]
+  },
+  {
+   "variant": "E87C20",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "Stephen Kibaki Stephen Kibaki walks through his family’s farm just outside Nairobi National Park in Kenya. Goats, cows, and sheep graze peacefully in the pasture. In the park nearby, lions roam, living in peaceful coexistence with the farm. It’s {1} to be an extraordinary picture for many places in Africa. “I love lions,” Stephen {2} the journalist. “If my cows are protected and they’re safe, we can live with the lions without any problem.” How do cattle {3}to live safely near these huge predators? It’s all due to this young man’s brilliant invention. When he was 11, he created Lion Lights, a clever way of keeping his family’s livestock safe. First, there seemed to be no good {4} to the problem, but Stephen started experimenting with ways to scare off the predators. He tried to use fire and a scarecrow. His first two {5} were unsuccessful: the lions were too clever to be fooled by either. But one night he was walking around the pasture with a flashlight and noticed that lions stayed away. That’s when he {6}: these big cats were afraid of moving lights! Then Stephen {7} a system of flashing LED light bulbs on poles around the perimeter of the pasture. The blinking lights tricked the lions into thinking the grounds were patrolled. That finally kept the lions away.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "246287",
+     "options": [
+      "confessed",
+      "convinced",
+      "considered",
+      "concerned"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 2,
+     "zid": "9C4564",
+     "options": [
+      "said",
+      "told",
+      "spoke",
+      "talked"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 3,
+     "zid": "4B2F61",
+     "options": [
+      "manage",
+      "complete",
+      "succeed",
+      "achieve"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 4,
+     "zid": "EA139B",
+     "options": [
+      "decision",
+      "permission",
+      "exception",
+      "solution"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 5,
+     "zid": "EB7D90",
+     "options": [
+      "complaints",
+      "impacts",
+      "requests",
+      "attempts"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 6,
+     "zid": "5F1E20",
+     "options": [
+      "released",
+      "recovered",
+      "realised"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 7,
+     "zid": "1DDDB7",
+     "options": [
+      "deceived",
+      "developed",
+      "defended",
+      "demanded"
+     ],
+     "key": 2
+    }
+   ]
+  },
+  {
+   "variant": "F0E722",
+   "kes": "2.3.1",
+   "n": 7,
+   "passage": "A festival in Pepin There are many interesting festivals in the USA . If you want to experience village life of the nineteenth century, you should go to the annual Laura Ingalls Wilder Days festival. It takes {1} in the Village of Pepin . This event is devoted to an American writer Laura Ingalls Wilder known for the “Little House on the Prairie” series of children’s novels based on her childhood in a settler family. This is the perfect festival for those who have read the books and {2} what life really was like for Laura and her family. Several thousand people come to see a beautiful parade and {3} many other activities at the two-day event. Come join us for this fun-filled weekend! The annual Laura Days celebration is {4} on the second weekend in September. Saturday events include a parade, children’s pioneer games and activities in the park, craft demonstrations and a food tent. {5} the same time, there are many other activities, such as Little Miss Laura contest, a greased pig contest, tours of the Masters Hotel, and more! {6}, you can visit an old church on Sunday morning or go to the Laura Ingalls Wilder Museum, which features many items Laura and her family had and recalls the era in which they lived. And we {7} recommend finishing your visit to Pepin with a picnic on the shore of Lake Pepin, picking up pretty pebbles as Laura did so many years ago.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "6DFD57",
+     "options": [
+      "side",
+      "time",
+      "place",
+      "part"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 2,
+     "zid": "0D89B8",
+     "options": [
+      "expected",
+      "wondered",
+      "doubted",
+      "believed"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 3,
+     "zid": "332E1C",
+     "options": [
+      "please",
+      "satisfy",
+      "amuse",
+      "enjoy"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 4,
+     "zid": "0E0C2E",
+     "options": [
+      "held",
+      "done",
+      "put",
+      "kept"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 5,
+     "zid": "5E9CA4",
+     "options": [
+      "On",
+      "By",
+      "At",
+      "In"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 6,
+     "zid": "876096",
+     "options": [
+      "Though",
+      "Therefore",
+      "However",
+      "Besides"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 7,
+     "zid": "4A92F3",
+     "options": [
+      "strongly",
+      "deeply",
+      "hardly",
+      "strictly"
+     ],
+     "key": 1
+    }
+   ]
+  },
+  {
+   "variant": "F46406",
+   "kes": "2.3.1",
+   "n": 7,
+   "passage": "A sign of weakness? What should you do when you realise that you have to apologise? Is it better to swallow your pride and say you’re sorry when somebody is waiting {1} your apology? The psychologist Jack Black says that people worry that an apology will be {2} as a sign of weakness, rather than as their effort to understand and make up with the opponent. But he adds that effective apologies address the person’s feelings – they don’t prove a point. As for how to do it, Professor Black has the following advice, “The right way to apologise is the way your mother taught you. Say you threw a stone at your brother. She’d have you go and {3} him in the eye and say: ‘I’m sorry I threw the stone at you and I won’t do it again.’ It’s important to name what you did wrong, to show yourself as being regretful in some way and to indicate what might be different in the future . ” You should {4} that the number of times you’ll need to repeat the apology may vary depending on where you live. {5} to preliminary data collected by Professor Black, for a minor offence, the optimal number is a single “I’m sorry”. “If the offence is large, then making two apologies seems to be the magic number for restoring trust and liking,” Jack Black says. {6} , if you’re British, you may need to double that. “A single ‘Sorry’ does not {7} as an apology: we have to say it so many times with a lot of adjectives,” says Professor Black.",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "9D067C",
+     "options": [
+      "out",
+      "up",
+      "for",
+      "to"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 2,
+     "zid": "9D2463",
+     "options": [
+      "treated",
+      "referred",
+      "connected",
+      "related"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 3,
+     "zid": "81D708",
+     "options": [
+      "watch",
+      "glance",
+      "see",
+      "look"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 4,
+     "zid": "B8C670",
+     "options": [
+      "review",
+      "revise",
+      "remember",
+      "remind"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 5,
+     "zid": "058406",
+     "options": [
+      "Including",
+      "According",
+      "Concerning",
+      "Regarding"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 6,
+     "zid": "A40BB7",
+     "options": [
+      "Although",
+      "Therefore",
+      "Otherwise",
+      "However"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 7,
+     "zid": "A1A846",
+     "options": [
+      "count",
+      "judge",
+      "matter",
+      "consider"
+     ],
+     "key": 1
+    }
+   ]
+  },
+  {
+   "variant": "FE9E08",
+   "kes": "2.3.2",
+   "n": 7,
+   "passage": "Good news Dotty received a letter from a magazine editor, which was very surprising for her. {1} Dotty was writing for a long time, only her teacher Miss Simms was allowed to read her novels. The teacher {2} great success for her books. There was a tap at the door then and when Dotty saw Miss Simms on the doorstep she almost pushed her into the room and pressed the letter into the woman’s hand. “Read this,” she commanded, then {3} her manners she added, “Oh, I’m so sorry. Hello, Miss Simms. I didn’t mean to be rude but I just got home and opened this and don’t quite know what to make of it. I’m afraid I’m absolutely confused.” Miss Simms took off her silk scarf, then removed her gloves and read the letter. Her face broke into a wide smile. “Why, Dotty, this is absolutely marvellous!” she exclaimed delightedly. “Well done. I’m so pleased you finally {4} to find the courage to show your work to someone. Didn’t I always {5} you it was good enough for publication?” “But I didn’t show it to anyone,” Dotty answered. “At least not to this magazine. I let Anna’s mother read it and she must have sent it to them.” “You mustn’t turn {6} this offer,” Miss Simms responded. “You really must telephone them, Dotty. They obviously love your work – and who knows where this might lead? I have a friend who has been trying to get some of her work published for years, so I know how hard it is. I ’ m so proud {7} you .”",
+   "gaps": [
+    {
+     "pos": 1,
+     "zid": "E3BB2D",
+     "options": [
+      "Moreover",
+      "Although",
+      "However",
+      "Therefore"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 2,
+     "zid": "142AEA",
+     "options": [
+      "admitted",
+      "confirmed",
+      "promised",
+      "agreed"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 3,
+     "zid": "B91061",
+     "options": [
+      "reminding",
+      "reviewing",
+      "revising",
+      "remembering"
+     ],
+     "key": 4
+    },
+    {
+     "pos": 4,
+     "zid": "FE4AF7",
+     "options": [
+      "managed",
+      "succeeded",
+      "achieved",
+      "maintained"
+     ],
+     "key": 1
+    },
+    {
+     "pos": 5,
+     "zid": "3CF2AC",
+     "options": [
+      "speak",
+      "talk",
+      "tell",
+      "say"
+     ],
+     "key": 3
+    },
+    {
+     "pos": 6,
+     "zid": "2A8DDA",
+     "options": [
+      "off",
+      "down",
+      "out",
+      "over"
+     ],
+     "key": 2
+    },
+    {
+     "pos": 7,
+     "zid": "49B259",
+     "options": [
+      "at",
+      "by",
+      "to",
+      "of"
+     ],
+     "key": 4
+    }
+   ]
+  }
+ ]
+}

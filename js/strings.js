@@ -189,7 +189,7 @@ export const STRINGS = {
       scoringSpeaking: (d, n) => `Проверяю устную часть… (${d}/${n})`,
       speakResult: 'Говорение — оценка ИИ',
       speakPending: 'Устную часть не удалось проверить (нет интернета) — она не вошла в баллы.',
-      tgGrammar: 'Грамматика — раскройте скобки и поставьте слово в нужную форму.', tgWordform: 'Словообразование — образуйте однокоренное слово.',
+      tgGrammar: 'Грамматика — раскройте скобки и поставьте слово в нужную форму.', tgWordform: 'Словообразование — образуйте однокоренное слово.', tgLexis: 'Лексика — выберите слово, подходящее по смыслу.',
       bySection: 'По разделам',
       byKes: 'По кодификатору (КЭС)',
       writingResult: 'Письмо — оценка ИИ',
@@ -218,7 +218,7 @@ export const STRINGS = {
       writingArea: 'Письменная часть:',
       audioAt: '🔊 Аудио:', audioScan: '🔊 Отсканируй QR, чтобы включить аудио:',
       fSurname: 'Фамилия', fName: 'Имя', fPatr: 'Отчество', fSubject: 'Предмет: Английский язык', fClass: 'Класс:', asInstr: 'Ответы на задания с кратким ответом записывайте печатными буквами в клетки, начиная с первой.',
-      iChoice: 'Выберите верный вариант ответа.', iFill: 'Впишите пропущенное слово.', iMatch: 'Установите соответствие и впишите номер ответа.', iTfns: 'Для каждого утверждения определите: 1 — Верно, 2 — Неверно, 3 — Не сказано.', iGaps: 'Заполните пропуски частями предложений (одна лишняя).', iGap: 'Раскройте скобки / образуйте однокоренное слово и впишите ответ.', tgGrammar: 'Прочитайте текст. Раскройте скобки и поставьте слово в нужную форму (задания 19–24).', tgWordform: 'Прочитайте текст. Образуйте однокоренное слово (задания 25–29).',
+      iChoice: 'Выберите верный вариант ответа.', iFill: 'Впишите пропущенное слово.', iMatch: 'Установите соответствие и впишите номер ответа.', iTfns: 'Для каждого утверждения определите: 1 — Верно, 2 — Неверно, 3 — Не сказано.', iGaps: 'Заполните пропуски частями предложений (одна лишняя).', iGap: 'Раскройте скобки / образуйте однокоренное слово и впишите ответ.', tgGrammar: 'Прочитайте текст. Раскройте скобки и поставьте слово в нужную форму (задания 19–24).', tgWordform: 'Прочитайте текст. Образуйте однокоренное слово (задания 25–29).', tgLexis: 'Прочитайте текст. Выберите слово, подходящее по смыслу, и запишите цифру (задания 30–36).',
     },
     // vocab (лексика — тема недели + флэшкарты/SRS)
     vocab: {
@@ -732,7 +732,7 @@ export const STRINGS = {
       scoringSpeaking: (d, n) => `Assessing speaking… (${d}/${n})`,
       speakResult: 'Speaking — AI grade',
       speakPending: "Speaking couldn't be checked (no internet) — not counted.",
-      tgGrammar: 'Grammar — open the brackets and use the correct form.', tgWordform: 'Word formation — form a word from the one in CAPITALS.',
+      tgGrammar: 'Grammar — open the brackets and use the correct form.', tgWordform: 'Word formation — form a word from the one in CAPITALS.', tgLexis: 'Vocabulary — choose the word that best fits.',
     },
     mockPrompt: {
       firstTitle: 'Set your Point A',
@@ -754,7 +754,7 @@ export const STRINGS = {
       writingArea: 'Written part:',
       audioAt: '🔊 Audio:', audioScan: '🔊 Scan the QR to play the audio:',
       fSurname: 'Surname', fName: 'First name', fPatr: 'Patronymic', fSubject: 'Subject: English', fClass: 'Class:', asInstr: 'Write short answers in BLOCK CAPITALS, one character per cell, starting from the first cell.',
-      iChoice: 'Choose the correct answer.', iFill: 'Write the missing word.', iMatch: 'Match and write the number.', iTfns: 'For each statement decide: 1 — True, 2 — False, 3 — Not stated.', iGaps: 'Fill the gaps with the sentence parts (one is extra).', iGap: 'Open the brackets / form the right word and write the answer.', tgGrammar: 'Read the text. Open the brackets and use the correct form (tasks 19–24).', tgWordform: 'Read the text. Form a derived word (tasks 25–29).',
+      iChoice: 'Choose the correct answer.', iFill: 'Write the missing word.', iMatch: 'Match and write the number.', iTfns: 'For each statement decide: 1 — True, 2 — False, 3 — Not stated.', iGaps: 'Fill the gaps with the sentence parts (one is extra).', iGap: 'Open the brackets / form the right word and write the answer.', tgGrammar: 'Read the text. Open the brackets and use the correct form (tasks 19–24).', tgWordform: 'Read the text. Form a derived word (tasks 25–29).', tgLexis: 'Прочитайте текст. Выберите слово, подходящее по смыслу, и запишите цифру (задания 30–36).',
     },
     sections: { vocab: 'Topic Vocabulary', grammar: 'Grammar', wordform: 'Word formation', reading: 'Reading', listening: 'Listening', writing: 'Writing', speaking: 'Speaking', mock: 'Mock exam', lexis: 'Vocabulary', email: 'Email', essay: 'Essay' },
     sectionMeta: { vocab: 'theme of the week · 15 words a day', grammar: '389 tasks · grammar', wordform: '728 tasks · word forms', reading: '469 tasks · 3 formats', listening: 'FIPI audio · multiple choice', writing: 'writing', speaking: '184 tasks · recorder + AI', mock: 'full timed paper', lexis: '728 tasks · vocabulary', email: 'task 37 · K1–K3', essay: 'task 38 · K1–K5' },

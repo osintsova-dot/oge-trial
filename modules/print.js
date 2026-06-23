@@ -11,7 +11,7 @@ const ABC = ['A', 'B', 'C', 'D'];
 // Печатный лист = как на ФИПИ: инструкции и бланк ПО-РУССКИ для обоих экзаменов (реальный
 // вариант ФИПИ всегда на русском, даже ЕГЭ). Формулировки — из демоверсии ФИПИ-2026.
 const P = {
-  title: 'Версия для печати', doPrint: 'Печать',
+  title: 'Версия для печати', doPrint: 'Печать', officialBlank: 'Официальный бланк',
   hint: 'Нажми «Печать» → «Сохранить как PDF». Лист заданий и бланк ответов — на отдельных страницах.',
   fio: 'Фамилия, имя: ', date: 'Дата: ',
   answerSheet: 'Бланк ответов № 1',
@@ -29,14 +29,29 @@ const P = {
   iReadMatch: 'Установите соответствие между текстами и заголовками/вопросами. Один пункт лишний.',
   tgGrammar: 'Преобразуйте, если необходимо, слова, напечатанные заглавными буквами, так, чтобы они грамматически соответствовали содержанию текста (задания 19–24).',
   tgWordform: 'Образуйте от слов, напечатанных заглавными буквами, однокоренные слова, так, чтобы они грамматически и лексически соответствовали содержанию текста (задания 25–29).',
+  tgLexis: 'Прочитайте текст с пропусками. Выберите номер слова, подходящего по смыслу, и запишите цифру 1, 2, 3 или 4 (задания 30–36).',
+  // официальный бланк ответов № 1 (по образцу ФИПИ-2026)
+  examFull: { oge: 'ОСНОВНОЙ ГОСУДАРСТВЕННЫЙ ЭКЗАМЕН — 2026', ege: 'ЕДИНЫЙ ГОСУДАРСТВЕННЫЙ ЭКЗАМЕН — 2026' },
+  as1Title: 'БЛАНК ОТВЕТОВ № 1', as2Title: 'БЛАНК ОТВЕТОВ № 2',
+  asRegion: 'Код региона', asSubjCode: 'Код предмета', asSubjName: 'Название предмета',
+  asSubjVal: 'Английский язык', asReserve: 'Резерв',
+  asSign: 'Подпись участника экзамена',
+  asFillRule: 'Заполнять гелевой или капиллярной ручкой ЧЁРНЫМИ чернилами ЗАГЛАВНЫМИ ПЕЧАТНЫМИ БУКВАМИ и ЦИФРАМИ по следующему образцу:',
+  asSampleL: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', asSampleD: '1234567890  - .',
+  asShortBand: 'Результаты выполнения заданий с КРАТКИМ ОТВЕТОМ',
+  asReplaceBand: 'Замена ошибочных ответов на задания с КРАТКИМ ОТВЕТОМ',
+  asInfoBand: 'СВЕДЕНИЯ ОБ УЧАСТНИКЕ', asDoc: 'Документ', asSeria: 'Серия', asNomer: 'Номер',
+  as2Note: 'Развёрнутые ответы (письменная часть). Пишите аккуратно, не выходя за границы поля.',
 };
 
 // Главное: показать печатный вид набора заданий.
 // opts = { title, sub, sections, onBack }
 export function renderPrintView(container, opts) {
+  const officialHref = './assets/blanks/' + (opts.exam === 'oge' ? 'oge' : 'ege') + '_blank.pdf';
   const toolbar = el('div', { class: 'print-bar no-print' }, [
     el('button', { class: 'back', text: '←', onclick: opts.onBack }),
     el('div', { class: 'print-bar-t', text: P.title }),
+    el('a', { class: 'btn print-official', href: officialHref, target: '_blank', rel: 'noopener', text: '📄 ' + P.officialBlank }),
     el('button', { class: 'btn btn-primary print-go', text: '🖨 ' + P.doPrint, onclick: () => window.print() }),
   ]);
 
@@ -49,12 +64,13 @@ export function renderPrintView(container, opts) {
     ...buildPaper(opts.sections, P, opts.exam),
   ]);
 
-  const sheet = el('div', { class: 'print-paper answer-sheet' }, [
-    asHeader(P, opts.title),
+  const sheet1 = el('div', { class: 'print-paper answer-sheet as1-sheet' }, [
+    asHeader(P, opts.title, opts.exam),
     ...buildAnswerSheet(opts.sections, P, opts.exam),
   ]);
+  const sheet2 = buildSheet2(P, opts.sections, opts.exam);
 
-  mount(container, el('div', { class: 'view print-view' }, [toolbar, el('div', { class: 'print-hint no-print', text: P.hint }), paper, sheet]));
+  mount(container, el('div', { class: 'view print-view' }, [toolbar, el('div', { class: 'print-hint no-print', text: P.hint }), paper, sheet1, sheet2].filter(Boolean)));
 }
 
 // Сколько ЗАДАНИЙ (номеров) занимает элемент и длина ответа каждого (для бланка) — строго по ФИПИ.
@@ -64,6 +80,7 @@ function itemSlots(it, exam) {
   if (it.kind === 'fill') return [10];
   if (it.kind === 'gap') return [12];
   if (it.kind === 'textgaps') return (it.gaps || []).map(() => 12);
+  if (it.kind === 'lexgaps') return (it.gaps || []).map(() => 1);
   if (it.kind === 'match') return [(it.speakers || []).length];
   if (it.kind === 'rmatch') return [LETTERS.filter((L) => it.texts && it.texts[L] != null).length];
   if (it.kind === 'gaps') return [(it.gaps || []).length];
@@ -143,6 +160,7 @@ function instrFor(it, P) {
   if (it.kind === 'tfns') return P.iTfns;
   if (it.kind === 'gaps') return P.iGaps;
   if (it.kind === 'rmatch') return P.iReadMatch;
+  if (it.kind === 'lexgaps') return P.tgLexis;
   return ''; // match — своя инструкция в it.task
 }
 
@@ -201,46 +219,102 @@ function renderItem(it, n, exam) {
     });
     return { node: el('div', { class: 'pp-q' }, [head, para]), n };
   }
+  if (it.kind === 'lexgaps') {
+    // связный текст с пропусками (num) ___ + под ним список заданий с 4 вариантами
+    const para = el('div', { class: 'pp-text pp-textgaps' });
+    const nums = [];
+    (it.passage || '').split(/\{(\d+)\}/).forEach((ch, idx) => {
+      if (idx % 2 === 0) { if (ch) para.appendChild(document.createTextNode(ch)); return; }
+      n += 1; nums.push(n);
+      para.appendChild(el('span', { class: 'pp-tg-gap', text: ' (' + n + ') ______ ' }));
+    });
+    const list = (it.gaps || []).map((gp, gi) => el('div', { class: 'pp-lex-q' }, [
+      el('b', { text: (nums[gi] || gp.pos) + '. ' }),
+      ...(gp.options || []).map((w, oi) => el('span', { class: 'pp-lex-opt', text: (oi + 1) + ') ' + w + '  ' })),
+    ]));
+    return { node: el('div', { class: 'pp-q' }, [para, el('div', { class: 'pp-lex-list' }, list)]), n };
+  }
   return { node: el('div'), n };
 }
 
-// ---- Шапка бланка ответов (как на экзамене) ----
-function asHeader(P, title) {
-  const filled = (label, cells) => el('div', { class: 'as-field' }, [
-    el('div', { class: 'as-field-l', text: label }),
-    el('div', { class: 'as-boxes' }, Array.from({ length: cells }, () => el('span', { class: 'as-box' }))),
+const AS_CELLS = 17; // клеток в строке ответа (как на бланке ФИПИ)
+
+// ---- Шапка БЛАНКА ОТВЕТОВ № 1 (по образцу ФИПИ-2026) ----
+function asHeader(P, title, exam) {
+  const cg = (label, k) => el('div', { class: 'as1-cg' }, [
+    el('div', { class: 'as1-cg-l', text: label }),
+    el('div', { class: 'as1-cg-b' }, Array.from({ length: k }, () => el('span', { class: 'as1-box' }))),
   ]);
-  return el('div', { class: 'as-header' }, [
-    el('div', { class: 'as-title', text: P.answerSheet }),
-    el('div', { class: 'as-ex', text: title }),
-    filled(P.fSurname, 18),
-    filled(P.fName, 18),
-    filled(P.fPatr, 18),
-    el('div', { class: 'as-line2' }, [
-      el('span', { text: P.fSubject }), el('span', { class: 'pp-line' }),
-      el('span', { text: P.fClass }), el('span', { class: 'pp-line short' }),
-      el('span', { text: P.date }), el('span', { class: 'pp-line short' }),
-    ]),
-    el('div', { class: 'as-instr', text: P.asInstr }),
+  const sample = (s) => el('div', { class: 'as1-sample' }, s.split('').map((ch) =>
+    el('span', { class: 'as1-sch', text: ch === ' ' ? ' ' : ch })));
+  // строка-поле «Фамилия» и т.п. с клетками (для ОГЭ — сведения об участнике на бланке № 1)
+  const cellRow = (label, k) => el('div', { class: 'as1-namerow' }, [
+    el('div', { class: 'as1-name-l', text: label }),
+    el('div', { class: 'as1-cg-b' }, Array.from({ length: k }, () => el('span', { class: 'as1-box' }))),
+  ]);
+  const band = el('div', { class: 'as1-band' }, [
+    el('div', { class: 'as1-exam', text: (P.examFull[exam] || P.examFull.ege) }),
+    el('div', { class: 'as1-blank', text: P.as1Title }),
+  ]);
+  const codes = el('div', { class: 'as1-codes' }, [
+    cg(P.asRegion, 2), cg(P.asSubjCode, 2),
+    el('div', { class: 'as1-cg' }, [el('div', { class: 'as1-cg-l', text: P.asSubjName }), el('div', { class: 'as1-subjval', text: P.asSubjVal })]),
+    cg(P.asReserve, 4),
+  ]);
+  const rule = el('div', { class: 'as1-rule', text: P.asFillRule });
+  const samples = el('div', { class: 'as1-samples' }, [sample(P.asSampleL), sample(P.asSampleD)]);
+  if (exam === 'oge') {
+    // ОГЭ: сведения об участнике (ФИО + документ) прямо на бланке № 1
+    const info = el('div', { class: 'as1-info' }, [
+      el('div', { class: 'as1-infoband', text: P.asInfoBand }),
+      cellRow(P.fSurname, 24), cellRow(P.fName, 24), cellRow(P.fPatr, 24),
+      el('div', { class: 'as1-docrow' }, [
+        el('div', { class: 'as1-name-l', text: P.asDoc }),
+        el('span', { class: 'as1-doc-s', text: P.asSeria }), el('div', { class: 'as1-cg-b' }, Array.from({ length: 4 }, () => el('span', { class: 'as1-box' }))),
+        el('span', { class: 'as1-doc-s', text: P.asNomer }), el('div', { class: 'as1-cg-b' }, Array.from({ length: 6 }, () => el('span', { class: 'as1-box' }))),
+      ]),
+    ]);
+    return el('div', { class: 'as1-head' }, [band, codes, rule, samples, info]);
+  }
+  return el('div', { class: 'as1-head' }, [
+    band, codes,
+    el('div', { class: 'as1-sign' }, [el('span', { class: 'pp-line' }), el('span', { class: 'as1-sign-l', text: P.asSign })]),
+    rule, samples,
   ]);
 }
 
-// ---- Бланк ответов: номера и клетки строго по ФИПИ (соответствие = один номер, N клеток) ----
+// ---- Бланк ответов № 1: две колонки пронумерованных строк (краткий ответ) ----
 function buildAnswerSheet(sections, P, exam) {
   let n = 0;
-  const cells = [];
+  const nums = [];
   for (const sec of sections) {
     if (sec.id === 'writing' || sec.id === 'speaking') continue;
-    for (const it of (sec.items || [])) {
-      for (const len of itemSlots(it, exam)) { n += 1; cells.push(answerRow(n, len)); }
-    }
+    for (const it of (sec.items || [])) for (const _ of itemSlots(it, exam)) { n += 1; nums.push(n); }
   }
-  const grid = el('div', { class: 'as-grid' }, cells);
-  const writingNote = sections.some((s) => s.id === 'writing') ? el('div', { class: 'as-writing' }, [el('div', { class: 'as-w-h', text: P.writingArea }), ...Array.from({ length: 10 }, () => el('div', { class: 'as-line' }))]) : null;
-  return [grid, writingNote].filter(Boolean);
+  const mid = Math.ceil(nums.length / 2);
+  const col = (arr) => el('div', { class: 'as1-col' }, arr.map((num) => answerRow(num)));
+  return [
+    el('div', { class: 'as1-secband', text: P.asShortBand }),
+    el('div', { class: 'as1-cols' }, [col(nums.slice(0, mid)), col(nums.slice(mid))]),
+  ];
 }
 
-function answerRow(n, len) {
-  const boxes = Array.from({ length: Math.max(1, len || 1) }, () => el('span', { class: 'as-box' }));
-  return el('div', { class: 'as-row' }, [el('span', { class: 'as-n', text: String(n) }), el('span', { class: 'as-boxes' }, boxes)]);
+function answerRow(num) {
+  return el('div', { class: 'as1-row' }, [
+    el('span', { class: 'as1-num', text: String(num) }),
+    el('span', { class: 'as1-cells' }, Array.from({ length: AS_CELLS }, () => el('span', { class: 'as1-box' }))),
+  ]);
+}
+
+// ---- Бланк ответов № 2: поле для развёрнутых ответов (письмо) ----
+function buildSheet2(P, sections, exam) {
+  if (!sections.some((s) => s.id === 'writing')) return null;
+  return el('div', { class: 'print-paper answer-sheet as2-sheet' }, [
+    el('div', { class: 'as1-band' }, [
+      el('div', { class: 'as1-exam', text: (P.examFull[exam] || P.examFull.ege) }),
+      el('div', { class: 'as1-blank', text: P.as2Title }),
+    ]),
+    el('div', { class: 'as2-note', text: P.as2Note }),
+    el('div', { class: 'as2-grid' }),
+  ]);
 }
