@@ -1184,6 +1184,8 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .ws-gcells{display:flex}
 .ws-acell{width:30px;height:36px;border:1px solid #b2b2c0;border-left:none;flex:none}
 .ws-acell:first-child{border-left:1px solid #b2b2c0}
+/* открытая линия для ответов-слов (связный почерк читается OCR лучше клеток) */
+.ws-gline{flex:1;height:36px;border:1px solid #b2b2c0;border-radius:6px;min-width:240px;max-width:430px}
 @page{ size:A4; margin:14mm 12mm; }
 @media print{
   html,body{background:#fff!important;height:auto!important}
