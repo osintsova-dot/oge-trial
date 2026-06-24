@@ -874,7 +874,7 @@ export const STRINGS = {
       savedJournal: 'Сохранено в журнал класса ✓', alreadyJournal: 'Эта работа уже есть в журнале',
     },
     sections: { vocab: 'Topic Vocabulary', grammar: 'Grammar', wordform: 'Word formation', reading: 'Reading', listening: 'Listening', writing: 'Writing', speaking: 'Speaking', mock: 'Mock exam', lexis: 'Vocabulary', email: 'Email', essay: 'Essay' },
-    sectionMeta: { vocab: 'theme of the week · 15 words a day', grammar: '341 tasks · 9 topics', wordform: '275 tasks · word forms', reading: '469 tasks · 3 formats', listening: 'FIPI audio · multiple choice', writing: 'writing', speaking: '184 tasks · recorder + AI', mock: 'full timed paper', lexis: '275 tasks · 9 topics', email: 'task 37 · K1–K3', essay: 'task 38 · K1–K5' },
+    sectionMeta: { vocab: 'theme of the week · 15 words a day', grammar: '341 tasks · 9 topics', wordform: '275 tasks · word forms', reading: '469 tasks · 3 formats', listening: 'FIPI audio · multiple choice', writing: 'writing', speaking: '184 tasks · recorder + AI', mock: 'full timed paper', lexis: '534 tasks · 6 topics', email: 'task 37 · K1–K3', essay: 'task 38 · K1–K5' },
     ranks: ['Rookie', 'Trainee', 'Skilled', 'Pro', 'Master', 'Legend'],
     skins: {
       aurora: { name: 'Aurora', desc: 'Purple → honey', need: 'available now', how: 'A skin is the colour of your XP bar at the top. "Aurora" (purple → honey) is available right away — equip it in one tap.' },

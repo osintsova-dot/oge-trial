@@ -88,8 +88,23 @@ function wordformTopic(it, ans) {
   return 'Другое словообразование';
 }
 
+// англ. названия тем для ЕГЭ (UI английский — темы тоже должны быть на английском)
+const TOPIC_EN = {
+  'Passive (страдательный залог)': 'Passive voice', 'Степени сравнения': 'Comparatives & superlatives',
+  'Мн. число существительных': 'Plural nouns', 'Числительные': 'Numerals', 'Местоимения': 'Pronouns',
+  'Модальные глаголы': 'Modal verbs', 'Конструкция I wish': 'I wish', 'There is / there are': 'There is / there are',
+  'Условные предложения': 'Conditionals', 'Согласование времён': 'Sequence of tenses',
+  'Past Perfect': 'Past Perfect', 'Present Perfect': 'Present Perfect', 'Future Simple': 'Future Simple',
+  'Past Continuous': 'Past Continuous', 'Present Continuous': 'Present Continuous',
+  'Would / future-in-the-past': 'Would / future-in-the-past', 'Past Simple': 'Past Simple', 'Present Simple': 'Present Simple',
+  'Другие формы глагола': 'Other verb forms',
+  'Отрицательные приставки': 'Negative prefixes', 'Наречия (-ly)': 'Adverbs (-ly)', 'Существительные': 'Nouns',
+  'Прилагательные': 'Adjectives', 'Глаголы': 'Verbs', 'Другое словообразование': 'Other word formation',
+};
+
 export function topicOf(secId, it, ans) {
-  return secId === 'grammar' ? grammarTopic(it, ans) : wordformTopic(it, ans);
+  const lbl = secId === 'grammar' ? grammarTopic(it, ans) : wordformTopic(it, ans);
+  return (EXAM.lang === 'en') ? (TOPIC_EN[lbl] || lbl) : lbl;
 }
 
 // ---- общие хелперы ДЗ (ссылка/проверка/разбор) ----
