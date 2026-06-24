@@ -3,6 +3,8 @@
 // шлём сырые байты в воркер → воркер кодирует в base64 и зовёт Vision → возвращает текст.
 // Рукопись распознаётся с ошибками — поэтому в UI ОБЯЗАТЕЛЕН шаг «сверь и поправь».
 
+import { fetchRetry } from './net.js';
+
 // Воркер yandex-ocr.js (Cloudflare, аккаунт o-sintsova). Прокси к Yandex Vision OCR.
 const OCR_WORKER = 'https://oge-ocr.o-sintsova.workers.dev';
 
@@ -20,9 +22,9 @@ export async function recognizePhoto(file) {
   if (!file) throw new Error('нет фото');
   const { blob, mime } = await shrink(file);
   const buf = await blob.arrayBuffer();
-  const res = await fetch(OCR_WORKER + '?lang=ru,en&model=handwritten&mime=' + encodeURIComponent(mime), {
+  const res = await fetchRetry(OCR_WORKER + '?lang=ru,en&model=handwritten&mime=' + encodeURIComponent(mime), {
     method: 'POST', headers: { 'Content-Type': mime }, body: buf,
-  });
+  }, { timeoutMs: 60000, tries: 2 });
   let j;
   try { j = await res.json(); } catch { throw new Error('ответ распознавания не прочитан'); }
   if (!res.ok || j.error) throw new Error(j.error || ('ошибка распознавания ' + res.status));
@@ -37,9 +39,9 @@ export async function recognizeBlank(file) {
   if (!file) throw new Error('нет фото');
   const { blob, mime } = await shrink(file);
   const buf = await blob.arrayBuffer();
-  const res = await fetch(OCR_WORKER + '?lang=en&model=handwritten&boxes=1&mime=' + encodeURIComponent(mime), {
+  const res = await fetchRetry(OCR_WORKER + '?lang=en&model=handwritten&boxes=1&mime=' + encodeURIComponent(mime), {
     method: 'POST', headers: { 'Content-Type': mime }, body: buf,
-  });
+  }, { timeoutMs: 60000, tries: 2 });
   let j;
   try { j = await res.json(); } catch { throw new Error('ответ распознавания не прочитан'); }
   if (!res.ok || j.error) throw new Error(j.error || ('ошибка распознавания ' + res.status));

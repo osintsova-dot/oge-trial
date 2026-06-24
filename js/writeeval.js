@@ -1,6 +1,8 @@
 // writeeval.js — ИИ-проверка письма (DeepSeek через воркер). Общая для раздела «Письмо» и ДЗ.
 // opts = { lang:'ru'|'en', sectionId:'writing'|'email'|'essay', criteria:[{code,name,max}], max, words:[min,max], stim }
 
+import { fetchRetry, parseModelJSON } from './net.js';
+
 const WORKER = 'https://purple-cake-2966.o-sintsova.workers.dev'; // прокси DeepSeek
 
 export async function evalWriting(text, opts) {
@@ -51,14 +53,16 @@ Score every criterion within its max. totalScore = sum of criteria scores. Give 
 В ОГЭ встречные вопросы НЕ требуются. totalScore = сумма по критериям. ВАЖНО (правило ФИПИ): если К1=0 (коммуникативная задача не решена), то ВСЁ задание = 0 — остальные критерии тоже 0 и totalScore=0.`;
   }
 
-  const r = await fetch(WORKER, {
+  // эссе длиннее (200-250 слов + corrected) → больше токенов, иначе JSON обрывается
+  const maxTok = sectionId === 'essay' ? 3500 : 2400;
+  const r = await fetchRetry(WORKER, {
     method: 'POST', headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ model: 'deepseek-chat', max_tokens: 2200,
+    body: JSON.stringify({ model: 'deepseek-chat', max_tokens: maxTok,
       messages: [{ role: 'system', content: sys }, { role: 'user', content: user }] }),
-  });
+  }, { timeoutMs: 60000, tries: 2 });
   if (!r.ok) throw new Error('HTTP ' + r.status);
   const d = await r.json();
   if (d.error) throw new Error(d.error.message || JSON.stringify(d.error));
   if (!d.choices || !d.choices[0]) throw new Error('empty response');
-  return JSON.parse(d.choices[0].message.content.replace(/```json|```/g, '').trim());
+  return parseModelJSON(d.choices[0].message.content);
 }

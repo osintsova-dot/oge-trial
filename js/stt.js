@@ -3,6 +3,8 @@
 // режем на куски ≤28 сек → каждый в сырой LPCM → POST в воркер → склеиваем текст.
 // Так обходим лимит синхронного распознавания (30 сек/1 МБ) и разнобой форматов (iOS/Android).
 
+import { fetchRetry } from './net.js';
+
 const STT_WORKER = 'https://withered-bush-199foge-stt.o-sintsova.workers.dev';
 const RATE = 16000;          // частота для SpeechKit
 const CHUNK_SEC = 28;        // запас под лимит 30 сек
@@ -48,9 +50,9 @@ export async function recognize(blob, onProgress) {
   const parts = [];
   for (let i = 0; i < chunks.length; i++) {
     const lpcm = floatToLpcm(chunks[i]);
-    const res = await fetch(STT_WORKER + '?lang=en-US', {
+    const res = await fetchRetry(STT_WORKER + '?lang=en-US', {
       method: 'POST', headers: { 'Content-Type': 'application/octet-stream' }, body: lpcm,
-    });
+    }, { timeoutMs: 45000, tries: 2 });
     let j;
     try { j = await res.json(); } catch { throw new Error('ответ распознавания не прочитан'); }
     if (!res.ok || j.error) throw new Error(j.error || ('ошибка распознавания ' + res.status));
