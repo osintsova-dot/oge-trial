@@ -376,14 +376,14 @@ function answerRow(num) {
 function buildWorksheetGrid(sections, P, exam) {
   let n = 0;
   const rows = [];
-  // ответы-СЛОВА (грамматика/словообразование/вставка слова) → открытая линия: связный почерк
-  // OCR читает заметно лучше изолированных букв в клетках. Ответы-ЦИФРЫ → клетки.
-  const WORD = new Set(['fill', 'gap', 'textgaps']);
+  // МНОГОЗНАЧНЫЙ ответ (слово ИЛИ цифровая последовательность) → открытая линия: связный почерк/цифры
+  // OCR читает заметно лучше, чем изолированные символы в клетках (так смещались и буквы, и цифры).
+  // ОДИНОЧНАЯ цифра (выбор/лексика/ОГЭ-верно-неверно) → одна клетка (так читается надёжно).
   for (const sec of sections) {
     if (sec.id === 'writing' || sec.id === 'speaking') continue;
     for (const it of (sec.items || [])) for (const len of itemSlots(it, exam)) {
       n += 1;
-      rows.push({ num: n, cells: Math.min(Math.max(len, 6), 15), word: WORD.has(it.kind) });
+      rows.push({ num: n, multi: len > 1 });
     }
   }
   if (!rows.length) return null;
@@ -394,9 +394,9 @@ function buildWorksheetGrid(sections, P, exam) {
     el('div', { class: 'ws-grid-note', text: P.wsGridNote }),
     el('div', { class: 'ws-grid' }, rows.map((r) => el('div', { class: 'ws-grow' }, [
       el('span', { class: 'ws-gnum', text: String(r.num) }),
-      r.word
+      r.multi
         ? el('span', { class: 'ws-gline' })
-        : el('span', { class: 'ws-gcells' }, Array.from({ length: r.cells }, () => el('span', { class: 'ws-acell' }))),
+        : el('span', { class: 'ws-gcells' }, [el('span', { class: 'ws-acell' })]),
     ]))),
   ]);
 }
