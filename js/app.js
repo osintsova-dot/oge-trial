@@ -15,16 +15,12 @@ import { EXAM, t, sectionById, plural } from './exam.js';
 import { dailyProgress, themeStats } from './vocab_srs.js';
 import { weeklyPlan } from './planner.js';
 import { exportProgress, importProgress } from './backup.js';
-import { renderDrill } from '../modules/drill.js';
-import { renderWriting } from '../modules/writing.js';
-import { renderReading } from '../modules/reading.js';
-import { renderReadingEge } from '../modules/ege_reading.js';
-import { renderVocab } from '../modules/vocab.js';
-import { renderListening } from '../modules/listening.js';
-import { renderSpeaking } from '../modules/speaking.js';
-import { renderEgeSpeaking } from '../modules/ege_speaking.js';
-import { renderMock } from '../modules/mock.js';
-import { renderTeacher, renderHomework, renderHomeworkResult, renderJournal } from '../modules/teacher.js';
+// Модули разделов грузятся ЛЕНИВО (import() по требованию) — на главной не тянем весь код.
+// lazy(path, name, arg): показать лоадер → импортировать модуль → вызвать render(view, arg).
+function lazy(path, name, arg) {
+  mount(view, el('div', { class: 'loader', text: '…' }));
+  return import(path).then((m) => m[name](view, arg)).catch((e) => mount(view, el('div', { class: 'err-msg', text: String(e && e.message || e) })));
+}
 
 const view = document.getElementById('view');
 const goHome = () => { location.hash = '#/'; };
@@ -58,18 +54,18 @@ function route() {
   if (hash === 'progress') return renderProgress();
   if (hash === 'rewards')  return renderRewards();
   if (hash === 'plan')     return renderPlan();
-  if (hash === 'teacher')  { setRole('teacher'); updateRoleUI(); document.body.classList.add('in-flow'); return renderTeacher(view, { goHome }); }
-  if (hash === 'journal')  { setRole('teacher'); updateRoleUI(); document.body.classList.add('in-flow'); return renderJournal(view, { goHome }); }
-  if (hash.split('?')[0] === 'hw') { document.body.classList.add('in-flow'); return renderHomework(view, { goHome, query: hash.slice(hash.indexOf('?') + 1) }); }
-  if (hash.split('?')[0] === 'hwr') { document.body.classList.add('in-flow'); return renderHomeworkResult(view, { goHome, query: hash.slice(hash.indexOf('?') + 1) }); }
-  if (sec && sec.type === 'drill')   return renderDrill(view, { ...DRILL[sec.id], goHome });
-  if (sec && sec.type === 'writing') return renderWriting(view, { goHome, sectionId: sec.id, promptZid: new URLSearchParams(query).get('z') || undefined });
-  if (sec && sec.type === 'reading') return (EXAM.id === 'ege' ? renderReadingEge : renderReading)(view, { goHome, dataFile: sec.dataFile });
-  if (sec && sec.type === 'vocab')   return renderVocab(view, { goHome, dataFile: sec.dataFile });
-  if (sec && sec.type === 'listening') return renderListening(view, { goHome, dataFile: sec.dataFile });
-  if (sec && sec.type === 'speaking') return renderSpeaking(view, { goHome, dataFile: sec.dataFile });
-  if (sec && sec.type === 'egespeaking') return renderEgeSpeaking(view, { goHome, dataFile: sec.dataFile });
-  if (sec && sec.type === 'mock') return renderMock(view, { goHome, dataFile: sec.dataFile });
+  if (hash === 'teacher')  { setRole('teacher'); updateRoleUI(); document.body.classList.add('in-flow'); return lazy('../modules/teacher.js', 'renderTeacher', { goHome }); }
+  if (hash === 'journal')  { setRole('teacher'); updateRoleUI(); document.body.classList.add('in-flow'); return lazy('../modules/teacher.js', 'renderJournal', { goHome }); }
+  if (hash.split('?')[0] === 'hw') { document.body.classList.add('in-flow'); return lazy('../modules/teacher.js', 'renderHomework', { goHome, query: hash.slice(hash.indexOf('?') + 1) }); }
+  if (hash.split('?')[0] === 'hwr') { document.body.classList.add('in-flow'); return lazy('../modules/teacher.js', 'renderHomeworkResult', { goHome, query: hash.slice(hash.indexOf('?') + 1) }); }
+  if (sec && sec.type === 'drill')   return lazy('../modules/drill.js', 'renderDrill', { ...DRILL[sec.id], goHome });
+  if (sec && sec.type === 'writing') return lazy('../modules/writing.js', 'renderWriting', { goHome, sectionId: sec.id, promptZid: new URLSearchParams(query).get('z') || undefined });
+  if (sec && sec.type === 'reading') return lazy(EXAM.id === 'ege' ? '../modules/ege_reading.js' : '../modules/reading.js', EXAM.id === 'ege' ? 'renderReadingEge' : 'renderReading', { goHome, dataFile: sec.dataFile });
+  if (sec && sec.type === 'vocab')   return lazy('../modules/vocab.js', 'renderVocab', { goHome, dataFile: sec.dataFile });
+  if (sec && sec.type === 'listening') return lazy('../modules/listening.js', 'renderListening', { goHome, dataFile: sec.dataFile });
+  if (sec && sec.type === 'speaking') return lazy('../modules/speaking.js', 'renderSpeaking', { goHome, dataFile: sec.dataFile });
+  if (sec && sec.type === 'egespeaking') return lazy('../modules/ege_speaking.js', 'renderEgeSpeaking', { goHome, dataFile: sec.dataFile });
+  if (sec && sec.type === 'mock') return lazy('../modules/mock.js', 'renderMock', { goHome, dataFile: sec.dataFile });
   if (sec && sec.type === 'soon')    return renderSoon(sec);
   return renderHome();
 }

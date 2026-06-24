@@ -5,6 +5,13 @@
 
 import { el, mount } from '../js/ui.js';
 
+// qrcode-generator нужен только для печати (QR на аудио) — грузим лениво при первом импорте print.js,
+// а не на главной. qrEl() корректно отдаёт null, пока скрипт ещё не подгрузился.
+if (typeof window !== 'undefined' && !window.qrcode) {
+  const s = document.createElement('script'); s.src = './js/vendor/qrcode.js'; s.async = true;
+  document.head.appendChild(s);
+}
+
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
 const ABC = ['A', 'B', 'C', 'D'];
 
