@@ -228,8 +228,8 @@ function reviewRows(allUnits, answers, keys, H) {
     const ok = hwNorm(mine) === hwNorm(key) && mine.trim() !== '';
     if (ok) correct += 1; total += 1;
     const bw = it.base_word || '';
-    const clean = bw ? stripTrailingBase(it.text || '', bw) : (it.text || '');
-    const prev = clean.replace(GAP_RE, ' ___ ' + (bw ? '(' + bw + ') ' : ''));
+    const src = (it.answer_type === 'Выбор ответа' && it.sentence) ? it.sentence : (bw ? stripTrailingBase(it.text || '', bw) : (it.text || ''));
+    const prev = src.replace(GAP_RE, ' ___ ' + (bw ? '(' + bw + ') ' : ''));
     return el('div', { class: 'hw-rev ' + (ok ? 'ok' : 'no') }, [
       el('div', { class: 'hw-rev-t', text: (i + 1) + '. ' + prev }),
       el('div', { class: 'hw-rev-a' }, [
@@ -525,7 +525,8 @@ export async function renderTeacher(container, opts) {
   mount(container, view);
 
   function secItems(secId) {
-    return (banks[secId] || []).filter((it) => keys[it.zid]); // только с ключом
+    // только с ключом; MC «Выбор ответа» — только с предложением-контекстом (как в дрилле)
+    return (banks[secId] || []).filter((it) => keys[it.zid] && (it.answer_type !== 'Выбор ответа' || it.sentence));
   }
   // тематические группы раздела (по форме ответа) с количеством, отсортированы по убыванию
   function topicGroups(secId) {
@@ -607,7 +608,7 @@ export async function renderTeacher(container, opts) {
       if (search) { const q = search.toLowerCase(); arr = arr.filter((b) => (b.title + ' ' + b.prompt).toLowerCase().includes(q)); }
       return arr.map((b) => ({ pid: 'writing:' + b.id, preview: b.title, meta: b.wlabel }));
     }
-    return filtered().map((it) => ({ pid: curSec + ':' + it.zid, preview: (it.text || '').replace(/_{3,}/, ' ___ '), meta: (it.base_word ? '[' + it.base_word + '] · ' : '') + itemTopic(curSec, it) }));
+    return filtered().map((it) => ({ pid: curSec + ':' + it.zid, preview: ((it.sentence || it.text) || '').replace(/_{3,}/, ' ___ '), meta: (it.base_word ? '[' + it.base_word + '] · ' : '') + itemTopic(curSec, it) }));
   }
 
   function drawList(wrap) {
@@ -925,10 +926,30 @@ export async function renderHomework(container, opts) {
       }
       const it = u.it;
       const bw = it.base_word || '';
-      const clean = bw ? stripTrailingBase(it.text || '', bw) : (it.text || '');
-      const m = clean.match(GAP_RE);
-      const before = m ? clean.slice(0, m.index) : clean;
-      const after = m ? clean.slice(m.index + m[0].length) : '';
+      // MC-лексика «Выбор ответа»: предложение-контекст (it.sentence) + кнопки-варианты
+      const isMC = it.answer_type === 'Выбор ответа' || /^\s*1\)/.test(it.text || '');
+      const srcText = (isMC && it.sentence) ? it.sentence : (bw ? stripTrailingBase(it.text || '', bw) : (it.text || ''));
+      const m = srcText.match(GAP_RE);
+      const before = m ? srcText.slice(0, m.index) : srcText;
+      const after = m ? srcText.slice(m.index + m[0].length) : '';
+      if (isMC) {
+        const mcOpts = [...(it.text || '').matchAll(/\d\)\s*([A-Za-z][A-Za-z'-]*)/g)].map((x) => x[1]);
+        const blank = el('span', { class: 'hw-blank', text: answers[it.zid] || '___' });
+        const optWrap = el('div', { class: 'mc-list' }), btns = [];
+        for (const w of mcOpts) {
+          const b = el('button', { class: 'mc-opt' + (answers[it.zid] === w ? ' mc-sel' : ''), text: w });
+          b.addEventListener('click', () => { answers[it.zid] = w; blank.textContent = w; btns.forEach((x) => x.classList.remove('mc-sel')); b.classList.add('mc-sel'); });
+          btns.push(b); optWrap.appendChild(b);
+        }
+        list.appendChild(el('div', { class: 'hw-q hw-q-read' }, [
+          el('span', { class: 'hw-n', text: (i + 1) + '.' }),
+          el('div', { class: 'hw-rblock' }, [
+            el('div', { class: 'hw-rtext' }, [document.createTextNode(before), blank, document.createTextNode(after)]),
+            optWrap,
+          ]),
+        ]));
+        return;
+      }
       const inp = el('input', { class: 'hw-input', type: 'text', value: answers[it.zid] || '', placeholder: H.answerPh });
       inp.addEventListener('input', () => { answers[it.zid] = inp.value; });
       const cue = bw ? el('b', { class: 'hw-base', text: ' (' + bw + ') ' }) : document.createTextNode('');
