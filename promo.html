@@ -60,6 +60,17 @@
   .phone::before{content:"";position:absolute;top:9px;left:50%;transform:translateX(-50%);width:78px;height:18px;background:#14101f;border-radius:0 0 12px 12px;z-index:2}
   .phones{display:flex;gap:22px;justify-content:center;flex-wrap:wrap}
 
+  /* плашка доверия ФИПИ */
+  .fipi-band{display:flex;align-items:center;gap:22px;background:#fff;border:1px solid var(--line);border-left:6px solid var(--honey);border-radius:20px;padding:24px 28px;box-shadow:var(--shadow)}
+  .fipi-badge{font-size:40px;flex:none;width:64px;height:64px;border-radius:16px;background:var(--grad-honey);display:flex;align-items:center;justify-content:center}
+  .fipi-txt{flex:1;min-width:240px}
+  .fipi-txt h3{font-size:19px;margin-bottom:5px}
+  .fipi-txt p{color:var(--muted);font-size:15px}
+  .fipi-stats{display:flex;gap:26px;flex:none;padding-left:10px;border-left:1px solid var(--line)}
+  .fipi-stats div{text-align:center}
+  .fipi-stats b{display:block;font-size:26px;font-weight:900;color:var(--p);line-height:1}
+  .fipi-stats span{font-size:12px;color:var(--muted)}
+
   /* карточки фич */
   .grid{display:grid;gap:20px}
   .g3{grid-template-columns:repeat(3,1fr)}
@@ -124,6 +135,8 @@
     .hero-art{margin-top:10px}
     .hero-art img{width:min(260px,62%)}
     .navbar .brand span.tg{display:none}
+    .fipi-band{flex-direction:column;text-align:center;margin-top:-20px}
+    .fipi-stats{border-left:0;border-top:1px solid var(--line);padding:16px 0 0;justify-content:center;width:100%}
   }
 </style>
 </head>
@@ -140,15 +153,15 @@
       <div>
         <span class="eyebrow" style="background:rgba(255,255,255,.16);color:#fff">Английский · ОГЭ и ЕГЭ</span>
         <h1>Готовься к экзамену так, что хочется вернуться завтра</h1>
-        <p class="sub">Тренажёр всей письменной и устной части ОГЭ и ЕГЭ по английскому: тренировка по разделам, пробники с таймером и баллами, проверка письма и речи искусственным интеллектом. С характером, без занудства.</p>
+        <p class="sub">Тренажёр всей письменной и устной части ОГЭ и ЕГЭ по английскому. <b>Полный банк официальных заданий ФИПИ</b>, пробники с таймером и баллами, проверка письма и речи искусственным интеллектом. С характером, без занудства.</p>
         <div class="btns">
           <a class="btn btn-h" href="./oge.html">Открыть ОГЭ →</a>
           <a class="btn btn-ghost" href="./ege.html">Открыть ЕГЭ →</a>
         </div>
         <div class="tags">
+          <span class="chip">🏛 Официальный банк ФИПИ</span>
           <span class="chip">⚡ Работает офлайн</span>
           <span class="chip">🔒 Без аккаунтов</span>
-          <span class="chip">📲 Ставится как приложение</span>
           <span class="chip">🤖 Проверка письма ИИ</span>
         </div>
       </div>
@@ -158,6 +171,22 @@
     </div>
   </div>
 </header>
+
+<!-- ============ ПЛАШКА ДОВЕРИЯ: ФИПИ ============ -->
+<div class="wrap" style="margin-top:-34px;position:relative;z-index:3">
+  <div class="fipi-band">
+    <div class="fipi-badge">🏛</div>
+    <div class="fipi-txt">
+      <h3>Только официальные задания ФИПИ — и весь банк целиком</h3>
+      <p>Никаких «похожих» примеров: реальные тексты, аудио и формулировки из Открытого банка заданий ФИПИ в актуальном формате 2026 года. Тренируешься ровно на том, что встретишь на экзамене.</p>
+    </div>
+    <div class="fipi-stats">
+      <div><b>4000+</b><span>заданий банка</span></div>
+      <div><b>46</b><span>пробных вариантов</span></div>
+      <div><b>2026</b><span>формат ОГЭ/ЕГЭ</span></div>
+    </div>
+  </div>
+</div>
 
 <!-- ============ ЧТО ЭТО ============ -->
 <section class="center">
@@ -180,7 +209,7 @@
 <section class="alt" id="exams">
   <div class="wrap">
     <div class="center"><span class="eyebrow">Два приложения</span><h2>ОГЭ и ЕГЭ — каждый под свой формат</h2>
-    <p class="lead">Актуальные форматы заданий 2026 года, реальные тексты и аудио из открытого банка ФИПИ.</p></div>
+    <p class="lead">Весь банк заданий собран из официального Открытого банка ФИПИ — реальные тексты, аудио и формулировки в актуальном формате 2026 года.</p></div>
     <div class="exam" style="margin-top:46px">
       <div class="exam-card exam-oge">
         <h3>ОГЭ</h3>
