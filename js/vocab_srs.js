@@ -71,7 +71,14 @@ export function buildSession(data) {
   const s = read();
   const due = dueItems(data).map((it) => ({ ...it, box: (s.srs[it.id] || {}).box || 1 }));
   const active = getActiveTheme() || (data.themes[0] && data.themes[0].key);
-  const fresh = newItems(data, active).map((it) => ({ ...it, box: 0 }));
+  let fresh = newItems(data, active).map((it) => ({ ...it, box: 0 }));
+  // если активной темы не хватает до дневной нормы — добираем новыми из ДРУГИХ тем,
+  // чтобы 15/день было достижимо каждый день (иначе серия рвётся, когда тема почти освоена)
+  if (due.length + fresh.length < DAILY_GOAL) {
+    const have = new Set(fresh.map((x) => x.id));
+    const more = allItems(data).filter((it) => !s.srs[it.id] && !have.has(it.id)).map((it) => ({ ...it, box: 0 }));
+    fresh = fresh.concat(shuffle(more));
+  }
   let nNew = Math.max(DAILY_GOAL - due.length, fresh.length ? MIN_NEW : 0);
   nNew = Math.min(nNew, fresh.length, SESSION_CAP);
   const dueKeep = due.slice(0, SESSION_CAP - nNew);

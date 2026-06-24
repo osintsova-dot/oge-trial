@@ -26,7 +26,7 @@ export async function renderVocab(container, cfg) {
 
   const v = t.vocab;
   // активная тема по умолчанию — первая
-  if (!getActiveTheme()) setActiveTheme(data.themes[0].key);
+  if (!getActiveTheme() && data.themes && data.themes[0]) setActiveTheme(data.themes[0].key);
 
   menuScreen();
 
