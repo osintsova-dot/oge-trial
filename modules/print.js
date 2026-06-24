@@ -52,6 +52,8 @@ const P = {
   asInfoBand: 'СВЕДЕНИЯ ОБ УЧАСТНИКЕ', asDoc: 'Документ', asSeria: 'Серия', asNomer: 'Номер',
   as2Note: 'Развёрнутые ответы (письменная часть). Пишите аккуратно, не выходя за границы поля.',
   keysTitle: 'КЛЮЧИ (для учителя)',
+  wsGridTitle: 'БЛАНК ОТВЕТОВ (заполни ручкой)',
+  wsGridNote: 'Печатными ЗАГЛАВНЫМИ буквами, по одному символу в клетке. Номер строки = номер задания. Пиши тёмной ручкой, ровно — учитель проверит по фото.',
 };
 
 // Главное: показать печатный вид набора заданий.
@@ -74,10 +76,12 @@ export function renderPrintView(container, opts) {
     ...buildPaper(opts.sections, P, opts.exam),
   ]);
 
-  // worksheet учителя: без официального бланка (ответы вписываются в пропуски); опц. страница ключей
+  // worksheet учителя: отдельный БЛАНК ОТВЕТОВ-сетка (для проверки по фото) + опц. страница ключей
   let sheets = [];
   if (opts.worksheet) {
-    if (opts.withKeys) sheets = [buildKeysPage(opts.sections, P, opts.exam)];
+    const grid = buildWorksheetGrid(opts.sections, P, opts.exam);
+    if (grid) sheets.push(grid);
+    if (opts.withKeys) sheets.push(buildKeysPage(opts.sections, P, opts.exam));
   } else {
     sheets = [
       el('div', { class: 'print-paper answer-sheet as1-sheet' }, [asHeader(P, opts.title, opts.exam), ...buildAnswerSheet(opts.sections, P, opts.exam)]),
@@ -323,6 +327,29 @@ function answerRow(num) {
   return el('div', { class: 'as1-row' }, [
     el('span', { class: 'as1-num', text: String(num) }),
     el('span', { class: 'as1-cells' }, Array.from({ length: AS_CELLS }, () => el('span', { class: 'as1-box' }))),
+  ]);
+}
+
+// ---- БЛАНК ОТВЕТОВ-сетка для worksheet (светлые клетки, строка = номер задания; для проверки по фото) ----
+function buildWorksheetGrid(sections, P, exam) {
+  let n = 0;
+  const rows = [];
+  for (const sec of sections) {
+    if (sec.id === 'writing' || sec.id === 'speaking') continue;
+    for (const it of (sec.items || [])) for (const len of itemSlots(it, exam)) {
+      n += 1;
+      rows.push({ num: n, cells: Math.min(Math.max(len, 6), 15) });
+    }
+  }
+  if (!rows.length) return null;
+  return el('div', { class: 'print-paper ws-grid-paper' }, [
+    el('div', { class: 'ws-grid-h', text: P.wsGridTitle }),
+    el('div', { class: 'ws-grid-note', text: P.wsGridNote }),
+    el('div', { class: 'pp-meta' }, [el('span', { text: P.fio }), el('span', { class: 'pp-line' })]),
+    el('div', { class: 'ws-grid' }, rows.map((r) => el('div', { class: 'ws-grow' }, [
+      el('span', { class: 'ws-gnum', text: String(r.num) }),
+      el('span', { class: 'ws-gcells' }, Array.from({ length: r.cells }, () => el('span', { class: 'ws-acell' }))),
+    ]))),
   ]);
 }
 

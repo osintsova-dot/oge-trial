@@ -9,7 +9,8 @@ import { EXAM, t } from '../js/exam.js';
 import { getName } from '../js/gamify.js';
 import { evalWriting } from '../js/writeeval.js';
 import { renderPrintView, stripTrailingBase } from './print.js';
-import { canRecognizePhoto, recognizePhoto } from '../js/ocr.js';
+import { canRecognizePhoto, recognizePhoto, recognizeBlank, parseAnswerGrid } from '../js/ocr.js';
+import { checkAnswer } from '../js/checker.js';
 
 // Блок «📷 Фото письма» для ДЗ: распознаёт фото, дописывает в поле, требует сверки.
 function ocrPhotoBlock(ta, onText, errBox) {
@@ -636,6 +637,7 @@ export async function renderTeacher(container, opts) {
         el('button', { class: 'btn', text: '🔗 ' + T.linkBtn, onclick: copyLink }),
         el('button', { class: 'btn', text: '🗝 ' + T.printKeys, onclick: () => openPrint(true) }),
         el('button', { class: 'btn btn-primary', text: '🖨 ' + T.printWs, onclick: () => openPrint(false) }),
+        ...(canRecognizePhoto() ? [el('button', { class: 'btn', text: T.checkBlank, onclick: openBlankCheck })] : []),
       ]),
     ]);
     refreshBar();
@@ -670,6 +672,17 @@ export async function renderTeacher(container, opts) {
     });
   }
 
+  // проверка заполненного бланка по фото: нумерация ответов совпадает с печатным worksheet
+  function openBlankCheck() {
+    if (!picked.size) { alert(T.bkNoTasks); return; }
+    const sections = buildSections();
+    const expected = [];
+    let num = 0;
+    for (const sec of sections) for (const it of (sec.items || [])) { num += 1; expected.push({ num, key: it.key || '', text: it.text || '', zid: it.zid }); }
+    if (!expected.length) { alert(T.bkNoTasks); return; }
+    renderBlankCheck(container, expected, () => renderTeacher(container, opts));
+  }
+
   // кодируем выбранное в компактную строку: "secId:zid,zid;secId:zid"
   function encodeSet() {
     const parts = [];
@@ -693,6 +706,78 @@ export async function renderTeacher(container, opts) {
   }
 
   draw();
+}
+
+// ===== Проверка заполненного бланка по фото (учитель) =====
+// expected = [{num, key, text, zid}] в том же порядке, что worksheet. Без бэкенда: фото→OCR→сверка с ключами.
+function renderBlankCheck(container, expected, onBack) {
+  const T = t.teacher;
+  let got = {}; // "номер" -> распознанный ответ
+  const view = el('div', { class: 'view tch' });
+  mount(container, view);
+
+  const header = () => el('div', { class: 'tch-top' }, [
+    el('button', { class: 'back', text: '←', onclick: onBack }),
+    el('div', { class: 'tch-h' }, [el('div', { class: 'tch-t', text: T.bkTitle }), el('div', { class: 'tch-sub', text: T.bkSub })]),
+  ]);
+
+  function photoScreen() {
+    const input = el('input', { type: 'file', accept: 'image/*', capture: 'environment', style: { display: 'none' } });
+    const btn = el('button', { class: 'btn btn-primary btn-block', text: T.bkPhoto });
+    const loader = el('div', { class: 'loader', style: { display: 'none' }, text: T.bkLoading });
+    const err = el('div', { class: 'err-msg', style: { display: 'none' } });
+    btn.addEventListener('click', () => input.click());
+    input.addEventListener('change', async () => {
+      const file = input.files && input.files[0]; input.value = '';
+      if (!file) return;
+      err.style.display = 'none'; btn.disabled = true; loader.style.display = 'block';
+      try {
+        const { words } = await recognizeBlank(file);
+        got = parseAnswerGrid(words);
+        reviewScreen();
+      } catch (e) { err.textContent = T.bkErr(e.message); err.style.display = 'block'; }
+      finally { btn.disabled = false; loader.style.display = 'none'; }
+    });
+    mount(view, el('div', { class: 'view' }, [header(),
+      el('div', { class: 'tch-blank-body' }, [el('div', { class: 'bk-hint', text: T.bkSub }), btn, input, loader, err])]));
+  }
+
+  function reviewScreen() {
+    const inputs = {};
+    const rows = expected.map((e) => {
+      const inp = el('input', { class: 'bk-input', type: 'text', value: got[String(e.num)] || '' });
+      inputs[e.num] = inp;
+      return el('div', { class: 'bk-row' }, [el('span', { class: 'bk-num', text: '№' + e.num }), inp]);
+    });
+    const resultBox = el('div', {});
+    const checkBtn = el('button', { class: 'btn btn-primary btn-block', text: T.bkCheck });
+    checkBtn.addEventListener('click', () => {
+      let ok = 0;
+      const lines = expected.map((e) => {
+        const ua = inputs[e.num].value;
+        const { correct, expected: exp } = checkAnswer(ua, { answer: e.key });
+        if (correct) ok += 1;
+        return el('div', { class: 'bk-res ' + (correct ? 'ok' : 'bad') }, [
+          el('span', { class: 'bk-num', text: '№' + e.num }),
+          el('span', { class: 'bk-mark', text: correct ? '✓' : '✗' }),
+          el('span', { class: 'bk-ua', text: ua || '—' }),
+          correct ? null : el('span', { class: 'bk-exp', text: '→ ' + exp }),
+        ].filter(Boolean));
+      });
+      resultBox.replaceChildren(el('div', { class: 'bk-score', text: T.bkScore(ok, expected.length) }), ...lines);
+      resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+    mount(view, el('div', { class: 'view' }, [header(),
+      el('div', { class: 'tch-blank-body' }, [
+        el('div', { class: 'bk-hint', text: T.bkReview }),
+        el('div', { class: 'bk-list' }, rows),
+        el('div', { style: { marginTop: '12px' } }, [checkBtn,
+          el('button', { class: 'btn btn-block', style: { marginTop: '8px' }, text: T.bkAgain, onclick: photoScreen })]),
+        resultBox,
+      ])]));
+  }
+
+  photoScreen();
 }
 
 // ===== Поток ученика: решение ДЗ по ссылке (#/hw?secId:zid,zid;…) =====

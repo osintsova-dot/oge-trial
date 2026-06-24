@@ -31,6 +31,49 @@ export async function recognizePhoto(file) {
   return text;
 }
 
+// Распознать бланк ответов-сетку: возвращает {text, words:[{t,x,y,x2,y2}]} (координаты для разбора по клеткам).
+export async function recognizeBlank(file) {
+  if (!OCR_WORKER) throw new Error('OCR-воркер не настроен');
+  if (!file) throw new Error('нет фото');
+  const { blob, mime } = await shrink(file);
+  const buf = await blob.arrayBuffer();
+  const res = await fetch(OCR_WORKER + '?lang=en&model=handwritten&boxes=1&mime=' + encodeURIComponent(mime), {
+    method: 'POST', headers: { 'Content-Type': mime }, body: buf,
+  });
+  let j;
+  try { j = await res.json(); } catch { throw new Error('ответ распознавания не прочитан'); }
+  if (!res.ok || j.error) throw new Error(j.error || ('ошибка распознавания ' + res.status));
+  return { text: (j.result || '').trim(), words: j.words || [] };
+}
+
+// Разбор сетки: слова с координатами → { номер_задания: ответ }. Кластеризует по строкам (y),
+// в строке сортирует по x, первый числовой токен = номер задания, остальное = ответ (склейка букв).
+export function parseAnswerGrid(words) {
+  const ws = (words || []).filter((w) => w.t && w.t.trim());
+  if (!ws.length) return {};
+  const hs = ws.map((w) => w.y2 - w.y).sort((a, b) => a - b);
+  const medH = hs[Math.floor(hs.length / 2)] || 30;
+  const thr = Math.max(18, medH * 0.6);
+  ws.sort((a, b) => a.y - b.y || a.x - b.x);
+  const rows = [];
+  for (const w of ws) {
+    const cy = (w.y + w.y2) / 2;
+    let r = rows.find((r) => Math.abs(r.cy - cy) < thr);
+    if (!r) { r = { cy, items: [] }; rows.push(r); }
+    r.items.push(w);
+    r.cy = r.items.reduce((s, x) => s + (x.y + x.y2) / 2, 0) / r.items.length;
+  }
+  const out = {};
+  for (const r of rows) {
+    const toks = r.items.sort((a, b) => a.x - b.x).map((w) => w.t.trim());
+    const mi = toks.findIndex((tk) => /^\d{1,3}$/.test(tk));
+    if (mi < 0) continue;
+    const ans = toks.slice(mi + 1).join('').replace(/\s+/g, '');
+    if (ans) out[toks[mi]] = ans;
+  }
+  return out;
+}
+
 // Сжать картинку: вписать в MAX_SIDE, перекодировать в JPEG. PNG/HEIC с телефона тоже пройдут.
 async function shrink(file) {
   const img = await loadImage(file);
