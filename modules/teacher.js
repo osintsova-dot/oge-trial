@@ -1096,10 +1096,15 @@ export function renderJournal(container, opts) {
 
   // агрегат класса
   const avg = Math.round(all.reduce((s, e) => s + (e.total ? e.correct / e.total : 0), 0) / all.length * 100);
-  // группировка по ученикам (по имени)
+  // группировка по ученикам (имя нормализуем: регистр/пробелы → одна Аня вместо «Аня»/«аня»)
+  const nkey = (n) => (n || 'Ученик').trim().replace(/\s+/g, ' ').toLowerCase();
   const byName = new Map();
-  for (const e of all) { if (!byName.has(e.name)) byName.set(e.name, []); byName.get(e.name).push(e); }
-  const studs = [...byName.entries()].map(([name, entries]) => {
+  for (const e of all) {
+    const k = nkey(e.name);
+    if (!byName.has(k)) byName.set(k, { name: (e.name || 'Ученик').trim().replace(/\s+/g, ' '), entries: [] });
+    byName.get(k).entries.push(e);
+  }
+  const studs = [...byName.values()].map(({ name, entries }) => {
     const av = Math.round(entries.reduce((s, e) => s + (e.total ? e.correct / e.total : 0), 0) / entries.length * 100);
     return { name, entries, av };
   }).sort((a, b) => a.av - b.av); // слабые ученики сверху

@@ -95,7 +95,9 @@ export function parseAnswerGrid(words, expectedNums) {
   // строки с латинскими буквами = ответы; номер по позиции
   const got = [];
   for (const r of zone) {
-    const lat = r.items.filter((w) => /^[A-Za-z]+$/.test(w.t.trim())).sort((x, y) => x.x - y.x);
+    // фрагмент ответа = буквы/цифры/дефис, но обязательно с буквой (чтобы «5»-номер строки не попал в ответ;
+    // при этом проходят «well-known», «1990s», «WILLGIVE»)
+    const lat = r.items.filter((w) => { const tk = w.t.trim(); return /^[A-Za-z0-9-]+$/.test(tk) && /[A-Za-z]/.test(tk); }).sort((x, y) => x.x - y.x);
     if (!lat.length) continue;
     const ans = lat.map((w) => w.t.trim().toUpperCase()).join('');
     if (ans.length > 18) continue; // строка алфавита-образца ABCDEF…Z из шапки — не ответ
