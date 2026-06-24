@@ -3694,5 +3694,2147 @@
   "verdict": "3",
   "guid": "F3E11414AE0B92C349C27B0C2D37140E",
   "sec": "grammar"
+ },
+ "01ED52": {
+  "answer": "worried",
+  "verdict": "3",
+  "guid": "826C5714844DBCE94458E407D8141DEE",
+  "sec": "lexis"
+ },
+ "042743": {
+  "answer": "succeed",
+  "verdict": "3",
+  "guid": "02E6032297E5A84F4F1778708F311BC8",
+  "sec": "lexis"
+ },
+ "04B3DF": {
+  "answer": "in",
+  "verdict": "3",
+  "guid": "72140EBD50CF8CC94343AC538C64822F",
+  "sec": "lexis"
+ },
+ "04DE13": {
+  "answer": "Though",
+  "verdict": "3",
+  "guid": "52E70CE1CF6F9DBB4FB20C458FA92A0C",
+  "sec": "lexis"
+ },
+ "058406": {
+  "answer": "According",
+  "verdict": "3",
+  "guid": "22DF8057E2B49E9643C0E583130BCAC5",
+  "sec": "lexis"
+ },
+ "058E7F": {
+  "answer": "long",
+  "verdict": "3",
+  "guid": "321F8C2CC822867744777337AB0AFBD1",
+  "sec": "lexis"
+ },
+ "07A56F": {
+  "answer": "did",
+  "verdict": "3",
+  "guid": "D219380DE7FEB8F34C194561B4F2917E",
+  "sec": "lexis"
+ },
+ "080239": {
+  "answer": "reminded",
+  "verdict": "3",
+  "guid": "E2B2F6EF9EA2AFAD42F2034C44A282B4",
+  "sec": "lexis"
+ },
+ "0826DA": {
+  "answer": "However",
+  "verdict": "3",
+  "guid": "7296FD3A7DD6BFE24DD4CA73FDAC1205",
+  "sec": "lexis"
+ },
+ "08AB1C": {
+  "answer": "instead",
+  "verdict": "3",
+  "guid": "52A9F490183EBF7E4AE27EBCD098FB29",
+  "sec": "lexis"
+ },
+ "094FCF": {
+  "answer": "observing",
+  "verdict": "3",
+  "guid": "A210B103CBEBB65C470A2F079E31F9B5",
+  "sec": "lexis"
+ },
+ "098C72": {
+  "answer": "Although",
+  "verdict": "3",
+  "guid": "326FBAB6845CA55F4AF963E323E799C5",
+  "sec": "lexis"
+ },
+ "09E242": {
+  "answer": "accompanied",
+  "verdict": "3",
+  "guid": "026CB69A3B43908543EDD368F1609A11",
+  "sec": "lexis"
+ },
+ "0BDE92": {
+  "answer": "hardly",
+  "verdict": "3",
+  "guid": "B2674C6DAAFCB9EB4739BAED05613780",
+  "sec": "lexis"
+ },
+ "0D89B8": {
+  "answer": "wondered",
+  "verdict": "3",
+  "guid": "42FF7B59F9D1AA8A4C4820433EE90F5E",
+  "sec": "lexis"
+ },
+ "0DCB2B": {
+  "answer": "struggling",
+  "verdict": "3",
+  "guid": "624A74022A948DDB4AF628347C339271",
+  "sec": "lexis"
+ },
+ "0DD6D1": {
+  "answer": "in",
+  "verdict": "3",
+  "guid": "72577DD20026BC5A4F264B280F339A77",
+  "sec": "lexis"
+ },
+ "0E0C2E": {
+  "answer": "held",
+  "verdict": "3",
+  "guid": "62C2CA93BCEABB5C4357F0B4ADD78E7A",
+  "sec": "lexis"
+ },
+ "0E66C3": {
+  "answer": "pretended",
+  "verdict": "3",
+  "guid": "A2EDCDF8AE0882E5477FBC6D4CEB1F64",
+  "sec": "lexis"
+ },
+ "0FC528": {
+  "answer": "up",
+  "verdict": "3",
+  "guid": "62FA184521E3A0AC42E43E3A5B7425C4",
+  "sec": "lexis"
+ },
+ "0FEB98": {
+  "answer": "seemed",
+  "verdict": "3",
+  "guid": "B2FC14A46490B8FA47CD1DA832D331DA",
+  "sec": "lexis"
+ },
+ "112761": {
+  "answer": "tell",
+  "verdict": "3",
+  "guid": "D556535BB4A28C0F4C538FE1AC75A406",
+  "sec": "lexis"
+ },
+ "1129C3": {
+  "answer": "said",
+  "verdict": "3",
+  "guid": "A5E65B858CE88F32437D2309B2930AC1",
+  "sec": "lexis"
+ },
+ "12E0C3": {
+  "answer": "However",
+  "verdict": "3",
+  "guid": "A5EC62ECD4018129470AB1427EF2CF02",
+  "sec": "lexis"
+ },
+ "135992": {
+  "answer": "formed",
+  "verdict": "3",
+  "guid": "B568EB04B5F59C6444B96151925F2846",
+  "sec": "lexis"
+ },
+ "142AEA": {
+  "answer": "promised",
+  "verdict": "3",
+  "guid": "C596091B96A8A91A43D4B1E9405BEEF8",
+  "sec": "lexis"
+ },
+ "1482E7": {
+  "answer": "of",
+  "verdict": "3",
+  "guid": "C53F06ABA661BFCE4F5A7FB029B1222D",
+  "sec": "lexis"
+ },
+ "1497CF": {
+  "answer": "determination",
+  "verdict": "3",
+  "guid": "A51B03C68A4E826A4136BCBD574D15E4",
+  "sec": "lexis"
+ },
+ "14FAD5": {
+  "answer": "Although",
+  "verdict": "3",
+  "guid": "7581096B60B0AD0948B896CBA3CBAB9D",
+  "sec": "lexis"
+ },
+ "153B2F": {
+  "answer": "tell",
+  "verdict": "3",
+  "guid": "651E84E5FA54855A46916A9B3050F571",
+  "sec": "lexis"
+ },
+ "17A3E4": {
+  "answer": "Therefore",
+  "verdict": "3",
+  "guid": "C5093EE402F0A02A49D5468EDC533A5D",
+  "sec": "lexis"
+ },
+ "18C947": {
+  "answer": "Therefore",
+  "verdict": "3",
+  "guid": "053AFBDE5F85B3024307D9A43D3B60B5",
+  "sec": "lexis"
+ },
+ "1A3CFF": {
+  "answer": "keeping",
+  "verdict": "3",
+  "guid": "151E9A65F5D79BC245B8B84397FEF665",
+  "sec": "lexis"
+ },
+ "1AC8B7": {
+  "answer": "makes",
+  "verdict": "3",
+  "guid": "453A9F11A0F8A0FC46E92BD77B454314",
+  "sec": "lexis"
+ },
+ "1B552F": {
+  "answer": "bother",
+  "verdict": "3",
+  "guid": "6518489E8FAFB0E249F24669EAC57D40",
+  "sec": "lexis"
+ },
+ "1C3F0D": {
+  "answer": "Moreover",
+  "verdict": "3",
+  "guid": "257EA179833BAD414F33EF2591F469DF",
+  "sec": "lexis"
+ },
+ "1DDDB7": {
+  "answer": "developed",
+  "verdict": "3",
+  "guid": "453777C03C438D734E55A08A4645A96D",
+  "sec": "lexis"
+ },
+ "1DE790": {
+  "answer": "resemblance",
+  "verdict": "3",
+  "guid": "B52C738223D8B98147B43214BA09894B",
+  "sec": "lexis"
+ },
+ "1EF5E7": {
+  "answer": "areas",
+  "verdict": "3",
+  "guid": "C531C8F9A647BA6E4CBCE2CE3731394F",
+  "sec": "lexis"
+ },
+ "1F3B6E": {
+  "answer": "seeing",
+  "verdict": "3",
+  "guid": "D5CE1401DC8AB3234420FE7BE8AD730D",
+  "sec": "lexis"
+ },
+ "1F5B70": {
+  "answer": "arrange",
+  "verdict": "3",
+  "guid": "3528140E2E4C910546BD01DF5447956E",
+  "sec": "lexis"
+ },
+ "1FA8B1": {
+  "answer": "resemble",
+  "verdict": "3",
+  "guid": "45591F86D532A29C4C7179D74C8403F3",
+  "sec": "lexis"
+ },
+ "1FC5AE": {
+  "answer": "resembled",
+  "verdict": "3",
+  "guid": "95CA18BEDE8F905D4CBC8A341058E44D",
+  "sec": "lexis"
+ },
+ "22AD68": {
+  "answer": "talking",
+  "verdict": "3",
+  "guid": "D6F967AD571D92E44E682FCFA4CE83AC",
+  "sec": "lexis"
+ },
+ "23BFC5": {
+  "answer": "Nevertheless",
+  "verdict": "3",
+  "guid": "A684E19E6F138500403D4FFBD8E9B1F6",
+  "sec": "lexis"
+ },
+ "244BC5": {
+  "answer": "trip",
+  "verdict": "3",
+  "guid": "A680043ABBDCAF4049C69A9A9367E92D",
+  "sec": "lexis"
+ },
+ "246287": {
+  "answer": "considered",
+  "verdict": "3",
+  "guid": "F63D06144593A7A64BE34F6E96A5D947",
+  "sec": "lexis"
+ },
+ "248204": {
+  "answer": "reminded",
+  "verdict": "3",
+  "guid": "260F066AE3E39FD64F5FE5E4C222C401",
+  "sec": "lexis"
+ },
+ "24B831": {
+  "answer": "drop",
+  "verdict": "3",
+  "guid": "E6540F91D896B16D43A9F961D5D47446",
+  "sec": "lexis"
+ },
+ "25B2E2": {
+  "answer": "off",
+  "verdict": "3",
+  "guid": "C66486DACABC909F400B22EC93A28948",
+  "sec": "lexis"
+ },
+ "267C26": {
+  "answer": "enjoy",
+  "verdict": "3",
+  "guid": "66D3DA462A3B9965479D45F8223B025D",
+  "sec": "lexis"
+ },
+ "26E002": {
+  "answer": "looked",
+  "verdict": "3",
+  "guid": "266CD235B91490CD4465E50D2A38D36C",
+  "sec": "lexis"
+ },
+ "27FDDF": {
+  "answer": "reach",
+  "verdict": "3",
+  "guid": "761137DFB6E3B5564D2E4C09831E67EA",
+  "sec": "lexis"
+ },
+ "28338D": {
+  "answer": "inspired",
+  "verdict": "3",
+  "guid": "F67EFEC986C986EB4E0A7E6E07E6A974",
+  "sec": "lexis"
+ },
+ "29523E": {
+  "answer": "wondered",
+  "verdict": "3",
+  "guid": "E6C8B6BDC30C812B49077EBDDE1202C3",
+  "sec": "lexis"
+ },
+ "2A8DDA": {
+  "answer": "down",
+  "verdict": "3",
+  "guid": "769F974016EBA07A41FD6F9E534F154A",
+  "sec": "lexis"
+ },
+ "2AA619": {
+  "answer": "out",
+  "verdict": "3",
+  "guid": "56B99D94184BB1AA491D527891339A2C",
+  "sec": "lexis"
+ },
+ "2AD174": {
+  "answer": "agreement",
+  "verdict": "3",
+  "guid": "3607952DA5CCB6294DE507ED4AF10CCB",
+  "sec": "lexis"
+ },
+ "2AF6D5": {
+  "answer": "saw",
+  "verdict": "3",
+  "guid": "76819DE2C2C796B54B21DA0992B3117F",
+  "sec": "lexis"
+ },
+ "2B6BA2": {
+  "answer": "keep",
+  "verdict": "3",
+  "guid": "966D442AF1A2A3C946EEF1B49F15F3EC",
+  "sec": "lexis"
+ },
+ "2C3851": {
+  "answer": "brought",
+  "verdict": "3",
+  "guid": "865EAFA4BC29BE164334FA2AA2BA8967",
+  "sec": "lexis"
+ },
+ "2DE2E4": {
+  "answer": "say",
+  "verdict": "3",
+  "guid": "C60C761D2FF185D947BBA1E6B8BB468E",
+  "sec": "lexis"
+ },
+ "2E226F": {
+  "answer": "considered",
+  "verdict": "3",
+  "guid": "D616C6B3149996AD430716BEBC53FBFD",
+  "sec": "lexis"
+ },
+ "2F037D": {
+  "answer": "recognized",
+  "verdict": "3",
+  "guid": "36721E1747B6A673438EC494B7424ADB",
+  "sec": "lexis"
+ },
+ "2F9AF0": {
+  "answer": "just",
+  "verdict": "3",
+  "guid": "162B1912CDB8BF184ACBAB3E809E7B6A",
+  "sec": "lexis"
+ },
+ "30D4EF": {
+  "answer": "make",
+  "verdict": "3",
+  "guid": "CE17202387CFA6554D9FBA55CDCE5E19",
+  "sec": "lexis"
+ },
+ "314F35": {
+  "answer": "tell",
+  "verdict": "3",
+  "guid": "EE80511E2892983A4E59D35967C96AF0",
+  "sec": "lexis"
+ },
+ "315E36": {
+  "answer": "mind",
+  "verdict": "3",
+  "guid": "EED85CB19F3EB5534A0207CC8E3D6EFD",
+  "sec": "lexis"
+ },
+ "329F19": {
+  "answer": "on",
+  "verdict": "3",
+  "guid": "5EBB6164BA00B92348639B12508AD41C",
+  "sec": "lexis"
+ },
+ "32E5FF": {
+  "answer": "failed",
+  "verdict": "3",
+  "guid": "1E1C680C72E1BC4D482619CF28255FA3",
+  "sec": "lexis"
+ },
+ "332E1C": {
+  "answer": "enjoy",
+  "verdict": "3",
+  "guid": "5EA6ECA5EB6EAE234DD4930E930AFFBE",
+  "sec": "lexis"
+ },
+ "335799": {
+  "answer": "held",
+  "verdict": "3",
+  "guid": "BEB8E34E1ADC9D7A4CDD2CCCE733602A",
+  "sec": "lexis"
+ },
+ "338694": {
+  "answer": "consisted",
+  "verdict": "3",
+  "guid": "BE0FED6B66B196874D51786527681DC2",
+  "sec": "lexis"
+ },
+ "33BD47": {
+  "answer": "matter",
+  "verdict": "3",
+  "guid": "0E34E7A99E08B20E46524B1167C3C0A5",
+  "sec": "lexis"
+ },
+ "341E07": {
+  "answer": "admired",
+  "verdict": "3",
+  "guid": "2E350C0C5F00A9B749820D9209807D50",
+  "sec": "lexis"
+ },
+ "3421B2": {
+  "answer": "However",
+  "verdict": "3",
+  "guid": "4E6605C59B838DA640ACB1C6E95EF95F",
+  "sec": "lexis"
+ },
+ "344C6E": {
+  "answer": "developed",
+  "verdict": "3",
+  "guid": "DEC00AFF978D9F664F413EF7EEB45613",
+  "sec": "lexis"
+ },
+ "34C279": {
+  "answer": "keep",
+  "verdict": "3",
+  "guid": "3EBA063DE578815345D6206D311B9367",
+  "sec": "lexis"
+ },
+ "375E12": {
+  "answer": "waiting",
+  "verdict": "3",
+  "guid": "5E683CAF7D39A2BA4B19CC56C44D22CF",
+  "sec": "lexis"
+ },
+ "37B89F": {
+  "answer": "by",
+  "verdict": "3",
+  "guid": "BE143FF1714F9AB84CFE91181D0FDF31",
+  "sec": "lexis"
+ },
+ "381F22": {
+  "answer": "attending",
+  "verdict": "3",
+  "guid": "6E65F1A361C4A0D84C5C0E922A9D01B9",
+  "sec": "lexis"
+ },
+ "383291": {
+  "answer": "looked",
+  "verdict": "3",
+  "guid": "BE5EF698E88C821247D09A19B06644D8",
+  "sec": "lexis"
+ },
+ "385E3A": {
+  "answer": "announced",
+  "verdict": "3",
+  "guid": "EE98FCFA4B849DF9466A435BF1863886",
+  "sec": "lexis"
+ },
+ "386948": {
+  "answer": "Moreover",
+  "verdict": "3",
+  "guid": "0EFDFBC3B389A6EF42A726A1A2E7A8F7",
+  "sec": "lexis"
+ },
+ "3939F9": {
+  "answer": "missing",
+  "verdict": "3",
+  "guid": "1EBEBBD0A425B8B34F6293358653CD35",
+  "sec": "lexis"
+ },
+ "3A95A3": {
+  "answer": "brought",
+  "verdict": "3",
+  "guid": "9EEB9877E580A45541AE36C591349B42",
+  "sec": "lexis"
+ },
+ "3B0B88": {
+  "answer": "hand",
+  "verdict": "3",
+  "guid": "FEF2440A4BBA94ED42454ED06527FE3E",
+  "sec": "lexis"
+ },
+ "3B9508": {
+  "answer": "supposed",
+  "verdict": "3",
+  "guid": "2EFB484A5AB89B894BC5FA3C2A248123",
+  "sec": "lexis"
+ },
+ "3BC5E0": {
+  "answer": "impressed",
+  "verdict": "3",
+  "guid": "CE2A48C9601088924C3B8D174AF5B4B3",
+  "sec": "lexis"
+ },
+ "3CF2AC": {
+  "answer": "tell",
+  "verdict": "3",
+  "guid": "9EA1A6B5A64E91AD492476E1B9CF398A",
+  "sec": "lexis"
+ },
+ "3F1C0B": {
+  "answer": "case",
+  "verdict": "3",
+  "guid": "2E451A80C680833242FE913875F8AF44",
+  "sec": "lexis"
+ },
+ "3FA475": {
+  "answer": "say",
+  "verdict": "3",
+  "guid": "3E891013753680014ACAC6FE3CEA7580",
+  "sec": "lexis"
+ },
+ "3FB987": {
+  "answer": "watching",
+  "verdict": "3",
+  "guid": "FE341B6FC26CB6FF464EBD211BB52F29",
+  "sec": "lexis"
+ },
+ "40301E": {
+  "answer": "trouble",
+  "verdict": "3",
+  "guid": "50CE2206EC72A27B4C2A36D5A62FC222",
+  "sec": "lexis"
+ },
+ "409454": {
+  "answer": "Although",
+  "verdict": "3",
+  "guid": "800B20BF646F97BD4C0FE827306FA63D",
+  "sec": "lexis"
+ },
+ "4275BF": {
+  "answer": "occupied",
+  "verdict": "3",
+  "guid": "4013689850FFB05D4C8AC946F4215848",
+  "sec": "lexis"
+ },
+ "427CBC": {
+  "answer": "tell",
+  "verdict": "3",
+  "guid": "40A36A13A6C59D264CC5358A87945E32",
+  "sec": "lexis"
+ },
+ "42CF38": {
+  "answer": "discovered",
+  "verdict": "3",
+  "guid": "E0FA61418564B6F348AEACA7BA45BA00",
+  "sec": "lexis"
+ },
+ "43751C": {
+  "answer": "doing",
+  "verdict": "3",
+  "guid": "50A3E800B1F5B99D48F40D40A4BDAB79",
+  "sec": "lexis"
+ },
+ "4375A1": {
+  "answer": "opportunity",
+  "verdict": "3",
+  "guid": "9053E87749998C1343CB7D5271BF70AD",
+  "sec": "lexis"
+ },
+ "4402F1": {
+  "answer": "grew",
+  "verdict": "3",
+  "guid": "10520681BA7293434403A44BF35C8AB6",
+  "sec": "lexis"
+ },
+ "449453": {
+  "answer": "told",
+  "verdict": "3",
+  "guid": "80EB006C9D5FB0C84B12975055A62FCB",
+  "sec": "lexis"
+ },
+ "44C0EA": {
+  "answer": "out",
+  "verdict": "3",
+  "guid": "C09A0246A41DA12A4991B1375B59C03F",
+  "sec": "lexis"
+ },
+ "46B141": {
+  "answer": "makes",
+  "verdict": "3",
+  "guid": "0054D571F64EB9DE4E7AAB05B7B6A0DA",
+  "sec": "lexis"
+ },
+ "46EC99": {
+  "answer": "familiar",
+  "verdict": "3",
+  "guid": "B0BCDA16669EA0644A4D81A0D462C5E6",
+  "sec": "lexis"
+ },
+ "472CFF": {
+  "answer": "attention",
+  "verdict": "3",
+  "guid": "10163A1910898D4340DA71BE342149B1",
+  "sec": "lexis"
+ },
+ "47C65A": {
+  "answer": "looked",
+  "verdict": "3",
+  "guid": "809A3D10817CB05E47C0A1553F244D85",
+  "sec": "lexis"
+ },
+ "47DA0D": {
+  "answer": "According",
+  "verdict": "3",
+  "guid": "207739C7D320BAD8460140B1BDC4F755",
+  "sec": "lexis"
+ },
+ "4855C1": {
+  "answer": "looked",
+  "verdict": "3",
+  "guid": "A058F85558EE86D949658FFAD6574D4E",
+  "sec": "lexis"
+ },
+ "4991E9": {
+  "answer": "prove",
+  "verdict": "3",
+  "guid": "C0BBB5A89E4EB50644FF37F8CF5D1EB0",
+  "sec": "lexis"
+ },
+ "49B259": {
+  "answer": "of",
+  "verdict": "3",
+  "guid": "80B4B6D767A395CC449C32A6808A6E2E",
+  "sec": "lexis"
+ },
+ "4A92F3": {
+  "answer": "strongly",
+  "verdict": "3",
+  "guid": "10EB9669F497B8D945BF8F3C1F06EA5F",
+  "sec": "lexis"
+ },
+ "4ACDEA": {
+  "answer": "out",
+  "verdict": "3",
+  "guid": "C09A970B6416BF184228DA5500B1BD49",
+  "sec": "lexis"
+ },
+ "4B2F61": {
+  "answer": "manage",
+  "verdict": "3",
+  "guid": "D056419E74FFB1B34059A8D579B58740",
+  "sec": "lexis"
+ },
+ "4C2ECC": {
+  "answer": "confirmed",
+  "verdict": "3",
+  "guid": "A0A6AC626B99B1C24ACD15F54041826F",
+  "sec": "lexis"
+ },
+ "4D383E": {
+  "answer": "accident",
+  "verdict": "3",
+  "guid": "E0CE7FC1EEE0B243466CC987261ED6D8",
+  "sec": "lexis"
+ },
+ "4DBABC": {
+  "answer": "impressed",
+  "verdict": "3",
+  "guid": "40A479566768908B4DBC70126EB84781",
+  "sec": "lexis"
+ },
+ "4E216C": {
+  "answer": "realized",
+  "verdict": "3",
+  "guid": "D0A6C51C7CA0A4464DC0C714580B9CE1",
+  "sec": "lexis"
+ },
+ "4EF73D": {
+  "answer": "hardly",
+  "verdict": "3",
+  "guid": "E071C32F8EBEBF01465FAA80B7FA8477",
+  "sec": "lexis"
+ },
+ "4F99B5": {
+  "answer": "allowed",
+  "verdict": "3",
+  "guid": "408B1BD2C7D9A2094619B3F179C37A41",
+  "sec": "lexis"
+ },
+ "4FD4CE": {
+  "answer": "suggested",
+  "verdict": "3",
+  "guid": "A0C710CAC485AB374DDC1D57C05299A9",
+  "sec": "lexis"
+ },
+ "501B60": {
+  "answer": "fault",
+  "verdict": "3",
+  "guid": "D8252435B418B0784BD91F00EF1B97D5",
+  "sec": "lexis"
+ },
+ "5086D9": {
+  "answer": "pay",
+  "verdict": "3",
+  "guid": "78BF2D965B5D82034070F547027AFE0F",
+  "sec": "lexis"
+ },
+ "5096B9": {
+  "answer": "speaking",
+  "verdict": "3",
+  "guid": "48BB2DB355499EC2453FF8366B199B57",
+  "sec": "lexis"
+ },
+ "50C21D": {
+  "answer": "Nevertheless",
+  "verdict": "3",
+  "guid": "587A2630EC709650415D57CA44DD66B9",
+  "sec": "lexis"
+ },
+ "511DC7": {
+  "answer": "at",
+  "verdict": "3",
+  "guid": "A83557CBB6D98AF241503EC8C0E51EEC",
+  "sec": "lexis"
+ },
+ "515BA3": {
+  "answer": "predicted",
+  "verdict": "3",
+  "guid": "98E854F48959A9D44B84B272000A3FC9",
+  "sec": "lexis"
+ },
+ "516531": {
+  "answer": "lack",
+  "verdict": "3",
+  "guid": "E85D58701AD1B4814DEF8FD1842382CE",
+  "sec": "lexis"
+ },
+ "51E95E": {
+  "answer": "hardly",
+  "verdict": "3",
+  "guid": "88CC5BC716A0888C4C323A640AB638C8",
+  "sec": "lexis"
+ },
+ "520AEA": {
+  "answer": "telling",
+  "verdict": "3",
+  "guid": "C89269A84D16B01D4021591E76D3B17A",
+  "sec": "lexis"
+ },
+ "52E40B": {
+  "answer": "brought",
+  "verdict": "3",
+  "guid": "284C60CE8EB9AB324AAFB0F565782D9A",
+  "sec": "lexis"
+ },
+ "5304A0": {
+  "answer": "missing",
+  "verdict": "3",
+  "guid": "9822E05BE4D8999D4D3D981ABA8BA304",
+  "sec": "lexis"
+ },
+ "5424AB": {
+  "answer": "told",
+  "verdict": "3",
+  "guid": "984600BD0861ADEC4A9FEA3F24B9385A",
+  "sec": "lexis"
+ },
+ "5806C4": {
+  "answer": "tells",
+  "verdict": "3",
+  "guid": "A802FD8BF4EAAC974D93904C843D248F",
+  "sec": "lexis"
+ },
+ "582B59": {
+  "answer": "finally",
+  "verdict": "3",
+  "guid": "88B6F4CF258DBB0140C8C1FEE0DF02DD",
+  "sec": "lexis"
+ },
+ "58F1C0": {
+  "answer": "confident",
+  "verdict": "3",
+  "guid": "A821F524CE38BDF2415234C5A7B9BF51",
+  "sec": "lexis"
+ },
+ "5933C0": {
+  "answer": "mood",
+  "verdict": "3",
+  "guid": "A82EBE76577B9261403D452E58D7C075",
+  "sec": "lexis"
+ },
+ "59B854": {
+  "answer": "said",
+  "verdict": "3",
+  "guid": "8804BFF68820B8564EA472F1281D5F74",
+  "sec": "lexis"
+ },
+ "59DFE1": {
+  "answer": "definitely",
+  "verdict": "3",
+  "guid": "C857B197387E9A984EC2A4529F7236A3",
+  "sec": "lexis"
+ },
+ "59FB9F": {
+  "answer": "point",
+  "verdict": "3",
+  "guid": "B811B4AB0FB2BB804E4D1EA4CB53A4BB",
+  "sec": "lexis"
+ },
+ "5AB962": {
+  "answer": "According",
+  "verdict": "3",
+  "guid": "D8649BE63269AACD4CDF48E80D56E56B",
+  "sec": "lexis"
+ },
+ "5DD63B": {
+  "answer": "speak",
+  "verdict": "3",
+  "guid": "E8477D08ABBC9C204F01DE4582822538",
+  "sec": "lexis"
+ },
+ "5E9CA4": {
+  "answer": "At",
+  "verdict": "3",
+  "guid": "980BCAEF8AFDA7394FECEFB0EA72631F",
+  "sec": "lexis"
+ },
+ "5F1E20": {
+  "answer": "realised",
+  "verdict": "3",
+  "guid": "68251C7DE38EBB7247EF38DD7324FA22",
+  "sec": "lexis"
+ },
+ "5FB947": {
+  "answer": "looked",
+  "verdict": "3",
+  "guid": "08341BA05B1CA0AB415BF7EDB19ED52A",
+  "sec": "lexis"
+ },
+ "61644E": {
+  "answer": "supposed",
+  "verdict": "3",
+  "guid": "0DCD508D4C238E0A4CF7F3203728331C",
+  "sec": "lexis"
+ },
+ "6262B0": {
+  "answer": "sight",
+  "verdict": "3",
+  "guid": "4D2D66D06DA4802246C09316626DFE88",
+  "sec": "lexis"
+ },
+ "63A818": {
+  "answer": "keen",
+  "verdict": "3",
+  "guid": "5DF9EF53A8F991A44FE6763D49E1C685",
+  "sec": "lexis"
+ },
+ "64455E": {
+  "answer": "staring",
+  "verdict": "3",
+  "guid": "8DC008573DEC81CE45783D06F53CA025",
+  "sec": "lexis"
+ },
+ "651806": {
+  "answer": "routine",
+  "verdict": "3",
+  "guid": "2DD58FAB50CB9B97460E99A9F40B5B11",
+  "sec": "lexis"
+ },
+ "6784D0": {
+  "answer": "determination",
+  "verdict": "3",
+  "guid": "7D2F30ADC6178BC94AC23A17C7F15BD7",
+  "sec": "lexis"
+ },
+ "69413C": {
+  "answer": "tell",
+  "verdict": "3",
+  "guid": "EDA0B5E54CDBBCC940877687DF798DF2",
+  "sec": "lexis"
+ },
+ "6AFDA9": {
+  "answer": "allow",
+  "verdict": "3",
+  "guid": "9DB197813FAABB8543AA345BA605769E",
+  "sec": "lexis"
+ },
+ "6B3BD1": {
+  "answer": "subject",
+  "verdict": "3",
+  "guid": "7D5E44F79D46A76741A0634A2D5C1046",
+  "sec": "lexis"
+ },
+ "6C1035": {
+  "answer": "way",
+  "verdict": "3",
+  "guid": "ED85A29BA20E847748E5BFD4AACB8BB5",
+  "sec": "lexis"
+ },
+ "6C4CAF": {
+  "answer": "enjoyed",
+  "verdict": "3",
+  "guid": "9D10AA70279584374A11C53CA3113ED1",
+  "sec": "lexis"
+ },
+ "6D2E23": {
+  "answer": "touched",
+  "verdict": "3",
+  "guid": "6DE67C09F1F3B1B04597A29D144506B2",
+  "sec": "lexis"
+ },
+ "6DFD57": {
+  "answer": "place",
+  "verdict": "3",
+  "guid": "8D3177F0AEB6968C48A65598C9E2524B",
+  "sec": "lexis"
+ },
+ "6E17AB": {
+  "answer": "Although",
+  "verdict": "3",
+  "guid": "9D45C34B02DAAC2746F3341A061D68C6",
+  "sec": "lexis"
+ },
+ "6E3AE8": {
+  "answer": "thick",
+  "verdict": "3",
+  "guid": "CDFEC993AC18AC864322EF3A4FEB4E26",
+  "sec": "lexis"
+ },
+ "6FB867": {
+  "answer": "take",
+  "verdict": "3",
+  "guid": "DD341F12280597A4418D8B6EC0ADDA31",
+  "sec": "lexis"
+ },
+ "700ACA": {
+  "answer": "permission",
+  "verdict": "3",
+  "guid": "A39229DE1AC18B2843DA96066E0A0749",
+  "sec": "lexis"
+ },
+ "7063BE": {
+  "answer": "making",
+  "verdict": "3",
+  "guid": "43CD2EF64D85904E46E03AEB57DA6B0E",
+  "sec": "lexis"
+ },
+ "716118": {
+  "answer": "forward",
+  "verdict": "3",
+  "guid": "53FD559765FC88EF491092B0F2D65166",
+  "sec": "lexis"
+ },
+ "71D52E": {
+  "answer": "hardly",
+  "verdict": "3",
+  "guid": "63C758EFBE1BBB244054E3C2D0B44B4D",
+  "sec": "lexis"
+ },
+ "71DB86": {
+  "answer": "supposed",
+  "verdict": "3",
+  "guid": "F3D754E998CCA8834038C1A2526CA758",
+  "sec": "lexis"
+ },
+ "720473": {
+  "answer": "enthusiastic",
+  "verdict": "3",
+  "guid": "33E260CDDD6582A646D8BC94589B0874",
+  "sec": "lexis"
+ },
+ "729F80": {
+  "answer": "seen",
+  "verdict": "3",
+  "guid": "F32B61ACC73A99EE4AFAE1D04019CBAA",
+  "sec": "lexis"
+ },
+ "749CA8": {
+  "answer": "Moreover",
+  "verdict": "3",
+  "guid": "93FB0A2D81578F904CB1575DB0941B36",
+  "sec": "lexis"
+ },
+ "74B3DE": {
+  "answer": "manage",
+  "verdict": "3",
+  "guid": "73C40E26CB8EAA9141BAC5D32DB3DDAC",
+  "sec": "lexis"
+ },
+ "7510A0": {
+  "answer": "mind",
+  "verdict": "3",
+  "guid": "932582EDAD39B41E41460ED2691ED5F9",
+  "sec": "lexis"
+ },
+ "7554D2": {
+  "answer": "managed",
+  "verdict": "3",
+  "guid": "7368807E1BF9B0A24F337114A48DABA9",
+  "sec": "lexis"
+ },
+ "75EA03": {
+  "answer": "look",
+  "verdict": "3",
+  "guid": "23EC89DB25CEA9034E12FA8C21BD8834",
+  "sec": "lexis"
+ },
+ "764CEE": {
+  "answer": "reminded",
+  "verdict": "3",
+  "guid": "C3C0DA8E6F6A85844ECB4C967A394C6E",
+  "sec": "lexis"
+ },
+ "76AB90": {
+  "answer": "find",
+  "verdict": "3",
+  "guid": "B329D479D125A1534FD11D09C3E3C050",
+  "sec": "lexis"
+ },
+ "7752E7": {
+  "answer": "rose",
+  "verdict": "3",
+  "guid": "C33836F921A498304FE8F0AAE220F8D3",
+  "sec": "lexis"
+ },
+ "78AA57": {
+  "answer": "remember",
+  "verdict": "3",
+  "guid": "8339F969DB97B3004FC0BBCF53A3E791",
+  "sec": "lexis"
+ },
+ "794BD8": {
+  "answer": "making",
+  "verdict": "3",
+  "guid": "73F0B40C477F9ACD497BA25C41714592",
+  "sec": "lexis"
+ },
+ "79F1B7": {
+  "answer": "offered",
+  "verdict": "3",
+  "guid": "4331B57B3847BC814C6E6A5AD04F4D9C",
+  "sec": "lexis"
+ },
+ "7B5917": {
+  "answer": "shared",
+  "verdict": "3",
+  "guid": "53384BD5184A9A814087242627427E5B",
+  "sec": "lexis"
+ },
+ "7C5E50": {
+  "answer": "at",
+  "verdict": "3",
+  "guid": "8328ACE77E29B8D84C9401924DDE2B54",
+  "sec": "lexis"
+ },
+ "7F09AC": {
+  "answer": "attention",
+  "verdict": "3",
+  "guid": "93A21B9E982E85904A3413EFB383C021",
+  "sec": "lexis"
+ },
+ "8038F0": {
+  "answer": "spoke",
+  "verdict": "3",
+  "guid": "1F2E2FB0A256A7C54C8BF6E170211217",
+  "sec": "lexis"
+ },
+ "80831C": {
+  "answer": "turned",
+  "verdict": "3",
+  "guid": "5FAF2E461B48AD674AF204520A34A86A",
+  "sec": "lexis"
+ },
+ "81B468": {
+  "answer": "tell",
+  "verdict": "3",
+  "guid": "DFF45031FAF1B12348CCA93BDFF7EF4A",
+  "sec": "lexis"
+ },
+ "81D708": {
+  "answer": "look",
+  "verdict": "3",
+  "guid": "2FF75398AB2298E74C295B9E2F93D607",
+  "sec": "lexis"
+ },
+ "830E7A": {
+  "answer": "of",
+  "verdict": "3",
+  "guid": "3F92ECE3E400A4D542676C371C3DDCF7",
+  "sec": "lexis"
+ },
+ "8324E7": {
+  "answer": "failed",
+  "verdict": "3",
+  "guid": "CF36E0C84EE485C54062994BF78BE33C",
+  "sec": "lexis"
+ },
+ "86D810": {
+  "answer": "told",
+  "verdict": "3",
+  "guid": "5F27DFB09326945F43DE401B0564C713",
+  "sec": "lexis"
+ },
+ "876096": {
+  "answer": "Besides",
+  "verdict": "3",
+  "guid": "BFDD322A6879A9FB45B4074EAACB9E5B",
+  "sec": "lexis"
+ },
+ "8A477F": {
+  "answer": "noticed",
+  "verdict": "3",
+  "guid": "3F1093586120BC0C4C9426AE2FDA7D79",
+  "sec": "lexis"
+ },
+ "8A79AB": {
+  "answer": "remember",
+  "verdict": "3",
+  "guid": "9F439BA5680B84EA4AB2666D5354C6C8",
+  "sec": "lexis"
+ },
+ "8A9B45": {
+  "answer": "achieve",
+  "verdict": "3",
+  "guid": "0F8B948DD8F3AE104251EED9A7CB4A47",
+  "sec": "lexis"
+ },
+ "8BAA52": {
+  "answer": "supposed",
+  "verdict": "3",
+  "guid": "8F6949EB198DBFB24BCC86816DBC44E4",
+  "sec": "lexis"
+ },
+ "8C2304": {
+  "answer": "looked",
+  "verdict": "3",
+  "guid": "2F06AEDB5B65B15D4304BC2FC117296A",
+  "sec": "lexis"
+ },
+ "8C676F": {
+  "answer": "called",
+  "verdict": "3",
+  "guid": "DF1DA3BF50E6A1CC4AAE8E5A97469313",
+  "sec": "lexis"
+ },
+ "8C6F30": {
+  "answer": "Moreover",
+  "verdict": "3",
+  "guid": "EF2DA127879A9F624D31E7528BCCEE10",
+  "sec": "lexis"
+ },
+ "8CD545": {
+  "answer": "told",
+  "verdict": "3",
+  "guid": "0F87A81334BC8DCD49CD4C53B982294A",
+  "sec": "lexis"
+ },
+ "8E7AE2": {
+  "answer": "number",
+  "verdict": "3",
+  "guid": "CF63C966BE8FAE9E45F083A8C7984D13",
+  "sec": "lexis"
+ },
+ "8F2F1C": {
+  "answer": "reminds",
+  "verdict": "3",
+  "guid": "5FA6113E200A855E4B72358EC20E6E32",
+  "sec": "lexis"
+ },
+ "90066F": {
+  "answer": "mood",
+  "verdict": "3",
+  "guid": "DB122D88D939A78A40CDE9ED273E3C7C",
+  "sec": "lexis"
+ },
+ "905D08": {
+  "answer": "approve",
+  "verdict": "3",
+  "guid": "2BF82790C3A486FA4119E5D7991D2257",
+  "sec": "lexis"
+ },
+ "9102FF": {
+  "answer": "reciting",
+  "verdict": "3",
+  "guid": "1B1256AC3B08B42944D2E5F53B94A5A3",
+  "sec": "lexis"
+ },
+ "9136FE": {
+  "answer": "provides",
+  "verdict": "3",
+  "guid": "1BCE5DB856D6B2C14C22674AFCFD8682",
+  "sec": "lexis"
+ },
+ "9159C7": {
+  "answer": "enthusiastic",
+  "verdict": "3",
+  "guid": "AB385BCBB7B9B38C45FFC38C065411D7",
+  "sec": "lexis"
+ },
+ "919EDC": {
+  "answer": "managed",
+  "verdict": "3",
+  "guid": "7BAB5C0C132BB0F44581D05443D882D0",
+  "sec": "lexis"
+ },
+ "9317F3": {
+  "answer": "said",
+  "verdict": "3",
+  "guid": "1BE5E333249F834843D9401B9590E805",
+  "sec": "lexis"
+ },
+ "934AF8": {
+  "answer": "looked",
+  "verdict": "3",
+  "guid": "1BF0E970EEBEA8474D630FCAE81844A7",
+  "sec": "lexis"
+ },
+ "94726B": {
+  "answer": "arranged",
+  "verdict": "3",
+  "guid": "DB430691A339A2B344CB60AC796DBD46",
+  "sec": "lexis"
+ },
+ "974C19": {
+  "answer": "reached",
+  "verdict": "3",
+  "guid": "5BB03A40CB6280734374AD1B4354046F",
+  "sec": "lexis"
+ },
+ "975C56": {
+  "answer": "remind",
+  "verdict": "3",
+  "guid": "8BD83AF66A4492C548AD7FA78BD9A9C5",
+  "sec": "lexis"
+ },
+ "9801FA": {
+  "answer": "Although",
+  "verdict": "3",
+  "guid": "1B92F516C05D9DCD43FDCE6F14FF93DC",
+  "sec": "lexis"
+ },
+ "991725": {
+  "answer": "respectively",
+  "verdict": "3",
+  "guid": "6B85B38DF6DD9C58481EA0E1E91E26A8",
+  "sec": "lexis"
+ },
+ "9A6D05": {
+  "answer": "considered",
+  "verdict": "3",
+  "guid": "2B8D97F7E93DB7BF4BDF7191E6C3D430",
+  "sec": "lexis"
+ },
+ "9B3BE6": {
+  "answer": "agreement",
+  "verdict": "3",
+  "guid": "CBDE44F65E71A1FF4235F013918E795D",
+  "sec": "lexis"
+ },
+ "9C1787": {
+  "answer": "managed",
+  "verdict": "3",
+  "guid": "FB35A37041E99ECE4982C9F216272180",
+  "sec": "lexis"
+ },
+ "9C4564": {
+  "answer": "told",
+  "verdict": "3",
+  "guid": "DB00A8EE15F18BAF48C9D8EA72D1DC61",
+  "sec": "lexis"
+ },
+ "9C4C38": {
+  "answer": "give",
+  "verdict": "3",
+  "guid": "EBF0AAE52A1AA10B458DF6F539ACD041",
+  "sec": "lexis"
+ },
+ "9CCB6C": {
+  "answer": "out",
+  "verdict": "3",
+  "guid": "DBAAA4EF74B48E2F43976405E32E0B0E",
+  "sec": "lexis"
+ },
+ "9D067C": {
+  "answer": "for",
+  "verdict": "3",
+  "guid": "3BA27D249E46ADFD48AEAC885703AAA4",
+  "sec": "lexis"
+ },
+ "9D2463": {
+  "answer": "treated",
+  "verdict": "3",
+  "guid": "DBE670BE12568EC54D9BC71136AB0518",
+  "sec": "lexis"
+ },
+ "9DB9CA": {
+  "answer": "up",
+  "verdict": "3",
+  "guid": "AB947B81E849B0BF4A5B257815366EDC",
+  "sec": "lexis"
+ },
+ "9E1085": {
+  "answer": "do",
+  "verdict": "3",
+  "guid": "FB85C2E42927A5B44566908E8F5677FA",
+  "sec": "lexis"
+ },
+ "9E577C": {
+  "answer": "satisfied",
+  "verdict": "3",
+  "guid": "3BA8C3855F58B8224187C7A6137E42C5",
+  "sec": "lexis"
+ },
+ "9EF04E": {
+  "answer": "introduced",
+  "verdict": "3",
+  "guid": "0BC1C2B0CA9F928B4798F682A077A458",
+  "sec": "lexis"
+ },
+ "9FF70C": {
+  "answer": "keep",
+  "verdict": "3",
+  "guid": "2BA113E4913FACE64A333AC3B9295ED1",
+  "sec": "lexis"
+ },
+ "A06380": {
+  "answer": "reminded",
+  "verdict": "3",
+  "guid": "F92D2EC59B6D98D64C78BC9B564DE8FD",
+  "sec": "lexis"
+ },
+ "A1A846": {
+  "answer": "count",
+  "verdict": "3",
+  "guid": "09D95F31331789784F4F35EAC7109C5C",
+  "sec": "lexis"
+ },
+ "A26528": {
+  "answer": "hardly",
+  "verdict": "3",
+  "guid": "69FD6863B551934C476AF1D94BD67E1B",
+  "sec": "lexis"
+ },
+ "A26D22": {
+  "answer": "whenever",
+  "verdict": "3",
+  "guid": "696D67B7518A8F2B40E858BA1A974ADF",
+  "sec": "lexis"
+ },
+ "A27FB4": {
+  "answer": "rely",
+  "verdict": "3",
+  "guid": "490361B8598FA6CD4C7E862308DC72B6",
+  "sec": "lexis"
+ },
+ "A31F24": {
+  "answer": "used",
+  "verdict": "3",
+  "guid": "6905E18265039DEE4202B8DF6E5C12AE",
+  "sec": "lexis"
+ },
+ "A32BEB": {
+  "answer": "Although",
+  "verdict": "3",
+  "guid": "C946E404B6339265495B3DE081291D5C",
+  "sec": "lexis"
+ },
+ "A3AC11": {
+  "answer": "therefore",
+  "verdict": "3",
+  "guid": "5959EA638F8C88D949F01F093C26E74C",
+  "sec": "lexis"
+ },
+ "A40BB7": {
+  "answer": "However",
+  "verdict": "3",
+  "guid": "493204698201A2204C1E976616198631",
+  "sec": "lexis"
+ },
+ "A6C1E2": {
+  "answer": "wearing",
+  "verdict": "3",
+  "guid": "C96AD585F7E6B348401AA733EF0C5D8A",
+  "sec": "lexis"
+ },
+ "A803A3": {
+  "answer": "attention",
+  "verdict": "3",
+  "guid": "99E2FE43026B91ED40C1A2A98D422017",
+  "sec": "lexis"
+ },
+ "A97913": {
+  "answer": "cheer",
+  "verdict": "3",
+  "guid": "59E3BB04209B9FE14A520096323F5A54",
+  "sec": "lexis"
+ },
+ "A9E6BE": {
+  "answer": "remind",
+  "verdict": "3",
+  "guid": "49CCBDACDDA091064A1109001688F427",
+  "sec": "lexis"
+ },
+ "AA70AC": {
+  "answer": "accompanied",
+  "verdict": "3",
+  "guid": "99A39224A56BA2494D41BA16EB28E0D0",
+  "sec": "lexis"
+ },
+ "AAA7F9": {
+  "answer": "interested",
+  "verdict": "3",
+  "guid": "19B9939C8758ADAE4CE671AB7C4EAB33",
+  "sec": "lexis"
+ },
+ "AABEDE": {
+  "answer": "tour",
+  "verdict": "3",
+  "guid": "79C49C240789A3A54151BD9202EA4E29",
+  "sec": "lexis"
+ },
+ "AACA23": {
+  "answer": "careful",
+  "verdict": "3",
+  "guid": "69EA99BC571E8CD5471C8013A0010867",
+  "sec": "lexis"
+ },
+ "AAE780": {
+  "answer": "put",
+  "verdict": "3",
+  "guid": "F92C93BB1E04BF554113B4CE690C812A",
+  "sec": "lexis"
+ },
+ "AB8997": {
+  "answer": "reminded",
+  "verdict": "3",
+  "guid": "B93F4BD60F999592401F82EC54F2B404",
+  "sec": "lexis"
+ },
+ "AC2D5A": {
+  "answer": "admired",
+  "verdict": "3",
+  "guid": "8996A7178CA69E964352095FC19C2B74",
+  "sec": "lexis"
+ },
+ "AC6A35": {
+  "answer": "prevent",
+  "verdict": "3",
+  "guid": "E98DA9B6980C8BA04711ED10CCA64A8C",
+  "sec": "lexis"
+ },
+ "AE9E70": {
+  "answer": "enjoy",
+  "verdict": "3",
+  "guid": "392BCCBBD1748442481A38641FF7FC40",
+  "sec": "lexis"
+ },
+ "AF95BF": {
+  "answer": "Nevertheless",
+  "verdict": "3",
+  "guid": "491B188C8228B7174254F87AC75D729B",
+  "sec": "lexis"
+ },
+ "AFF96D": {
+  "answer": "on",
+  "verdict": "3",
+  "guid": "D9711B60E4CDAB7B4C22714E3452D440",
+  "sec": "lexis"
+ },
+ "B4547C": {
+  "answer": "down",
+  "verdict": "3",
+  "guid": "34A8004F1A429B454F783A6566CAAADA",
+  "sec": "lexis"
+ },
+ "B49290": {
+  "answer": "installed",
+  "verdict": "3",
+  "guid": "B42B064ADAC1B66A4629728B8892B0C1",
+  "sec": "lexis"
+ },
+ "B4C1BE": {
+  "answer": "agreed",
+  "verdict": "3",
+  "guid": "44CA05E850C9805D4FECE2EC791AA4FB",
+  "sec": "lexis"
+ },
+ "B5BE6E": {
+  "answer": "broke",
+  "verdict": "3",
+  "guid": "D4C48C26419D84C2451D006DBFA6FE29",
+  "sec": "lexis"
+ },
+ "B700F1": {
+  "answer": "remind",
+  "verdict": "3",
+  "guid": "145232E951DFBFB041B129F598093211",
+  "sec": "lexis"
+ },
+ "B7A03B": {
+  "answer": "Moreover",
+  "verdict": "3",
+  "guid": "E4493295017A8C6D4E1703AB3B5F8AAD",
+  "sec": "lexis"
+ },
+ "B81468": {
+  "answer": "fact",
+  "verdict": "3",
+  "guid": "D4F5F0E356E5B8FC436F7C0CE35EBD33",
+  "sec": "lexis"
+ },
+ "B89A13": {
+  "answer": "run",
+  "verdict": "3",
+  "guid": "54EBF952EDC9B14C4BFBBC5601B5AAF4",
+  "sec": "lexis"
+ },
+ "B8C670": {
+  "answer": "remember",
+  "verdict": "3",
+  "guid": "342AFDFF5468848F43BBEDD0544FA532",
+  "sec": "lexis"
+ },
+ "B91061": {
+  "answer": "remembering",
+  "verdict": "3",
+  "guid": "D455B2F3892199AD483C26DEFC71147C",
+  "sec": "lexis"
+ },
+ "B919A0": {
+  "answer": "according",
+  "verdict": "3",
+  "guid": "9425BBBEE094949B45011FAE3BBDDDD9",
+  "sec": "lexis"
+ },
+ "BB09CA": {
+  "answer": "remember",
+  "verdict": "3",
+  "guid": "A4924B47301C99964F4E3F05F32966D5",
+  "sec": "lexis"
+ },
+ "BC301F": {
+  "answer": "came",
+  "verdict": "3",
+  "guid": "541EA2BDCCF9949648CC2359BF2F71E7",
+  "sec": "lexis"
+ },
+ "BCE773": {
+  "answer": "seen",
+  "verdict": "3",
+  "guid": "34ECA327865EACC1415E8EBAC3A68454",
+  "sec": "lexis"
+ },
+ "BD335B": {
+  "answer": "on",
+  "verdict": "3",
+  "guid": "844E7ECD0A059D344EA88F7B1955F975",
+  "sec": "lexis"
+ },
+ "C0C81F": {
+  "answer": "waiting",
+  "verdict": "3",
+  "guid": "5A1A2FE5A572802048F2D011FAFD2DD5",
+  "sec": "lexis"
+ },
+ "C0D932": {
+  "answer": "succeed",
+  "verdict": "3",
+  "guid": "EA672BC0D56E94F74E887A11155FE59F",
+  "sec": "lexis"
+ },
+ "C0F270": {
+  "answer": "effect",
+  "verdict": "3",
+  "guid": "3A2126A240FBA56042F19388229DEB63",
+  "sec": "lexis"
+ },
+ "C278C9": {
+  "answer": "make",
+  "verdict": "3",
+  "guid": "AAB36F7424B7BA134C407DDB9DB94E60",
+  "sec": "lexis"
+ },
+ "C309FF": {
+  "answer": "Although",
+  "verdict": "3",
+  "guid": "1A12EB2A8A03BA7D4E50435E4DD063D9",
+  "sec": "lexis"
+ },
+ "C34E09": {
+  "answer": "remained",
+  "verdict": "3",
+  "guid": "2AB0EC134C02946C4DC456EAAD045A9D",
+  "sec": "lexis"
+ },
+ "C37DFE": {
+  "answer": "reason",
+  "verdict": "3",
+  "guid": "1AC3E7253DD597CD4C0A63B6C15E4E96",
+  "sec": "lexis"
+ },
+ "C49CC5": {
+  "answer": "off",
+  "verdict": "3",
+  "guid": "AA8B0A52E88690154306470AE6D59E96",
+  "sec": "lexis"
+ },
+ "C577ED": {
+  "answer": "really",
+  "verdict": "3",
+  "guid": "CA7383EF3BA4A5754E8CAC923923D2B3",
+  "sec": "lexis"
+ },
+ "C5D5B1": {
+  "answer": "seen",
+  "verdict": "3",
+  "guid": "4A5788E6D7839B134081B60CC043C3E3",
+  "sec": "lexis"
+ },
+ "C66053": {
+  "answer": "join",
+  "verdict": "3",
+  "guid": "8AEDD2780F69B5584910587FA62B5F62",
+  "sec": "lexis"
+ },
+ "C676DB": {
+  "answer": "disappeared",
+  "verdict": "3",
+  "guid": "7A43DDAC0330A2CD4FE1714CA3C801E8",
+  "sec": "lexis"
+ },
+ "C700BF": {
+  "answer": "instead",
+  "verdict": "3",
+  "guid": "4A1232C779289C2A4D4617EBFFEB310B",
+  "sec": "lexis"
+ },
+ "C89F51": {
+  "answer": "travel",
+  "verdict": "3",
+  "guid": "8A5BF11DBA048A644659CE4EAFBEF3E3",
+  "sec": "lexis"
+ },
+ "C8DC6D": {
+  "answer": "succeeded",
+  "verdict": "3",
+  "guid": "DA77FA010667AC664B0C90EA4383D056",
+  "sec": "lexis"
+ },
+ "C910D2": {
+  "answer": "suggested",
+  "verdict": "3",
+  "guid": "7A65B2D70E1C997946DC1BD791B13AAF",
+  "sec": "lexis"
+ },
+ "C98FFD": {
+  "answer": "enjoyed",
+  "verdict": "3",
+  "guid": "1A7FB11B218DB1D54E429807C1D2640D",
+  "sec": "lexis"
+ },
+ "CA997E": {
+  "answer": "on",
+  "verdict": "3",
+  "guid": "3ACB9B65D808BD8C48997460B1B3F2D1",
+  "sec": "lexis"
+ },
+ "CC7083": {
+  "answer": "into",
+  "verdict": "3",
+  "guid": "FAE3A2C04314A6144B3E53DD2000D371",
+  "sec": "lexis"
+ },
+ "CCF488": {
+  "answer": "allowed",
+  "verdict": "3",
+  "guid": "FAF1A0661E45AAB3478CDCC7C1BA89B3",
+  "sec": "lexis"
+ },
+ "CDB7F4": {
+  "answer": "used",
+  "verdict": "3",
+  "guid": "1A047380051DA66E4378C28C5CF20BF7",
+  "sec": "lexis"
+ },
+ "CDE13C": {
+  "answer": "fortune",
+  "verdict": "3",
+  "guid": "EAAC75FE6B2994984447B4C62EF25101",
+  "sec": "lexis"
+ },
+ "CEFE75": {
+  "answer": "Although",
+  "verdict": "3",
+  "guid": "3A81CC031CE680F64DCC0520BE01ED45",
+  "sec": "lexis"
+ },
+ "CFB9CF": {
+  "answer": "remind",
+  "verdict": "3",
+  "guid": "AA141B050CEAAA5B4759402D690DB49F",
+  "sec": "lexis"
+ },
+ "CFE184": {
+  "answer": "looked",
+  "verdict": "3",
+  "guid": "FA0C15132A9D9C784E794D0066E83D94",
+  "sec": "lexis"
+ },
+ "D13412": {
+  "answer": "enjoy",
+  "verdict": "3",
+  "guid": "576E50F7DBDD8903469F79871F1A2148",
+  "sec": "lexis"
+ },
+ "D1C071": {
+  "answer": "took",
+  "verdict": "3",
+  "guid": "375A524CFBE0AB6C459FABACC3F28BC6",
+  "sec": "lexis"
+ },
+ "D2373A": {
+  "answer": "make",
+  "verdict": "3",
+  "guid": "E79E6360E7F3946545EB6607FE7A6DE5",
+  "sec": "lexis"
+ },
+ "D28C4A": {
+  "answer": "enjoyed",
+  "verdict": "3",
+  "guid": "079F6A40D1448A0B49878B7D3D05CFE8",
+  "sec": "lexis"
+ },
+ "D30604": {
+  "answer": "respected",
+  "verdict": "3",
+  "guid": "2702EDF0B5A083154C30B97E55CD1BCE",
+  "sec": "lexis"
+ },
+ "D3917D": {
+  "answer": "took",
+  "verdict": "3",
+  "guid": "377BE5A96D78A6744C85F071F86A07EA",
+  "sec": "lexis"
+ },
+ "D3B8B7": {
+  "answer": "for",
+  "verdict": "3",
+  "guid": "4734EF4C39E6915042E4AC0E08595E73",
+  "sec": "lexis"
+ },
+ "D3E358": {
+  "answer": "talk",
+  "verdict": "3",
+  "guid": "87FCEE00BA068C3E4BC3F326AB34F29A",
+  "sec": "lexis"
+ },
+ "D4942A": {
+  "answer": "relief",
+  "verdict": "3",
+  "guid": "679B0005DA4BB93F44CE33A3E17F5D44",
+  "sec": "lexis"
+ },
+ "D4FCCD": {
+  "answer": "inspired",
+  "verdict": "3",
+  "guid": "A7710A64563BB2C042CB5AD9ED3D059A",
+  "sec": "lexis"
+ },
+ "D565F8": {
+  "answer": "announced",
+  "verdict": "3",
+  "guid": "17FD886D2899A6F84B84E3988F4D623B",
+  "sec": "lexis"
+ },
+ "D616B0": {
+  "answer": "However",
+  "verdict": "3",
+  "guid": "4725DD0E254BA41149A6703D69F38D69",
+  "sec": "lexis"
+ },
+ "D62C53": {
+  "answer": "whatever",
+  "verdict": "3",
+  "guid": "87E6DA256E8B905C48990DE69AAC5376",
+  "sec": "lexis"
+ },
+ "D63A76": {
+  "answer": "of",
+  "verdict": "3",
+  "guid": "37DED940FB39A7D24052C48E98647580",
+  "sec": "lexis"
+ },
+ "D6FD75": {
+  "answer": "reached",
+  "verdict": "3",
+  "guid": "3781D7F12CA092364477DED4BC9AE893",
+  "sec": "lexis"
+ },
+ "D73807": {
+  "answer": "of",
+  "verdict": "3",
+  "guid": "273E3F5654708178480A389C2C9DDFD7",
+  "sec": "lexis"
+ },
+ "D83AF3": {
+  "answer": "told",
+  "verdict": "3",
+  "guid": "17EEF9F275E5B51C409E1291297719C4",
+  "sec": "lexis"
+ },
+ "D8BF0B": {
+  "answer": "laid",
+  "verdict": "3",
+  "guid": "2744F1DAEA6AA9C24EFC8EB81E4F6393",
+  "sec": "lexis"
+ },
+ "D99ABF": {
+  "answer": "However",
+  "verdict": "3",
+  "guid": "471BB975A6E4BBBF48DCF83B3DC45F3B",
+  "sec": "lexis"
+ },
+ "D99B66": {
+  "answer": "whatever",
+  "verdict": "3",
+  "guid": "D7DBB441FA69ACBB46CF3F53ED5C7C47",
+  "sec": "lexis"
+ },
+ "D9F4E9": {
+  "answer": "case",
+  "verdict": "3",
+  "guid": "C7B1B08943B69F87445ED2A07B0A1528",
+  "sec": "lexis"
+ },
+ "DAE308": {
+  "answer": "remember",
+  "verdict": "3",
+  "guid": "27FC9E943789B7EC478FE52A5D5C3CC3",
+  "sec": "lexis"
+ },
+ "DC6087": {
+  "answer": "requires",
+  "verdict": "3",
+  "guid": "F73DA2968BB68E8644649378F67506DF",
+  "sec": "lexis"
+ },
+ "E00C22": {
+  "answer": "please",
+  "verdict": "3",
+  "guid": "6C622A2F9AEAA6C54F07A53F769465DB",
+  "sec": "lexis"
+ },
+ "E0152F": {
+  "answer": "join",
+  "verdict": "3",
+  "guid": "6C1528575822BE8248D2D8350DF6CB4F",
+  "sec": "lexis"
+ },
+ "E05997": {
+  "answer": "on",
+  "verdict": "3",
+  "guid": "BC382B3C79ADA4DD424423BF57D029BE",
+  "sec": "lexis"
+ },
+ "E0D6F9": {
+  "answer": "However",
+  "verdict": "3",
+  "guid": "1CB72D6ACA818AF44E11EDBCBBB398C7",
+  "sec": "lexis"
+ },
+ "E1CFFB": {
+  "answer": "agreed",
+  "verdict": "3",
+  "guid": "1C4A5188865D8F58444A1C702E034F92",
+  "sec": "lexis"
+ },
+ "E3BB2D": {
+  "answer": "Although",
+  "verdict": "3",
+  "guid": "6C74E47C3E50AEF24AEC27C712E02C1C",
+  "sec": "lexis"
+ },
+ "E41D55": {
+  "answer": "Obviously",
+  "verdict": "3",
+  "guid": "8C85073AE3488FDF403EA6B91E507625",
+  "sec": "lexis"
+ },
+ "E6ED5D": {
+  "answer": "managed",
+  "verdict": "3",
+  "guid": "8C7CD738A8DEBB704CBCA8084051DAF1",
+  "sec": "lexis"
+ },
+ "E780B4": {
+  "answer": "forward",
+  "verdict": "3",
+  "guid": "4C0F323A7E4ABAE14D1CB78E0D1E881D",
+  "sec": "lexis"
+ },
+ "E78483": {
+  "answer": "suppose",
+  "verdict": "3",
+  "guid": "FCEF306DF67492E440EBC4E7996FAF45",
+  "sec": "lexis"
+ },
+ "E8B0C7": {
+  "answer": "However",
+  "verdict": "3",
+  "guid": "AC34F20070D5A0044DAC59A0942AC57F",
+  "sec": "lexis"
+ },
+ "E8C3FC": {
+  "answer": "caught",
+  "verdict": "3",
+  "guid": "1CAAFEF5EFF2AD334F513339E0343DB9",
+  "sec": "lexis"
+ },
+ "E8D235": {
+  "answer": "regretted",
+  "verdict": "3",
+  "guid": "EC87F6CFDD7A833E49856B2FBC49752E",
+  "sec": "lexis"
+ },
+ "E903A0": {
+  "answer": "looked",
+  "verdict": "3",
+  "guid": "9C22BE7413EE94AE40D9A52AC1725DDB",
+  "sec": "lexis"
+ },
+ "E956AF": {
+  "answer": "although",
+  "verdict": "3",
+  "guid": "9C18BD339F4E937E45AB8C07C378AE78",
+  "sec": "lexis"
+ },
+ "EA0416": {
+  "answer": "speak",
+  "verdict": "3",
+  "guid": "5CD29068767D8A9F4ABFEAB0FDD807CC",
+  "sec": "lexis"
+ },
+ "EA139B": {
+  "answer": "solution",
+  "verdict": "3",
+  "guid": "BC459E467E76969145FB0C7B35091E06",
+  "sec": "lexis"
+ },
+ "EA5BE7": {
+  "answer": "departure",
+  "verdict": "3",
+  "guid": "CC3894D9D2AF8FED42B6AF58676D5C5D",
+  "sec": "lexis"
+ },
+ "EB7D90": {
+  "answer": "attempts",
+  "verdict": "3",
+  "guid": "BC234720C38880754C707B2B93BFB09F",
+  "sec": "lexis"
+ },
+ "ED1FDC": {
+  "answer": "look",
+  "verdict": "3",
+  "guid": "7CA571FCB7B9AC374224FC84B06AB484",
+  "sec": "lexis"
+ },
+ "EE9EB9": {
+  "answer": "responsible",
+  "verdict": "3",
+  "guid": "4CBBCC445DB7A1A4460AEDCE0D202814",
+  "sec": "lexis"
+ },
+ "EF3331": {
+  "answer": "permission",
+  "verdict": "3",
+  "guid": "EC5E1EDBFA0690AA45A61D483E7B3AEF",
+  "sec": "lexis"
+ },
+ "EF5EA3": {
+  "answer": "holding",
+  "verdict": "3",
+  "guid": "9CE81CB23E2CB4A9434D5EBABAB2976F",
+  "sec": "lexis"
+ },
+ "EFAB3C": {
+  "answer": "attempt",
+  "verdict": "3",
+  "guid": "ECA9143B1A609DB8489F84C1A30523FF",
+  "sec": "lexis"
+ },
+ "EFE85C": {
+  "answer": "enthusiastic",
+  "verdict": "3",
+  "guid": "8CAC1FAA729083954F9CF81769923B38",
+  "sec": "lexis"
+ },
+ "EFFA1F": {
+  "answer": "watched",
+  "verdict": "3",
+  "guid": "5C1119478EE3BE07442B2694DD33B3E7",
+  "sec": "lexis"
+ },
+ "F0158C": {
+  "answer": "collect",
+  "verdict": "3",
+  "guid": "F1A528AE67749211450D97902362154E",
+  "sec": "lexis"
+ },
+ "F15371": {
+  "answer": "on",
+  "verdict": "3",
+  "guid": "31585E00D5D1AC8B4F75997BE8B909A7",
+  "sec": "lexis"
+ },
+ "F1BEA7": {
+  "answer": "enjoying",
+  "verdict": "3",
+  "guid": "91345C0C48F881B1468A18F90B5DB81D",
+  "sec": "lexis"
+ },
+ "F4A8A1": {
+  "answer": "admit",
+  "verdict": "3",
+  "guid": "91590F08259B85744348C61330A91D60",
+  "sec": "lexis"
+ },
+ "F5194A": {
+  "answer": "in",
+  "verdict": "3",
+  "guid": "01958BA009969E204889BE91FFAA984C",
+  "sec": "lexis"
+ },
+ "F6B774": {
+  "answer": "on",
+  "verdict": "3",
+  "guid": "3104D341A7D780C243CDA3AAEFBC0FCE",
+  "sec": "lexis"
+ },
+ "F7D2D1": {
+  "answer": "at",
+  "verdict": "3",
+  "guid": "715736BA5075BFDB459F405B8CFC3B49",
+  "sec": "lexis"
+ },
+ "F7E310": {
+  "answer": "agreement",
+  "verdict": "3",
+  "guid": "512C3E36E955BA05479556AA7DD49FBE",
+  "sec": "lexis"
+ },
+ "F7E42E": {
+  "answer": "attracted",
+  "verdict": "3",
+  "guid": "61CC30370999A84743EDA4E536B6EF8F",
+  "sec": "lexis"
+ },
+ "F80118": {
+  "answer": "doing",
+  "verdict": "3",
+  "guid": "51F2F5DEDB9AA02E4E4DB89967713F5A",
+  "sec": "lexis"
+ },
+ "F8429B": {
+  "answer": "reminding",
+  "verdict": "3",
+  "guid": "B140F66820CDA6BE4489A718BA61BB3F",
+  "sec": "lexis"
+ },
+ "F97950": {
+  "answer": "bother",
+  "verdict": "3",
+  "guid": "8123BB2378BE83B248DDB7081597D695",
+  "sec": "lexis"
+ },
+ "FA4749": {
+  "answer": "made",
+  "verdict": "3",
+  "guid": "01B093A6623B89F141ABAD07DF4310E6",
+  "sec": "lexis"
+ },
+ "FA56A5": {
+  "answer": "see",
+  "verdict": "3",
+  "guid": "91889D7CAB0084254D9D8AB45D294C8C",
+  "sec": "lexis"
+ },
+ "FB507F": {
+  "answer": "at",
+  "verdict": "3",
+  "guid": "3118428D413E8E3947AB8F018E79B0E5",
+  "sec": "lexis"
+ },
+ "FC8F8E": {
+  "answer": "long",
+  "verdict": "3",
+  "guid": "F1CFA1113B409ABA4EED8D0352043A2F",
+  "sec": "lexis"
+ },
+ "FC94B4": {
+  "answer": "image",
+  "verdict": "3",
+  "guid": "410BA0BEC48EADBB413663ED357CFBDF",
+  "sec": "lexis"
+ },
+ "FE4AF7": {
+  "answer": "managed",
+  "verdict": "3",
+  "guid": "1130C9BC1BDEA43547D93F2EB2EE0E21",
+  "sec": "lexis"
  }
 }

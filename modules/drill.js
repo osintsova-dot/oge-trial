@@ -58,7 +58,8 @@ export async function renderDrill(container, cfg) {
     mount(container, el('div', { class: 'err-msg', text: e.message }));
     return;
   }
-  const withKey = items.filter((it) => keys[it.zid]);
+  // MC «Выбор ответа» берём только с предложением-контекстом (иначе выбор синонима вслепую)
+  const withKey = items.filter((it) => keys[it.zid] && (it.answer_type !== 'Выбор ответа' || it.sentence));
   // «умные» темы по форме ответа (Present Perfect, Passive, Существительные…) вместо сырых КЭС
   const byTopic = new Map();
   for (const it of withKey) {
@@ -152,8 +153,13 @@ export async function renderDrill(container, cfg) {
       if (idx >= queue.length) return summary();
       const item = queue[idx];
       const key = keys[item.zid];
-      const { before, after } = parseTask(item);
       let answered = false, checkedAt = 0;
+      // MC-лексика «Выбор ответа»: предложение с пропуском (item.sentence) + кнопки-варианты из текста
+      const isMC = item.answer_type === 'Выбор ответа' || /^\s*1\)/.test(item.text || '');
+      const mcOpts = isMC ? [...(item.text || '').matchAll(/\d\)\s*([A-Za-z][A-Za-z'-]*)/g)].map((m) => m[1]) : [];
+      const { before, after } = (isMC && item.sentence)
+        ? (() => { const p = item.sentence.split(/_{3,}/); return { before: p[0] || '', after: p.slice(1).join(' ') || '' }; })()
+        : parseTask(item);
 
       const blank = el('span', { class: 'blank', text: '?' });
       const input = el('input', { class: 'answer-input', type: 'text', autocomplete: 'off',
@@ -213,6 +219,29 @@ export async function renderDrill(container, cfg) {
         else if (Date.now() - checkedAt > 450) doAdvance();
       });
 
+      // кнопки-варианты для MC: тап = выбор слова → та же проверка (input заполняется программно)
+      const optWrap = el('div', { class: 'mc-list' });
+      const optBtns = [];
+      if (isMC) {
+        for (const w of mcOpts) {
+          const b = el('button', { class: 'mc-opt', text: w });
+          b.addEventListener('click', () => {
+            if (answered) return;
+            input.value = w;
+            doCheck();
+            optBtns.forEach((x) => { if (checkAnswer(x.textContent, key).correct) x.classList.add('mc-ok'); x.disabled = true; });
+            if (!checkAnswer(w, key).correct) b.classList.add('mc-bad');
+          });
+          optBtns.push(b); optWrap.appendChild(b);
+        }
+      }
+      const baseChip = item.base_word
+        ? el('div', { class: 'base-chip' }, [el('span', { class: 'bc-l', text: t.baseWord }), el('span', { class: 'bc-w', text: item.base_word })])
+        : null;
+      const bodyKids = isMC
+        ? [el('div', { class: 'task-kind', text: t.chooseWord }), el('div', { class: 'task-text' }, [before, blank, after]), optWrap, why]
+        : [el('div', { class: 'task-kind', text: cfg.title }), baseChip, el('div', { class: 'task-text' }, [before, blank, after]), el('div', { class: 'answer-wrap' }, [input, badge]), why].filter(Boolean);
+
       mount(container, el('div', { class: 'round view' }, [
         el('div', { class: 'round-top' }, [
           el('div', { class: 'drill-bar' }, [
@@ -222,21 +251,10 @@ export async function renderDrill(container, cfg) {
           ]),
           segBar,
         ]),
-        el('div', { class: 'round-body' }, [
-          el('div', { class: 'task-kind', text: cfg.title }),
-          item.base_word
-            ? el('div', { class: 'base-chip' }, [
-                el('span', { class: 'bc-l', text: t.baseWord }),
-                el('span', { class: 'bc-w', text: item.base_word }),
-              ])
-            : null,
-          el('div', { class: 'task-text' }, [before, blank, after]),
-          el('div', { class: 'answer-wrap' }, [input, badge]),
-          why,
-        ]),
+        el('div', { class: 'round-body' }, bodyKids),
         el('div', { class: 'round-foot' }, [action]),
       ]));
-      input.focus();
+      if (!isMC) input.focus();
     }
 
     function summary() {
