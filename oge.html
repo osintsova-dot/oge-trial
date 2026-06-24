@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#6C3FC5">
   <title>ОГЭ English · Speak & Smile</title>
   <link rel="stylesheet" href="./css/brand.css">
+  <link rel="manifest" href="./manifest-oge.json">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
 </head>
 <body>
@@ -18,7 +19,9 @@
     <a href="#/rewards" data-tab="rewards"><span class="bn-ic">🎖</span><span>Награды</span></a>
     <a href="#/teacher" data-tab="teacher"><span class="bn-ic">🧑‍🏫</span><span>Учителю</span></a>
   </nav>
-  <script>window.EXAM = 'oge';</script>
+  <script>window.EXAM = 'oge';
+    if ('serviceWorker' in navigator) { addEventListener('load', function () { navigator.serviceWorker.register('./sw.js').catch(function () {}); }); }
+  </script>
   <script src="./js/vendor/qrcode.js"></script>
   <script type="module" src="./js/app.js"></script>
 </body>
