@@ -1,1 +1,8 @@
 .DS_Store
+
+# демо/превью и бэкапы — не для боевого деплоя
+*-preview.html
+_*.html
+vocab-demo.html
+data/*_backup.json
+data/*_flagged.json

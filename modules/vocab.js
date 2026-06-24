@@ -43,7 +43,7 @@ export async function renderVocab(container, cfg) {
   // Кнопка 🔊 — британское произношение английского слова
   function spkBtn(text) {
     if (!canSpeak()) return null;
-    return el('button', { class: 'speak-btn', text: '🔊', title: 'Произношение', onclick: (e) => { e.stopPropagation(); speak(text); } });
+    return el('button', { class: 'speak-btn', text: '🔊', title: t.pronounce, onclick: (e) => { e.stopPropagation(); speak(text); } });
   }
 
   // --- Меню: дневная норма + выбор активной темы + прогресс по темам ---

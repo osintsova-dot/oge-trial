@@ -22,6 +22,7 @@ export const STRINGS = {
     navHome: 'Главная', navProgress: 'Прогресс', navRewards: 'Награды',
     // home
     welcomeBack: 'С возвращением', today: 'Сегодня', week: 'За неделю', lvl: 'Ур.',
+    themeTitle: 'Тема', pronounce: 'Произношение',
     toRank: (r, n) => `до «${r}»: ${n} XP`, maxRank: 'максимальное звание',
     empty: 'пока пусто',
     goalTitle: 'Цель дня', goalDone: (s) => `Готово на сегодня — ${s}`, goalIdle: 'Сделай хотя бы 1 раунд',
@@ -452,8 +453,6 @@ export const STRINGS = {
       coins: { title: 'Монеты «Твоя школа»', titleN: (n) => (n * 5) + ' ' + pluralRu(n * 5, ['монета', 'монеты', 'монет']) + ' «Твоя школа»', desc: 'Обменяй жетоны на монеты: 1 🎟 = 5 монет', how: 'Настоящий обмен: переведи жетоны в монеты приложения «Твоя школа» — их тратят на реальные покупки в школьном магазине. 1 жетон = 5 монет. Выбираешь, сколько жетонов обменять, — получишь код, покажи учителю, чтобы он начислил монеты.', chooseHelp: (bal) => '1 жетон = 5 монет «Твоя школа». У тебя ' + bal + ' 🎟. Выбери, сколько обменять.', chooseBig: (n) => (n * 5) + ' монет', badgeShow: '👀 Покажи код учителю — он начислит монеты в «Твоя школа»' },
     },
     voice: {
-      homeIdle: ['{name}, серия ждёт. Не сливайся 😎', '{name}, твой ход. 1 раунд — погнали.', '{name}, один раунд — и ты в деле.', 'Ну что, {name}, докажем?'],
-      homeDone: ['Цель закрыта, {name}. Но кто сказал стоп? 😏', '{name}, день взят. Ещё круг?', '{name}, норма закрыта. Добавки? 😏'],
       high: ['{score}, {name}. Чисто 😎', '{name}, красиво. Слабо все 15? 😉', 'Сильно, {name}. Так держать.', '{score} — {name} в ударе 🔥'],
       mid: ['{score}, {name}. Норм, но ты можешь чище.', 'Идём, {name}. Дожми в следующем.', '{name}, крепко. Ещё чуть-чуть — и чисто.'],
       low: ['{name}, это не твой потолок. Реванш?', 'Бывает, {name}. Разбор уже помог — погнали ещё.', '{name}, не считается. Ещё раунд — и покажем класс.'],
@@ -476,6 +475,7 @@ export const STRINGS = {
     navHome: 'Home', navProgress: 'Progress', navRewards: 'Rewards',
     // home
     welcomeBack: 'Welcome back', today: 'Today', week: 'This week', lvl: 'Lv.',
+    themeTitle: 'Theme', pronounce: 'Pronunciation',
     toRank: (r, n) => `to "${r}": ${n} XP`, maxRank: 'top rank reached',
     empty: 'nothing yet',
     goalTitle: 'Daily goal', goalDone: (s) => `Done for today — ${s}`, goalIdle: 'Do at least one round',
@@ -892,8 +892,6 @@ export const STRINGS = {
       coins: { title: '"Your School" coins', titleN: (n) => (n * 5) + ' "Your School" coins', desc: 'Trade tokens for coins: 1 🎟 = 5 coins', how: 'A real exchange: turn tokens into coins in the "Your School" app — spend them on real purchases in the school store. 1 token = 5 coins. Choose how many tokens to exchange — get a code, show it to your teacher to credit the coins.', chooseHelp: (bal) => '1 token = 5 "Your School" coins. You have ' + bal + ' 🎟. Choose how many to exchange.', chooseBig: (n) => (n * 5) + ' coins', badgeShow: '👀 Show the code to your teacher — they credit "Your School" coins' },
     },
     voice: {
-      homeIdle: ['{name}, your streak is waiting. Keep it up 😎', '{name}, your move. One round — go.', '{name}, one round and you are in.', 'So, {name}, shall we?'],
-      homeDone: ["Goal done, {name}. But who said stop? 😏", '{name}, day done. One more?', '{name}, target hit. More? 😏'],
       high: ['{score}, {name}. Clean 😎', '{name}, nice. All 15 next time? 😉', 'Strong, {name}. Keep going.', '{score} — {name} is on fire 🔥'],
       mid: ['{score}, {name}. Good, but you can do cleaner.', 'Keep going, {name}. Nail the next one.', '{name}, solid. Almost perfect.'],
       low: ['{name}, that is not your limit. Rematch?', 'It happens, {name}. The review helped — go again.', "{name}, doesn't count. One more round and show your best."],

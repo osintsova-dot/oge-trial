@@ -42,7 +42,7 @@ for (const s of EXAM.sections) if (s.type === 'drill') {
 function toggleTheme() { setTheme(getTheme() === 'dark' ? 'light' : 'dark'); route(); }
 function themeBtn(cls) {
   return el('button', { class: cls || 'theme-btn', onclick: toggleTheme,
-    text: getTheme() === 'dark' ? '☀️' : '🌙', title: 'тема' });
+    text: getTheme() === 'dark' ? '☀️' : '🌙', title: t.themeTitle });
 }
 
 // --- Роутер ---
