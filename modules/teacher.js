@@ -9,6 +9,36 @@ import { EXAM, t } from '../js/exam.js';
 import { getName } from '../js/gamify.js';
 import { evalWriting } from '../js/writeeval.js';
 import { renderPrintView, stripTrailingBase } from './print.js';
+import { canRecognizePhoto, recognizePhoto } from '../js/ocr.js';
+
+// Блок «📷 Фото письма» для ДЗ: распознаёт фото, дописывает в поле, требует сверки.
+function ocrPhotoBlock(ta, onText, errBox) {
+  if (!canRecognizePhoto()) return null;
+  const input = el('input', { type: 'file', accept: 'image/*', capture: 'environment', style: { display: 'none' } });
+  const pbtn = el('button', { class: 'btn btn-ghost w-photo', text: t.wPhoto });
+  const note = el('div', { class: 'w-photo-note', style: { display: 'none' }, text: t.wPhotoNote });
+  pbtn.addEventListener('click', () => input.click());
+  input.addEventListener('change', async () => {
+    const file = input.files && input.files[0];
+    input.value = '';
+    if (!file) return;
+    if (errBox) errBox.style.display = 'none';
+    note.style.display = 'none';
+    pbtn.disabled = true; pbtn.textContent = t.wPhotoLoading;
+    try {
+      const text = await recognizePhoto(file);
+      ta.value = (ta.value.trim() ? ta.value.trim() + '\n' : '') + text;
+      onText();
+      note.style.display = 'block';
+      ta.focus();
+    } catch (e) {
+      if (errBox) { errBox.textContent = t.wPhotoErr(e.message); errBox.style.display = 'block'; }
+    } finally {
+      pbtn.disabled = false; pbtn.textContent = t.wPhoto;
+    }
+  });
+  return el('div', { class: 'w-photo-row' }, [pbtn, input, note]);
+}
 
 // человекочитаемые названия дрилл-разделов
 const SEC_TITLE = { grammar: 'Грамматика', wordform: 'Словообразование', lexis: 'Лексика и словообразование' };
@@ -702,13 +732,15 @@ export async function renderHomework(container, opts) {
         const upd = () => { const n = ta.value.trim().split(/\s+/).filter(Boolean).length; wc.textContent = n + ' / ' + wmin + '–' + wmax; wc.className = 'hw-wc ' + (n >= wmin && n <= wmax ? 'ok' : (n > wmax ? 'bad' : '')); };
         ta.addEventListener('input', () => { answers[akey] = ta.value; upd(); });
         upd();
+        const errBox = el('div', { class: 'err-msg', style: { display: 'none' } });
+        const photoNode = ocrPhotoBlock(ta, () => { answers[akey] = ta.value; upd(); }, errBox);
         list.appendChild(el('div', { class: 'hw-q hw-q-read' }, [
           el('span', { class: 'hw-n', text: (i + 1) + '.' }),
           el('div', { class: 'hw-rblock' }, [
             el('div', { class: 'hw-rinstr', text: '✉️ ' + (u.block.wlabel || H.wTask) }),
             el('div', { class: 'hw-rtext', text: u.block.prompt }),
-            ta, wc,
-          ]),
+            ta, wc, photoNode, errBox,
+          ].filter(Boolean)),
         ]));
         return;
       }
