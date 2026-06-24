@@ -342,10 +342,11 @@ function buildWorksheetGrid(sections, P, exam) {
     }
   }
   if (!rows.length) return null;
-  return el('div', { class: 'print-paper ws-grid-paper' }, [
-    el('div', { class: 'ws-grid-h', text: P.wsGridTitle }),
+  // официальная шапка ФИПИ (как у настоящего бланка) + наша сетка-ответов с нумерацией заданий
+  return el('div', { class: 'print-paper answer-sheet ws-grid-paper' }, [
+    asHeader(P, P.wsGridTitle, exam),
+    el('div', { class: 'as1-secband', text: P.asShortBand }),
     el('div', { class: 'ws-grid-note', text: P.wsGridNote }),
-    el('div', { class: 'pp-meta' }, [el('span', { text: P.fio }), el('span', { class: 'pp-line' })]),
     el('div', { class: 'ws-grid' }, rows.map((r) => el('div', { class: 'ws-grow' }, [
       el('span', { class: 'ws-gnum', text: String(r.num) }),
       el('span', { class: 'ws-gcells' }, Array.from({ length: r.cells }, () => el('span', { class: 'ws-acell' }))),
