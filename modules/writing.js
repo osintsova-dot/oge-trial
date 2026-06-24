@@ -135,9 +135,15 @@ export async function renderWriting(container, cfg) {
       ]);
     };
     if (cfg.sectionId === 'essay') {
-      // эссе делим по формату: зад.38 (с таблицей/диаграммой) и старое эссе-мнение
+      // эссе темы недели — наверх (чтобы тренировать лексику изучаемой темы), затем деление по формату
+      const themed = items.map((it, i) => [it, i]).filter(([it]) => themeW.has(it.zid));
+      if (themed.length) {
+        list.appendChild(el('div', { class: 'topics-label', text: t.vocab.themeWeekLabel(themeName) }));
+        themed.forEach(([it, i]) => list.appendChild(itemBtn(it, i)));
+      }
+      // остальные эссе делим по формату: зад.38 (с таблицей/диаграммой) и старое эссе-мнение
       const tbl = [], opn = [];
-      items.forEach((it, i) => (it.table ? tbl : opn).push([it, i]));
+      items.forEach((it, i) => { if (themeW.has(it.zid)) return; (it.table ? tbl : opn).push([it, i]); });
       if (tbl.length) { list.appendChild(el('div', { class: 'topics-label', text: t.wEssayTable })); tbl.forEach(([it, i]) => list.appendChild(itemBtn(it, i))); }
       if (opn.length) { list.appendChild(el('div', { class: 'topics-label', text: t.wEssayOpinion })); opn.forEach(([it, i]) => list.appendChild(itemBtn(it, i))); }
     } else {
