@@ -1072,36 +1072,66 @@ export function renderJournal(container, opts) {
 
   if (!all.length) { mount(container, el('div', { class: 'view tch' }, [top, el('div', { class: 'tch-empty', text: T.journalEmpty })])); return; }
 
-  // агрегат
-  const students = new Set(all.map((e) => e.name)).size;
-  const avg = Math.round(all.reduce((s, e) => s + (e.total ? e.correct / e.total : 0), 0) / all.length * 100);
-  const byTopic = {};
-  for (const e of all) for (const tp in (e.byTopic || {})) { const b = byTopic[tp] = byTopic[tp] || { c: 0, t: 0 }; b.c += e.byTopic[tp].c; b.t += e.byTopic[tp].t; }
-  // все темы (в т.ч. «Письмо»), сложные сверху — ничего не прячем
-  const hard = Object.entries(byTopic).map(([tp, b]) => ({ tp, pc: Math.round(b.c / b.t * 100), c: b.c, t: b.t }))
-    .filter((x) => x.t >= 1).sort((a, b) => a.pc - b.pc);
-
   const stat = (v, l) => el('div', { class: 'mini-stat' }, [el('div', { class: 'ms-v', text: String(v) }), el('div', { class: 'ms-l', text: l })]);
   const fmtDate = (ts) => { try { return new Date(ts).toLocaleString('ru-RU', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }); } catch (e) { return ''; } };
+  const pcColor = (pc) => pc < 50 ? '#d64545' : (pc < 75 ? '#E0922F' : '#2f9e44');
+  // слабые темы из набора записей (сложные сверху)
+  const hardOf = (entries) => {
+    const by = {};
+    for (const e of entries) for (const tp in (e.byTopic || {})) { const b = by[tp] = by[tp] || { c: 0, t: 0 }; b.c += e.byTopic[tp].c; b.t += e.byTopic[tp].t; }
+    return Object.entries(by).map(([tp, b]) => ({ tp, pc: Math.round(b.c / b.t * 100), c: b.c, t: b.t })).filter((x) => x.t >= 1).sort((a, b) => a.pc - b.pc);
+  };
+  const topicsBlock = (hard) => el('div', { class: 'jr-topics' }, hard.map((x) => el('div', { class: 'jr-topic' }, [
+    el('div', { class: 'jr-topic-n', text: x.tp }),
+    el('div', { class: 'jr-topic-bar' }, [el('i', { style: { width: x.pc + '%', background: pcColor(x.pc) } })]),
+    el('div', { class: 'jr-topic-v', text: x.pc + '% (' + x.c + '/' + x.t + ')' }),
+  ])));
+  const subRow = (e) => el('div', { class: 'jr-row' }, [
+    el('div', { style: { flex: '1', minWidth: '0' } }, [
+      el('div', { class: 'jr-meta', text: fmtDate(e.ts) + ' · ' + (e.summary || '') }),
+      ...((e.writings || []).filter((wr) => wr.topic).map((wr) => el('div', { class: 'jr-wrow', text: '✉️ ' + wr.topic + ' — ' + wr.score + '/' + wr.max }))),
+    ]),
+    el('div', { class: 'jr-score', style: { color: pcColor(e.total ? e.correct / e.total * 100 : 0) }, text: e.correct + '/' + e.total }),
+  ]);
+
+  // агрегат класса
+  const avg = Math.round(all.reduce((s, e) => s + (e.total ? e.correct / e.total : 0), 0) / all.length * 100);
+  // группировка по ученикам (по имени)
+  const byName = new Map();
+  for (const e of all) { if (!byName.has(e.name)) byName.set(e.name, []); byName.get(e.name).push(e); }
+  const studs = [...byName.entries()].map(([name, entries]) => {
+    const av = Math.round(entries.reduce((s, e) => s + (e.total ? e.correct / e.total : 0), 0) / entries.length * 100);
+    return { name, entries, av };
+  }).sort((a, b) => a.av - b.av); // слабые ученики сверху
+
+  // карточка ученика (раскрывается: личные слабые темы + сдачи)
+  const studentCard = (s) => {
+    const body = el('div', { class: 'jr-stud-body', style: { display: 'none' } }, [
+      el('div', { class: 'jr-sub-h', text: T.jrIndivWeak }),
+      topicsBlock(hardOf(s.entries)),
+      el('div', { class: 'jr-sub-h', text: T.jrStudentSubs }),
+      el('div', { class: 'jr-list' }, s.entries.slice().sort((a, b) => b.ts - a.ts).map(subRow)),
+    ]);
+    let open = false;
+    const head = el('button', { class: 'jr-stud-head' }, [
+      el('div', { style: { flex: '1', minWidth: '0', textAlign: 'left' } }, [
+        el('div', { class: 'jr-name', text: s.name }),
+        el('div', { class: 'jr-meta', text: T.jrWorks(s.entries.length) }),
+      ]),
+      el('div', { class: 'jr-stud-av', style: { color: pcColor(s.av) }, text: s.av + '%' }),
+      el('span', { class: 'jr-chev', text: '▾' }),
+    ]);
+    head.addEventListener('click', () => { open = !open; body.style.display = open ? '' : 'none'; head.querySelector('.jr-chev').textContent = open ? '▴' : '▾'; });
+    return el('div', { class: 'jr-stud' }, [head, body]);
+  };
 
   mount(container, el('div', { class: 'view tch jr' }, [
     top,
-    el('div', { class: 'mini-stats' }, [stat(all.length, T.jrSubmissions), stat(students, T.jrStudents), stat(avg + '%', T.jrAvg)]),
+    el('div', { class: 'mini-stats' }, [stat(all.length, T.jrSubmissions), stat(byName.size, T.jrStudents), stat(avg + '%', T.jrAvg)]),
     el('div', { class: 'jr-sect', text: T.jrHard }),
-    el('div', { class: 'jr-topics' }, hard.map((x) => el('div', { class: 'jr-topic' }, [
-      el('div', { class: 'jr-topic-n', text: x.tp }),
-      el('div', { class: 'jr-topic-bar' }, [el('i', { style: { width: x.pc + '%', background: x.pc < 50 ? '#d64545' : (x.pc < 75 ? '#E0922F' : '#2f9e44') } })]),
-      el('div', { class: 'jr-topic-v', text: x.pc + '% (' + x.c + '/' + x.t + ')' }),
-    ]))),
-    el('div', { class: 'jr-sect', text: T.jrSubs }),
-    el('div', { class: 'jr-list' }, all.map((e) => el('div', { class: 'jr-row' }, [
-      el('div', { style: { flex: '1', minWidth: '0' } }, [
-        el('div', { class: 'jr-name', text: e.name }),
-        el('div', { class: 'jr-meta', text: fmtDate(e.ts) + ' · ' + (e.summary || '') }),
-        ...((e.writings || []).filter((wr) => wr.topic).map((wr) => el('div', { class: 'jr-wrow', text: '✉️ ' + wr.topic + ' — ' + wr.score + '/' + wr.max }))),
-      ]),
-      el('div', { class: 'jr-score', style: { color: e.correct / e.total < 0.5 ? '#d64545' : (e.correct / e.total < 0.75 ? '#E0922F' : '#2f9e44') }, text: e.correct + '/' + e.total }),
-    ]))),
+    topicsBlock(hardOf(all)),
+    el('div', { class: 'jr-sect', text: T.jrByStudent }),
+    el('div', { class: 'jr-studs' }, studs.map(studentCard)),
     el('div', { class: 'prog-actions' }, [
       el('button', { class: 'act-reset', text: T.jrClear, onclick: () => { if (confirm(T.jrClearConfirm)) { saveJournal(loadJournal().filter((e) => e.exam !== EXAM.id)); renderJournal(container, opts); } } }),
     ]),
