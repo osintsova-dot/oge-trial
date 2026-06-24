@@ -14,6 +14,7 @@ import { getActiveTheme } from '../js/vocab_srs.js';
 import { themeZids } from '../js/themes.js';
 import { shareWritingResult } from './teacher.js';
 import { evalWriting as evalWritingApi } from '../js/writeeval.js';
+import { canRecognizePhoto, recognizePhoto } from '../js/ocr.js';
 
 const WORKER = 'https://purple-cake-2966.o-sintsova.workers.dev'; // прокси DeepSeek
 
@@ -266,11 +267,40 @@ export async function renderWriting(container, cfg) {
     const resultBox = el('div', {});
 
     const countWords = () => area.value.trim().split(/\s+/).filter(Boolean).length;
-    area.addEventListener('input', () => {
+    const updateWc = () => {
       const w = countWords();
       wc.textContent = w + ' ' + plural(w, t.wordsWord) + ' · ' + wMin + '–' + wMax;
       wc.className = 'wc ' + (w >= wMin && w <= wMax ? 'ok' : (w > wMax ? 'bad' : (w >= Math.round(wMin * 0.6) ? 'warn' : '')));
-    });
+    };
+    area.addEventListener('input', updateWc);
+
+    // --- Фото письма (OCR через Yandex Vision). Рукопись врёт → обязателен шаг «сверь и поправь». ---
+    function photoBlock() {
+      if (!canRecognizePhoto()) return null; // воркер не настроен — кнопки нет
+      const input = el('input', { type: 'file', accept: 'image/*', capture: 'environment', style: { display: 'none' } });
+      const pbtn = el('button', { class: 'btn btn-ghost w-photo', text: t.wPhoto });
+      const note = el('div', { class: 'w-photo-note', style: { display: 'none' }, text: t.wPhotoNote });
+      pbtn.addEventListener('click', () => input.click());
+      input.addEventListener('change', async () => {
+        const file = input.files && input.files[0];
+        input.value = ''; // чтобы повторный выбор того же файла тоже сработал
+        if (!file) return;
+        errBox.style.display = 'none'; note.style.display = 'none';
+        pbtn.disabled = true; pbtn.textContent = t.wPhotoLoading;
+        try {
+          const text = await recognizePhoto(file);
+          area.value = (area.value.trim() ? area.value.trim() + '\n' : '') + text;
+          updateWc();
+          note.style.display = 'block';
+          area.focus();
+        } catch (e) {
+          errBox.textContent = t.wPhotoErr(e.message); errBox.style.display = 'block';
+        } finally {
+          pbtn.disabled = false; pbtn.textContent = t.wPhoto;
+        }
+      });
+      return el('div', { class: 'w-photo-row' }, [pbtn, input, note]);
+    }
 
     btn.addEventListener('click', async () => {
       const text = area.value.trim();
@@ -327,6 +357,7 @@ export async function renderWriting(container, cfg) {
         ideasBlock(it),
         resultBox,
         el('div', { style: { position: 'relative' } }, [area, wc]),
+        photoBlock(),
         el('div', { style: { marginTop: '14px' } }, [btn]),
         loader, errBox,
       ]),

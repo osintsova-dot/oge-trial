@@ -499,6 +499,10 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .wc{position:absolute;right:12px;bottom:12px;font-size:12px;font-weight:800;background:var(--card);
   padding:4px 10px;border-radius:10px;box-shadow:0 1px 6px rgba(0,0,0,.12);color:var(--muted)}
 .wc.ok{color:var(--ok)}.wc.warn{color:var(--warn)}.wc.bad{color:var(--bad)}
+.w-photo-row{margin-top:10px}
+.w-photo{width:100%;font-size:14px}
+.w-photo-note{margin-top:10px;padding:10px 12px;border-radius:12px;font-size:13px;line-height:1.4;
+  background:rgba(224,162,30,.12);color:var(--warn);font-weight:600}
 .letter-result{background:var(--card);border-radius:16px;padding:16px;margin-bottom:14px;box-shadow:0 2px 12px var(--shadow)}
 .lr-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
 .lr-score{font-size:38px;font-weight:800;color:var(--p-text)}

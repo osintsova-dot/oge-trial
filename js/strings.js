@@ -324,6 +324,9 @@ export const STRINGS = {
     wWords: (n, w) => `${n} ${w} · 100–120`, wordsWord: ['слово', 'слова', 'слов'],
     wErrShort: 'Напиши письмо (хотя бы несколько предложений).',
     wErrServer: (s) => 'Ошибка проверки: ' + s,
+    wPhoto: '📷 Фото письма', wPhotoLoading: 'Распознаю фото…',
+    wPhotoNote: 'Распознано с фото. Обязательно сверь с оригиналом и поправь ошибки — иначе баллы снизятся за ошибки распознавания, а не твои.',
+    wPhotoErr: (s) => 'Не вышло распознать фото: ' + s,
     // progress
     progTitle: 'Мой прогресс', bySection: 'По разделам',
     solved: (a, c) => `решено ${a} · верно ${c}`, noSolved: 'пока нет решённых заданий',
@@ -592,6 +595,9 @@ export const STRINGS = {
     wWords: (n, w) => `${n} ${w}`, wordsWord: ['word', 'words', 'words'],
     wErrShort: 'Write your answer first (at least a few sentences).',
     wErrServer: (s) => 'Check failed: ' + s,
+    wPhoto: '📷 Photo of my writing', wPhotoLoading: 'Reading the photo…',
+    wPhotoNote: 'Recognised from the photo. Check it against the original and fix any mistakes — otherwise the score will suffer from recognition errors, not yours.',
+    wPhotoErr: (s) => 'Could not read the photo: ' + s,
     // progress
     progTitle: 'My progress', bySection: 'By section',
     solved: (a, c) => `done ${a} · correct ${c}`, noSolved: 'no tasks solved yet',
