@@ -88,6 +88,9 @@ export function renderPrintView(container, opts) {
   if (opts.worksheet) {
     const grid = buildWorksheetGrid(opts.sections, P, opts.exam);
     if (grid) sheets.push(grid);
+    // Бланк ответов №2 — для письма (email/essay), как на реальном экзамене
+    const s2 = buildSheet2(P, opts.sections, opts.exam);
+    if (s2) sheets.push(s2);
     if (opts.withKeys) sheets.push(buildKeysPage(opts.sections, P, opts.exam));
   } else {
     sheets = [
@@ -376,14 +379,14 @@ function answerRow(num) {
 function buildWorksheetGrid(sections, P, exam) {
   let n = 0;
   const rows = [];
-  // МНОГОЗНАЧНЫЙ ответ (слово ИЛИ цифровая последовательность) → открытая линия: связный почерк/цифры
-  // OCR читает заметно лучше, чем изолированные символы в клетках (так смещались и буквы, и цифры).
-  // ОДИНОЧНАЯ цифра (выбор/лексика/ОГЭ-верно-неверно) → одна клетка (так читается надёжно).
+  // ВСЕ ответы — на открытой линии (а не в клетках по символам): связный почерк/цифры OCR читает
+  // заметно лучше изолированных клеток (в клетках смещались и буквы, и цифровые последовательности).
+  // Заодно единообразно и аккуратно выглядит.
   for (const sec of sections) {
     if (sec.id === 'writing' || sec.id === 'speaking') continue;
-    for (const it of (sec.items || [])) for (const len of itemSlots(it, exam)) {
+    for (const it of (sec.items || [])) for (const _ of itemSlots(it, exam)) {
       n += 1;
-      rows.push({ num: n, multi: len > 1 });
+      rows.push({ num: n });
     }
   }
   if (!rows.length) return null;
@@ -394,9 +397,7 @@ function buildWorksheetGrid(sections, P, exam) {
     el('div', { class: 'ws-grid-note', text: P.wsGridNote }),
     el('div', { class: 'ws-grid' }, rows.map((r) => el('div', { class: 'ws-grow' }, [
       el('span', { class: 'ws-gnum', text: String(r.num) }),
-      r.multi
-        ? el('span', { class: 'ws-gline' })
-        : el('span', { class: 'ws-gcells' }, [el('span', { class: 'ws-acell' })]),
+      el('span', { class: 'ws-gline' }),
     ]))),
   ]);
 }
