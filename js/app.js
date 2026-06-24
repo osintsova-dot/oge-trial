@@ -23,7 +23,9 @@ function lazy(path, name, arg) {
 }
 
 const view = document.getElementById('view');
-const goHome = () => { location.hash = '#/'; };
+// На главную. Если hash уже '#/', смена не вызовет 'hashchange' → рисуем главную напрямую,
+// иначе после онбординга (особенно в установленном PWA, где URL уже с '#/') экран не сменится.
+const goHome = () => { if (location.hash !== '#/') location.hash = '#/'; else route(); };
 
 function pct(a, b) { return b ? Math.round((a / b) * 100) : 0; }
 function accColor(p) { return p >= 65 ? 'var(--ok)' : p >= 50 ? 'var(--warn)' : 'var(--bad)'; }
@@ -749,6 +751,8 @@ function renderExamDate(edit) {
 function renderExamIntro() {
   const cards = t.examIntro || [];
   if (!cards.length) { setOnboarded(true); goHome(); return; }
+  // убираем экран даты из-под интро-оверлея (чтобы его кнопки не «торчали» и не перехватывали тапы)
+  mount(view, el('div', { class: 'splash' }, [el('div', { class: 'shine' })]));
   slides(cards, { lastCta: t.go, onDone: () => { setOnboarded(true); goHome(); } });
 }
 
