@@ -120,6 +120,9 @@ export async function renderMock(container, cfg) {
       sub: EXAM.badge,
       exam: EXAM.id,
       sections: v.sections,
+      // одноколоночная OCR-сетка (надёжно читается по фото) вместо 2-колоночного офиц. бланка;
+      // нумерация совпадает с enumerateAnswerKeys → проверка «📷 по фото» сходится
+      worksheet: true,
       onBack: introScreen,
     });
   }
