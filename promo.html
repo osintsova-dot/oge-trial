@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Speak &amp; Smile — тренажёр ОГЭ и ЕГЭ по английскому</title>
+<meta name="theme-color" content="#6C3FC5">
+<meta name="description" content="Speak & Smile — тренажёр всей письменной и устной части ОГЭ и ЕГЭ по английскому. Тренировка по разделам, пробники с таймером, проверка письма и устной речи ИИ, геймификация для подростков, конструктор заданий для учителей. Работает офлайн, без аккаунтов.">
+<style>
+  :root{
+    --p:#6C3FC5; --p2:#8a5cf0; --honey:#F5C842; --ink:#1A1A2E; --bg:#F4F4F8;
+    --line:#e7e7ef; --muted:#5b5b73; --surf:#fff;
+    --grad:linear-gradient(135deg,#6C3FC5 0%,#8a5cf0 55%,#b07ff0 100%);
+    --grad-honey:linear-gradient(135deg,#F5C842 0%,#ffd968 100%);
+    --shadow:0 10px 40px rgba(108,63,197,.14);
+    --shadow-sm:0 4px 18px rgba(108,63,197,.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+  section{padding:92px 0}
+  .eyebrow{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.10em;text-transform:uppercase;color:var(--p);background:rgba(108,63,197,.08);padding:7px 14px;border-radius:999px;margin-bottom:18px}
+  h1{font-size:clamp(34px,6vw,60px);line-height:1.05;font-weight:900;letter-spacing:-.02em}
+  h2{font-size:clamp(27px,4.2vw,42px);line-height:1.1;font-weight:900;letter-spacing:-.02em}
+  h3{font-size:20px;font-weight:800}
+  p.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);max-width:680px}
+  .center{text-align:center}
+  .center p.lead,.center .eyebrow{margin-left:auto;margin-right:auto}
+
+  /* кнопки */
+  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:800;font-size:16px;padding:15px 26px;border-radius:15px;border:0;cursor:pointer;transition:transform .12s ease,box-shadow .12s ease}
+  .btn:active{transform:translateY(1px)}
+  .btn-p{background:var(--grad);color:#fff;box-shadow:0 8px 24px rgba(108,63,197,.35)}
+  .btn-p:hover{box-shadow:0 12px 30px rgba(108,63,197,.45)}
+  .btn-h{background:var(--grad-honey);color:#3a2b00;box-shadow:0 8px 24px rgba(245,200,66,.4)}
+  .btn-ghost{background:#fff;color:var(--p);border:1.5px solid var(--line);box-shadow:var(--shadow-sm)}
+  .btns{display:flex;gap:14px;flex-wrap:wrap}
+
+  /* hero */
+  .hero{background:var(--grad);color:#fff;padding:54px 0 0;overflow:hidden;position:relative}
+  .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(700px 360px at 85% 10%,rgba(245,200,66,.28),transparent 60%);pointer-events:none}
+  .hero .wrap{position:relative;z-index:1}
+  .navbar{display:flex;align-items:center;justify-content:space-between;padding-bottom:40px}
+  .brand{display:flex;align-items:center;gap:11px;font-weight:900;font-size:18px}
+  .brand img{width:34px;height:34px;border-radius:9px;background:#fff;padding:3px}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center;padding-bottom:30px}
+  .hero h1{color:#fff}
+  .hero .sub{font-size:clamp(17px,2.3vw,22px);color:rgba(255,255,255,.92);margin:20px 0 28px;max-width:560px}
+  .hero .tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px;color:#fff}
+  .chip{font-size:13.5px;font-weight:700;background:rgba(255,255,255,.16);padding:8px 14px;border-radius:999px;backdrop-filter:blur(4px)}
+  .hero-art{display:flex;justify-content:center;align-items:flex-end;position:relative}
+  .hero-art img{width:min(340px,80%);filter:drop-shadow(0 24px 40px rgba(0,0,0,.25))}
+
+  /* телефон-рамка */
+  .phone{position:relative;border:9px solid #14101f;border-radius:38px;background:#14101f;box-shadow:var(--shadow);overflow:hidden;width:248px;flex:none}
+  .phone img{border-radius:28px;display:block;width:100%}
+  .phone::before{content:"";position:absolute;top:9px;left:50%;transform:translateX(-50%);width:78px;height:18px;background:#14101f;border-radius:0 0 12px 12px;z-index:2}
+  .phones{display:flex;gap:22px;justify-content:center;flex-wrap:wrap}
+
+  /* карточки фич */
+  .grid{display:grid;gap:20px}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  .card{background:var(--surf);border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:var(--shadow-sm)}
+  .card .ic{font-size:30px;margin-bottom:12px;display:block}
+  .card h3{margin-bottom:8px}
+  .card p{color:var(--muted);font-size:15.5px}
+
+  /* экзамен-карточки */
+  .exam{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .exam-card{border-radius:24px;padding:30px;color:#fff;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+  .exam-oge{background:var(--grad)}
+  .exam-ege{background:linear-gradient(135deg,#1a1430 0%,#3a2766 60%,#6C3FC5 100%)}
+  .exam-card h3{font-size:30px;font-weight:900;margin-bottom:4px}
+  .exam-card .ex-sub{color:rgba(255,255,255,.85);margin-bottom:18px;font-size:15px}
+  .exam-card ul{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:24px}
+  .exam-card li{display:flex;gap:10px;font-size:15px;align-items:flex-start}
+  .exam-card li b{font-weight:800}
+  .exam-card li::before{content:"✓";color:var(--honey);font-weight:900;flex:none}
+
+  /* шаги */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:s}
+  .step{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:var(--shadow-sm);position:relative}
+  .step .n{counter-increment:s;width:40px;height:40px;border-radius:12px;background:var(--grad);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:14px}
+  .step .n::before{content:counter(s)}
+
+  /* секция «для кого» */
+  .who{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+  .who.rev .who-txt{order:2}
+  .who-txt h2{margin-bottom:14px}
+  .who-txt .lead{margin-bottom:18px}
+  .who-list{list-style:none;display:flex;flex-direction:column;gap:12px}
+  .who-list li{display:flex;gap:12px;align-items:flex-start;font-size:16px}
+  .who-list .e{font-size:22px;flex:none;line-height:1.3}
+  .who-art{display:flex;justify-content:center}
+
+  .alt{background:#fff}
+  .tinted{background:linear-gradient(180deg,#f3effc,#f8f6fd)}
+
+  /* финальный CTA */
+  .final{background:var(--grad);color:#fff;text-align:center;border-radius:30px;padding:60px 30px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .final::after{content:"";position:absolute;inset:0;background:radial-gradient(500px 260px at 50% 0,rgba(245,200,66,.3),transparent 60%)}
+  .final>*{position:relative;z-index:1}
+  .final h2{color:#fff;margin-bottom:14px}
+  .final .btns{justify-content:center;margin-top:26px}
+  .final-spiky{width:120px;margin:0 auto 18px;filter:drop-shadow(0 12px 22px rgba(0,0,0,.25))}
+
+  footer{padding:40px 0 60px;text-align:center;color:var(--muted);font-size:14px}
+  footer .brand{justify-content:center;color:var(--ink);margin-bottom:10px}
+
+  .note{font-size:13.5px;color:rgba(255,255,255,.8)}
+  .mini{font-size:13.5px;color:var(--muted)}
+
+  @media(max-width:860px){
+    section{padding:64px 0}
+    .hero-grid,.exam,.who{grid-template-columns:1fr}
+    .who.rev .who-txt{order:0}
+    .who-art{order:-1}
+    .g3,.steps{grid-template-columns:1fr}
+    .g2{grid-template-columns:1fr}
+    .hero-art{margin-top:10px}
+    .hero-art img{width:min(260px,62%)}
+    .navbar .brand span.tg{display:none}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <nav class="navbar">
+      <div class="brand"><img src="./assets/logo.png" alt="Speak &amp; Smile"><span>Speak &amp; Smile</span></div>
+      <div class="btns"><a class="btn btn-h" href="#install">Установить</a></div>
+    </nav>
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow" style="background:rgba(255,255,255,.16);color:#fff">Английский · ОГЭ и ЕГЭ</span>
+        <h1>Готовься к экзамену так, что хочется вернуться завтра</h1>
+        <p class="sub">Тренажёр всей письменной и устной части ОГЭ и ЕГЭ по английскому: тренировка по разделам, пробники с таймером и баллами, проверка письма и речи искусственным интеллектом. С характером, без занудства.</p>
+        <div class="btns">
+          <a class="btn btn-h" href="./oge.html">Открыть ОГЭ →</a>
+          <a class="btn btn-ghost" href="./ege.html">Открыть ЕГЭ →</a>
+        </div>
+        <div class="tags">
+          <span class="chip">⚡ Работает офлайн</span>
+          <span class="chip">🔒 Без аккаунтов</span>
+          <span class="chip">📲 Ставится как приложение</span>
+          <span class="chip">🤖 Проверка письма ИИ</span>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="./assets/spiky-hero.png" alt="Спики — маскот Speak &amp; Smile">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ ЧТО ЭТО ============ -->
+<section class="center">
+  <div class="wrap">
+    <span class="eyebrow">Что это</span>
+    <h2>Весь экзамен — в одном приложении</h2>
+    <p class="lead">Не десяток разных сборников и сайтов, а единый тренажёр: словарь, грамматика, чтение, аудирование, письмо, говорение и лексика — плюс целые пробники как на ФИПИ. Один движок, два экзамена.</p>
+    <div class="grid g3" style="margin-top:46px;text-align:left">
+      <div class="card"><span class="ic">🎯</span><h3>Каждый раздел отдельно</h3><p>Прокачивай слабое место точечно — от грамматики и словообразования до письма и устной части.</p></div>
+      <div class="card"><span class="ic">⏱️</span><h3>Пробники с таймером</h3><p>Целый вариант как на реальном экзамене: жёсткое время, баллы по разделам и прогноз отметки в конце.</p></div>
+      <div class="card"><span class="ic">🤖</span><h3>Проверка с ИИ</h3><p>Письмо и эссе оцениваются по официальным критериям ФИПИ, устная речь — распознаётся и разбирается.</p></div>
+      <div class="card"><span class="ic">🔥</span><h3>Возвращаться приятно</h3><p>Серии дней, опыт, уровни, награды и тема недели — учёба превращается в привычку, а не в наказание.</p></div>
+      <div class="card"><span class="ic">📷</span><h3>Проверка по фото</h3><p>Решай на бумаге, сфотографируй бланк — приложение распознает и сверит с ключами. Письмо тоже можно сдать фото.</p></div>
+      <div class="card"><span class="ic">🧑‍🏫</span><h3>И для учителя</h3><p>Конструктор заданий, домашка по ссылке, журнал класса с сильными и слабыми местами каждого ученика.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ОГЭ и ЕГЭ ============ -->
+<section class="alt" id="exams">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">Два приложения</span><h2>ОГЭ и ЕГЭ — каждый под свой формат</h2>
+    <p class="lead">Актуальные форматы заданий 2026 года, реальные тексты и аудио из открытого банка ФИПИ.</p></div>
+    <div class="exam" style="margin-top:46px">
+      <div class="exam-card exam-oge">
+        <h3>ОГЭ</h3>
+        <div class="ex-sub">9 класс · вся письменная и устная часть</div>
+        <ul>
+          <li><span>Грамматика — <b>660+ заданий</b> по 15 темам</span></li>
+          <li><span>Словообразование — <b>430+ заданий</b></span></li>
+          <li><span>Чтение и аудирование — тексты и аудио ФИПИ с разбором</span></li>
+          <li><span>Письмо (задание 35) — проверка ИИ по К1–К4</span></li>
+          <li><span>Говорение — диктофон + эталоны ответов</span></li>
+          <li><span>Тематический словарь — 15 слов в день</span></li>
+          <li><span>Пробник — <b>19 вариантов</b> с таймером и баллами</span></li>
+        </ul>
+        <a class="btn btn-h" href="./oge.html">Открыть ОГЭ →</a>
+      </div>
+      <div class="exam-card exam-ege">
+        <h3>ЕГЭ</h3>
+        <div class="ex-sub">11 класс · формат 2026 года</div>
+        <ul>
+          <li><span>Грамматика — <b>380+ заданий</b> по 9 темам</span></li>
+          <li><span>Лексика — <b>728 заданий</b> по 6 темам</span></li>
+          <li><span>Чтение и аудирование — все форматы ФИПИ</span></li>
+          <li><span>E-mail (задание 37) и эссе по таблице (задание 38)</span></li>
+          <li><span>Письмо — проверка ИИ по К1–К5</span></li>
+          <li><span>Говорение — диктофон + разбор ИИ</span></li>
+          <li><span>Пробник — <b>27 вариантов</b> с таймером и прогнозом балла</span></li>
+        </ul>
+        <a class="btn btn-h" href="./ege.html">Открыть ЕГЭ →</a>
+      </div>
+    </div>
+    <div class="phones" style="margin-top:44px">
+      <div class="phone"><img src="./promo-shots/oge-home.png" alt="Главный экран ОГЭ"></div>
+      <div class="phone"><img src="./promo-shots/ege-home.png" alt="Главный экран ЕГЭ"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ КАК РАБОТАЕТ ============ -->
+<section>
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">Как это работает</span><h2>Три шага к уверенности на экзамене</h2></div>
+    <div class="steps" style="margin-top:46px">
+      <div class="step"><div class="n"></div><h3>Тренируйся по разделам</h3><p>Каждый день — норма слов и задания по слабым темам. Спики подсказывает, как делать задание и сколько тратить времени.</p></div>
+      <div class="step"><div class="n"></div><h3>Проверяй себя на пробнике</h3><p>Целый вариант с жёстким таймером, без подсказок — как на настоящем экзамене. Можно прорешать и на бумаге.</p></div>
+      <div class="step"><div class="n"></div><h3>Получай разбор и баллы</h3><p>Письмо и речь оценивает ИИ по критериям, остальное — по ключам. Виден прогресс и прогноз итоговой отметки.</p></div>
+    </div>
+    <div class="phones" style="margin-top:44px">
+      <div class="phone"><img src="./promo-shots/oge-drill.png" alt="Задание с проверкой"></div>
+      <div class="phone"><img src="./promo-shots/oge-mock.png" alt="Пробный экзамен"></div>
+      <div class="phone"><img src="./promo-shots/oge-progress.png" alt="Прогресс"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ДЕТЯМ ============ -->
+<section class="tinted">
+  <div class="wrap">
+    <div class="who">
+      <div class="who-txt">
+        <span class="eyebrow">Детям 14–17</span>
+        <h2>Учёба, к которой тянет вернуться</h2>
+        <p class="lead">Внутри — взрослый, без детскости интерфейс, но с механиками, которые удерживают: видно, как растёшь, и не хочется рвать серию.</p>
+        <ul class="who-list">
+          <li><span class="e">🔥</span><span><b>Серия дней и опыт.</b> Каждый день тренировки копит XP и уровни — бросить жалко.</span></li>
+          <li><span class="e">🎖️</span><span><b>Награды и жетоны.</b> За работу — бейджи и привилегии (например, подсказку на тесте у учителя).</span></li>
+          <li><span class="e">🎨</span><span><b>Свои темы оформления.</b> Открываешь новые скины по мере прогресса.</span></li>
+          <li><span class="e">🦝</span><span><b>Спики рядом.</b> Маскот встречает на старте и подсказывает по ходу — но не мешает.</span></li>
+          <li><span class="e">📅</span><span><b>Обратный отсчёт до экзамена</b> и понятная норма дня — видно, успеваешь ли.</span></li>
+        </ul>
+      </div>
+      <div class="who-art">
+        <div class="phone"><img src="./promo-shots/oge-rewards.png" alt="Награды и темы"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ УЧИТЕЛЯМ ============ -->
+<section>
+  <div class="wrap">
+    <div class="who rev">
+      <div class="who-txt">
+        <span class="eyebrow">Учителям</span>
+        <h2>Готовит к уроку за минуты, а не за вечер</h2>
+        <p class="lead">Конструктор собирает задания, выдаёт домашку одной ссылкой и сам проверяет — даже бумажные бланки по фото.</p>
+        <ul class="who-list">
+          <li><span class="e">🧩</span><span><b>Конструктор worksheet.</b> Отбираешь задания по темам → печатаешь лист и ключи.</span></li>
+          <li><span class="e">🔗</span><span><b>Домашка по ссылке.</b> Грамматика, лексика, чтение, аудио и письмо — в одну ссылку. Письмо проверит ИИ.</span></li>
+          <li><span class="e">📊</span><span><b>Журнал класса.</b> Сильные и слабые места — и у группы, и у каждого ученика.</span></li>
+          <li><span class="e">📷</span><span><b>Проверка бланка по фото.</b> Сфотографировал заполненный бланк — приложение распознало и сверило с ключами.</span></li>
+        </ul>
+      </div>
+      <div class="who-art">
+        <div class="phone"><img src="./promo-shots/oge-teacher.png" alt="Конструктор заданий для учителя"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ РОДИТЕЛЯМ ============ -->
+<section class="tinted">
+  <div class="wrap">
+    <div class="who">
+      <div class="who-txt">
+        <span class="eyebrow">Родителям</span>
+        <h2>Спокойствие: видно, что подготовка идёт</h2>
+        <p class="lead">Ребёнок занимается сам, а вы видите результат. Без подписок, без сбора данных, без лишних установок.</p>
+        <ul class="who-list">
+          <li><span class="e">📈</span><span><b>Понятный прогресс.</b> Серия дней, освоенные темы и прогноз итоговой отметки/балла.</span></li>
+          <li><span class="e">🆓</span><span><b>Без платных подписок</b> и без рекламы.</span></li>
+          <li><span class="e">🔒</span><span><b>Без аккаунтов и сбора данных.</b> Весь прогресс хранится на устройстве ребёнка.</span></li>
+          <li><span class="e">⚡</span><span><b>Работает офлайн</b> и ставится на телефон как обычное приложение — ничего не качать из магазинов.</span></li>
+          <li><span class="e">🎯</span><span><b>Реальный формат ФИПИ</b> — ребёнок готовится к тому, что действительно будет на экзамене.</span></li>
+        </ul>
+      </div>
+      <div class="who-art">
+        <div class="phone"><img src="./promo-shots/oge-progress.png" alt="Прогресс ученика"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ИИ-ФИШКИ ============ -->
+<section class="alt">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">Умная проверка</span><h2>Письмо и речь — как у живого эксперта</h2>
+    <p class="lead">Самое сложное в подготовке — получить разбор письма и устной части. Здесь это делает ИИ по официальным критериям, мгновенно.</p></div>
+    <div class="who" style="margin-top:46px">
+      <div class="who-art"><div class="phone"><img src="./promo-shots/ege-essay.png" alt="Эссе с таблицей и проверкой"></div></div>
+      <div class="who-txt">
+        <ul class="who-list">
+          <li><span class="e">✍️</span><span><b>Эссе и письмо по критериям.</b> Балл по каждому критерию (К1–К5), список ошибок и исправленный вариант.</span></li>
+          <li><span class="e">📊</span><span><b>Задание 38 — с настоящей таблицей.</b> Данные опроса показаны как на экзамене, рамка и идеи помогают начать.</span></li>
+          <li><span class="e">📷</span><span><b>Сдай письмо фото.</b> Сфотографируй рукописный текст — приложение распознает и проверит.</span></li>
+          <li><span class="e">🎤</span><span><b>Говорение.</b> Запись с диктофона распознаётся и разбирается, есть эталоны ответов.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ УСТАНОВКА / CTA ============ -->
+<section id="install">
+  <div class="wrap">
+    <div class="final">
+      <img class="final-spiky" src="./assets/spiky-cheer.png" alt="Спики">
+      <span class="eyebrow" style="background:rgba(255,255,255,.18);color:#fff">Установка за 10 секунд</span>
+      <h2>Добавь на экран — и готовься где угодно</h2>
+      <p class="note" style="max-width:560px;margin:0 auto">Открой нужное приложение в браузере телефона → «Поделиться» → «На экран „Домой“». Иконка появится рядом с остальными, работает офлайн.</p>
+      <div class="btns">
+        <a class="btn btn-h" href="./oge.html">Открыть ОГЭ →</a>
+        <a class="btn btn-ghost" href="./ege.html">Открыть ЕГЭ →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand"><img src="./assets/logo.png" alt="" style="width:30px;height:30px;border-radius:8px;background:#fff;padding:3px"><span>Speak &amp; Smile</span></div>
+    <p class="mini">Тренажёр ОГЭ и ЕГЭ по английскому · школа Speak &amp; Smile · {YEAR}</p>
+  </div>
+</footer>
+
+<script>document.querySelectorAll('footer .mini').forEach(e=>e.innerHTML=e.innerHTML.replace('{YEAR}',new Date().getFullYear()));</script>
+</body>
+</html>
