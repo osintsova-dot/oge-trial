@@ -408,10 +408,11 @@ async function loadWritingBlocks() {
     let d;
     try { d = await loadJSON(tk.dataFile); } catch (e) { continue; }
     (d || []).forEach((it) => {
+      if (tk.sectionId === 'essay' && !it.table) return; // в ДЗ — только зад.38 (с таблицей/диаграммой), без старого opinion
       const prompt = (it.prompt || ((it.context || '') + ' ' + (it.questions || '')).trim() || it.subject || '').replace(/\s+/g, ' ');
       out.push({ id: tk.sectionId + '~' + it.zid, secId: tk.sectionId, zid: it.zid,
         wlabel: WLABEL[tk.sectionId] || tk.id, title: it.name ? ('Письмо от ' + it.name) : (it.subject || prompt).slice(0, 60), prompt,
-        criteria: tk.criteria, max: tk.max, words: tk.words });
+        table: it.table || null, criteria: tk.criteria, max: tk.max, words: tk.words });
     });
   }
   return out;
@@ -912,6 +913,10 @@ export async function renderHomework(container, opts) {
           el('div', { class: 'hw-rblock' }, [
             el('div', { class: 'hw-rinstr', text: '✉️ ' + (u.block.wlabel || H.wTask) }),
             el('div', { class: 'hw-rtext', text: u.block.prompt }),
+            (u.block.table && u.block.table.rows) ? el('div', { class: 'essay-table' }, [
+              u.block.table.q ? el('div', { class: 'et-q', text: u.block.table.q }) : null,
+              el('table', { class: 'et' }, [el('tbody', {}, u.block.table.rows.map((r) => el('tr', {}, [el('td', { text: r[0] }), el('td', { class: 'et-pct', text: r[1] + '%' })])))]),
+            ].filter(Boolean)) : null,
             ta, wc, photoNode, errBox,
           ].filter(Boolean)),
         ]));
