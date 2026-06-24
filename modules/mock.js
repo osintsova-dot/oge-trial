@@ -107,10 +107,15 @@ export async function renderMock(container, cfg) {
 
   // Проверка распечатанного бланка пробника по фото (OCR) — самопроверка, без записи в журнал.
   function openBlankScan(v) {
-    clearTimer();
-    const expected = enumerateAnswerKeys(v.sections, EXAM.id);
-    if (!expected.length) { alert(M.scanNoKeys); return; }
-    renderBlankCheck(container, expected, introScreen, { save: false, title: M.scanTitle, sub: M.scanSub });
+    try {
+      clearTimer();
+      const expected = enumerateAnswerKeys(v.sections, EXAM.id);
+      if (!expected.length) { alert(M.scanNoKeys); return; }
+      renderBlankCheck(container, expected, introScreen, { save: false, title: M.scanTitle, sub: M.scanSub });
+    } catch (e) {
+      alert('Проверка бланка: ' + (e && e.message ? e.message : e) + '\n' + (e && e.stack ? e.stack.split('\n').slice(0, 3).join('\n') : ''));
+      throw e;
+    }
   }
 
   function openPrint(v) {
