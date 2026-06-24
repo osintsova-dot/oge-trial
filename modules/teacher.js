@@ -104,6 +104,10 @@ const READ_LABEL = { tf: 'Верно/неверно/не сказано', match:
 const JOURNAL_KEY = 'ss_teacher_journal';
 function loadJournal() { try { return JSON.parse(localStorage.getItem(JOURNAL_KEY)) || []; } catch (e) { return []; } }
 function saveJournal(arr) { try { localStorage.setItem(JOURNAL_KEY, JSON.stringify(arr)); } catch (e) {} }
+// сохранённые выданные наборы (worksheets) — чтобы проверить именно их позже
+const WS_SETS_KEY = 'ss_worksheets';
+function loadWsSets() { try { return JSON.parse(localStorage.getItem(WS_SETS_KEY)) || []; } catch (e) { return []; } }
+function saveWsSets(arr) { try { localStorage.setItem(WS_SETS_KEY, JSON.stringify(arr)); } catch (e) {} }
 function hashStr(s) { let h = 5381; for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0; return (h >>> 0).toString(36); }
 function addToJournal(entry) {
   const arr = loadJournal();
@@ -528,7 +532,10 @@ export async function renderTeacher(container, opts) {
     view.appendChild(el('div', { class: 'tch-top' }, [
       el('button', { class: 'back', text: '←', onclick: opts.goHome }),
       el('div', { class: 'tch-h' }, [el('div', { class: 'tch-t', text: T.title }), el('div', { class: 'tch-sub', text: T.sub })]),
-      el('button', { class: 'btn tch-journal-btn', text: '📊 ' + T.journal, onclick: () => renderJournal(container, opts) }),
+      el('div', { class: 'tch-head-btns' }, [
+        el('button', { class: 'btn tch-journal-btn', text: '📋 ' + T.savedBtn, onclick: showSavedSets }),
+        el('button', { class: 'btn tch-journal-btn', text: '📊 ' + T.journal, onclick: () => renderJournal(container, opts) }),
+      ]),
     ]));
 
     // вкладки разделов (+ «Чтение»)
@@ -661,10 +668,23 @@ export async function renderTeacher(container, opts) {
     return out;
   }
 
+  // запомнить выданный набор (чтобы проверить именно его позже)
+  function rememberWsSet() {
+    const setStr = encodeSet(); if (!setStr) return;
+    const arr = loadWsSets();
+    const dateStr = new Date().toLocaleDateString('ru-RU', { day: '2-digit', month: '2-digit' });
+    const name = (curTopic ? curTopic + ' · ' : '') + picked.size + ' зад. · ' + dateStr;
+    const ex = arr.find((s) => s.exam === EXAM.id && s.set === setStr);
+    if (ex) { ex.ts = Date.now(); ex.name = name; }
+    else arr.push({ id: hashStr(EXAM.id + setStr + Date.now()), exam: EXAM.id, name, ts: Date.now(), set: setStr });
+    saveWsSets(arr);
+  }
+
   function openPrint(withKeys) {
     if (!picked.size) return;
     const sections = buildSections();
     if (!sections.length) { alert(T.printNoReading); return; } // чтение печатается пока только через ДЗ
+    rememberWsSet(); // сохранить набор для последующей проверки бланков
     renderPrintView(container, {
       title: T.wsTitle, sub: T.wsSub(EXAM.badge), exam: EXAM.id, sections,
       worksheet: true, withKeys,
@@ -681,6 +701,38 @@ export async function renderTeacher(container, opts) {
     for (const sec of sections) for (const it of (sec.items || [])) { num += 1; expected.push({ num, key: it.key || '', text: it.text || '', zid: it.zid, secId: it.sub, item: it }); }
     if (!expected.length) { alert(T.bkNoTasks); return; }
     renderBlankCheck(container, expected, () => renderTeacher(container, opts));
+  }
+
+  // экран «Выданные»: список сохранённых наборов → проверить бланк именно этого набора
+  function showSavedSets() {
+    const sets = loadWsSets().filter((s) => s.exam === EXAM.id).sort((a, b) => b.ts - a.ts);
+    const fmtDate = (ts) => { try { return new Date(ts).toLocaleString('ru-RU', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }); } catch (e) { return ''; } };
+    view.replaceChildren();
+    view.appendChild(el('div', { class: 'tch-top' }, [
+      el('button', { class: 'back', text: '←', onclick: draw }),
+      el('div', { class: 'tch-h' }, [el('div', { class: 'tch-t', text: T.savedTitle }), el('div', { class: 'tch-sub', text: T.savedSub })]),
+    ]));
+    if (!sets.length) { view.appendChild(el('div', { class: 'tch-empty', text: T.savedEmpty })); return; }
+    const list = el('div', { class: 'tch-list' });
+    for (const s of sets) {
+      list.appendChild(el('div', { class: 'tch-row saved-row' }, [
+        el('div', { class: 'tch-row-b' }, [
+          el('div', { class: 'tch-row-t', text: s.name }),
+          el('div', { class: 'tch-row-m', text: fmtDate(s.ts) }),
+        ]),
+        el('button', { class: 'btn btn-primary saved-check', text: T.checkBlank, onclick: () => {
+          picked.clear();
+          const g = parseSet(s.set);
+          for (const sec in g) for (const zid of g[sec]) picked.add(sec + ':' + zid);
+          openBlankCheck();
+        } }),
+        el('button', { class: 'saved-del', title: T.savedDel, text: '🗑', onclick: () => {
+          if (!confirm(T.savedDelConfirm)) return;
+          saveWsSets(loadWsSets().filter((x) => x.id !== s.id)); showSavedSets();
+        } }),
+      ]));
+    }
+    view.appendChild(list);
   }
 
   // кодируем выбранное в компактную строку: "secId:zid,zid;secId:zid"

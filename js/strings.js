@@ -248,6 +248,9 @@ export const STRINGS = {
       bkErr: (s) => 'Не вышло распознать бланк: ' + s, bkNoTasks: 'Сначала выбери задания.',
       bkName: 'Имя ученика (необязательно)',
       bkSave: '💾 Сохранить в журнал', bkSaved: 'Сохранено в журнал ✓', bkDup: 'Этот бланк уже в журнале',
+      savedBtn: 'Выданные', savedTitle: 'Выданные worksheets', savedSub: 'Сохранённые наборы — выбери, чтобы проверить бланк',
+      savedEmpty: 'Пока нет сохранённых наборов. Напечатай worksheet — он сохранится здесь, и потом можно будет проверить бланки.',
+      savedDel: 'Удалить', savedDelConfirm: 'Удалить этот набор?',
     },
     homework: {
       loading: 'Загружаю задания…', title: 'Домашнее задание', count: (n) => n + ' заданий',
@@ -836,6 +839,9 @@ export const STRINGS = {
       bkErr: (s) => 'Не вышло распознать бланк: ' + s, bkNoTasks: 'Сначала выбери задания.',
       bkName: 'Имя ученика (необязательно)',
       bkSave: '💾 Сохранить в журнал', bkSaved: 'Сохранено в журнал ✓', bkDup: 'Этот бланк уже в журнале',
+      savedBtn: 'Выданные', savedTitle: 'Выданные worksheets', savedSub: 'Сохранённые наборы — выбери, чтобы проверить бланк',
+      savedEmpty: 'Пока нет сохранённых наборов. Напечатай worksheet — он сохранится здесь, и потом можно будет проверить бланки.',
+      savedDel: 'Удалить', savedDelConfirm: 'Удалить этот набор?',
     },
     homework: {
       loading: 'Loading tasks…', title: 'Homework', count: (n) => n + ' tasks',
