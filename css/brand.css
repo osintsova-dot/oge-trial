@@ -511,6 +511,7 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .bk-num{min-width:44px;font-weight:700;color:var(--muted)}
 .bk-input{flex:1;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font-size:16px;text-transform:uppercase}
 .bk-name{width:100%;text-transform:none;margin-bottom:12px}
+.bk-code{width:100%;box-sizing:border-box;height:96px;margin:10px 0;padding:8px;border:1px solid var(--line);border-radius:10px;font:12px/1.3 monospace;background:var(--surf);color:var(--ink);resize:none}
 .tch-head-btns{display:flex;flex-direction:column;gap:6px;flex:none}
 .tch-actions{display:flex;gap:8px;padding:0 14px 8px}
 .tch-actions .tch-journal-btn{flex:1}

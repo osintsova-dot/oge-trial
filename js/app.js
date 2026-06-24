@@ -14,6 +14,7 @@ import { getState, levelInfo, levelTable, packStatus, streakActiveToday,
 import { EXAM, t, sectionById, plural } from './exam.js';
 import { dailyProgress, themeStats } from './vocab_srs.js';
 import { weeklyPlan } from './planner.js';
+import { exportProgress, importProgress } from './backup.js';
 import { renderDrill } from '../modules/drill.js';
 import { renderWriting } from '../modules/writing.js';
 import { renderReading } from '../modules/reading.js';
@@ -511,6 +512,8 @@ async function renderProgress() {
       el('button', { class: 'act-name', text: getSound() ? t.soundOn : t.soundOff,
         onclick: () => { setSound(!getSound()); renderProgress(); } }),
       el('button', { class: 'act-name', text: t.changeName, onclick: () => renderWelcome(getName(), true) }),
+      el('button', { class: 'act-name', text: t.backupSave, onclick: backupModal }),
+      el('button', { class: 'act-name', text: t.backupRestore, onclick: restoreFlow }),
       el('button', { class: 'act-name', text: '📅 ' + t.countdownSetTitle, onclick: () => renderExamDate(true) }),
       getRole() === 'teacher' ? el('button', { class: 'act-name', text: '🧑‍🏫 ' + t.exitTeacher, onclick: () => { setRole('student'); updateRoleUI(); goHome(); } }) : null,
       el('button', { class: 'act-reset', text: t.reset, onclick: () => {
@@ -518,6 +521,33 @@ async function renderProgress() {
       } }),
     ]),
   ]));
+}
+
+// --- Бэкап прогресса: показать код (копируемый) / восстановить из кода ---
+function backupModal() {
+  const code = exportProgress();
+  const back = el('div', { class: 'modal-back' });
+  const ta = el('textarea', { class: 'bk-code', readonly: 'readonly' }); ta.value = code;
+  const copyBtn = el('button', { class: 'btn btn-honey btn-block', text: t.backupCopy });
+  copyBtn.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(code); }
+    catch (e) { ta.focus(); ta.select(); try { document.execCommand('copy'); } catch (e2) {} }
+    copyBtn.textContent = t.backupCopied;
+  });
+  back.appendChild(el('div', { class: 'modal-card' }, [
+    el('div', { class: 'modal-title', text: t.backupSave }),
+    el('div', { class: 'modal-note', text: t.backupHint }),
+    ta, copyBtn,
+    el('button', { class: 'btn btn-block', style: { marginTop: '8px' }, text: t.backupClose, onclick: () => back.remove() }),
+  ]));
+  back.addEventListener('click', (e) => { if (e.target === back) back.remove(); });
+  document.body.appendChild(back);
+}
+function restoreFlow() {
+  const code = prompt(t.backupAsk);
+  if (!code) return;
+  try { importProgress(code); alert(t.backupOk); location.reload(); }
+  catch (e) { alert(t.backupErr(e.message)); }
 }
 
 // --- Награды (привилегии + скины) ---

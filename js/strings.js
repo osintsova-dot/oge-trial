@@ -349,6 +349,10 @@ export const STRINGS = {
     avgTitle: 'Средний балл за письма', avgSub: (n) => `проверено писем: ${n}`, avgCrit: 'по критериям К1–К4',
     achTitle: 'Достижения', changeName: 'Изменить имя', exitTeacher: 'Выйти из режима учителя', reset: 'Сбросить',
     resetConfirm: 'Сбросить весь прогресс на этом устройстве?',
+    backupSave: '💾 Сохранить прогресс', backupRestore: '📥 Восстановить прогресс',
+    backupHint: 'Скопируй код и сохрани (заметки/себе в чат). Если телефон очистит данные — вставишь его в «Восстановить».',
+    backupCopy: 'Копировать код', backupCopied: 'Скопировано ✓', backupClose: 'Готово',
+    backupAsk: 'Вставь код восстановления:', backupOk: 'Прогресс восстановлен ✓', backupErr: (s) => 'Не вышло: ' + s,
     soundOn: '🔊 Звук: вкл', soundOff: '🔇 Звук: выкл',
     heroWord: ['герой', 'героя', 'героев'],
     // rewards / perks
@@ -619,6 +623,10 @@ export const STRINGS = {
     avgTitle: 'Average writing score', avgSub: (n) => `essays checked: ${n}`, avgCrit: 'by the official criteria',
     achTitle: 'Achievements', changeName: 'Change name', exitTeacher: 'Exit teacher mode', reset: 'Reset',
     resetConfirm: 'Reset all progress on this device?',
+    backupSave: '💾 Save progress', backupRestore: '📥 Restore progress',
+    backupHint: 'Copy the code and keep it safe. If your phone clears the data, paste it into «Restore».',
+    backupCopy: 'Copy code', backupCopied: 'Copied ✓', backupClose: 'Done',
+    backupAsk: 'Paste your recovery code:', backupOk: 'Progress restored ✓', backupErr: (s) => 'Failed: ' + s,
     soundOn: '🔊 Sound: on', soundOff: '🔇 Sound: off',
     heroWord: ['hero', 'heroes', 'heroes'],
     // rewards / perks
