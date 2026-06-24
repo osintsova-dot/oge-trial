@@ -678,7 +678,7 @@ export async function renderTeacher(container, opts) {
     const sections = buildSections();
     const expected = [];
     let num = 0;
-    for (const sec of sections) for (const it of (sec.items || [])) { num += 1; expected.push({ num, key: it.key || '', text: it.text || '', zid: it.zid }); }
+    for (const sec of sections) for (const it of (sec.items || [])) { num += 1; expected.push({ num, key: it.key || '', text: it.text || '', zid: it.zid, secId: it.sub, item: it }); }
     if (!expected.length) { alert(T.bkNoTasks); return; }
     renderBlankCheck(container, expected, () => renderTeacher(container, opts));
   }
@@ -744,6 +744,7 @@ function renderBlankCheck(container, expected, onBack) {
 
   function reviewScreen() {
     const inputs = {};
+    const nameInp = el('input', { class: 'bk-input bk-name', type: 'text', placeholder: T.bkName });
     const rows = expected.map((e) => {
       const inp = el('input', { class: 'bk-input', type: 'text', value: got[String(e.num)] || '' });
       inputs[e.num] = inp;
@@ -753,10 +754,14 @@ function renderBlankCheck(container, expected, onBack) {
     const checkBtn = el('button', { class: 'btn btn-primary btn-block', text: T.bkCheck });
     checkBtn.addEventListener('click', () => {
       let ok = 0;
+      const byTopic = {};
       const lines = expected.map((e) => {
         const ua = inputs[e.num].value;
         const { correct, expected: exp } = checkAnswer(ua, { answer: e.key });
         if (correct) ok += 1;
+        // разбивка по темам для журнала (как у онлайн-сдач)
+        const tp = topicOf(e.secId, e.item, e.key);
+        const b = byTopic[tp] = byTopic[tp] || { c: 0, t: 0 }; b.c += correct ? 1 : 0; b.t += 1;
         return el('div', { class: 'bk-res ' + (correct ? 'ok' : 'bad') }, [
           el('span', { class: 'bk-num', text: '№' + e.num }),
           el('span', { class: 'bk-mark', text: correct ? '✓' : '✗' }),
@@ -764,12 +769,28 @@ function renderBlankCheck(container, expected, onBack) {
           correct ? null : el('span', { class: 'bk-exp', text: '→ ' + exp }),
         ].filter(Boolean));
       });
-      resultBox.replaceChildren(el('div', { class: 'bk-score', text: T.bkScore(ok, expected.length) }), ...lines);
+      // кнопка сохранения в журнал класса
+      const saveBtn = el('button', { class: 'btn btn-block', style: { marginTop: '10px' }, text: T.bkSave });
+      saveBtn.addEventListener('click', () => {
+        const name = (nameInp.value || '').trim() || 'Ученик';
+        const answersStr = expected.map((e) => e.num + ':' + (inputs[e.num].value || '')).join(',');
+        const entry = {
+          id: hashStr(EXAM.id + '|' + name + '|' + answersStr),
+          exam: EXAM.id, name, ts: Date.now(),
+          correct: ok, total: expected.length, byTopic,
+          summary: '📄 Бумажный бланк · ' + ok + '/' + expected.length,
+        };
+        const added = addToJournal(entry);
+        saveBtn.disabled = true;
+        saveBtn.textContent = added ? T.bkSaved : T.bkDup;
+      });
+      resultBox.replaceChildren(el('div', { class: 'bk-score', text: T.bkScore(ok, expected.length) }), ...lines, saveBtn);
       resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
     mount(view, el('div', { class: 'view' }, [header(),
       el('div', { class: 'tch-blank-body' }, [
         el('div', { class: 'bk-hint', text: T.bkReview }),
+        nameInp,
         el('div', { class: 'bk-list' }, rows),
         el('div', { style: { marginTop: '12px' } }, [checkBtn,
           el('button', { class: 'btn btn-block', style: { marginTop: '8px' }, text: T.bkAgain, onclick: photoScreen })]),

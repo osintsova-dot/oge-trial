@@ -247,6 +247,7 @@ export const STRINGS = {
       bkScore: (a, b) => 'Результат: ' + a + ' из ' + b, bkYour: 'ученик', bkKey: 'верно',
       bkErr: (s) => 'Не вышло распознать бланк: ' + s, bkNoTasks: 'Сначала выбери задания.',
       bkName: 'Имя ученика (необязательно)',
+      bkSave: '💾 Сохранить в журнал', bkSaved: 'Сохранено в журнал ✓', bkDup: 'Этот бланк уже в журнале',
     },
     homework: {
       loading: 'Загружаю задания…', title: 'Домашнее задание', count: (n) => n + ' заданий',
@@ -834,6 +835,7 @@ export const STRINGS = {
       bkScore: (a, b) => 'Результат: ' + a + ' из ' + b, bkYour: 'ученик', bkKey: 'верно',
       bkErr: (s) => 'Не вышло распознать бланк: ' + s, bkNoTasks: 'Сначала выбери задания.',
       bkName: 'Имя ученика (необязательно)',
+      bkSave: '💾 Сохранить в журнал', bkSaved: 'Сохранено в журнал ✓', bkDup: 'Этот бланк уже в журнале',
     },
     homework: {
       loading: 'Loading tasks…', title: 'Homework', count: (n) => n + ' tasks',
