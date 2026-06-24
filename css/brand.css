@@ -511,7 +511,7 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .bk-num{min-width:44px;font-weight:700;color:var(--muted)}
 .bk-input{flex:1;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font-size:16px;text-transform:uppercase}
 .bk-name{width:100%;text-transform:none;margin-bottom:12px}
-.tch-head-btns{display:flex;gap:6px}
+.tch-head-btns{display:flex;flex-direction:column;gap:6px;flex:none}
 .saved-row{display:flex;align-items:center;gap:8px}
 .saved-check{padding:8px 12px;font-size:13px;white-space:nowrap}
 .saved-del{background:none;border:none;font-size:18px;cursor:pointer;padding:6px;line-height:1}
@@ -1217,7 +1217,8 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .pk-row{font-size:13px}
 /* учительский конструктор worksheet/ДЗ */
 .tch{padding-bottom:90px}
-.tch-top{display:flex;align-items:center;gap:10px;padding:10px 14px}
+.tch-top{display:flex;align-items:flex-start;gap:10px;padding:10px 14px}
+.tch-h{flex:1;min-width:0}
 .tch-t{font-size:18px;font-weight:800}
 .tch-sub{font-size:12.5px;color:var(--muted)}
 .tch-tabs{display:flex;gap:8px;padding:0 14px;flex-wrap:wrap}
@@ -1242,7 +1243,7 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .tch-bar-btns{display:flex;gap:8px;flex:1;justify-content:flex-end;flex-wrap:wrap}
 .tch-bar .btn{padding:9px 12px;font-size:13px}
 .tch-clear{background:transparent;color:var(--muted)}
-.tch-journal-btn{flex:none;background:var(--surf);border:1px solid var(--line);color:var(--p-text);font-weight:700;font-size:13px;padding:8px 12px}
+.tch-journal-btn{flex:none;background:var(--surf);border:1px solid var(--line);color:var(--p-text);font-weight:700;font-size:12px;padding:6px 10px;white-space:nowrap}
 /* журнал класса */
 .jr{padding-bottom:30px}
 .jr-sect{font-size:13px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;padding:14px 14px 6px}
