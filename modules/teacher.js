@@ -794,21 +794,27 @@ export function renderBlankCheck(container, expected, onBack, opts) {
   ]);
 
   function photoScreen() {
-    const input = el('input', { type: 'file', accept: 'image/*', capture: 'environment', style: { display: 'none' } });
+    // multiple: бланк может занимать несколько листов — даём выбрать/снять сразу несколько
+    const input = el('input', { type: 'file', accept: 'image/*', multiple: true, style: { display: 'none' } });
     const btn = el('button', { class: 'btn btn-primary btn-block', text: T.bkPhoto });
     const loader = el('div', { class: 'loader', style: { display: 'none' }, text: T.bkLoading });
     const err = el('div', { class: 'err-msg', style: { display: 'none' } });
     btn.addEventListener('click', () => input.click());
     input.addEventListener('change', async () => {
-      const file = input.files && input.files[0]; input.value = '';
-      if (!file) return;
+      const files = Array.from(input.files || []); input.value = '';
+      if (!files.length) return;
       err.style.display = 'none'; btn.disabled = true; loader.style.display = 'block';
       try {
-        const { words } = await recognizeBlank(file);
-        got = parseAnswerGrid(words, expected.map((e) => e.num));
+        got = {};
+        for (let i = 0; i < files.length; i++) {
+          loader.textContent = files.length > 1 && T.bkLoadingN ? T.bkLoadingN(i + 1, files.length) : T.bkLoading;
+          const { words } = await recognizeBlank(files[i]);
+          const g = parseAnswerGrid(words, expected.map((e) => e.num));
+          for (const k in g) if (g[k] && !got[k]) got[k] = g[k]; // объединяем листы, не затирая распознанное
+        }
         reviewScreen();
       } catch (e) { err.textContent = T.bkErr(e.message); err.style.display = 'block'; }
-      finally { btn.disabled = false; loader.style.display = 'none'; }
+      finally { btn.disabled = false; loader.style.display = 'none'; loader.textContent = T.bkLoading; }
     });
     mount(view, el('div', { class: 'view' }, [header(),
       el('div', { class: 'tch-blank-body' }, [el('div', { class: 'bk-hint', text: T.bkSub }), btn, input, loader, err])]));
