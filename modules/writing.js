@@ -347,7 +347,16 @@ export async function renderWriting(container, cfg) {
     const body = (it.context || it.questions)
       ? el('div', { class: 'body' }, [it.context || '', it.questions ? el('b', { text: ' ' + it.questions }) : null])
       : el('div', { class: 'body', text: it.prompt || '' });
-    const stimulus = el('div', { class: 'letter-card' }, [head, body]);
+    // таблица опроса для эссе ЕГЭ (зад.38) — рендерим настоящей таблицей
+    const tableEl = (it.table && it.table.rows && it.table.rows.length)
+      ? el('div', { class: 'essay-table' }, [
+        it.table.q ? el('div', { class: 'et-q', text: it.table.q }) : null,
+        el('table', { class: 'et' }, [el('tbody', {}, it.table.rows.map((r) => el('tr', {}, [
+          el('td', { text: r[0] }), el('td', { class: 'et-pct', text: r[1] + '%' }),
+        ])))]),
+      ].filter(Boolean))
+      : null;
+    const stimulus = el('div', { class: 'letter-card' }, [head, body, tableEl].filter(Boolean));
 
     mount(container, el('div', { class: 'w-screen view' }, [
       secBar(pickScreen, headSub),

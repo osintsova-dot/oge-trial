@@ -490,6 +490,11 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .writing-body{flex:1;padding:14px 16px 30px}
 .letter-card{background:var(--card);border-radius:16px;padding:16px;margin-bottom:14px;
   box-shadow:0 2px 12px var(--shadow);border-left:4px solid var(--honey)}
+.essay-table{margin-top:12px;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.et-q{font-weight:700;padding:10px 12px;background:var(--surf);font-size:14px}
+.et{width:100%;border-collapse:collapse;font-size:14px}
+.et td{padding:8px 12px;border-top:1px solid var(--line);vertical-align:top}
+.et-pct{text-align:right;font-weight:800;color:var(--p-text);white-space:nowrap}
 .letter-card .lc-head{display:flex;align-items:center;gap:12px;margin-bottom:8px}
 .letter-card .lc-theme{width:52px;height:52px;object-fit:contain;flex:none}
 .letter-card .from{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--warn)}
