@@ -796,7 +796,7 @@ function renderBlankCheck(container, expected, onBack) {
 
   function reviewScreen() {
     const inputs = {};
-    const nameInp = el('input', { class: 'bk-input bk-name', type: 'text', placeholder: T.bkName });
+    const nameInp = el('input', { class: 'bk-input bk-name', type: 'text', placeholder: T.bkName, style: { marginTop: '14px' } });
     const rows = expected.map((e) => {
       const inp = el('input', { class: 'bk-input', type: 'text', value: got[String(e.num)] || '' });
       inputs[e.num] = inp;
@@ -836,13 +836,12 @@ function renderBlankCheck(container, expected, onBack) {
         saveBtn.disabled = true;
         saveBtn.textContent = added ? T.bkSaved : T.bkDup;
       });
-      resultBox.replaceChildren(el('div', { class: 'bk-score', text: T.bkScore(ok, expected.length) }), ...lines, saveBtn);
+      resultBox.replaceChildren(el('div', { class: 'bk-score', text: T.bkScore(ok, expected.length) }), ...lines, nameInp, saveBtn);
       resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
     mount(view, el('div', { class: 'view' }, [header(),
       el('div', { class: 'tch-blank-body' }, [
         el('div', { class: 'bk-hint', text: T.bkReview }),
-        nameInp,
         el('div', { class: 'bk-list' }, rows),
         el('div', { style: { marginTop: '12px' } }, [checkBtn,
           el('button', { class: 'btn btn-block', style: { marginTop: '8px' }, text: T.bkAgain, onclick: photoScreen })]),
