@@ -174,13 +174,18 @@ export async function renderListening(container, cfg) {
           return { correct: c, total: rows.length, allOk: c === rows.length };
         },
         mark() {
+          // показываем опорное предложение только если оно УНИКАЛЬНО (без задвоенных/чужих цитат)
+          const evs = q.evs || [];
+          const texts = evs.map((e) => (e.t || '').trim());
+          const dup = new Set(texts.filter((tt, i) => tt && texts.indexOf(tt) !== texts.lastIndexOf(tt)));
           rows.forEach((r, i) => {
             const want = q.key[i]; const ok = r.sel.value === want;
             r.sel.disabled = true; r.sel.classList.add(ok ? 'right' : 'wrong');
             r.verdict.className = 'ls-cv ' + (ok ? 'ok' : 'bad');
             r.verdict.textContent = ok ? '✓' : ('✕ ' + want);
             r.verdict.style.display = 'inline-block';
-            fillSrc(r.src, (q.evs || []).find((e) => e.label === r.sp));
+            const ev = evs.find((e) => e.label === r.sp);
+            fillSrc(r.src, (ev && !dup.has((ev.t || '').trim())) ? ev : null);
           });
         },
       });
