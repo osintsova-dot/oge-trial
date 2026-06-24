@@ -134,13 +134,21 @@ export async function renderWriting(container, cfg) {
         right,
       ]);
     };
-    // письма темы недели — наверх, с подписью
-    const themed = [], rest = [];
-    items.forEach((it, i) => (themeW.has(it.zid) ? themed : rest).push([it, i]));
-    if (themed.length) list.appendChild(el('div', { class: 'topics-label', text: t.vocab.themeWeekLabel(themeName) }));
-    themed.forEach(([it, i]) => list.appendChild(itemBtn(it, i)));
-    if (themed.length && rest.length) list.appendChild(el('div', { class: 'topics-label', text: t.wAllLetters }));
-    rest.forEach(([it, i]) => list.appendChild(itemBtn(it, i)));
+    if (cfg.sectionId === 'essay') {
+      // эссе делим по формату: зад.38 (с таблицей/диаграммой) и старое эссе-мнение
+      const tbl = [], opn = [];
+      items.forEach((it, i) => (it.table ? tbl : opn).push([it, i]));
+      if (tbl.length) { list.appendChild(el('div', { class: 'topics-label', text: t.wEssayTable })); tbl.forEach(([it, i]) => list.appendChild(itemBtn(it, i))); }
+      if (opn.length) { list.appendChild(el('div', { class: 'topics-label', text: t.wEssayOpinion })); opn.forEach(([it, i]) => list.appendChild(itemBtn(it, i))); }
+    } else {
+      // письма темы недели — наверх, с подписью
+      const themed = [], rest = [];
+      items.forEach((it, i) => (themeW.has(it.zid) ? themed : rest).push([it, i]));
+      if (themed.length) list.appendChild(el('div', { class: 'topics-label', text: t.vocab.themeWeekLabel(themeName) }));
+      themed.forEach(([it, i]) => list.appendChild(itemBtn(it, i)));
+      if (themed.length && rest.length) list.appendChild(el('div', { class: 'topics-label', text: t.wAllLetters }));
+      rest.forEach(([it, i]) => list.appendChild(itemBtn(it, i)));
+    }
 
     const body = [];
     body.push(el('button', { class: 'all-topics writing', onclick: worksScreen }, [
@@ -377,7 +385,9 @@ export async function renderWriting(container, cfg) {
   // --- AI-проверка (промпт по языку экзамена и типу задания) ---
   async function evalWriting(text, it) {
     const stim = it.prompt || ((it.context || '') + ' ' + (it.questions || ''));
-    return evalWritingApi(text, { lang: EXAM.lang, sectionId: cfg.sectionId, criteria: task.criteria, max: task.max, words: [wMin, wMax], stim });
+    // эссе без таблицы — старое эссе-мнение (зад.40): проверяем по его плану, а не по зад.38
+    const essayKind = cfg.sectionId === 'essay' ? (it.table ? 'data' : 'opinion') : null;
+    return evalWritingApi(text, { lang: EXAM.lang, sectionId: cfg.sectionId, criteria: task.criteria, max: task.max, words: [wMin, wMax], stim, essayKind });
   }
 
   function renderResult(box, r, mx = task.max) {

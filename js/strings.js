@@ -328,6 +328,7 @@ export const STRINGS = {
     accLine: (acc, praise) => `${acc}% верных ответов · ${praise}`,
     // writing (ОГЭ — одно письмо)
     wLoading: 'Загружаю темы писем…', wPickSub: 'Выбери письмо друга — ответь 100–120 слов', wAllLetters: 'Остальные',
+    wEssayTable: 'Эссе по таблице/диаграмме (зад.38)', wEssayOpinion: 'Эссе-мнение (старый формат)',
     wLetterFrom: (n) => 'Письмо от друга — ' + n, wFrom: (n) => 'Письмо от ' + n,
     wCheck: 'Проверить письмо', wRecheck: 'Проверить заново', wSendTeacher: 'Отправить результат учителю',
     wFrame: 'Каркас (опора)', wIdeas: 'Идеи: о чём писать', wConnectors: 'Связки',
@@ -602,6 +603,7 @@ export const STRINGS = {
     accLine: (acc, praise) => `${acc}% correct · ${praise}`,
     // writing (ЕГЭ — два задания, тексты общие)
     wLoading: 'Loading writing tasks…', wPickSub: 'Pick a task and write your answer', wAllLetters: 'Others',
+    wEssayTable: 'Essay on a table/chart (task 38)', wEssayOpinion: 'Opinion essay (old format)',
     wLetterFrom: (n) => 'Email from ' + n, wFrom: (n) => 'From ' + n,
     wCheck: 'Check my writing', wRecheck: 'Check again', wSendTeacher: 'Send result to teacher',
     wFrame: 'Writing frame', wIdeas: 'Ideas: what to write about', wConnectors: 'Linkers',

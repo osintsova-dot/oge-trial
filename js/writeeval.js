@@ -6,7 +6,7 @@ import { fetchRetry, parseModelJSON } from './net.js';
 const WORKER = 'https://purple-cake-2966.o-sintsova.workers.dev'; // прокси DeepSeek
 
 export async function evalWriting(text, opts) {
-  const { lang, sectionId, criteria, max, words, stim } = opts;
+  const { lang, sectionId, criteria, max, words, stim, essayKind } = opts;
   const [wMin, wMax] = words || [100, 140];
   const wcN = (text || '').trim().split(/\s+/).filter(Boolean).length;
   // допуск объёма по ФИПИ ±10%: в этих границах балл за объём НЕ снижается
@@ -16,9 +16,11 @@ export async function evalWriting(text, opts) {
 
   let sys, user;
   if (lang === 'en') {
-    const kind = sectionId === 'essay'
-      ? 'task 38, a data-based opinion essay (200-250 words). The student must follow the plan: opening statement, report 2-3 facts, 1-2 comparisons with comments, outline a problem and a solution, and a conclusion with their opinion.'
-      : 'task 37, a personal email (100-140 words). The student must answer the friend\'s questions AND ask 3 questions, with a correct opening, closing phrase and name.';
+    const kind = sectionId !== 'essay'
+      ? 'task 37, a personal email (100-140 words). The student must answer the friend\'s questions AND ask 3 questions, with a correct opening, closing phrase and name.'
+      : (essayKind === 'opinion'
+        ? 'an opinion essay (200-250 words, OLD format). Plan: 1) introduction stating the problem; 2) the student\'s personal opinion with 2-3 reasons; 3) an opposing opinion with 1-2 reasons; 4) explanation why the student disagrees with the opposing opinion; 5) a conclusion restating the position. There is NO data table here — do NOT require reporting figures.'
+        : 'task 38, a data-based essay (200-250 words) on the survey data (a table or a pie chart). Plan: 1) opening statement on the subject; 2) select and report 2-3 facts from the data; 3) make 1-2 comparisons with comments; 4) outline a problem and suggest a solution; 5) conclude with the student\'s opinion.');
     sys = 'You are a strict but kind English exam examiner. You assess a student\'s writing strictly by the official criteria and reply ONLY with valid JSON, no markdown. All comments must be IN ENGLISH at B1 level — short and clear.';
     user =
 `Task: ${kind}
