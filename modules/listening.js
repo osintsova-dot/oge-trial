@@ -167,11 +167,12 @@ export async function renderListening(container, cfg) {
         q.rubrics.forEach((_, ri) => sel.appendChild(el('option', { value: String(ri + 1), text: String(ri + 1) })));
         const verdict = el('span', { class: 'ls-cv', style: { display: 'none' } });
         const src = el('div', { class: 'ls-src', style: { display: 'none' } });
+        const whyR = el('div', { class: 'ls-why', style: { display: 'none' } });
         const row = el('div', { class: 'ls-mitem' }, [
           el('div', { class: 'ls-mrow' }, [el('div', { class: 'ls-letter', text: sp }), sel, verdict]),
-          src,
+          src, whyR,
         ]);
-        return { sp, sel, verdict, row, src };
+        return { sp, sel, verdict, row, src, whyR };
       });
       qNodes.push({
         type: 'match', zid: q.zid, key: q.key, kes: q.kes, rows,
@@ -192,6 +193,7 @@ export async function renderListening(container, cfg) {
             r.verdict.style.display = 'inline-block';
             const ev = evs.find((e) => e.label === r.sp);
             fillSrc(r.src, (ev && !dup.has((ev.t || '').trim())) ? ev : null);
+            fillWhy(r.whyR, ev && ev.why);
           });
         },
       });
@@ -281,24 +283,29 @@ export async function renderListening(container, cfg) {
         });
         const verdict = el('div', { class: 'ls-cv block', style: { display: 'none' } });
         const src = el('div', { class: 'ls-src', style: { display: 'none' } });
+        const whyR = el('div', { class: 'ls-why', style: { display: 'none' } });
         const row = el('div', { class: 'tfns-row' }, [
           el('div', { class: 'tfns-head' }, [el('span', { class: 'tfns-letter', text: st.letter }), el('span', { class: 'tfns-st', text: st.text })]),
           el('div', { class: 'tfns-opts' }, btns),
-          verdict, src,
+          verdict, src, whyR,
         ]);
-        return { state, btns, verdict, row, src, st };
+        return { state, btns, verdict, row, src, whyR, st };
       });
       qNodes.push({
         type: 'tfns', zid: q.zid, key: q.key, kes: q.kes,
         result() { let c = 0; rows.forEach((r, i) => { if (r.state.pick === q.key[i]) c++; }); return { correct: c, total: rows.length, allOk: c === rows.length }; },
         mark() {
+          const texts = (q.evs || []).map((e) => (e.t || '').trim());
+          const dup = new Set(texts.filter((tt, i) => tt && texts.indexOf(tt) !== texts.lastIndexOf(tt)));
           rows.forEach((r, i) => {
             const want = q.key[i]; const ok = r.state.pick === want;
             r.btns.forEach((b, k) => { b.disabled = true; const v = String(k + 1); if (v === want) b.classList.add('right'); else if (v === r.state.pick) b.classList.add('wrong'); });
             r.verdict.className = 'ls-cv block ' + (ok ? 'ok' : 'bad');
             r.verdict.textContent = ok ? '✓' : ('✕ ' + labels[Number(want) - 1]);
             r.verdict.style.display = 'block';
-            fillSrc(r.src, (q.evs || []).find((e) => e.label === r.st.letter));
+            const ev = (q.evs || []).find((e) => e.label === r.st.letter);
+            fillSrc(r.src, (ev && !dup.has((ev.t || '').trim())) ? ev : null);
+            fillWhy(r.whyR, ev && ev.why);
           });
         },
       });
