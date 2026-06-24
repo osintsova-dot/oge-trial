@@ -119,15 +119,17 @@ function itemSlots(it, exam) {
 export function enumerateAnswerKeys(sections, exam) {
   let n = 0;
   const out = [];
-  const push = (key, label) => { n += 1; out.push({ num: n, key: String(key == null ? '' : key).trim(), label: label || '' }); };
+  // ключ-последовательность: в данных встречается и массив ['4','7',…], и строка '473625'
+  const seq = (x) => (Array.isArray(x) ? x.join('') : String(x == null ? '' : x));
+  const push = (key, label) => { n += 1; out.push({ num: n, key: seq(key).trim(), label: label || '' }); };
   for (const sec of sections) {
     if (sec.id === 'speaking' || sec.id === 'writing') continue;
     for (const it of (sec.items || [])) {
       if (it.kind === 'choice') push(it.key, it.q);
       else if (it.kind === 'fill' || it.kind === 'gap') push(it.key, it.label || it.q || it.text);
-      else if (it.kind === 'match') push((it.key || []).join(''), it.task);
-      else if (it.kind === 'rmatch') push((it.answer || []).join(''), 'Reading: matching');
-      else if (it.kind === 'gaps') push((it.answer || []).join(''), 'Reading: gaps');
+      else if (it.kind === 'match') push(it.key, it.task);
+      else if (it.kind === 'rmatch') push(it.answer, 'Reading: matching');
+      else if (it.kind === 'gaps') push(it.answer, 'Reading: gaps');
       else if (it.kind === 'tfns') {
         if (exam === 'ege') push((it.statements || []).map((st) => st.answer).join(''), it.text);
         else (it.statements || []).forEach((st) => push(st.answer, st.statement));
@@ -400,9 +402,9 @@ function answerOf(it) {
   if (it.kind === 'choice') return it.key ? String(it.key) : '';
   if (it.kind === 'textgaps') return (it.gaps || []).map((g) => g.key).join(', ');
   if (it.kind === 'lexgaps') return (it.gaps || []).map((g) => g.key).join(', ');
-  if (it.kind === 'match') return (it.key || []).join('');
-  if (it.kind === 'rmatch') return (it.answer || []).join('');
-  if (it.kind === 'gaps') return (it.answer || []).join('');
+  if (it.kind === 'match') return Array.isArray(it.key) ? it.key.join('') : String(it.key || '');
+  if (it.kind === 'rmatch') return Array.isArray(it.answer) ? it.answer.join('') : String(it.answer || '');
+  if (it.kind === 'gaps') return Array.isArray(it.answer) ? it.answer.join('') : String(it.answer || '');
   if (it.kind === 'tfns') return (it.statements || []).map((s) => s.answer).join('');
   return '';
 }
