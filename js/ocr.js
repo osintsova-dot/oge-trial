@@ -77,13 +77,23 @@ export function parseAnswerGrid(words, expectedNums) {
     if (/кратк|ответом/.test(txt)) bandY = Math.max(bandY, r.cy);
   }
   const zone = rows.filter((r) => r.cy > bandY + 6);
-  // якоря-позиции: одиночные печатные цифры 1..maxN → (номер, y)
+  // В каждой строке отделяем ВЕДУЩИЙ токен-номер (самый левый, цифра из 1..maxN) от ответа справа.
+  // Так ответы-цифры (выбор 1–4, последовательности соответствий/верно-неверно) больше не путаются
+  // с номером строки, а сам номер не попадает в анкоры регрессии из «цифр внутри ответа».
+  const split = (r) => {
+    const sorted = r.items.slice().sort((x, y) => x.x - y.x);
+    let num = null, start = 0;
+    const t0 = sorted[0] && sorted[0].t.trim();
+    if (t0 && /^\d{1,2}$/.test(t0)) { const v = +t0; if (v >= 1 && v <= maxN) { num = v; start = 1; } }
+    // ответ = токены справа от номера: буквы/цифры/дефис (теперь цифры разрешены)
+    const toks = sorted.slice(start).filter((w) => /^[A-Za-z0-9-]+$/.test(w.t.trim()));
+    const ans = toks.map((w) => w.t.trim().toUpperCase()).join('');
+    return { num, ans };
+  };
+  // якоря-позиции: только ведущая цифра строки → (номер, y) — чистая регрессия без цифр ответа
   const anchors = [];
-  for (const r of zone) for (const w of r.items) {
-    const tk = w.t.trim();
-    if (/^\d{1,2}$/.test(tk)) { const v = +tk; if (v >= 1 && v <= maxN) anchors.push({ num: v, y: (w.y + w.y2) / 2 }); }
-  }
-  // линейная регрессия y = a*num + b (номер строки из её позиции)
+  for (const r of zone) { const s = split(r); if (s.num != null) anchors.push({ num: s.num, y: r.cy }); }
+  // линейная регрессия y = a*num + b (номер строки из её позиции) — запас, если печатный номер не распознан
   let a = 0, b = 0;
   if (anchors.length >= 2) {
     const n = anchors.length;
@@ -92,16 +102,13 @@ export function parseAnswerGrid(words, expectedNums) {
     const den = n * sxx - sx * sx;
     if (den) { a = (n * sxy - sx * sy) / den; b = (sy - a * sx) / n; }
   }
-  // строки с латинскими буквами = ответы; номер по позиции
   const got = [];
   for (const r of zone) {
-    // фрагмент ответа = буквы/цифры/дефис, но обязательно с буквой (чтобы «5»-номер строки не попал в ответ;
-    // при этом проходят «well-known», «1990s», «WILLGIVE»)
-    const lat = r.items.filter((w) => { const tk = w.t.trim(); return /^[A-Za-z0-9-]+$/.test(tk) && /[A-Za-z]/.test(tk); }).sort((x, y) => x.x - y.x);
-    if (!lat.length) continue;
-    const ans = lat.map((w) => w.t.trim().toUpperCase()).join('');
-    if (ans.length > 18) continue; // строка алфавита-образца ABCDEF…Z из шапки — не ответ
-    got.push({ cy: r.cy, ans, num: a ? Math.round((r.cy - b) / a) : null });
+    const { num: rowNum, ans } = split(r);
+    if (!ans || ans.length > 18) continue; // >18 — строка алфавита-образца ABCDEF…Z из шапки
+    // номер: распознанный печатный (надёжнее) либо по позиции (регрессия)
+    const num = rowNum != null ? rowNum : (a ? Math.round((r.cy - b) / a) : null);
+    got.push({ cy: r.cy, ans, num });
   }
   // запасной вариант (нет регрессии): присвоить по порядку сверху вниз
   if (!a && expectedNums && expectedNums.length) {
