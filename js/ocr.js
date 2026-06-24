@@ -69,7 +69,10 @@ export function parseAnswerGrid(words) {
     const mi = toks.findIndex((tk) => /^\d{1,3}$/.test(tk));
     if (mi < 0) continue;
     const ans = toks.slice(mi + 1).join('').replace(/\s+/g, '');
-    if (ans) out[toks[mi]] = ans;
+    if (!ans) continue;
+    if (/\d{8,}/.test(ans)) continue; // образец цифр «1234567890» из шапки ФИПИ — не ответ
+    out[toks[mi]] = ans; // строки идут сверху вниз: нижняя (реальная сетка) перезапишет шумы шапки
+
   }
   return out;
 }
