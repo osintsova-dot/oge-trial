@@ -30,7 +30,9 @@ export function normalize(s) {
     .replace(/[‘’′`]/g, "'")
     .replace(/[“”]/g, '"')
     .replace(/\s+/g, ' ');
-  return expandContractions(t).replace(/\s+/g, ' ').trim();
+  // на ОГЭ/ЕГЭ краткий ответ пишут БЕЗ пробелов (will give → WILLGIVE), поэтому
+  // сверяем без пробелов вовсе — принимаем и «will give», и «willgive», и контракции.
+  return expandContractions(t).replace(/\s+/g, '');
 }
 
 // keyEntry = {answer, sec, ...}. Возвращает {correct:bool, expected:string}
