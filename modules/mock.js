@@ -10,7 +10,8 @@ import { recordRound, getName, getMockResults, recordMock } from '../js/gamify.j
 import { t, EXAM } from '../js/exam.js';
 import { recognize, canRecognize } from '../js/stt.js';
 import { evalSpeaking, evalEgeSpeaking } from '../js/speakeval.js';
-import { renderPrintView } from './print.js';
+import { renderPrintView, enumerateAnswerKeys } from './print.js';
+import { renderBlankCheck } from './teacher.js';
 
 const WORKER = 'https://purple-cake-2966.o-sintsova.workers.dev';
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G']; // EGE headings = 7 текстов A–G; ОГЭ matching/gaps (A–F) — лишние отфильтруются по texts[L]
@@ -98,9 +99,18 @@ export async function renderMock(container, cfg) {
       el('div', { class: 'modal-text', text: M.startWarn(totalMinutes(v)) }),
       el('button', { class: 'btn btn-primary btn-block', text: M.startBtn, onclick: () => { close(); runExam(v); } }),
       el('button', { class: 'btn btn-ghost btn-block', text: '🖨 ' + M.printBtn, onclick: () => { close(); openPrint(v); } }),
+      el('button', { class: 'btn btn-ghost btn-block', text: '📷 ' + M.scanBtn, onclick: () => { close(); openBlankScan(v); } }),
       el('button', { class: 'btn btn-ghost btn-block', text: t.modalClose, onclick: close }),
     ]));
     document.body.appendChild(back);
+  }
+
+  // Проверка распечатанного бланка пробника по фото (OCR) — самопроверка, без записи в журнал.
+  function openBlankScan(v) {
+    clearTimer();
+    const expected = enumerateAnswerKeys(v.sections, EXAM.id);
+    if (!expected.length) { alert(M.scanNoKeys); return; }
+    renderBlankCheck(container, expected, introScreen, { save: false, title: M.scanTitle, sub: M.scanSub });
   }
 
   function openPrint(v) {
@@ -415,9 +425,18 @@ export async function renderMock(container, cfg) {
     const wc = el('div', { class: 'mock-wc' });
     function updateWc() { const n = (ta.value.trim().match(/\S+/g) || []).length; wc.textContent = M.words(n); }
     updateWc();
-    // ОГЭ-письмо: контекст + вопросы; ЕГЭ email/essay: один prompt
+    // таблица опроса для эссе ЕГЭ (зад.38) — настоящей таблицей
+    const tableEl = (tk.table && tk.table.rows && tk.table.rows.length)
+      ? el('div', { class: 'essay-table' }, [
+          tk.table.q ? el('div', { class: 'et-q', text: tk.table.q }) : null,
+          el('table', { class: 'et' }, [el('tbody', {}, tk.table.rows.map((r) => el('tr', {}, [
+            el('td', { text: r[0] }), el('td', { class: 'et-pct', text: r[1] + '%' }),
+          ])))]),
+        ].filter(Boolean))
+      : null;
+    // ОГЭ-письмо: контекст + вопросы; ЕГЭ email/essay: один prompt (+ таблица для зад.38)
     const card = tk.prompt
-      ? el('div', { class: 'letter-card' }, [el('div', { class: 'mock-letter-q', text: tk.prompt })])
+      ? el('div', { class: 'letter-card' }, [el('div', { class: 'mock-letter-q', text: tk.prompt }), tableEl].filter(Boolean))
       : el('div', { class: 'letter-card' }, [
           tk.context ? el('div', { class: 'mock-letter-ctx', text: tk.context }) : null,
           el('div', { class: 'mock-letter-q', text: tk.questions || '' }),
@@ -636,7 +655,11 @@ export async function renderMock(container, cfg) {
     const crit = sec.criteria || [];
     const critSpec = crit.map((c) => `${c.code} (max ${c.max}): ${c.name}`).join('; ');
     const critJson = crit.map((c) => `{"code":"${c.code}","name":"${c.name}","score":<0-${c.max}>,"max":${c.max},"comment":"<...>"}`).join(',');
-    const stim = task.prompt || ((task.context || '') + ' ' + (task.questions || ''));
+    let stim = task.prompt || ((task.context || '') + ' ' + (task.questions || ''));
+    // данные опроса (зад.38) — текстом в промпт, чтобы ИИ мог сверить факты/цифры
+    if (task.table && task.table.rows && task.table.rows.length) {
+      stim += '\n\n' + (task.table.q || 'Survey data') + '\n' + task.table.rows.map((r) => `- ${r[0]}: ${r[1]}%`).join('\n');
+    }
     const mx = crit.reduce((s, c) => s + c.max, 0);
     let sys, user;
     if (sec.lang === 'en') {

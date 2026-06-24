@@ -114,6 +114,30 @@ function itemSlots(it, exam) {
   return [];
 }
 
+// Перечень правильных ответов для бланка: [{num, key, label}] в ТОЧНОМ порядке/нумерации
+// печатного бланка (зеркалит инкременты n в renderItem). Нужен для OCR-проверки заполненного бланка.
+export function enumerateAnswerKeys(sections, exam) {
+  let n = 0;
+  const out = [];
+  const push = (key, label) => { n += 1; out.push({ num: n, key: String(key == null ? '' : key).trim(), label: label || '' }); };
+  for (const sec of sections) {
+    if (sec.id === 'speaking' || sec.id === 'writing') continue;
+    for (const it of (sec.items || [])) {
+      if (it.kind === 'choice') push(it.key, it.q);
+      else if (it.kind === 'fill' || it.kind === 'gap') push(it.key, it.label || it.q || it.text);
+      else if (it.kind === 'match') push((it.key || []).join(''), it.task);
+      else if (it.kind === 'rmatch') push((it.answer || []).join(''), 'Reading: matching');
+      else if (it.kind === 'gaps') push((it.answer || []).join(''), 'Reading: gaps');
+      else if (it.kind === 'tfns') {
+        if (exam === 'ege') push((it.statements || []).map((st) => st.answer).join(''), it.text);
+        else (it.statements || []).forEach((st) => push(st.answer, st.statement));
+      } else if (it.kind === 'textgaps') (it.gaps || []).forEach((gp) => push(gp.key, gp.base_word || ''));
+      else if (it.kind === 'lexgaps') (it.gaps || []).forEach((gp) => push(gp.key, ''));
+    }
+  }
+  return out;
+}
+
 // ---- Лист заданий ----
 function buildPaper(sections, P, exam) {
   let n = 0; // нумерация ЗАДАНИЙ по ФИПИ
@@ -123,11 +147,20 @@ function buildPaper(sections, P, exam) {
     if (sec.id === 'writing') {
       const tk = sec.task || {};
       const prompt = tk.prompt || ((tk.context || '') + ' ' + (tk.questions || ''));
+      const tableEl = (tk.table && tk.table.rows && tk.table.rows.length)
+        ? el('div', { class: 'essay-table' }, [
+            tk.table.q ? el('div', { class: 'et-q', text: tk.table.q }) : null,
+            el('table', { class: 'et' }, [el('tbody', {}, tk.table.rows.map((r) => el('tr', {}, [
+              el('td', { text: r[0] }), el('td', { class: 'et-pct', text: r[1] + '%' }),
+            ])))]),
+          ].filter(Boolean))
+        : null;
       out.push(el('div', { class: 'pp-sec' }, [
         el('div', { class: 'pp-sec-h', text: sec.title }),
         el('div', { class: 'pp-stim', text: prompt.trim() }),
+        tableEl,
         el('div', { class: 'pp-note', text: P.writeOnSheet }),
-      ]));
+      ].filter(Boolean)));
       continue;
     }
     const items = [el('div', { class: 'pp-sec-h', text: sec.title })];

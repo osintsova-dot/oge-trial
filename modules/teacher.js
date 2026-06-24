@@ -778,16 +778,19 @@ export async function renderTeacher(container, opts) {
 }
 
 // ===== Проверка заполненного бланка по фото (учитель) =====
-// expected = [{num, key, text, zid}] в том же порядке, что worksheet. Без бэкенда: фото→OCR→сверка с ключами.
-function renderBlankCheck(container, expected, onBack) {
+// expected = [{num, key, text, zid}] в том же порядке, что worksheet/бланк. Без бэкенда: фото→OCR→сверка с ключами.
+// opts = { save:true/false (запись в журнал класса), title, sub } — пробник зовёт с save:false (самопроверка).
+export function renderBlankCheck(container, expected, onBack, opts) {
   const T = t.teacher;
+  const o = opts || {};
+  const save = o.save !== false;
   let got = {}; // "номер" -> распознанный ответ
   const view = el('div', { class: 'view tch' });
   mount(container, view);
 
   const header = () => el('div', { class: 'tch-top' }, [
     el('button', { class: 'back', text: '←', onclick: onBack }),
-    el('div', { class: 'tch-h' }, [el('div', { class: 'tch-t', text: T.bkTitle }), el('div', { class: 'tch-sub', text: T.bkSub })]),
+    el('div', { class: 'tch-h' }, [el('div', { class: 'tch-t', text: o.title || T.bkTitle }), el('div', { class: 'tch-sub', text: o.sub || T.bkSub })]),
   ]);
 
   function photoScreen() {
@@ -828,9 +831,11 @@ function renderBlankCheck(container, expected, onBack) {
         const ua = inputs[e.num].value;
         const { correct, expected: exp } = checkAnswer(ua, { answer: e.key }); // normalize уже без пробелов
         if (correct) ok += 1;
-        // разбивка по темам для журнала (как у онлайн-сдач)
-        const tp = topicOf(e.secId, e.item, e.key);
-        const b = byTopic[tp] = byTopic[tp] || { c: 0, t: 0 }; b.c += correct ? 1 : 0; b.t += 1;
+        // разбивка по темам для журнала (как у онлайн-сдач) — только при сохранении
+        if (save) {
+          const tp = topicOf(e.secId, e.item, e.key);
+          const b = byTopic[tp] = byTopic[tp] || { c: 0, t: 0 }; b.c += correct ? 1 : 0; b.t += 1;
+        }
         return el('div', { class: 'bk-res ' + (correct ? 'ok' : 'bad') }, [
           el('span', { class: 'bk-num', text: '№' + e.num }),
           el('span', { class: 'bk-mark', text: correct ? '✓' : '✗' }),
@@ -838,22 +843,26 @@ function renderBlankCheck(container, expected, onBack) {
           correct ? null : el('span', { class: 'bk-exp', text: '→ ' + exp }),
         ].filter(Boolean));
       });
-      // кнопка сохранения в журнал класса
-      const saveBtn = el('button', { class: 'btn btn-block', style: { marginTop: '10px' }, text: T.bkSave });
-      saveBtn.addEventListener('click', () => {
-        const name = (nameInp.value || '').trim() || 'Ученик';
-        const answersStr = expected.map((e) => e.num + ':' + (inputs[e.num].value || '')).join(',');
-        const entry = {
-          id: hashStr(EXAM.id + '|' + name + '|' + answersStr),
-          exam: EXAM.id, name, ts: Date.now(),
-          correct: ok, total: expected.length, byTopic,
-          summary: '📄 Бумажный бланк · ' + ok + '/' + expected.length,
-        };
-        const added = addToJournal(entry);
-        saveBtn.disabled = true;
-        saveBtn.textContent = added ? T.bkSaved : T.bkDup;
-      });
-      resultBox.replaceChildren(el('div', { class: 'bk-score', text: T.bkScore(ok, expected.length) }), ...lines, nameInp, saveBtn);
+      // кнопка сохранения в журнал класса (только в учительском режиме)
+      const tail = [];
+      if (save) {
+        const saveBtn = el('button', { class: 'btn btn-block', style: { marginTop: '10px' }, text: T.bkSave });
+        saveBtn.addEventListener('click', () => {
+          const name = (nameInp.value || '').trim() || 'Ученик';
+          const answersStr = expected.map((e) => e.num + ':' + (inputs[e.num].value || '')).join(',');
+          const entry = {
+            id: hashStr(EXAM.id + '|' + name + '|' + answersStr),
+            exam: EXAM.id, name, ts: Date.now(),
+            correct: ok, total: expected.length, byTopic,
+            summary: '📄 Бумажный бланк · ' + ok + '/' + expected.length,
+          };
+          const added = addToJournal(entry);
+          saveBtn.disabled = true;
+          saveBtn.textContent = added ? T.bkSaved : T.bkDup;
+        });
+        tail.push(nameInp, saveBtn);
+      }
+      resultBox.replaceChildren(el('div', { class: 'bk-score', text: T.bkScore(ok, expected.length) }), ...lines, ...tail);
       resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
     mount(view, el('div', { class: 'view' }, [header(),

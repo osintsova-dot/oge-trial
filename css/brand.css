@@ -1192,10 +1192,15 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
   #view,.view,.print-view{max-width:none!important;width:auto!important;margin:0!important;padding:0!important;min-height:0!important}
   .print-paper{border:none!important;border-radius:0!important;margin:0!important;max-width:none!important;width:100%!important;padding:0!important;font-size:12pt}
   .answer-sheet,.ws-grid-paper{page-break-before:always}
-  .as1-row,.as1-head,.as1-codes,.pp-opt,.ws-grow,.ws-grid-h{page-break-inside:avoid}
+  .as1-row,.as1-head,.as1-codes,.pp-opt,.ws-grow,.ws-grid-h,.essay-table{page-break-inside:avoid}
   .ws-grid-h{page-break-after:avoid}
   .as1-secband{background:#111!important}
   .pp-sec-h{background:#e8e8e8!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  /* таблица опроса (зад.38) — чёткие чёрные границы в печати */
+  .essay-table{border-color:#111!important}
+  .et td{border-color:#111!important}
+  .et-q{background:#eee!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .et-pct{color:#111!important}
 }
 /* шапка БЛАНКА ОТВЕТОВ № 1 / № 2 */
 .as1-head{border:2px solid #111;padding:0 0 8px}
