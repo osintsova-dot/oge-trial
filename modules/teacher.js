@@ -532,10 +532,10 @@ export async function renderTeacher(container, opts) {
     view.appendChild(el('div', { class: 'tch-top' }, [
       el('button', { class: 'back', text: '←', onclick: opts.goHome }),
       el('div', { class: 'tch-h' }, [el('div', { class: 'tch-t', text: T.title }), el('div', { class: 'tch-sub', text: T.sub })]),
-      el('div', { class: 'tch-head-btns' }, [
-        el('button', { class: 'btn tch-journal-btn', text: '📋 ' + T.savedBtn, onclick: showSavedSets }),
-        el('button', { class: 'btn tch-journal-btn', text: '📊 ' + T.journal, onclick: () => renderJournal(container, opts) }),
-      ]),
+    ]));
+    view.appendChild(el('div', { class: 'tch-actions' }, [
+      el('button', { class: 'btn tch-journal-btn', text: '📋 ' + T.savedBtn, onclick: showSavedSets }),
+      el('button', { class: 'btn tch-journal-btn', text: '📊 ' + T.journal, onclick: () => renderJournal(container, opts) }),
     ]));
 
     // вкладки разделов (+ «Чтение»)
