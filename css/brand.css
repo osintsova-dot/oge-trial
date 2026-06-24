@@ -909,6 +909,8 @@ body.welcome-mode .bottom-nav,body.in-flow .bottom-nav{display:none}
 .ls-input.right{border-color:var(--ok)} .ls-input.wrong{border-color:var(--bad)}
 .ls-src{margin-top:8px;font-size:13px;line-height:1.5}
 .ls-src-lbl{color:var(--muted);font-weight:700}
+.ls-why{margin-top:8px;padding:10px 12px;border-radius:10px;background:rgba(108,63,197,.08);font-size:13px;line-height:1.45;color:var(--ink)}
+.ls-why-h{font-weight:800;color:var(--p-text)}
 .ls-src-q{border:none;background:none;padding:1px 4px;border-radius:6px;font:inherit;font-size:13px;
   color:var(--p-text);font-style:italic;cursor:pointer;text-align:left}
 .ls-src-q:hover,.ls-src-q:active{background:var(--grad-listening);color:#fff;font-style:normal}

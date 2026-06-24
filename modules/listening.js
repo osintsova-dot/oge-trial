@@ -140,6 +140,12 @@ export async function renderListening(container, cfg) {
       );
       container.style.display = 'block';
     }
+    // блок «Почему: …» (как в чтении)
+    function fillWhy(container, why) {
+      if (!why) return;
+      container.replaceChildren(el('span', { class: 'ls-why-h', text: L.whyL + ': ' }), why);
+      container.style.display = 'block';
+    }
 
     // номер = позиция в варианте (= номер задания ФИПИ: 1-4 выбор, 5 соответствие, 6-11 вписать)
     group.questions.forEach((q, i) => {
@@ -208,6 +214,7 @@ export async function renderListening(container, cfg) {
         return b;
       });
       const srcWrap = el('div', { class: 'ls-src', style: { display: 'none' } });
+      const whyEl = el('div', { class: 'ls-why', style: { display: 'none' } });
       qNodes.push({
         type: 'choice', zid: q.zid, key: q.key, kes: q.kes,
         result() { return { correct: pick === q.key ? 1 : 0, total: 1, allOk: pick === q.key }; },
@@ -224,12 +231,13 @@ export async function renderListening(container, cfg) {
             );
             srcWrap.style.display = 'block';
           }
+          fillWhy(whyEl, q.why);
         },
       });
       return el('div', { class: 'ls-task' }, [
         el('div', { class: 'ls-q' }, [el('span', { class: 'ls-num', text: n + '. ' }), q.q]),
         el('div', { class: 'ls-opts' }, opts),
-        srcWrap,
+        srcWrap, whyEl,
       ]);
     }
 
@@ -238,6 +246,7 @@ export async function renderListening(container, cfg) {
         autocapitalize: 'off', spellcheck: 'false', placeholder: '…' });
       const verdict = el('div', { class: 'ls-cv', style: { display: 'none' } });
       const srcWrap = el('div', { class: 'ls-src', style: { display: 'none' } });
+      const whyEl = el('div', { class: 'ls-why', style: { display: 'none' } });
       qNodes.push({
         type: 'fill', zid: q.zid, key: q.key, kes: q.kes,
         result() { const ok = norm(input.value) === norm(q.key); return { correct: ok ? 1 : 0, total: 1, allOk: ok }; },
@@ -247,19 +256,13 @@ export async function renderListening(container, cfg) {
           verdict.className = 'ls-cv block ' + (ok ? 'ok' : 'bad');
           verdict.textContent = ok ? '✓' : ('✕ ' + L.correctIs(q.key));
           verdict.style.display = 'block';
-          // опора: предложение из записи, где звучит ответ (тап → переслушать)
-          if (q.ev) {
-            srcWrap.replaceChildren(
-              el('span', { class: 'ls-src-lbl', text: L.source + ': ' }),
-              el('button', { class: 'ls-src-q', onclick: () => { try { audio.currentTime = q.ev.s; audio.play(); } catch {} } }, ['« ', q.ev.t, ' »']),
-            );
-            srcWrap.style.display = 'block';
-          }
+          fillSrc(srcWrap, q.ev);
+          fillWhy(whyEl, q.why);
         },
       });
       return el('div', { class: 'ls-task ls-fill' }, [
         el('div', { class: 'ls-q' }, [el('span', { class: 'ls-num', text: n + '. ' }), q.label]),
-        input, verdict, srcWrap,
+        input, verdict, srcWrap, whyEl,
       ]);
     }
 
