@@ -46,34 +46,66 @@ export async function recognizeBlank(file) {
   return { text: (j.result || '').trim(), words: j.words || [] };
 }
 
-// Разбор сетки: слова с координатами → { номер_задания: ответ }. Кластеризует по строкам (y),
-// в строке сортирует по x, первый числовой токен = номер задания, остальное = ответ (склейка букв).
-export function parseAnswerGrid(words) {
+// Разбор бланка-сетки: слова с координатами → { номер_задания: ответ }.
+// Надёжность: ответ = ЗАГЛАВНЫЕ ЛАТИНСКИЕ буквы строки (склейка по x), а НОМЕР задания —
+// по вертикальной позиции строки (линейная регрессия по печатным номерам строк, которые
+// читаются стабильно даже у пустых строк). Зона — ниже полосы «…КРАТКИМ ОТВЕТОМ» (отсекает шапку).
+// expectedNums — номера заданий из worksheet (для границ и запасного присвоения по порядку).
+export function parseAnswerGrid(words, expectedNums) {
   const ws = (words || []).filter((w) => w.t && w.t.trim());
   if (!ws.length) return {};
+  const maxN = (expectedNums && expectedNums.length) ? Math.max(...expectedNums) : 60;
   const hs = ws.map((w) => w.y2 - w.y).sort((a, b) => a - b);
-  const medH = hs[Math.floor(hs.length / 2)] || 30;
-  const thr = Math.max(18, medH * 0.6);
+  const medH = hs[Math.floor(hs.length / 2)] || 20;
+  const thr = Math.max(14, medH * 0.7);
+  // кластеризация токенов в строки по y
   ws.sort((a, b) => a.y - b.y || a.x - b.x);
   const rows = [];
   for (const w of ws) {
     const cy = (w.y + w.y2) / 2;
-    let r = rows.find((r) => Math.abs(r.cy - cy) < thr);
+    let r = rows.find((rr) => Math.abs(rr.cy - cy) < thr);
     if (!r) { r = { cy, items: [] }; rows.push(r); }
     r.items.push(w);
     r.cy = r.items.reduce((s, x) => s + (x.y + x.y2) / 2, 0) / r.items.length;
   }
-  const out = {};
+  // зона ответов = ниже полосы «КРАТКИМ ОТВЕТОМ» (если нашли)
+  let bandY = 0;
   for (const r of rows) {
-    const toks = r.items.sort((a, b) => a.x - b.x).map((w) => w.t.trim());
-    const mi = toks.findIndex((tk) => /^\d{1,3}$/.test(tk));
-    if (mi < 0) continue;
-    const ans = toks.slice(mi + 1).join('').replace(/\s+/g, '');
-    if (!ans) continue;
-    if (/\d{8,}/.test(ans)) continue; // образец цифр «1234567890» из шапки ФИПИ — не ответ
-    out[toks[mi]] = ans; // строки идут сверху вниз: нижняя (реальная сетка) перезапишет шумы шапки
-
+    const txt = r.items.map((w) => w.t).join(' ').toLowerCase();
+    if (/кратк|ответом/.test(txt)) bandY = Math.max(bandY, r.cy);
   }
+  const zone = rows.filter((r) => r.cy > bandY + 6);
+  // якоря-позиции: одиночные печатные цифры 1..maxN → (номер, y)
+  const anchors = [];
+  for (const r of zone) for (const w of r.items) {
+    const tk = w.t.trim();
+    if (/^\d{1,2}$/.test(tk)) { const v = +tk; if (v >= 1 && v <= maxN) anchors.push({ num: v, y: (w.y + w.y2) / 2 }); }
+  }
+  // линейная регрессия y = a*num + b (номер строки из её позиции)
+  let a = 0, b = 0;
+  if (anchors.length >= 2) {
+    const n = anchors.length;
+    const sx = anchors.reduce((s, p) => s + p.num, 0), sy = anchors.reduce((s, p) => s + p.y, 0);
+    const sxx = anchors.reduce((s, p) => s + p.num * p.num, 0), sxy = anchors.reduce((s, p) => s + p.num * p.y, 0);
+    const den = n * sxx - sx * sx;
+    if (den) { a = (n * sxy - sx * sy) / den; b = (sy - a * sx) / n; }
+  }
+  // строки с латинскими буквами = ответы; номер по позиции
+  const got = [];
+  for (const r of zone) {
+    const lat = r.items.filter((w) => /^[A-Za-z]+$/.test(w.t.trim())).sort((x, y) => x.x - y.x);
+    if (!lat.length) continue;
+    const ans = lat.map((w) => w.t.trim().toUpperCase()).join('');
+    if (ans.length > 18) continue; // строка алфавита-образца ABCDEF…Z из шапки — не ответ
+    got.push({ cy: r.cy, ans, num: a ? Math.round((r.cy - b) / a) : null });
+  }
+  // запасной вариант (нет регрессии): присвоить по порядку сверху вниз
+  if (!a && expectedNums && expectedNums.length) {
+    got.sort((p, q) => p.cy - q.cy);
+    got.forEach((p, i) => { if (i < expectedNums.length) p.num = expectedNums[i]; });
+  }
+  const out = {};
+  for (const p of got) if (p.num != null && p.num >= 1 && p.num <= maxN && p.ans) out[String(p.num)] = p.ans;
   return out;
 }
 

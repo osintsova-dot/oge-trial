@@ -733,7 +733,7 @@ function renderBlankCheck(container, expected, onBack) {
       err.style.display = 'none'; btn.disabled = true; loader.style.display = 'block';
       try {
         const { words } = await recognizeBlank(file);
-        got = parseAnswerGrid(words);
+        got = parseAnswerGrid(words, expected.map((e) => e.num));
         reviewScreen();
       } catch (e) { err.textContent = T.bkErr(e.message); err.style.display = 'block'; }
       finally { btn.disabled = false; loader.style.display = 'none'; }
