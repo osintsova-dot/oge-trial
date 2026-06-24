@@ -10,7 +10,7 @@ import { getName } from '../js/gamify.js';
 import { evalWriting } from '../js/writeeval.js';
 import { renderPrintView, stripTrailingBase } from './print.js';
 import { canRecognizePhoto, recognizePhoto, recognizeBlank, parseAnswerGrid } from '../js/ocr.js';
-import { checkAnswer } from '../js/checker.js';
+import { normalize } from '../js/checker.js';
 
 // Блок «📷 Фото письма» для ДЗ: распознаёт фото, дописывает в поле, требует сверки.
 function ocrPhotoBlock(ta, onText, errBox) {
@@ -809,7 +809,10 @@ function renderBlankCheck(container, expected, onBack) {
       const byTopic = {};
       const lines = expected.map((e) => {
         const ua = inputs[e.num].value;
-        const { correct, expected: exp } = checkAnswer(ua, { answer: e.key });
+        // в сетке-бланке нет пробелов между словами → сравниваем БЕЗ пробелов (will give = WILLGIVE)
+        const exp = e.key;
+        const ne = normalize(ua).replace(/\s+/g, ''), nk = normalize(exp).replace(/\s+/g, '');
+        const correct = !!ne && ne === nk;
         if (correct) ok += 1;
         // разбивка по темам для журнала (как у онлайн-сдач)
         const tp = topicOf(e.secId, e.item, e.key);
