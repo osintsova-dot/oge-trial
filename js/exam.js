@@ -44,7 +44,8 @@ const CONFIGS = {
     sections: [
       { id: 'vocab',   type: 'vocab',   dataFile: 'ege_vocab',   tile: 'vocab', iconKey: 'vocab', icon: '🗂' },
       { id: 'grammar', type: 'drill',   dataFile: 'ege_grammar', topicKey: 'Грамматика',       tile: 'grammar',  icon: '📝' },
-      { id: 'lexis',   type: 'drill',   dataFile: 'ege_lexis',   topicKey: 'Лексика/словообр.', tile: 'wordform', icon: '🔤' },
+      { id: 'wordform', type: 'drill',  dataFile: 'ege_lexis', answerType: 'Краткий ответ', topicKey: 'Словообразование', tile: 'wordform', icon: '🔤' },
+      { id: 'lexis',   type: 'drill',   dataFile: 'ege_lexis', answerType: 'Выбор ответа', topicKey: 'Лексика', tile: 'grammar', iconKey: 'lexis', icon: '💬' },
       { id: 'reading', type: 'reading', dataFile: 'ege_reading', tile: 'reading', iconKey: 'reading', icon: '📖' },
       { id: 'listening', type: 'listening', dataFile: 'ege_listening', tile: 'listening', iconKey: 'listening', icon: '🎧' },
       { id: 'email',   type: 'writing', tile: 'writing', icon: '✉️' },
@@ -52,7 +53,7 @@ const CONFIGS = {
       { id: 'speaking', type: 'egespeaking', dataFile: 'ege_speaking', tile: 'speaking', iconKey: 'speaking', icon: '🎤' },
       { id: 'mock',    type: 'mock', dataFile: 'ege_mock', tile: 'mock', iconKey: 'mock', icon: '📋' },
     ],
-    pack: ['grammar', 'lexis', 'reading', 'listening', 'email', 'essay'],
+    pack: ['grammar', 'wordform', 'lexis', 'reading', 'listening', 'email', 'essay'],
     soonTile: false,
     // Письмо ЕГЭ — ДВА задания: e-mail (зад.37, К1–К3, макс 6) и эссе (зад.38, К1–К5, макс 14)
     writing: {

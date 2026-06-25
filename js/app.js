@@ -34,7 +34,7 @@ function accColor(p) { return p >= 65 ? 'var(--ok)' : p >= 50 ? 'var(--warn)' : 
 const DRILL = {};
 for (const s of EXAM.sections) if (s.type === 'drill') {
   DRILL[s.id] = { section: s.id, dataFile: s.dataFile, topicKey: s.topicKey, title: t.sections[s.id],
-    keysFile: EXAM.keysFile, topicsFile: EXAM.topicsFile, explainFile: EXAM.explainFile };
+    answerType: s.answerType, keysFile: EXAM.keysFile, topicsFile: EXAM.topicsFile, explainFile: EXAM.explainFile };
 }
 
 // --- Тема ---

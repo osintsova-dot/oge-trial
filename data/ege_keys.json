@@ -5836,5 +5836,617 @@
   "verdict": "3",
   "guid": "1130C9BC1BDEA43547D93F2EB2EE0E21",
   "sec": "lexis"
+ },
+ "070D75": {
+  "answer": "is prepared",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "080B6A": {
+  "answer": "located",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "0BA458": {
+  "answer": "was used",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "108304": {
+  "answer": "passing",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "1B619A": {
+  "answer": "would be",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "24390A": {
+  "answer": "would not be",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "26D5Bc": {
+  "answer": "is drunk",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "477ecc": {
+  "answer": "are made",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "4B20e3": {
+  "answer": "haven't completed",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "5517FA": {
+  "answer": "women",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "59D20e": {
+  "answer": "was used",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "640ADB": {
+  "answer": "taking",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "647631": {
+  "answer": "running",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "67DB27": {
+  "answer": "seventh",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "6D0c34": {
+  "answer": "has been",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "6eF6DF": {
+  "answer": "better",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "74559D": {
+  "answer": "lives",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "79c9e8": {
+  "answer": "were turned",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "827270": {
+  "answer": "using",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "874D68": {
+  "answer": "has become",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "904cA1": {
+  "answer": "was founded",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "91e287": {
+  "answer": "These",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "92BAD9": {
+  "answer": "These",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "9A34e7": {
+  "answer": "achieve",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "9AB25F": {
+  "answer": "don't need",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "9D001A": {
+  "answer": "have appeared",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "9eeA51": {
+  "answer": "does not suit",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "A148Dc": {
+  "answer": "those",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "A68B08": {
+  "answer": "came",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "A82DAF": {
+  "answer": "including",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "A8Fc65": {
+  "answer": "best",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "A98c3B": {
+  "answer": "developed",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "AA2501": {
+  "answer": "easiest",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "AF2564": {
+  "answer": "starting",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "Ac531c": {
+  "answer": "is believed",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "B38DAe": {
+  "answer": "itself",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "BD047B": {
+  "answer": "developed",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "BD9334": {
+  "answer": "passed",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "F222c3": {
+  "answer": "will lose",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "F88D55": {
+  "answer": "less",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "c34D54": {
+  "answer": "have found",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "c48709": {
+  "answer": "does not crack",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "c9A8F6": {
+  "answer": "These",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "cA5c64": {
+  "answer": "was mentioned",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "e1123A": {
+  "answer": "would stop",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "e14cF3": {
+  "answer": "oldest",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "e5F6BA": {
+  "answer": "children",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "eAeDeB": {
+  "answer": "weren't allowed",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "grammar"
+ },
+ "02D2c6": {
+  "answer": "Probably",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "0565cF": {
+  "answer": "Naturally",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "065ee9": {
+  "answer": "exciting",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "07c5e4": {
+  "answer": "requirements",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "0931B4": {
+  "answer": "unable",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "0A3D89": {
+  "answer": "readers",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "104Fe3": {
+  "answer": "unlikely",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "41722e": {
+  "answer": "active",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "4BABe6": {
+  "answer": "interactive",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "5098eD": {
+  "answer": "definitely",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "536A4F": {
+  "answer": "countless",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "56D68e": {
+  "answer": "education",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "67F990": {
+  "answer": "unhealthy",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "69Dcee": {
+  "answer": "tasty",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "6c1B10": {
+  "answer": "countless",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "729827": {
+  "answer": "readership",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "76e244": {
+  "answer": "business",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "7B5A27": {
+  "answer": "really",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "7B9e95": {
+  "answer": "journalists",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "7e6B6c": {
+  "answer": "building",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "802992": {
+  "answer": "governmental",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "81D7B7": {
+  "answer": "buildings",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "83De1c": {
+  "answer": "simply",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "860c87": {
+  "answer": "colourful",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "92868F": {
+  "answer": "unusually",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "977315": {
+  "answer": "educational",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "A15222": {
+  "answer": "variety",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "B0D066": {
+  "answer": "containers",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "B158F4": {
+  "answer": "various",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "D11766": {
+  "answer": "usually",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "D1B0eA": {
+  "answer": "collections",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "D339B2": {
+  "answer": "SCIENTISTS",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "D65B2D": {
+  "answer": "actually",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "DDe380": {
+  "answer": "production",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "F0ce5A": {
+  "answer": "popularity",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "F910F0": {
+  "answer": "impossible",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "FeeAee": {
+  "answer": "permission",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "c137F0": {
+  "answer": "collection",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "cAA579": {
+  "answer": "users",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "ee41eF": {
+  "answer": "personalities",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "wordform"
+ },
+ "237B42": {
+  "answer": "used",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "lexis"
+ },
+ "2B8c8B": {
+  "answer": "though",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "lexis"
+ },
+ "4D3cF1": {
+  "answer": "apologized",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "lexis"
+ },
+ "6B040c": {
+  "answer": "remember",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "lexis"
+ },
+ "79F5B8": {
+  "answer": "decided",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "lexis"
+ },
+ "86BA5D": {
+  "answer": "just",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "lexis"
+ },
+ "93586e": {
+  "answer": "up",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "lexis"
+ },
+ "A89512": {
+  "answer": "realized",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "lexis"
+ },
+ "Ac2c8B": {
+  "answer": "agree",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "lexis"
+ },
+ "Ac6F6D": {
+  "answer": "although",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "lexis"
+ },
+ "B6B7ee": {
+  "answer": "pick",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "lexis"
+ },
+ "BA9BDA": {
+  "answer": "allowed",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "lexis"
+ },
+ "FcAD26": {
+  "answer": "reminded",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "lexis"
+ },
+ "Fe76eD": {
+  "answer": "hardly",
+  "verdict": "ai",
+  "guid": null,
+  "sec": "lexis"
  }
 }

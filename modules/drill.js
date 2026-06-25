@@ -58,6 +58,8 @@ export async function renderDrill(container, cfg) {
     mount(container, el('div', { class: 'err-msg', text: e.message }));
     return;
   }
+  // фильтр по типу ответа (для ЕГЭ один файл ege_lexis делится на «Словообразование» и «Лексика»)
+  if (cfg.answerType) items = items.filter((it) => it.answer_type === cfg.answerType);
   // MC «Выбор ответа» берём только с предложением-контекстом (иначе выбор синонима вслепую)
   const withKey = items.filter((it) => keys[it.zid] && (it.answer_type !== 'Выбор ответа' || it.sentence));
   // «умные» темы по форме ответа (Present Perfect, Passive, Существительные…) вместо сырых КЭС

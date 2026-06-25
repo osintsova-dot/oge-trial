@@ -6586,5 +6586,23 @@
   "verdict": "3",
   "guid": "7D62CDB4523FA434420E683E98C8C149",
   "sec": "grammar"
+ },
+ "54808B": {
+  "answer": "have done",
+  "verdict": "3",
+  "guid": "F84F0281EE7685104800A055F581900D",
+  "sec": "grammar"
+ },
+ "E88E5C": {
+  "answer": "will have",
+  "verdict": "3",
+  "guid": "8CAFFCF96E3F88434071015409992119",
+  "sec": "grammar"
+ },
+ "3D566F": {
+  "answer": "disagree",
+  "verdict": "3",
+  "guid": "DE187DB763FD8AAA44BE3D2E8E1DBE10",
+  "sec": "wordform"
  }
 }
