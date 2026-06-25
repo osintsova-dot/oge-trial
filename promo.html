@@ -139,6 +139,23 @@
   footer .brand{justify-content:center;color:var(--ink);margin-bottom:10px}
   .mini{font-size:13.5px;color:var(--muted)}
 
+  /* сравнение «банк vs тренажёр» */
+  .compare{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:42px auto 0;max-width:900px}
+  .comp-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:var(--shadow-sm)}
+  .comp-card.win{border:2px solid var(--p);box-shadow:var(--shadow);position:relative}
+  .comp-card h3{font-size:19px;margin-bottom:16px}
+  .comp-card .tag{position:absolute;top:-13px;right:18px;background:var(--grad);color:#fff;font-size:12px;font-weight:800;padding:6px 13px;border-radius:999px}
+  .comp-card ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+  .comp-card li{display:flex;gap:10px;font-size:15px;align-items:flex-start}
+  .comp-card li .m{flex:none;font-weight:900;width:18px}
+  .comp-card li.no{color:var(--muted)}.comp-card li.no .m{color:#d05a5a}
+  .comp-card li.yes .m{color:#2faa6a}
+  /* строка доверия */
+  .trust{display:flex;align-items:center;justify-content:center;gap:26px;flex-wrap:wrap;margin-top:38px;text-align:center}
+  .trust .t-it{display:flex;align-items:center;gap:10px;font-size:15px;color:var(--muted)}
+  .trust .t-it b{color:var(--ink)}
+  .trust .e{font-size:22px}
+
   /* анимации на скролле (прячем только если JS активен — иначе контент виден всегда) */
   .js .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
   .js .reveal.in{opacity:1;transform:none}
@@ -379,6 +396,46 @@
           <li><span class="e">🎤</span><span><b>Говорение.</b> Запись распознаётся и разбирается, есть эталоны ответов.</span></li>
         </ul>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ НЕ ПРОСТО БАНК ЗАДАНИЙ ============ -->
+<section>
+  <div class="wrap">
+    <div class="center"><span class="eyebrow reveal">Почему мы</span><h2 class="reveal">Не просто банк заданий — полноценная подготовка</h2>
+    <p class="lead reveal">Списки заданий с ответами есть везде. Но письмо и устную часть так не вытянуть — нужен разбор. Здесь он встроен.</p></div>
+    <div class="compare">
+      <div class="comp-card reveal d1">
+        <h3>Обычный банк заданий</h3>
+        <ul>
+          <li class="yes"><span class="m">✓</span><span>Задания и ответы</span></li>
+          <li class="yes"><span class="m">✓</span><span>Тренировка по номерам</span></li>
+          <li class="no"><span class="m">✕</span><span>Проверка письма по критериям</span></li>
+          <li class="no"><span class="m">✕</span><span>Проверка устной речи</span></li>
+          <li class="no"><span class="m">✕</span><span>Проверка по фото</span></li>
+          <li class="no"><span class="m">✕</span><span>Пробники с баллами и прогнозом</span></li>
+          <li class="no"><span class="m">✕</span><span>Геймификация и ежедневная привычка</span></li>
+        </ul>
+      </div>
+      <div class="comp-card win reveal d2">
+        <span class="tag">Speak &amp; Smile</span>
+        <h3>Тренажёр Speak &amp; Smile</h3>
+        <ul>
+          <li class="yes"><span class="m">✓</span><span>Весь банк заданий <b>ФИПИ</b> + разбор каждого («почему так»)</span></li>
+          <li class="yes"><span class="m">✓</span><span><b>ИИ-проверка письма</b> по критериям К1–К5</span></li>
+          <li class="yes"><span class="m">✓</span><span><b>ИИ-проверка устной речи</b> + эталоны</span></li>
+          <li class="yes"><span class="m">✓</span><span><b>Проверка по фото</b> (письмо и бланк)</span></li>
+          <li class="yes"><span class="m">✓</span><span>Пробники с таймером, баллами и прогнозом отметки</span></li>
+          <li class="yes"><span class="m">✓</span><span>Геймификация: серии, опыт, награды</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="lead center reveal" style="margin:34px auto 0;font-size:17px"><b>ИИ-проверка письма и речи</b> — то, чего нет у банков заданий, а у репетиторов стоит 3000–5000 ₽ в месяц. Здесь — внутри.</p>
+    <div class="trust reveal">
+      <div class="t-it"><span class="e">🏫</span><span>Школа <b>Speak &amp; Smile</b> · с 2013 года</span></div>
+      <div class="t-it"><span class="e">🎯</span><span>Проверка <b>откалибрована</b> на реальном экзамене</span></div>
+      <div class="t-it"><span class="e">🏛</span><span>Только официальные задания <b>ФИПИ</b></span></div>
     </div>
   </div>
 </section>
