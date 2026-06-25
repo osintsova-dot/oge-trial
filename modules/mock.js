@@ -13,7 +13,7 @@ import { evalSpeaking, evalEgeSpeaking } from '../js/speakeval.js';
 import { renderPrintView, enumerateAnswerKeys } from './print.js';
 import { renderBlankCheck } from './teacher.js';
 
-const WORKER = 'https://purple-cake-2966.o-sintsova.workers.dev';
+const WORKER = 'https://oge-eval.o-sintsova.workers.dev';
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G']; // EGE headings = 7 текстов A–G; ОГЭ matching/gaps (A–F) — лишние отфильтруются по texts[L]
 
 function norm(s) { return (s || '').toString().toLowerCase().trim().replace(/[.,!?;:]/g, '').replace(/\s+/g, ' '); }

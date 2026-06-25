@@ -3,7 +3,7 @@
 
 import { fetchRetry, parseModelJSON } from './net.js';
 
-const WORKER = 'https://purple-cake-2966.o-sintsova.workers.dev'; // прокси DeepSeek
+const WORKER = 'https://oge-eval.o-sintsova.workers.dev'; // прокси DeepSeek
 
 export async function evalWriting(text, opts) {
   const { lang, sectionId, criteria, max, words, stim, essayKind } = opts;

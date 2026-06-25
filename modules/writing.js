@@ -16,7 +16,7 @@ import { shareWritingResult } from './teacher.js';
 import { evalWriting as evalWritingApi } from '../js/writeeval.js';
 import { canRecognizePhoto, recognizePhoto } from '../js/ocr.js';
 
-const WORKER = 'https://purple-cake-2966.o-sintsova.workers.dev'; // прокси DeepSeek
+const WORKER = 'https://oge-eval.o-sintsova.workers.dev'; // прокси DeepSeek
 
 // Тематическая картинка для карточки-стимула. ОГЭ — по subject; ЕГЭ — по ключевым словам промпта.
 const SUBJECT_THEME = {

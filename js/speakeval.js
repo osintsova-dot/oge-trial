@@ -5,7 +5,7 @@
 
 import { fetchRetry, parseModelJSON } from './net.js';
 
-const EVAL_WORKER = 'https://purple-cake-2966.o-sintsova.workers.dev';
+const EVAL_WORKER = 'https://oge-eval.o-sintsova.workers.dev';
 
 // критерии по типу задания ОГЭ-говорения
 export function speakingCriteria(kind, item) {
