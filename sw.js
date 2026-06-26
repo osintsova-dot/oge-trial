@@ -2,7 +2,7 @@
 // Стратегия: КОД (html/js/css/json) — network-first с обходом HTTP-кэша (online всегда свежая
 // версия → лечит 10-мин кэш GitHub Pages; кэш = офлайн-фолбэк). АССЕТЫ (png/jpg/mp3/svg) —
 // cache-first (не меняются). Чужие origin (воркеры, аудио ФИПИ) — не трогаем.
-const CACHE = 'ss-cache-v3';
+const CACHE = 'ss-cache-v4';
 
 self.addEventListener('install', () => self.skipWaiting());
 
