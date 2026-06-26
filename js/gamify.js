@@ -78,6 +78,11 @@ function ymd(d) {
   return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
 }
 function todayStr() { return ymd(new Date()); }
+
+// Сигнал «была активность сегодня» — для heartbeat пушей (push.js слушает 'ss:activity').
+function notifyActivity(s) {
+  try { window.dispatchEvent(new CustomEvent('ss:activity', { detail: { streak: s.streak.count } })); } catch (e) {}
+}
 function yesterdayStr() { const d = new Date(); d.setDate(d.getDate() - 1); return ymd(d); }
 // Сколько дней между двумя датами 'YYYY-MM-DD' (b - a)
 function daysBetween(a, b) {
@@ -324,6 +329,7 @@ export function recordRound(section, correct, total) {
   write(s);
   const lvlBefore = levelInfo(xpBefore).level;
   const lvl = levelInfo(s.xp);
+  notifyActivity(s);
   return {
     streak: s.streak.count, streakUp,
     xpGained, xpTotal: s.xp,
@@ -381,6 +387,7 @@ export function recordVocabReview(remembered, dayJustClosed) {
   while (days.length > HISTORY_KEEP) delete s.history[days.shift()];
   write(s);
   const lvl = levelInfo(s.xp), lvlBefore = levelInfo(xpBefore).level;
+  notifyActivity(s);
   return {
     xpGained, streak: s.streak.count, streakUp, freezeUsed, tokensEarned,
     dayClosed: !!dayJustClosed, levelUp: lvl.level > lvlBefore, level: lvl.level, title: lvl.title,

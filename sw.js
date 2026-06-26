@@ -12,6 +12,31 @@ self.addEventListener('activate', (e) => e.waitUntil((async () => {
   await self.clients.claim();
 })()));
 
+// --- Пуши «не теряй серию» ---
+self.addEventListener('push', (e) => {
+  let d = {};
+  try { d = e.data ? e.data.json() : {}; } catch (err) {}
+  const url = d.url || './';
+  const icon = url.indexOf('ege') >= 0 ? './assets/icon-ege-192.png' : './assets/icon-oge-192.png';
+  e.waitUntil(self.registration.showNotification(d.title || 'Speak & Smile', {
+    body: d.body || 'Не теряй серию — сделай раунд сегодня!',
+    icon, badge: icon, tag: d.tag || 'streak', renotify: true,
+    data: { url },
+  }));
+});
+
+self.addEventListener('notificationclick', (e) => {
+  e.notification.close();
+  const target = (e.notification.data && e.notification.data.url) || './';
+  e.waitUntil((async () => {
+    const all = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
+    for (const c of all) {
+      if ('focus' in c) { try { await c.navigate(new URL(target, self.location.origin).href); } catch (err) {} return c.focus(); }
+    }
+    if (self.clients.openWindow) return self.clients.openWindow(target);
+  })());
+});
+
 self.addEventListener('fetch', (e) => {
   const req = e.request;
   if (req.method !== 'GET') return;

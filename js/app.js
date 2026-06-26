@@ -16,6 +16,12 @@ import { dailyProgress, themeStats } from './vocab_srs.js';
 import { weeklyPlan } from './planner.js';
 import { exportProgress, importProgress } from './backup.js';
 import { hasAccess, getKey, setKey, checkKey, rememberCheck } from './license.js';
+import { pushSupported, isSubscribed, enablePush, disablePush, iosNeedsInstall, getHour, heartbeat } from './push.js';
+
+// Heartbeat пушей: при активности шлём «занимался сегодня + серия» (тихо, если есть подписка).
+window.addEventListener('ss:activity', (e) => {
+  try { heartbeat((e.detail && e.detail.streak) || 0, true); } catch (err) {}
+});
 
 // ССЫЛКА НА СООБЩЕСТВО VK (откуда берут ключ) — подставить, когда будет
 const VK_URL = 'https://vk.com/';
@@ -513,6 +519,7 @@ async function renderProgress() {
     el('div', { class: 'prog-actions' }, [
       el('button', { class: 'act-name', text: getSound() ? t.soundOn : t.soundOff,
         onclick: () => { setSound(!getSound()); renderProgress(); } }),
+      pushButton(),
       el('button', { class: 'act-name', text: t.changeName, onclick: () => renderWelcome(getName(), true) }),
       el('button', { class: 'act-name', text: t.backupSave, onclick: backupModal }),
       el('button', { class: 'act-name', text: t.backupRestore, onclick: restoreFlow }),
@@ -523,6 +530,28 @@ async function renderProgress() {
       } }),
     ]),
   ]));
+}
+
+// Кнопка-тумблер пушей «не теряй серию» (в настройках «Прогресс»).
+function pushButton() {
+  if (!pushSupported()) return null;
+  const btn = el('button', { class: 'act-name', text: '🔔 …' });
+  const refresh = () => isSubscribed().then((on) => {
+    btn.dataset.on = on ? '1' : '';
+    btn.textContent = on ? t.pushOn : t.pushOff;
+  });
+  btn.addEventListener('click', async () => {
+    if (iosNeedsInstall()) { alert(t.pushIosInstall); return; }
+    btn.disabled = true; btn.textContent = t.pushWait;
+    try {
+      if (btn.dataset.on) await disablePush();
+      else { const ok = await enablePush(getName(), getHour()); if (!ok) throw new Error('net'); }
+    } catch (e) {
+      alert(e.message === 'denied' ? t.pushDenied : t.pushErr);
+    } finally { btn.disabled = false; refresh(); }
+  });
+  refresh();
+  return btn;
 }
 
 // --- Бэкап прогресса: показать код (копируемый) / восстановить из кода ---
