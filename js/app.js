@@ -185,8 +185,9 @@ function renderHome() {
       el('div', { class: 't-meta', text: t.sectionMeta[sec.id] || '' }),
     ]);
   };
-  // ОГЭ: пробник выносим из сетки в широкую плашку; ЕГЭ: оставляем плиткой (плиток больше — гармонично)
-  const mockWide = EXAM.id === 'oge';
+  // Пробник выносим из сетки в широкую плашку во всю ширину (и ОГЭ, и ЕГЭ —
+  // так сетка остальных плиток заполняется ровно, а пробник смотрится завершённо)
+  const mockWide = true;
   const tileEls = EXAM.sections.filter((s) => !(mockWide && s.type === 'mock')).map(tile);
   // «Скоро» (Аудирование) — обычной плашкой в той же сетке, последней
   if (EXAM.soonTile) tileEls.push(el('div', { class: 'tile locked' }, [
@@ -196,7 +197,7 @@ function renderHome() {
   ]));
   const tiles = el('div', { class: 'tiles' }, tileEls);
 
-  // Пробный экзамен — широкой плашкой во всю ширину (только ОГЭ; в ЕГЭ остаётся плиткой)
+  // Пробный экзамен — широкой плашкой во всю ширину (ОГЭ и ЕГЭ)
   const mockSec = mockWide ? EXAM.sections.find((s) => s.type === 'mock') : null;
   const mockCard = mockSec ? el('button', { class: 'goal goal-btn mock-wide', onclick: () => { location.hash = '#/' + mockSec.id; } }, [
     el('div', { class: 'ring', style: { background: 'var(--grad-mock)' } }, [el('i', {}, [iconImg('ic-' + (mockSec.iconKey || mockSec.tile), mockSec.icon, 'goal-img')])]),
