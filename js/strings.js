@@ -15,6 +15,11 @@ export const STRINGS = {
   ru: {
     // splash
     brandline: 'Speak & Smile · Тренажёр ОГЭ',
+    paywall: { title: 'Доступ к тренажёру', sub: '14 дней бесплатно — по ключу из нашего сообщества',
+      getVK: 'Получить ключ во ВКонтакте →', haveKey: 'Уже есть ключ? Введи его:',
+      keyPh: 'XXXX-XXXX-XXXX', checkBtn: 'Войти', checking: 'Проверяю…',
+      bad: 'Ключ не найден. Проверь и попробуй ещё раз.', expired: 'Срок действия ключа истёк.',
+      wrongExam: 'Этот ключ — для другого экзамена.', net: 'Нет связи с сервером. Проверь интернет.' },
     greetHi: 'Привет! Я Спики 👋', greetQ: 'Как тебя зовут?',
     namePlaceholder: 'Твоё имя', go: 'Поехали!',
     offlineNote: 'Всё работает оффлайн. Прогресс хранится на твоём устройстве — без аккаунтов.',
@@ -479,6 +484,11 @@ export const STRINGS = {
   en: {
     // splash
     brandline: 'Speak & Smile · EGE Trainer',
+    paywall: { title: 'Доступ к тренажёру', sub: '14 дней бесплатно — по ключу из нашего сообщества',
+      getVK: 'Получить ключ во ВКонтакте →', haveKey: 'Уже есть ключ? Введи его:',
+      keyPh: 'XXXX-XXXX-XXXX', checkBtn: 'Войти', checking: 'Проверяю…',
+      bad: 'Ключ не найден. Проверь и попробуй ещё раз.', expired: 'Срок действия ключа истёк.',
+      wrongExam: 'Этот ключ — для другого экзамена.', net: 'Нет связи с сервером. Проверь интернет.' },
     greetHi: "Hi! I'm Speaky 👋", greetQ: "What's your name?",
     namePlaceholder: 'Your name', go: "Let's go!",
     offlineNote: 'Everything works offline. Your progress stays on your device — no accounts.',

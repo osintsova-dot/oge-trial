@@ -15,6 +15,10 @@ import { EXAM, t, sectionById, plural } from './exam.js';
 import { dailyProgress, themeStats } from './vocab_srs.js';
 import { weeklyPlan } from './planner.js';
 import { exportProgress, importProgress } from './backup.js';
+import { hasAccess, getKey, setKey, checkKey, rememberCheck } from './license.js';
+
+// ССЫЛКА НА СООБЩЕСТВО VK (откуда берут ключ) — подставить, когда будет
+const VK_URL = 'https://vk.com/';
 // Модули разделов грузятся ЛЕНИВО (import() по требованию) — на главной не тянем весь код.
 // lazy(path, name, arg): показать лоадер → импортировать модуль → вызвать render(view, arg).
 function lazy(path, name, arg) {
@@ -756,7 +760,47 @@ function renderExamIntro() {
   slides(cards, { lastCta: t.go, onDone: () => { setOnboarded(true); goHome(); } });
 }
 
-// --- Иконки нижнего меню (картинки с откатом на эмодзи) ---
+// --- Замок: экран ввода ключа доступа (paywall) ---
+function renderPaywall() {
+  document.body.classList.add('welcome-mode');
+  const p = t.paywall || {};
+  const input = el('input', { class: 'name-input', type: 'text', placeholder: p.keyPh || 'XXXX-XXXX-XXXX', autocomplete: 'off', value: getKey() || '' });
+  const go = el('button', { class: 'go', text: p.checkBtn || 'Войти' });
+  const err = el('div', { class: 'err-msg', style: { display: 'none' } });
+  const vk = el('a', { class: 'skip-link', href: VK_URL, target: '_blank', rel: 'noopener', text: p.getVK || 'Получить ключ в VK →' });
+  const submit = async () => {
+    const k = input.value.trim().toUpperCase();
+    if (!k) { input.focus(); return; }
+    err.style.display = 'none'; go.disabled = true; go.textContent = p.checking || 'Проверяю…';
+    try {
+      const res = await checkKey(k);
+      if (res.valid) { setKey(k); rememberCheck(res); document.body.classList.remove('welcome-mode'); bootAfterAccess(); return; }
+      err.textContent = res.reason === 'expired' ? (p.expired || 'Срок ключа истёк.')
+        : res.reason === 'wrong_exam' ? (p.wrongExam || 'Этот ключ — для другого экзамена.')
+        : (p.bad || 'Ключ не найден. Проверь и попробуй ещё раз.');
+      err.style.display = 'block';
+    } catch (e) {
+      err.textContent = p.net || 'Нет связи с сервером. Проверь интернет.'; err.style.display = 'block';
+    } finally { go.disabled = false; go.textContent = p.checkBtn || 'Войти'; }
+  };
+  go.addEventListener('click', submit);
+  input.addEventListener('keydown', (e) => { if (e.key === 'Enter') submit(); });
+
+  mount(view, el('div', { class: 'splash' }, [
+    el('div', { class: 'shine' }),
+    el('div', { class: 'inner' }, [
+      el('img', { src: EXAM.splashImg, alt: 'Speaky' }),
+      el('div', { class: 'brandline', text: t.brandline }),
+      el('div', { class: 'greet' }, [p.title || 'Доступ к тренажёру', el('br'), el('span', { style: { fontSize: '15px', fontWeight: '400', opacity: '.9' }, text: p.sub || '14 дней бесплатно по ключу из нашего сообщества' })]),
+      vk,
+      el('div', { class: 'note', style: { margin: '14px 0 6px' }, text: p.haveKey || 'Уже есть ключ? Введи его:' }),
+      input, go, err,
+    ]),
+  ]));
+  input.focus();
+}
+
+// Иконки нижнего меню (картинки с откатом на эмодзи) ---
 const NAV_IC = { home: ['ic-home', '🏠'], progress: ['ic-progress', '📊'], rewards: ['ic-rewards', '🎖'], teacher: ['ic-teacher', '🧑‍🏫'] };
 document.querySelectorAll('#bottom-nav a').forEach((a) => {
   const tab = a.getAttribute('data-tab'), ic = a.querySelector('.bn-ic');
@@ -768,9 +812,21 @@ applyTheme(getTheme());
 applySkin();
 updateRoleUI();
 window.addEventListener('hashchange', route);
-// ссылка-ДЗ и секретный вход учителя открываются сразу, минуя онбординг
-const directHash = ['hw', 'hwr', 'teacher', 'journal'].includes(location.hash.replace(/^#\/?/, '').split('?')[0]);
-if (directHash) route();
-else if (!getName()) renderWelcome();
-else if (!isOnboarded()) renderExamDate();   // имя есть, но онбординг не завершён → дата + интро
-else route();
+
+// продолжение запуска ПОСЛЕ подтверждения доступа (вызывается из paywall и при старте)
+function bootAfterAccess() {
+  const bare = location.hash.replace(/^#\/?/, '').split('?')[0];
+  if (['teacher', 'journal'].includes(bare)) return route(); // учитель с ключом — сразу в кабинет, минуя ученический онбординг
+  if (!getName()) return renderWelcome();
+  if (!isOnboarded()) return renderExamDate();
+  route();
+}
+
+// ДЗ-ссылки ученика (#/hw, #/hwr) открываются СВОБОДНО, минуя замок и онбординг (платит учитель).
+// Всё остальное (включая учительский кабинет) — за ключом доступа.
+const bareHash = location.hash.replace(/^#\/?/, '').split('?')[0];
+if (['hw', 'hwr'].includes(bareHash)) {
+  route();
+} else {
+  hasAccess().then((ok) => { if (ok) bootAfterAccess(); else renderPaywall(); });
+}
