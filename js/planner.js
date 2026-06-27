@@ -58,7 +58,7 @@ function countSpeaking(sd) {
 
 // Остаток под заданную «глубину». extra — псевдо-темы по sec.id; writeCounts — число писем по разделу.
 // Письмо/эссе = одна «тема» с реальным числом заданий (full=всё, master=15, light=5).
-function compute(topics, perTopic, extra, writeCounts, speakingCounts, speakingDone) {
+function compute(topics, perTopic, extra, writeCounts, speakingCounts, speakingDone, drillCounts) {
   const secs = [], weak = [];
   const witems = writingStats().items || [];
   let R = 0;
@@ -86,6 +86,16 @@ function compute(topics, perTopic, extra, writeCounts, speakingCounts, speakingD
     const topicKey = s.topicKey || (s.type === 'reading' ? READING_KEY : null);
     let list = topicKey ? (topics[topicKey] || []) : [];
     if (!list.length && (s.type === 'reading' || s.type === 'listening') && extra && extra[s.id]) list = extra[s.id];  // чтение/аудирование без КЭС в topics
+    // drill без тем (ЕГЭ словообр./лексика) — считаем общим числом заданий, как письмо
+    if (!list.length && s.type === 'drill' && drillCounts && drillCounts[s.id]) {
+      const count = drillCounts[s.id];
+      const att = sectionStats(s.id).attempted || 0;
+      const rem = Math.max(0, Math.min(perTopic, count) - att);
+      R += rem;
+      secs.push({ id: s.id, name: t.sections[s.id], rem, doneTopics: rem ? 0 : 1, totTopics: 1 });
+      if (rem) weak.push({ section: s.id, label: t.sections[s.id], rem });
+      continue;
+    }
     if (!list.length) continue;
     const by = sectionStats(s.id).byKes;
     let secRem = 0, doneT = 0;
@@ -140,8 +150,21 @@ export async function weeklyPlan() {
     }
   }
   const speakingDone = Object.keys(getSpeakingDone()).length;
+  // drill-разделы без тем в topics (ЕГЭ: словообр./лексика — общий ключ «Лексика/словообр.»,
+  // деление по answer_type) — считаем общим числом заданий по фильтру дрилла (withKey).
+  const keys = await loadJSON(EXAM.keysFile || 'keys');
+  const drillCounts = {};
+  for (const s of EXAM.sections) {
+    if (s.type !== 'drill' || (topics[s.topicKey] || []).length) continue;
+    try {
+      let items = await loadJSON(s.dataFile);
+      items = Array.isArray(items) ? items : (items.items || []);
+      if (s.answerType) items = items.filter((it) => it.answer_type === s.answerType);
+      drillCounts[s.id] = items.filter((it) => keys[it.zid] && (it.answer_type !== 'Выбор ответа' || it.sentence)).length;
+    } catch {}
+  }
   const tiers = TIERS.map((def) => {
-    const c = compute(topics, def.perTopic, extra, writeCounts, speakingCounts, speakingDone);
+    const c = compute(topics, def.perTopic, extra, writeCounts, speakingCounts, speakingDone, drillCounts);
     const weekly = Math.ceil(c.R / weeks);
     return { key: def.key, R: c.R, weekly, daily: Math.ceil(weekly / 7),
       status: statusOf(weekly, c.R), secs: c.secs, weak: c.weak };
