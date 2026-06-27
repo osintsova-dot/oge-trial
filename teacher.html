@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#6C3FC5">
+  <title>Кабинет учителя · Speak & Smile</title>
+  <link rel="manifest" href="./manifest-teacher.json">
+  <link rel="icon" type="image/png" href="./assets/icon-teacher-192.png">
+  <link rel="apple-touch-icon" href="./assets/apple-touch-teacher.png">
+  <style>
+    :root{--p:#6C3FC5;--honey:#F5C842;--ink:#1A1A2E}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;align-items:center;
+      justify-content:center;text-align:center;padding:28px;color:#fff;font:16px/1.5 -apple-system,system-ui,sans-serif;
+      background:linear-gradient(160deg,#7C4FC8,#6C3FC5 45%,#5A2FB0)}
+    img.ic{width:120px;height:120px;border-radius:26px;box-shadow:0 14px 34px rgba(0,0,0,.3);margin-bottom:18px}
+    h1{font-size:24px;font-weight:800;margin:0 0 6px}
+    p{margin:6px 0;color:rgba(255,255,255,.92);max-width:340px}
+    a.btn{display:block;width:100%;max-width:340px;margin:22px 0 8px;background:var(--honey);color:var(--ink);
+      text-decoration:none;font-weight:800;font-size:17px;padding:16px;border-radius:14px;box-shadow:0 8px 20px rgba(245,200,66,.35)}
+    .card{background:rgba(255,255,255,.12);border-radius:16px;padding:16px 18px;max-width:360px;margin-top:14px;
+      text-align:left;backdrop-filter:blur(4px)}
+    .card b{color:var(--honey)}
+    .card ol{margin:8px 0 0;padding-left:20px}
+    .card li{margin:5px 0}
+    .note{font-size:13px;color:rgba(255,255,255,.8);margin-top:14px;max-width:340px}
+  </style>
+</head>
+<body>
+  <img class="ic" src="./assets/icon-teacher-512.png" alt="">
+  <h1>Кабинет учителя</h1>
+  <p>Speak &amp; Smile — печать заданий, ДЗ по ссылке, журнал класса.</p>
+
+  <a class="btn" href="./oge.html#/teacher">Войти в кабинет →</a>
+
+  <div class="card">
+    <b>📲 Установить на экран «Домой»</b>
+    <ol>
+      <li>Нажми «<b>Поделиться</b>» (квадрат со стрелкой).</li>
+      <li>Выбери «<b>На экран „Домой"</b>».</li>
+      <li>Готово — ярлык «Учитель» откроет кабинет напрямую.</li>
+    </ol>
+  </div>
+
+  <p class="note">При первом входе в установленном приложении нужно один раз ввести ключ доступа — дальше запомнит.</p>
+</body>
+</html>
