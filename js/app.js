@@ -25,6 +25,15 @@ window.addEventListener('ss:activity', (e) => {
 
 // ССЫЛКА НА СООБЩЕСТВО VK (откуда берут ключ) — подставить, когда будет
 const VK_URL = 'https://vk.com/';
+
+// Код перехода в режим учителя (в настройках «Прогресс»). СМЕНИ на свой.
+const TEACHER_PASS = 'SS-TEACHER';
+function enterTeacher() {
+  const code = prompt(t.teacherPrompt);
+  if (code == null) return;
+  if (code.trim().toUpperCase() === TEACHER_PASS) { setRole('teacher'); updateRoleUI(); location.hash = '#/teacher'; route(); }
+  else alert(t.teacherWrong);
+}
 // Модули разделов грузятся ЛЕНИВО (import() по требованию) — на главной не тянем весь код.
 // lazy(path, name, arg): показать лоадер → импортировать модуль → вызвать render(view, arg).
 function lazy(path, name, arg) {
@@ -525,7 +534,9 @@ async function renderProgress() {
       el('button', { class: 'act-name', text: t.backupSave, onclick: backupModal }),
       el('button', { class: 'act-name', text: t.backupRestore, onclick: restoreFlow }),
       el('button', { class: 'act-name', text: '📅 ' + t.countdownSetTitle, onclick: () => renderExamDate(true) }),
-      getRole() === 'teacher' ? el('button', { class: 'act-name', text: '🧑‍🏫 ' + t.exitTeacher, onclick: () => { setRole('student'); updateRoleUI(); goHome(); } }) : null,
+      getRole() === 'teacher'
+        ? el('button', { class: 'act-name', text: '🧑‍🏫 ' + t.exitTeacher, onclick: () => { setRole('student'); updateRoleUI(); goHome(); } })
+        : el('button', { class: 'act-name', text: '🧑‍🏫 ' + t.teacherMode, onclick: enterTeacher }),
       el('button', { class: 'act-reset', text: t.reset, onclick: () => {
         if (confirm(t.resetConfirm)) { resetAll(); renderProgress(); }
       } }),
