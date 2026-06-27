@@ -5,7 +5,7 @@
 
 import { loadJSON } from './data.js';
 import { EXAM, t } from './exam.js';
-import { examInfo, getPlanGoal } from './gamify.js';
+import { examInfo, getPlanGoal, getSpeakingDone } from './gamify.js';
 import { sectionStats, writingStats } from './progress.js';
 import { themeStats } from './vocab_srs.js';
 
@@ -49,9 +49,16 @@ async function listeningTopics(dataFile) {
   } catch { return []; }
 }
 
+// Число заданий говорения = сумма длин всех массивов-видов в data-файле (read/survey/monologue/ask/…).
+function countSpeaking(sd) {
+  let n = 0;
+  for (const k in sd) if (Array.isArray(sd[k])) n += sd[k].length;
+  return n;
+}
+
 // Остаток под заданную «глубину». extra — псевдо-темы по sec.id; writeCounts — число писем по разделу.
 // Письмо/эссе = одна «тема» с реальным числом заданий (full=всё, master=15, light=5).
-function compute(topics, perTopic, extra, writeCounts) {
+function compute(topics, perTopic, extra, writeCounts, speakingCounts, speakingDone) {
   const secs = [], weak = [];
   const witems = writingStats().items || [];
   let R = 0;
@@ -61,6 +68,15 @@ function compute(topics, perTopic, extra, writeCounts) {
       if (!count) continue;
       const done = witems.filter((it) => it.section === s.id).length;
       const rem = Math.max(0, Math.min(perTopic, count) - done);
+      R += rem;
+      secs.push({ id: s.id, name: t.sections[s.id], rem, doneTopics: rem ? 0 : 1, totTopics: 1 });
+      if (rem) weak.push({ section: s.id, label: t.sections[s.id], rem });
+      continue;
+    }
+    if (s.type === 'speaking' || s.type === 'egespeaking') {
+      const count = (speakingCounts && speakingCounts[s.id]) || 0;
+      if (!count) continue;
+      const rem = Math.max(0, Math.min(perTopic, count) - (speakingDone || 0));
       R += rem;
       secs.push({ id: s.id, name: t.sections[s.id], rem, doneTopics: rem ? 0 : 1, totTopics: 1 });
       if (rem) weak.push({ section: s.id, label: t.sections[s.id], rem });
@@ -116,8 +132,16 @@ export async function weeklyPlan() {
   for (const task of ((EXAM.writing && EXAM.writing.tasks) || [])) {
     try { const w = await loadJSON(task.dataFile); writeCounts[task.sectionId] = Array.isArray(w) ? w.length : 0; } catch {}
   }
+  // Число заданий говорения по разделу + сколько уже потренировано
+  const speakingCounts = {};
+  for (const s of EXAM.sections) {
+    if (s.type === 'speaking' || s.type === 'egespeaking') {
+      try { speakingCounts[s.id] = countSpeaking(await loadJSON(s.dataFile)); } catch {}
+    }
+  }
+  const speakingDone = Object.keys(getSpeakingDone()).length;
   const tiers = TIERS.map((def) => {
-    const c = compute(topics, def.perTopic, extra, writeCounts);
+    const c = compute(topics, def.perTopic, extra, writeCounts, speakingCounts, speakingDone);
     const weekly = Math.ceil(c.R / weeks);
     return { key: def.key, R: c.R, weekly, daily: Math.ceil(weekly / 7),
       status: statusOf(weekly, c.R), secs: c.secs, weak: c.weak };
