@@ -26,8 +26,8 @@ window.addEventListener('ss:activity', (e) => {
 // ССЫЛКА НА СООБЩЕСТВО VK (откуда берут ключ) — подставить, когда будет
 const VK_URL = 'https://vk.com/';
 
-// Код перехода в режим учителя (в настройках «Прогресс»). СМЕНИ на свой.
-const TEACHER_PASS = 'SS-TEACHER';
+// Код перехода в режим учителя (в настройках «Прогресс»). Сравнение без регистра.
+const TEACHER_PASS = 'COOLSCHOOL';
 function enterTeacher() {
   const code = prompt(t.teacherPrompt);
   if (code == null) return;
