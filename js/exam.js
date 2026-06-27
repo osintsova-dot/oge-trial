@@ -53,7 +53,7 @@ const CONFIGS = {
       { id: 'speaking', type: 'egespeaking', dataFile: 'ege_speaking', tile: 'speaking', iconKey: 'speaking', icon: '🎤' },
       { id: 'mock',    type: 'mock', dataFile: 'ege_mock', tile: 'mock', iconKey: 'mock', icon: '📋' },
     ],
-    pack: ['grammar', 'wordform', 'lexis', 'reading', 'listening', 'email', 'essay'],
+    pack: ['grammar', 'wordform', 'lexis', 'reading', 'listening', 'email', 'essay', 'speaking'],
     soonTile: false,
     // Письмо ЕГЭ — ДВА задания: e-mail (зад.37, К1–К3, макс 6) и эссе (зад.38, К1–К5, макс 14)
     writing: {
